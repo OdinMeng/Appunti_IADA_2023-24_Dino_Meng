@@ -7,3 +7,6 @@ Materie attualmente disponibili:
 - Algebra Lineare ed Elementi di Geometria (ALEG)
 - Introduzione alla Programmazione (Programmazione)
 - Laboratorio di Programmazione (Laboratorio di Programmazione)
+
+Dal 06.10.2023:
+- Aggiunto il "grande compendio", che comprende TUTTI gli appunti scritti (senza dover appartenere a nessun sommario) in formato .md
