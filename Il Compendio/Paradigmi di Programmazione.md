@@ -22,7 +22,7 @@ Principalmente i paradigmi sono le seguenti due:
 	In questo caso il paradigma *dichiarativo* esprime la *logica* di un calcolo senza dover descrivere il flusso di controllo. Per esempio nel in un linguaggio dichiarativo *logico* si usa, appunto, la logica per rappresentare e/o elaborare delle informazioni, oppure con la programmazione *funzionale* si usa una serie di valutazioni matematiche.
 
 ### Differenza tra imperativo e dichiarativo: esempi
-La differenza tra il paradigma **IMPERATIVO** e **DICHIARATIVO** si illustra mediante il seguente esempio; due *"pseudocodici"* che rappresentano, da un lato il paradigma *imperativo*, e dall'altro il paradigma *dichiarativo*. Entrambi vogliono rappresentare il funzionamento di un ascensore.
+La differenza tra il paradigma **IMPERATIVO** e **DICHIARATIVO** si illustra mediante il seguente esempio; due *"pseudocodici"* che rappresentano, da un lato il paradigma *imperativo*, e dall'altro il paradigma *dichiarativo*. Entrambi vogliono esprimere l'utilizzo di un ascensore.
 
 | IMPERATIVO | DICHIARATIVO                             |
 | ---------- | ---------------------------------------- |

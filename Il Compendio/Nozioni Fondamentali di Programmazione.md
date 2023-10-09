@@ -104,5 +104,10 @@ Ora, ragionando sullo *stato interno del programma*, si ha il seguente diagramma
 ![[Contadino Russo]]
 
 # NOZIONE 5. AMBIENTE E MEMORIA
+Riprendiamo la **NOZIONE 3.**, in quanto tutto ciò che abbiamo detto in precedenza non è totalmente accurata; infatti bisogna introdurre le nozioni di *ambiente* e *memoria*.
+- - -
 
-# NOZIONE 6. OPERAZIONE DI ASSEGNAMENTO
+- - -
+
+# NOZIONE 6. OPERAZIONE DI DICHIARAZIONE DI VARIABILE
+
