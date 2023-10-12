@@ -10,3 +10,6 @@ Materie attualmente disponibili:
 
 Dal 06.10.2023:
 - Aggiunto il "grande compendio", che comprende TUTTI gli appunti scritti (senza dover appartenere a nessun sommario) in formato .md
+
+Dal 12.10.2023:
+- Aggiunto la sezione "Programmazione - Esercitazioni" per eventuali soluzioni proposte da me degli esercizi delle dispense
