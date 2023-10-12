@@ -22,7 +22,7 @@ Infatti nei numeri reali $\mathbb{R}$ possiamo trovare i numeri naturali $\mathb
 **TEOREMA 2.1.** Siano $\varepsilon, M \in\mathbb{R}$ ove $\varepsilon > 0$, $M > 0$ (l'idea sarebbe che $\varepsilon$ è un numero *arbitrariamente piccolo*, $M$ invece un numero *arbitrariamente grande*), allora vale la seguente: $$\exists \bar{n} \in \mathbb{N}: \bar{n} \cdot \varepsilon > M$$
 Ovvero prendendo un piccolo arbitrariamente piccolo $\varepsilon$ e possibile farlo sommare $\bar{n}$ volte e superare il numero arbitrariamente grande $M$. 
 Rappresentazione grafica:
-	[GRAFICO DA INSERIRE]
+![[Pasted image 20231011161506.png]]
 
 **DIMOSTRAZIONE.** 
 	Suppongo (per assurdo) che questo teorema non è vero; ovvero negandolo, abbiamo $$\forall n \in \mathbb{N}, n \cdot \varepsilon < M$$ovvero non saremo mai in grado di superare $M$.
@@ -44,26 +44,26 @@ Si dice che $\mathbb{Q}$ è *denso* in $\mathbb{R}$; ovvero siano $a, b \in \mat
 	Per la dimostrazione tratteremo di tre casi distinti; ovvero
 	1. Quando $a < 0 < b$ non c'è nulla da dimostrare, in quanto abbiamo già $q = 0$.
 	2. Quando $a < b < 0$ allora possiamo invertire i segni, ottenendo il seguente grafico: 
-		   [GRAFICO DA INSERIRE]
+![[Pasted image 20231011161525.png]]
 		Quindi $q = - \frac{k}{n}$, che troveremo, va bene.
 	3. Quando $0 < a < b$, l'unico caso da trattare:
 	   Innanzitutto chiamo la distanza tra i due punti $\varepsilon = b-a$ (e per forza dev'essere maggiore di $0$, in quanto $b > a > 0$).
 	   Dopodiché, usando il **TEOREMA 3.1.**, abbiamo che $$0 < \frac{1}{n} < \varepsilon = b-a$$
 	   Ora, per il *principio di Archimede* (**TEOREMA 2.1.**), abbiamo (con $\varepsilon = \frac{1}{n}$ e $M = a$) che $$\exists k : \frac{k}{n} > a$$
 	Quindi, aggiungendo $a$ da tutte le parti e considerando l'ultimo punto ho, $$a < \frac{k}{n} < b$$e sicuramente so che non può essere che $\frac{k}{n}>b$ in quanto $\frac{1}{n} < b-a$. (ovvero il salto per arrivare a $b$ sarebbe troppo *"grande"*)
-	Graficamente, [GRAFICO DA INSERIRE]
+	Graficamente, ![[Pasted image 20231011161541.png]]
 # 5. Teorema di Cantor
 Considerando gli [intervalli chiusi, limitati, inscatolati e dimezzati](Intervalli), abbiamo il seguente teorema.
 ## TEOREMA 5.1. Forma debole del teorema di Cantor
 Sia $(I_n)_n$ una successione di intervalli *chiusi, limitati e inscatolati*; allora l'intersezione di tutti gli intervalli è non-vuota;$$\bigcap_n I_n \neq \emptyset$$
 **OSS 5.1.1.** Tutti gli intervalli si rappresentano graficamente nel seguente modo:
-[ GRAFICO DA INSERIRE ]
+![[Pasted image 20231011161612.png]]
 
 **OSS 5.1.2.** Notiamo che il fatto che gli intervalli *debbono essere chiusi* è una condizione necessaria al **TEOREMA 5.1.**; infatti troviamo un *controesempio* per cui non vale il **TEOREMA 5.1.** quando consideriamo insiemi *aperti* o *illimitati*.
 	**ESEMPIO 5.1.2.1.**
 	Consideriamo gli intervalli $$I_0 = \ ]0, 1] \ ;\  I_1 = \ ]0, \frac{1}{2}\ ;\  \ldots \ ;\  I_n =\  ]0, \frac{1}{n+1}]$$
 	Che graficamente viene rappresentato come
-	[GRAFICO DA INSERIRE]
+![[Pasted image 20231011161624.png]]
 	Notiamo che l'intersezione di tutti gli intervalli in questo caso viene $\emptyset$; $$\bigcap _n I_n = \emptyset$$
 	**DIMOSTRAZIONE.**
 	Consideriamo i seguenti due casi:
@@ -74,7 +74,7 @@ Sia $(I_n)_n$ una successione di intervalli *chiusi, limitati e inscatolati*; al
 	**ESEMPIO 5.1.2.2.** Consideriamo ora degli intervalli *illimitati* (ovvero *non limitati*); di nuovo il teorema non vale.
 	Ho $$I_n = [n, +\infty[$$
 	Che graficamente viene rappresentato mediante
-	[ GRAFICO DA FARE]
+![[Pasted image 20231011161642.png]]
 	Supponiamo di scegliere un punto $x$ nell'intorno $I_n$ (ovvero $\geq 0$); allora per *la proprietà di Archimede* (**TEOREMA 2.1.**) esisterà un intorno $I_{n+1}$ che lo supera.
 	Quindi se ad ogni punto $x \geq 0$ fissiamo un intorno $I_x$ vi è sempre un intorno $I_{k}$ che supera quel punto fissato; pertanto l'intersezione di tutti gli insiemi è $\emptyset$. $$\bigcap_n I_n = \emptyset$$
 
@@ -85,21 +85,21 @@ Inoltre ho $$\begin{align}\forall n, \forall m;\ & a_n \leq b_m\\ & b_m \geq a_n
 **SUBDIMOSTRAZIONE.**
 	Se si vuole verificare la "proprietà" appena enunciata, allora si può considerare due casi:
 	1. $n \leq m$; si avrebbe $[a_m, b_m] \subseteq [a_n, b_n]$; che graficamente equivale a 
-	[ GRAFICO DA INSERIRE ]
+![[Pasted image 20231011161656.png]]
 	pertanto è intuibile che $b_m \geq a_n$.
 	2. $n > m$; si avrebbe in questo caso $[a_n, b_n] \subseteq [a_m, b_m]$ che graficamente equivale a 
-	[ GRAFICO DA INSERIRE ]
+![[Pasted image 20231011161706.png]]
 	stesso discorso di prima; intuibile che $b_m \geq a_n$.
 
 Ora chiamo $\alpha = \sup A$, il quale è garantito in quanto $A$ è *limitato superiormente* (infatti abbiamo dalla proprietà appena enunciata abbiamo che $b_m$ è il *maggiorante* di $a_n$)
 Dato che abbiamo il *minorante* dei *maggioranti di $A$* (ovvero $\alpha$), da qui segue che $B$ è *inferiormente limitato*. (oppure dato che $a_n \leq b_m \iff b_m \geq a_n$)
 Allora chiamo $\beta = \inf B$ e ho $$\beta \geq \alpha$$
 Graficamente ho
-[ GRAFICO DA INSERIRE ]
+![[Pasted image 20231011161719.png]]
 Io ho quindi $$[\alpha, \beta] \subseteq [a_n, b_n] ,\forall n$$Allora $$[\alpha, \beta] \subseteq \bigcap_n I_n \implies \bigcap_n I_n \neq \emptyset$$
-Anzi, sapendo dalla [seconda proprietà degli estremi superiori (o estremi inferiori)](Insiemi%20limitati,%20maggioranti,%20massimo%20e%20teorema%20dell'estremo%20superiore) abbiamo che se scegliamo un $x = \alpha - \varepsilon$ (per un $\varepsilon>0$), allora esiste un $a_n$ tale che $a_n > x$ di conseguenza $x$ sta al di fuori dell'intervallo $[a_n, b_n]$; analogamente se scegliamo un $y = \beta + \eta$ (per un $\eta > 0$), allora esiste un $b_n$ tale che $y > b_n$,
+Anzi, sapendo dalla [seconda proprietà degli estremi superiori (o estremi inferiori)](Insiemi%20limitati,%20maggioranti,%20massimo%20e%20teorema%20dell'estremo%20superiore) abbiamo che se scegliamo un $x = \alpha - \varepsilon$ (per un $\varepsilon>0$), allora esiste un $a_n$ tale che $a_n > x$; di conseguenza $x$ sta al di fuori dell'intervallo $[a_n, b_n]$; analogamente se scegliamo un $y = \beta + \eta$ (per un $\eta > 0$), allora esiste un $b_n$ tale che $y > b_n$,
 Graficamente,
-[GRAFICO DA INSERIRE]
+![[Pasted image 20231011161734.png]]
 Di conseguenza $$x, y \not \in [a_n, b_n]$$
 Pertanto si può sicuramente affermare che $$\bigcap_n I_n = [\alpha, \beta]$$
 ## TEOREMA 5.2. Forma forte del teorema di Cantor

@@ -3,19 +3,19 @@ data: 2023-10-09
 corso: "[[Analisi Matematica I]]"
 argomento: Insiemi limitati, maggioranti, massimo e teorema dell'estremo superiore
 tipologia: appunti
-stato: "0"
+stato: "1"
 ---
 - - -
 # 1. Insiemi limitati
 **DEF 1.1.** Sia $A \subseteq \mathbb{R}$, $A$ si dice un insieme **limitato superiormente** se $$\exists M \in \mathbb{R}: \forall a, \in A; a \leq M$$
 Graficamente, un insieme *limitato superiormente* si rappresenta così:
-	[ GRAFICO DA INSERIRE ]
+![[Pasted image 20231011161237.png]]
 **ESEMPIO 1.1.1.** Considero $A = \{x \in \mathbb{R}: x^2+3x+1=0\}$.
 $A$ è *limitato superiormente*, in quanto risolvendo $A$ otteniamo l'insieme $A = \{\frac{-3-\sqrt{5}}{2}, \frac{-3+\sqrt{5}}{2}\}$, e scegliendo $M = 0$ si ha che entrambi elementi di $A$ sono minori di $0$.
 
 **DEF 1.2.** $A \subseteq \mathbb{R}$ si dice un insieme **limitato inferiormente** se $$\exists m \in \mathbb{R}: \forall a \in A; a \geq m$$
 Graficamente, 
-	[GRAFICO DA INSERIRE]
+![[Pasted image 20231011161248.png]]
 
 **DEF 1.3.** $A \subseteq \mathbb{R}$ si dice **limitato** se è sia limitato *superiormente* che *inferiormente*.
 **ESEMPIO 1.3.1.** $[a, b]$ è limitato.
@@ -25,22 +25,22 @@ Infatti se si scelgono $M = b, n = a$ per definizione risulta vero che questo [i
 	**DIM.** Da quanto visto in [[Connettivi]], basta dimostrare che entrambe le implicazioni sono vere; ovvero
 	1. $$\exists R: A \subseteq [-R, R] \implies A \text{ è limitato}$$
 	   che graficamente rappresenta
-	   [ GRAFICO DA INSERIRE ]
+![[Pasted image 20231011161316.png]]
 	   quindi è vera
 	1. $$\text{A è limitato} \implies \exists R: A \subseteq [-R, R]$$
 	   che graficamente rappresenta
-	   [ GRAFICO DA INSERIRE] 
+![[Pasted image 20231011161334.png]]
 	   quindi anche questa è vera.
 
 **OSS 1.3.2.** Vorrei trovare un modo per definire gli *insiemi limitati* su un piano $\pi$.
 E' possibile definirlo tramite il seguente: *"Se riesco a mettere l'insieme $A$ all'interno di una sfera di raggio $R$, allora esso è limitato."*
 Graficamente,
-[GRAFICO DA INSERIRE]
+![[Pasted image 20231011161349.png]]
 
 **DEF 1.4.** Un insieme $A$ si dice *superiormente illimitato* quando neghiamo che $A$ è superiormente limitato; ovvero $$\neg(\exists M \in \mathbb{R}, \forall a \in A, a \leq M)$$
 ovvero $$\forall M \in \mathbb{R}, \exists a \in A: a > M$$
 che graficamente vuol dire che ad ogni $M_n$ che fissiamo, esiste *sempre* un valore $a_n$ che è più grande di $M$.
-[GRAFICO DA INSERIRE]
+![[Pasted image 20231011161409.png]]
 
 Il discorso è analogo per *insiemi inferiormente illimitati* e *insiemi illimitati*.
 # 2. Maggioranti, massimi; minoranti e minimi
@@ -94,7 +94,7 @@ Sia $A \subseteq \mathbb{R}$, $A \neq \emptyset$, e $A$ *superiormente limitato*
 	Quindi, per definizione $\xi$ è l'*estremo superiore di $A$*. $\blacksquare$
 
 **ESERCIZIO 4.1.** Dimostrare che se $A \neq \emptyset$ e $A$ è inferiormente limitato, allora $$\exists \eta \in \mathbb{R}: \eta \text{ è l'estremo inferiore di }A$$
-Dato che per ipotesi $A$ è non vuota ed è inferiormente limitata, allora sicuramente $$\forall a \in A, \forall b\in A_{*}, b \leq a$$per la definizione di minorante. Osserviamo che si può applicare l'assioma *S)*; quindi sicuramente $$\exists \eta \in \mathbb{R}: b \leq \eta \leq a$$Ovvero $\eta$ è il *massimo di $A_{*}$ ed è un minorante di $A$*. Ovvero *l'estremo inferiore di $A$*.
+Dato che per ipotesi $A$ è non vuota ed è inferiormente limitata, allora sicuramente $$\forall a \in A, \forall b\in A_{*}, b \leq a$$per la definizione di minorante. Osserviamo che si può applicare l'assioma *S)*; quindi sicuramente $$\exists \eta \in \mathbb{R}: b \leq \eta \leq a$$Ovvero $\eta$ è il massimo di $A_{*}$ ed è un minorante di $A$. Ovvero *l'estremo inferiore di $A$*.
 
 **TEOREMA 4.2.** *(le proprietà dell'estremo superiore $\sup A$)*
 Sia $A \subseteq \mathbb{R}$, $A \neq \emptyset$, $\alpha \in \mathbb{R}$.
@@ -113,7 +113,7 @@ $$\beta = \inf(A) \iff \begin{cases}\forall a \in A, a \geq \beta \text{ (1)} \\
 Voglio trovare le seguenti: $\sup(A)$, $\inf(A)$, $\max(A)$, $\min(A)$.
 
 1. Il primo passo è quello di fare un disegno che rappresenta per poter "visualizzare" l'insieme $A$.
-[ GRAFICO DA INSERIRE ]
+![[Pasted image 20231011161432.png]]
 Quindi vediamo che $$ A = \{0, 1, \frac{1}{2}, \frac{2}{3},\ldots,\frac{n-1}{n}\}$$
 2. $A$ è quindi limitato, da quanto si può evincere dal disegno; infatti scegliamo $m=0$, $M=1$. 
 3. Siccome $A \neq \emptyset$, per il *teorema 4.1.* (o *esercizio 4.1.* per esattezza), posso trovare $\inf{A}$ e $\min{A}$;  
