@@ -16,10 +16,10 @@ Inoltre uno **spazio vettoriale** può essere anche definito con la seguente *te
 **OSS 1.1.** Notare che nella $\text{v}_8$ non chiameremo $1$ *l'elemento neutro* per ragioni di convenzione, particolarmente per quanto riguarda l'algebra astratta.
 
 **PROP 1.1.** Ciò che abbiamo visto fino ad ora ci mostra che $V_2$ (ovvero l'insieme dei vettori liberi nel piano) è un $\mathbb{R}$-spazio vettoriale.
-## DEF 1.1. Vettore
+## 1.1. Vettore
 **DEF 1.1.** Sia $V$ uno $\mathbb{R}$-spazio vettoriale; gli elementi $v \in V$ si dicono **vettore**
 **! ATTENZIONE !** Si nota immediatamente che questa definizione del *vettore* non deve necessariamente corrispondere alla nostra idea di un *vettore libero*.
-## PROP 1.1. L'unicità del vettore neutro $0$
+## PROP 1.2. L'unicità del vettore neutro $0$
 L'assioma $\text{v}_3$ garantisce che *esiste* almeno un vettore neutro $0$ tali che certe proprietà vengono soddisfatte; però ciò che *NON* garantisce è l'unicità del vettore neutro $0$. Potrebbe esistere un altro vettore *neutro* che possiamo chiamare $0'$.
 Però $0'$ non esiste e lo dimostreremo.
 **DIMOSTRAZIONE.**  Voglio dimostrare che se $V$ è un $\mathbb{R}$-spazio vettoriale, allora l'elemento neutro $0$ è unico.
@@ -28,12 +28,12 @@ Per ipotesi, $\forall v \in V$, $$\begin{align}&A. 0+v \stackrel{\text{v}_3}= v+
 In $A.$ scegliamo $v = 0'$; allora $$0+0' = 0'+0= 0'$$
 In $B.$ scegliamo invece $v = 0$; allora $$0'+0 = 0 + 0' = 0$$
 Quindi notiamo che $$0 = 0+0' = 0'$$per la proprietà transitiva dell'uguaglianza, $0 = 0'$. $\blacksquare$
-## PROP 1.2.  $0 \cdot v = 0$
+## PROP 1.3.  $0 \cdot v = 0$
 La proposizione $$0 \cdot v = 0$$sembra ovvia e banale, come ci suggerirebbe la notazione; però in realtà non lo è veramente, in quanto associamo due concetti *diversi*; da una parte abbiamo lo *scalamento* del vettore $v$ per $\lambda = 0$, dall'altra abbiamo il *vettore neutro* $0$.
 Quindi vogliamo dimostrare che se $V$ è un spazio vettoriale su $\mathbb{R}$, allora per ogni $v \in V$ sussiste la proposizione.
 **DIMOSTRAZIONE.** Per dimostrare la tesi, supponiamo che $v \in V$ e quindi abbiamo che: $$\begin{align}0\cdot v &= (0+0)\cdot v \stackrel{\text{v}_6}=0\cdot v + 0\cdot v \\ 0\cdot v &=0\cdot v + 0\cdot v\\ (0\cdot v) + (-(0 \cdot v)) &= (0 \cdot v) +(-(0 \cdot v)) + (0 \cdot v)\\ 0 &= 0 \cdot v \\ 0\cdot v &= 0 \ \blacksquare\end{align}$$
 **OSS 1.2.1.** Notare che in questi passaggi abbiamo fatto un *assunto* che non è dato per scontato; ovvero che il vettore opposto $-v$ è unico ad ogni vettore $v$. Infatti questo assunto è ancora da *dimostrare* (che è necessario per non invalidare questa dimostrazione).
-## PROP 1.3. $(-1)\cdot v = -v$
+## PROP 1.4. $(-1)\cdot v = -v$
 Anche la proposizione  $$(-1)\cdot v = -v$$sembra intuitiva, ma in realtà non è dato *per scontato* secondo gli assiomi $\text{v}$; infatti da un lato abbiamo lo *scalamento* di un vettore, invece dall'altro abbiamo il *vettore opposto del vettore $v$*. 
 Quindi vogliamo dimostrare che se $V$ è un spazio vettoriale su $\mathbb{R}$, allora per ogni vettore $v \in V$ vale la proposizione appena enunciata.
 **DIMOSTRAZIONE.** Per dimostrare la tesi, utilizziamo la proprietà $\text{v}_3$, ovvero $$v + (-v) = -v + v = 0$$e dimostriamo la seconda uguaglianza, assumendo che $-v = (-1)\cdot v$; $$(-1)\cdot v + (1)\cdot v \stackrel{\text{v}_6}=(-1+1)\cdot v = 0\cdot v = 0$$

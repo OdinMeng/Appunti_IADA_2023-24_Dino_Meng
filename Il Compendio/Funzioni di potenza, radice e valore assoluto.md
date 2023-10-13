@@ -33,6 +33,7 @@ Graficamente questo equivale a *"scambiare le assi"* del grafico della funzione,
 **DEF 3.1.** Sia il **valore assoluto** una *funzione* $$| \cdot | : \mathbb{R} \longrightarrow \mathbb{R}; x \mapsto|x|=\begin{cases}x: x\geq0 \\-x: x < 0\end{cases}$$Ad esempio, il grafico di $| x |$  si rappresenta nel modo seguente:
 [ GRAFICO DA INSERIRE ]
 
+**OSS 3.1.1.** Notare che $$\sqrt{x^2} = |x|$$
 ## 3.1. Proprietà, disuguaglianza triangolare
 **OSS 3.1.1.** Si può osservare alcune proprietà del *valore assoluto*, ovvero:
 1. Sia $a \geq 0$, $x \in \mathbb{R}$, allora $$|x| \leq a \iff -a \leq x \leq a$$
