@@ -3,9 +3,9 @@ data: 2023-10-12
 corso: "[[Algebra Lineare ed Elementi di Geometria]]"
 argomento: Operazioni particolari con matrici
 tipologia: appunti
-stato: "0"
+stato: "1"
 ---
-*Trasposta di una matrice (definizione di matrice simmetrica e antisimmetrica). Definizione di prodotto tra due matrici.*
+*Trasposta di una matrice (definizione di matrice simmetrica e antisimmetrica). Definizione di prodotto tra due matrici. Esempi scelti del prodotto righe per colonne. Proprietà del prodotto tra matrici.*
 - - -
 # 1. Matrice trasposta
 - - - 
@@ -48,19 +48,33 @@ Inoltre, la *"matrice risultante"* diventa una matrice $a \times b$ (ove $a$ è 
 
 ## 2.3. Esempi
 Diamo alcuni esempi-esercizi.
-**ESEMPIO 2.3.1.**
-
-**ESEMPIO 2.3.2.**
+**ESEMPIO 2.3.1.** $$\begin{pmatrix}1 & 2 &3 \\ -3 & -2 & -1 \end{pmatrix} \cdot \begin{pmatrix} -1 & 2 \\0 & -1 \\ 1 & 0\end{pmatrix}$$usando le definizioni otteniamo $$\begin{pmatrix} \begin{pmatrix}1 & 2 & 3 \end{pmatrix} \begin{pmatrix} -1 \\ 0 \\ 1\end{pmatrix} & \begin{pmatrix}1 & 2 & 3 \end{pmatrix} \begin{pmatrix} 2 \\ -1 \\ 0\end{pmatrix}\\ \begin{pmatrix} -3 & -2 & -1 \end{pmatrix} \begin{pmatrix} -1\\0\\1 \end{pmatrix}&  \begin{pmatrix} -3&-2&-1\end{pmatrix} \begin{pmatrix} 2\\-1\\0\end{pmatrix}\end{pmatrix}$$poi calcolando tutti i *prodotti righe per colonne*, infine abbiamo $$\begin{pmatrix}2 & 0 \\3&4 \end{pmatrix}$$
+**ESEMPIO 2.3.2.** $$\begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1\end{pmatrix} \begin{pmatrix}-1 & 2 \\0 & -1 \\ 1& 0 \end{pmatrix} = \begin{pmatrix} -1+0+0 & 2+0+0 \\ 0+0+0 & 0-1+0 \\ 0+0+1 & 0+0+0 \\\end{pmatrix} = \begin{pmatrix}-1 & 2 \\ 0 & -1 \\ 1 & 0 \end{pmatrix}$$
 
 **OSS 2.3.2.a.**
 Notiamo di aver ottenuto la stessa matrice a destra.
 
-**ESEMPIO 2.3.3.**
+**ESEMPIO 2.3.3.** $$\begin{pmatrix}1 & 2 & 3 \\ -3 &-2 & -1\end{pmatrix}\begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1\end{pmatrix}  = \begin{pmatrix} 1+0+0 & 0+2+0 & 0+0+3 \\ -3+0+0 & 0-2+0 & 0+0-1 \\\end{pmatrix}$$facendo i conti, $$= \begin{pmatrix}1 & 2 & 3 \\ -3 & -2 & -1\end{pmatrix}$$
 
 **OSS 2.3.3.a.** 
-Come notato prima, la seconda matrice sembra di comportarsi come il numero $1.$; infatti se lo moltiplichi a destra o a sinistra, ottieni la stessa matrice moltiplicata.
+Come appena notato prima, la *seconda matrice* sembra di comportarsi come il numero $1.$; infatti se lo moltiplichi a destra o a sinistra, ottieni la stessa matrice moltiplicata.
+Infatti questa matrice verrà definita come la [matrice identità](Matrice) (**DEF 2.5.**) $\mathbb{1}$.
 
 **ESEMPIO 2.3.4.**
+Consideriamo
+$$\begin{align}&A=\begin{pmatrix} 1 &2 \\ 3& 4\end{pmatrix} \\ &B= \begin{pmatrix}-1 & 0 \\1 & 1 \end{pmatrix}\end{align}$$Posso fare sia $A \cdot B$ che $B \cdot A$ in quanto abbiamo i tali requisiti. Allora$$A \cdot B = \begin{pmatrix} -1*1 + 1*2 & 0*1 + 2*1 \\-1*3 +4*1 & 3*0 + 1*4 \end{pmatrix} = \begin{pmatrix} -1 & 2\\1 & 4\end{pmatrix}$$e $$B \cdot A = \begin{pmatrix}-1*1 + 0*3 & -1*2+0*4 \\ 1*1 + 1*3 & 1*2 + 1*4 \end{pmatrix} = \begin{pmatrix} -1 & -2\\4 & 6 \end{pmatrix}$$
 
 **OSS 2.3.4.a.**
-Notiamo che il *prodotto delle matrici* non è un'operazione *commutativa*; questo determina delle forti conseguenze, soprattutto nella *meccanica quantistica* con il *principio di indeterminazione di Heisenberg*.
+Notiamo che il *prodotto delle matrici* non è un'operazione *commutativa*; questo determina delle forti conseguenze, in particolare nella *meccanica quantistica* con il *principio di indeterminazione di Heisenberg*.
+
+## 2.4. Proprietà
+Il *prodotto righe per colonne* soddisfa alcune proprietà:
+**PROP 2.4.1.** Siano $A, B \in M_{m,n}(\mathbb{R})$ e $C,D \in M_{p,n}(\mathbb{R})$. Allora valgono le seguenti uguaglianze: $$\begin{align}&\text{1. }(A+B)\cdot C = A\cdot C + B \cdot C\\ &\text{2. }A\cdot(C+D) = A\cdot C + A \cdot D \end{align}$$la *1.* si chiama "proprietà distributiva a *destra"*, la *2.* invece "proprietà distributiva a *sinistra*". Utilizziamo questa nomenclatura in quanto sappiamo che l'operazione di prodotto righe per colonna *NON* è commutativa; quindi non si è sempre certi che questa proprietà valga da entrambi i lati (in questo caso sì).
+
+**PROP 2.4.2.** Sia $A \in M_{m,p}(\mathbb{R})$ e $B \in M_{p, n}(\mathbb{R})$; allora vale che $$^t(A\cdot B) = (^tB) \cdot (^tA)$$
+**ATTENZIONE!** Invece bisogna stare attenti che $$^t(A \cdot B) \neq (^tA) \cdot (^tB)$$in quanto essa non è definita. Infatti a destra si vede che proviamo a moltiplicare una matrice $p, m$ e $n, p$; a meno che $m = n$, questa moltiplicazione NON è ben posta.
+
+**DIMOSTRAZIONE.** Per mostrare la forma corretta, ovvero  $$^t(A\cdot B) = (^tB) \cdot (^tA)$$mostriamo che tutte le entrate del membro destro sono uguali a tutte le entrati del membro sinistro; siano dunque $i \in \{1, \ldots, n\}$ e $j \in \{1, \ldots, m\}$. Allora: $$\begin{align}&\text{dx. } (^t(A\cdot B))_{ij} = (A\cdot B)_{ji} = A_{(j)} \cdot B^{(i)}\\ &\text{sx. } ((^tB)\cdot(^tA))_{ij} =\  ^tB_{(i)} \cdot \ ^tA^{(j)} =\text{le quantità sono uguali} =   A_{(j)} \cdot B^{(i)}\end{align}$$e questo mostra che le due sono uguali.
+
+**PROP 2.4.3.** Sia $A \in M_{m,n}(\mathbb{R})$, allora $$\mathbb{1}_m \cdot A = A; \  A \cdot \mathbb{1}_n = A$$Per $\mathbb{1}_m$ si intende la *matrice identità* ([[Matrice]], **DEF 2.5.**).
+**OSS 2.4.3.a** Nel caso delle matrici quadrate $M_{n}(\mathbb{R})$, la matrice unità $\mathbb{1}_{n}$ funge dunque da *elemento neutro* per il *prodotto righe per colonne*. Ovvero $$\mathbb{1} _{n} \cdot A = A \cdot \mathbb{1}_{n} = A$$e possiamo denominarlo come *elemento neutro* in quanto tutti gli elementi in questa uguaglianza sono appartenenti a $M_{n}(\mathbb{R})$.

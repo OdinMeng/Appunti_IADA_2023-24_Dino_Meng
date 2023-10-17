@@ -1,9 +1,9 @@
 ---
 data: 2023-10-12
 corso: "[[Algebra Lineare ed Elementi di Geometria]]"
-argomento: Untitled
+argomento: Sistemi di generatori
 tipologia: appunti
-stato: "0"
+stato: "1"
 ---
 *Breve definizione di combinazione lineare; Matrice come combinazione lineare di sistemi di generatori, indipendenza lineare*
 - - -

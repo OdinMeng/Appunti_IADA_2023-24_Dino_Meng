@@ -1,7 +1,7 @@
 ---
 data: 2023-10-03
 corso: "[[Algebra Lineare ed Elementi di Geometria]]"
-argomento: Untitled
+argomento: Operazioni sui vettori liberi
 tipologia: appunti
 stato: "1"
 ---

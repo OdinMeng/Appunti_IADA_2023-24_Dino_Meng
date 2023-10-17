@@ -3,7 +3,7 @@ data: 2023-10-12
 corso: "[[Algebra Lineare ed Elementi di Geometria]]"
 argomento: Operazioni basilari con matrici
 tipologia: appunti
-stato: "0"
+stato: "1"
 ---
 *Definizioni di operazioni con matrici; somma interna $+$, prodotto esterno (scalamento) $\cdot$, l'insieme delle matrici come $\mathbb{R}$-spazio vettoriale con queste operazioni.*
 - - -

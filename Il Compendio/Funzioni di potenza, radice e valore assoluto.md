@@ -3,35 +3,35 @@ data: 2023-10-12
 corso: "[[Analisi Matematica I]]"
 argomento: Funzioni di potenza, radice e valore assoluto
 tipologia: appunti
-stato: "0"
+stato: "1"
 ---
 *Definizioni di funzione potenza $p_n$ e radice $p_n^{-1}$. Definizione del valore assoluto $| \cdot |$; disuguaglianza triangolare. Alcuni esercizi generali.*
 - - -
 # 1. Funzione potenza
 **DEF 1.1.** Sia $n \in \mathbb{N} \diagdown \{0\}$; definiamo quindi la **funzione potenza $n$-esima** come $$p_n : [0, +\infty) \longrightarrow[0, +\infty); x \mapsto p_n(x) = x^n$$
 Si riporta un grafico di alcune funzioni potenza $p_n$.
-[GRAFICO DA INSERIRE]
+![[Pasted image 20231017172817.png]]
 
-**OSS 1.1.** Si vede dal grafico che la funzione è *strettamente crescente*, ovvero se prendiamo $x_1, x_2 \in E$ (dominio) ove $x_2 > x_1$, allora sicuramente abbiamo $$p_n(x_2) > p_n(x_1)$$
+**OSS 1.1.** Si nota che $$\begin{align} &\forall x \in [0, 1): p_1(x)>p_2(x) > \ldots > p_n(x) \\ &\forall x \in (1, +\infty): p_1(x) < p_2(x) < \ldots < p_{n}(x)  \end{align}$$
+**OSS 1.2.** Si vede dal grafico che la funzione è *strettamente crescente*, ovvero se prendiamo $x_1, x_2 \in E$ (dominio) ove $x_2 > x_1$, allora sicuramente abbiamo $$p_n(x_2) > p_n(x_1)$$
 	**DIMOSTRAZIONE.** 
 	Prendiamo ad esempio $p_2$; abbiamo innanzitutto$$0 \leq x_1 < x_2$$allora li moltiplichiamo per $x_1$ e $x_2$, ottenendo $$\begin{cases} x_1 < x_2x_1 \\ x_1x_2 < x_2^2 \end{cases}$$quindi $$0 \leq x_1^2 < x_2^2 \iff p_2(x_1) < p_2(x_2), \forall x_1, x_2$$
 >[! warning] Notare che questa dimostra che è vera solo per $p_2$; sarebbe da dimostrare che è vera anche per $p_n$ (forse si va per induzione? boh, vedrò o chiederò al prof qualcosa)
 
-**OSS 1.2.** Notiamo che la *funzione potenza* $p_n$ (o $x^n$) è *biiettiva* ([[Funzioni]], **DEF 3.3.**), ovvero è sia *suriettiva* che *iniettiva*.
+**OSS 1.3.** Notiamo che la *funzione potenza* $p_n$ (o $x^n$) è *biiettiva* ([[Funzioni]], **DEF 3.3.**), ovvero è sia *suriettiva* che *iniettiva*.
 	**DIMOSTRAZIONE.**
 	Per dimostrare che è iniettiva basta riosservare quanto visto in **OSS 1.2.**; ovvero che la funzione è strettamente crescente.
 	Dopodiché la funzione è anche suriettiva in quanto una conseguenza del[l'assioma di separazione S)](Assiomi%20dei%20Numeri%20Reali).
 
 # 2. Funzione radice
-**OSS 2.1.** Dall'**OSS 1.2.** abbiamo notato che la *funzione potenza* $p_n(x)$ è *biiettiva*; pertanto per il *teorema dell'esistenza della funzione inversa* ([[Funzioni]], **TEOREMA 1.**) esiste una funzione inversa che definiremo.
+**OSS 2.1.** Dall'**OSS 1.3.** abbiamo notato che la *funzione potenza* $p_n(x)$ è *biiettiva*; pertanto per il *teorema dell'esistenza della funzione inversa* ([[Funzioni]], **TEOREMA 1.**) esiste una funzione inversa che definiremo.
 
 **DEF 2.1.** Definiamo la **funzione radice $n$-esima** $p_n^{-1}$ $$p_n^{-1}: [0, +\infty) \longrightarrow [0, +\infty); x^n \mapsto x$$
 Graficamente questo equivale a *"scambiare le assi"* del grafico della funzione, oppure di *"cambiare la prospettiva da cui si guarda il grafico"*, ovvero
-[ GRAFICO DA INSERIRE ]
-
+![[Pasted image 20231017172834.png]]
 # 3. Valore assoluto
 **DEF 3.1.** Sia il **valore assoluto** una *funzione* $$| \cdot | : \mathbb{R} \longrightarrow \mathbb{R}; x \mapsto|x|=\begin{cases}x: x\geq0 \\-x: x < 0\end{cases}$$Ad esempio, il grafico di $| x |$  si rappresenta nel modo seguente:
-[ GRAFICO DA INSERIRE ]
+![[Pasted image 20231017172853.png]]
 
 **OSS 3.1.1.** Notare che $$\sqrt{x^2} = |x|$$
 ## 3.1. Proprietà, disuguaglianza triangolare
