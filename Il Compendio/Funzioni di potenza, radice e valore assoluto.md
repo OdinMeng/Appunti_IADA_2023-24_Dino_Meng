@@ -46,7 +46,7 @@ Graficamente questo equivale a *"scambiare le assi"* del grafico della funzione,
 3. **LA DISUGUAGLIANZA TRIANGOLARE.** 
    Siano $x, y \in \mathbb{R}$, allora abbiamo $$|x + y | \leq |x| + |y|$$
    **DIMOSTRAZIONE.**
-   Infatti se abbiamo da un lato
+   Se abbiamo da un lato
    $$-|x| \leq x \leq  |x|$$e $$-|y| \leq y \leq |y| $$allora sommandoli si avrebbe $$-(|x|+|y|)\leq x+y \leq|x| + |y|$$che per la prima proprietà equivale a dire $$|x+y| \leq |x| + |y|$$
 # 4. Esercizi misti
 Presentiamo degli esercizi, ovvero *equazioni* ([[Equazioni e soluzione]]) o *disequazioni* contenenti queste funzioni appena presentate.

@@ -52,7 +52,49 @@ Alla luce di queste proprietà riusciamo proprio a verificare che $$(\mathbb{R}^
 Allora notiamo che valgono le seguenti: $$\begin{align}&\text{a. } (a,0) \cdot(b,0) = (ab-00, a0+0b) = (ab, 0) \\ &\text{b. }(a,0)+(b,0) = (a+b, 0)\end{align}$$nel senso che questi numeri si comportano come i *numeri reali $\mathbb{R}$*.
 
 **OSS 2.3.** Inoltre, considerando $$(a,0) \cdot(c,d) = (ac-0d, ad+0c) = (ac, ad)$$ovvero che $(a,0)$ si comporta come lo *scalare* che *scala un numero $\mathbb{C}$ componente per componente*.
-
 # 3. Coniugio
+**DEF 3.** Sia $z$ un numero $\mathbb{C}$ e lo rappresentiamo come $z = a+ib$ ([[Rappresentazione dei Numeri Complessi]]). Allora definisco il numero **complesso coniugato** $\bar{z}$ come $$\bar{z} = a-ib$$
+**DEF 3.1.** Chiamo **coniugio** la funzione $$- : \mathbb{C} \longrightarrow \mathbb{C}; z \mapsto \bar{z}$$dove $\bar{i} = -i$
 
+**PROP 3.1.** Questa funzione ha delle proprietà; presentiamo la prima.
+$$\begin{align}\forall z_1, z_2; \overline{z_1+z_2}  = \overline{z_1} + \overline{z_2}\end{align}$$
+Graficamente, 
+[ GRAFICO DA INSERIRE ]
+**DIMOSTRAZIONE.** Analiticamente è possibile dimostrare la tesi nel modo seguente.
+
+**PROP 3.2.** $$\overline{z_1 \cdot z_2} = \overline{z_1} \cdot \overline{z_2}$$
+**DIMOSTRAZIONE.** Analogamente, [DIMOSTRAZIONE DA FARE]
+
+**PROP 3.3.** $$\begin{align} \overline{z} = z \  &\iff \text{Im}(z) = 0 \\ &\iff z = \text{Re}(z) \\ &\iff z \in \mathbb{R}\end{align}$$
+**PROP 3.4.** Sia $z = a+ib$, allora $$z+\overline{z} = (a+ib)+(a-ib) = 2a = 2\text{Re}(z)$$
 # 4. Modulo
+Se prendiamo il piano di *Argand-Gauss* ([[Rappresentazione dei Numeri Complessi]]) possiamo vedere dei *punti nel piano*, allora si potrebbe *"misurare"* la distanza di questo punto dall'origine $(0,0)$. 
+
+**DEF 4.** Allora definiamo la il **modulo di $\bar{z}$** come la *distanza dall'origine*; ovvero se $z=a+ib$, allora usando il *teorema di Pitagora* il modulo diventa $\sqrt{a^2+b^2}$.
+**DEF 4.1.** Allora definisco la funzione $| \cdot |$; $$\begin{align}| \cdot| : \ &\mathbb{C} \longrightarrow [0, +\infty) \\ &z \mapsto |z|:= \sqrt{\text{Re(z)}^2+\text{Im(z)}^2}\end{align}$$
+
+**OSS 4.1.** Notiamo che se $z \in \mathbb{R}$, ovvero se $\text{Im}(z) = 0$, allora $$|z| = \sqrt{\text{Re}(z)^2} = |\text{Re}(z)|$$Da nota che a sinistra si ha il *modulo* di $z$, invece a destra si ha il *valore assoluto* ([[Funzioni di potenza, radice e valore assoluto]], **DEF 3.1.**) della parte reale di $z$.
+
+Ora presentiamo alcune proprietà del modulo.
+**PROP 4.1.** Per definizione, $$\forall z \in \mathbb{C}, |z| \geq 0; |z| = 0 \iff z=0$$
+**PROP 4.2.**
+$$|z| \geq |\text{Re}(z)| \land|z| \geq |\text{Im}(z)|$$
+*Geometricamente*, questo corrisponde al fatto che *l'ipotenusa* di un triangolo rettangolo è *sempre* più lungo o uguale ad uno dei cateti.
+
+**PROP 4.3.** $$|\overline{z}| = |z|$$ in quanto $-b^2 = b^2, \forall b \in \mathbb{R}$
+
+**PROP 4.4.** $$|z_1 \cdot z_2 | = |z_1||z_2|$$
+	**DIMOSTRAZIONE.** Supponendo che $z_1 = a_1+ib_1$, $z_2 = a_2+ib_2'$, allora $$\begin{align}|z_1|\cdot|z_2| &= \sqrt{a_1^2+b_1^2} \cdot \sqrt{a_2^2+b_2^2}\\ &= \sqrt{(a_1^2+b_1^2)(a_2^2+b_2^2)}\\ &= \sqrt{(a_1^2a_2^2+a_1^2b_2^2)+(a_2^2b_1^2+b_1^2b_2^2)} \\ &= \sqrt{(a_1^2a_2^2+b_1^2b_2^2)+(a_1^2b_2^2+a_2^2b_1^2)}\end{align}$$e sviluppando $$\begin{align}z_1\cdot z_2 = a_1a_2-b_1b_2+i(a_1b_2+a_2b_1) \end{align}$$si ha quindi $$\begin{align} |z_1 \cdot z_2| &= |(a_1a_2-b_1b_2)^2+(a_1b_2+a_2b_1)^2 \\ &= |(a_1^2a_2^2-2a_1a_2b_1b_2+b_1^2b_2^2)+(a_1^2b_2^2+2a_1a_2b_1b_2+a_2^2b_1^2)| \\ &= |(a_1^2a_2^2+b_1^2b_2^2)+(a_1^2b_2^2+a_2^2b_1^2)|\end{align}$$dimostrando così che $$|z_1\cdot z_2| = |z_1| \cdot |z_2| \ \blacksquare$$
+
+**PROP 4.5.** $$z \cdot \overline{z} = |z|^2$$
+	**DIMOSTRAZIONE.** Supponendo che $z = a+ib$, allora $$z\cdot\bar{z} = (a+ib)(a-ib) = a^2+b^2 = |z|^2$$
+	**OSS 4.5.a.** Questa proprietà è utile per trovare l'inversa di $z$; infatti $$z \cdot \frac{\overline{z}}{|z|^2}=\frac{|z|^2}{|z|^2} = 1$$allora concludo che $$z^{-1} = \frac{\overline{z}}{|z|^2} = \frac{a-ib}{a^2+b^2} = \frac{a}{a^2+b^2}+i\frac{-b}{a^2+b^2}$$
+ 
+
+**PROP 4.7.** *La disuguaglianza triangolare.*
+Infine presentiamo la *proprietà fondamentale* del *modulo*. $$\begin{align}&\forall z_1, z_2 \in \mathbb{C}, \\&|z_1+z_2| \leq |z_1|+|z_2| \end{align}$$Che è *simbolicamente* simile alla *disuguaglianza triangolare* del [valore assoluto](Funzioni%20di%20potenza,%20radice%20e%20valore%20assoluto) (**OSS 3.1.1.**)
+Però in questo contesto (ovvero del campo $\mathbb{C}$) la proprietà è ancora più *geometricamente suggestiva*; infatti usando il *Piano di Argand-Gauss* ([[Rappresentazione dei Numeri Complessi]]), si ha: 
+[ GRAFICO DA FARE ]
+Ovvero che la somma della lunghezza due cateti di un triangolo rettangolo è *sempre* più lunga della lunghezza dell'ipotenusa.
+	**DIMOSTRAZIONE.**
+	Considero i seguenti: siano $z_1, z_2 \in \mathbb{C}$; allora $$\begin{align}|z_1+z_2|^2 &= (z_1+z_2)\overline{(z_1+z_2)}\\ &= (z_1+z_2)(\overline{z_1}+\overline{z_2}) \\  &= z_1\overline{z_1}+z_1\overline{z_2} + \overline{z_1}z_2 + z_2\overline{z_2} \\ &= |z_1|^2 + z_1\overline{z_2}+ \overline{z_1\overline{z_2}}+|z_2|^2 \\ |z_1+z_2|^2&=|z_1|^2 + 2\text{Re}(z_1\overline{z_2})+|z|^2 \end{align}$$A questo punto mi ricordo che $$|\text{Re}(z)| \leq |z|$$allora $$\begin{align}|z_1|^2 + 2\text{Re}(z_1\overline{z_2})+|z|^2 &\leq |z_1|^2+2|z_1\overline{z_2}|+|z_2|^2  \\ &\leq|z_1|^2+2|z_1||\overline{z_2}|+|z_2|^2 \\ &\leq |z_1|^2+2|z_1||z_2|+|z_2|^2 \\ |z_1+z_2|^2 &\leq (|z_1|+|z_2|)^2 \\|z_1+z_2| &\leq |z_1|+|z_2| \ \blacksquare\end{align}$$

@@ -37,6 +37,7 @@ void test(int x, int y)
 
 int main(void)
 {
+	printf("Buonsalve, buonbenvenuto! \n");
 	int x, y, z;
 	printf("Inserisci un numero (x): ");
 	scanf("%d", &x);
@@ -47,7 +48,7 @@ int main(void)
 	printf("Inserisci un numero (z): ");
 	scanf("%d", &z);
 
-	printf("tripletta (%d, %d, %d) - minimo -> %d \n", x, y, z, min(x,y,z);
+	printf("tripletta (%d, %d, %d) - minimo -> %d \n", x, y, z, min(x,y,z));
 
 	test(x, y);
 	return 0;
