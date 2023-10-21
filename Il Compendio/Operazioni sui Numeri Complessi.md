@@ -39,10 +39,10 @@ Ad esempio, qui non varrebbe la proprietà per cui $(0, 0)$ è *l'elemento nullo
 5. La proprietà distributiva: $$\langle a,b\rangle   \cdot (\langle a',b'\rangle   + \langle a'', b''\rangle  ) = (a,b)\cdot(a',b') +(a,b)\cdot(a'',b'')$$
 **DIMOSTRAZIONI.** 
 1. Per verificare che questa operazione è *associativa*, dobbiamo dimostrare che il *membro destro* dell'uguaglianza è uguale al *membro sinistro*. Ovvero $$\begin{align}\text{sx. }&\langle a,b\rangle   \cdot (\langle a',b'\rangle   \cdot\langle a'', b''\rangle  ) =  \\ &\langle a,b\rangle  \cdot(\langle a'a''-b'b'',a'b''+ a''b' \rangle )= \\ & \langle a(a'a''-b'b'') - b(a'b''+a''b'), a(a'b''+a''b')+b(a'a''-b'b'')\rangle  = \\ &\langle aa'a''-ab'b''-a'bb''-a''bb', aa'b''+aa''b' +a'a''b-bb'b''\rangle  \end{align}$$e poi $$\begin{align}\text{dx. } & (\langle a,b\rangle  \cdot\langle a',b'\rangle )\cdot\langle a'',b''\rangle  = \\ &\langle aa'-bb', ab'+a'b\rangle \cdot\langle a'',b''\rangle = \\ &\langle (aa'-bb')a''-(ab'+a'b)b'', (aa'-bb')b''+(ab'+a'b)a''\rangle  = \\& \langle  aa'a''-a''bb'-ab'b''-a'bb'',  aa'b''-bb'b''+aa''b'+a'a''b\rangle = \\&\langle aa'a''-ab'b''-a'bb''-a''bb', aa'b''+aa''b'+a'a''b-bb'b''\rangle \end{align}$$E vediamo che i membri sono esattamente uguali. $\blacksquare$
-3. *La proprietà 2. è già stata dimostrata sopra.*
-4. *Stesso valesi per la proprietà 3.*
-5. Occorre solo sfruttare le proprietà dei numeri reali $\mathbb{R}$, ovvero $$\begin{align}(a',b')\cdot(a,b) &= (a'a-b'b, a'b + b'a) \\ &= (aa'-bb', ab' + a'b) \\ &= (a,b) \cdot(a',b') \ \blacksquare\end{align}$$
-6. [ DA VERIFICARE ] (se riesco a trovare la voglia di farlo)
+2. *La proprietà 2. è già stata dimostrata sopra.*
+3. *Stesso valesi per la proprietà 3.*
+4. Occorre solo sfruttare le proprietà dei numeri reali $\mathbb{R}$, ovvero $$\begin{align}(a',b')\cdot(a,b) &= (a'a-b'b, a'b + b'a) \\ &= (aa'-bb', ab' + a'b) \\ &= (a,b) \cdot(a',b') \ \blacksquare\end{align}$$
+5. Consideriamo entrambi i membri dell'uguaglianza $$\langle a, b\rangle  \cdot(\langle a',b'\rangle +\langle a'',b''\rangle ) = \langle a,b\rangle \cdot\langle a',b'\rangle  + \langle a,b\rangle  \cdot \langle a'',b''\rangle $$Sviluppiamo il membro destro: $$\begin{align} \langle a, b\rangle  \cdot(\langle a',b'\rangle +\langle a'',b''\rangle )  &= \langle a,b\rangle \cdot\langle a'+a'',b'+b''\rangle  \\ &= \langle a(a'+a'')-b(b'+b''), a(b'+b'')+b(a'+a'')\rangle  \\ &= \langle aa'+aa''-bb'-bb'', ab'+ab''+a'b+a''b \rangle  \end{align}$$Ora il membro sinistro: $$ \begin{align}  \langle a,b\rangle \langle a',b'\rangle  + \langle a,b\rangle \langle a'',b''\rangle  &= \langle aa'-bb', ab'+a'b\rangle  + \langle aa''-bb'', ab''+a''b\rangle  \\ &= \langle aa'+aa''-bb'-bb'', ab'+ab''+a'b+a''b\rangle \end{align}$$E vediamo che entrambi i membri, quando sviluppati, sono uguali; dimostriamo così la tesi. $\blacksquare$
 
 **CONCLUSIONE.**
 Alla luce di queste proprietà riusciamo proprio a verificare che $$(\mathbb{R}^2, +, \cdot)$$è un [campo](Campi), che chiameremo il *campo dei numeri complessi* $\mathbb{C}$.
@@ -60,10 +60,10 @@ Allora notiamo che valgono le seguenti: $$\begin{align}&\text{a. } (a,0) \cdot(b
 $$\begin{align}\forall z_1, z_2; \overline{z_1+z_2}  = \overline{z_1} + \overline{z_2}\end{align}$$
 Graficamente, 
 [ GRAFICO DA INSERIRE ]
-**DIMOSTRAZIONE.** Analiticamente è possibile dimostrare la tesi nel modo seguente.
+**DIMOSTRAZIONE.** Analiticamente è possibile dimostrare la tesi nel modo seguente.$$\begin{align} \overline{z_1+z_2} &= \overline{(a+ib)+(a'+ib')}\\ &= \overline{(a+a')+i(b+b')} \\ &= (a+a')-i(b+b')\\ &= (a-ib)+(a'-ib') \\ &= \overline{z_1} + \overline{z_2}\  \blacksquare \end{align}$$
 
 **PROP 3.2.** $$\overline{z_1 \cdot z_2} = \overline{z_1} \cdot \overline{z_2}$$
-**DIMOSTRAZIONE.** Analogamente, [DIMOSTRAZIONE DA FARE]
+**DIMOSTRAZIONE.** Analogamente, $$\begin{align}\overline{z_1\cdot z_2} &= \overline{(a+ib)(a'+ib')} \\ &= \overline{(aa'-bb')+i(ab'+a'b)} \\ &= aa'-bb'-i(ab'+a'b) \end{align}$$e sviluppando $\overline{z_1}\cdot\overline{z_2}$ otteniamo l'identità $$\begin{align}\overline{z_1} \cdot \overline{z_2} &= \overline{(a+ib)} \cdot \overline{(a'+ib')} \\ &= (a-ib) \cdot(a'-ib') \\ &= aa'-iab'-ia'b+(i^2)bb' \\ &= aa'-bb'-i(ab'+a'b)\end{align}$$che è esattamente uguale all'espressione ottenuta prima; pertanto si considera la tesi vera. $\blacksquare$
 
 **PROP 3.3.** $$\begin{align} \overline{z} = z \  &\iff \text{Im}(z) = 0 \\ &\iff z = \text{Re}(z) \\ &\iff z \in \mathbb{R}\end{align}$$
 **PROP 3.4.** Sia $z = a+ib$, allora $$z+\overline{z} = (a+ib)+(a-ib) = 2a = 2\text{Re}(z)$$
