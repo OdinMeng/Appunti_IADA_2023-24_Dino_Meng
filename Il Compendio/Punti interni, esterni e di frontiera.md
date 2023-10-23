@@ -3,7 +3,7 @@ data: 2023-10-20
 corso: "[[Analisi Matematica I]]"
 argomento: Punti interni, esterni e di frontiera
 tipologia: appunti
-stato: "0"
+stato: "1"
 ---
 *Definizioni di punti interni, punti interni e punti di frontiera. Esempi.*
 - - -
@@ -13,11 +13,10 @@ Questo argomento presuppone la conoscenza dell'argomento di [[Intervalli]].
 **DEF 1.1.** Sia $E \subseteq \mathbb{R}$ e $x_0 \in \mathbb{R}$, si definisce $x_0$ **interno** a $E$ se viene verificato che $$\exists r > 0 : ]x_0-r, x_o+r[\  \subseteq E$$ovvero se esiste un *intorno* di $x_0$ in $E$ ([[Intorni]], **DEF 3.1.**).
 
 **DEF 1.2.** Chiamo **l'insieme dei punti interni a $E$** come $E^{\circ}$. 
-
 ## Esempio
 **ESEMPIO 1.1.** Sia $$E = \{1\} \cup [2, 3)$$e voglio trovare *l'insieme dei punti interni* $E^{\circ}$.
 Per farlo devo innanzitutto disegnare il grafico di $E$ per poter capire come procedere.
-[GRAFICO DI E]
+![[Pasted image 20231022155526.png]]
 Ora *"provo"* ogni numero fissando $x_0$ il numero scelto;
 - Scegliendo $x_0 = 1$ vedo chiaramente che non è *punto interno*, in quanto è impossibile che esista un intorno centrato a raggio r ad esso. 
 - Scegliendo $x_0 = 2$ vedo che neanche questo è un *punto interno*; non riesco a definire un intorno centrato tale che a *"sinistra"* di $2$ c'è un punto appartenente a $E$. 
@@ -29,7 +28,7 @@ Ora *"provo"* ogni numero fissando $x_0$ il numero scelto;
 Quindi $$x_0 \text{ è esterno} \iff \exists r >0: (x_0-r, x_0 + r) \subseteq \mathcal{C}_{\mathbb{R}}E$$
 ## Esempio
 **ESEMPIO 2.1.** Considerando l'esempio di prima con $$E = \{1\} \cup [2, 3)$$ora vogliamo trovare *l'insieme di tutti i punti esterni*. Allora usando lo stesso grafico di prima, faccio esattamente i stessi procedimenti di prima considerando però il *complemento di $E$*, ovvero tutti i punti che non appartengono ad $E$. 
-[ GRAFICO DA FARE ]
+![[Pasted image 20231022155547.png]]
 Usando la stessa procedura in **ESEMPIO 1.1.**, troviamo che $$\{\text{punti esterni di }E\} = (-\infty, 1) \cup(1,2) \cup(3, + \infty)$$
 # 3. Punti di frontiera
 **DEF 3.1.** Un punto $x_0 \in \mathbb{R}$ si dice **frontiera per** $E$ se questo punto *non è ne interno ne esterno ad* $E$. 
@@ -40,7 +39,7 @@ Usando la stessa procedura in **ESEMPIO 1.1.**, troviamo che $$\{\text{punti est
 ## Esempi
 **ESEMPIO 3.1.** Considerando lo stesso esempio di prima, ovvero $$E = \{1\} \cup [2, 3)$$vogliamo trovare $\partial E$.
 Procedendo con lo stesso disegno, cerchiamo di *"provare"* ogni punto per trovare elementi di $\partial E$.
-[GRAFICO DA INSERIRE ]
+![[Pasted image 20231022155603.png]]
 - $x_0 = 0$; Questo non è elemento di $\partial E$, in quanto posso facilmente trovare un intorno che contenga *solo* elementi del complemento di $E$.
 - $x_0 = 1$; Provando a considerare ogni intorno di $x_0$ trovo che deve per forza dev'esserci un punto sia in $E$ che nel suo complemento.
 - $x_0 = 2$; Stesso discorso analogo di prima.
@@ -49,7 +48,7 @@ Procedendo con lo stesso disegno, cerchiamo di *"provare"* ogni punto per trovar
 
 **ESEMPIO 3.2.** Consideriamo finalmente dei casi diversi da quelli esaminati prima. Sia $$E = \mathbb{Q} \cap (1,2)$$ovvero tutti i numeri *razionali* compresi tra *1, 2* esclusi.
 Disegnando di nuovo un disegno,
-[ GRAFICO DA FARE ]
+![[Pasted image 20231022155622.png]]
 Scopro le seguenti:
 - $E^{\circ} = \emptyset$; infatti in questo insieme *non* vi ci sono punti interni, in quanto l'*assioma di separazione*  non vale in $\mathbb{Q}$ ([[Assiomi dei Numeri Reali]], **S)**, **OSS 6.2.** ); quindi ci sono sempre dei *"buchi"* tra due numeri razionali, ovvero dei numeri irrazionali. Infatti è possibile dimostrare che i numeri irrazionali sono *densi* in $\mathbb{R}$.
 - $\partial E = [1, 2]$; qui si verifica un fenomeno strano, ovvero che si verifica che $\partial E$ è più *"grande"* di $E$ stessa. 

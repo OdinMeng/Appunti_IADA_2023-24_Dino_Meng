@@ -3,7 +3,7 @@ data: 2023-10-16
 corso: "[[Analisi Matematica I]]"
 argomento: Forma Trigonometrica dei Numeri Complessi
 tipologia: appunti
-stato: "0"
+stato: "1"
 ---
 *Rappresentazione dei numeri complessi come un $z$ associato a modulo e argomento; argomento come la classe di equivalenza dell'argomento principale; nuova interpretazione della moltiplicazione; esempi; Formula di De Moivre.*
 - - -
@@ -11,7 +11,7 @@ stato: "0"
 Oltre alla rappresentazione *"algebrica"* dei numeri complessi $\mathbb{C}$ ([[Rappresentazione dei Numeri Complessi]]), è possibile anche considerare un'altra rappresentazione che fa uso delle [[Funzioni trigonometriche]]. 
 
 **NOZIONE.** Prendiamo un $z \in \mathbb{C}$, che geometricamente vuol dire
-[ GRAFICO DA FARE ]
+![[Pasted image 20231022151510.png]]
 Allora secondo le definizioni del *seno* e del *coseno* ([[Funzioni trigonometriche]], **DEF 1.**) possiamo considerare $$\begin{align}&a = \cos\alpha \cdot |z| \\ &b = \sin\alpha \cdot |z| \end{align}$$dove $|z|$ rappresenta il *modulo* di $z$. ([[Operazioni sui Numeri Complessi]], **DEF 4.**)
 Dunque $$z = a+ib = |z|(\cos\alpha+i\sin\alpha)$$
 e lo si può scrivere come $$z \sim (|z|, [\alpha])$$che si legge come "$z$ *lo rappresento come* $(|z|, [\alpha])$".
@@ -26,7 +26,7 @@ e lo si può scrivere come $$z \sim (|z|, [\alpha])$$che si legge come "$z$ *lo 
 **ESEMPIO 1.1.a.** Prendendo $z = 1+i$, voglio trovare la sua rappresentazione trigonometrica.
 Innanzitutto trovo il suo *modulo* $|z|$ che per definizione è $\sqrt{1^2+1^2} = \sqrt{2}$.
 Dopodiché trovo il suo *argomento*. Per farlo bisogna considerare la *geometria elementare*, nel senso che se abbiamo un triangolo del tipo
-[GRAFICO DA FARE]
+![[Pasted image 20231022151531.png]]
 allora chiaramente si evince che l'angolo $\alpha$ è $\frac{\pi}{4}$.
 
 **ESEMPIO 1.1.b.** $z = 1+i0$; allora chiaramente $$z \sim (1,0)$$
@@ -64,8 +64,8 @@ Notiamo che da $k=n$ (ovvero dalla $n+1$-esima soluzione) in poi otteniamo eleme
 ## 3.1. Esempio
 **ESEMPIO 3.1.** Trovare tutte le soluzioni $z \in \mathbb{C}$ tali che $$z^5=1$$
 Considerando ciò detto prima, ho le soluzioni $$\begin{align}&z_1 \sim (1, [0])=1\\&z_2 \sim(1, [\frac{2\pi}{5}])= \cos(\frac{2\pi}{5})+i\sin(\frac{2\pi}{5})\\ &z_3 \sim (1, [\frac{2(2)\pi}{5}]) = (1, [\frac{4\pi}{5}])\\ &z_4 \sim (1, [\frac{2(3)\pi}{5}]) = (1, [\frac{6\pi}{5}]) \\ &z_5 \sim(1, [\frac{2(4)\pi}{5}]) =(1, [\frac{8\pi}{5}])\end{align}$$
-Graficamente posso prendere il *piano di Argand-Gauss* ([[Rappresentazione dei Numeri Complessi]]), prendere un cerchio con $r=1$, dividere i due *semicerchi* in 5 parti, poi prendere l'$n$-esimo punto del cerchio tagliato. Inoltre se collego questi punti, ottengo un *pentagono*. 
-[ GRAFICO DA INSERIRE ]
+Graficamente posso prendere il *piano di Argand-Gauss* ([[Rappresentazione dei Numeri Complessi]]), prendere un cerchio con $r=1$, dividere i due *semicerchi* in 5 parti, poi prendere il secondo, quarto, sesto e ottavo punto della sezione; infine se li collego ottengo un *pentagono*. 
+![[Pasted image 20231022151553.png]]
 
 ## 3.2. Teorema fondamentale dell'algebra
 **TEOREMA 3.2.**

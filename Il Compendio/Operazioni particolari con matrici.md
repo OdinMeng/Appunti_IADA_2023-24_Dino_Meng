@@ -42,7 +42,7 @@ In questo modo, se volessimo aggiungere la seconda colonna di quantitativi $\beg
 ## 2.2. Definizione generale
 **DEF 2.2.1.** Siano $A \in M_{1,n}(\mathbb{R})$, $B \in M_{n, 1}(\mathbb{R})$; allora definiamo il **prodotto riga per colonna** come *la combinazione lineare* data da $$A_{(1)} \cdot B^{(1)} := a_{11}b_{11}+\ldots+a_{1n}b_{n1} = \sum_{i=1}^n a_{1i}b_{i1}$$
 
-**DEF 2.2.2.** In generale, se $A \in M_{m,p}(\mathbb{R})$ e $B \in M_{p, n}(\mathbb{R})$ allora definiamo il **prodotto** $A \cdot B$ come la *matrice $m \times n$* la cui *entrata di posto $ij$* è data dalla seguente: $$(A\cdot B)_{ij} := A_{(i)} \cdot B^{(i)} = \sum_{k=1}^p a_{1k}b_{k1}$$
+**DEF 2.2.2.** In generale, se $A \in M_{m,p}(\mathbb{R})$ e $B \in M_{p, n}(\mathbb{R})$ allora definiamo il **prodotto** $A \cdot B$ come la *matrice $m \times n$* la cui *entrata di posto $ij$* è data dalla seguente: $$(A\cdot B)_{ij} := A_{(i)} \cdot B^{(j)} = \sum_{k=1}^p a_{1k}b_{k1}$$
 **OSS 2.2.1.** Notiamo che il *prodotto tra due matrici $A \cdot B$* è definita solo se il numero di colonne di $A$ coincide con il numero di righe di $B$. 
 Inoltre, la *"matrice risultante"* diventa una matrice $a \times b$ (ove $a$ è il numero delle colonne di $A$, $b$ il numero di righe di $B$).
 

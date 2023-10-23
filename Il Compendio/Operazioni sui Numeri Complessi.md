@@ -3,7 +3,7 @@ data: 2023-10-16
 corso: "[[Analisi Matematica I]]"
 argomento: Operazioni sui Numeri Complessi
 tipologia: appunti
-stato: "0"
+stato: "1"
 ---
 *Tutte le operazioni possibili sui numeri complessi: somma componente per componente, moltiplicazione, campo $(\mathbb{R}^2, +, \cdot)$ come $\mathbb{C}$; alcune proprietà di queste operazioni. Complesso coniugato e modulo di un numero complesso $z$; proprietà di queste operazioni, focus sulla disuguaglianza triangolare.*
 - - -
@@ -59,7 +59,7 @@ Allora notiamo che valgono le seguenti: $$\begin{align}&\text{a. } (a,0) \cdot(b
 **PROP 3.1.** Questa funzione ha delle proprietà; presentiamo la prima.
 $$\begin{align}\forall z_1, z_2; \overline{z_1+z_2}  = \overline{z_1} + \overline{z_2}\end{align}$$
 Graficamente, 
-[ GRAFICO DA INSERIRE ]
+![[Pasted image 20231022151340.png]]
 **DIMOSTRAZIONE.** Analiticamente è possibile dimostrare la tesi nel modo seguente.$$\begin{align} \overline{z_1+z_2} &= \overline{(a+ib)+(a'+ib')}\\ &= \overline{(a+a')+i(b+b')} \\ &= (a+a')-i(b+b')\\ &= (a-ib)+(a'-ib') \\ &= \overline{z_1} + \overline{z_2}\  \blacksquare \end{align}$$
 
 **PROP 3.2.** $$\overline{z_1 \cdot z_2} = \overline{z_1} \cdot \overline{z_2}$$
@@ -94,7 +94,7 @@ $$|z| \geq |\text{Re}(z)| \land|z| \geq |\text{Im}(z)|$$
 **PROP 4.7.** *La disuguaglianza triangolare.*
 Infine presentiamo la *proprietà fondamentale* del *modulo*. $$\begin{align}&\forall z_1, z_2 \in \mathbb{C}, \\&|z_1+z_2| \leq |z_1|+|z_2| \end{align}$$Che è *simbolicamente* simile alla *disuguaglianza triangolare* del [valore assoluto](Funzioni%20di%20potenza,%20radice%20e%20valore%20assoluto) (**OSS 3.1.1.**)
 Però in questo contesto (ovvero del campo $\mathbb{C}$) la proprietà è ancora più *geometricamente suggestiva*; infatti usando il *Piano di Argand-Gauss* ([[Rappresentazione dei Numeri Complessi]]), si ha: 
-[ GRAFICO DA FARE ]
+![[Pasted image 20231022151409.png]]
 Ovvero che la somma della lunghezza due cateti di un triangolo rettangolo è *sempre* più lunga della lunghezza dell'ipotenusa.
 	**DIMOSTRAZIONE.**
 	Considero i seguenti: siano $z_1, z_2 \in \mathbb{C}$; allora $$\begin{align}|z_1+z_2|^2 &= (z_1+z_2)\overline{(z_1+z_2)}\\ &= (z_1+z_2)(\overline{z_1}+\overline{z_2}) \\  &= z_1\overline{z_1}+z_1\overline{z_2} + \overline{z_1}z_2 + z_2\overline{z_2} \\ &= |z_1|^2 + z_1\overline{z_2}+ \overline{z_1\overline{z_2}}+|z_2|^2 \\ |z_1+z_2|^2&=|z_1|^2 + 2\text{Re}(z_1\overline{z_2})+|z|^2 \end{align}$$A questo punto mi ricordo che $$|\text{Re}(z)| \leq |z|$$allora $$\begin{align}|z_1|^2 + 2\text{Re}(z_1\overline{z_2})+|z|^2 &\leq |z_1|^2+2|z_1\overline{z_2}|+|z_2|^2  \\ &\leq|z_1|^2+2|z_1||\overline{z_2}|+|z_2|^2 \\ &\leq |z_1|^2+2|z_1||z_2|+|z_2|^2 \\ |z_1+z_2|^2 &\leq (|z_1|+|z_2|)^2 \\|z_1+z_2| &\leq |z_1|+|z_2| \ \blacksquare\end{align}$$

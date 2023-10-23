@@ -62,6 +62,6 @@ In altre parole l'insieme delle soluzione di $A \cdot X = b$ è $$S = \{s \in K^
 **DEF 1.4.1.** Il *sistema lineare omogeneo* $A \cdot X = 0$ si dice il **sistema lineare omogeneo associato** al sistema $A \cdot X = b$.
 
 **DIMOSTRAZIONE 1.4.** Per pianificare la struttura di questo teorema, facciamo due considerazioni sulla [logica formale](Connettivi), in particolare sulla *doppia implicazione* ([[Connettivi]]).
-In questo teorema, da un punto di vista logico, vuole dire che $$\text{s è soluzione} \iff s=\tilde{s}+s_0$$allora vogliamo dimostrare che entrambe le *implicazioni* sono vere; ovvero nel senso che $$\begin{cases}s \text{ è soluzione} \implies s=\tilde{s}+s_0 \\ s=\tilde{s}+s_0 \implies s \text{ è soluzione}\end{cases}$$
+Questo teorema, da un punto di vista logico, vuole dire che $$\text{s è soluzione} \iff s=\tilde{s}+s_0$$allora vogliamo dimostrare che entrambe le *implicazioni* sono vere; ovvero nel senso che valgono $$\begin{cases}s \text{ è soluzione} \implies s=\tilde{s}+s_0 \\ s=\tilde{s}+s_0 \implies s \text{ è soluzione}\end{cases}$$
 ... [ DA FARE IN CLASSE ]
 

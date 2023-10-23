@@ -3,7 +3,7 @@ data: 2023-10-16
 corso: "[[Analisi Matematica I]]"
 argomento: Rappresentazione dei Numeri Complessi
 tipologia: appunti
-stato: "0"
+stato: "1"
 ---
 *Rappresentazione dei numeri complessi come somma di parte reale e parte immaginaria; il piano di Argand-Gauss.*
 - - -
@@ -26,7 +26,7 @@ Allora posso scrivere il numero complesso $(a,b)$ come il seguente: $$\begin{ali
 # 2. Piano di Argand-Gauss
 Se prendiamo il *piano cartesiano $\pi$* applicando le regole definite per $\mathbb{C}$, allora otterremo il piano di *Gauss* (oppure di *Argand-Gauss*), dove ogni punto del piano è un *numero complesso*.
 Eccovi un esempio grafico:
-[ GRAFICO DA FARE ]
+![[Pasted image 20231022151201.png]]
 
 Infatti, *geometricamente* un punto $z$ può rappresentare un *vettore geometrico* ([[Vettori Liberi]]) con punto di applicazione $(0,0)$.
 Chiamiamo un punto del piano come $z$, che può essere scritto come $$z = \text{Re}(z) +i\text{Im}(z)$$

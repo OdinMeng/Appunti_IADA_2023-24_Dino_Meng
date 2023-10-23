@@ -1,6 +1,6 @@
 ---
 data: 2023-10-17
-corso: "[[Analisi Matematica I]]"
+corso: "[[Algebra Lineare ed Elementi di Geometria]]"
 argomento: Sistemi Lineari
 tipologia: appunti
 stato: "1"

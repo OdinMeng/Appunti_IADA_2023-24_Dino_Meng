@@ -13,3 +13,6 @@ Dal 06.10.2023:
 
 Dal 12.10.2023:
 - Aggiunto la sezione "Programmazione - Esercitazioni" per eventuali soluzioni proposte da me degli esercizi delle dispense
+
+ANNUNCIO IMPORTANTE (23.10.2023)
+- Gli appunti di programmazione *non* verranno mai più aggiornati in quanto si ritiene la dispensa sufficiente come materiale di studio.
