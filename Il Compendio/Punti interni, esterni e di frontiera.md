@@ -10,7 +10,7 @@ stato: "1"
 # 0. Preambolo
 Questo argomento presuppone la conoscenza dell'argomento di [[Intervalli]].
 # 1. Punti interni
-**DEF 1.1.** Sia $E \subseteq \mathbb{R}$ e $x_0 \in \mathbb{R}$, si definisce $x_0$ **interno** a $E$ se viene verificato che $$\exists r > 0 : ]x_0-r, x_o+r[\  \subseteq E$$ovvero se esiste un *intorno* di $x_0$ in $E$ ([[Intorni]], **DEF 3.1.**).
+**DEF 1.1.** Sia $E \subseteq \mathbb{R}$ e $x_0 \in \mathbb{R}$, si definisce $x_0$ **interno** a $E$ se viene verificato che $$\exists r > 0 : ]x_0-r, x_o+r[\  \subseteq E$$ovvero se esiste un *intorno* di $x_0$ che è contenuto in $E$ ([[Intorni]], **DEF 3.1.**).
 
 **DEF 1.2.** Chiamo **l'insieme dei punti interni a $E$** come $E^{\circ}$. 
 ## Esempio
@@ -32,7 +32,7 @@ Quindi $$x_0 \text{ è esterno} \iff \exists r >0: (x_0-r, x_0 + r) \subseteq \m
 Usando la stessa procedura in **ESEMPIO 1.1.**, troviamo che $$\{\text{punti esterni di }E\} = (-\infty, 1) \cup(1,2) \cup(3, + \infty)$$
 # 3. Punti di frontiera
 **DEF 3.1.** Un punto $x_0 \in \mathbb{R}$ si dice **frontiera per** $E$ se questo punto *non è ne interno ne esterno ad* $E$. 
-**OSS 3.1.** Questo equivale a negare la proposizione $$[\exists r > 0: (x_0-r, x_0+r)\subseteq E] \vee [\exists r'>0: (x_0-r', x_0+r')  \subseteq \mathcal{C}E]$$che secondo le *leggi di De Morgan* e delle regole osservate ([[Logica formale - Sommario]]) diventa $$[\forall r >0, (x_0-r, x_0+r) \not\subseteq E] \land [\forall r'>0, (x_0-r', x_0+r') \not\subseteq \mathcal{C}E]$$e dato che $$A \not\subseteq B \iff A \cap \mathcal{C}_{U}B \neq \emptyset$$ovvero che un insieme $A$ non è sottoinsieme di $B$ se e solo se l'intersezione tra $A$ e il complemento di $B$ non è vuota (ovvero ha almeno *un elemento*), questo diventa $$[\forall r >0, (x_0 - r, x_0+r) \cap \mathcal{C}E \neq \emptyset] \land [\forall r' > 0, (x_0 - r', x_0+r') \cap E \neq \emptyset]$$ovvero che deve valere due condizioni: 
+**OSS 3.1.** Questo equivale a negare la proposizione $$[\exists r > 0: (x_0-r, x_0+r)\subseteq E] \vee [\exists r'>0: (x_0-r', x_0+r')  \subseteq \mathcal{C}E]$$che secondo le *leggi di De Morgan* e delle regole osservate ([[Logica formale - Sommario]]) diventa $$[\forall r >0, (x_0-r, x_0+r) \not\subseteq E] \land [\forall r'>0, (x_0-r', x_0+r') \not\subseteq \mathcal{C}E]$$e dato che $$A \not\subseteq B \iff A \cap \mathcal{C}_{U}B \neq \emptyset$$ovvero che un insieme $A$ non è sottoinsieme di $B$ se e solo se l'intersezione tra $A$ e il complemento di $B$ non è vuota (ovvero ha almeno *un elemento*), questo diventa $$[\forall r >0, (x_0 - r, x_0+r) \cap \mathcal{C}E \neq \emptyset] \land [\forall r' > 0, (x_0 - r', x_0+r') \cap E \neq \emptyset]$$ovvero che deve valere la seguente: 
 - *Ogni* intorno di $x_0$ deve contenere *sia* punti di $E$ e il suo complemento $\mathcal{C}_\mathbb{R}E$.
 
 **DEF 3.2.** Definiamo **l'insieme dei punti di frontiera di** $E$ come $$\partial E$$e si legge come *"delta storto E"*

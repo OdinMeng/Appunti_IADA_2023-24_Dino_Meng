@@ -110,7 +110,7 @@ Ora, considerando che gli insiemi sono pure *dimezzati*, so che (**OSS 3.1.2.1.*
 $$\begin{align}b_n - a_n &= \frac{b_{n-1}-a_{n-1}}{2}\\ &= \frac{b_{n-2}-a_{n-2}}{2^2} \\ \ldots &\text{andando avanti finchè si raggiunge }n \ldots\\ &=\frac{b_0-a_0}{2^n}\end{align}$$
 Ora mi ricordo che $n \leq 2^n$ (che può essere dimostrata per *induzione*)
 Allora si può *"maggiorare"* l'espressione di prima, ovvero$$a_n-b_n=\frac{b_0-a_0}{2^n} \leq \frac{b_0-a_0}{n}$$ovviamente ricordandosi di cambiare il segno in quanto i numeri li troviamo al denominatore. 
-Ora, supponendo per assurdo che $\alpha < \beta$ ovvero nel senso che l'intervallo $[\alpha, \beta]$ ha almeno più di un elemento, allora avremmo che $$\forall n,\frac{b_0-a_0}{n} \geq b_n-a_n \geq \beta-\alpha>0$$ovvero $$\forall n, \frac{b_0-a_0}{n} \geq \beta-\alpha > 0$$
+Ora, supponendo per assurdo che $\alpha < \beta$ ovvero nel senso che l'intervallo $[\alpha, \beta]$ ha  più di un elemento, allora avremmo che $$\forall n,\frac{b_0-a_0}{n} \geq b_n-a_n \geq \beta-\alpha>0$$ovvero $$\forall n, \frac{b_0-a_0}{n} \geq \beta-\alpha > 0$$
 che però per **TEOREMA 3.1.** è impossibile, ovvero nel caso che abbiamo ora stiamo descrivendo che esiste un punto $\beta - \alpha$ maggiore di $0$ che non è raggiungibile da $\frac{b_0-a_0}{n}$(quando invece è vero che tutti i punti $>0$ sono raggiungibili da tale espressione).
 Quindi, per assurdo, raggiungiamo alla conclusione che $$\beta = \alpha$$ovvero abbiamo l'intorno $$[\beta, \beta] \text{ o }[\alpha, \alpha]$$che comprendono solo il punto $\xi$. $\blacksquare$
 

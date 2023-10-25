@@ -44,7 +44,7 @@ E graficamente questa corrisponde ad una vera *palla*. Letteralmente. (*Figura 2
 Graficamente,
 ![[Pasted image 20231022155308.png]]
 
-**DEF 3.2.** Prendo $\tilde{\mathbb{R}}$ l'*insieme dei reali estesi*, ovvero $$\tilde{\mathbb{R}} := \mathbb{R} \cup \{-\infty, +\infty\}$$e definisco **l'intorno di $+\infty$** un *qualunque sottoinsieme $E \subseteq \mathbb{R}$* che contiene una *semiretta* $]a, +\infty[$; ovvero un insieme di tutti i numeri sopra un certo valore $a$.
+**DEF 3.2.** Prendo $\tilde{\mathbb{R}}$ l'*insieme dei reali estesi*, ovvero $$\tilde{\mathbb{R}} := \mathbb{R} \cup \{-\infty, +\infty\}$$e definisco **l'intorno di $+\infty$** un *qualunque sottoinsieme $E \subseteq \mathbb{R}$* che contiene una *semiretta* $]a, +\infty[$; ovvero un insieme *superiormente illimitato* ([[Insiemi limitati, maggioranti, massimo e teorema dell'estremo superiore]], **DEF 1.4.**) del tipo $]a, +\infty[$.
 ![[Pasted image 20231022155322.png]]
 ## Esempi
 **ESEMPIO 3.1.** L'intervallo $]3,7[$ è intorno di $3,5$; infatti è possibile prendere $r = 0,5$ e ottenere la *palla aperta di centro $3,5$ e di raggio $0,5$* che equivale a $$]3, 4[$$che infatti è contenuto nell'intervallo $]3, 7[$.

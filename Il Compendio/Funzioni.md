@@ -83,3 +83,29 @@ Si illustra la funzione inversa di $f$ con un diagramma.
 ![[Pasted image 20231001210403.png]]
 # TEOREMA 1. L'esistenza della funzione inversa $f^-1$
 Una funzione $f: A \mapsto B$ ha la sua inversa $$f^-1: B \mapsto A$$**se e solo se** è *biettiva*, ovvero se è entrambi *iniettiva* e *suriettiva*.
+
+# DEF 7. Insieme contro immagine
+Sia $$f: A \longrightarrow B$$ove $\tilde{A} \subseteq A, \tilde{B} \subseteq B$. 
+Allora definisco **l'insieme contro immagine** $$f^{\leftarrow}(\tilde{B}) = \{x \in A: f(a) \in \tilde{B}\}$$ovvero gli elementi di $A$ tali per cui le loro immagini $f(a)$ appartengono all'insieme $\tilde{B}$. 
+
+# DEF 8. Funzione monotona, crescente o decrescente.
+**DEF 8.** Sia $$f : A \longrightarrow B$$e diciamo che questa sia **monotona** se sussistono una delle seguenti condizioni:
+$$\begin{align}&\text{i. }\forall x, y \in A; x \leq y \implies f(x)\leq y\\ &\text{ii. }\forall x, y \in A; x < y \implies f(x)< y \\ &\text{iii. }\forall x, y \in A; x \leq y \implies f(x)\geq y \\ &\text{iv. }\forall x, y \in A; x <y \implies f(x) > y\end{align} $$in particolare,
+- se sussiste la *i.*, allora la funzione è **crescente**;
+- invece per la *ii.*, la funzione si dice **strettamente crescente**.
+- Analoghi i discorsi per *iii, iv.* in cui diciamo che la funzione è **decrescente o strettamente decrescente.
+
+# DEF 9. Funzione pari e dispari
+**PREMESSA.** Siano $A, B \subseteq \mathbb{R}$, sia $A$ *simmetrico rispetto all'origine* (ovvero $\forall x \in A, -x \in A)$.
+Sia la funzione $f$ $$f: A \longrightarrow B$$e la chiamo:
+**DEF 9.1.** Una funzione **pari** se accade che $$f(x) = f(-x)$$
+**DEF 9.2.** Una funzione **dispari** se $$f(x) = -f(-x)$$
+**ESEMPIO 9.1.** Osserviamo la funzione [potenza](Funzioni%20di%20potenza,%20radice%20e%20valore%20assoluto) ([[Funzioni di potenza, radice e valore assoluto]], **DEF 1.1.**) $p_n(x)$.
+La definizione appena data da noi ci *"suggerisce"* che per $n$ pari, $p_n$ è una funzione pari; similmente $p_n$ è dispari se $n$ è dispari.
+![[Pasted image 20231025224442.png]]
+
+# DEF 10. Funzione periodica
+**DEF 10.** Sia $T > 0$, $A \subseteq \mathbb{R}$ tale che $$\forall k \in \mathbb{Z}, \forall x \in A; x + Tk \in A$$
+Sia ora una funzione $f$ del tipo $$f: A \longrightarrow \mathbb{R}$$è **periodica** se è vera che $$\forall x, k; f(x) = f(x+Tk)$$
+**ESEMPIO 10.1.** Le [[Funzioni trigonometriche]] sono periodiche: infatti secondo la **PROP 2.3.**, abbiamo $T = 2\pi$. Ovvero $$\sin(x) = \sin(x+2\pi k), \forall k \in \mathbb{Z}$$analogo il discorso per $\cos$.
+![[Pasted image 20231025225605.png]]
