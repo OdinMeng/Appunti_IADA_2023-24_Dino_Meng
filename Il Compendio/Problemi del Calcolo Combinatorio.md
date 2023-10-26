@@ -3,7 +3,7 @@ data: 2023-10-03
 corso: "[[Analisi Matematica I]]"
 argomento: Problemi del Calcolo Combinatorio
 tipologia: appunti
-stato: "1"
+stato: "0"
 ---
 *Significato del calcolo combinatorio; quali problemi esso mira di risolvere. Alcuni problemi: disposizioni con ripetizioni, disposizione di oggetti a m a m, permutazioni di n oggetti e combinazioni. Alcuni problemi misti del calcolo combinatorio*
 - - -
@@ -77,7 +77,7 @@ Anche qui si tratta di un caso di *combinazioni* in quanto non tiene conto dell'
 **PROBLEMA 3.3.** Ho una scacchiera $5 \times 5$ e $6$ pedine uguali.
 *In quanti modi posso mettere le pedine sulla scacchiera, se voglio che tutte le righe e tutte le colonne abbiano almeno una pedina?*
 
-> [!warning] Questa è semplicemente la MIA soluzione proposta, quindi può essere che risulti sbagliata.
+> [!warning] Soluzione controllata con D.D.S.: Parzialmente corretta ma manca un pezzo.
 
 **PROPOSTA DELLA SOLUZIONE.** Ragioniamo nel seguente modo:
 1. Voglio porre le prime $5$ pedine in modo tale che il vincolo venga rispettato (quindi tutte le righe e le colonne hanno almeno una pedina piazzata), poi per porre la $6$-esima pedina liberamente.
