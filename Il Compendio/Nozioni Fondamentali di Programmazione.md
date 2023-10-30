@@ -3,7 +3,7 @@ data: 2023-09-29
 corso: "[[Introduzione alla Programmazione e Laboratorio]]"
 argomento: Nozioni Fondamentali di Programmazione
 tipologia: appunti
-stato: "0"
+stato: "1"
 ---
 *Elenco di nozioni fondamentali di programmazione: programma, algoritmo, input/output, variabile, stato di programma. Assegnamento, sintassi.*
 - - -

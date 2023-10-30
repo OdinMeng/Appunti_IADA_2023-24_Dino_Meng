@@ -33,8 +33,13 @@ Analogamente, un *sistema lineare* si dice **non omogeneo** se questo sistema no
 
 ## 1.4. Forma compatta di un sistema
 **DEF 1.4.** Dato un *sistema lineare* come in **DEF 1.**, definiamo la la matrice $A$ dei *coefficienti* $$A = (a_{ij}); \begin{align}&i \in\{1, \ldots, m\}\\ &j \in \{1, \ldots, n\}\end{align}; A \in M_{m,n}(K)$$e $X$ la $n$-upla delle incognite, $b$ la $n$-upla dei termini noti, ovvero $X, b \in M_{m,1}(K)$ dove $$X= \begin{pmatrix}x_1\\x_2 \\ \vdots \\ x_m \end{pmatrix}; b = \begin{pmatrix}b_1\\b_2\\\vdots\\b_m \end{pmatrix}$$allora posso scrivere il *sistema lineare* in **forma compatta** come $$A \cdot X = b$$
+## 1.5. Equivalenza di due sistemi
 **DEF 1.5.** Dato due *sistemi lineari*, queste si dicono **equivalenti** se ammettono le *medesime soluzioni*; ovvero se i loro insiemi delle soluzioni sono uguali.
+Più precisamente, dati due sistemi lineari $$Ax = b \text{ e }A'x = b'$$ove $A \in M_{m,n}(K)$ e $b \in K^m$; invece $A' \in M_{m'n}(K)$ e $b' = K^{m'}$, si dicono equivalenti quando hanno le medesime *soluzioni*.
+
 **OSS 1.2.** Questa nozione è molto utile per risolvere dei sistemi lineari, quindi uno degli obbiettivi principali di questo corso sarà di trovare le operazioni che trasformano dei sistemi lineari in un altro mantenendoli *equivalenti*.
+
+**OSS 1.3.** Osserviamo che da questa definizione *puntuale* di sistema equivalente devono avere lo *stesso* numero di incognite $m$ ma possono avere numeri *diversi* di equazioni $m, m'$.
 # 2. Esempi
 Tentiamo di applicare queste nozioni mediante degli esempi.
 

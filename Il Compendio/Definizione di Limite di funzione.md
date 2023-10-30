@@ -69,7 +69,7 @@ Allora definisco le seguenti:
 **DEF 3.1. (DALLA DISPENSA)** Avevamo appena osservato che coi limiti *destri* e/o *sinistri* abbiamo semplicemente fatto una *restrizione* all'insieme $U\diagdown\{x_0\}$ di cui si cerca di verificare che $f(U\diagdown\{x_0\}) \subseteq V$. Dunque definiamo il **limite della funzione ristretta a $B$**, un qualunque sottoinsieme di $E$ per cui $x_0$ è di accumulazione: $$\lim_{x\to x_0}f_{|B}(x) = L$$ovvero $$\begin{gather}\forall V \text{ intorno di }L, \exists U \text{ intorno di }x_0: \forall x \in B, \\x \in U\diagdown\{x_0\} \implies f(x) \in V\end{gather}$$
 # 4. Strategia per verificare l'esistenza di limiti
 La nostra definizione presuppone che dobbiamo *eseguire* una serie *infinita* di verifiche per dimostrare che un limite esiste; infatti si dovrebbe scegliere tutti gli $\varepsilon > 0$ e trovare un $\delta$ associato.
-Vogliamo invece sviluppare una serie di *strategie* per verificare l'esistenza dei limiti, come i *teoremi* e le *proprietà* sui limiti come vedremo in [[Teoremi sui Limiti]], oppure *interpretando* la definizione del limite per poter trovare una *"formula"* che associa ad ogni epsilon un delta.
+Vogliamo invece sviluppare una serie di *strategie* per verificare l'esistenza dei limiti, come i *teoremi* e le *proprietà* sui limiti come vedremo in [[Teoremi sui Limiti di Funzione]], oppure *interpretando* la definizione del limite per poter trovare una *"formula"* che associa ad ogni epsilon un delta.
 
 **ESEMPIO 4.1.**
 Voglio verificare che $$\lim_{x \to 1} x^2+1=2$$ovvero, interpretando la definizione otteniamo il seguente da verificare: $$\forall \varepsilon > 0, \exists \delta > 0: \forall x \in E, 0<|x-1|<\delta \implies |x^2+1-2| < \varepsilon$$

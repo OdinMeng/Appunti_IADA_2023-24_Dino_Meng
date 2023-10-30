@@ -61,7 +61,10 @@ Quindi disegniamo il seguente grafico:
 ![[Pasted image 20231017172619.png]]
 Da cui si evince che $$\begin{align}&\sin(\alpha \pm \beta) = \sin\alpha \cos\beta \pm sin\beta\cos\alpha \\ &\cos(\alpha \pm \beta) = \cos\alpha\cos\beta \mp \sin\alpha\sin\beta \end{align}$$
 Queste formule saranno molto importanti per le formule di *prostaferesi* e di *Werner*.
-
+## 2.4. Formule di prostaferesi
+*Recuperato dalla lezione del 26.10.2023*
+Voglio calcolare $\sin a + \sin b$. Allora riscrivo le *forme di sottrazione e di addizione*; $$\begin{gather}\sin(\alpha+\beta)=\sin\alpha\cos\beta+\sin\beta\cos\alpha \\ \sin(\alpha-\beta) = \sin\alpha\cos\beta-\sin\beta\cos\alpha \end{gather}$$e li sommo: $$\begin{align}\sin(\alpha+\beta)+\sin(\alpha-\beta) &= \sin\alpha\cos\beta+\sin\beta\cos\alpha-\sin\alpha\cos\beta+\sin\beta\cos\alpha \\ &= 2\sin\beta\cos\alpha\end{align}$$e ponendo $\alpha+\beta = a$, $\alpha-\beta = b$, (dunque $a+b = 2\alpha$ e $a-b=2\beta$) ottengo $$\begin{align} \sin a + \sin b = 2\sin\frac{a-b}{2}\cos\frac{a+b}{2}\end{align}$$ 
+Analogo il procedimento per $\cos\alpha + \cos\beta$.
 # 3. Definizione di arcocoseno e arcoseno
 **OSS 3.1.** Considero la funzione $\cos$, però con una restrizione al suo *dominio* e *codominio*. $$\begin{align}\cos_{[0, \pi]}: &\ [0, \pi] \longrightarrow [-1, 1] \\ & \ x \mapsto \cos(x) \end{align}$$Questa funzione allora è *biiettiva* ([[Funzioni]], **DEF 3.3.**); ovvero p sia *suriettiva* che *iniettiva* e *strettamente decrescente*.
 1. Questa è *iniettiva* in quanto considerando tutti gli $x \in [0, \pi]$ si tocca un *solo* punto ad ogni $x$ considerato. Inoltre è *strettamente decrescente* in quanto il valore parte da $\cos0 = 1$ e finisce con $\cos\pi = -1$. 
@@ -74,3 +77,11 @@ Analogamente si definisce $\arcsin$ considerando però la restrizione di $\sin_{
 Quindi $$\arcsin := \sin_{[-\frac{\pi}{2}, \frac{\pi}{2}]}$$
 Ecco alcuni grafici delle funzioni $\arccos$, $\arcsin$.
 ![[Pasted image 20231017172546.png]]
+
+# 4. Funzione tangente e arcotangente
+**DEF 4.1.** Definiamo la funzione **tangente** $\tan \alpha$ periodica in come $$\tan: \mathbb{R}\diagdown[\frac{\pi}{2}]_{\equiv \pi} \longrightarrow \mathbb{R}$$come il *rapporto* tra la funzione *seno* e *coseno*, ovvero $$\tan\alpha = \frac{\sin\alpha}{\cos\alpha}$$Notiamo che le funzioni $\sin, \cos$ sono periodiche di $2\pi$; quindi prendendo il rapporto abbiamo che $\tan$ è periodica di $\pi$. 
+Osservando i *limiti* ([[Esempi di Limiti di Funzione]], **ESEMPIO 5.3.**) di questa funzione possiamo disegnare il seguente grafico:
+[GRAFICO DA FARE]
+
+**DEF 4.2.** Se ho la restrizione della *tangente* in $]-\frac{\pi}{2}, \frac{\pi}{2}[$ allora ho: $$\tan_{|(-\frac{\pi}{2}, \frac{\pi}{2})}: (-\frac{\pi}{2}, \frac{\pi}{2}) \longrightarrow \mathbb{R}; x \mapsto \tan{x}$$e questa diventa *biiettiva*, quindi invertibile, posso definire l'**arcotangente** la sua funzione inversa: $$\arctan := (\tan_{|(-\frac{\pi}{2}, \frac{\pi}{2})})^{-1}$$
+[GRAFICO DA FARE]

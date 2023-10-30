@@ -3,7 +3,7 @@ data: 2023-10-20
 corso: "[[Algebra Lineare ed Elementi di Geometria]]"
 argomento: Teoremi sui Sistemi Lineari
 tipologia: appunti
-stato: "0"
+stato: "1"
 ---
 *Teoremi sui sistemi lineari; teorema di Cramer; teoremi di strutture per i sistemi lineari; da continuare*
 - - -
@@ -57,11 +57,24 @@ Infatti $\lambda \cdot 0 = 0$ e $0 + 0 = 0$ sono anche *soluzioni* in quanto son
 
 ## 1.4. Teorema di struttura per i sistemi lineari
 **TEOREMA 1.4.** (*di struttura per le soluzioni dei sistemi lineari*)
-Considero un *sistema lineare* $$A \cdot X = b$$con $A \in M_{m,n}(K)$ e $b \in K^n$. Sia $\tilde{s}$ una soluzione; allora un elemento $s \in K^n$ è soluzione di questo sistema lineare se e solo se possiamo scrivere $$s = \tilde{s} + s_0$$dove $s_0$ è una soluzione del *sistema lineare omogeneo* $$A \cdot X = 0$$
-In altre parole l'insieme delle soluzione di $A \cdot X = b$ è $$S = \{s \in K^n: s=\tilde{s} + s_0\ \text{ per un qualche }x_0 \text{ sia soluzione}\}$$
+Considero un *sistema lineare* $$A \cdot X = b$$con $A \in M_{m,n}(K)$ e $b \in K^n$. Sia $\tilde{s}$ una soluzione; allora un elemento $s \in K^n$ è soluzione di questo sistema lineare *se e solo* se possiamo scrivere $$s = \tilde{s} + s_0$$dove $s_0$ è una soluzione del *sistema lineare omogeneo* $$A \cdot X = 0$$
+In altre parole l'insieme delle soluzione di $A \cdot X = b$ è $$S = \{s \in K^n: s=\tilde{s} + s_0\ \text{ per un qualche }s_0 \text{ sia soluzione di }Ax =0\}$$
 **DEF 1.4.1.** Il *sistema lineare omogeneo* $A \cdot X = 0$ si dice il **sistema lineare omogeneo associato** al sistema $A \cdot X = b$.
 
 **DIMOSTRAZIONE 1.4.** Per pianificare la struttura di questo teorema, facciamo due considerazioni sulla [logica formale](Connettivi), in particolare sulla *doppia implicazione* ([[Connettivi]]).
 Questo teorema, da un punto di vista logico, vuole dire che $$\text{s è soluzione} \iff s=\tilde{s}+s_0$$allora vogliamo dimostrare che entrambe le *implicazioni* sono vere; ovvero nel senso che valgono $$\begin{cases}s \text{ è soluzione} \implies s=\tilde{s}+s_0 \\ s=\tilde{s}+s_0 \implies s \text{ è soluzione}\end{cases}$$
-... [ DA FARE IN CLASSE ]
+1. Dimostriamo la prima.
+   Supponiamo che $s$ sia una *soluzione* del sistema lineare $Ax = b$, quindi dobbiamo mostrare che *esiste* un $s_0 \in K^n$ di $Ax = 0$ tale che possiamo scrivere $$s =\tilde{s} + s_0$$Allora definiamo $s_0$ per costruzione, ovvero $s_0 := s - \tilde{s}$; perciò vale sicuramente che $s = \tilde{s} + s_0$. Allora ci resta da verificare che $s_0$ è effettivamente la soluzione del *sistema omogeneo associato*. Quindi $$\begin{align}&A \cdot s_0 \stackrel{?}=0 \\ \implies& A\cdot(s-\tilde{s}) = As -A\tilde{s} = b-b = 0  \ \\ \implies & A \cdot s_0 = 0 \  \blacksquare \end{align}$$
+2. Ora dimostriamo il viceversa.
+   Supponiamo dunque che esista un $s_0 \in K^n$ tale da essere soluzione del *sistema omogeneo associato*. Sia dunque $s := \tilde{s}+s_0$. Allora voglio mostrare che $s$ sia una soluzione del sistema; allora $$\begin{align}&A\cdot(s) \stackrel{?} = b\\ \implies & A\cdot(\tilde{s}+s_0) \\ \implies & A \cdot \tilde{s}+A \cdot s_0 \underset{\text{supp.}}{\overset{\text{per}}\implies}b+0 = b \ \blacksquare\end{align}$$
+Abbiamo finalmente concluso la dimostrazione.
 
+**OSS 1.4.1.** Notiamo che l'insieme $S$ delle soluzioni di un sistema $AX = b$ forma un *sottospazio vettoriale* ([[Sottospazi Vettoriali]]) di $K^n$ *se e solo se* $b=0$. Infatti:
+- Supponendo che $S$ sia uno sottospazio vettoriale, allora abbiamo che le proprietà caratterizzanti di uno sottospazio vengano rispettate; ad esempio il *vettore nullo* $0$ è soluzione. Infatti se $b=0$, allora sicuramente anche $s=0$ è soluzione.
+- Supponendo il contrario, ovvero che se il sistema fosse *omogeneo*, allora la tesi segue il *teorema di struttura per i sistemi lineari omogenei* (**TEOREMA 1.2.**).
+# 2. Esempio
+Avendo sviluppato questi teoremi come dei *strumenti* per risolvere dei *sistemi lineari*, vediamo degli esempi.
+**ESEMPIO 2.1.** Consideriamo il seguente sistema lineare a coefficienti in $\mathbb{Q}$. $$\begin{cases}x+2y-3z=-1 \end{cases}$$ovvero in forma compatta $$\begin{pmatrix}1 & 2 & -3 \end{pmatrix}\begin{pmatrix} x\\y\\z\end{pmatrix} = \begin{pmatrix}-1 \end{pmatrix}$$e possiamo, ad esempio, considerare una soluzione semplice del tipo $$\tilde{s} = \begin{pmatrix}-1 \\ 0 \\ 0 \end{pmatrix}$$Ora per *calcolare* tutte le soluzioni usiamo il *teorema di struttura per i sistemi lineari arbitrari* (**TEOREMA 1.4.**); determiniamo dunque *tutte* le soluzioni del sistema omogeneo associato, ovvero $$Ax = 0 \implies \begin{pmatrix} 1 & 2 & -3\end{pmatrix}\begin{pmatrix}x \\ y \\ z \end{pmatrix} = \begin{pmatrix} 0\end{pmatrix}$$Vediamo che il sistema è equivalente a  $$x+2y-3z = 0 $$Quindi possiamo ad assegnare un qualsiasi valore appartenente al campo $\mathbb{Q}$ $u$ a $y$ e $v$ a $z$. (in altre parole poniamo $y = u, z=v, u,v \in \mathbb{Q}$)
+Possiamo allora determinare il corrispondente di $x$ come $$x = 3v-2u$$
+Ora possiamo determinare la *"ricetta"* per ottenere le soluzioni di questo sistema omogeneo, ovvero $$s_0 = \begin{pmatrix}-2u+3v \\ u \\ v \end{pmatrix}, \forall u,v \in \mathbb{Q}$$Notiamo che possiamo riscrivere questa $3$-upla come $$s_0 = u\begin{pmatrix} -2 \\ 1 \\ 0\end{pmatrix}+v \begin{pmatrix}3 \\ 0 \\ 1 \end{pmatrix}$$
+Concludendo, le soluzioni di $Ax = b$ sono gli *elementi* dell'insieme $S$ definito come $$S = \{\begin{pmatrix}-1\\0\\0 \end{pmatrix}+u\begin{pmatrix}-2\\1\\0 \end{pmatrix}+v\begin{pmatrix}3\\0\\1 \end{pmatrix}: \forall u,v \in \mathbb{Q}\}$$
