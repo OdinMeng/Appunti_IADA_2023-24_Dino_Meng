@@ -3,9 +3,9 @@ data: 2023-10-12
 corso: "[[Analisi Matematica I]]"
 argomento: Funzioni trigonometriche
 tipologia: appunti
-stato: "1"
+stato: "0"
 ---
-*Definizione delle funzioni trigonometriche $\sin$, $\cos$; le proprietà di queste funzioni; alcuni valori noti; funzioni inverse $\arcsin$, $\arccos$. Forme di somma e sottrazione di $\sin$ e $\cos$.*
+*Definizione delle funzioni trigonometriche $\sin$, $\cos$; le proprietà di queste funzioni; alcuni valori noti; funzioni inverse $\arcsin$, $\arccos$. Forme di somma e sottrazione di $\sin$ e $\cos$. Funzioni $\tan, \arctan$.*
 - - -
 # 0. Preambolo
 Per ora non abbiamo ancora gli strumenti per poter *rigorosamente* definire le funzioni di *seno* e *coseno*, tuttavia possiamo definirle per ora in questo modo.

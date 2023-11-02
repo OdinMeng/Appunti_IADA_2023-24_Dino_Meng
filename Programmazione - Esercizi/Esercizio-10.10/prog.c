@@ -21,9 +21,9 @@ int prime_ricor(int n, int j) // la funzione va chiamata come prime_ricor(n, 2);
 void test()
 {
 	int partenza = 1;
-	int traguardo = 5;
+	int traguardo = 1000;
 	float s=0.0;
-	float k=-1.0;
+	float k=0.0;
 	int p1 = 0;
 	int p2 = 0;
 	for(int i=partenza; i <= traguardo; i++)
@@ -31,11 +31,8 @@ void test()
 		if(pi_iter(i))
 			{
 				printf("%d è primo \n", i);
-				k = k+1;
-				s = s+(p1 - p2);
-				// preparo per la prossima iterazione
-				p2 = p1;
-				p1 = i;
+				p2 = p1; p1 = i;
+				if(p1 > 0 && p2 > 0){ k = k+1; s = s+(p1-p2); }
 			}
 	}
 	printf("La distanza media di ciascuno dei numeri primi trovati è %f \n", s/k);

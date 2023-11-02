@@ -1,6 +1,6 @@
 ---
 data: 2023-10-30
-corso: 
+corso: "[[Analisi Matematica I]]"
 argomento: Esercizi sui Limiti di Funzione
 tipologia: appunti
 stato: "0"
@@ -23,6 +23,15 @@ Qui si raccolgono *tutti* gli esercizi proposti da *D.D.S.* durante le lezioni d
 
 **ESERCIZIO 1.5.** $$\lim_{x \to 0}\frac{\tan x}{x}$$
 **ESERCIZIO 1.6.** $$\lim_{x \to 0}\frac{\tan x-\sin x}{x^3}$$
+**ESERCIZIO 1.7.** $$\lim_{x \to 0^+}\frac{\sin{\sqrt{x}}}{\sqrt{x}}$$
+**ESERCIZIO 1.8.** $$\lim_{x \to 0^+}\frac{\sin{\sqrt{x}}}{x}$$
+**ESERCIZIO 1.9.** $$\lim_{x \to 0}\frac{\sin{x^2}}{x^2}$$
+**ESERCIZIO 1.10.** $$\lim_{x \to +\infty}\sqrt{x +1}-\sqrt{x}$$
+**ESERCIZIO 1.11.** $$\lim_{x \to +\infty}\sqrt{x}(\sqrt{x+1}-\sqrt{x})$$
+**ESERCIZIO 1.12.** $$\lim_{x \to 0}\frac{\arcsin x}{x}$$
+**ESERCIZIO 1.13.** $$\lim_{x \to 0}\frac{\sin x}{\arcsin x}$$
+**ESERCIZIO 1.14.** $$\lim_{x \to +\infty}x(\frac{\pi}{2}-\arctan x)$$
+**ESERCIZIO 1.15.** $$\lim_{x \to 1^-}\frac{\arccos x}{\sqrt{1 -x}}$$
 - - -
 # 2. Esercizi delle dispense
 Qui si raccolgono *tutti* gli esercizi disponibili nella dispensa.

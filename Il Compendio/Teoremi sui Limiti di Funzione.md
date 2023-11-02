@@ -85,5 +85,54 @@ Escludiamo infatti il caso $-\infty + \infty$ in quanto essa è una **forma inde
 **DIMOSTRAZIONE 7.1.** Dimostriamo la *tesi 1.*, la *tesi 2.* potrà essere dimostrata in una maniera analoga.
 Partiamo dalla definizione del limite di $f$: ovvero $$\begin{gather}\forall K > 0, \exists \delta > 0: \forall x \in E \diagdown\{x_0\} \\ 0<|x-x_0|<\delta \implies f(x) > K\end{gather}$$ma allo stesso tempo abbiamo che $g$ è inferiormente limitata, ovvero $$\exists M>0:\forall x\neq x_0 , g(x) > -M $$allora se scegliamo $K = K + M$ e sommiamo entrambe le espressioni, abbiamo $$0<|x-x_0| < \delta \implies f(x)+g(x) > K$$che è la definizione di $$\lim_{x \to x_0}f(x)+g(x) = +\infty$$
 # 8. Limite della funzione composta
+**IDEA.** Ho una funzione $$f: E \longrightarrow \mathbb{R}$$con $E \subseteq \mathbb{R}$, $x_0, y_0 \in \mathbb{\tilde{R}}$ e $x_0$ di accumulazione per $E$.
+Suppongo che esiste il limite di $f(x) \to y_0$ per $x \to x_0$: $$\lim_{x \to x_0}f(x) = y_0$$
+Ora sia $$g: F \longrightarrow \mathbb{R}$$con $F \subseteq \mathbb{R}$, $y_0$ punto di accumulazione per $F$ e $L \in \mathbb{\tilde{R}}$. Suppongo che esiste il limite di $g(y) \to L$ per $y \to y_0$. Ovvero $$\lim_{y \to y_0}g(y)=L$$Supponendo che l'immagine funzione del dominio sia sottoinsieme del dominio dell'altra funzione, ovvero $f(E) \subseteq F$, e $f(x)=y$ un punto di accumulazione per $f(E)$, ho la seguente situazione:
+[ GRAFICO DA FARE ]
+Allora posso fare la *funzione composita* $g \circ f$ ([[Funzioni]], **DEF 4.**) che mi porta ad un certo punto in $\mathbb{R}$.
+Quindi voglio capire se posso affermare il seguente: $$\lim_{x \to x_0}g(f(x_0)) = L$$
+**TEOREMA 8.1.** (*Limite della funzione composta*)
+Sia  $$f: E \longrightarrow \mathbb{R}; g: F \longrightarrow \mathbb{R}$$con $y_0, x_0$ punti di accumulazione per (rispettivamente) $E, F$. Poi supponendo che esistono i limiti
+$$\lim_{x \to x_0}f(x) = y_0 \ \text{  e }\  \lim_{y \to y_0 }g(y)=L$$e *se* vale una delle due *ipotesi supplementari*, 
+1. $\forall x \in E\diagdown\{x_0\}, f(x) \neq y_0$
+2. $y_0 \in F, g(y_0)=L$
+allora vale che $$\lim_{x \to x_0}f(g(x)) = L$$
+**DIMOSTRAZIONE (FACOLTATIVA).** 
+Riscriviamo i limiti $$\lim_{x \to x_0}f(x) = y_0 \ \text{  e }\  \lim_{y \to y_0 }g(y)=L$$secondo la *definizione rigorosa del limite* ([[Definizione di Limite di funzione]], **DEF 2.1.**). Allora abbiamo: $$\lim_{x \to x_0}f(x) = y_0 \iff \begin{gather}\forall U \text{ di }y_0, \exists V \text{ di }x_0: \forall x \in E\diagdown\{x_0\} \\ x \in V \implies f(x)=y \in U \end{gather}$$e $$\lim_{y \to y_0}g(y) = L \iff \begin{gather}\forall W \text{ di }L, \exists U \text{ di }y_0: \forall y \in F \diagdown\{y_0\} \\ y \in U \implies g(y) \in W \end{gather}$$*Concatenando* le due espressioni, otteniamo$$\lim_{x \to x_0}g(f(x)) = L \iff \begin{gather}\forall W \text{ di }L, \exists V \text{ di }x_0: \forall x \in E \diagdown\{x_0\}\\ f(x) \in V \implies g(f(x)) \in W \end{gather}$$però per farlo dobbiamo assicurarci di una *condizione*: ovvero che $$\forall x \in E, x \neq x_0 \implies f(x) = y \in F\diagdown \{y_0\}$$così abbiamo un modo sicuro per garantirci che $$\forall x, x  \in V \implies f(x) \in V$$
+Un modo per garantire la suddetta condizione è porre $f(x) \neq y_0, \forall x \neq x_0$.
+Allora posso scrivere $$g(f(x)) = g(y) \in W$$
+Se alla peggio ci capita che $\exists x': f(x') = y_0$, allora essendo ancora fortunati allora possiamo porre $g(y_0) = L$ e abbiamo dunque $g(f(x')) = g(y_0) = L$, che ovviamente appartiene a $W$. 
 
+**OSS 8.1.** Per fortuna nostra le *condizioni supplementari* appena descritte di norma valgono quasi sempre.
+
+**OSS 8.2.** Possiamo sfruttare questo *teorema* per poter svolgere ciò che chiameremo il meccanismo del *"cambio della variabile del limite"*; questo è un meccanismo non importante, ma importantissimo. Vediamo un esempio in cui entra in gioco questo meccanismo.
+## Cambio della variabile del limite
+**ESEMPIO 8.a** Voglio calcolare il limite $$\lim_{x \to 0^+}\frac{\sin{\sqrt{x}}}{\sqrt{x}}$$
+*Idea.* L'idea fondamentale consiste nel pensare alla funzione del limite $$x \mapsto \frac{\sin\sqrt{x}}{\sqrt{x}}$$come la *funzione composta*. Ponendo infatti $$x \mapsto \sqrt{x} = y \mapsto \frac{\sin y}{y}$$Di conseguenza dobbiamo trovare il valore per cui tende $y_0$. Dunque $$x \to 0^+ \implies \sqrt{x} = y \to 0^+$$in quanto se $x$ tende a $0$ da destra, allora anche la sua radice tende a $0$ da destra.
+Ora verifichiamo se vale *l'ipotesi aggiuntiva*, ovvero se è vera che $$\forall x, x \neq x_0 \implies f(x) \neq 0$$il che è vera, in quanto non c'è nessun numero di cui la radice è $0$, se non $0$ stesso.
+Dunque possiamo scrivere il limite iniziale come la *composizione* tra due funzioni, di cui una è la originaria. Allora $$\lim_{x \to 0^+}\frac{\sin\sqrt{x}}{\sqrt{x}} = \lim_{y \to 0^+}\frac{\sin y}{y}$$Ora questo limite è semplicissimo da risolvere, in quanto questo ci riconduce al limite fondamentale $\frac{\sin x}{x}=1, x \to 0$ ([[Esempi di Limiti di Funzione]], **ESEMPIO 6.1.**). Quindi $L =1$.
 # 9. Limite della funzione monotona
+**OSS 9.1.** Osserviamo che fino ad adesso *tutti* i nostri *teoremi* sui limiti di funzione enunciati in questa pagina avevano *l'esistenza di qualche limite* per ipotesi.
+Il teorema che enunceremo sarà *speciale* da questo punto di vista: infatti *non* avrà l'esistenza di un qualche limite per ipotesi, ma ha comunque nella *tesi* l'esistenza del limite.
+
+**TEOREMA 9.1.** (*Limite della funzione monotona*)
+Sia $$f: E \longrightarrow \mathbb{R}, E \subseteq \mathbb{R}$$e supponiamo che $E$ sia *superiormente limitata* con $\sup E = x_0$ e $x_0 \not \in E$. Oppure analogamente, se $E$ è *inferiormente limitata* allora abbiamo $\inf E = x_0 \not \in E$.
+Inoltre è possibile supporre che $x_0 \in \mathbb{\tilde{R}}$, ovvero abbiamo $x_0 = \pm\infty$.
+*(Per esercizio verificare che se $\sup E \not \in E$ allora $\sup E$ è di accumulazione per $E$.)*
+Inoltre sia $f$ una funzione *monotona* crescente o decrescente ([[Funzioni]], **DEF 8.**)
+*Tesi.* Allora *esiste* il limite $l$ $$\lim_{x \to x_0}f(x) = l$$
+
+e abbiamo $$l = \begin{cases} \sup(f(E)) \text{ se crescente}\\ \sup(f(E)) \text{ se decrescente}\end{cases}$$
+**DIMOSTRAZIONE 9.1.**
+Dimostriamo il caso per cui supponiamo che $x_0 \in \mathbb{R}$, $f$ sia *crescente* e $\sup(f(E)) = L \in \mathbb{R}$ (in parole il limite *"target"* è un numero reale): si tratta di provare che $$\lim_{x \to x_0}f(x) = L$$
+Consideriamo dunque la *proprietà dell'estremo superiore $\sup$* ([[Insiemi limitati, maggioranti, massimo e teorema dell'estremo superiore]], **TEOREMA 4.2.**); $$L =\sup (f(E)) \iff \begin{cases}\forall x \in E, f(x) \leq L \\\forall \varepsilon > 0, \exists \bar{x}: L - \varepsilon < f(\bar{x}) \end{cases}$$
+Ora considero un $x \in E: x > \bar{x}$ e applicando la *monotonia della funzione* ho $$x \geq \bar{x} \implies f(x) \geq f(\bar{x})$$Infinite metto le proposizioni assieme, ottenendo $$\begin{gather}\forall \varepsilon>0, \exists \bar{x}: \forall x \in E, \\ \bar{x} \leq x < x_0 \implies L-\varepsilon < L \leq f(\bar{x}) \leq f(x) < L+\varepsilon \\ \implies |f(x)-L| < \varepsilon\end{gather}$$che è esattamente la *definizione* del limite appena enunciato. $\blacksquare$
+
+**COROLLARIO 9.1.** Sia $$f: \ ]a, b[ \ \longrightarrow \mathbb{R}$$$c \in\  ]a, b[$ e $f$ crescente. 
+*Tesi.* Allora esistono i limiti$$\lim_{x \to c^-}f(x); \lim_{x \to c^+}f(x)$$e inoltre $$\lim_{x \to c^-}f(x)\leq f(c) \leq \lim_{x \to c^+}f(x)$$
+Abbiamo di fatto una situazione situazione del tipo
+[GRAFICO DA FARE]
+
+**OSS 9.2.**
+Quindi secondo il **COROLLARIO 9.1.** possiamo avere le due seguenti situazioni; o il *limite destro* ed il *limite sinistro* si coincidono o abbiamo una specie di *"salto"*.
+Questo sarà utile quando parleremo della *continuità* e della *discontinuità*, riferendoci in particolare ad un teorema che enuncia, data una funzione monotona crescente, in un punto discontinuo possiamo avere *solo* la discontinuità del tipo *"salto"*.
