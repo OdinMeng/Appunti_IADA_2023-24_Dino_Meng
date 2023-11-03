@@ -3,7 +3,7 @@ data: 2023-10-24
 corso: "[[Analisi Matematica I]]"
 argomento: Teoremi sui Limiti di Funzione
 tipologia: appunti
-stato: "0"
+stato: "1"
 ---
 *Teoremi sui limiti: unicità del limite, permanenza del segno, teorema del confronto, teorema dei due carabinieri, operazioni con i limiti, limiti infinitesimi e limiti infiniti, forme indeterminate.*
 - - -
@@ -88,7 +88,7 @@ Partiamo dalla definizione del limite di $f$: ovvero $$\begin{gather}\forall K >
 **IDEA.** Ho una funzione $$f: E \longrightarrow \mathbb{R}$$con $E \subseteq \mathbb{R}$, $x_0, y_0 \in \mathbb{\tilde{R}}$ e $x_0$ di accumulazione per $E$.
 Suppongo che esiste il limite di $f(x) \to y_0$ per $x \to x_0$: $$\lim_{x \to x_0}f(x) = y_0$$
 Ora sia $$g: F \longrightarrow \mathbb{R}$$con $F \subseteq \mathbb{R}$, $y_0$ punto di accumulazione per $F$ e $L \in \mathbb{\tilde{R}}$. Suppongo che esiste il limite di $g(y) \to L$ per $y \to y_0$. Ovvero $$\lim_{y \to y_0}g(y)=L$$Supponendo che l'immagine funzione del dominio sia sottoinsieme del dominio dell'altra funzione, ovvero $f(E) \subseteq F$, e $f(x)=y$ un punto di accumulazione per $f(E)$, ho la seguente situazione:
-[ GRAFICO DA FARE ]
+![[Pasted image 20231103222509.png]]
 Allora posso fare la *funzione composita* $g \circ f$ ([[Funzioni]], **DEF 4.**) che mi porta ad un certo punto in $\mathbb{R}$.
 Quindi voglio capire se posso affermare il seguente: $$\lim_{x \to x_0}g(f(x_0)) = L$$
 **TEOREMA 8.1.** (*Limite della funzione composta*)
@@ -118,7 +118,9 @@ Il teorema che enunceremo sarà *speciale* da questo punto di vista: infatti *no
 **TEOREMA 9.1.** (*Limite della funzione monotona*)
 Sia $$f: E \longrightarrow \mathbb{R}, E \subseteq \mathbb{R}$$e supponiamo che $E$ sia *superiormente limitata* con $\sup E = x_0$ e $x_0 \not \in E$. Oppure analogamente, se $E$ è *inferiormente limitata* allora abbiamo $\inf E = x_0 \not \in E$.
 Inoltre è possibile supporre che $x_0 \in \mathbb{\tilde{R}}$, ovvero abbiamo $x_0 = \pm\infty$.
-*(Per esercizio verificare che se $\sup E \not \in E$ allora $\sup E$ è di accumulazione per $E$.)*
+
+>[!warning] *(Per esercizio verificare che se $\sup E \not \in E$ allora $\sup E$ è di accumulazione per $E$.)*
+
 Inoltre sia $f$ una funzione *monotona* crescente o decrescente ([[Funzioni]], **DEF 8.**)
 *Tesi.* Allora *esiste* il limite $l$ $$\lim_{x \to x_0}f(x) = l$$
 
@@ -131,7 +133,7 @@ Ora considero un $x \in E: x > \bar{x}$ e applicando la *monotonia della funzion
 **COROLLARIO 9.1.** Sia $$f: \ ]a, b[ \ \longrightarrow \mathbb{R}$$$c \in\  ]a, b[$ e $f$ crescente. 
 *Tesi.* Allora esistono i limiti$$\lim_{x \to c^-}f(x); \lim_{x \to c^+}f(x)$$e inoltre $$\lim_{x \to c^-}f(x)\leq f(c) \leq \lim_{x \to c^+}f(x)$$
 Abbiamo di fatto una situazione situazione del tipo
-[GRAFICO DA FARE]
+![[Pasted image 20231103222520.png]]
 
 **OSS 9.2.**
 Quindi secondo il **COROLLARIO 9.1.** possiamo avere le due seguenti situazioni; o il *limite destro* ed il *limite sinistro* si coincidono o abbiamo una specie di *"salto"*.

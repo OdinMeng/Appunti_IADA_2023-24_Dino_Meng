@@ -3,7 +3,7 @@ data: 2023-10-12
 corso: "[[Analisi Matematica I]]"
 argomento: Funzioni trigonometriche
 tipologia: appunti
-stato: "0"
+stato: "1"
 ---
 *Definizione delle funzioni trigonometriche $\sin$, $\cos$; le proprietà di queste funzioni; alcuni valori noti; funzioni inverse $\arcsin$, $\arccos$. Forme di somma e sottrazione di $\sin$ e $\cos$. Funzioni $\tan, \arctan$.*
 - - -
@@ -81,7 +81,7 @@ Ecco alcuni grafici delle funzioni $\arccos$, $\arcsin$.
 # 4. Funzione tangente e arcotangente
 **DEF 4.1.** Definiamo la funzione **tangente** $\tan \alpha$ periodica in come $$\tan: \mathbb{R}\diagdown[\frac{\pi}{2}]_{\equiv \pi} \longrightarrow \mathbb{R}$$come il *rapporto* tra la funzione *seno* e *coseno*, ovvero $$\tan\alpha = \frac{\sin\alpha}{\cos\alpha}$$Notiamo che le funzioni $\sin, \cos$ sono periodiche di $2\pi$; quindi prendendo il rapporto abbiamo che $\tan$ è periodica di $\pi$. 
 Osservando i *limiti* ([[Esempi di Limiti di Funzione]], **ESEMPIO 5.3.**) di questa funzione possiamo disegnare il seguente grafico:
-[GRAFICO DA FARE]
+![[Pasted image 20231103214312.png]]
 
 **DEF 4.2.** Se ho la restrizione della *tangente* in $]-\frac{\pi}{2}, \frac{\pi}{2}[$ allora ho: $$\tan_{|(-\frac{\pi}{2}, \frac{\pi}{2})}: (-\frac{\pi}{2}, \frac{\pi}{2}) \longrightarrow \mathbb{R}; x \mapsto \tan{x}$$e questa diventa *biiettiva*, quindi invertibile, posso definire l'**arcotangente** la sua funzione inversa: $$\arctan := (\tan_{|(-\frac{\pi}{2}, \frac{\pi}{2})})^{-1}$$
-[GRAFICO DA FARE]
+![[Pasted image 20231103214329.png]]

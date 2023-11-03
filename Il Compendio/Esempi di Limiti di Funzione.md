@@ -3,7 +3,7 @@ data: 2023-10-26
 corso: "[[Analisi Matematica I]]"
 argomento: Esempi di Limiti di Funzione
 tipologia: appunti
-stato: "0"
+stato: "1"
 ---
 *Esempi di limiti: funzione costante, funzione identità, polinomi, funzioni razionali, funzioni trigonometriche, …*
 - - -
@@ -31,7 +31,7 @@ Dai risultati di [[Teoremi sui Limiti di Funzione]], soprattutto con **TEOREMA 6
 
 **ESEMPIO 2.2.** *Funzione quoziente che tende a zero*
 Ora consideriamo la medesima funzione, studiando però il comportamento di $x$ che tende a $0$. Innanzitutto $$\lim_{x \to 0^+}\frac{1}{x}=+\infty$$e $$\lim_{x \to 0^-}\frac{1}{x}=-\infty$$Infatti abbiamo il grafico della funzione $\frac{1}{x}$.
-[ GRAFICO DA INSERIRE ]
+![[Pasted image 20231103223754.png]]
 Concludiamo che *non* esiste il limite $$\nexists\lim_{x \to 0}\frac{1}{x}$$in quanto il limite *destro* e *sinistro* sono diversi.
 
 **ESEMPIO 2.3.** *Funzione quoziente alla $n$*
@@ -67,43 +67,41 @@ Questa sezione ovviamente richiede la conoscenza di [[Funzioni trigonometriche]]
 **ESEMPIO 5.1.** *Funzione seno*
 Ricordiamoci delle *funzioni di prostaferesi* ([[Funzioni trigonometriche]], **SEZIONE 2.4.**).
 Voglio dimostrare che $$\lim_{x \to x_0}\sin x = \sin x_0$$Allora parto dalla distanza euclidea $$|f(x)-L| \implies | \sin x - \sin x_0 |$$e conoscendo le *formule di prostaferesi* ottengo $$\begin{align}2|\sin(\frac{x-x_0}{2})\cos(\frac{x+x_0}{2})| = 2 |\sin\frac{x-x_0}{2}||\cos\frac{x-x_0}{2}| \end{align}$$e sapendo che $\cos \alpha \leq 1, \forall \alpha$ possiamo *"maggiorare"* questa espressione con $$2|\cos\frac{x-x_0}{2}|\cdot1$$allora $$\begin{align}|\sin x- \sin x_0 | &= 2 |\sin\frac{x-x_0}{2}||\cos\frac{x-x_0}{2}| \\ &\leq 2|\sin\frac{x-x_0}{2}| \end{align}$$Ora ci ricordiamo che $|\sin\alpha| \leq |\alpha|$ (infatti basta pensare che $\alpha$ è la lunghezza della retta e $\sin\alpha$ è invece la coordinata $y$ del punto su cui cadiamo quando facciamo il processo di *"avvolgimento"* di questa retta; oppure basta disegnare i grafici di queste due funzioni), 
-[ GRAFICI DA FARE ]
+![[Pasted image 20231103223810.png]]
 Dunque otteniamo $$|\sin x - \sin x_0| \leq 2 | \sin\frac{x-x_0}{2}| \leq 2|\frac{x-x_0}{2}| = |x-x_0|$$ovvero $$|\sin x - \sin x_0| \leq |x - x_0|$$allora nella *definizione del limite* ([[Definizione di Limite di funzione]]) basta scegliere $\delta = \varepsilon$ in quanto abbiamo appena verificato che sicuramente quest'ultima espressione è sicuramente vera.
 
 **ESEMPIO 5.2.** *Funzione coseno*
 Esercizio lasciato a me stesso.
 
-**ESEMPIO 5.3.** *Funzione tangente (DA RIPROPORRE MEGLIO)*
+**ESEMPIO 5.3.** *Funzione tangente*
 Invece per la *funzione tangente* $\tan$ si ha che: $$\lim_{x \to x_0}\tan x = \begin{cases}\tan x_0 \text{ se }x_0 \neq \frac{\pi}{2}+k\pi, \forall k \in \mathbb{Z} \\ \text{non def., altrimenti} \end{cases}$$il limite di $\tan$ per $x \to \alpha, \forall \alpha \in [\frac{\pi}{2}]_{\equiv\pi}$ *non* è definita in quanto il limite destro e sinistro di questa non sono uguali; infatti $$\lim_{x \to \alpha^-}\tan x = +\infty\text{ e }\lim_{x \to \alpha^+}\tan x = -\infty$$e questi valgono per la *permanenza del segno*; infatti se da *sinistra* $\lim_{x \to \alpha^-}\frac{1}{\cos x} = +\infty$ allora sicuramente vale ciò che abbiamo detto prima. Analogo per l'altro limite.
 Quindi $$\lim_{x \to \alpha^+} \tan x \neq \lim_{x \to \alpha^-}\tan x$$
 
 **ESEMPIO 5.4.** *Funzione arcotangente*
 Riprendiamo invece la *funzione arcotangente* $\arctan{x}$.
 Osserviamo dal grafico di tale funzione
-[GRAFICO DA INSERIRE]
+![[Pasted image 20231103214329.png]]
 che valgono le seguenti: $$\begin{gather}\lim_{x \to -\infty}\arctan x = -\frac{\pi}{2}\\ \lim_{x \to +\infty}\arctan x = \frac{\pi}{2}\\ \lim_{x \to x_0}\arctan x = \arctan x_0\end{gather}$$
 **ESEMPIO 5.5.** *Funzione arcoseno e arcocoseno*
 Riprendiamo ora le funzioni $\arcsin$ e $\arccos$.
 Dai grafici
-[GRAFICI DA INSERIRE]
+![[Pasted image 20231017172546.png]]
 osserviamo che $$\lim_{x \to -1^+}\arcsin x = -\frac{\pi}{2}; \lim_{x \to -1 ^+}\arccos x = \pi$$e $$\lim_{x \to 1^-}\arcsin x = \frac{\pi}{2}; \lim_{x \to 1^-}\arccos x = \pi$$
 # 6. Limiti fondamentali
 Ora illustriamo ciò che chiameremo come i *limiti fondamentali*. 
 
 Prima di considerare il primo esempio facciamo le seguenti osservazioni.
 **OSS 6.1.** Voglio calcolare l'area del *settore circolare* con raggio $r$ e angolo $\alpha$ e la lunghezza dell'arco $l = r\alpha$. 
-[ GRAFICO DA FARE ]
+![[Pasted image 20231103223827.png]]
 *Idea.* Che vuol dire calcolare l'area di una figura? Questo significa prendere una "misura" standard per misurare l'area, poi per contare. Infatti ad esempio, per calcolare l'area di un *triangolo* partiamo dall'area di due *rettangoli* "distorti" che formano un triangolo.
 Analogamente facciamo la stessa cosa col settore circolare: la dividiamo in *"triangolini"* piccolissimi, poi li *"apro"* disponendoli fila per fila.
-Graficamente il ragionamento consiste in questo:
-[ GRAFICO DA FARE ]
-Ora arriviamo al punto cruciale: *"faccio finta"* (oppure approssimo) la lunghezza dell'*arco* con quello della *coda*. Abbiamo dunque il seguente:
-[ GRAFICO DA FARE ]
+Ora arriviamo al punto cruciale: *"faccio finta"* (oppure approssimo) la lunghezza dell'*arco* con quello della *coda*. Graficamente il ragionamento consiste in questo:
+![[Pasted image 20231103223910.png]]
 Dove la *"base"* di questi triangoli è $\alpha r$ in quanto questa è proprio la *"base"* della figura originaria e l'*"altezza"* è il raggio $r$.
 Quindi possiamo unire tutti questi triangoli in uno singolo triangolo con le stesse misure e avere dunque un singolo triangolo con base $\alpha r$ e altezza $r$. Usiamo dunque la formula per calcolare l'area di questo triangolo. $$A = \frac{\alpha r^2}{2}$$
 
 **OSS 6.2.** Ora, riprendendo il cerchio unitario $\Gamma$, traccio *tre figure geometriche* di cui due sono triangoli ed uno è il settore circolare. Segniamo i tre triangoli $A_{1,2,3}$.
-[ GRAFICO DA FARE ]
+![[Pasted image 20231103223928.png]]
 Chiaramente si vede che $$A_1 \leq A_2 \leq A_3$$
 L'area del triangolo delineato dalla *coda* è $$A_1 = \frac{\sin\alpha}{2}$$Invece l'area del *settore* è $$A_2 = \frac{a}{2}$$Ora l'area del triangolo ottenuto *"estendendo"* la retta orizzontale in $x=1$ e la *"diagonale"* che taglia il cerchio è $$A_3 = \frac{\tan\alpha}{2}$$ed è ottenuta facendo le proporzioni tra il triangolo $A_1$ e questo triangolo dove la base è $1$(ed è possibile farlo in quanto i due triangoli in merito sono simili). Infatti $$\frac{\cos\alpha}{\sin\alpha}=\frac{1}{x}\implies x = \frac{\sin\alpha}{\cos\alpha}=\tan\alpha$$Allora possiamo concludere che in questa figura sussiste la seguente relazione per $\alpha \in ]0, \frac{\pi}{2}[$: $$\frac{\sin\alpha}{2}\leq \frac{\alpha}{2}\leq \frac{\tan\alpha}{2}$$
 

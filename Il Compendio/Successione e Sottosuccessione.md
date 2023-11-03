@@ -1,17 +1,20 @@
 ---
 data: 2023-11-01
-corso: 
+corso: "[[Analisi Matematica I]]"
 argomento: Successione e Sottosuccessione
 tipologia: appunti
-stato: "0"
+stato: "1"
 ---
 *Appunto ad-hoc sulle successioni e sulle sottosuccessioni (successioni estratte)*
 - - -
 # 1. Successione
 **DEF 1.1.** (*Successione*)
-Sia $f$ una funzione del tipo $$f: \mathbb{N} \longrightarrow A$$la chiamiamo (*tradizionalmente*) come una **successione a valori in A** e la indichiamo con $$(a_n)_n$$dove $f(n) = a_n$; ovvero $$(a_n)_n = (a_0, a_1, \ldots, a_n)$$
+Sia $f$ una funzione del tipo $$f: \mathbb{N} \longrightarrow A$$dove $\mathbb{N}$ è l'insieme dei numeri naturali ([[Struttura dell'insieme dei numeri naturali]]), la chiamiamo (*tradizionalmente*) come una **successione a valori in A** e la indichiamo con $$(a_n)_n$$dove $f(n) = a_n$; ovvero $$(a_n)_n = (a_0, a_1, \ldots, a_n)$$
 **DEF 1.2.** (*Successione a variabile reale*)
 Se $A = \mathbb{R}$, allora avremmo una *successione a valori in $\mathbb{R}$*, oppure una *successione reale*.
+
+**DEF 1.3.** (*Successione limitata*)
+Si definisce una **successione limitata** quando si verifica che $$\exists M >0: \forall n, |a_n|<M$$
 # 2. Sottosuccessione (successione estratta)
 **DEF 2.1.**
 Data una funzione $j$ *strettamente crescente* che sia anche una successione a valori in $\mathbb{N}$, ovvero del tipo $$j: \mathbb{N} \longrightarrow \mathbb{N}; k \mapsto n_k$$quindi abbiamo una successione del tipo $$(n_k)_k = (n_0, n_1, \ldots n_k)$$Ora sia $(a_n)_n$ una *successione a valori in A*, con la funzione $f$; ovvero $$f: \mathbb{N} \longrightarrow A$$

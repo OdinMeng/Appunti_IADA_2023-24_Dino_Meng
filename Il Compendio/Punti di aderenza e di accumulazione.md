@@ -3,7 +3,7 @@ data: 2023-10-23
 corso: "[[Analisi Matematica I]]"
 argomento: Punti di aderenza e di accumulazione
 tipologia: appunti
-stato: "0"
+stato: "1"
 ---
 *Definizione di punto di aderenza e di accumulazione. La chiusura e il derivato di un insieme. Primo teorema di Bolzano-Weierstraß.*
 - - -
@@ -15,7 +15,7 @@ $x_0$ si dice **punto di chiusura (o di aderenza)** per $E$ se è vera la seguen
 **ESEMPIO 1.1.**
 Consideriamo l'insieme $E = (1, 2)$ e voglio trovare gli elementi di $\overline{E\ }$.
 Per farlo è possibile disegnare il grafico di $E$, poi *"testare"* ogni elemento della retta $\mathbb{R}$ per vedere quali sono i potenziali elementi di $\overline{E\ }$.
-[ GRAFICO DA FARE ]
+![[Pasted image 20231103215330.png]]
 Si evince che:
 1. I numeri $0, \frac{1}{2}$ *non* sono *punti di aderenza* per $E$, in quanto è possibile individuare *almeno* un intorno fuori da $E$ (ovvero che non contenga elementi di $E$).
 2. 1 è un *punto di aderenza*, in quanto per tutti gli intorni in $x_0$ abbiamo sempre almeno un elemento di $E$; infatti si deve sempre *"andare a destra"*, *"entrando"* in $E$. Analogo il discorso per $2$.
@@ -51,7 +51,7 @@ Analoga la definizione di un insieme $E$ che ha $-\infty$ come punto di accumula
 2. Ora notiamo il viceversa; ovvero che *se $x_0$ è di accumulazione per $E$ allora in ogni suo intorno ci sono infiniti punti di $E$.*
    Per dimostrare questa proposizione, dimostriamo la negazione della contraria; ovvero che se in *ogni intorno di $x_0$ ci sono elementi finiti di $E$, allora $x_0$ non è punto di accumulazione per $E$.* ([[Logica formale - Sommario]])
    Supponiamo quindi che $x_0$ abbia un intorno in cui ci sono un numero finito punti di $E$: allora $$(x_0-r, x_0+r) \cap E = \{x_1, x_2, \ldots, x_k\}$$Che graficamente corrisponde a 
-   [ GRAFICO DA FARE] 
+![[Pasted image 20231103215401.png]]
    Considero dunque $r = \min(\{ d(x_0, x_j), \forall j \in \{ 1, 2, \ldots, k\}\})$ ovvero la *minima* distanza tra $x_0$ e un qualunque punto di $E$. Allora risulta che $$((x_0-r, x_0+r) \cap E)\diagdown \{x_0\} = \emptyset$$il che ci dimostra che $x_0$ *non* è di accumulazione per $E$. (oppure è un punto isolato).
    $\blacksquare$
 
@@ -78,7 +78,7 @@ Allora si verifica il seguente: $$\exists \xi \in \mathbb{R}: \xi \in \mathcal{D
 **DIMOSTRAZIONE 2.2.** 
 Se $E$ è un insieme *limitato* allora per il *teorema dell'esistenza dell'estremo superiore e inferiore* ([[Insiemi limitati, maggioranti, massimo e teorema dell'estremo superiore]], **TEOREMA 4.1.**) esistono $$a_0 = \inf(E); b_0 = \sup(E)$$ovvero $a_0, b_0 \in \mathbb{R}$ e tali per cui $E \subseteq [a_0, b_0]$. 
 Allora considero $c_0$ il *punto medio tra $a_0$ e $b_0$*; ora considero i due intervalli $$[a_0, c_0];[c_0, b_0]$$che graficamente corrisponde a 
-[ GRAFICO DA FARE ]
+![[Pasted image 20231103215430.png]]
 Inoltre *almeno* uno di questi intervalli devono essere *infiniti*, in quanto se supponessimo per assurdo che entrambi gli intervalli fossero finiti, allora la loro unione sarebbe anch'essa finita.
 Tenendo questo in considerazione, scegliamo uno di questi. Ora chiamo questo intervallo $[a_1, b_1]$, dove $a_1 = c_0$ oppure $b_1 = c_0$, a seconda dell'intervallo scelto.
 Quindi otteniamo una *successione di intervalli inscatolati, limitati, infiniti e dimezzati* ([[Intervalli]]) $$(I_n)_n$$

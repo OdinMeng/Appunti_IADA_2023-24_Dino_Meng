@@ -47,6 +47,29 @@ Qui si prova a raccogliere *tutti* gli esercizi delle prove d'esame precedenti. 
 - - -
 # 5. Esercizi del libro
 *Fonte: Analisi Matematica (Vol. 1), E. Giusti*
-
+**ESERCIZIO 12, PAG. 152.** $$\lim_{x \to 0}\frac{\sin{x}}{\sqrt{x^2}}$$
+**ESERCIZIO 21, PAG. 152.** $$\lim_{x \to 0}\frac{\sin{(x+x^2)}}{x}$$
+**ESERCIZIO 22, PAG 152.** $$\lim_{x \to 0}\frac{1-\cos{\sqrt{x}}}{x}$$
+**ESERCIZIO 23, PAG 152.** $$\lim_{x \to 0}\frac{\frac{1}{1+x}-\cos{x}}{x}$$
 - - -
 # 6. Svolgimento degli esercizi
+## 6.1. Esercizi delle lezioni
+VOID
+
+## 6.2. Esercizi delle dispense
+VOID
+
+## 6.3. Esercizi dei papers
+VOID
+
+## 6.4. Esercizi delle prove d'esame
+VOID
+
+## 6.5. Esercizi del libro
+**ESERCIZIO 12, PAG. 152.** Ho il limite $$\lim_{x \to 0}\frac{\sin{x}}{\sqrt{x^2}}$$
+Qui si tratta di ricordarsi di una *osservazione* del *valore assoluto* ([[Funzioni di potenza, radice e valore assoluto]], **OSS 3.1.1.**), ovvero che $$\sqrt{x^2} = |x|$$Rimpiazziamo dunque $\sqrt{x^2}$ con $|x|$. Allora ho $$\lim_{x \to 0}\frac{\sin x}{|x|}$$Ora basta richiamare la *definizione* del *valore assoluto*, avendo dunque $$\frac{\sin{x}}{|x|} = \begin{cases}\frac{\sin x}{x} \text{ per }x\geq0 \\ -\frac{\sin x}{x}\text{ per }x<0 \end{cases}$$Visto che stiamo studiando il comportamento di *questa* funzione attorno $0$, basta fare la restrizione del limite con il limite destro e sinistro ([[Definizione di Limite di funzione]]), in quanto approcciando a $0$ da *"destra"* abbiamo sempre valori positivi (in quanto abbiamo la semiretta $]0, +\infty[$), similmente da *"sinistra"* abbiamo sempre valori negativi. Allora $$\begin{align}&\lim_{x \to 0^+}\frac{\sin x}{x}=1 \text{ (limite fondamentale)} \\& \lim_{x \to 0^- }-\frac{\sin x}{x}=-\lim_{x \to 0^-}\frac{\sin x}{x} = -1\end{align}$$Dunque abbiamo $$\lim_{x \to 0^+} \frac{\sin x}{|x|} \neq \lim_{x \to 0^-}\frac{\sin x}{x}$$e ciò vuol dire che non esiste il limite per $x \to 0$.
+
+**ESERCIZIO 21, PAG. 152.** Ho il limite $$\lim_{x \to 0}\frac{\sin(x + x^2)}{x}$$allora uso la *forma di addizione* per $\sin(a+b)$ ([[Funzioni trigonometriche]]). Poi manipolo opportunamente l'espressione ottenuta $$\begin{align}\lim_{x \to 0}& \ \frac{\sin x \cos x^2 + \sin x^2 \cos x}{x}\\ & \ \frac{\sin x}{x}\cos{x^2}+\frac{\sin x^2}{x}\cos x \\ & \ \ldots +\frac{\sin x^2}{x^2}x\cos x \\ & \ \ldots + x \cos x \lim_{y \to 0}\frac{\sin y}{y} (\text{sia }y = x^2 \text{)} \\ \lim_{x \to 0}& \ \frac{\sin{x}}{x}\cos x^2 + x \cos x \lim_{y \to 0}\frac{\sin y}{y} \\  & \ 1\cdot1^2 + 0\cdot 1 \cdot 1 = 1\end{align}$$Allora $$\lim_{x \to 0}\frac{\sin(x + x^2)}{x} = 1$$
+**ESERCIZIO 22, PAG. 152.** Ho il limite $$\lim_{x \to 0}\frac{1-\cos\sqrt{x}}{x}$$Moltiplico sia sopra che sotto per $1+\cos{\sqrt{x}}$. Allora $$\begin{align} \lim_{x \to 0}& \ \frac{1-\cos\sqrt{x}}{x} \\ =& \ \frac{1-\cos^2{\sqrt{x}}}{x}\frac{1}{(1+\cos\sqrt{x})} \\ =& \ \frac{\sin^2{\sqrt{x}}}{x}\ldots\end{align}$$Ora il punto cruciale di questa manipolazione è di osservare che $$x = \sqrt{x^2} = \sqrt{x}^2, \forall x >0$$Questo passaggio presuppone di restringere il dominio della funzione a quello di tutti i *valori positivi*: tuttavia questa operazione non è restrittiva, in quanto la funzione radice quadrata $\sqrt{\cdot}$ presuppone già la restrizione ai valori positivi. Allora abbiamo $$\begin{align}\lim_{x \to 0^+}& \ \frac{\sin^2{\sqrt{x}}}{\sqrt{x}^2} \cdot \frac{1}{1+\cos\sqrt{x}}\\ \text{sia }y=\sqrt{x}; \lim_{y \to 0^+}& \  (\frac{\sin{y}}{y})^2 \cdot \frac{1}{1+\cos y} \\ = & \ 1^2 \cdot \frac{1}{2} =\frac{1}{2}\end{align}$$Abbiamo ottenuto infine $$\lim_{x \to 0}\frac{1-\cos\sqrt{x}}{x} = \frac{1}{2}$$
+**ESERCIZIO 23, PAG. 152.** Ho il limite $$\lim_{x \to 0}\frac{\frac{1}{1+x}-\cos{x}}{x}$$Sviluppo l'espressione sul numeratore. $$\frac{1}{1+x}-\cos x = \frac{1-\cos(x)(1+x)}{1+x} = \frac{1-\cos x - x \cos x}{1+x}$$Ora raccolgo il numeratore del numeratore per $x$. $$\frac{1-\cos{x}-x\cos{x}}{1+x} = \frac{x(\frac{1}{x}-\frac{\cos x}{x}-\cos x)}{1+x}$$ Quindi sul limite ho $$\begin{align}\lim_{x \to 0}\frac{\frac{1}{1+x}-\cos{x}}{x} &= \frac{x (\frac{1-\cos x}{x}-\cos x)}{x}\cdot\frac{1}{1+x} \\ &= (\frac{1-\cos x}{x}-\cos x)(\frac{1}{1+x}) \\ &= (\frac{1-\cos x}{(x)(1+x)})- \frac{\cos x}{1+x} \\ \cdot\frac{1+\cos x}{1+\cos x} \to &= \frac{1-\cos^2x}{x}\frac{1}{(1+x)(1+\cos x)} - \frac{\cos x}{1+x}\cdot \frac{1+\cos x}{1+\cos x} \\ &= \frac{\sin^2 x}{x}\frac{1}{1+x}\frac{1}{1+\cos x}-\frac{\cos x}{1+x}\\ &= \frac{\sin x}{x}\frac{\sin x}{1+x}\frac{1}{1+\cos x}-\frac{\cos x}{1+x}\\ \lim_{x \to 0}\frac{\frac{1}{1+x}-\cos{x}}{x}  &= 0\cdot 0\cdot \frac{1}{2}-1 = -1  \end{align}$$
+Allora $$\lim_{x \to 0}\frac{\frac{1}{1+x}-\cos{x}}{x} = -1$$
