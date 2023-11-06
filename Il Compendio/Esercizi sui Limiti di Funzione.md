@@ -32,6 +32,15 @@ Qui si raccolgono *tutti* gli esercizi proposti da *D.D.S.* durante le lezioni d
 **ESERCIZIO 1.13.** $$\lim_{x \to 0}\frac{\sin x}{\arcsin x}$$
 **ESERCIZIO 1.14.** $$\lim_{x \to +\infty}x(\frac{\pi}{2}-\arctan x)$$
 **ESERCIZIO 1.15.** $$\lim_{x \to 1^-}\frac{\arccos x}{\sqrt{1 -x}}$$
+*Giorno 06.11.2023* 
+**ESERCIZIO 1.16.**
+$$\lim_{x \to 0}(1+\sin(x))^\frac{1}{x}$$
+**ESERCIZIO 1.17.** $$\lim_{x \to 0^+}x^x$$
+**ESERCIZIO 1.18.** $$\lim_{x \to +\infty}\sqrt{x} \cdot {\sin(\frac{\pi}{2}-\arctan x)}$$
+**ESERCIZIO 1.19.** $$\lim_{x \to 0}\frac{e^x - e ^{-x}}{x}$$
+**ESERCIZIO 1.20.** $$\lim_{x \to 0}\frac{(1-\cos x)^2}{\log(1+\sin^4x)}$$
+**ESERCIZIO 1.21.** $$\lim_{x \to 0}\frac{\sin2x}{\tan 3x}$$
+**ESERCIZIO 1.22.** $$\lim_{x \to 0}\frac{\ln (\cos x)}{x^2}$$
 - - -
 # 2. Esercizi delle dispense
 Qui si raccolgono *tutti* gli esercizi disponibili nella dispensa.

@@ -61,7 +61,7 @@ Allora vogliamo trovare un *"surrogato"* per questo vuoto formato dal fatto che 
 Sia $V$ un K-spazio vettoriale, siano $U, W$ due sottospazi vettoriali di $V$.
 Definiamo dunque il **sottospazio vettoriale somma di $U, V$** come $$U +W := \{u+w: u \in U, w \in W\}$$
 **LEMMA 3.2.** $U+W$ è sottospazio vettoriale di $V$.
-**DIMOSTRAZIONE.** *Esercizio lasciato a noi*
+**DIMOSTRAZIONE.** (*Esercizio lasciato a noi*)
 1. *L'appartenenza dell'elemento neutro*
    Verifichiamo che $$0 \in (U+W)$$è vera: infatti basta scegliere $u = 0, w=0 \implies 0+0 = 0$.
 2. *Chiusura della somma*$$\begin{align}v_1, v_2 \in (U+W) & \implies v_1 = u_1+w_1, v_2=u_2+w_2 \\v_1+v_2 &= v_1+v_2+w_1+w_2 \\ &= (v_1+v_2)+(w_1+w_2) \\ &= v+w \\ v_1 +v_2 & \in (U+W)\end{align}$$

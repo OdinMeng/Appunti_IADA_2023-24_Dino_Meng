@@ -41,7 +41,7 @@ https://it.frwiki.wiki/wiki/Les_Neuf_Chapitres_sur_l%27art_math%C3%A9matique
 - - -
 ## Descrizione dell'algoritmo come programma
 **OBIETTIVO.**
-Come detto prima, il nostro *obiettivo* è quello di *"gradinizzare* un sistema lineare qualsiasi che non sia a scala.
+Come detto prima, il nostro *obiettivo* è quello di *"gradinizzare"* un sistema lineare qualsiasi che non sia a scala.
 
 **INPUT.**
 Quindi il nostro input è un sistema lineare qualsiasi del tipo $$Ax = b$$che lo *"condenseremo"* nella *matrice completa* $(A|B)$.
