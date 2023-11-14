@@ -49,3 +49,4 @@ L'insieme della parti è formato dall'insieme stesso e dai sottoinsiemi propri d
 **ESEMPIO 2.** Il numero $1010$ rappresenta $\{a,c\}$
 3. Ora se si vuole contare il numero di tutti i sottoinsiemi, si può partire dal numero $0$, che sarebbe il primo sottoinsieme fino ad arrivare il sottoinsieme $1111$; tuttavia si deve considerare il sottoinsieme vuoto $\emptyset$, pertanto il numero totale di sottoinsiemi diventa $1111+1$, che in binario eguaglia a $10000$.
 4. Traducendo $10000_2$ al sistema decimale, esso diventa $2^4$, e il numero $4$ coincide con $n$. $\blacksquare$
+

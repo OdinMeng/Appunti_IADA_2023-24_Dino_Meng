@@ -16,3 +16,6 @@ Dal 12.10.2023:
 
 ANNUNCIO IMPORTANTE (23.10.2023)
 - Gli appunti di programmazione *non* verranno mai più aggiornati in quanto si ritiene la dispensa sufficiente come materiale di studio.
+
+ANNUNCIO IMPORTANTE (14.11.2023)
+Da oggi in poi rendo disponibile il sito pubblico https://odinmeng.github.io/ per caricare gli appunti. Comunque i sommari in file pdf verranno comunque mantenuti, anche se di più rado.

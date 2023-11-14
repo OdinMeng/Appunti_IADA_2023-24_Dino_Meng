@@ -3,7 +3,7 @@ data: 2023-11-03
 corso: "[[Analisi Matematica I]]"
 argomento: Esempi di Limiti di Successione
 tipologia: appunti
-stato: "0"
+stato: "1"
 ---
 *Alcuni esempi di limiti di successione, in particolare quelle notevoli*
 - - -

@@ -3,7 +3,7 @@ data: 2023-11-06
 corso: "[[Analisi Matematica I]]"
 argomento: Funzione esponenziale e Logaritmica
 tipologia: appunti
-stato: "0"
+stato: "1"
 ---
 *Definizione della funzione esponenziale su N; prime proprietà dell'esponenziale; estensione della definizione a Z; ulteriori proprietà; estensione a Q; ulteriori proprietà e limiti notevoli; definizione dell'esponenziale sui reali R; proprietà finali. Invertibilità di $\exp$, funzione logaritmica; proprietà di $\log$.*
 - - -

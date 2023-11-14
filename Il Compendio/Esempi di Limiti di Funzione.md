@@ -3,7 +3,7 @@ data: 2023-10-26
 corso: "[[Analisi Matematica I]]"
 argomento: Esempi di Limiti di Funzione
 tipologia: appunti
-stato: "0"
+stato: "1"
 ---
 *Esempi di limiti: funzione costante, funzione identità, polinomi, funzioni razionali, funzioni trigonometriche, …*
 - - -

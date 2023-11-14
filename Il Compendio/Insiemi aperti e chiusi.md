@@ -17,9 +17,8 @@ Graficamente questo ragionamento corrisponde a
 ![[Pasted image 20231022160204.png]]
 **ESEMPIO 1.2.** Ora considero l'insieme $$E = \{1\} \cup [2, 3)$$che *non è aperto*, in quanto considerando $x_0 = 1$ trovo che questo elemento (o punto) non è *interno* a $E$. Analogo il discorso per $x_0 = 2$.
 
-# 2. Intervallo chiuso
+# 2. Insieme chiuso
 **DEF 2.1.** Considerando un insieme $C \subseteq \mathbb{R}$, si dice che esso è **chiuso** se il suo *complemento* è *aperto*. Ovvero se $\mathcal{C}_{\mathbb{R}}C$ è aperto.
-
 ## Esempi
 **ESEMPIO 2.1.** Consideriamo *l'intervallo chiuso* ([[Intervalli]], **DEF 1.1.**) $$C = [2, 5]$$Considerando il suo complemento $$\mathcal{C}_{\mathbb{R}}C = (-\infty, 2) \cup (5, +\infty)$$vediamo che questo insieme (il complemento) è *aperto*; infatti ad ogni punto $x_0$ del complemento vediamo che è possibile definire un $r$ tale che l'*intorno centrato aperto* di questo raggio sia sottoinsieme di $\mathcal{C}_{\mathbb{R}}C$.
 Infatti definendo $r$ come $$r = \begin{cases}d(2,x_0) \text{ per }x_0<2 \\ d(5,x_0) \text{ per }x_0 > 5\end{cases}$$sicuramente troviamo che tutti i punti $x_0$ sono interni al complemento di $C$.

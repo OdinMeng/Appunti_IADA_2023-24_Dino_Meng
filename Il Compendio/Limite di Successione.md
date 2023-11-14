@@ -3,7 +3,7 @@ data: 2023-11-01
 corso: "[[Analisi Matematica I]]"
 argomento: Limite di Successione
 tipologia: appunti
-stato: "0"
+stato: "1"
 ---
 *Definizione di limite di successione.*
 - - -

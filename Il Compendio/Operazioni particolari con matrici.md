@@ -16,7 +16,7 @@ Quindi $$(^{t}A)_{ij} := A_{ji}\ ; \ \begin{align}i \in \{1, \ldots, n\} \\ j \i
 **ESEMPIO 1.1.** 
 Se prendiamo $$ A = \begin{pmatrix}1 &2&3 \\ -3&-2&-1\end{pmatrix}$$allora si ha $$^tA = \begin{pmatrix}1 &-3\\2&-2\\3 & -1 \end{pmatrix}$$
 **OSS 1.1.** Notiamo che *generalmente* non ha senso chiedersi se $$^t A = A$$in quanto in una buona parte dei casi (ovvero delle *matrici non quadrate* ([[Matrice]], **DEF 2.1.**)) il numero delle colonne $m$ e il numero delle righe $n$ vengono scambiate (per definizione); infatti se $A$ è una matrice $m \times n$, allora $^tA$ sarà una matrice di $n \times m$.
-## 1.1. Proprietà della trasposta
+F## 1.1. Proprietà della trasposta
 **PROP 1.1.** Prendendo $A, B \in M_{m,n}(\mathbb{R})$ allora si verificano le due proprietà: $$\begin{align}&\text{(i) }^t(A+B) = (^{t}A)  +  (^tB)\\ &\text{(ii) }^t(^tA)  = A\end{align}$$
 **DIMOSTRAZIONE.**
 Innanzitutto osserviamo che ha senso chiedersi se queste proprietà sono valide, in quanto per definizione in [[Operazioni basilari con matrici]], sommando due matrici $m \times n$ si ottiene un altra matrice $m \times n$; infatti da un lato si sommano prima due matrici $m \times n$ poi per trasporlo in una matrice $n \times m$, dall'altro si sommano due matrici trasposte $n \times m$ (ottenendo ovviamente un altra matrice $n \times m$).

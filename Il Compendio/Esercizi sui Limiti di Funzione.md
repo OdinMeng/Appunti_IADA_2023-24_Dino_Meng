@@ -41,6 +41,31 @@ $$\lim_{x \to 0}(1+\sin(x))^\frac{1}{x}$$
 **ESERCIZIO 1.20.** $$\lim_{x \to 0}\frac{(1-\cos x)^2}{\log(1+\sin^4x)}$$
 **ESERCIZIO 1.21.** $$\lim_{x \to 0}\frac{\sin2x}{\tan 3x}$$
 **ESERCIZIO 1.22.** $$\lim_{x \to 0}\frac{\ln (\cos x)}{x^2}$$
+*Giorno 09.11.2023*
+**ESERCIZIO 1.23.**
+$$
+\lim_{x \to 0^+}\frac{\sin x}{e^{x^2}-1}
+$$
+**ESERCIZIO 1.24.** 
+$$
+\lim_{x \to +\infty}(\frac{\pi}{2}-\arctan x)x
+$$
+**ESERCIZIO 1.25.**
+$$
+\lim_{x \to +\infty}\sqrt{x^2+x}-\sqrt{x^2-x}
+$$
+**ESERCIZIO 1.26.**
+$$
+\lim_{x \to 0^+}\ln(\sin x)\ln(\cos x)
+$$
+**ESERCIZIO 1.27.**
+$$
+\lim_{n \to +\infty}\frac{\cos(\pi n)-n}{\sin{(\pi n)}+n}
+$$
+**ESERCIZIO 1.28.**
+$$
+\lim_{x \to 0}\frac{2\ln(\cos x)+\sin^2(x)}{x^4}
+$$
 - - -
 # 2. Esercizi delle dispense
 Qui si raccolgono *tutti* gli esercizi disponibili nella dispensa.
