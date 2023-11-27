@@ -12,9 +12,10 @@ stato: "0"
 Per approfondire questo tema rivolgersi alla dispensa di *D.D.S.*, capitolo *10.2*, p. 33.
 # 1. Definizione di insieme compatto in R
 #Definizione 
-> [!math|{"type":"theorem","number":"1.1.","setAsNoteMathLink":false,"title":"Insieme compatto in R per successioni","label":"insieme-compatto-in-r-per-successioni"}] Teorema 1.1. (Insieme compatto in R per successioni).
+> [!math|{"type":"definition","number":"1.1.","setAsNoteMathLink":true,"title":"Insieme compatto in R per successioni","label":"insieme-compatto-in-r-per-successioni"}] Definizione 1.1. (Insieme compatto in R per successioni).
 > 
 Sia $E \subseteq \mathbb{R}$. $E$ si dice **compatto per successione** (*d'ora in poi diremo compatto e basta*) se vale la seguente proprietà: se da *ogni successione* a valori in $E$ posso estrarre *una sottosuccessione convergente ad un punto* $x \in E$.
+^0eb138
 
 **OSS 1.1.** Con questa definizione, un insieme compatto sembra un ente di cui è quasi impossibile da verificare: infatti diventa interessante trovare una *caratterizzazione alternativa* con un teorema.
 # 2. Teorema di caratterizzazione dei compatti
@@ -28,7 +29,7 @@ Sia $E \subseteq \mathbb{R}$. $E$ si dice **compatto per successione** (*d'ora i
 Prima di poter procedere alla dimostrazione, ci serve il seguente lemma.
 
 #Lemma
-> [!math|{"type":"lemma","number":"2.1.","setAsNoteMathLink":true,"title":"Caratterizzazione della chiusura tramite le successioni","label":"caratterizzazione-della-chiusura-tramite-le-successioni"}] Lemma 2.1. (Caratterizzazione della chiusura tramite le successioni).
+> [!math|{"type":"lemma","number":"2.1.","setAsNoteMathLink":false,"title":"Caratterizzazione della chiusura tramite le successioni","label":"caratterizzazione-della-chiusura-tramite-le-successioni"}] Lemma 2.1. (Caratterizzazione della chiusura tramite le successioni).
 >  Sia $E \subseteq \mathbb{R}$.
 > Allora $E$ è *chiuso* ([[Insiemi aperti e chiusi]], **DEF 2.1.**) se e solo se vale la seguente proprietà:
 > $(\ast)$ Se una successione a valori in $E$ è convergente, allora il limite appartiene all'insieme $E$.
@@ -38,7 +39,7 @@ Prima di poter procedere alla dimostrazione, ci serve il seguente lemma.
 `\begin{proof}`@[[#^9c1b28]]
 Questo è un teorema del tipo $\iff$, quindi si procede in due passi distinti.
 1. "$\implies$": Sia $E$ *chiuso*; ora supponiamo (*per assurdo*) che sia falsa la proprietà $(\ast)$. Ovvero supponiamo che esiste una successione a valori in $E$ tale che il suo punto di convergenza $\bar{a}$ appartiene ad un punto fuori da $E$ (ovvero al suo complementare $\mathcal{C}_\mathbb{R}E$).
-   Però $E$ è chiuso, di conseguenza $\mathcal{C}_\mathbb{R}E$ è aperto: quindi abbiamo i seguenti. $$\bar{a} \in \mathcal{C}_\mathbb{R}E \implies\ \exists \varepsilon >0, ]\bar{a}-\varepsilon,\bar{a}+\varepsilon[ \subseteq \mathcal{C}_\mathbb{R}E$$Però allo stesso tempo abbiamo, per definizione $$\lim_n a_n = \bar{a} \implies \begin{gather}\forall \varepsilon >0, \exists \bar{n}:\forall n \in E \\n > \bar{n} \implies a_n \in \ ]\bar{a}-\varepsilon, \bar{a}+\varepsilon[\end{gather}$$Tuttavia questo è un *assurdo* in quanto sappiamo che se $a_n$ appartiene a $E$ e invece l'intorno $]\bar{a}-\varepsilon,\bar{a}+\varepsilon[$ contiene *solo* elementi di $\mathcal{C}_\mathbb{R}E$, questo è impossibile. Allora la proprietà $(\ast)$ è vera.
+   Però $E$ è chiuso, quindi per definizione $\mathcal{C}_\mathbb{R}E$ è aperto: quindi abbiamo i seguenti. $$\bar{a} \in \mathcal{C}_\mathbb{R}E \implies\ \exists \varepsilon >0, ]\bar{a}-\varepsilon,\bar{a}+\varepsilon[ \subseteq \mathcal{C}_\mathbb{R}E$$Però allo stesso tempo abbiamo, per definizione $$\lim_n a_n = \bar{a} \implies \begin{gather}\forall \varepsilon >0, \exists \bar{n}:\forall n \in E \\n > \bar{n} \implies a_n \in \ ]\bar{a}-\varepsilon, \bar{a}+\varepsilon[\end{gather}$$Tuttavia questo è un *assurdo* in quanto sappiamo che se $a_n$ appartiene a $E$ e invece l'intorno $]\bar{a}-\varepsilon,\bar{a}+\varepsilon[$ contiene *solo* elementi di $\mathcal{C}_\mathbb{R}E$, questo è impossibile. Allora la proprietà $(\ast)$ è vera.
    L'idea della contraddizione sarebbe
    **FIGURA 2.1.a.** (*La contraddizione*)
    [ DA FARE ]
@@ -46,6 +47,7 @@ Questo è un teorema del tipo $\iff$, quindi si procede in due passi distinti.
    Per assurdo suppongo che $\mathcal{C}_\mathbb{R}E$ *non* sia aperto: allora facciamo la negazione di $$\begin{gather}\neg(\forall x \in \mathcal{C}_\mathbb{R}E ,\exists \varepsilon >0: \ ]x-\varepsilon, x+\varepsilon[ \subseteq \mathcal{C}_{\mathbb{R}}E)\\ \exists x \in \mathcal{C}_\mathbb{R}E: \forall \varepsilon >0, \ ]x-\varepsilon, x+\varepsilon[ \ \cap E \neq \emptyset\end{gather}$$Allora il gioco è fatto; quindi prendo l'intorno $\varepsilon = \frac{1}{n}$ posso individuare una successione $x_n$ $$\begin{gather}\varepsilon = \frac{1}{n} \implies\exists \bar{x} \in \mathcal{C}_{\mathbb{R}}E:\forall n, \ ]\bar{x}-\frac{1}{n}, \bar{x}+\frac{1}{n}[ \ \cap E \neq \emptyset \\ \forall n, \exists x_n \in E: |x_n - \bar{x} | < \frac{1}{n} \implies \lim_nx_n = \bar{x} \in \mathcal{C}_\mathbb{R}E\end{gather}$$Quindi ho trovato una successione $(x_n)_n$ a valori in $E$ che converge ad un punto *fuori di* $E$, che è impossibile in quanto violerebbe la l'ipotesi iniziale.
    **FIGURA 2.1.b.** (*La seconda contraddizione*)
    [DA FARE]
+   
 `\end{proof}`
 
 ##  Dimostrazione del teorema

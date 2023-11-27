@@ -7,6 +7,9 @@ stato: "1"
 ---
 *Cenno al concetto dei sistemi di generatori e combinazione lineare; Matrice come combinazione lineare di sistemi di generatori, indipendenza lineare*
 - - -
+# Premessa
+Questo capitolo è un semplice cenno ai concetti di *combinazione lineare*, *sistemi di generatori* e *indipendenza lineare* applicato alle matrici; in seguito questi temi verranno approfonditi con [[Spazi Vettoriali]].
+
 # 0. Combinazione lineare
 **DEF 0.** Per **combinazione lineare** si intende *l'espressione* per cui prendo una serie di *vettori* $\text{v}_i$ dall'$\mathbb{R}$*-spazio vettoriale $V$* ([[Spazi Vettoriali]], **DEF 1.**, **DEF 1.1.**), scalo ciascuna di essa per uno scalare $\lambda_i$ e li sommo; quindi stiamo parlando di $$\lambda_1\text{v}_1 + \lambda_2 \text{v}_2 + \cdots + \lambda_{n}\text{v}_{n}$$
 # 1. Sistemi di generatori

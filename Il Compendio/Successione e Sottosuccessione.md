@@ -11,7 +11,7 @@ stato: "1"
 **DEF 1.1.** (*Successione*)
 Sia $f$ una funzione del tipo $$f: \mathbb{N} \longrightarrow A$$dove $\mathbb{N}$ è l'insieme dei numeri naturali ([[Struttura dell'insieme dei numeri naturali]]), la chiamiamo (*tradizionalmente*) come una **successione a valori in A** e la indichiamo con $$(a_n)_n$$dove $f(n) = a_n$; ovvero $$(a_n)_n = (a_0, a_1, \ldots, a_n)$$
 **DEF 1.2.** (*Successione a variabile reale*)
-Se $A = \mathbb{R}$, allora avremmo una *successione a valori in $\mathbb{R}$*, oppure una *successione reale*.
+Se $A = \mathbb{R}$, allora avremmo una *successione a valori in $\mathbb{R}$*, oppure una *successione reale*. ^e6d66f
 
 **DEF 1.3.** (*Successione limitata*)
 Si definisce una **successione limitata** quando si verifica che $$\exists M >0: \forall n, |a_n|<M$$

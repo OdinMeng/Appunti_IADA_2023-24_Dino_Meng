@@ -13,12 +13,12 @@ Cerchiamo di astrarre quanto visto in [[Vettori Liberi]] e [[Operazioni sui vett
 **DEF 1.** Un **$\mathbb{R}$-spazio vettoriale** (o **spazio vettoriale su $\mathbb{R}$**) è un insieme $V$ con $2$ operazioni definiti come: $$\begin{align}&+: V \times V \longrightarrow V;\  (u,v) \mapsto u+v \\ &\ \ \cdot : \mathbb{R} \times V \longrightarrow V; \ (\lambda, v) \mapsto \lambda\cdot v \end{align}$$tali per cui $\forall \lambda, \mu \in \mathbb{R}$ e $\forall u,v,w \in V$ sono soddisfatte le seguenti proprietà: $$\begin{align}&\text{v}_1: (u+v)+w = u+(v+w) \\ &\text{v}_2: u+v = v+u \\&\text{v}_3: \exists0 \in V \ | \ 0+v=v+0=v \\ &\text{v}_4: \exists-v\in V \ | \ v+(-v) = (-v)+v = 0\\ &\text{v}_5:\lambda\cdot(u+v) = \lambda u + \lambda v  \\ &\text{v}_6: (\lambda+\mu)\cdot u = \lambda\cdot u + \mu \cdot u \\ &\text{v}_7: (\lambda\cdot\mu)\cdot v = \lambda\cdot(\mu \cdot v)\\&\text{v}_8: 1\cdot v = v\end{align}$$
 Inoltre uno **spazio vettoriale** può essere anche definito con la seguente *terna*: $$(V, +, \cdot)$$
 **DEF 1.1.** Chiamiamo l'elemento $0$ della $\text{v}_3$ l'elemento *neutro*.
-**OSS 1.1.** Notare che nella $\text{v}_8$ non chiameremo $1$ *l'elemento neutro* per ragioni di convenzione, particolarmente per quanto riguarda l'algebra astratta.
+**OSS 1.1.** Notare che nella $\text{v}_8$ non chiameremo $1$ *l'elemento neutro* per ragioni di convenzione, particolarmente per quanto riguarda l'algebra astratta. ^7e2c4e
 
 **PROP 1.1.** Ciò che abbiamo visto fino ad ora ci mostra che $V_2$ (ovvero l'insieme dei vettori liberi nel piano) è un $\mathbb{R}$-spazio vettoriale.
 ## 1.1. Vettore
 **DEF 1.1.** Sia $V$ uno $\mathbb{R}$-spazio vettoriale; gli elementi $v \in V$ si dicono **vettore**
-**! ATTENZIONE !** Si nota immediatamente che questa definizione del *vettore* non deve necessariamente corrispondere alla nostra idea di un *vettore libero*.
+**! ATTENZIONE !** Si nota immediatamente che questa definizione del *vettore* non deve necessariamente corrispondere alla nostra idea di un *vettore libero*. ^74efce
 ## PROP 1.2. L'unicità del vettore neutro $0$
 L'assioma $\text{v}_3$ garantisce che *esiste* almeno un vettore neutro $0$ tali che certe proprietà vengono soddisfatte; però ciò che *NON* garantisce è l'unicità del vettore neutro $0$. Potrebbe esistere un altro vettore *neutro* che possiamo chiamare $0'$.
 Però $0'$ non esiste e lo dimostreremo.

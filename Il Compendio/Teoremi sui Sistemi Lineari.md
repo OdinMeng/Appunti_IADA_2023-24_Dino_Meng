@@ -11,11 +11,14 @@ stato: "1"
 Presentiamo dei teoremi importanti sui [[Sistemi Lineari]].
 ## 1.1. Teorema di Cramer
 **TEOREMA 1.1.** (*di Cramer*) Considero un sistema lineare con $n$ equazioni ed $n$ incognite, di forma $$A\cdot X = b$$Ovvero $A \in M_{n}(K)$.
-Ora supponiamo che $A$ sia anche *invertibile* ([[Matrice]], **DEF 2.6.**); allora da qui discende che esiste un'*unica soluzione* $S$ del sistema lineare ed essa è data da $$S = A^{-1}\cdot b$$
+Ora supponiamo che $A$ sia anche *invertibile* ([[Matrice]], **DEF 2.6.**); allora da qui discende che esiste un'*unica soluzione* $S$ del sistema lineare ed essa è data da $$S = A^{-1}\cdot b$$ ^97243e
+
 **OSS 1.1.1.** Questo teorema è molto importante in quanto ci dà due dati importanti:
 1. Da un lato ci dice quando un *sistema lineare* è *compatibile*, quindi c'è questa componente *"esistenziale"* di questo teorema.
 2. Dall'altro lato ci fornisce una formula per *calcolare* la soluzione.
-L'unico problema di questo teorema è che **per ora** non abbiamo gli strumenti per *invertire una matrice* o *determinare se una matrice sia invertibile o meno*.
+~~L'unico problema di questo teorema è che per ora non abbiamo gli strumenti per invertire una matrice o determinare se una matrice sia invertibile o meno.~~
+> [!check] Aggiornamento
+> Ora siamo attualmente in possesso dei strumenti per calcolare l'inversa di una matrice: guardare la pagina [[Invertire Matrici]].
 
 **DIMOSTRAZIONE 1.1.** La dimostrazione si struttura in due parti:
 1. Una parte in cui devo dimostrare che la soluzione effettivamente *esiste* ed equivale a $A^{-1} \cdot b$
@@ -29,7 +32,7 @@ L'unico problema di questo teorema è che **per ora** non abbiamo gli strumenti 
 ## 1.2. Teorema di struttura per i sistemi lineari omogenei
 **TEOREMA 1.2.** (*di struttura per le soluzioni dei sistemi lineari omogenei*)
 Considero un *sistema lineare omogeneo* di $m$ equazioni in $n$ incognite. Ovvero $$A \cdot X = 0$$dove $A = M_{m,n}(K)$ e $X = K^{n}$, $0$ è la *matrice nulla* ([[Matrice]], **DEF. 2.2.**). 
-Poi siano $s, s' \in K^n$ due soluzioni distinte e sia $\lambda \in K$, allora:
+Poi siano $s, s' \in K^n$ due soluzioni distinte e sia $\lambda \in K$, allora: ^598cf8
 1. $s + s'$ è soluzione
 2. $\lambda \cdot s$ è soluzione
 Pertanto ricordandoci che il vettore (o la matrice) nullo/a è *sempre* soluzione di un sistema *omogeneo*, ottengo che l'*l'insieme delle soluzioni* di questo sistema è l'insieme $$S = \{r \in K^n: A \cdot r = 0\}$$allora si verifica che $S$ è un *sottospazio vettoriale* ([[Sottospazi Vettoriali]], **DEF 1.**) di $K^n$. 
@@ -59,7 +62,7 @@ Infatti $\lambda \cdot 0 = 0$ e $0 + 0 = 0$ sono anche *soluzioni* in quanto son
 **TEOREMA 1.4.** (*di struttura per le soluzioni dei sistemi lineari*)
 Considero un *sistema lineare* $$A \cdot X = b$$con $A \in M_{m,n}(K)$ e $b \in K^n$. Sia $\tilde{s}$ una soluzione; allora un elemento $s \in K^n$ è soluzione di questo sistema lineare *se e solo* se possiamo scrivere $$s = \tilde{s} + s_0$$dove $s_0$ è una soluzione del *sistema lineare omogeneo* $$A \cdot X = 0$$
 In altre parole l'insieme delle soluzione di $A \cdot X = b$ è $$S = \{s \in K^n: s=\tilde{s} + s_0\ \text{ per un qualche }s_0 \text{ sia soluzione di }Ax =0\}$$
-**DEF 1.4.1.** Il *sistema lineare omogeneo* $A \cdot X = 0$ si dice il **sistema lineare omogeneo associato** al sistema $A \cdot X = b$.
+**DEF 1.4.1.** Il *sistema lineare omogeneo* $A \cdot X = 0$ si dice il **sistema lineare omogeneo associato** al sistema $A \cdot X = b$. ^49a263
 
 **DIMOSTRAZIONE 1.4.** Per pianificare la struttura di questo teorema, facciamo due considerazioni sulla [logica formale](Connettivi), in particolare sulla *doppia implicazione* ([[Connettivi]]).
 Questo teorema, da un punto di vista logico, vuole dire che $$\text{s è soluzione} \iff s=\tilde{s}+s_0$$allora vogliamo dimostrare che entrambe le *implicazioni* sono vere; ovvero nel senso che valgono $$\begin{cases}s \text{ è soluzione} \implies s=\tilde{s}+s_0 \\ s=\tilde{s}+s_0 \implies s \text{ è soluzione}\end{cases}$$

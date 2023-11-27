@@ -31,7 +31,7 @@ Graficamente questo equivale a *"scambiare le assi"* del grafico della funzione,
 ![[Pasted image 20231017172834.png]]
 # 3. Valore assoluto
 **DEF 3.1.** Sia il **valore assoluto** una *funzione* $$| \cdot | : \mathbb{R} \longrightarrow \mathbb{R}; x \mapsto|x|=\begin{cases}x: x\geq0 \\-x: x < 0\end{cases}$$Ad esempio, il grafico di $| x |$  si rappresenta nel modo seguente:
-![[Pasted image 20231017172853.png]]
+![[Pasted image 20231017172853.png]] ^169d3f
 
 **OSS 3.1.1.** Notare che $$\sqrt{x^2} = |x|$$
 ## 3.1. Proprietà, disuguaglianza triangolare

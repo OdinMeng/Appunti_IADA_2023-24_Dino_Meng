@@ -18,7 +18,7 @@ Gli **assiomi di Peano** soddisfano tutte le seguenti regole enunciate:
 	1. $\sigma$ è iniettiva, ovvero $\forall x_1, x_2 \in \mathbb{N}; x_1 \neq x_2 \implies \sigma(x_1) \neq \sigma(x_2)$
 	2. $0 \not \in \sigma(\mathbb{N})$; ovvero lo $0$ non è successivo di nessun numero in $\mathbb{N}$.
 	
-1. (*principio di induzione*) Sia l'insieme $S \subseteq \mathbb{N}$ e si suppone che: $0 \in S$ e $\forall n, n \in S \implies \sigma(n) \in S$; allora $S = \mathbb{N}$.
+3. (*principio di induzione*) Sia l'insieme $S \subseteq \mathbb{N}$ e si suppone che: $0 \in S$ e $\forall n, n \in S \implies \sigma(n) \in S$; allora $S = \mathbb{N}$. ^76b850
 
 **OSS 2.1.** Dagli assiomi **2.1.** e **2.2.** appena enunciate è possibile dedurre che l'insieme $\mathbb{N}$ dev'essere necessariamente *infinito*: se il codominio della funzione $\mathbb{N}$ ha più elementi del dominio della funzione $\mathbb{N}$ (visto che $\sigma$ è iniettiva ed il numero $0$ non fa parte dell'immagine), **ma** si tratta del medesimo insieme $\mathbb{N} = A = B$, pertanto $\mathbb{N}$ dev'essere infinita in quanto è l'unico modo per soddisfare le condizioni dedotte.
 

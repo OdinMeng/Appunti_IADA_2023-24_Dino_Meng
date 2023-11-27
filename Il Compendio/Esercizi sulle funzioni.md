@@ -18,6 +18,8 @@ Qui si propone degli esercizi misti sulle funzioni svolte durante le lezioni del
 
 **ESERCIZIO 1.c.** Data la funzione $\arcsin$, trovare $$\arcsin^{\leftarrow}([0, \frac{1}{2}])$$
 
-**ESERCIZIO 1.d.** Data la funzione $$f(x) = \frac{|x+1|}{x}$$Disegnare $f(x)$ e determinare $$f^{\leftarrow}(]0, +\infty[)$$ 
+**ESERCIZIO 1.d.** Data la funzione $$f(x) = \frac{|x+1|}{x}$$Disegnare $f(x)$ e determinare $$f^{\leftarrow}(]0, +\infty[)$$
+*Esericizi dati il 27.11.2023*
+DA COMPILARE!!!
 # 2. Svolgimento degli esercizi
 Se un giorno avessi la voglia di farlo, mi sistemerei pure lo svolgimento e la soluzione di questi esercizi. Però questo sarebbe da vedere.

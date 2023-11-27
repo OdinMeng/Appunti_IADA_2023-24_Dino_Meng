@@ -98,11 +98,11 @@ In [[Esempi di Limiti di Successione]], **ESEMPIO 1.2.** abbiamo visto che $$\li
 **ESEMPIO 6.2.** (*Esponenziale vs quoziente*)
 Voglio calcolare $$a >1, \lim_{x \to +\infty}\frac{a^x}{x^k}, k \in \mathbb{N}$$In questo esempio ho una *forma indeterminata* del tipo $\frac{+\infty}{+\infty}$ ([[Teoremi sui Limiti di Funzione]], **TEOREMA 7.1.**); la domanda che ci poniamo è il seguente: *"chi vince tra l'esponenziale $a^x$ e il quoziente $x^k$? Ovvero avremmo $+\infty$ o $0$?"* Spoiler: vincerà l'esponenziale e di conseguenza il limite è $+\infty$.
 **DIMOSTRAZIONE.** Qui uso le proprietà degli esponenti ([[Funzione esponenziale e Logaritmica]], **TEOREMA 1.5.**). $$\frac{a^x}{x^k} = (\frac{(a^\frac{1}{k})^x}{x})^k$$Ora considero il limite di $$\lim_{x \to +\infty}\frac{(a^\frac{1}{k})^x}{x} = +\infty$$e facendo la sostituzione con $y =\frac{x}{k}$ ho $$\lim_{y \to +\infty}\frac{a^y}{y}\cdot \frac{1}{k}=+\infty$$che è infatti una situazione del tipo **ESEMPIO 6.1.**. 
-Allora ho una situazione del tipo $$\lim_{x \to +\infty}\frac{a^x}{x^k} \to (+\infty)^k \to +\infty$$Pertanto il risultato finale è $$\lim_{x \to +\infty}\frac{a^x}{x^k} = +\infty$$
+Allora ho una situazione del tipo $$\lim_{x \to +\infty}\frac{a^x}{x^k} \to (+\infty)^k \to +\infty$$Pertanto il risultato finale è $$\boxed{\lim_{x \to +\infty}\frac{a^x}{x^k} = +\infty}$$
 ## Esponenziale vs potenza
 **ESEMPIO 6.3.** (*Esponenziale vs potenza*)
 Ora facciamo lo stesso scontro, solo che al posto del quoziente abbiamo la potenza $p_n(x) = x^n$. Allora $$\lim_{x \to -\infty}x^k a^x = \underbrace{\pm\infty \cdot 0}_{\text{forma ind.}}$$Allora qui ci chiediamo quale *"decresce"* la più velocemente; $x^k$ oppure $a^x$? Ora vediamo.
-Poniamo, mediante la *sostituzione di variabile*, $y = -x$; allora $$\lim_{y \to +\infty}-y^k a^{-y} = (-1)^k y^ka^{-y} = (-1)^k\frac{y^k}{a^k}$$Notiamo che $$\frac{y^k}{a^y} = (\frac{a^y}{y^k})^{-1}$$quindi abbiamo una situazione del tipo $$(-1)^k \cdot(\frac{1}{+\infty}) \to (-1)^k \cdot0 \to 0$$Allora il limite è $$\lim_{x \to -\infty}x^k a^x = 0$$aggiudicandoci un'altra vittoria per l'esponenziale.
+Poniamo, mediante la *sostituzione di variabile*, $y = -x$; allora $$\lim_{y \to +\infty}-y^k a^{-y} = (-1)^k y^ka^{-y} = (-1)^k\frac{y^k}{a^y}$$Notiamo che $$\frac{y^k}{a^y} = (\frac{a^y}{y^k})^{-1}$$quindi abbiamo una situazione del tipo $$(-1)^k \cdot(\frac{1}{+\infty}) \to (-1)^k \cdot0 \to 0$$Allora il limite è $$\boxed{\lim_{x \to -\infty}x^k a^x = 0}$$aggiudicandoci un'altra vittoria per l'esponenziale.
 
 ## Logaritmo vs identità
 **ESEMPIO 6.4.** (*Logaritmo vs identità*)

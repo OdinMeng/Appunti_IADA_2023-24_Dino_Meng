@@ -44,6 +44,7 @@ Ora ci sono due possibilità: che $E$ sia o *finito* o *infinito*.
    1. Stesso discorso per l'intorno $]\xi-\frac{1}{2}, \xi+\frac{1}{2}[$, con $a_{n_1}$, ma anche tale che $n_1 > n_0$ per conservare l'ordine. Posso farlo in quanto ci sono *infiniti* punti (ovvero valori $a_n$) attorno $\xi$.
    2. Vado avanti così fino all'infinito; ho allora $$a_{n_k} \in (\xi-\frac{1}{2^k}, \xi+\frac{1}{2^k})$$Allora $$|a_{n_k}-\xi| < \frac{1}{2^k} \implies 0<|a_{n_k}-\xi| < \frac{1}{2^k}$$Considerando che $$\lim_n 0 = 0, \lim_n \frac{1}{2^k}=0$$Allora per il *teorema dei due carabinieri* ([[Limite di Successione]], **OSS 1.1.**) ho $$\lim_{k}a_{n_k}-\xi = 0 \implies \boxed{\lim_k a_{n_k}= \xi} \ \blacksquare$$
 `\end{proof}`
+
 Graficamente l'idea della dimostrazione è il seguente.
 **FIGURA 2.1.** (*Idea della dimostrazione*)
 [GRAFICO DA FARE]

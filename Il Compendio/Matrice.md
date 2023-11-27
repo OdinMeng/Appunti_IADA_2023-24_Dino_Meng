@@ -10,7 +10,7 @@ stato: "1"
 # 1.  Definizione di Matrice
 **DEF 1.** Siano $m, n \in \mathbb{N} \diagdown \{0\}$; allora si definisce una **matrice** $m \times n$ a **coefficienti reali** come una *tabella rettangolare di $m \cdot n$ elementi* del tipo: $$\begin{pmatrix}a_{11} & a_{12} & \ldots & a_{1n} \\\ a_{21} & a_{22} & \ldots & a_{2n} \\ \ldots \\ a_{m1} & a_{m2} & \ldots & a_{mn} \end{pmatrix}$$
 Dove ciascun *coefficiente* $a_{ij}$ è un numero *reale*; $$\forall i \in \{1, \ldots ,m\}; \forall j \in \{1, \ldots ,n\}; a_{ij} \in \mathbb{R}$$Per convenzione i numeri (*indici*) $i, j$ iniziano con $1$. 
-Diciamo che il coefficiente $a_{ij}$ è di posto $i, j$.
+Diciamo che il coefficiente $a_{ij}$ è di posto $i, j$. ^18867e
 
 **ESEMPIO 1.1.** La seguente è una matrice $3 \times 4$.
 $$\begin{pmatrix} 1 & \sqrt{2} & -2 & 2 \\ 0 & 3 & 4 & 6 \\ 7 & -1 & 5 & 3 \end{pmatrix}$$
@@ -26,7 +26,7 @@ Sia $A=(a_{ij})_{i = 1, \ldots, m; j = 1, \ldots, n}$ una matrice a coefficienti
 # 2. Tipologie di matrici
 ## 2.1. Matrici quadrate
 **DEF 2.1.** Una *matrice* si dice **quadrata** se il numero delle *righe* ($n$) coincide con il suo numero delle *colonne* ($m$).
-**SUBDEF 2.1.1.** Per denotare **l'insieme delle matrici quadrate** si scrive $$M_n(\mathbb{R})$$ove $n \in \mathbb{N}, n>0$.
+**SUBDEF 2.1.1.** Per denotare **l'insieme delle matrici quadrate** si scrive $$M_n(\mathbb{R})$$ove $n \in \mathbb{N}, n>0$. ^a95650
 
 **ESEMPIO 2.1.1.** La seguente è una *matrice quadrata $2 \times 2$*
 $$A = \begin{pmatrix} 1 & 2 \\ -2 & 5 \end{pmatrix}$$
@@ -38,7 +38,7 @@ $$A = \begin{pmatrix} 1 & 2 \\ -2 & 5 \end{pmatrix}$$
 $$0 := \begin{pmatrix}0 & \ldots & 0 \\ \vdots & & \vdots \\ 0 & \ldots & 0\end{pmatrix}$$
 ## 2.3. Matrici triangolari superiori
 **DEF 2.3.** Si definisce **l'insieme delle matrici triangolari superiori $2 \times 2$** come $$T_{2}(\mathbb{R}):= \{A \in M_2(\mathbb{R}): a_{21} = 0\}$$ovvero una matrice di forma $$\begin{pmatrix}a_{11}&a_{12}\\0 &a_{22} \end{pmatrix}$$
-Ovviamente è possibile generalizzare per le matrici quadrate $M_n(\mathbb{R})$.
+Ovviamente è possibile generalizzare per le matrici quadrate $M_n(\mathbb{R})$. ^920878
 
 **OSS 2.3.1.** Notiamo che questo insieme è un sottoinsieme di $M_2(\mathbb{R})$; $$T_2(\mathbb{R}) \subseteq M_2(\mathbb{R})$$Infatti se l'insieme delle matrici $2 \times 2$ $M_2(\mathbb{R})$ è un *$\mathbb{R}$-spazio vettoriale* ([[Spazi Vettoriali]], **DEF 1.**), allora $T_2(\mathbb{R})$ è un *sottospazio vettoriale* ([[Sottospazi Vettoriali]], **DEF 1.**).
 Infatti valgono le seguenti:
@@ -64,7 +64,8 @@ $$A = \begin{pmatrix}1&2&3\\2&4&5\\3&5&6 \end{pmatrix}$$che soddisfa $^tA = A$. 
 
 ## 2.5. Matrice unità (o identità)
 Considerando da quanto detto e notato per quanto riguarda il *prodotto tra matrici* ([[Operazioni particolari con matrici]]), possiamo definire una matrice che comporta come il numero $1$ dei numeri reali $\mathbb{R}$ per questa suddetta operazione. ([[Operazioni particolari con matrici]], **PROP 2.4.3.**)
-**DEF 2.5.** Sia $n \in \mathbb{N}$ e $n > 0$, allora la **matrice unità** (o **identità**) è quella matrice quadrata appartenente a $M_n(\mathbb{R})$ le cui entrate sono tutte nulle, fuorché quelle della *diagonale principale*, che sono tutti uguali a $1$. Denotiamo questa matrice con $$\mathbb{1}_n \text{ o } I_n \text{ o } \text{Id}_n$$ove $$(\mathbb{1}_n)_{ij} = \begin{cases}0 \text{ se }i \neq j \\ 1 \text{ se }i = j\end{cases}$$
+
+**DEF 2.5.** Sia $n \in \mathbb{N}$ e $n > 0$, allora la **matrice unità** (o **identità**) è quella matrice quadrata appartenente a $M_n(\mathbb{R})$ le cui entrate sono tutte nulle, fuorché quelle della *diagonale principale*, che sono tutti uguali a $1$. Denotiamo questa matrice con $$\mathbb{1}_n \text{ o } I_n \text{ o } \text{Id}_n$$ove $$(\mathbb{1}_n)_{ij} = \begin{cases}0 \text{ se }i \neq j \\ 1 \text{ se }i = j\end{cases}$$ ^d1d34b
 ## 2.6. Matrice inversa
 **OSS 2.6.1.** Nei dei numeri reali $\mathbb{R}$, dato un $a \in \mathbb{R}, a \neq 0$ diciamo che un altro numero $b \in \mathbb{R}$ è l'inversa di $a$ se è vera che $$a \cdot b = b\cdot a = 1$$e $b$ è unica. Infatti questo è esattamente *l'assioma M3)* dei numeri reali ([[Assiomi dei Numeri Reali]]).
 
@@ -81,3 +82,17 @@ Allora per definizione$$\begin{align}&A \cdot B = B \cdot A = \mathbb{1}_{n}\\ &
 **OSS 2.6.2.** L'analogia tra *l'invertibilità* rispetto al prodotto definito in $\mathbb{R}$ e l'invertibilità rispetto al *prodotto righe per colonne* di matrici *NON* si estende fino al punto di poter dire che *OGNI* matrice non-nulla è invertibile. Infatti si propone il seguente controesempio.
 **ESEMPIO 2.6.2.a.** Considero la seguente matrice $A \in M_2(\mathbb{R})$: $$A = \begin{pmatrix}1 & 1 \\1 & 1 \end{pmatrix}$$la matrice $A$ *non* è *invertibile*.
 **DIMOSTRAZIONE.** Per assurdo suppongo che esista $A^{-1} = B$. Allora $$B = \begin{pmatrix}b_{11} & b_{12} \\ b_{21} & b_{22} \end{pmatrix}$$Allora per definizione deve valere $$C=A \cdot B = \begin{pmatrix} 1 & 0 \\0 & 1\end{pmatrix}$$Prendiamo le entrate $C_{11}$ e $C_{21}$. Per definizione del *prodotto righe per colonne* abbiamo: $$\begin{align}&C_{11} = 1 = \begin{pmatrix}1&1 \end{pmatrix} \begin{pmatrix}b_{11}  \\ b_{21}\end{pmatrix} = b_{11} + b_{21} \\ &C_{21} = 0 = \begin{pmatrix}1 & 1 \end{pmatrix}\begin{pmatrix} b_{11} \\ b_{21}\end{pmatrix} = b_{11}+b_{21} \end{align}$$Ma questo implicherebbe che $$b_{11} + b_{21} = 1 = 0$$che è un *assurdo*, in quanto $1 \neq 0$.
+
+## 2.7. Minore ij-esimo di una matrice
+#Definizione 
+> [!def] Definizione 2.7. (Minore ij-esimo di una matrice)
+> Sia $A = M_n(K)$, siano $i,j \in \{1, \ldots, n\}$ dei *valori fissati* che rappresentano gli *indici*. 
+> Definiamo dunque il *minore ij-esimo della matrice A* $A_{n-1}(K)$ come la *sottomatrice* $A_{ij} \subset A$ ottenuta *eliminando* la riga i-esima e la colonna j-esima.
+
+#Esempio 
+> [!es] Esempio 2.7.1.
+> Sia $A \in M_3(K)$; allora il minore di $A$ $13$-esimo è
+> $$A_{13} = \begin{pmatrix}a_{21} & a_{22} \\ a_{31} & a_{32}\end{pmatrix} $$
+
+**TRUCCO.** Un *"trucco"* grafico che può essere utile di determinare il *minore* è quello di prendere la matrice originale, sbarrare la riga $i$-esima e la colonna $j$-esima, poi infine di considerare solo ciò che rimane.
+![[Pasted image 20231121155840.png]]

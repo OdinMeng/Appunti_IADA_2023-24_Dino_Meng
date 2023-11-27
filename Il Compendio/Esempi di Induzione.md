@@ -81,3 +81,10 @@ Provare che le regioni individuate con $n$ rette sono al massimo $\frac{n^2+n}{2
 1. Provare $f(1)$; $$f(1): f_1 = \frac{1+1}{2}+1 \iff 2 = 2 \text{ OK}$$
 2. Supponendo $f(n)$, provare $f(n+1)$; $$\begin{align}f(n):&\ f_n = \frac{n^2+n}{2}+1 \\ &\ f_n + (n+1) = \frac{n^2+n}{2} + 1+(n+1) \\ &\ f_{n+1} = \frac{n^2+n+2n+2}{2} +1  \\ &\ \ldots = \frac{n^2+n+2n+2}{2} +1 \\ &\ \ldots = \frac{n^2+3n+2}{2}+1 \\\ &\ \ldots = \frac{(n+1)^2+(n+1)}{2} +1 \end{align}$$
 3. Quindi da $f(n)$ si ottiene $f(n+1)$, terminando così la dimostrazione. $\blacksquare$
+
+# PROBLEMA 1.2.
+(*Tratto dalla traccia di esame di Analisi Matematica I, data 01.02.2019, fila D*)
+Sia $f(x) = \log(1-2x)$. Dimostrare *per induzione* che per $n \geq 1$, si ha 
+$$
+f^{(n)}(x)= -2^n(n-1)!(1-2x)^{-n}
+$$

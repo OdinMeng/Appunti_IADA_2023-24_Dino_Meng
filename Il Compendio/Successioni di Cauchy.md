@@ -1,6 +1,6 @@
 ---
 data: 2023-11-07
-corso: 
+corso: "[[Analisi Matematica I]]"
 argomento: Successioni di Cauchy
 tipologia: appunti
 stato: "0"

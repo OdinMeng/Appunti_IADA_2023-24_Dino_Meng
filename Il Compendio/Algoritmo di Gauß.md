@@ -10,20 +10,21 @@ stato: "1"
 - - -
 # 1. Matrice completa di un sistema lineare
 **DEF 1.1.** Consideriamo un [sistema lineare](Sistemi%20Lineari) di forma $$A \cdot x = b$$allora definiamo la *matrice* ottenuta aggiungendo alla matrice $A$ la colonna data dai *termini noti* $b$ come la **matrice completa** di questo sistema lineare. La denotiamo con $$(A | b) := \begin{pmatrix} a_{11} & a_{12} &\ldots& a_{1n} & | &  b_1 \\ a_{21} & a_{22} & \ldots & a_{2n} & | & b_2 \\ \vdots & & & \vdots & | &\vdots \\a_{m1} & a_{m2} & \ldots & a_{mn} & | & b_m\end{pmatrix}$$
-**NOTA.** Il segno sbarra $|$ per *"differenziare"* i termini noti dai coefficienti è opzionale ed ha uno scopo puramente grafico.
+**NOTA.** Il segno sbarra $|$ per *"differenziare"* i termini noti dai coefficienti è opzionale ed ha uno scopo puramente grafico. ^8357bd
 # 2. Operazioni elementari OE
+
 Ora definiamo una serie di *operazioni elementari* (OE) che sono in grado di trasformare un *sistema lineare* di forma $(A|B)$ in un altro *equivalente* ([[Sistemi Lineari]], **DEF 1.5.**). 
 
 **OE1.** *L'operazione scambia equazioni*
 Dati due indici $i, j \in \{1, \ldots, m\}$ scambiamo di posto l'equazione $i$-esima e $j$-esima.
-Questo corrisponde a *scambiare* la riga $i$-esima con la riga $j$-esima della matrice $(A | B)$.
+Questo corrisponde a *scambiare* la riga $i$-esima con la riga $j$-esima della matrice $(A | B)$. ^8a7c5e
 
 **OE2.** *L'operazione scala equazioni*
-Dato l'indice $i \in \{1, \ldots, m\}$ e uno *scalare* $\lambda \in K$, moltiplichiamo l'$i$-esima equazione per $\lambda$. Precisamente questo corrisponde a *moltiplicare* per $\lambda$ l'$i$-esima riga della matrice completa $(A|B)$.
+Dato l'indice $i \in \{1, \ldots, m\}$ e uno *scalare* $\lambda \in K$, moltiplichiamo l'$i$-esima equazione per $\lambda$. Precisamente questo corrisponde a *moltiplicare* per $\lambda$ l'$i$-esima riga della matrice completa $(A|B)$. ^1f10d6
 
 **OE3.** *L'operazione somma equazioni*
 Dati due indici $i, j \in \{1, \ldots, m\}$ e uno scalare non nullo $\lambda \in K, \lambda \neq 0$, sommiamo alla $i$-esima equazione alla $i$-esima equazione la $j$-esima equazione dopo averla moltiplicata per $\lambda$.
-Ovvero questo corrisponde a sommare alla riga $i$-esima della matrice completa $(A|B)$ $\lambda$ volte la $j$-esima riga.
+Ovvero questo corrisponde a sommare alla riga $i$-esima della matrice completa $(A|B)$ $\lambda$ volte la $j$-esima riga. ^175a42
 
 **OSS 2.1.** Osserviamo che queste operazioni determinano dei sistemi lineari *equivalenti* in quanto queste operazioni sono *completamente invertibili*; infatti partendo da un sistema lineare *"trasformato"* mediante le **OE.**, possiamo tornare al sistema originario.
 

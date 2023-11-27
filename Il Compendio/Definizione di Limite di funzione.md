@@ -45,7 +45,7 @@ Ora al terzo caso.
 	
 Infine all'ultimo caso.
 	**CASO 4.** Finalmente abbiamo $$\lim_{x \to+\infty}f(x) = +\infty$$quindi *per definizione* ho $$\begin{gather}\forall M; (M, +\infty), \exists N; (N, +\infty): \\ \text{tale che }\forall x\in E, \\x > N \implies f(x) > M \end{gather}$$ovvero ciò vuol dire che fissando un qualunque valore $M$ riuscirò *sempre* a trovare un valore $N$ tale per cui prendendo un qualsiasi punto $x > N$, il valore immagine di questo punto supererà sempre $M$.
-	![[Pasted image 20231103221438.png]]
+	![[Pasted image 20231103221438.png]] ^0f845a
 ## 2.1. Infinitesimo 
 **APPROFONDIMENTO PERSONALE a.** Usando la *nostra* definizione del limite e ponendo $L = 0, x = +\infty$, otteniamo un risultato che è consistente con la definizione di *infinitesimo*$^{(1)}$ secondo dei noti matematici russi, tra cui uno è Kolmogorov.
 **DEF 2.a.** Si definisce un infinitesimo come una *grandezza variabile* $\alpha_n$, denotata come $$\lim_{x \to +\infty}\alpha_n = 0 \text{ oppure }\alpha_n \to 0$$che possiede la seguente proprietà: $$\forall \varepsilon >0, \exists N>0: \forall x \in E, x>N \implies |\alpha_x|<\varepsilon$$
@@ -57,9 +57,10 @@ Estratto tratto da *Le matematiche: analisi, algebra e geometria analitica* di *
 - - -
 # 3. Limite destro e sinistro
 **PREMESSA.** Sia una funzione $f$ di variabile reale del tipo $$f: E \longrightarrow \mathbb{R}, E \subseteq \mathbb{R}$$$x_0 \in \mathbb{R}$ un punto di accumulazione per $E$, $L \in \mathbb{\tilde{R}}$.
-Allora definisco le seguenti:
+Allora definisco le seguenti.
+
 **DEF 3.1.** Il **limite della funzione $f$ che tende a $x_0$ da destra** come $$\lim_{x \to x_0^+} f(x) = L$$come $$\begin{gather}\forall V \text{ intorno di }L, \exists U \text{ intorno di }x_0: \forall x \in E, \\x \in U \cap (x_0, +\infty) \implies f(x) \in V \end{gather}$$ovvero come il *limite di $f$*, considerando però *solo* i punti che stanno a *destra* di $x_0$.
-![[Pasted image 20231103221500.png]]
+![[Pasted image 20231103221500.png]] ^406c13
 
 **DEF 3.2.** Analogamente **il limite della funzione $f$ che tende a $x_0$ da sinistra** è $$\lim_{x \to x_0^-} f(x) = L$$ovvero $$\begin{gather}\forall V \text{ intorno di }L, \exists U \text{ intorno di }x_0: \forall x \in E, \\x \in U \cap(-\infty, x_0) \implies f(x) \in V \end{gather}$$
 **OSS 3.1.** Si può immediatamente verificare che $$\lim_{x \to x_0} f(x) = L \iff \lim_{x \to x_0^+}f(x)=\lim_{x \to x_0^-}f(x) = L$$Infatti l'insieme dei $x$ del limite *destro* e/o *sinistro* su cui verifichiamo che $f(x) \in V$ è un *sottoinsieme* dell'insieme di cui si verifica col limite generale. Pertanto facendo l'unione tra questi due sottoinsiemi abbiamo$$[U \cap (-\infty, x_0)] \cup [U \cap(x_0, +\infty)] = U\diagdown\{x_0\}$$

@@ -1,6 +1,6 @@
 ---
 data: 2023-11-11
-corso: 
+corso: "[[Analisi Matematica I]]"
 argomento: Definizione di continuità
 tipologia: appunti
 stato: "0"
@@ -24,6 +24,8 @@ Allora abbiamo due possibilità:
 > Usando la nozione $\varepsilon-\delta$ del limite, avremmo 
 > $$\begin{gather}\forall \varepsilon>0 ,\exists \delta > 0: \forall x \in E\\|x-x_0|<\delta \implies |f(x)-f(x_0)|<\varepsilon\end{gather}$$
 
+^ddf65d
+
 **OSS 1.1.** Il *CASO 2.* è la parte interessante della definizione della continuità: stiamo sostanzialmente dicendo che $f$ è continua in $x_0$ se esiste il limite per $x \to x_0$ e il limite è proprio il valore della funzione. 
 
 **OSS 1.2.** Notiamo che in questa definizione c'è una differenza dalla definizione originaria del limite: infatti la prima parte che rappresenta l'intorno $\delta$ di $x_0$ sarebbe 
@@ -40,6 +42,9 @@ Ora presentiamo la definizione *"globale"* della funzione, che è una semplice e
 > [!math|{"type":"definition","number":"1.2.","setAsNoteMathLink":false,"title":"Funzione continua su un insieme","label":"funzione-continua-su-un-insieme","_index":0}] Definizione 1.2. (Funzione continua su un insieme).
 > Sia $f:E \longrightarrow \mathbb{R}$
 > Se $f$ è *continua* in tutti i punti di $E$, allora $f$ si dice *continua*.
+
+^d2f56f
+
 # 2. Esempi di funzioni continue e discontinue
 #Esempio
 > [!math|{"type":"example","number":"2.1.","setAsNoteMathLink":false,"title":"Funzione Constante","label":"funzione-constante"}] Esempio 2.1. (Funzione Constante).
@@ -56,6 +61,7 @@ Ora presentiamo la definizione *"globale"* della funzione, che è una semplice e
 > [!math|{"type":"example","number":"2.2.","setAsNoteMathLink":false,"title":"Funzione identità","label":"funzione-identit"}] Esempio 2.2. (Funzione identità).
 > $$\text{id}: \mathbb{R} \longrightarrow \mathbb{R}; x \mapsto x$$
 > La funzione $\text{id}$ è *continua*: basta scegliere $\varepsilon = \delta$.
+^3405fe
 
 **FIGURA 2.2.**
 [ Da fare]
@@ -66,6 +72,7 @@ Ora presentiamo la definizione *"globale"* della funzione, che è una semplice e
 > La funzione $x^n$ è *continua*, infatti è possibile dimostrare che
 > $$\lim_{x \to x_0}x^n = x_0^n$$
 > mediante gli [[Esempi di Limiti di Funzione]].
+^dfa8a1
 
 **FIGURA 2.3.**
 [ Da fare ]

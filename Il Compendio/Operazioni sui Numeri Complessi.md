@@ -51,7 +51,7 @@ Alla luce di queste proprietà riusciamo proprio a verificare che $$(\mathbb{R}^
 ![[Pasted image 20231017225646.png]]
 Allora notiamo che valgono le seguenti: $$\begin{align}&\text{a. } (a,0) \cdot(b,0) = (ab-00, a0+0b) = (ab, 0) \\ &\text{b. }(a,0)+(b,0) = (a+b, 0)\end{align}$$nel senso che questi numeri si comportano come i *numeri reali $\mathbb{R}$*.
 
-**OSS 2.3.** Inoltre, considerando $$(a,0) \cdot(c,d) = (ac-0d, ad+0c) = (ac, ad)$$ovvero che $(a,0)$ si comporta come lo *scalare* che *scala un numero $\mathbb{C}$ componente per componente*.
+**OSS 2.3.** Inoltre, considerando $$(a,0) \cdot(c,d) = (ac-0d, ad+0c) = (ac, ad)$$ovvero che $(a,0)$ si comporta come lo *scalare* che *scala un numero $\mathbb{C}$ componente per componente*. ^d57f49
 # 3. Coniugio
 **DEF 3.** Sia $z$ un numero $\mathbb{C}$ e lo rappresentiamo come $z = a+ib$ ([[Rappresentazione dei Numeri Complessi]]). Allora definisco il numero **complesso coniugato** $\bar{z}$ come $$\bar{z} = a-ib$$
 **DEF 3.1.** Chiamo **coniugio** la funzione $$- : \mathbb{C} \longrightarrow \mathbb{C}; z \mapsto \bar{z}$$dove $\bar{i} = -i$

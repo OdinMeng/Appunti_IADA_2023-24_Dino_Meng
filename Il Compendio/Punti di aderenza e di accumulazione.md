@@ -8,9 +8,12 @@ stato: "1"
 *Definizione di punto di aderenza e di accumulazione. La chiusura e il derivato di un insieme. Primo teorema di Bolzano-Weierstraß.*
 - - -
 # 1. Punti di aderenza (o di chiusura)
-**DEF 1.1.** Sia $E \subseteq \mathbb{R}$, $x_0 \in \mathbb{R}$.
-$x_0$ si dice **punto di chiusura (o di aderenza)** per $E$ se è vera la seguente: $$\forall r>0: ((x_0-r, x_0+r)\cap E)\neq \emptyset$$Ovvero in ogni *palla/intorno centrato di $x_0$* ([[Intorni]], **DEF 2.1.**) devono esserci elementi di $E$.
-**SUBDEF 1.1.1.** L'insieme dei *punti di chiusura* dell'insieme $E$ si dicono la **chiusura (o aderenza) di $E$**, scritto come $\overline{E\ }$.
+#Definizione 
+> [!math|{"type":"definition","number":"1.1.","setAsNoteMathLink":false,"title":"Punto di aderenza (o di chiusura)","label":"punto-di-aderenza-o-di-chiusura"}] Definizione 1.1. (Punto di aderenza (o di chiusura)).
+> Sia $E \subseteq \mathbb{R}$, $x_0 \in \mathbb{R}$.
+> Allora $x_0$ si dice *punto di chiusura (o di aderenza)* per $E$ se è vera la seguente: $$\forall r>0: ((x_0-r, x_0+r)\cap E)\neq \emptyset$$
+> Ovvero in ogni *palla/intorno centrato di $x_0$* ([[Intorni#^533fec]]) devono esserci elementi di $E$.
+> Inoltre definiamo l'insieme dei *punti di chiusura* dell'insieme $E$ si dicono la *chiusura (o aderenza) di $E$*, scritto come $\overline{E\ }$.
 
 **ESEMPIO 1.1.**
 Consideriamo l'insieme $E = (1, 2)$ e voglio trovare gli elementi di $\overline{E\ }$.
@@ -33,27 +36,46 @@ Voglio studiare l'insieme dei *numeri razionali* $\mathbb{Q}$ ([[Richiami sui Nu
 3. Per *l'assioma di Dedekind* ([[Assiomi dei Numeri Reali]], **ASSIOMA S)** ) sappiamo che tra un numero razionale $q_0$ e un altro numero (in questo caso prendiamo $q_0 + r,  \forall \varepsilon >0$) dev'esserci un numero *irrazionale* che non appartiene a $\mathbb{Q}$; allora non ci sono dei *punti interni* ([[Punti interni, esterni e di frontiera]], **DEF 1.1.**).
 
 ## Proprietà della chiusura
-**TEOREMA 1.1.** Possiamo enunciare le seguenti proprietà per la *chiusura* di $E$.
-Sia $E \subseteq \mathbb{R}$, allora sono vere che:
-1. $\overline{E \ }$ è un *insieme chiuso*. Per provare questo, bisognerebbe dimostrare che l'insieme complementare della chiusura di $E$ è *aperto*; quindi bisogna considerare i punti che non stanno né in $E$ né nella sua chiusura $\overline{E \ }$ e poi dimostrare che esiste un'intervallo di ogni punto che non sta nella chiusura.
-2. $\overline{E \ }$ è *il più piccolo chiuso* che contiene $E$. Quindi ho in mente una *relazione d'ordine* ([[Relazioni]], **DEF 4.1.**), ovvero dal punto di vista di quella d'inclusione. Ovvero $$A > B \iff B\subseteq A$$
-3. Un insieme $E$ è *chiuso* se e solo se $\overline{E \ } = E$
+Possiamo enunciare le seguenti proprietà per la *chiusura* di $E$.
+
+#Teorema 
+> [!math|{"type":"theorem","number":"1.1.","setAsNoteMathLink":false,"title":"Proprietà della chiusura $\\bar{E \\ }$","label":"propriet-della-chiusura-bare--"}] Teorema 1.1. (Proprietà della chiusura $\bar{E \ }$).
+> Sia $E \subseteq \mathbb{R}$, allora sono vere che:
+> 1. $\overline{E \ }$ è un *insieme chiuso* ([[Insiemi aperti e chiusi#^36f40d]]). Per provare questo, bisognerebbe dimostrare che l'insieme complementare della chiusura di $E$ è *aperto*; quindi bisogna considerare i punti che non stanno né in $E$ né nella sua chiusura $\overline{E \ }$ e poi dimostrare che esiste un'intervallo di ogni punto che non sta nella chiusura.
+> 2. $\overline{E \ }$ è *il più piccolo chiuso* che contiene $E$. Quindi ho in mente una *relazione d'ordine* ([[Relazioni]], **DEF 4.1.**), ovvero dal punto di vista di quella d'inclusione. Ovvero $$A > B \iff B\subseteq A$$
+> 3. Un insieme $E$ è *chiuso* se e solo se $\overline{E \ } = E$
 # 2. Punti di accumulazione
-**DEF 2.1.** Sia $E \subseteq \mathbb{R}$, $x_0 \in \mathbb{R}$. Si dice che $x_0$ è un **punto di accumulazione di $E$** se è vera che $$\forall r > 0, (]x_0-r, x_0+r[ \ \cap E) \diagdown\{x_0\} \neq \emptyset$$ovvero un *punto di aderenza* escludendo però il punto $x_0$ stesso; quindi un punto $x_0$ è di accumulazione per $E$ se in ogni intorno di $x_0$ ci sono punti di $E$ diversi da se stesso.
-**SUBDEF 2.1.1.** L'insieme dei *punti di accumulazione per $E$* si chiama **derivato** di $E$, demarcata col simbolo $$\mathcal{D}E$$e si legge come *"d corsivo maiuscolo"*.
+#Definizione 
+> [!math|{"type":"definition","number":"2.1.","setAsNoteMathLink":false,"title":"Punto di accumulazione","label":"punto-di-accumulazione"}] Definizione 2.1. (Punto di accumulazione).
+> Sia $E \subseteq \mathbb{R}$, $x_0 \in \mathbb{R}$. Si dice che $x_0$ è un **punto di accumulazione di $E$** se è vera che 
+> $$\forall r > 0, (]x_0-r, x_0+r[ \ \cap E) \diagdown\{x_0\} \neq \emptyset$$
+> ovvero un *punto di aderenza* escludendo però il punto $x_0$ stesso; quindi un punto $x_0$ è di accumulazione per $E$ se in ogni intorno di $x_0$ ci sono punti di $E$ diversi da se stesso.
+> L'insieme dei *punti di accumulazione per $E$* si chiama **derivato** di $E$, demarcata col simbolo $$\mathcal{D}E$$
+> e si legge come *"d corsivo maiuscolo"*.
 
 **OSS 2.1.** Come abbiamo definito degli *intorni di $+\infty$ o di $-\infty$* in [[Intorni]], **DEF.3.2.**, è possibile analogamente definire anche $+\infty$ o $-\infty$ come *punti di accumulazione* di un insieme $E$. Un $+\infty$ è punto di accumulazione per $E$ vuol dire che si verifica il seguente: $$\forall M >0, (M, +\infty)\cap E \neq \emptyset $$ovvero $$\forall M > 0, \exists x_0 \in E: x > M$$ovvero che per ogni semiretta a partire da $M$, dev'esserci almeno un elemento in comune tra questa semiretta e l'insieme $E$ con $+\infty$ come punto di accumulazione.
 Analoga la definizione di un insieme $E$ che ha $-\infty$ come punto di accumulazione.
 
-**TEOREMA 2.1.** Sia $E \subseteq \mathbb{R}$, $x_0 \in \mathbb{R}$. $x_0$ è *punto di accumulazione per $E$* **se e solo se** in *ogni* intorno di $x_0$ ci sono *infiniti* punti di $E$. 
-**DIMOSTRAZIONE 2.1.** Questa dimostrazione si articola in due sotto-dimostrazioni.
-1. Dimostriamo che *se in ogni intorno di $x_0$ ci sono infiniti punti di $E$, allora $x_0$ è di accumulazione per $E$*: questo è evidentemente vero, in quanto se in ogni intorno di $x_0$ ci sono infiniti punti di $E$, allora dev'esserci almeno un elemento di $E$ in questo intorno diverso da $x_0$.
-2. Ora notiamo il viceversa; ovvero che *se $x_0$ è di accumulazione per $E$ allora in ogni suo intorno ci sono infiniti punti di $E$.*
-   Per dimostrare questa proposizione, dimostriamo la negazione della contraria; ovvero che se in *ogni intorno di $x_0$ ci sono elementi finiti di $E$, allora $x_0$ non è punto di accumulazione per $E$.* ([[Logica formale - Sommario]])
-   Supponiamo quindi che $x_0$ abbia un intorno in cui ci sono un numero finito punti di $E$: allora $$(x_0-r, x_0+r) \cap E = \{x_1, x_2, \ldots, x_k\}$$Che graficamente corrisponde a 
+#Teorema 
+> [!math|{"type":"theorem","number":"2.1.","setAsNoteMathLink":false,"title":"Teorema di caratterizzazione degli punti di accumulazione","label":"teorema-di-caratterizzazione-degli-punti-di-accumulazione"}] Teorema 2.1. (Teorema di caratterizzazione degli punti di accumulazione).
+> Sia $E \subseteq \mathbb{R}$, $x_0 \in \mathbb{R}$. $x_0$ è *punto di accumulazione per $E$* se e solo se in *ogni* intorno di $x_0$ ci sono *infiniti* punti di $E$. 
+^622755
+
+#Dimostrazione 
+`\begin{proof}` (del **TEOREMA 2.1.**)
+Questa dimostrazione si articola in due sotto-dimostrazioni.
+"$\impliedby$": Dimostriamo che *se in ogni intorno di $x_0$ ci sono infiniti punti di $E$, allora $x_0$ è di accumulazione per $E$*: questo è evidentemente vero, in quanto se in ogni intorno di $x_0$ ci sono infiniti punti di $E$, allora dev'esserci almeno un elemento di $E$ in questo intorno diverso da $x_0$.
+"$\implies$": Ora notiamo il viceversa; ovvero che *se $x_0$ è di accumulazione per $E$ allora in ogni suo intorno ci sono infiniti punti di $E$.*
+Per dimostrare questa proposizione, procediamo dimostrando la *contronominale*; ovvero che se in *ogni intorno di $x_0$ ci sono elementi finiti di $E$, allora $x_0$ non è punto di accumulazione per $E$.* ([[Logica formale - Sommario]])
+Supponiamo quindi che $x_0$ abbia un intorno in cui ci sono un numero finito punti di $E$: allora 
+$$(x_0-r, x_0+r) \cap E = \{x_1, x_2, \ldots, x_k\}$$Che graficamente (**FIGURA 2.1.**) corrisponde a 
+Considero dunque $r = \min(\{ d(x_0, x_j), \forall j \in \{ 1, 2, \ldots, k\}\})$ ovvero la *minima* distanza tra $x_0$ e un qualunque punto di $E$. Allora risulta che 
+$$((x_0-r, x_0+r) \cap E)\diagdown \{x_0\} = \emptyset$$
+il che ci dimostra che $x_0$ *non* è di accumulazione per $E$. (oppure è un punto isolato).
+`\end{proof}`
+
+**FIGURA 2.1.** (*Idea*)
 ![[Pasted image 20231103215401.png]]
-   Considero dunque $r = \min(\{ d(x_0, x_j), \forall j \in \{ 1, 2, \ldots, k\}\})$ ovvero la *minima* distanza tra $x_0$ e un qualunque punto di $E$. Allora risulta che $$((x_0-r, x_0+r) \cap E)\diagdown \{x_0\} = \emptyset$$il che ci dimostra che $x_0$ *non* è di accumulazione per $E$. (oppure è un punto isolato).
-   $\blacksquare$
 
 **ESEMPIO 2.1.** Prendiamo di nuovo l'intervallo $$E = (1,2)$$E voglio individuare $\mathcal{D}E$. Con lo stesso approccio di **ESEMPIO 1.1.**, *"testiamo"* dei elementi della retta reale per vedere se possono essere dei *punti di accumulazione*.
 1. Ovviamente $0$ non può essere punto di accumulazione.
@@ -71,11 +93,17 @@ Si scopre che $\mathcal{D}\mathbb{N} = \emptyset$; non esistono i numeri natural
 ## Primo teorema di Bolzano-Weierstraß (forma insiemistica)
 Enunciamo uno dei teoremi più importanti dell'*analisi matematica*, che ci garantisce l'esistenza di un punto di accumulazione in $\mathbb{R}$ per una categoria di insiemi.
 
-**TEOREMA 2.2.** *Primo teorema di Bolzano-Weierstraß*
-Sia $E \subseteq \mathbb{R}$, $E$ un insieme *infinito* e *limitato*. ([[Insiemi limitati, maggioranti, massimo e teorema dell'estremo superiore]], **DEF 1.3.**)
-Allora si verifica il seguente: $$\exists \xi \in \mathbb{R}: \xi \in \mathcal{D} E$$ovvero che esista un numero $\xi$ che sia *punto di accumulazione* per $E$. 
+#Teorema 
 
-**DIMOSTRAZIONE 2.2.** 
+> [!math|{"type":"theorem","number":"2.2.","setAsNoteMathLink":false,"title":"Primo teorema di Bolzano-Weierstraß","label":"primo-teorema-di-bolzano-weierstra"}] Teorema 2.2. (Primo teorema di Bolzano-Weierstraß).
+> Sia $E \subseteq \mathbb{R}$, $E$ un insieme *infinito* e *limitato*. ([[Insiemi limitati, maggioranti, massimo e teorema dell'estremo superiore]], **DEF 1.3.**) 
+> Allora si verifica il seguente: 
+> $$\exists \xi \in \mathbb{R}: \xi \in \mathcal{D} E$$
+> ovvero che esista un numero $\xi$ che sia *punto di accumulazione* per $E$. 
+^8417b2
+
+#Dimostrazione 
+`\begin{proof}`@[[#^8417b2]]
 Se $E$ è un insieme *limitato* allora per il *teorema dell'esistenza dell'estremo superiore e inferiore* ([[Insiemi limitati, maggioranti, massimo e teorema dell'estremo superiore]], **TEOREMA 4.1.**) esistono $$a_0 = \inf(E); b_0 = \sup(E)$$ovvero $a_0, b_0 \in \mathbb{R}$ e tali per cui $E \subseteq [a_0, b_0]$. 
 Allora considero $c_0$ il *punto medio tra $a_0$ e $b_0$*; ora considero i due intervalli $$[a_0, c_0];[c_0, b_0]$$che graficamente corrisponde a 
 ![[Pasted image 20231103215430.png]]
@@ -85,3 +113,4 @@ Quindi otteniamo una *successione di intervalli inscatolati, limitati, infiniti 
 La *forma forte del teorema di Cantor* ([[Conseguenze dell'esistenza dell'estremo superiore]], **TEOREMA 5.2.**) ci dice che facendo l'intersezione di tutti questi intervalli otteniamo un $\xi$. 
 Ora voglio trovare un *intorno* di $\xi$ che contenga un qualunque insieme *infinito* $[a_n, b_n]$. Ovvero voglio verificare che $$\exists r > 0: [a_n, b_n] \subseteq (\xi-r, \xi+r)$$
 Allora la condizione è $$r > d(a_n,b_n)=\frac{b_0-a_0}{2^n}$$il che è possibile in quanto ricordandomi che $$\frac{b_0-a_0}{n} \geq \frac{b_0-a_0}{2^n}$$e tenendo conto *l'Archimedeità di $\mathbb{R}$* ([[Conseguenze dell'esistenza dell'estremo superiore]], **TEOREMA 3.1.**) la condizione sopra citata è totalmente possibile visto che $$\exists \bar{n}: 0<\frac{b_0-a_0}{2^\bar{n}} \leq \frac{b_0-a_0}{\bar{n}} < r$$Abbiamo quindi che l'intorno in $\xi$ di raggio $r$ contiene l'insieme infinito $[a_\bar{n}, b_\bar{n}]$, di conseguenza anche l'intorno stesso è infinito; dato che contiene infiniti punti di $E$, per il **TEOREMA 2.1.** $\xi$ è *punto di accumulazione* per $E$.
+`\end{proof}`

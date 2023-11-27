@@ -11,6 +11,9 @@ stato: "1"
 Ci mettiamo nel contesto della *geometria euclidea*, i quali postulati vengono descritti dagli *Elementi* (uno dei testi fondamentali della matematica) di Euclide (uno dei matematici greci più importanti); quindi ricorreremo a dei concetti geometrici che vengono dati come *elementi primitivi*, come il *punto*, il *piano*, la *retta*, $\ldots$
 
 # DEF 1. Vettore Applicato
+
+^8447d6
+
 Un **vettore applicato** è un segmento orientato, caratterizzato dunque da:
 - **Punto di applicazione**; ovvero il *"punto di partenza"* $A$ del vettore $\overrightarrow{AB}$.
 - **Direzione**; essa è quella data dalla *retta* su cui giace il vettore

@@ -24,7 +24,7 @@ Ora li scegliamo: applicando le definizioni di limite, ovvero $$\begin{align} \l
 **TEOREMA 2.1.** (*Permanenza del segno*)
 Sia $$f: E \longrightarrow \mathbb{R}, E \subseteq \mathbb{R}$$Siano $x_0, L \in \mathbb{\tilde{R}}$, $x_0$ punto di accumulazione per $E$.
 Sia definito il *limite* $$\lim_{x \to x_0}f(x) = L$$
-*Tesi.* Allora supponendo che $L \in (0, +\infty)$ oppure $L = +\infty$, allora è vera che $$\exists \bar{U} \text{ intorno di }x_0: \forall x \in (\bar{U} \cap E)\diagdown \{x_0\}, f(x) > 0$$Ovvero a parole stiamo dicendo che se il limite è *positivo*, allora anche la *funzione* è positiva per un intorno opportuno di $x_0$; il segno si *"trasferisce"* dal limite alla funzione.
+*Tesi.* Allora supponendo che $L \in (0, +\infty)$ oppure $L = +\infty$, allora è vera che $$\exists \bar{U} \text{ intorno di }x_0: \forall x \in (\bar{U} \cap E)\diagdown \{x_0\}, f(x) > 0$$Ovvero a parole stiamo dicendo che se il limite è *positivo*, allora anche la *funzione* è positiva per un intorno opportuno di $x_0$; il segno si *"trasferisce"* dal limite alla funzione. ^06a2e3
 
 **DIMOSTRAZIONE 2.1.**
 Parto dalle definizione del limite, ovvero $$\begin{align}\lim_{x \to x_0}f(x) = L \iff &\ \forall V \text{ di }L, \exists U\text{ di }x_0: \forall x \in E, \\ & \ x \in U\diagdown\{x_0\} \implies f(x) \in V\end{align}$$Per interpretarla nel nostro contesto (ovvero che $L$ è positiva), abbiamo che l'intorno di $L$ può essere $V = (0, +\infty)$, in quanto se è *positiva* allora sarà sicuramente contenuta in quell'intervallo.
@@ -128,12 +128,12 @@ e abbiamo $$l = \begin{cases} \sup(f(E)) \text{ se crescente}\\ \sup(f(E)) \text
 **DIMOSTRAZIONE 9.1.**
 Dimostriamo il caso per cui supponiamo che $x_0 \in \mathbb{R}$, $f$ sia *crescente* e $\sup(f(E)) = L \in \mathbb{R}$ (in parole il limite *"target"* è un numero reale): si tratta di provare che $$\lim_{x \to x_0}f(x) = L$$
 Consideriamo dunque la *proprietà dell'estremo superiore $\sup$* ([[Insiemi limitati, maggioranti, massimo e teorema dell'estremo superiore]], **TEOREMA 4.2.**); $$L =\sup (f(E)) \iff \begin{cases}\forall x \in E, f(x) \leq L \\\forall \varepsilon > 0, \exists \bar{x}: L - \varepsilon < f(\bar{x}) \end{cases}$$
-Ora considero un $x \in E: x > \bar{x}$ e applicando la *monotonia della funzione* ho $$x \geq \bar{x} \implies f(x) \geq f(\bar{x})$$Infinite metto le proposizioni assieme, ottenendo $$\begin{gather}\forall \varepsilon>0, \exists \bar{x}: \forall x \in E, \\ \bar{x} \leq x < x_0 \implies L-\varepsilon < L \leq f(\bar{x}) \leq f(x) < L+\varepsilon \\ \implies |f(x)-L| < \varepsilon\end{gather}$$che è esattamente la *definizione* del limite appena enunciato. $\blacksquare$
+Ora considero un $x \in E: x > \bar{x}$ e applicando la *monotonia della funzione* ho $$x \geq \bar{x} \implies f(x) \geq f(\bar{x})$$Infinite metto le proposizioni assieme, ottenendo $$\begin{gather}\forall \varepsilon>0, \exists \bar{x}: \forall x \in E, \\ \bar{x} \leq x < x_0 \implies L-\varepsilon < f(\bar{x}) \leq f(x) \leq L< L+\varepsilon \\ \implies |f(x)-L| < \varepsilon\end{gather}$$che è esattamente la *definizione* del limite appena enunciato. $\blacksquare$
 
 **COROLLARIO 9.1.** Sia $$f: \ ]a, b[ \ \longrightarrow \mathbb{R}$$$c \in\  ]a, b[$ e $f$ crescente. 
 *Tesi.* Allora esistono i limiti$$\lim_{x \to c^-}f(x); \lim_{x \to c^+}f(x)$$e inoltre $$\lim_{x \to c^-}f(x)\leq f(c) \leq \lim_{x \to c^+}f(x)$$
 Abbiamo di fatto una situazione situazione del tipo
-![[Pasted image 20231103222520.png]]
+![[Pasted image 20231103222520.png]] ^165965
 
 **OSS 9.2.**
 Quindi secondo il **COROLLARIO 9.1.** possiamo avere le due seguenti situazioni; o il *limite destro* ed il *limite sinistro* si coincidono o abbiamo una specie di *"salto"*.

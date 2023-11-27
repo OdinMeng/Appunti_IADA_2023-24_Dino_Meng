@@ -10,9 +10,13 @@ stato: "1"
 # 0. Preambolo
 Questo argomento presuppone la conoscenza dell'argomento di [[Intervalli]].
 # 1. Punti interni
-**DEF 1.1.** Sia $E \subseteq \mathbb{R}$ e $x_0 \in \mathbb{R}$, si definisce $x_0$ **interno** a $E$ se viene verificato che $$\exists r > 0 : ]x_0-r, x_o+r[\  \subseteq E$$ovvero se esiste un *intorno* di $x_0$ che è contenuto in $E$ ([[Intorni]], **DEF 3.1.**).
-
-**DEF 1.2.** Chiamo **l'insieme dei punti interni a $E$** come $E^{\circ}$. 
+#Definizione 
+> [!math|{"type":"definition","number":"1.1.","setAsNoteMathLink":false,"title":"Punto interno","label":"punto-interno"}] Definizione 1.1. (Punto interno).
+> Sia $E \subseteq \mathbb{R}$ e $x_0 \in \mathbb{R}$, si definisce $x_0$ *punto interno* a $E$ se viene verificato che 
+> $$\exists r > 0 : ]x_0-r, x_o+r[\  \subseteq E$$
+> ovvero se esiste un *intorno* di $x_0$ che è contenuto in $E$ ([[Intorni]], **DEF 3.1.**).
+> Inoltre chiamo *l'insieme dei punti interni a $E$* come $E^{\circ}$. 
+^c78831
 ## Esempio
 **ESEMPIO 1.1.** Sia $$E = \{1\} \cup [2, 3)$$e voglio trovare *l'insieme dei punti interni* $E^{\circ}$.
 Per farlo devo innanzitutto disegnare il grafico di $E$ per poter capire come procedere.
@@ -24,18 +28,25 @@ Ora *"provo"* ogni numero fissando $x_0$ il numero scelto;
 - Analoghi i discorsi per $x_0 =3$ e $x_0 = 2.999$
 - Concludo allora che $$E^{\circ} = (2, 3)$$
 # 2. Punti esterni
-**DEF 2.1.** Un punto $x_0 \in \mathbb{R}$ si dice **esterno** ad un *insieme* $E \subseteq \mathbb{R}$ se è *interno* al complementare di $E$, ovvero $\mathcal{C}_{\mathbb{R}}E$ ([[Teoria degli Insiemi]]).
-Quindi $$x_0 \text{ è esterno} \iff \exists r >0: (x_0-r, x_0 + r) \subseteq \mathcal{C}_{\mathbb{R}}E$$
+#Definizione 
+> [!math|{"type":"definition","number":"2.1.","setAsNoteMathLink":false,"title":"Punto esterno","label":"punto-esterno"}] Definizione 2.1. (Punto esterno).
+> Un punto $x_0 \in \mathbb{R}$ si dice **esterno** ad un *insieme* $E \subseteq \mathbb{R}$ se è *interno* al complementare di $E$, ovvero $\mathcal{C}_{\mathbb{R}}E$ ([[Teoria degli Insiemi]]).
+> Quindi 
+> $$x_0 \text{ è esterno} \iff \exists r >0: (x_0-r, x_0 + r) \subseteq \mathcal{C}_{\mathbb{R}}E$$
 ## Esempio
 **ESEMPIO 2.1.** Considerando l'esempio di prima con $$E = \{1\} \cup [2, 3)$$ora vogliamo trovare *l'insieme di tutti i punti esterni*. Allora usando lo stesso grafico di prima, faccio esattamente i stessi procedimenti di prima considerando però il *complemento di $E$*, ovvero tutti i punti che non appartengono ad $E$. 
 ![[Pasted image 20231022155547.png]]
 Usando la stessa procedura in **ESEMPIO 1.1.**, troviamo che $$\{\text{punti esterni di }E\} = (-\infty, 1) \cup(1,2) \cup(3, + \infty)$$
 # 3. Punti di frontiera
-**DEF 3.1.** Un punto $x_0 \in \mathbb{R}$ si dice **frontiera per** $E$ se questo punto *non è ne interno ne esterno ad* $E$. 
+#Definizione 
+> [!math|{"type":"definition","number":"3.1.","setAsNoteMathLink":false,"title":"Punto di frontiera","label":"punto-di-frontiera"}] Definizione 3.1. (Punto di frontiera).
+> Un punto $x_0 \in \mathbb{R}$ si dice *di frontiera per* $E$ se questo punto *non è ne interno ne esterno ad* $E$. 
+> Inoltre definiamo *l'insieme dei punti di frontiera* di $E$ come il 
+> $$\partial E$$
+> e si legge come *"delta storto E"*
+
 **OSS 3.1.** Questo equivale a negare la proposizione $$[\exists r > 0: (x_0-r, x_0+r)\subseteq E] \vee [\exists r'>0: (x_0-r', x_0+r')  \subseteq \mathcal{C}E]$$che secondo le *leggi di De Morgan* e delle regole osservate ([[Logica formale - Sommario]]) diventa $$[\forall r >0, (x_0-r, x_0+r) \not\subseteq E] \land [\forall r'>0, (x_0-r', x_0+r') \not\subseteq \mathcal{C}E]$$e dato che $$A \not\subseteq B \iff A \cap \mathcal{C}_{U}B \neq \emptyset$$ovvero che un insieme $A$ non è sottoinsieme di $B$ se e solo se l'intersezione tra $A$ e il complemento di $B$ non è vuota (ovvero ha almeno *un elemento*), questo diventa $$[\forall r >0, (x_0 - r, x_0+r) \cap \mathcal{C}E \neq \emptyset] \land [\forall r' > 0, (x_0 - r', x_0+r') \cap E \neq \emptyset]$$ovvero che deve valere la seguente: 
 - *Ogni* intorno di $x_0$ deve contenere *sia* punti di $E$ e il suo complemento $\mathcal{C}_\mathbb{R}E$.
-
-**DEF 3.2.** Definiamo **l'insieme dei punti di frontiera di** $E$ come $$\partial E$$e si legge come *"delta storto E"*
 ## Esempi
 **ESEMPIO 3.1.** Considerando lo stesso esempio di prima, ovvero $$E = \{1\} \cup [2, 3)$$vogliamo trovare $\partial E$.
 Procedendo con lo stesso disegno, cerchiamo di *"provare"* ogni punto per trovare elementi di $\partial E$.

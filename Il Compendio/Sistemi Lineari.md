@@ -24,7 +24,7 @@ Avevamo accennato che cosa sono i *sistemi lineari* nel capitolo sulle [[Equazio
 
 ## 1.2. Omogeneità di un sistema
 **DEF 1.2.** Un *sistema lineare* si dice **omogeneo** se tutti i *termini noti* sono nulli: ovvero se $b_1, b_2, \ldots, b_m = 0,0,\ldots,0$.
-Analogamente, un *sistema lineare* si dice **non omogeneo** se questo sistema non è omogeneo. (Lo so, informazione sorprendentemente non ovvia)
+Analogamente, un *sistema lineare* si dice **non omogeneo** se questo sistema non è omogeneo. (Lo so, informazione sorprendentemente non ovvia) ^54ad7d
 
 ## 1.3. Compatibilità di un sistema
 **DEF 1.3.** Un *sistema lineare* si dice **compatibile** se ammette almeno una *soluzione* $S$; altrimenti si dice **incompatibile**.
