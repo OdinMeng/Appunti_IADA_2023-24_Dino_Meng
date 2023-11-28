@@ -16,7 +16,7 @@ Si definisce il **prodotto cartesiano** di $A$ e $B$ come il seguente:
 $$A \times B := \{(a,b) : a\in A, b \in B\}$$
 **ESEMPIO 2.1.** Il *Piano Cartesiano* $\pi$ studiato alle scuole superiori si costruisce e si definisce nel seguente modo:$$\pi = \{(a,b): a\in \mathbb{R}, b\in\mathbb{R}\}$$Notiamo che gli insiemi $A,B$ sono uguali; infatti $$\pi = \mathbb{R} \times \mathbb{R} = \mathbb{R}^2$$**OSS 2.1.1.** Il *Piano Cartesiano* appena descritto è un concetto molto importante per la matematica, in quanto esso costituisce un nesso tra i numeri e il piano $\pi$.
 **ILLUSTRAZIONE GRAFICA.**
-![[Pasted image 20231001144747.png]]
+![[Pasted image 20231001144747.png]] ^61dab9
 
 **ESEMPIO 2.2.** Similmente $$A \times B \times C := \{(a,b,c) : a\in A, b \in B,c\in C\}$$$$\mathbb{R}^3=\{(x,y,z):x\in\mathbb{R},y\in\mathbb{R},z\in\mathbb{R}\}$$**ILLUSTRAZIONE GRAFICA**
 ![[Pasted image 20231001144802.png]]

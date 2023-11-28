@@ -12,3 +12,6 @@ $$a^3\pm b^3 = (a\pm b)(a^2\mp 2ab+b^2)$$
 
 Esempio: 
 $$(1-\cos^3 x)=(1-\cos x)(1 -2\cos x+\cos ^2 x) $$
+
+# ?. Avvertimento generale
+(Discorso di D.D.S. di stare attenti su certe cose... (28.11.2023))

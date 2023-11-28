@@ -13,11 +13,11 @@ stato: "1"
 Il sistema *Tutor* consiste nel seguente: lungo l'autostrada si fissano piazzano due telecamere, tra le quali c'è una distanza $s$. Allora queste fotocamere fotografano le nostre automobili e registrano i seguenti dati: la targa del veicolo e l'istante del tempo in cui siamo stati ripresi. L'idea di questo sistema viene raffigurato nella *figura 1.1.*
 Quindi una volta passate entrambe le telecamere, le autorità hanno dei dati per determinare una misura importante: la nostra *velocità media* ([[Introduzione al Calcolo Differenziale#^190e60]]). 
 Infatti loro hanno
-$$v_m = \frac{s}{t_2-t_1} = R^{x}_{t_2}(t_1) $$
+$$v_m = \frac{s}{t_2-t_1} = R^{x}_{t_2}(t_1)$$
 Ipotizziamo di aver infranto la legge e di aver superato ad un certo punto la velocità massima $130 \text{ km/h}$, ricevendo così una multa. Tuttavia, notiamo qualcosa: una parte del testo afferma che secondo il *codice della strada* (CdS) la *velocità istantanea* non può essere superata di $130 \text{ km/h}$: quindi c'è un errore! Loro hanno semplicemente misurato la nostra *velocità media*, non quella *istantanea*!
 Allora presentiamo un ricorso al giudice per farci annullare la muta; inaspettatamente il giudice si rivela di essere un esperto di matematica e richiama il *teorema di Lagrange* ([[Teorema di Lagrange#^ef03c2]]), affermando che se la nostra velocità media $v_m$ ha ad un certo punto superato il limite, allora c'è almeno un istante di tempo $t_\xi$ tale che la velocità istantanea misurata è maggiore del limite previsto.
 Ovvero
-$$v_m = \frac{x(t_2)-x(t_1)}{t_2-t_1} > 130 \ \implies \exists t_\xi \in ]t_2, t_1[: x'(t_\xi)= v(t_\xi) >130 $$
+$$v_m = \frac{x(t_2)-x(t_1)}{t_2-t_1} > 130 \ \implies \exists t_\xi \in ]t_2, t_1[: x'(t_\xi)= v(t_\xi) >130$$
 Quindi, alla fine niente ricorso per noi.
 
 **FIGURA 1.1.** (*Idea grafica del sistema Tutor*)
@@ -43,7 +43,7 @@ I gradini di queste scale servono ad *"appiattire"* la pendenza; l'idea di quest
 > [!thm] Teorema 2.1. (derivata nulla è sempre una costante)
 > Suppongo $f: I \longrightarrow \mathbb{R}$, $f$ *derivabile* in $I$ ([[Derivata e derivabilità#^478a87]]).
 > Supponendo che $\forall x \in I, f'(x) = 0$ allora si ha che $f(x) = c \in \mathbb{R}$.
-> $$\boxed{f'(x) = 0 \implies f(x) = c \in \mathbb{R}} $$ 
+> $$\boxed{f'(x) = 0 \implies f(x) = c \in \mathbb{R}}$$ 
 ^19eb72
 
 #Dimostrazione 
@@ -51,7 +51,7 @@ I gradini di queste scale servono ad *"appiattire"* la pendenza; l'idea di quest
 Dimostriamo questo teorema con *Lagrange* ([[Teorema di Lagrange#^ef03c2]]) e usando il ragionamento *per assurdo*.
 Partiamo supponendo $f'(x) = 0$.
 Ora supponiamo, per assurdo, che $f$ sia una funzione *non costante*; ovvero ci sono due punti $x_1, x_2 \in I$ tali che le loro immagini sono diverse.
-$$\exists x_1, x_2 \in I: f(x_1) \neq f(x_2) $$
+$$\exists x_1, x_2 \in I: f(x_1) \neq f(x_2)$$
 Ora posso applicare il *teorema di Lagrange* sull'intervallo $[x_1, x_2]$; questo è ammissibile in quanto abbiamo $f$ *derivabile* su $I$, pertanto $f$ è anche *continua* su $I$ ([[Proprietà delle derivate#^dac6dc]]). Inoltre $[x_1, x_2] \subseteq I$. 
 Allora per il *teorema di Lagrange*,
 $$\exists \xi \in \ ]x_1, x_2[\ : f'(\xi) = \frac{f(x_2)-f(x_1)}{x_2-x_1}$$
@@ -70,17 +70,17 @@ Allora si avrebbe $f'(\xi) \neq 0$; però questo è impossibile in quanto questo
 #Dimostrazione 
 **DIMOSTRAZIONE** del *teorema 2.2.* ([[#^45aa1e]])
 "$\implies$": Supponiamo $f$ *crescente* su $I$. Allora fissando $x_0 \in I$, posso considerare il *rapporto incrementale* $R_{x_0}^f(x)$;
-$$R_{x_0}^f(x) = \frac{f(x)-f(x_0)}{x-x_0} $$
+$$R_{x_0}^f(x) = \frac{f(x)-f(x_0)}{x-x_0}$$
 Però visto che $f$ crescente sappiamo che se $x > x_0$, allora $f(x) \geq f(x_0)$; invece se $x < x_0$ allora $f(x) \leq f(x_0)$. Pertanto in entrambi i casi abbiamo la divisione di due *segni concordi*, quindi il rapport incrementale sarà sempre positivo per $x \neq x_0$.
 Quindi $R^f_{x_0}(x) \geq 0$.
 Prendendo il limite
-$$\lim_{x \to x_0}R^f_{x_0}(x) $$possiamo usare la *permanenza del segno* ([[Teoremi sui Limiti di Funzione#^06a2e3]]) *"alla rovescia"* per dire che anche il *limite* del rapporto incrementale, che non è altro che la *derivata* $f'(x_0)$, è sempre *positiva*.
+$$\lim_{x \to x_0}R^f_{x_0}(x)$$possiamo usare la *permanenza del segno* ([[Teoremi sui Limiti di Funzione#^06a2e3]]) *"alla rovescia"* per dire che anche il *limite* del rapporto incrementale, che non è altro che la *derivata* $f'(x_0)$, è sempre *positiva*.
 Pertanto abbiamo verificato che
 $$f \text{ crescente} \implies R^{f}_{x_0}(x) \geq 0 \implies f'(x) \geq 0$$
 
 "$\impliedby$": Sia la derivata $f'(x)$ *sempre* positiva, per $\forall x \in I$.
 Allora per assurdo suppongo che $f$ *non* sia crescente: ovvero abbiamo una situazione in cui almeno due punti non sono *"più alti dell'altro"*.
-$$\exists x_1, x_2 \in I: x_1 < x_2 \implies f(x_1) > f(x_2) $$
+$$\exists x_1, x_2 \in I: x_1 < x_2 \implies f(x_1) > f(x_2)$$
 Allora posso applicare il *teorema di Lagrange* ([[Teorema di Lagrange#^ef03c2]]) sull'intervallo $[x_1, x_2]$ per trovare l'assurdo come priva: infatti 
-$$\exists \xi \in \ ]x_1, x_2[\ : \frac{f(x_1)-f(x_2)}{x_1-x_2}   $$
+$$\exists \xi \in \ ]x_1, x_2[\ : \frac{f(x_1)-f(x_2)}{x_1-x_2}$$
 e per ipotesi questa frazione è *negativa*, in quanto abbiamo la moltiplicazione di due segni *discordi*. Però questo è assurdo in quanto all'inizio abbiamo supposto $f'(x)$ sempre positiva.

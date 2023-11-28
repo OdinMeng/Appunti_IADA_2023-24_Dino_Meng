@@ -13,6 +13,8 @@ stato: "1"
 Sia $V$ un *K-spazio vettoriale* ([[Spazi Vettoriali]], **DEF 1.**), siano $$\text{v}_1, \ldots ,\text{v}_n \in V$$degli elementi di $V$. Alternativamente possiamo pensare questi elementi come il sottoinsieme $S \subseteq V$.
 Allora definiamo **combinazione lineare** un qualsiasi *vettore* ([[Spazi Vettoriali]], **DEF 1.1.**) della forma $$\lambda_1 \text{v}_1 + \ldots +\lambda_n \text{v}_n$$dove $\lambda_i \in K, \forall i \in \{1, \ldots, n\}$. 
 
+^8113de
+
 #Esempio 
 > [!ex] Esempio 1.1. (esempio su $\mathbb{Q}^2$) 
 > In $\mathbb{Q}^2$ considero $$q_1 = (1,0); q_2 = (\frac{1}{2}, \frac{1}{2}); q_3 = (1,2)$$Una *combinazione lineare* di $S = (q_1, q_2, q_3)$ può essere ad esempio $$\frac{3}{4}q_1-\frac{12}{7}q_2+15q_3$$

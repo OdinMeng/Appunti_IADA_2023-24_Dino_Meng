@@ -18,7 +18,7 @@ stato: "1"
 # 2. Dimostrazione
 #Dimostrazione 
 **DIMOSTRAZIONE** del *teorema di Cauchy* ([[#^0c9255]])
-Prima di tutto *"do un senso"* all'ipotesi supplementari: provo dunque $g(b)-g(a)$ (
+Prima di tutto *"do un senso"* all'ipotesi supplementare: provo dunque $g(b)-g(a) \neq 0$.
 Infatti supponendo che, per assurdo, se fosse tale allora per il *teorema di Rolle* ([[Teorema di Rolle#^2d8bff]]) avrei un $\xi$ per cui si annullerebbe $g'(\xi)$. Infatti si avrebbe la divisione per una quantità che è uguale a $0$.
 Pertanto è necessario che $g'(x) \neq 0 \implies g(b) \neq g(a)$.
 Ora considero una funzione che chiameremo *"phi grande"* $\Phi$:

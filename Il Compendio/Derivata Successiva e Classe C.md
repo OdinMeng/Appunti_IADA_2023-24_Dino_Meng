@@ -31,6 +31,8 @@ stato: "1"
 > Inoltre se $f$ è *derivabile* per *qualunque* ordine, allora si dice che $f$ è di classe $\mathcal{C}^\infty$;
 > $$f \in \mathcal{C}^\infty $$
 
+^dbae48
+
 # 3. Esempi
 #Esempio 
 > [!ex] Esempio 3.1. (funzione esponenziale)
