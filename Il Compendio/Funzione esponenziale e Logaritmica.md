@@ -33,7 +33,7 @@ Osserviamo poi che $a^{p_n}$ rimane monotona in quanto è necessaria per far val
 Dopo il nostro viaggio quasi odisseico per definire la funzione esponenziale, possiamo definire $a^x$ nella maniera seguente.
 **DEF 1.5.** (*Funzione esponenziale*)
 Sia $a>1, a \in\mathbb{R}$, è definita una *funzione* ([[Funzioni]]) $$\exp_a : \mathbb{R} \longrightarrow (0, +\infty); x \to \exp_a(x)=a^x$$e la chiamo **funzione esponenziale di base $a$**. 
-Da notare che se invece abbiamo $0 < a < 1$, allora basta definire $$\exp_a x=(\frac{1}{a})^{-x}$$
+Da notare che se invece abbiamo $0 < a < 1$, allora basta definire $$\exp_a x=(\frac{1}{a})^{-x}$$ ^8c9812
 
 **TEOREMA 1.5.** (*Proprietà della funzione esponenziale*)
 Valgono le seguenti:
@@ -52,7 +52,7 @@ Si propone il seguente grafico di $\exp$ realizzato sul computer col sito [Desmo
 **DEF 2.1.** (*Funzione logaritmica*)
 Chiamo la **funzione logaritmica** la funzione inversa $\exp_a^{-1}$ come $\log_a$: $$\log_a : (0, +\infty) \longrightarrow \mathbb{R}$$e si ha $$\begin{align}&\forall x \in \mathbb{R}, \log_a(\exp_ax) = x \\ &\forall y \in (0, +\infty), \exp_a(\log_ay) =y\end{align}$$
 **TEOREMA 2.1.** (*Proprietà di $\log$*)
-Valgono le seguenti:
+Valgono le seguenti: ^16fe54
 1. $\log_a(1) = 0$ (*per definizione*)
 2. $\log_a(x_1) + \log_a(x_2) = \log_a(x_1x_2)$
 3. $\log_a(x^y) = y\log_a(x)$ 

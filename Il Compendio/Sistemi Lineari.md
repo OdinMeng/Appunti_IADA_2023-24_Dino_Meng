@@ -11,7 +11,7 @@ stato: "1"
 Avevamo accennato che cosa sono i *sistemi lineari* nel capitolo sulle [[Equazioni e Proprietà Lineari]]; però avendo definito i [[Campi]], ora è opportuno definirli in una maniera rigorosa e formale. Inoltre rendiamo nota la seguente notazione:
 **NOTAZIONE 0.** Andiamo a identificare i due seguenti spazi vettoriali: la matrice colonna $M_{m,1}(K)$ di tipo $$\begin{pmatrix}b_1 \\b_2\\ \ldots\\b_m \end{pmatrix}$$e la $m$-tupla $K^{m}$ di tipo $$\begin{pmatrix}b_1\\b_2\\\ldots\\b_m \end{pmatrix}$$e questi due spazi vettoriali sono *isomorfi* (ovvero che presentano gli stessi comportamenti). 
 # 1. Definizione formale
-**DEF 1.** Sia $K$ un *campo* ([[Campi]], **DEF 1.**); definiamo un **sistema di $m$ equazioni in $n$ incognite a coefficienti in $K$** come un *sistema di equazioni* nella forma seguente: $$\begin{cases}a_{11}x_1 + a_{12}x_2 + \ldots + a_{1n}x_n = b_1 \\ a_{21}x_1 + a_{22}x_2 + \ldots + a_{2n}x_n = b_2 \\ \vdots \\ a_{m1}x_1 + a_{m2}x_2 + \ldots + a_{mn}x_n = b_{m} \end{cases}$$dove $a_{ij} \in K$, $\forall i \in \{1, \ldots, m\}$ e $\forall j \in \{1, \ldots, n\}$; inoltre $\forall b_{i} \in K, \forall i \in \{1, \ldots, m\}$.
+**DEF 1.** Sia $K$ un *campo* ([[Campi]], **DEF 1.**); definiamo un **sistema di $m$ equazioni in $n$ incognite a coefficienti in $K$** come un *sistema di equazioni* nella forma seguente: $$\begin{cases}a_{11}x_1 + a_{12}x_2 + \ldots + a_{1n}x_n = b_1 \\ a_{21}x_1 + a_{22}x_2 + \ldots + a_{2n}x_n = b_2 \\ \vdots \\ a_{m1}x_1 + a_{m2}x_2 + \ldots + a_{mn}x_n = b_{m} \end{cases}$$dove $a_{ij} \in K$, $\forall i \in \{1, \ldots, m\}$ e $\forall j \in \{1, \ldots, n\}$; inoltre $\forall b_{i} \in K, \forall i \in \{1, \ldots, m\}$. ^6f6520
 ## 1.a. Incognite
 **SUBDEF 1.a.** Gli elementi $x_1, x_2, \ldots, x_n$ sono dette **incognite**.
 ## 1.b. Termini noti
@@ -20,7 +20,7 @@ Avevamo accennato che cosa sono i *sistemi lineari* nel capitolo sulle [[Equazio
 **SUBDEF 1.c.** Gli elementi $a_{ij}$ sono detti **coefficienti** del *sistema lineare*.
 
 ## 1.1. Soluzione di un sistema
-**DEF 1.1.** La **soluzione** di un *sistema lineare* è una *$n$-upla ordinata* di elementi di $K$, che rappresentiamo come un *vettore-colonna*, $S \in K^{n}$, ovvero $$S = \begin{pmatrix}s_1 \\s_2\\ \vdots \\s_n \end{pmatrix}$$ove $s_i \in K$, tali per cui se ad ogni $s_i$ sostituiamo $x_i$ (dove $i \in \{1, 2, \ldots, n\}$), allora tutte le *uguaglianze* del *sistema lineare* diventano *vere*.
+**DEF 1.1.** La **soluzione** di un *sistema lineare* è una *$n$-upla ordinata* di elementi di $K$, che rappresentiamo come un *vettore-colonna*, $S \in K^{n}$, ovvero $$S = \begin{pmatrix}s_1 \\s_2\\ \vdots \\s_n \end{pmatrix}$$ove $s_i \in K$, tali per cui se ad ogni $s_i$ sostituiamo $x_i$ (dove $i \in \{1, 2, \ldots, n\}$), allora tutte le *uguaglianze* del *sistema lineare* diventano *vere*. ^d967ff
 
 ## 1.2. Omogeneità di un sistema
 **DEF 1.2.** Un *sistema lineare* si dice **omogeneo** se tutti i *termini noti* sono nulli: ovvero se $b_1, b_2, \ldots, b_m = 0,0,\ldots,0$.
@@ -35,7 +35,7 @@ Analogamente, un *sistema lineare* si dice **non omogeneo** se questo sistema no
 **DEF 1.4.** Dato un *sistema lineare* come in **DEF 1.**, definiamo la la matrice $A$ dei *coefficienti* $$A = (a_{ij}); \begin{align}&i \in\{1, \ldots, m\}\\ &j \in \{1, \ldots, n\}\end{align}; A \in M_{m,n}(K)$$e $X$ la $n$-upla delle incognite, $b$ la $n$-upla dei termini noti, ovvero $X, b \in M_{m,1}(K)$ dove $$X= \begin{pmatrix}x_1\\x_2 \\ \vdots \\ x_m \end{pmatrix}; b = \begin{pmatrix}b_1\\b_2\\\vdots\\b_m \end{pmatrix}$$allora posso scrivere il *sistema lineare* in **forma compatta** come $$A \cdot X = b$$
 ## 1.5. Equivalenza di due sistemi
 **DEF 1.5.** Dato due *sistemi lineari*, queste si dicono **equivalenti** se ammettono le *medesime soluzioni*; ovvero se i loro insiemi delle soluzioni sono uguali.
-Più precisamente, dati due sistemi lineari $$Ax = b \text{ e }A'x = b'$$ove $A \in M_{m,n}(K)$ e $b \in K^m$; invece $A' \in M_{m'n}(K)$ e $b' = K^{m'}$, si dicono equivalenti quando hanno le medesime *soluzioni*.
+Più precisamente, dati due sistemi lineari $$Ax = b \text{ e }A'x = b'$$ove $A \in M_{m,n}(K)$ e $b \in K^m$; invece $A' \in M_{m'n}(K)$ e $b' = K^{m'}$, si dicono equivalenti quando hanno le medesime *soluzioni*. ^17d541
 
 **OSS 1.2.** Questa nozione è molto utile per risolvere dei sistemi lineari, quindi uno degli obbiettivi principali di questo corso sarà di trovare le operazioni che trasformano dei sistemi lineari in un altro mantenendoli *equivalenti*.
 

@@ -19,8 +19,10 @@ Questo problema è elementare in quanto considerare il *dominio* delle *funzioni
 Trovare i *punti* in cui la funzione incrocia con l'asse dell'ascissa e delle ordinate.
 Per trovare i punti per cui $f$ incrocia con la retta delle ordinate basta sostituire $f(x)$ con $x=0$. Ovviamente questo è possibile *solo se* $0$ appartiene al *dominio* di $f$.
 Nel secondo caso si tratterebbe di trovare una *soluzione* all'*equazione* $f(x) = 0$; però non è sempre scontato che sia *sempre* possibile trovare punti in cui la funzione $f$ incontra l'asse $x$; infatti, ad esempio $f(x) = x^2+1$ non incrocia con $x$ da nessuna parte.
-## III. Segno della funzione
+## III. Segno della funzione e parità
 Anche qui il problema è elementare, in quanto di solito basta far *"ricondurre"* il segno delle funzioni complicate a quelle elementari.
+Dopodiché è anche utile controllare se la funzione è *pari* o *dispari* calcolando $f(-x)$; in questo modo abbiamo un'*automatismo* utile per vedere se ciò che stiamo svolgendo sia giusto o meno, in quanto il segno della funzione e la parità sono correlate.
+Ad esempio, una funzione pari ha i segni *"riflessi"*.
 ## IV. Limiti agli estremi e punti particolari
 Qui bisogna sapere come calcolare i *limiti* ([[Definizione di Limite di funzione]]); allora questa parte richiederà un po' di tecnica con i limiti.
 In particolare è utile calcolare i limiti per $x$ che tende a $\pm \infty$, e ad alcuni punti per cui *non* è *definita*. Ovviamente qui serve la discrezione personale, in quanto in alcuni casi non ci sarebbe neanche il senso di farlo.
@@ -32,9 +34,9 @@ Qui basta sapere come calcolare la *derivata* ([[Derivata e derivabilità#^ae941
 ## VII. Segno della derivata prima (crescenza e decrescenza)
 Analogamente qui bisogna trovare il *segno* della *derivata prima* per determinare la (*de*)*crescenza* della funzione $f$; questa è determinabile in questo modo in quanto conseguenza del *teorema di Lagrange* ([[Conseguenze del teorema di Cauchy e di Lagrange#^45aa1e]]).
 ## VIII. Funzione derivata (seconda)
-Argomento da svolgere
+Stessa cosa della *funzione derivata* (ovvero lo step *VI*), solo che si considera la *derivata* della *derivata*. Ovvero la *derivata seconda* di $f$. 
 ## IX. Segno della derivata seconda (concavità e convessità)
-Argomento da svolgere
+Secondo i risultati dell'analisi matematica ([[Caratterizzazione delle Funzioni Convesse]]), il *segno della seconda derivata della funzione* può determinare il *"modo"* in cui curva il grafico; se $f''$ è positiva, allora è *"concava in alto"*, altrimenti è *"concava in basso"*.
 # 2. Esercizio particolare
 Ogni tanto negli appelli si potrebbe trovare di fronte ad un quesito del tipo: al variare di una grandezza $\alpha$ reale, trovare quante soluzioni ci sono per la seguente equazione...
 Solitamente l'equazione si presenta in una maniera analoga della funzione studiata nello stesso esercizio, quindi basta riportare l'equazione in *"forma"* della funzione.

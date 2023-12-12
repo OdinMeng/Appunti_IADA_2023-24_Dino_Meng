@@ -10,7 +10,7 @@ stato: "1"
 # 1. Funzione potenza
 **DEF 1.1.** Sia $n \in \mathbb{N} \diagdown \{0\}$; definiamo quindi la **funzione potenza $n$-esima** come $$p_n : [0, +\infty) \longrightarrow[0, +\infty); x \mapsto p_n(x) = x^n$$
 Si riporta un grafico di alcune funzioni potenza $p_n$.
-![[Pasted image 20231017172817.png]]
+![[Pasted image 20231017172817.png]] ^2b25ba
 
 **OSS 1.1.** Si nota che $$\begin{align} &\forall x \in [0, 1): p_1(x)>p_2(x) > \ldots > p_n(x) \\ &\forall x \in (1, +\infty): p_1(x) < p_2(x) < \ldots < p_{n}(x)  \end{align}$$
 **OSS 1.2.** Si vede dal grafico che la funzione è *strettamente crescente*, ovvero se prendiamo $x_1, x_2 \in E$ (dominio) ove $x_2 > x_1$, allora sicuramente abbiamo $$p_n(x_2) > p_n(x_1)$$

@@ -11,7 +11,7 @@ stato: "0"
 ## ESEMPIO 1.1. Aneddoto di Gauss.
 Si racconta che quando il matematico *C. F. Gauss* frequentava le scuole elementari, il suo professore di matematica aveva dato un esercizio da fare in quanto punizione: ovvero quello di sommare tutti i numeri da $0$ a $100$; quindi tutti i numeri $0+1+2+\ldots+100$.
 Alla sorpresa del professore e dei suoi compagni, Gauss riuscì, non solo a risolvere il problema quasi immediatamente consegnando la sua lavagna sulla cattedra, ma anche essere l'unico alunno ad aver dato la risposta corretta: $5050$.
-Grazie alla sua intuizione, Gauss riuscì a ingegnare un metodo per calcolare quel numero con una velocità strabiliante: ovvero quella di determinare la somma da $0$ a $100$ come $A$, che è uguale alla somma da $100$ a $1$ (proprietà commutativa); Quindi sommando $A$ con sé stesso ma disposti in una maniera diversa (ovvero la prima con un criterio crescente, la seconda decrescente), ottiene $2A = 100(101) \iff A = \frac{100(101)}{2}$
+Grazie alla sua intuizione, Gauss riuscì a ingegnare un metodo per calcolare quel numero con una velocità strabiliante: ovvero quella di determinare la somma da $0$ a $100$ come $A$, che è uguale alla somma da $100$ a $1$ (proprietà commutativa); Quindi sommando $A$ con sé stesso ma disposti in una maniera diversa (ovvero la prima con un criterio crescente, la seconda decrescente), ottiene $2A = 100(101) \iff A = \frac{100(101)}{2}$ ^d8e983
 
 Generalizzando da questo aneddoto abbiamo la seguente proprietà:$$\mathcal{P}(n) = 0+1+2+\ldots+n = \frac{n(n+1)}{2}$$Ora vogliamo dimostrarla rigorosamente *per induzione*.
 	**DIM.** 

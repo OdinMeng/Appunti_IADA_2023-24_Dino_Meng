@@ -25,7 +25,7 @@ Considerando tutto detto sopra, consideriamo la funzione $$\begin{align}f: &\ \m
 Così otteniamo le seguenti funzioni:
 **DEF 1.** $$\begin{align}\cos: \ &\mathbb{R} \longrightarrow [-1, 1] \\ &\alpha \mapsto \cos(\alpha) \in \Gamma \\ \sin: \ &\mathbb{R} \longrightarrow [-1, 1] \\ &\alpha \mapsto \sin(\alpha) \in \Gamma\end{align}$$
 Dove $(\cos\alpha, \sin\alpha)$ rappresenta la posizione del punto dell'*arco piegato* e $\alpha$ rappresenta la *lunghezza dell'arco*. Se $\alpha$ è negativa, allora si orienta l'asso in basso. Graficamente, 
-![[Pasted image 20231017172419.png]]
+![[Pasted image 20231017172419.png]] ^dd4b35
 # 2. Proprietà
 **PROP 2.1.** Diamo un nome alla *lunghezza della semi-circonferenza unitaria*,  $$(\pi \in \mathbb{R}, \pi \sim 3.14\ldots) $$quindi la *circonferenza* è lunga $2\pi$.
 
@@ -64,7 +64,7 @@ Queste formule saranno molto importanti per le formule di *prostaferesi* e di *W
 ## 2.4. Formule di prostaferesi
 *Recuperato dalla lezione del 26.10.2023*
 Voglio calcolare $\sin a + \sin b$. Allora riscrivo le *forme di sottrazione e di addizione*; $$\begin{gather}\sin(\alpha+\beta)=\sin\alpha\cos\beta+\sin\beta\cos\alpha \\ \sin(\alpha-\beta) = \sin\alpha\cos\beta-\sin\beta\cos\alpha \end{gather}$$e li sommo: $$\begin{align}\sin(\alpha+\beta)+\sin(\alpha-\beta) &= \sin\alpha\cos\beta+\sin\beta\cos\alpha-\sin\alpha\cos\beta+\sin\beta\cos\alpha \\ &= 2\sin\beta\cos\alpha\end{align}$$e ponendo $\alpha+\beta = a$, $\alpha-\beta = b$, (dunque $a+b = 2\alpha$ e $a-b=2\beta$) ottengo $$\begin{align} \sin a + \sin b = 2\sin\frac{a-b}{2}\cos\frac{a+b}{2}\end{align}$$ 
-Analogo il procedimento per $\cos\alpha + \cos\beta$.
+Analogo il procedimento per $\cos\alpha + \cos\beta$. ^5d221c
 # 3. Definizione di arcocoseno e arcoseno
 **OSS 3.1.** Considero la funzione $\cos$, però con una restrizione al suo *dominio* e *codominio*. $$\begin{align}\cos_{[0, \pi]}: &\ [0, \pi] \longrightarrow [-1, 1] \\ & \ x \mapsto \cos(x) \end{align}$$Questa funzione allora è *biiettiva* ([[Funzioni]], **DEF 3.3.**); ovvero p sia *suriettiva* che *iniettiva* e *strettamente decrescente*.
 1. Questa è *iniettiva* in quanto considerando tutti gli $x \in [0, \pi]$ si tocca un *solo* punto ad ogni $x$ considerato. Inoltre è *strettamente decrescente* in quanto il valore parte da $\cos0 = 1$ e finisce con $\cos\pi = -1$. 
@@ -76,7 +76,8 @@ Pertanto secondo il *teorema dell'esistenza della funzione inversa* ([[Funzioni]
 Analogamente si definisce $\arcsin$ considerando però la restrizione di $\sin_{[-\frac{\pi}{2}, \frac{\pi}{2}]}$.
 Quindi $$\arcsin := \sin_{[-\frac{\pi}{2}, \frac{\pi}{2}]}$$
 Ecco alcuni grafici delle funzioni $\arccos$, $\arcsin$.
-![[Pasted image 20231017172546.png]]
+**(NOTATO REFUSO NEL DISEGNO, DA CORREGGERE!)**
+![[Pasted image 20231017172546.png]] ^07affd
 
 # 4. Funzione tangente e arcotangente
 **DEF 4.1.** Definiamo la funzione **tangente** $\tan \alpha$ periodica in come $$\tan: \mathbb{R}\diagdown[\frac{\pi}{2}]_{\equiv \pi} \longrightarrow \mathbb{R}$$come il *rapporto* tra la funzione *seno* e *coseno*, ovvero $$\tan\alpha = \frac{\sin\alpha}{\cos\alpha}$$Notiamo che le funzioni $\sin, \cos$ sono periodiche di $2\pi$; quindi prendendo il rapporto abbiamo che $\tan$ è periodica di $\pi$. 

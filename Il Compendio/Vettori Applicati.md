@@ -14,7 +14,7 @@ Ci mettiamo nel contesto della *geometria euclidea*, i quali postulati vengono d
 
 ^8447d6
 
-Un **vettore applicato** è un segmento orientato, caratterizzato dunque da:
+Un **vettore applicato** è un segmento orientato, caratterizzato dunque da: ^cc8a3c
 - **Punto di applicazione**; ovvero il *"punto di partenza"* $A$ del vettore $\overrightarrow{AB}$.
 - **Direzione**; essa è quella data dalla *retta* su cui giace il vettore
 - **Verso**; esso è uno dei due *orientamenti* dalla retta

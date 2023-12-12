@@ -84,6 +84,19 @@ $$
 $$
 \lim_{x \to 0^+}x^\sqrt{x}
 $$
+
+*Giorno 27.11.2023: Lezione 26*
+#Esercizio 
+> [!es] Esercizi 1.33. - 1.36.
+> Calcolare, se esistono, i seguenti limiti.
+> $$\begin{align}1.33. & \lim_{x \to +\infty}x^2(\arctan \frac{1}{x} - \arctan \frac{1}{x^2}) \\ 1.34. & \lim_{x \to 0^+}\frac{e^{\sqrt{\sin x}}-e^{\sqrt{x}}}{x^2\sqrt{x}} \\ 1.35. & \lim_{x \to +\infty}x^\frac{3}{2}\cdot(\sqrt{\frac{1}{x}+\frac{1}{x^2}}-\frac{1}{\sqrt{x}}) \\ 1.36. & \lim_{x \to -\infty}e^{-x}\ln(\ln(e-e^x))\end{align}$$
+
+*Giorno 28.11.2023: Lezione 27*
+#Esercizio 
+> [!es] Esercizi 1.37 - 1.44.
+> Calcolare, se esistono, i seguenti limiti.
+> $$\begin{align}1.37. & \lim_{x \to \pi} \frac{\tan x - x + \pi}{\sin^3 x} \\ 1.38. & \lim_{x \to +\infty}x^3(\arctan x - \frac{\pi}{2}+\frac{1}{x}) \\ 1.39. & \lim_{x \to 0}\frac{\ln(1+x)-x}{x^2} \\ 1.40. & \lim_{x \to 0}\frac{\ln(1+x)-x}{x^2} \\ 1.41. & \lim_{x \to 0}(\frac{\sin x}{x})^{\frac{1}{x}} \\ 1.42. & (\frac{\sin x}{x})^{\frac{1}{x^2}} \\ 1.43. & \lim_n n (\sqrt[n]{n}-1) \\ 1.44. & \lim_{x \to 0}\frac{\sqrt{4-x^2}-2\cos x}{x^2}\end{align}$$
+
 - - -
 # 2. Esercizi delle dispense
 Qui si raccolgono *tutti* gli esercizi disponibili nella dispensa.

@@ -14,7 +14,7 @@ Vedere [[Esempi di derivate]] per eventuali *"dimostrazioni"* di alcune derivate
 |:-----------------------:|:-------------------------:|
 |   $c \in \mathbb{R}$    |            $0$            |
 |      $\text{id}_x$      |            $1$            |
-| $x^n, n \in \mathbb{N}$ |        $nx^{n-1}$         |
+| $x^n$ |        $nx^{n-1}$         |
 |          $e^x$          |           $e^x$           |
 |         $\ln x$         |       $\frac{1}{x}$       |
 |        $\sin x$         |         $\cos x$          |

@@ -11,7 +11,7 @@ stato: "1"
 Come abbiamo osservato nei [[Vettori Applicati]], la costruzione di esse comportano delle *limitazioni* (**OSS 1.3.1** e **OSS 1.3.2**); quindi per ottenere una teoria più *"comprensiva"*, introduciamo un nuovo oggetto: i **vettori liberi**.
 Tuttavia è necessario prima introdurre dei nuovi concetti, tra cui il concetto dell'*equipollenza*, della *classe di equipollenza* e i *rappresentanti di una classe di equipollenza*. 
 # DEF 1. Equipollenza
-Due vettori applicati $\overrightarrow{AB}, \overrightarrow{CD}$ si dicono **equipollenti** ($\overrightarrow{AB} \equiv\overrightarrow{CD}$) *se e solo se* i due vettori hanno:
+Due vettori applicati $\overrightarrow{AB}, \overrightarrow{CD}$ si dicono **equipollenti** ($\overrightarrow{AB} \equiv\overrightarrow{CD}$) *se e solo se* i due vettori hanno: ^220ab0
 - La medesima direzione
 - Il medesimo verso
 - Il medesimo modulo
@@ -20,13 +20,13 @@ Due vettori applicati $\overrightarrow{AB}, \overrightarrow{CD}$ si dicono **equ
 # DEF 2. Classe di equipollenza
 Dato un vettore applicato $\overrightarrow{AB}$, si definisce la sua **classe di equipollenza** $$[\overrightarrow{AB}]:=\{\text{tutti i vettori applicati } \overrightarrow{CD}: \overrightarrow{AB} \equiv\overrightarrow{CD}\}$$**PROP 2.1.** Dai risultati della *geometria euclidea* segue che dati un vettore applicato $\overrightarrow{AB}$ e un punto $C$, allora esiste *sempre* un **vettore applicato** $\overrightarrow{CD} \equiv \overrightarrow{AB}$; da questo segue che una classe di equipollenza denotata $\vec{v}$ e dato un punto $C$ nel piano, esiste *sempre* un vettore applicato che appartiene a $\vec{v}$ e che ha come punto iniziale $C$.
 	**INTERPRETAZIONE GRAFICA.**
-	![[Prop 2.1..png]]
+	![[Prop 2.1..png]] ^dc78a7
 
 **OSS 2.1.** Si nota che $$\overrightarrow{AB} \equiv\overrightarrow{CD} \iff[\overrightarrow{AB}]=[\overrightarrow{CD}]$$Quindi si dice che i vettori $\overrightarrow{AB}, \overrightarrow{CD}$ sono dei *rappresentanti* della medesima classe di equipollenza.
 
 # DEF 3. Vettore libero
 Ora finalmente si definisce il **vettore libero**, che si dice come una classe di **equipollenza**  $\vec{v}$. 
-Infatti è una **quantità infinita** di vettori applicati, che condividono una medesima direzione, un medesimo verso e una medesima lunghezza; sostanzialmente si *"estrania"* dal vettore applicato il *punto di applicazione* e si considerano solo le tre proprietà appena elencate sopra.
+Infatti è una **quantità infinita** di vettori applicati, che condividono una medesima direzione, un medesimo verso e una medesima lunghezza; sostanzialmente si *"estrania"* dal vettore applicato il *punto di applicazione* e si considerano solo le tre proprietà appena elencate sopra. ^d09c32
 
 ## DEF 3.1. Vettore libero nullo
 **OSS 3.1.1.** Tutti i *vettori applicati nulli* sono equipollenti e dunque formano una **sola classe di equipollenza** che si denota $\vec{0}$. Qui si vede superato la *prima limitazione* osservata nei [[Vettori Applicati]] (**OSS. 1.3.1**); quindi definiamo il *vettore libero nullo* come $$\vec{0} := [\overrightarrow{AA}] $$ovvero *tutti* i vettori per cui il punto di applicazione coincide con il punto di arrivo.

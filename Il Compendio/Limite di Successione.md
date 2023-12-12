@@ -26,7 +26,7 @@ Allora *l'unico valore* di cui ha senso calcolare il limite di una successione �
 **DEF 1.1.** (*Definizione di limite di successione*)
 Allora definiamo $$\lim_{n}a_n = L$$come $$\begin{gather}\forall V \text{ di }L, \exists U \text{ di }+\infty: \forall n, \\ n \in U \implies a_n \in V \end{gather}$$ovvero, supponendo $L \in \mathbb{R}$, $$\begin{gather}\forall \varepsilon >0, \exists N>0: \forall n, \\n > N \implies |a_n-L|<\varepsilon \end{gather}$$oppure se $L \in \mathbb{\tilde{R}}$, $$\begin{gather} \forall M > 0, \exists N >0: \forall n, \\ n > N \implies a_n > M \text{ (}a_n < -M\text{ per }-\infty\text{)}\end{gather}$$
 Graficamente ho una situazione del tipo
-![[Pasted image 20231103224524.png]]
+![[Pasted image 20231103224524.png]] ^ef60f6
 
 **DEF 1.2.** (*Convergenza e divergenza*)
 Se $$\lim_n a_n = L$$esiste e il limite è un *numero* $L \in \mathbb{N}$, allora si dice che $a_n$ è **convergente**.
@@ -34,7 +34,7 @@ Altrimenti se esiste ma ho $$\lim_n a_n = \pm \infty$$allora si dice che $a_n$ �
 
 ## Proprietà del limite di successione
 **OSS 1.1.** Osserviamo che per il *limite di successione* valgono *tutte* le *proprietà dei limiti di funzione* ([[Teoremi sui Limiti di Funzione]]), in quanto stiamo considerando un *caso particolare* di un *caso generale*. 
-Quindi valgono le seguenti:
+Quindi valgono le seguenti: ^72d83a
 - L'unicità del limite
 - Permanenza del segno
 - Teorema del confronto
@@ -64,4 +64,6 @@ Notiamo che vale anche il *viceversa* (inversa); se conosco il *limite di una su
 **ESEMPIO 1.1.** Vediamo alcuni esempi di quest'ultima osservazione.
 1. $$\lim_{x \to +\infty}\frac{1}{x}=0 \implies \lim_{n}\frac{1}{n}=0$$
 2. $$\lim_{x \to +\infty}\sqrt{x} = +\infty \implies \lim_n \sqrt{n} = +\infty$$
-3. $$\not \exists \lim_{x \to +\infty}\sin(n \pi); \lim_{n}\sin(n\pi) = 0$$
+3. $$\not \exists \lim_{x \to +\infty}\sin(n \pi) \cancel{\impliedby} \lim_{n}\sin(n\pi) = 0$$
+# 2. Voci correlate
+- [[Esempi di Limiti di Successione]]

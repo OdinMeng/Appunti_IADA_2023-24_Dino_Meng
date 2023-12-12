@@ -22,7 +22,7 @@ Sia $A=(a_{ij})_{i = 1, \ldots, m; j = 1, \ldots, n}$ una matrice a coefficienti
 **DEF 2.2.** Per ogni $j \in \{1, \ldots, n\}$ la $i$**-esima colonna** è la *matrice* $$A^{(j)} := \begin{pmatrix}a_{1j} \\ a_{2j} \\ \ldots \\ a_{mj} \end{pmatrix}$$
 ## 1.2. L'insieme delle matrici 
 **DEF 1.2.** Dati $m, n \in \mathbb{N}$, ove $m>0, n>0$, denotiamo **l'insieme delle matrici** con $$M_{m,n}(\mathbb{R}) $$
-**OSS 1.2.1.** Notiamo che con le operazioni di *somma interna* e di *prodotto per uno scalare* definite in [[Operazioni basilari con matrici]], $$(M_{m,n}(\mathbb{R}), +, \cdot)$$è uno [spazio vettoriale](Spazi%20Vettoriali).
+**OSS 1.2.1.** Notiamo che con le operazioni di *somma interna* e di *prodotto per uno scalare* definite in [[Operazioni basilari con matrici]], $$(M_{m,n}(\mathbb{R}), +, \cdot)$$è uno [spazio vettoriale](Spazi%20Vettoriali). ^c6b210
 # 2. Tipologie di matrici
 ## 2.1. Matrici quadrate
 **DEF 2.1.** Una *matrice* si dice **quadrata** se il numero delle *righe* ($n$) coincide con il suo numero delle *colonne* ($m$).

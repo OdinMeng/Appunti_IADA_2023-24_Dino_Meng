@@ -13,7 +13,7 @@ stato: "1"
 **NOTA.** Il segno sbarra $|$ per *"differenziare"* i termini noti dai coefficienti è opzionale ed ha uno scopo puramente grafico. ^8357bd
 # 2. Operazioni elementari OE
 
-Ora definiamo una serie di *operazioni elementari* (OE) che sono in grado di trasformare un *sistema lineare* di forma $(A|B)$ in un altro *equivalente* ([[Sistemi Lineari]], **DEF 1.5.**). 
+Ora definiamo una serie di *operazioni elementari* (OE) che sono in grado di trasformare un *sistema lineare* di forma $(A|B)$ in un altro *equivalente* ([[Sistemi Lineari]], **DEF 1.5.**).  ^ccc408
 
 **OE1.** *L'operazione scambia equazioni*
 Dati due indici $i, j \in \{1, \ldots, m\}$ scambiamo di posto l'equazione $i$-esima e $j$-esima.

@@ -207,7 +207,6 @@ Sia $g: [a, b] \longrightarrow \mathbb{R}$. Supponiamo $g(a) = \alpha$, $g(b) = 
 Allora 
 $$\exists \xi \in \ ]a, b[\ : g(\xi)=\gamma  $$
 in parole una *funzione continua su un certo intervallo* se assume due valori negli *estremi* allora questa assume *tutti* i valori *intermedi* in questo intervallo.
-
 ^1c6f7c
 
 **FIGURA 2.2.** 
@@ -318,7 +317,7 @@ Sapendo che $f$ è *continua*, abbiamo che
 $$
 \lim_k x_{n_k} = \bar{x} \in K \implies \lim_k f(x_{n_k}) = f(\bar{x} ) = \bar{y} =  \begin{cases}+\infty \text{ se caso 1.} \\ \sup f(K) \text{ se caso 2.} \end{cases} 
 $$
-Ora ci chiediamo se è possibile avere il *primo* caso: la risposta è *no*, in quanto sappiamo che $f(\bar{x}) \in f(K)\subseteq\mathbb{R} \implies f(\bar{x}) \in \mathbb{R}$. Do conseguenza l'unico caso rimanente è il *secondo*, ovvero
+Ora ci chiediamo se è possibile avere il *primo* caso: la risposta è *no*, in quanto sappiamo che $f(\bar{x}) \in f(K)\subseteq\mathbb{R} \implies f(\bar{x}) \in \mathbb{R}$ (ovvero questo caso è un *assurdo*). Di conseguenza l'unico caso di cui ha senso considerare è il *secondo*, ovvero
 $$
 \lim_k y_{n_k} = \bar{y} = \sup f(K) \in f(K) \implies \sup f(K) = \max f(K)
 $$

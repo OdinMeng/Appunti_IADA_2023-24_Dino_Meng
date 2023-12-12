@@ -14,9 +14,10 @@ stato: "1"
 > Siano $\mathcal{B}, \mathcal{C}$ rispettivamente *basi* di $V, V'$ ([[Definizione di Base#^def430]]). In particolare sia $\mathcal{B} = \{v_1, \ldots, v_n\}$
 > Fissiamo $v$ un vettore di $V$; $v \in V$
 > Supponiamo che ci sia il *vettore-colonna* $A$ in $K^n$ sia il *vettore* che rappresenta le coordinate di $v$ rispetto a $\mathcal{B}$;
-> $$A = \begin{pmatrix}\alpha_1 \\ \vdots \\ \alpha_n \end{pmatrix}: v=\alpha_1 v_1 + \ldots + \alpha_n v_n $$ 
+> $$A = \begin{pmatrix}\alpha_1 \\ \vdots \\ \alpha_n \end{pmatrix} \cdot v=\alpha_1 v_1 + \ldots + \alpha_n v_n $$ 
 > Allora le *coordinate* di $f(v)$ rispetto a $\mathcal{C}$ sono date da
 > $$\begin{pmatrix}\beta_1 \\ \vdots \\ \beta_m \end{pmatrix} = M^\mathcal{B}_\mathcal{C}(f) \cdot A = M^\mathcal{B}_\mathcal{C}(f) \cdot \begin{pmatrix}\alpha_1 \\ \vdots \\ \alpha_n\end{pmatrix}$$
+^ebd9e5
 
 #Dimostrazione 
 **DIMOSTRAZIONE** del *teorema 1.1.*
@@ -29,6 +30,8 @@ Consiglio: definire $f(v_i)$ in un certo modo e usare un *"trick"* in cui si sfr
 > Siano $\mathcal{B}, \mathcal{C}, \mathcal{D}$ rispettivamente le *basi* di $V, V', V''$.
 > Allora possiamo considerare la *composizione* $g \circ f: V \longrightarrow V''$ e vale che
 > $$M^\mathcal{B}_\mathcal{D}(g \circ f) = M^\mathcal{C}_\mathcal{D}(g) \cdot M^\mathcal{B}_{\mathcal{C}}(f) $$
+
+^65e5e6
 
 **TRUCCHETTO MNEMONICO.** Come trucchetto mnemonico si potrebbe visualizzare che le lettere $\mathcal{C}$ si *"cancellano"*.
 

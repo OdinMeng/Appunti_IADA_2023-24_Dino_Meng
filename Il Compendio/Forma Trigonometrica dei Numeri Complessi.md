@@ -14,7 +14,7 @@ Oltre alla rappresentazione *"algebrica"* dei numeri complessi $\mathbb{C}$ ([[R
 ![[Pasted image 20231022151510.png]]
 Allora secondo le definizioni del *seno* e del *coseno* ([[Funzioni trigonometriche]], **DEF 1.**) possiamo considerare $$\begin{align}&a = \cos\alpha \cdot |z| \\ &b = \sin\alpha \cdot |z| \end{align}$$dove $|z|$ rappresenta il *modulo* di $z$. ([[Operazioni sui Numeri Complessi]], **DEF 4.**)
 Dunque $$z = a+ib = |z|(\cos\alpha+i\sin\alpha)$$
-e lo si può scrivere come $$z \sim (|z|, [\alpha])$$che si legge come "$z$ *lo rappresento come* $(|z|, [\alpha])$".
+e lo si può scrivere come $$z \sim (|z|, [\alpha])$$che si legge come "$z$ *lo rappresento come* $(|z|, [\alpha])$". ^5bb422
 
 **DEF 1.** Quindi definisco le due *componenti* che sono associate a $z$:
 - **Modulo** come $|z|$, che d'ora in poi verrà genericamente chiamato come $\rho$. Ovviamente può essere solo maggiore o uguale a $0$.
@@ -76,7 +76,7 @@ Siano $a_n$ dei numeri tali che: $$a_0, a_1, \ldots,a_n \in \mathbb{C}; a_n \neq
 # 4. (EXTRA) L'insieme di Mandelbrot
 **PROBLEMA 4.** Considero il *piano di Argand-Gauss* e $z = c \in \mathbb{C}$; adesso considero una *successione* ([[Assiomi di Peano, il principio di induzione]], **DEF 4.2.1.**) di *punti su $\mathbb{C}$*, ovvero $$z_0 = c; z_1 = c^2+c; \forall n, z_{n+1} = (z_n)^2+c$$
 Quindi scelgo un punto $c$, a cui applico la successione $z_n$.
-Adesso distinguo i *punti di partenza $c$* in due famiglie principali:
+Adesso distinguo i *punti di partenza $c$* in due famiglie principali: ^1a7f5c
 1. I punti di partenza che rimangono in un *insieme limitato* (ovvero un raggio di palla) dopo un numero di iterazioni
 2. I punti di partenza dei quali moduli vanno all'infinito
 Graficamente posso colorare i punti della prima famiglia di colore nero, i secondi di colore bianco.

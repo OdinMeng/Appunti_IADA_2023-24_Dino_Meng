@@ -24,7 +24,7 @@ Infatti se trovo un $\delta$ che va bene per *tutti* i punti del dominio, allora
 > Data una funzione $f : E \longrightarrow \mathbb{R}$, diciamo che $f$ è *uniformemente continua* se vale la seguente proprietà.
 > $$\begin{gather} \forall \varepsilon >0, \exists \delta>0: \forall x_1,x_2 \in E, \\ |x_1-x_2| < \delta \implies |f(x_1)-f(x_2)|<\varepsilon \end{gather}$$
 
-**OSS 1.1.** Notiamo quindi che una funzione è *uniformemente continua* è anche (ovviamente) *continua*. Attenzione però che non vale necessariamente il *viceversa*.
+**OSS 1.1.** Notiamo quindi che se una funzione è *uniformemente continua* è anche (ovviamente) *continua*. Attenzione però che non vale necessariamente il *viceversa*.
 
 #Esempio 
 > [!ex] Esempio 1.1.
@@ -48,6 +48,8 @@ Infatti se trovo un $\delta$ che va bene per *tutti* i punti del dominio, allora
 > [!thm] Teorema 2.1. (di Heine)
 > Sia $f: [a, b] \longrightarrow \mathbb{R}$ *continua* (e ovviamente $[a,b]$ è *compatta* ([[Insiemi compatti in R#^0eb138]])).
 > Allora $f$ è *uniformemente continua*.
+
+^d030d1
 
 **OSS 2.1.** Quindi in generale si può dire che una funzione $f$ è uniformemente continua *se e solo* se continua, se vale la ipotesi iniziale del teorema.
 

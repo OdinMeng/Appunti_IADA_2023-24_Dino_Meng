@@ -10,7 +10,7 @@ stato: "1"
 
 # 1. Intervalli limitati
 Siano $a, b \in \mathbb{R}$, con $a < b$ (ovvero $a \leq b \land a \neq b$), allora definiamo le seguenti definizioni degli *intervalli limitati*:
-- **DEF 1.1.** Intervallo **chiuso** compresi gli estremi $$[a,b] := \{x \in \mathbb{R}: a \leq x \leq b\}$$
+- **DEF 1.1.** Intervallo **chiuso** compresi gli estremi $$[a,b] := \{x \in \mathbb{R}: a \leq x \leq b\}$$ ^a1a838
 - **DEF 1.2.** Intervallo **semichiuso** $$]a, b] := \{x \in \mathbb{R}: a < x \leq b\}$$
 - **DEF 1.3.** Similmente (da **DEF 1.2.**), altro intervallo **semichiuso** $$[a, b[ \ := \{x \in \mathbb{R}: a \leq x < b\}$$
 - **DEF 1.4.** Intervallo **aperto** $$]a, b[ \ := \{x \in \mathbb{R}: a < x < b\}$$
@@ -25,7 +25,7 @@ Se, invece consideriamo $a \in \mathbb{R}$, definiamo allora i seguenti *interva
 
 **OSS 2.3.** Notare che $-\infty$ e $+\infty$ *NON* sono numeri reali, bensì dei semplici simboli. $$-\infty, +\infty \not \in \mathbb{R}$$Se voglio, posso estendere l'insieme dei numeri reali tale che $$\tilde{\mathbb{R}} := \mathbb{R} \cup \{+\infty, -\infty\}$$
 # 3. Successione di intervalli
-**DEF 3.1.** Sia $$(I_n)_n$$definita come una [successione](Assiomi%20di%20Peano,%20il%20principio%20di%20induzione) (**DEF 4.2.1.**) di intervalli *chiusi* e *limitati*. Quindi $$(I_n)_n = I_0, I_1, \ldots ,I_n, \ldots$$ove $$I_i = [a_i, b_i]$$(quindi è un *intervallo chiuso e limitato*)
+**DEF 3.1.** Sia $$(I_n)_n$$definita come una [successione](Assiomi%20di%20Peano,%20il%20principio%20di%20induzione) (**DEF 4.2.1.**) di intervalli *chiusi* e *limitati*. Quindi $$(I_n)_n = I_0, I_1, \ldots ,I_n, \ldots$$ove $$I_i = [a_i, b_i]$$(quindi è un *intervallo chiuso e limitato*) ^a18c7c
 
 ## 3.1. Intervalli inscatolati e dimezzati
 **DEF 3.1.1.** Gli intervalli si dicono **inscatolati** se $$\forall n, I_{n+1}\subseteq I_{n}$$ovvero graficamente

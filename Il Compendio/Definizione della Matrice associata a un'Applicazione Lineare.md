@@ -20,6 +20,8 @@ stato: "1"
 > In altre parole,
 > $$(M^\mathcal{B}_\mathcal{C}(f))^{(i)} = \text{coordinate di }f(v_i)\text{ a }\mathcal{C}; \forall i \in \{1, \ldots, n\} $$
 
+^ea78d6
+
 # 2. Esempi
 #Esempio 
 > [!ex] Esempio 2.1. (su $\mathbb{R}^2$)

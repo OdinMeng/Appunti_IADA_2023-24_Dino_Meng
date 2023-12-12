@@ -103,7 +103,7 @@ In parole semplici, la *(1)* vuol dire che $\alpha$ è un maggiorante di $A$; la
 	**DIM.** Sia $\alpha = \sup(A)$, cioè se è il *minimo dei maggioranti* di $A$.
 	Ma allora innanzitutto $\alpha$ è un *maggiorante di $A$* (1)
 	Ma quindi $\alpha$ è il *minimo dei maggioranti di $A$*; quindi se sottraggo ad $A$ qualsiasi valore positivo, non è più un maggiorante di $A$. Pertanto scrivo $$\begin{align}\forall \varepsilon > 0,\  &\neg(\forall a \in A, a \leq a - \varepsilon)\\ &\exists a \in A: a > a - \varepsilon\end{align}$$ovvero la (2). $\blacksquare$
-	Volendo si può ragionare anche viceversa, partendo dai presupposti (1) e (2) e verificando che vogliono dire le stesse cose.
+	Volendo si può ragionare anche viceversa, partendo dai presupposti (1) e (2) e verificando che vogliono dire le stesse cose. ^601040
 
 **TEOREMA 4.2.1.** *(versione $\inf A$*)
 Sia $A \subseteq \mathbb{R}$, $A \neq \emptyset$, $\beta \in \mathbb{R}$.

@@ -38,7 +38,7 @@ stato: "0"
 
 > [!es] Esercizio 1.6.
 > Sia $f: \mathbb{R} \longrightarrow \mathbb{R}$, *continua*.
-> Provare che $f^{\leftarrow}(\{0\})$ è un *chiuso*.
+> Provare che $f^{\leftarrow}(\{0\})$ è un *chiuso* ([[Insiemi aperti e chiusi#^36f40d]]).
 # 2. Esercizi dei temi d'esame
 
 # 3. Esercizi dei papers (?)

@@ -59,7 +59,7 @@ Allora scrivo la *combinazione lineare* $x_1 < \lambda x_1 + (1-\lambda)x_2 < x_
 > [!thm] Teorema 2.1. (di caratterizzazione mediante la derivata seconda)
 > Sia $f: I \longrightarrow \mathbb{R}$, $f$ *derivabile* ([[Derivata e derivabilità#^12c1df]]).
 > Allora
-> $$\boxed{f \text{ convessa}\iff f' \text{ crescente}}$$
+> $$\boxed{f \text{ convessa}\iff f' \text{ crescente} \iff \forall x_0 \in I, f(x_0)+f'(x_0)(x-x_0) \leq f(x)}$$
 ^318646
 
 #Corollario 
@@ -69,8 +69,8 @@ Allora scrivo la *combinazione lineare* $x_1 < \lambda x_1 + (1-\lambda)x_2 < x_
 > $$\boxed{f \text{ convessa}\iff f' \text{ crescente}\iff f''(x) > 0, \forall x \in I} $$
 
 **DIMOSTRAZIONE** del *teorema 2.1.* ([[#^318646]])
-Questo è un teorema *"se e solo se"*, quindi si mira a mostrare *entrambi* i versi della doppia implicazione.
-"$\impliedby$". Sia $f$ *crescente*. 
+Questo è un teorema *"se e solo se"* (per le prime due condizioni), quindi si mira a mostrare *entrambi* i versi della doppia implicazione.
+"$\impliedby$". Sia $f'$ *crescente*. 
 Allora prendo $x_1, x_2, x_3 \in I: x_1 < x_2 < x_3$.
 Uso il *teorema di Lagrange* ([[Teorema di Lagrange#^ef03c2]]) sull'intervallo $[x_1, x_2]$ e $[x_2, x_3]$; allora esistono $\xi_1, \xi_2$ tali che
 $$\begin{cases}\exists \xi_1 \in (x_1, x_2): \frac{f(x_2)-f(x_1)}{x_2-x_1} =f'(\xi_1)\\ \exists \xi_2 \in (x_2, x_3): \frac{f(x_3)-f(x_2)}{x_3-x_2}=f'(\xi_2)\end{cases}$$
@@ -87,6 +87,7 @@ Allora graficamente (*figura 2.1.*) si evince che
 $$x_1<x_2 \implies f'(x_1)\leq f'(x_2) $$
 Analogamente si dimostra che
 $$x_2 < x_3 \implies f'(x_2) \leq f(x_3) \ \blacksquare$$
+Invece la terza implicazione, ovvero che per ogni *tangente* del punto $x_0$ sta sempre sotto il grafico, deriva dalla *condizione sulle pendenze* ([[#^742cae]]) e dal *teorema di Lagrange* ([[Teorema di Lagrange#^ef03c2]]).
 
 **FIGURA 2.1.** (*Idea grafica della dimostrazione dell'implicazione $\implies$*)
 ![[Pasted image 20231128230803.png]]
@@ -112,3 +113,15 @@ $$x_2 < x_3 \implies f'(x_2) \leq f(x_3) \ \blacksquare$$
 
 **FIGURA 2.1.** (*Interpretazione grafica alternativa*)
 ![[Pasted image 20231128233239.png]]
+
+## Punto di flesso
+#Definizione 
+> [!def] Definizione 2.1. (punto di flesso)
+> Sia $f: I \longrightarrow \mathbb{R}$.
+> Sia $x_0 \in I$; supponiamo che $f$ sia *continua* in $x_0$.
+> Allora $x_0$ si dice *punto di flesso* se si verificano entrambe le condizioni:
+> $$\begin{cases}x_0 \in I \cap (-\infty, x_0), f\text{ è convessa (concava)} \\ x_0 \in I \cap (x_0, +\infty), f \text{ è concava (convessa)}\end{cases}$$
+
+#Osservazione 
+> [!oss] Osservazione 2.1.
+> Se $f: I \longrightarrow \mathbb{R}$, $f$ derivabile fino al *secondo ordine*, e supponendo che *prima di* $x_0$ si ha $f''(x_0) \leq 0$ e *dopo di* $x_0$ si ha $f''(x_0) \geq 0$, allora $x_0$ è di *flesso*. Vale lo stesso se si ha il viceversa.
