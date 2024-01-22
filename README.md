@@ -19,3 +19,6 @@ ANNUNCIO IMPORTANTE (23.10.2023)
 
 ANNUNCIO IMPORTANTE (14.11.2023)
 Da oggi in poi rendo disponibile il sito pubblico https://odinmeng.github.io/ per caricare gli appunti. Comunque i sommari in file pdf verranno comunque mantenuti, anche se di più rado.
+
+ANNUNCIO IMPORTANTE (22.01.2024)
+A seguito del completamento dell'esame di *Analisi Matematica I*, ho deciso di rendere ufficiale e finale la stesura della dispensa personale di Analisi I.
