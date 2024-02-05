@@ -29,7 +29,7 @@ stato: "1"
 **FIGURA 0.a.** (*La linearizzazione della funzione*)
 ![[Pasted image 20231130174308.png]]
 
-# 1. Lemma di Peano e di Lagrange
+# 1. Lemmi di Peano e di Lagrange
 ## Lemma di Peano
 #Lemma 
 > [!lem] Lemma 1.1. (di Peano)
@@ -98,7 +98,7 @@ Che è la tesi del teorema. $\blacksquare$
 > Sia $g: I \longrightarrow \mathbb{R}$, $I$ *intervallo*, $x_0 \in I$.
 > Supponiamo $g$ *derivabile* fino all'ordine $n$; ovvero $g \in \mathcal{C}^n$
 > Allora, per ogni punto dell'intervallo *escluso* il punto $x_0$, vale il seguente:
-> $$\begin{gather}\forall x \in I \diagdown \{x_0\} \\ \boxed{g(x) = g(x_0)+g'(x_0)(x-x_0)^1+ \ldots + \frac{g^{(n)}(x_0)}{n!}(x-x_0)^n + r(x_0,x)} \end{gather}$$
+> $$\begin{gather}\forall x \in I \diagdown \{x_0\} \\ \boxed{g(x) = g(x_0)+g'(x_0)(x-x_0)^1+ \ldots + \frac{g^{(n)}(x_0)}{n!}(x-x_0)^n + r_n(x_0,x)} \end{gather}$$
 > dove $r_n(x_0, x)$ è il *resto di Peano*; ovvero $r(x_0, x) = g(x) - (\ldots)$ e ha la speciale proprietà per cui
 > $$\lim_{x \to x_0}\frac{r_n(x_0, x)}{(x-x_0)^n} = 0$$
 > ovvero avvicinandosi al punto $x_0$ il *resto* crolla a $0$.
@@ -196,7 +196,7 @@ Consideriamo un esempio celebre della *formula di Taylor col resto di Peano* di 
 > Ora scrivo la *formula di Taylor col resto di Lagrange* per $e^x$, con $n$ generico (da determinare in seguito) e $x_0 = 0$
 > $$e^x = 1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+\ldots+\frac{x^n}{n!}+\frac{e^\xi}{(n+1)!}x^{n+1}, 0 < \xi < 1$$
 > Adesso poniamo $x=1$ e prendiamo la *"distanza"* tra $e^1$ e il polinomio di Taylor $T_n(f, 0, 1)$, e come visto prima questa dev'essere *minore o uguale* al resto di Lagrange.
-> $$|e-(1+1+\ldots+\frac{1}{n!}|\leq \frac{e^\xi}{(n+1)!}$$
+> $$|e-(1+1+\ldots+\frac{1}{n!})|\leq \frac{e^\xi}{(n+1)!}$$
 > Ricordiamo che se $\xi$ *"vive"* tra $0,1$, allora $e^\xi$ vive tra $1, e$; pertanto possiamo maggiorare $e^\xi$ con $3$, in quanto $e$ è *limitata* da $3$. Poniamo pertanto
 > $$|e-2-\frac{1}{2}-\frac{1}{3!}-\ldots-\frac{1}{n!}| \leq \frac{3}{(n+1)!}$$
 > Ora *"proviamo"* ad inserire degli $n$ a partire da $n=4$, per vedere se innanzitutto il resto (ovvero l'*"errore"*) che ci viene fuori è effettivamente minore di $10^{-3}$; in tal caso procediamo a calcolare la somma/sottrazione del polinomio.

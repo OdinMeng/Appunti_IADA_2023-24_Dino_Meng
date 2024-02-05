@@ -3,7 +3,7 @@ data: 2023-12-10
 corso: "[[Algebra Lineare ed Elementi di Geometria]]"
 argomento: Definizione di Equazioni Cartesiane e Parametriche di uno Sottospazio Affine
 tipologia: appunti
-stato: "0"
+stato: "1"
 capitolo: Geometria Affine
 ---
 - - -
@@ -47,6 +47,8 @@ $$\dim \mathbb{S} = \dim W = n - \operatorname{rg}A \ \blacksquare$$
 > Allora le *equazioni* del sistema lineare si dicono *equazioni cartesiane* per $\mathbb{S}$, ovvero le equazioni del tipo
 > $$\boxed{\begin{cases}a_{11}x_1 + a_{12}x_2 + \ldots + a_{1n}x_n = b_1 \\ a_{21}x_1 + a_{22}x_2 + \ldots + a_{2n}x_n = b_2 \\ \vdots \\ a_{m1}x_1 + a_{m2}x_2 + \ldots + a_{mn}x_n = b_m \end{cases}}$$
 
+^bc4fe3
+
 #Osservazione 
 > [!oss] Osservazione 2.1.
 > Se un sistema lineare $Ax = b$ ha come *insieme delle soluzioni* $S$, allora ogni *sistema lineare equivalente* ([[Sistemi Lineari#^17d541]]) a $Ax=b$ avrà il *medesimo* insieme $S$.
@@ -70,6 +72,9 @@ $$\dim \mathbb{S} = \dim W = n - \operatorname{rg}A \ \blacksquare$$
 > Allora il seguente sistema di equazioni si dice *equazioni parametriche per uno sottospazio affine con $k$ parametri*.
 > $$\boxed{\begin{cases}x_1 = q_1 + t_1 w_{11} + \ldots + t_k w_{1k} \\ \vdots \\ x_n = q_n + t_1 w_{n1} + \ldots + t_k w_{nk} \end{cases}}$$
 > dove $t_i$ sono detti *parametri*.
+
+^3babd4
+
 # 3. Pro e Contro
 #Osservazione 
 > [!oss] Osservazione 3.1. (vantaggi e svantaggi delle due forme)
@@ -80,7 +85,22 @@ $$\dim \mathbb{S} = \dim W = n - \operatorname{rg}A \ \blacksquare$$
 > Questa distinzione vale anche per gli oggetti algebrici!
 # 4. Conseguenze di queste forme
 #Osservazione 
+> [!oss] Osservazione 4.1. (un sottospazio affine è descritto da $n-k$ equazioni cartesiane)
+> Da quanto visto, un *sottospazio affine* $\mathbb{S} \subseteq \mathbb{A}^n_K$ di *dimensione* $k$ ([[Definizione di Sottospazio Affine#^e4d250]]) è *sempre* descritto da $n-k$ *equazioni cartesiane* ([[#^bc4fe3]]), data la sua definizione.
+> In particolare un *retta* in $\mathbb{A}^2_K$ è descritta da *una sola* equazione cartesiana; invece in $\mathbb{A}^3_K$ verrebbe descritta da *due* equazioni cartesiane.
 
 #Osservazione 
+> [!oss] Osservazione 4.2. (ogni iperpiano è descritta da una sola equazione)
+> Sia $\mathbb{S} in \mathbb{A}^n_K$ un *iperpiano* ([[Iperpiano#^477d80]]), ovvero un *sottospazio affine* di dimensione $n-1$.
+> Allora come visto sopra, $\mathbb{S}$ è descritta da $n-(n-1) = 1$ *equazione cartesiana*.
+> Viceversa, ogni volte che imponiamo un'*equazione non banale* (ovvero non del tipo $0=0$) allora determiniamo un *iperpiano* in $\mathbb{A}^n_K$; in altre parole *ogni* iperpiano di $\mathbb{A}^n_K$ è descritta da un'equazione del tipo
+> $$\boxed{a_1x_1 + a_2x_2 + \ldots + a_nx_n = d}$$
 
 #Osservazione 
+> [!oss] Osservazione 4.2. (una retta è determinata da due equazioni nello spazio)
+> Come vedremo nella *geometria dello spazio affine* ([[Geometria dello Spazio Affine]]), una *retta* in $\mathbb{A}^3_\mathbb{R}$ è descritta da un *sistema di equazioni* del tipo
+> $$\boxed{\begin{cases}a_1x_1 + a_2x_2 +a_3x_3 = d_1 \\ b_1x_1+b_2x_2+b_3x_3 = d_3 \end{cases}}$$
+> Graficamente questo significa *"l'intersezione di due piani distinti forma una retta nello spazio"*.
+
+**FIGURA 4.2.** (*OSS 4.2.*)
+![[Pasted image 20231213170142.png]]

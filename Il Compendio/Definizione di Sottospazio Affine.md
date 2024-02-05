@@ -39,3 +39,6 @@ capitolo: Geometria Affine
 > Sia $\mathbb{A}$ uno *sottospazio affine* su $V$ e sia $\mathbb{S} \subseteq \mathbb{A}$ un *sottospazio affine* di *giacitura* $W$.
 > Diciamo che la *dimensione* ([[Dimensione#^3a9321]]) di $\mathbb{S}$ è la medesima della sua *giacitura* $W$.
 > $$\boxed{\dim \mathbb{S} := \dim W}$$
+
+^e4d250
+

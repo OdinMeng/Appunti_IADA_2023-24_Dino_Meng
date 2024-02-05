@@ -71,9 +71,12 @@ Come *"presupposto"* di queste osservazioni facciamo la seguente:
 > Quale sarà mai la relazione tra la *somma inferiore* per $\Delta_1$ e la *somma superiore* per $\Delta_2$;
 > $$s(f, \Delta_1) \ ? \ S(f, \Delta_2)$$
 > Intuitivamente si può pensare che la *somma inferiore* sarà sempre piccola di una *somma superiore* per suddivisioni qualsiasi; infatti la somma superiore *"contiene"* sempre la *somma inferiore* (*figura 2.4.*). 
+> 
 > Infatti questa sembra una sorta di *"panino"*, dove le linee delineate dalla somma superiore è la fetta di pane superiore; la parte in mezzo la carne; la parte sotto sono le linee delineate dalla somma inferiore. (*forse non consiglio di usare questa analogia all'orale*)
+> 
 > Infatti, ricordandoci delle osservazioni fatte sulle *suddivisioni* ([[Suddivisione di un Intervallo#^64461d]]) possiamo prendere *l'unione* delle suddivisioni, maggiorarlo per la *suddivisione inferiore* di $\Delta_1$, poi maggioriamo a sua volta l'unione con la *somma superiore* dell'unione (per *osservazione 2.2.* [[#^fd1845]]), che a sua volta la maggioriamo con la *somma superiore* di $\Delta_2$ (*osservazione 2.3.*, [[#^80234e]]).
-> Ovvero, in simboli matematici questo equivale a
+> 
+> Ovvero, in termini matematici questo equivale a
 > $$s(f, \Delta_1) \leq s(f, \Delta_1 \cup \Delta_2) \leq S(f, \Delta_1 \cup \Delta_2) \leq S(f, \Delta_2)$$
 > Quindi, alla fine possiamo affermare che la *somma inferiore* di una qualsiasi suddivisione è *sempre minore o uguale* di una *somma superiore* di un'altra qualsiasi suddivisione. Ovvero la seguente proposizione.
 

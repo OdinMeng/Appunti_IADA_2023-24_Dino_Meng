@@ -3,7 +3,7 @@ data: 2023-10-25
 corso: "[[Analisi Matematica I]]"
 argomento: Esercizi sulle funzioni
 tipologia: appunti
-stato: "0"
+stato: "1"
 ---
 *Alcuni esercizi misti sulle funzioni*
 - - -
@@ -58,7 +58,7 @@ Qui si propone degli esercizi misti sulle funzioni svolte durante le lezioni del
 > Si studi la funzione
 > $$f(x) = \ln(x+1) - \arctan(x)$$
 > determinando il suo *dominio*, *limiti agli estremi*, *eventuali asintoti*, *derivata prima e il suo segno* e *derivata seconda*.
-# 3. TIPOLOGIA C. DIMOSTRAZIONE DELLE PROPRIETA'
+# 3. TIPOLOGIA C. ESERCIZI TEORICI
 *Lezione 22*
 #Esercizio 
 > [!es] Esercizio C1.

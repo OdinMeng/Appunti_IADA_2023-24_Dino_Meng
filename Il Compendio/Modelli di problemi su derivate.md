@@ -3,7 +3,7 @@ data: 2023-11-20
 corso: "[[Analisi Matematica I]]"
 argomento: Modelli di problemi su derivate
 tipologia: appunti
-stato: "0"
+stato: "1"
 ---
 *Esempi di problemi con le derivate.*
 - - -
@@ -20,7 +20,7 @@ stato: "0"
 > 4. Rimettendo tutto assieme, abbiamo
 > $$\begin{align}r: \ &y = f'(x_0)x + f(x_0)-f'(x_0)(x_0) \\ &\boxed{y = f'(x_0)(x-x_0)+f(x_0)}\end{align}$$
 # 2. Ortogonalità della retta tangente di un cerchio e raggio del cerchio
-**Per ora omessa, da riprendere quando faremo la geometria affine con ALEG**
+*Omessa.*
 
 # 3. Problemi di massimo e/o minimo
 > [!mod] Modello 3.1. (problema di massimo e/o minimo)
@@ -29,6 +29,7 @@ stato: "0"
 > 2. Dove si trovano questi punti di massimo e/o minimo assoluto? Usiamo il *teorema di Fermat* ([[Teorema di Fermat#^8ab68b]]) per costruire *l'insieme dei punti stazionari* unito agli *"estremi"* $P$ dove
 >    $$P = \{x \in \ ]a, b[ \ | \ f'(x) = 0\} \cup \{a,b \} $$
 > 3. Come faccio ad individuare gli effettivi $\max$, $\min$ di $f$? Basta prendere $\max(f(P))$ e $\min(f(P))$.
+> $$$$
 
 # 4. Approssimazione delle funzioni in certi valori
 > [!mod] Modello 4.1. (approssimazione delle funzioni)
@@ -41,4 +42,5 @@ stato: "0"
 > 5. Quando ho trovato $\bar{n}$ che soddisfa le mie esigenze, calcolo il polinomio di Taylor
 >    $$T_\bar{n}(f, x_0, x)$$
 >    Che è il risultato voluto dalla consegna.
+>    $$$$
 

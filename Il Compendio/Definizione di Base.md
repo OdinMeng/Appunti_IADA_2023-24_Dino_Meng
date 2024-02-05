@@ -10,8 +10,8 @@ stato: "1"
 # 1. Definizione di base
 #Definizione 
 > [!math|{"type":"definition","number":"1.1.","setAsNoteMathLink":true,"label":"base","title":"Base"}] Definizione 1.1. (Base).
-> Sia $V$ un *K-spazio vettoriale* ([[Spazi Vettoriali]], **DEF 1.**) e sia $U \subseteq V$ un *sottospazio vettoriale di V* ([[Sottospazi Vettoriali]], **DEF 1.**). 
-> Allora una **base di** $U$ è un *insieme* $\{u_1, \ldots, u_n\}$ formato da *vettori* di $U$ tali che:  
+> Sia $V$ un *K-spazio vettoriale* ([[Spazi Vettoriali#^7e2c4e]]) e sia $U \subseteq V$ un *sottospazio vettoriale di V* ([[Sottospazi Vettoriali#^9bcbf2]]). 
+> Allora una *base di* $U$ è un *insieme* $\{u_1, \ldots, u_n\}$ formato da *vettori* di $U$ tali che:  
 > $\{u_1, \ldots, u_n\}$ è un *sistema di generatori per $U$* ([[Combinazione Lineare#^f2ee60]])
 > e anche
 > $u_1, \ldots, u_n$ sono *linearmente indipendenti* ([[Dipendenza e Indipendenza Lineare#^3782e8]])
@@ -26,8 +26,9 @@ stato: "1"
 ^128180
 
 #Dimostrazione 
-**DIMOSTRAZIONE** del *teorema della caratterizzazione delle basi* ([[#^128180]])
+**DIMOSTRAZIONE** del *teorema di caratterizzazione delle basi* ([[#^128180]])
 Questo è un teorema del tipo *se e solo se*: quindi andiamo per due passi.
+- - -
 "$\implies$": Sia $B$ una *base* di $V$, allora devo dimostrare che ogni elemento di $V$ può essere scritta come combinazione lineare di $B$ in un modo unico.
 Dato che $B$ è in particolare un *sistema di generatori* di $V$, allora dato $v \in V$ si può scrivere come combinazione lineare di $B$, cioè
 $$
@@ -50,7 +51,7 @@ $$
 \lambda_1=\mu_1, \ldots,\lambda_n=\mu_n
 $$
 che dimostra *l'unicità* della scrittura del vettore.
-
+- - -
 "$\impliedby$": Ora supponiamo che ogni elemento $v \in V$ può essere scritta in una maniera *unica* come combinazione lineare di $B$. 
 Allora in particolare $B$ è *sistema di generatori* per $V$.
 Ci rimane da dimostrare che gli elementi di $B$ sono *linearmente indipendenti*; per farlo prendiamo il vettore nullo $0 \in v$ e scriviamo la sua *combinazione lineare* di elementi di $B$:
@@ -66,7 +67,7 @@ $$
 \lambda_1 =\lambda_2 = \ldots = \lambda_i = 0, \forall_i \in \{1, \ldots, n\}
 $$
 ovvero $v_1, \ldots v_n$ sono *linearmente indipendenti*.
-
+- - -
 ## Coordinate di vettori rispetto ad una base
 #Definizione 
 > [!math|{"type":"definition","number":"1.2.","setAsNoteMathLink":false,"title":"Coordinate di vettore rispetto alla base","label":"coordinate-di-vettore-rispetto-alla-base"}] Definizione 1.2. (Coordinate di vettore rispetto alla base).
@@ -75,9 +76,7 @@ ovvero $v_1, \ldots v_n$ sono *linearmente indipendenti*.
 > in modo unico con $\lambda_1, \ldots, \lambda_n \in K$. 
 > Gli scalari $\lambda_1, \ldots, \lambda_n$ sono detti le *coordinate di* $v$ *rispetto alla base* $B$.
 > 
-
 ^820fd0
-
 # 2. Esempi di basi
 Ora consideriamo degli *esempi* di *basi di spazi vettoriali*.
 
@@ -98,4 +97,6 @@ Ora consideriamo degli *esempi* di *basi di spazi vettoriali*.
 > $$ \begin{pmatrix} 1 & 1 & \ldots & 1 \\1 & 1 & \ldots & 1 \\ \vdots & & & \vdots \\1 & 1 & \ldots & 1\end{pmatrix}$$
 > e la *"spacchettiamo"* in matrici con un singolo elemento. Quindi è possibile dimostrare che tutti gli elementi di $\mathcal{B}$ sono sia *sistema di generatori* per una qualsiasi matrice che *linearmente indipendenti*.
 
-**OSS 2.1.** Notiamo che il *numero degli elementi* (ovvero la cardinalità) dell'insieme $\mathcal{B}$ è esattamente $m \cdot n$. 
+#Osservazione 
+> [!oss] Osservazione 2.1.
+Notiamo che il *numero degli elementi* (ovvero la cardinalità) dell'insieme $\mathcal{B}$ è esattamente $m \cdot n$. 

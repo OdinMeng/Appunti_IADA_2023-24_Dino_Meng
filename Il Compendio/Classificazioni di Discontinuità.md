@@ -3,7 +3,7 @@ data: 2023-12-09
 corso: "[[Analisi Matematica I]]"
 argomento: Classificazioni di Discontinuità
 tipologia: appunti
-stato: "0"
+stato: "1"
 capitolo:
 ---
 - - -
@@ -29,6 +29,8 @@ capitolo:
 > Il *punto di discontinuità* $x_0$ si classifica *"di primo ordine"* o *"di salto"* se esistono entrambi i limiti *destri e sinistri* ([[Definizione di Limite di funzione#^406c13]]) ma non sono uguali.
 > $$\boxed{\lim_{x \to x_0^-}f(x) \neq \lim_{x \to x_0^+}f(x)}$$
 > In altre parole, abbiamo una specie di *"salto"* tra i due *"punti"*.
+
+^006fee
 
 #Definizione 
 > [!def] Definizione 2.2. (discontinuità di secondo ordine)

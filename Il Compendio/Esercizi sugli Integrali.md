@@ -1,9 +1,9 @@
 ---
 data: 2023-12-12
-corso: 
+corso: "[[Analisi Matematica I]]"
 argomento: Esercizi sugli Integrali
 tipologia: appunti
-stato: "0"
+stato: "1"
 capitolo:
 ---
 - - -
@@ -64,3 +64,11 @@ capitolo:
 > Dire se la funzione integrale $f: (0, +\infty) \longrightarrow \mathbb R$
 > $$f(x) = \int_x^{2x} \frac{\sin t}{t}\ dt$$
 > è *crescente* sull'intervallo $]\frac{1}{2}, 1[$.
+
+*Esercizi interessanti trovati su internet*
+> [!es] Esercizio D2.
+> Sia $f: \mathbb{R} \longrightarrow \mathbb{R}$ una funzione *continua* e tale che
+> $$\lim_{x \to +\infty}f(x) = a \in \mathbb{R}$$
+> Provare che da ciò discende
+> $$\lim_{x \to +\infty}\int_x^{x+1}f(x) dx = a$$
+> Discutere se vale *l'implicazione inversa* o meno.

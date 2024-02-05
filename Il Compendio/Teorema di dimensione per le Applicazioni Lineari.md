@@ -24,7 +24,7 @@ Fissiamo ora una *base* di $\operatorname{ker} f$; sia dunque $\mathcal{B}_{\ker
 Allora $\dim \operatorname{ker} f = k$. Ora per costruzione sappiamo che $v_1, \ldots, v_k$ sono *linearmente* indipendenti, dunque per il *teorema di estensione* ([[Teoremi sulle Basi#^dbffba]]) possiamo *"estendere"* la *base* del nucleo di $f$ ad essere una base di $V$. Ovvero
 $$ \mathcal{B}_V = \mathcal{B}_{\ker f} \cup \{v_{k+1}, \ldots, v_n\} = \{v_1, \ldots, v_k, v_{k+1}, \ldots,v_n\}$$
 Se riusciamo a dimostrare che la base di $\operatorname{im} f$ è la parte con cui abbiamo *"estesa"* la base di $\ker f$, allora abbiamo dimostrato il teorema in quanto si avrebbe
-$$ k + (n-k) = k$$
+$$ k + (n-k) = n$$
 Allora dimostriamo che
 $$\mathcal{B}_{\operatorname{im} f} = \{f(v_{k+1}), \ldots, f(v_n)\}$$
 Ovvero che tali elementi sono *linearmente indipendenti* e *sistemi di generatori per $\operatorname{im} f$*

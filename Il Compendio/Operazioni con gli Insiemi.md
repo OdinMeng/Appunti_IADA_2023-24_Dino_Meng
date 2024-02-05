@@ -8,8 +8,7 @@ tipologia: appunti
 - - -
 # Operazioni con gli insiemi: breve introduzione ed elenco
 E' possibile formare un nuovo [insieme](Teoria%20degli%20Insiemi) partendo da uno o più insiemi, ed è possibile farlo grazie alle operazioni con gli insiemi.
-In particolare ne studieremo tre: l'*insieme complementare*, l'*intersezione* e l'*unione*.
-
+In particolare ne studieremo tre: l'*insieme complementare*, l'*intersezione* e l'*unione*. ^080cd5
 # Insieme Complementare
 Sia $\mathcal{U}$ l'*insieme universo/ambiente* e $A$ un insieme, allora si definisce $$\mathcal{C}_{\mathcal{U}}A := \{x\in \mathcal{U}:x\not\in A\}$$Secondo il *diagramma Eulero-Venn*, essa si rappresenta come:
 ![[Insieme complemento.png]]

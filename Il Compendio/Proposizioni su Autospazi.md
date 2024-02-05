@@ -17,7 +17,7 @@ stato: "1"
 #Dimostrazione 
 **DIMOSTRAZIONE** della *proposizione 1.1.*
 Verifichiamo le *tre proprietà caratterizzanti* di sottospazi vettoriali.
-1. $0 \in \operatorname{Aut}{\lambda}$: per *l'osservazione ?? relativa agli autospazi* ([[Definizione di Autovalore, Autovettore, Autospazio#^4d3c9b]]), il vettore nullo $0$ è elemento di qualsiasi autospazio.
+1. $0 \in \operatorname{Aut}{\lambda}$: per *l'osservazione 3.1. relativa agli autospazi* ([[Definizione di Autovalore, Autovettore, Autospazio#^4d3c9b]]), il vettore nullo $0$ è elemento di qualsiasi autospazio.
 2. Sia $v \in V$, $\mu \in K$; $v \in \operatorname{Aut}{\lambda}$. Allora per ipotesi $f(v) = \lambda \cdot v$. Considero $\mu \cdot v$; 
    $$f(\mu \cdot v) = \mu \cdot f(v) = \mu \cdot \lambda \cdot v = \lambda \cdot (\mu \cdot v) \implies \mu \cdot v \in \operatorname{Aut}{\lambda}$$
 3. Siano $v_1, v_2 \in V$. Siano $v_1, v_2 \in \operatorname{Aut}{\lambda}$. Allora, per ipotesi sono vere che
@@ -33,5 +33,4 @@ Verifichiamo le *tre proprietà caratterizzanti* di sottospazi vettoriali.
 > Siano $\lambda, \mu$ *autovalori distinti* di $f$.
 > Siano $v_1 \in \operatorname{Aut}{\lambda}$ e $v_2 \in \operatorname{Aut}{\mu}$.
 > Supponendo che $v_1 \neq v_2 \neq 0_V$, allora $v_1$ e $v_2$ sono vettori *linearmente indipendenti* ([[Dipendenza e Indipendenza Lineare#^3782e8]]).
-
 ^529f85

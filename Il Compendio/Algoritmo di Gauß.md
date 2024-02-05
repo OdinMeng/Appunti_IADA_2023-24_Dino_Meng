@@ -9,32 +9,43 @@ stato: "1"
 *Definizioni preliminari per la descrizione dell'algoritmo di Gauß (Matrice completa e le operazioni elementari OE). Descrizione dell'algoritmo di Gauß per rendere un sistema lineare in un sistema lineare equivalente a scala come un programma.*
 - - -
 # 1. Matrice completa di un sistema lineare
-**DEF 1.1.** Consideriamo un [sistema lineare](Sistemi%20Lineari) di forma $$A \cdot x = b$$allora definiamo la *matrice* ottenuta aggiungendo alla matrice $A$ la colonna data dai *termini noti* $b$ come la **matrice completa** di questo sistema lineare. La denotiamo con $$(A | b) := \begin{pmatrix} a_{11} & a_{12} &\ldots& a_{1n} & | &  b_1 \\ a_{21} & a_{22} & \ldots & a_{2n} & | & b_2 \\ \vdots & & & \vdots & | &\vdots \\a_{m1} & a_{m2} & \ldots & a_{mn} & | & b_m\end{pmatrix}$$
-**NOTA.** Il segno sbarra $|$ per *"differenziare"* i termini noti dai coefficienti è opzionale ed ha uno scopo puramente grafico. ^8357bd
+#Definizione 
+> [!def] Definizione 1.1. (matrice completa di un sistema lineare)
+Consideriamo un [sistema lineare](Sistemi%20Lineari) di forma $$A \cdot x = b$$allora definiamo la *matrice* ottenuta aggiungendo alla matrice $A$ la colonna data dai *termini noti* $b$ come la *matrice completa* di questo sistema lineare. La denotiamo con $$(A | b) := \begin{pmatrix} a_{11} & a_{12} &\ldots& a_{1n} & | &  b_1 \\ a_{21} & a_{22} & \ldots & a_{2n} & | & b_2 \\ \vdots & & & \vdots & | &\vdots \\a_{m1} & a_{m2} & \ldots & a_{mn} & | & b_m\end{pmatrix}$$
+**N. B.** Il segno sbarra $|$ per *"differenziare"* i termini noti dai coefficienti ha uno scopo puramente grafico. 
+^8357bd
 # 2. Operazioni elementari OE
+Ora definiamo una serie di *operazioni elementari* (OE) che sono in grado di trasformare un *sistema lineare* di forma $(A|B)$ in un altro *equivalente* ([[Sistemi Lineari#^17d541]]).  ^ccc408
 
-Ora definiamo una serie di *operazioni elementari* (OE) che sono in grado di trasformare un *sistema lineare* di forma $(A|B)$ in un altro *equivalente* ([[Sistemi Lineari]], **DEF 1.5.**).  ^ccc408
-
+#Definizione 
+> [!def] Definizione 2.1. (le operazioni elementari)
 **OE1.** *L'operazione scambia equazioni*
 Dati due indici $i, j \in \{1, \ldots, m\}$ scambiamo di posto l'equazione $i$-esima e $j$-esima.
 Questo corrisponde a *scambiare* la riga $i$-esima con la riga $j$-esima della matrice $(A | B)$. ^8a7c5e
-
+>
 **OE2.** *L'operazione scala equazioni*
 Dato l'indice $i \in \{1, \ldots, m\}$ e uno *scalare* $\lambda \in K$, moltiplichiamo l'$i$-esima equazione per $\lambda$. Precisamente questo corrisponde a *moltiplicare* per $\lambda$ l'$i$-esima riga della matrice completa $(A|B)$. ^1f10d6
-
+>
 **OE3.** *L'operazione somma equazioni*
 Dati due indici $i, j \in \{1, \ldots, m\}$ e uno scalare non nullo $\lambda \in K, \lambda \neq 0$, sommiamo alla $i$-esima equazione alla $i$-esima equazione la $j$-esima equazione dopo averla moltiplicata per $\lambda$.
 Ovvero questo corrisponde a sommare alla riga $i$-esima della matrice completa $(A|B)$ $\lambda$ volte la $j$-esima riga. ^175a42
 
-**OSS 2.1.** Osserviamo che queste operazioni determinano dei sistemi lineari *equivalenti* in quanto queste operazioni sono *completamente invertibili*; infatti partendo da un sistema lineare *"trasformato"* mediante le **OE.**, possiamo tornare al sistema originario.
+#Osservazione 
+> [!oss] Osservazione 2.1.
+Osserviamo che queste operazioni determinano dei sistemi lineari *equivalenti* in quanto queste operazioni sono *completamente invertibili*; infatti partendo da un sistema lineare *"trasformato"* mediante le **OE.**, possiamo tornare al sistema originario.
 
-**PROP 2.1.** Se applico ad un sistema lineare qualsiasi una di queste operazione elementari, allora ottengo un sistema equivalente.
-**PROP 2.2.** Dato un *qualsiasi sistema lineare arbitrario*, posso portarlo ad un *sistema a scala* con queste operazioni elementari **OE**. Infatti mostreremo un *algoritmo* ([[Nozioni Fondamentali di Programmazione]]) che è in grado di *"gradinizzare"* (ovvero portare a scala) una matrice completa $(A | B)$ qualsiasi.
+#Proposizione 
+> [!prop] Proposizione 2.1. (le OE trasformano sistemi in sistemi equivalenti)
+Se applico ad un sistema lineare qualsiasi una di queste operazione elementari, allora ottengo un sistema equivalente.
+
+#Proposizione 
+> [!prop] Proposizione 2.2. (con le OE posso portare un sistema a scala)
+Dato un *qualsiasi sistema lineare arbitrario*, posso portarlo ad un *sistema a scala* con queste operazioni elementari **OE**. Infatti mostreremo un *algoritmo* ([[Nozioni Fondamentali di Programmazione]]) che è in grado di *"gradinizzare"* (ovvero portare a scala) una matrice completa $(A | B)$ qualsiasi.
 # 3. L'algoritmo di Gauß
 ## Premesse storiche
-Riprendendo la **PROP 2.2.** della sezione precedente, abbiamo appena enunciato che siamo in grado di portare un sistema lineare non a scala in un sistema lineare *a scala*; dimostreremo questa proposizione descrivendo uno degli algoritmi più noti dell'*Algebra Lineare*, ovvero **l'algoritmo di Gauß**.
+Riprendendo la *proposizione 2.2.* della sezione precedente, abbiamo appena enunciato che siamo in grado di portare un sistema lineare non a scala in un sistema lineare *a scala*; dimostreremo questa proposizione descrivendo uno degli algoritmi più noti dell'*Algebra Lineare*, ovvero *l'algoritmo di Gauß*.
 - - -
-**NOTIZIA STORICA.** (*Trascrizione appunti + approfondimenti personali*)
+**NOTIZIE STORICHE.** (*Trascrizione appunti + approfondimenti personali*)
 Questo algoritmo è stato attribuito al noto matematico [C. F. Gauß](https://de.wikipedia.org/wiki/Carl_Friedrich_Gau%C3%9F) *(1777-1855)* in quanto fu proprio lui a formalizzare questo procedimento in latino; tuttavia ciò non significa che il matematico Gauß inventò questo algoritmo, in quanto ci sono evidenze storiche che prima esistevano già descrizioni su questo procedimento. Infatti, esiste un antico manoscritto cinese (*I Capitoli nove arte matematica*/*九章算術*, circa 179) che descrive un principio simile a quello che andremo a descrivere.
 Per ulteriori approfondimenti consultare le seguenti pagine:
 https://mathshistory.st-andrews.ac.uk/HistTopics/Matrices_and_determinants/
@@ -63,13 +74,18 @@ Il nostro procedimento si articola in una serie di *"istruzioni"* da eseguire pe
 Queste operazioni corrispondono a:
 $$\begin{align}0.\ & \begin{pmatrix}0 &0 & *&*&* \\0&0 &*&*&* \\ 0&0&*&*&*\end{pmatrix}\\ 1.\ &\begin{pmatrix}0 &0 & *&*&* \\0&0 &*&*&* \\ 0&0&*&*&*\end{pmatrix}; \bar{j\ }=3 \\ 2. \ & \begin{pmatrix}0 &0 & *&*&* \\0&0 &*&*&* \\ 0&0&*&*&*\end{pmatrix}; \bar{i \ }= 1,2,3 \text{ (una di queste)} \\ 3. \ & \begin{pmatrix}0 &0 & *&*&* \\0&0 &*&*&* \\ 0&0&*&*&*\end{pmatrix} A_{(1) }\leftrightarrows A_{(1),(2),(3)} \text{ (una di queste)} \\ 4.1. \ & \begin{pmatrix}0 &0 & 1&*&* \\0&0 &*&*&* \\ 0&0&*&*&*\end{pmatrix} \\ 4.2. \ & \begin{pmatrix}0 &0 & 1&*&* \\0&0 &0&*&* \\ 0&0&0&*&*\end{pmatrix}A_{(i)} = A_{(i)}- a_{ij}A_{(1)} \text{ per } i=2,3 \\ 5. \ & \begin{pmatrix}0 &0 & 1&*&* \\0&0 &0&+&+ \\ 0&0&0&+&+\end{pmatrix} \implies\begin{pmatrix} + & + \\+ & +\end{pmatrix} \text{ ripeto} \end{align}$$
 - - -
-**OSS 3.1.** Affinché questo algoritmo sia *valido* e *ben posto*, devo assicurarmi che:
-1. Questo deve *eventualmente* terminare in un certo tempo *finito*; questo accade in quanto *prima o poi* le colonne e le righe delle *sottomatrici* della *5.* eventualmente si *"esauriranno"* e avremmo una matrice a scala.
-2. Questo restituisce l'*output* corretto, come prescritto dalle specificazione. Anche questo si verifica in quanto ogni volta che raggiungo e svolgo il step *4.*, ho *"gradinizzato"* una scala. 
+#Osservazione 
+> [!oss] Osservazione 3.1. (l'algoritmo è valido e ben posto?)
+Affinché questo algoritmo sia *valido* e *ben posto*, devo assicurarmi che:
+>1. Questo deve *eventualmente* terminare in un certo tempo *finito*; questo accade in quanto *prima o poi* le colonne e le righe delle *sottomatrici* della *5.* eventualmente si *"esauriranno"* e avremmo una matrice a scala.
+>2. Questo restituisce l'*output* corretto, come prescritto dalle specificazione. Anche questo si verifica in quanto ogni volta che raggiungo e svolgo il step *4.*, ho *"gradinizzato"* una scala. 
+>$$ $$
 ## Esempio di applicazione.
 Come un *programmatore* fa dei *"unit tests"* su un programma o algoritmo, tentiamo di applicare questo principio appena descritto ad un sistema lineare.
 
-**ESEMPIO 3.1.** Consideriamo il sistema lineare dato da $$(A|B) = \begin{pmatrix} 0 & -1 & 2 & 1 & 3 \\2 & 4 & 8 & 6 & 2 \\3 & 1 & 5 & 3 & 1\end{pmatrix}$$Ora ci applichiamo *l'algoritmo di Gauß*. $$\begin{align}0. & \ \begin{pmatrix} 0 & -1 & 2 & 1 & 3 \\2 & 4 & 8 & 6 & 2 \\3 & 1 & 5 & 3 & 1\end{pmatrix}; j=0, i=2 \\ 1. & \ \begin{pmatrix} 2 & 4 & 8 & 6 & 2 \\0 & -1 & 2 & 1 & 3 \\3 & 1 & 5 & 3 & 1\end{pmatrix};A_{(1) }\leftrightarrows A_{(2)} \\ 2. & \  \begin{pmatrix} 1 & 2 & 4 & 3 & 1 \\0 & -1 & 2 & 1 & 3 \\3 & 1 & 5 & 3 & 1\end{pmatrix}; A_{(1)} = 0.5A_{(1)} \\ 3. & \ \begin{pmatrix} 1 & 2 & 4 & 3 & 1 \\0 & -1 & 2 & 1 & 3 \\0 & -5 & -7 & -6 & -2\end{pmatrix}; A_{(2)} = A_{(2)}+0A_{(1)}; A_{(3)} = A_{(3)}-3A_{(1)}\ \\ 4. & \ \text{ripeto con} \begin{pmatrix}-1 &2 & 1 & 3 \\ -5 & -7 & -6 & -2  \end{pmatrix} \\ 5. &  \ \begin{pmatrix}1 &-2 & -1 & -3 \\ -5 & -7 & -6 & -2  \end{pmatrix}; A_{(1)} = -A_{(1)} \\ 6. & \ \begin{pmatrix}1 &-2 & -1 & -3 \\ 0 & -17 & -11 & -17  \end{pmatrix}; A_{(2)} = A_{(2)}-5A_{(1)} \\ 7. & \ \text{ la matrice in 6. è a scala; FINE}\end{align}$$Dunque otteniamo la seguente matrice: $$(\overline{A\ } |\overline{b}) = \begin{pmatrix}1 & 2&4&3&1\\0&1&-2&-1&-3\\0&0&-17&-11&-17 \end{pmatrix} $$che è *a scala*.
+#Esempio 
+> [!ex] Esempio 3.1.
+Consideriamo il sistema lineare dato da $$(A|B) = \begin{pmatrix} 0 & -1 & 2 & 1 & 3 \\2 & 4 & 8 & 6 & 2 \\3 & 1 & 5 & 3 & 1\end{pmatrix}$$Ora ci applichiamo *l'algoritmo di Gauß*. $$\begin{align}0. & \ \begin{pmatrix} 0 & -1 & 2 & 1 & 3 \\2 & 4 & 8 & 6 & 2 \\3 & 1 & 5 & 3 & 1\end{pmatrix}; j=0, i=2 \\ 1. & \ \begin{pmatrix} 2 & 4 & 8 & 6 & 2 \\0 & -1 & 2 & 1 & 3 \\3 & 1 & 5 & 3 & 1\end{pmatrix};A_{(1) }\leftrightarrows A_{(2)} \\ 2. & \  \begin{pmatrix} 1 & 2 & 4 & 3 & 1 \\0 & -1 & 2 & 1 & 3 \\3 & 1 & 5 & 3 & 1\end{pmatrix}; A_{(1)} = 0.5A_{(1)} \\ 3. & \ \begin{pmatrix} 1 & 2 & 4 & 3 & 1 \\0 & -1 & 2 & 1 & 3 \\0 & -5 & -7 & -6 & -2\end{pmatrix}; A_{(2)} = A_{(2)}+0A_{(1)}; A_{(3)} = A_{(3)}-3A_{(1)}\ \\ 4. & \ \text{ripeto con} \begin{pmatrix}-1 &2 & 1 & 3 \\ -5 & -7 & -6 & -2  \end{pmatrix} \\ 5. &  \ \begin{pmatrix}1 &-2 & -1 & -3 \\ -5 & -7 & -6 & -2  \end{pmatrix}; A_{(1)} = -A_{(1)} \\ 6. & \ \begin{pmatrix}1 &-2 & -1 & -3 \\ 0 & -17 & -11 & -17  \end{pmatrix}; A_{(2)} = A_{(2)}-5A_{(1)} \\ 7. & \ \text{ la matrice in 6. è a scala; FINE}\end{align}$$Dunque otteniamo la seguente matrice: $$(\overline{A\ } |\overline{b}) = \begin{pmatrix}1 & 2&4&3&1\\0&1&-2&-1&-3\\0&0&-17&-11&-17 \end{pmatrix} $$che è *a scala*.
 
 **ESERCIZIO PERSONALE.** Questo esercizio prevede un collegamento con *l'informatica*, in particolare con la *programmazione*.
 A) Scrivere uno *pseudocodice* che *"emula"* questo principio

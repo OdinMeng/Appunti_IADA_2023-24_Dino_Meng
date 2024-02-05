@@ -12,7 +12,6 @@ capitolo: Geometria Affine
 # 0. Prerequisiti e/o voci correlate
 - [[Introduzione alla Geometria Affine]]
 - [[Definizione di Spazio Affine]]
-- ...
 # 1. Definizione particolare di spazio affine su $K^n$
 #Esempio 
 > [!def] Definizione 1.1. (Esempio particolare $\mathbb{A}^n_{K}$)

@@ -11,7 +11,7 @@ stato: "1"
 #Definizione 
 >[!def] Definizione 1.1. (combinazione lineare)
 Sia $V$ un *K-spazio vettoriale* ([[Spazi Vettoriali]], **DEF 1.**), siano $$\text{v}_1, \ldots ,\text{v}_n \in V$$degli elementi di $V$. Alternativamente possiamo pensare questi elementi come il sottoinsieme $S \subseteq V$.
-Allora definiamo **combinazione lineare** un qualsiasi *vettore* ([[Spazi Vettoriali]], **DEF 1.1.**) della forma $$\lambda_1 \text{v}_1 + \ldots +\lambda_n \text{v}_n$$dove $\lambda_i \in K, \forall i \in \{1, \ldots, n\}$. 
+Allora definiamo *combinazione lineare* un qualsiasi *vettore* ([[Spazi Vettoriali]], **DEF 1.1.**) della forma $$\lambda_1 \text{v}_1 + \ldots +\lambda_n \text{v}_n$$dove $\lambda_i \in K, \forall i \in \{1, \ldots, n\}$. 
 
 ^8113de
 
@@ -24,7 +24,7 @@ Ora voglio considerare l'*insieme* delle combinazioni lineari.
 #Definizione 
 > [!def] Definizione 2.1. (span di un insieme di vettori)
 Sia $V$ un K-spazio vettoriale e sia $S = (\text{v}_1, \ldots, \text{v}_n)$. 
-Allora chiamo lo **span** di $S$ o di $\text{v}_1, \ldots, \text{v}_n$ come l'**insieme di tutte le combinazioni lineari di tale sottoinsieme $S$**: $$\operatorname{span}(\text{v}_1, \ldots, \text{v}_n) := \{\lambda_1\text{v}_1 + \ldots + \lambda_n \text{v}_n : \lambda_1, \ldots, \lambda_n \in K\}$$oppure in forma compatta $$\operatorname{span}(S) := \{\sum_{i=1}^n \lambda_i \text{v}_i: i \in \{1, \ldots, n\}, \lambda_i \in K\}$$
+Allora chiamo lo *span* di $S$ o di $\text{v}_1, \ldots, \text{v}_n$ come l'*insieme di tutte le combinazioni lineari di tale sottoinsieme* $S$: $$\operatorname{span}(\text{v}_1, \ldots, \text{v}_n) := \{\lambda_1\text{v}_1 + \ldots + \lambda_n \text{v}_n : \lambda_1, \ldots, \lambda_n \in K\}$$oppure in forma compatta $$\operatorname{span}(S) := \{\sum_{i=1}^n \lambda_i \text{v}_i: i \in \{1, \ldots, n\}, \lambda_i \in K\}$$
 
 #Lemma 
 > [!lem] Lemma 2.1. (lo span è sempre un sottospazio vettoriale)
@@ -53,7 +53,9 @@ Consideriamo $V = \mathbb{R}^2$, $U = \mathbb{R}^2$ (ovvero $V = U$) e i vettori
 Infatti dato un vettore $(a, b) \in U$ abbiamo $(a,b) = a(1,0) + b(0,1) = au_1 + bu_2$.
 Notiamo inoltre che se definiamo $$u_3 = (1,1)$$allora anche $\{u_1, u_2, u_3\}$ è un *sistema di generatori per* $U$.
 
-**OSS 3.1.** Osserviamo che se $\{u_1, \ldots, u_n\}$ è un *sistema di generatori per* $U$ allora $$\forall u \in U, \{u_1, \ldots, u_n, u\}$$anche questo è un *sistema di generatori* per $U$.
+#Osservazione 
+> [!oss] Osservazione 3.1. (la flessibilità dei sistemi di generatori)
+Osserviamo che se $\{u_1, \ldots, u_n\}$ è un *sistema di generatori per* $U$ allora $$\forall u \in U, \{u_1, \ldots, u_n, u\}$$anche questo è un *sistema di generatori* per $U$.
 In parole, dato un *sistema di generatori* per un certo sottoinsieme allora possiamo aggiungerci qualsiasi elemento del sottoinsieme, dandoci comunque un altro *sistema di generatori* per lo stesso sottoinsieme.
 Da questo discende che la definizione di *sistema di generatori* presenta in sé molta flessibilità e variabilità; tuttavia secondo una specie di *"legge meta-matematica"*, troppa flessibilità è un segno di un ente matematico meno forte.
-Infatti introdurremmo un po' di *"rigidità"* con le *basi* ([[Definizione di Base]]).
+Introdurremo dunque della *"rigidità"* con le *basi* ([[Definizione di Base]]), arricchendo questo concetto con ulteriori vincoli.

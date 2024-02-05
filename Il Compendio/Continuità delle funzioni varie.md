@@ -3,7 +3,7 @@ data: 2023-11-16
 corso: "[[Analisi Matematica I]]"
 argomento: Continuità delle funzioni varie
 tipologia: appunti
-stato: "0"
+stato: "1"
 ---
 *Vari teoremi sulla continuità di certi tipi di funzioni: funzioni monotone, iniettive, surgettive, bigettive (dunque invertibili).*
 - - -
@@ -23,8 +23,7 @@ Supponendo *per assurdo* che il limite destro e sinistro sono diversi (dandoci c
 Di conseguenza abbiamo l'unica possibilità
 $$ \lim_{x \to x_0^-}f(x) = f(x_0)= \lim_{x \to x_0^+}f(x) \implies f \text{ continua} \ \blacksquare$$
 **FIGURA 1.1.** (*Idea della situazione*)
-[ DA FARE ]
-
+![[Pasted image 20231220200231.png]]
 ## Funzione strettamente crescente e suriettiva
 #Corollario 
 > [!cor] Corollario 1.2. (continuità della funzione strettamente crescente e suriettiva)
@@ -32,7 +31,7 @@ $$ \lim_{x \to x_0^-}f(x) = f(x_0)= \lim_{x \to x_0^+}f(x) \implies f \text{ con
 > Allora $f, f^{-1}$ sono *continue*.
 
 #Esempio 
-> [!ex] Funzione esponenziale e logaritmica
+> [!exm] Funzione esponenziale e logaritmica
 > Questo teorema è utile per poter dimostrare la continuità di certe funzioni: infatti ad esempio sappiamo che $\exp$ è *continua*, *strettamente crescente* e *suriettiva* per $]0, +\infty[$: di conseguenza $\exp^{-1} = \log$ è anch'essa *continua*.
 # 2. Funzione iniettiva e continua
 #Teorema 
@@ -41,16 +40,16 @@ $$ \lim_{x \to x_0^-}f(x) = f(x_0)= \lim_{x \to x_0^+}f(x) \implies f \text{ con
 > Allora $f$ è *strettamente crescente*.
 
 #Dimostrazione 
+**DIMOSTRAZIONE** del *teorema 2.1.*
 *Nota: questa è solo una idea della dimostrazione*
-Dimostriamo la *contronominale* della tesi; ovvero supponendo, per assurdo, che $f$ sia *non* strettamente crescente dobbiamo dimostrare che $f$ non è *iniettiva*.
+Dimostriamo la *contronominale* della tesi; ovvero supponendo che $f$ sia *non* strettamente crescente dobbiamo dimostrare che $f$ non è *iniettiva*.
 Allora abbiamo la situazione in *figura 2.1.*: ci possono essere tre (o più) punti in cui la funzione inizia a *"cambiare direzione"*, cambiando dalla tendenza di crescere a quella di decrescere (e viceversa).
 Per il *teorema dei valori intermedi* ([[Teoremi sulle funzioni continue#^1c6f7c]]), sappiamo che ci sono almeno *due* soluzioni $\xi_1, \xi_2$ tali che per un valore fissato $f(x_0) \in J$ si ha $f(x) = f(x_0)$.
 Infatti possiamo prendere un *"ramo"* crescente e un ramo *"decrescente"* e applicare il *teorema dei valori intermedi* a ciascuno.
-Se esistono due numeri che, per una funzione, ci danno lo stesso numero, $f$ non è *iniettiva*. $\blacksquare$
+Se esistono allora due numeri che, per una funzione, ci danno lo stesso numero, allora $f$ non è *iniettiva*. $\blacksquare$
 
 **FIGURA 2.1.** (*Idea della situazione*)
-[ DA FARE ]
-
+![[Pasted image 20231220200947.png]]
 # Funzione continua e invertibile
 #Corollario 
 > [!cor] Corollario 3.1. (continuità dell'inversa della funzione continua e invertibile)

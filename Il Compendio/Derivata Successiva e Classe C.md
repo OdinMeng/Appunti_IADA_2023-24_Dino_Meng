@@ -17,9 +17,9 @@ stato: "1"
 > Ma quindi si può chiedere se la *funzione derivata* è anch'essa *derivabile*; in tal caso chiamo la *derivata* della *funzione derivata* la *derivata seconda* e la indico con
 > $$f'' \text{ oppure } f^{(2)}$$
 > Per *induzione* ([[Assiomi di Peano, il principio di induzione#^76b850]]) posso definire la derivata di ordine *$k$-esimo* come il seguente:
-> $$\begin{gather}f^{(0)} = f \\ f^{(k+1)} = f^{(k)}, \forall k \in \mathbb{N} \end{gather}$$
+> $$\begin{gather}f^{(0)} = f \\ f^{(k+1)} = (f^{(k)})', \forall k \in \mathbb{N} \end{gather}$$
 
-# 2. Classe C
+# 2. La classe C di una funzione
 #Definizione 
 > [!def] Definizione 2.1. (classe C di una funzione reale)
 > Sia $f$ *derivabile* e sia la sua *funzione derivata* $f'$ anch'essa *derivabile* ([[Definizione di continuità#^d2f56f]]), allora dico che $f$ è di *classe* $\mathcal{C}^1$;
@@ -30,7 +30,6 @@ stato: "1"
 > $$f \in \mathcal{C}^k $$
 > Inoltre se $f$ è *derivabile* per *qualunque* ordine, allora si dice che $f$ è di classe $\mathcal{C}^\infty$;
 > $$f \in \mathcal{C}^\infty $$
-
 ^dbae48
 
 # 3. Esempi

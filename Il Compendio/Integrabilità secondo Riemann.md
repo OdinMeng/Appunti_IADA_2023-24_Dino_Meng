@@ -3,7 +3,7 @@ data: 2023-12-05
 corso: "[[Analisi Matematica I]]"
 argomento: Integrabilità secondo Riemann
 tipologia: appunti
-stato: "0"
+stato: "1"
 ---
 *Definizione di funzione integrabile secondo Riemann; teorema di caratterizzazione di funzione integrabile: enunciato e dimostrazione.*
 - - -
@@ -17,7 +17,6 @@ stato: "0"
 > Sia $f: [a,b] \longrightarrow \mathbb{R}$ *limitata*.
 > Si dice che $f$ è *"integrabile secondo Riemann"* se vale che
 > $$\boxed{\sup_{\Delta \in \mathcal{D}}s(f, \Delta) = \inf_{\Gamma \in \mathcal{D}}S(f, \Gamma)}$$
-
 ^5455b8
 
 #Definizione 
@@ -62,7 +61,7 @@ $$-s(f, \Gamma) \cancel{< S(f, \tilde{\Delta})}<-\int f + \frac{\varepsilon}{2}$
 Allora sommo $-s(f, \Gamma) < -\int f + \frac{\varepsilon}{2}$ con $S(f, \tilde{\Delta}) < \int f + \frac{\varepsilon}{2}$ per ottenere
 $$\boxed{S(f, \Gamma)-s(f, \Gamma) < \varepsilon}$$
 che è esattamente la *tesi*.
-"$\impliedby$": (*Idea*) Supponiamo per assurdo che vale la *condizione di caratterizzazione* e che non vale la *tesi*; ovvero supponiamo che la *somma superiore* è sempre lontana dalla *somma inferiore*. Ovvero
+"$\impliedby$": (*Idea*) Supponiamo per assurdo che vale la *condizione di caratterizzazione* e che non valga la *tesi*; ovvero supponiamo che la *somma superiore* è sempre lontana dalla *somma inferiore*. Ovvero
 $$\sup s(f, \Delta) < \inf S(f, \Gamma)$$
 Ma allora basta fissare 
 $$\varepsilon = \frac{1}{4}(\inf s - \sup S)$$

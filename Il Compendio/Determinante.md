@@ -97,6 +97,8 @@ $$\det A = a_{11} \cdot (a_{22} \cdot \ldots \cdot a_{nn}) = \prod_{1\leq i\leq 
 > allora vale che
 > $$\det A = a_{11}a_{22}a_{33}+a_{12}a_{23}a_{31}+a_{13}a_{21}a_{32} - (a_{13}a_{22}a_{31}+a_{32}a_{23}a_{11}+a_{33}a_{21}a_{12})$$
 
+^5b8f2c
+
 **TRUCCO.** Ovviamente questa regola è utile solo se la visualizziamo *graficamente*; ciò consiste in prendere la matrice $A$, poi piazzare le prime due colonne $A^{(1)}$ e $A^{(2)}$ a destra della matrice, poi di segnare le tre diagonali principali a partire da quella principali, le *anti diagonali* e infine di sommare le diagonali principali poi di sottrarre il risultato con le anti diagonali.
 ![[Pasted image 20231121161448.png]]
 

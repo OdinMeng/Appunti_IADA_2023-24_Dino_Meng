@@ -7,9 +7,15 @@ stato: "0"
 ---
 *Appunti di lettura sul libro "Del profumo dei croissants caldi e delle sue conseguenze sulla bontà umana" (R. Ogien); una specie di "book review" con spunti e riflessioni personali.*
 - - -
+# INFO
+**Stato lettura**: Sospeso
+**Valutazione**: Consigliata, in particolare per appassionati di filosofia / dilemmi morali.
+![[9788858106341_0_536_0_75.jpg|500]]
+- - -
 # 0. Breve introduzione
 *Keywords: presentazione del libro; intenzione di questo testo; aneddoto.*
 - - -
+
 *"Del profumo dei croissants caldi e delle sue conseguenze sulla bontà umana"* è un saggio scritto dal filosofo francese Ruwen Ogien (1947-2017) sulla filosofia morale: in particolare questo testo effettua uno vero e proprio *studio profondo* sull'etica. Infatti, lo scopo di questo libro è proprio quello di fornire una *"scatola di attrezzi intellettuali"* per comprendere profondamente il *dibattito morale*.
 
 L'intenzione di questo testo è quello di dare un *"riassunto arricchito"* di ogni capitolo, evidenziando in particolare ciò che ritengo i snodi concettuali fondamentali: ci sarà quindi almeno un paragrafo dedicato ad ogni capitolo dove raccolgo *parole chiave*, *idee*, una specie di *"riassuntino"* e delle mie *riflessioni personali*.

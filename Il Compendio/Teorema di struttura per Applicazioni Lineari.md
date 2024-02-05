@@ -13,7 +13,7 @@ Ora vediamo come un'*applicazione lineare* è completamente determinata da dove 
 #Teorema 
 > [!thm] Teorema 1.1. (di struttura per le applicazioni lineari)
 > Siano $V, V'$ due *spazi vettoriali* di $K$, finitamente generati ([[Dimensione#^3a9321]]).
-> **ATTENZIONE!** Ciò non deve necessariamente significare che le loro dimensioni devono coincidere. Infatti possono essere finite
+> **ATTENZIONE!** Ciò non deve necessariamente significare che le loro dimensioni devono coincidere.
 > Allora prendendo $\mathcal{B}$ una base del dominio del tipo
 > $$\mathcal{B} = \{v_1, \ldots, v_n\} $$
 > Ora siano $v_1, \ldots, v_n'$ dei vettori *qualsiasi* in $V'$.

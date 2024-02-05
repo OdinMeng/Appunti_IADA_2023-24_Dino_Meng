@@ -36,7 +36,7 @@ stato: "1"
 #Dimostrazione 
 **DIMOSTRAZIONE** della *proposizione 3.1.* ([[#^70361d]])
 Calcola l'entrata di posto $i,j$ della matrice data dal *prodotto riga per colonna* ([[Operazioni particolari con matrici#^eecbc9]]) di $A \cdot {}^t \operatorname{cof}(A)$.
-$$\begin{align}(A \cdot {}^t \operatorname{cof}(A))_{ij} = A_{(i)}\cdot ({}^t \operatorname{cof}A)^{j} &= \sum_{k=1}^n a_{ik}\cdot ({}^t\operatorname{cof}(A))_{kj} \\ &= \sum_{k=1}^n (-1)^{jk}\cdot a_{ik} \cdot \det A_{jk}\end{align} $$
+$$\begin{align}(A \cdot {}^t \operatorname{cof}(A))_{ij} = A_{(i)}\cdot ({}^t \operatorname{cof}A)^{j} &= \sum_{k=1}^n a_{ik}\cdot ({}^t\operatorname{cof}(A))_{kj} \\ &= \sum_{k=1}^n (-1)^{j+k}\cdot a_{ik} \cdot \det A_{jk}\end{align} $$
 Ora succede il seguente:
 - Se $i=j$, allora ho esattamente la definizione del *determinante* $\det A$ ([[Teoremi sul determinante#^f27a22]]): quindi $(A \cdot {}^t \operatorname{cof}(A))_{ij} = \det A \iff i=j$
 - Se $i \neq j$, allora avrei il determinante di una matrice con *due righe uguali*, dunque $(A \cdot {}^t \operatorname{cof}(A))_{ij} = \det A = 0 \iff i\neq j$

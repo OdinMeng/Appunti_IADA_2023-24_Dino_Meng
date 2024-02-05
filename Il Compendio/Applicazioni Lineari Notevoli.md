@@ -3,7 +3,7 @@ data: 2023-11-24
 corso: "[[Algebra Lineare ed Elementi di Geometria]]"
 argomento: Applicazioni Lineari Notevoli
 tipologia: appunti
-stato: "0"
+stato: "1"
 ---
 *Prime applicazioni lineari che verranno date per noti: trasformazione lineare associata ad una matrice, funzione coordinante.*
 - - -
@@ -58,6 +58,8 @@ $$ L_A(\lambda v) = A\cdot(\lambda v) = \lambda (A \cdot v) = \lambda L_A(v) \ \
 > Infatti questa definizione è ben posta in quanto $\mathcal{B}$ è base di $V$, pertanto ogni vettore $v$ è espressione *unica* dello $\text{span}$ della *base*. Quindi
 > $$F_\mathcal{B}(v) = \begin{pmatrix}\lambda_1 \\ \vdots \\ \lambda_n \end{pmatrix}, v = \lambda_1 v_1 + \ldots + \lambda_n v_n $$
 
+^de557a
+
 #Proposizione 
 > [!prop] Proposizione 2.1. (invertibilità della funzione coordinante)
 > La funzione $F_\mathcal{B}$ è *iniettiva* in quanto abbiamo che ogni vettore è *espressione* unica dello $\text{span}$ della base; si può verificare che è anche suriettiva. Quindi questa applicazione lineare è biiettiva, quindi invertibile ([[Funzioni#^7b369f]]).
@@ -79,4 +81,3 @@ $$\begin{align}&\begin{cases}1. \  f(\boxed{f^{-1}(v'_1+v'_2)})=v'_1+v'_2 \\ 2. 
 I procedimenti sono analoghi.
 $$\begin{align}&\begin{cases} f(f^{-1}(\lambda v'))= \lambda v' \\ \lambda \cdot f(f^{-1}(v')) = f(\lambda \cdot f^{-1}(v')) = \lambda v'\end{cases}\\ & \implies f^{-1}(\lambda v') = \lambda f^{-1}(v') \ \blacksquare\end{align} $$
 
->[!warning] Da chiedere al prof. Gallet (o al tutor Varutti) se il ragionamento è effettivamente giusto

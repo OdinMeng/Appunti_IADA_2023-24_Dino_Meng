@@ -3,7 +3,7 @@ data: 2023-12-12
 corso: "[[Analisi Matematica I]]"
 argomento: Integrazione per Sostituzione
 tipologia: appunti
-stato: "0"
+stato: "1"
 capitolo:
 ---
 - - -

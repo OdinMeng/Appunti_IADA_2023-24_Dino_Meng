@@ -17,7 +17,9 @@ stato: "1"
 > $$\dim_K V \text{ oppure } \dim V \text{ se chiaro}$$
 ^3a9321
 
-**OSS 1.1.** Per il *teorema sulla cardinalità delle basi* ([[Teoremi sulle Basi#^c61910]]), questa definizione è ben posta.
+#Osservazione 
+> [!oss] Osservazione 1.1. (la definizione è ben posta)
+ Per il *teorema sulla cardinalità delle basi* ([[Teoremi sulle Basi#^c61910]]), questa definizione è ben posta.
 # 2. Esempi vari
 #Esempio 
 > [!ex] Esempio 2.1. (esempi misti)
@@ -34,7 +36,9 @@ stato: "1"
 > $$\mathcal{B} = \{0, i\} \implies \dim_\mathbb{R} \mathbb{C} = 2 $$
 > Questo esempio è importante per ricordarci che la nozione di $\dim$ non dipende *solo* dal spazio vettoriale in sé, ma anche la *"base d'appoggio"* della base stessa.
 # 3. Dimensione di un sottospazio
-**OSS 3.1.** Notiamo che il concetto di *dimensione* $\dim$ di un spazio vettoriale $V$ si applica anche ai suoi *sottospazi vettoriali* ([[Sottospazi Vettoriali#^9bcbf2]]) $U \subseteq V$.
+#Osservazione 
+> [!oss] Osservazione 3.1. (osservazione sui sottospazi vettoriali)
+Notiamo che il concetto di *dimensione* $\dim$ di un spazio vettoriale $V$ si applica anche ai suoi *sottospazi vettoriali* ([[Sottospazi Vettoriali#^9bcbf2]]) $U \subseteq V$.
 
 #Proposizione 
 > [!prop] Proposizione 3.1. (dimensione di un sottospazio vettoriale)
@@ -43,14 +47,16 @@ stato: "1"
 ^265196
 
 #Dimostrazione 
-**DIMOSTRAZIONE** ([[#^265196]])
+**DIMOSTRAZIONE** della *proposizione 3.1.* ([[#^265196]])
 *Nota: la dimostrazione è stata lasciata per esercizio, quindi non è detto che sia corretta.*
 La dimostrazione segue dal *teorema di completamento della base* ([[Teoremi sulle Basi#^dbffba]]); supponiamo la base di $W$ $\mathcal{B}_W = \{w_1, \ldots, w_k\}$.
-Allora sapendo che $W \subseteq V$ deduciamo che $\mathcal{B}_W \subseteq V$ (ovvero tutti gli *elementi della base di* $W$ sono *elementi di* $V$); poiché questi sono anche *linearmente indipendenti*, peri l *teorema di completamento della base* abbiamo $\mathcal{B}_V = \mathcal{B}_W \cup \{\ldots\}$, dove l'insieme a destra rappresenta gli elementi necessari per poter *"completare"* la base.
-Pertanto gli elementi dell'insieme che sta a sinistra sarà sempre *maggiore* o uguale agli elementi dell'insieme a destra, in quanto a questo aggiungo o qualcosa o nulla. $\blacksquare$
+Allora sapendo che $W \subseteq V$ deduciamo che $\mathcal{B}_W \subseteq V$ (ovvero tutti gli *elementi della base di* $W$ sono *elementi di* $V$); poiché questi sono anche *linearmente indipendenti*, per il *teorema di completamento della base* abbiamo $\mathcal{B}_V = \mathcal{B}_W \cup \{\ldots\}$, dove l'insieme a destra rappresenta gli elementi necessari per poter *"completare"* la base.
+Pertanto gli elementi dell'insieme che sta a sinistra sarà sempre *maggiore* o uguale agli elementi dell'insieme a destra, in quanto a questo *"aggiungo o qualcosa o nulla"*. $\blacksquare$
 Supponendo che non ho nessun elemento da *aggiungere* per completare la base, avrei $\mathcal{B}_V = \mathcal{B}_W$. 
 Quindi le basi sono le *stesse*, che vuol dire che una base di $W$ è anche di $V$ e viceversa: pertanto $W = V$. $\blacksquare$
 # 4. Idea del concetto
-*Conclusione.* Con il concetto della *dimensione* per i spazi vettoriali siamo riusciti ad associare ogni *K-spazio vettoriale* finitamente generato ad un numero naturale $\mathbb{N}$; infatti è possibile pensare la *dimensione* come una funzione che dato un certo spazio vettoriale ci manda un numero naturale. Infatti
+#Osservazione 
+> [!oss] Conclusione.
+ Con il concetto della *dimensione* per i spazi vettoriali siamo riusciti ad associare ogni *K-spazio vettoriale* finitamente generato ad un numero naturale $\mathbb{N}$; infatti è possibile pensare la *dimensione* come una funzione che dato un certo spazio vettoriale ci manda un numero naturale. Infatti
 $$\dim : V(K) \longrightarrow \mathbb{N}  $$
 Dopodiché compiremo una azione analoga con le *matrici* mediante il concetto di [[Rango]].

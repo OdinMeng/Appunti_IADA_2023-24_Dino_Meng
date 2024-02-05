@@ -9,7 +9,7 @@ stato: "1"
 - - -
 # 1. Le tre proprietà D1, D2, D3
 #Proposizione 
-> [!prop] Proposizione 1.1. (Le proprietà del determinante D)
+> [!prp] Proposizione 1.1. (Le proprietà del determinante D)
 > Il *determinante* ([[Determinante#^be5bde]]) gode delle seguenti proprietà:
 > - D1. (*multilinearità*)
 > Sia $A \in M_n(K)$, supponendo che $A_{(i)} = R_1 + R_2$ (ove $R_1, R_2 \in K^n$)
@@ -54,6 +54,8 @@ La dimostrazione è stata omessa.
 > ii. *Se la matrice ha almeno una riga/colonna nulla*
 > Infatti
 > $$\det A = k \det A, k \in K \iff \det A = 0$$
+
+^2d0019
 
 #Corollario 
 > [!cor] Corollario 3.2. (effetti sul determinante degli OE)

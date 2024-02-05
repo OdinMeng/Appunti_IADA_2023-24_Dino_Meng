@@ -23,7 +23,11 @@ stato: "1"
 **DIMOSTRAZIONE** del *teorema di Rolle* ([[#^2d8bff]])
 Prima di dimostrare il teorema a tutti gli effetti, svolgo la seguente osservazione preliminare.
 - - -
-**OSS 2.1.** (*Osservazione preliminare*) Notiamo che $f$ è *continua* per tutto il suo dominio, quindi per il *teorema di Weierstraß* ([[Teoremi sulle funzioni continue#^918fc1]]) sappiamo che *esistono* almeno un *massimo* e *minimo* di $f$ ([[Funzioni#^e1ab12]]).
+
+#Osservazione 
+> [!oss] Osservazione 2.1. (osservazione preliminare alla dimostrazione del teorema di Rolle)
+Notiamo che $f$ è *continua* per tutto il suo dominio, quindi per il *teorema di Weierstraß* ([[Teoremi sulle funzioni continue#^918fc1]]) sappiamo che *esistono* almeno un *massimo* e *minimo* di $f$ ([[Funzioni#^e1ab12]]).
+
 - - -
 Ora distinguo due casi, dove *"posiziono"* questi punti di $\max$ e $\min$ precedentemente osservati:
 1. Tutti i punti di *massimo* e *minimo* assoluto sono agli estremi, dunque gli stessi: allora in questo caso se il massimo assoluto è lo stesso del minimo assoluto di una funzione allora si tratta di una *funzione costante* del tipo $f(x) = c \in \mathbb{R}$.
@@ -35,7 +39,9 @@ Ora distinguo due casi, dove *"posiziono"* questi punti di $\max$ e $\min$ prece
    $$f'(\xi) = 0 \ \blacksquare$$
 
 # 3. Interpretazione geometrica (dimostrazione grafica)
-**OSS 3.1.** (*Interpretazione-dimostrazione grafica del teorema*) Si nota che è possibile dare una buona interpretazione grafica a questo teorema; anzi è addirittura possibile dare una dimostrazione *grafica* considerando i casi disegnati nella dimostrazione.
+#Osservazione 
+> [!oss] Osservazione 3.1. (interpretazione grafica della dimostrazione del teorema di Rolle)
+ Si nota che è possibile dare una buona interpretazione grafica a questo teorema; anzi è addirittura possibile dare una dimostrazione *grafica* considerando i casi disegnati nella dimostrazione.
 
 **FIGURA 3.1.** (*Disegno*)
 ![[Pasted image 20231123171135.png]]

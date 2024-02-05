@@ -3,7 +3,7 @@ data: 2023-12-12
 corso: "[[Analisi Matematica I]]"
 argomento: Primitive delle Funzioni Elementari
 tipologia: appunti
-stato: "0"
+stato: "1"
 capitolo:
 ---
 - - -

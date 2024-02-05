@@ -3,7 +3,7 @@ data: 2023-11-24
 corso: "[[Algebra Lineare ed Elementi di Geometria]]"
 argomento: Definizione di Applicazione Lineare
 tipologia: appunti
-stato: "0"
+stato: "1"
 ---
 *Definizione base di applicazione lineare. Esempi.*
 - - -
@@ -24,6 +24,7 @@ Dall'altro lato, la matematica si occupa anche di collegare questi oggetti studi
 
 ^9b39f9
 
+#Osservazione 
 **OSS 1.1.** (*Operazioni stesse ma diverse*) Notiamo che nelle proprietà A1. e A2. (additività e omogeneità) abbiamo l'associazione tra due operazioni diverse; a sinistra abbiamo la somma (*scalamento*) definita in $V$, d'altro lato abbiamo una *"altra"* somma (*scalamento*) definita in $V'$. Per essere più precisi sarebbe preferibile scrivere
 $$f(v_1+v_2) = f(v_1) \oplus f(v_2)$$
 e

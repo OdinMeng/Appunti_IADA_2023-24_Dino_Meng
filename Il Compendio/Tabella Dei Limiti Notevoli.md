@@ -3,7 +3,7 @@ data: 2023-12-01
 corso: "[[Analisi Matematica I]]"
 argomento: Tabella Dei Limiti Notevoli
 tipologia: appunti
-stato: "0"
+stato: "1"
 ---
 *Appunti ad-hoc con tutti i limiti notevoli da ricordare.*
 - - -

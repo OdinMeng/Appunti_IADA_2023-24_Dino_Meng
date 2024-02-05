@@ -3,7 +3,7 @@ data: 2023-11-27
 corso: "[[Analisi Matematica I]]"
 argomento: Studio di Funzione
 tipologia: appunti
-stato: "0"
+stato: "1"
 ---
 *Schema "generale" e "riassuntivo" di quello che potrebbe essere lo svolgimento di uno studio di funzione*
 - - -

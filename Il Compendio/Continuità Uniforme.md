@@ -3,13 +3,16 @@ data: 2023-11-16
 corso: "[[Analisi Matematica I]]"
 argomento: Continuità Uniforme
 tipologia: appunti
-stato: "0"
+stato: "1"
 ---
 *Osservazioni preliminari, definizione di continuità uniforme, esempi. Teorema di Heine.*
 - - -
 # 0. Osservazione preliminare
 La seguente osservazione si baserà sul concetto della *continuità* ([[Definizione di continuità]]).
-**OSS 0.a.** Supponiamo di avere una funzione $f: E \longrightarrow \mathbb{R}$, $x_0 \in E$. 
+
+#Osservazione 
+> [!oss] Osservazione 0.a. (osservazione preliminare)
+Supponiamo di avere una funzione continua $f: E \longrightarrow \mathbb{R}$, $x_0 \in E$. 
 Per definizione sappiamo *"tradurre"* il concetto della *continuità* di una funzione per un punto $x_0$ *"alla Cauchy"*, ovvero:
 $$f \text{ continua in } x_0 \iff \begin{gather}\forall \varepsilon >0, \exists\delta >0: \forall x \in E, \\|x-x_0| < \delta \implies |f(x)-f(x_0)|< \varepsilon \end{gather}$$
 Quindi abbiamo sostanzialmente una *"macchina"* limite per cui dato un $\varepsilon$ fissato ottengo un $\delta$ (ulteriori chiarimenti sull'analogia della macchina in [[Definizione di Limite di funzione#^0f845a]]).
@@ -46,12 +49,13 @@ Infatti se trovo un $\delta$ che va bene per *tutti* i punti del dominio, allora
 # 2. Teorema di Heine (dell'uniforme continuità)
 #Teorema 
 > [!thm] Teorema 2.1. (di Heine)
-> Sia $f: [a, b] \longrightarrow \mathbb{R}$ *continua* (e ovviamente $[a,b]$ è *compatta* ([[Insiemi compatti in R#^0eb138]])).
+> Sia $f: [a, b] \longrightarrow \mathbb{R}$ *continua* e sia $[a,b]$ *compatta* ([[Insiemi compatti in R#^0eb138]]).
 > Allora $f$ è *uniformemente continua*.
-
 ^d030d1
 
-**OSS 2.1.** Quindi in generale si può dire che una funzione $f$ è uniformemente continua *se e solo* se continua, se vale la ipotesi iniziale del teorema.
+#Osservazione 
+> [!oss] Osservazione 2.1. 
+> Quindi in generale si può dire che una funzione $f$ è uniformemente continua *se e solo* se continua, se vale la ipotesi iniziale del teorema: ovvero se $[a,b]$ *chiusa e limitata*, ovvero *compatta*.
 
 #Dimostrazione 
 **DIMOSTRAZIONE** (*Teorema 2.1.*)

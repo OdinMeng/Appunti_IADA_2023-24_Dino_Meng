@@ -81,6 +81,7 @@ Il *prodotto righe per colonne* soddisfa alcune proprietà:
 **DIMOSTRAZIONE.** Per mostrare la forma corretta, ovvero  $$^t(A\cdot B) = (^tB) \cdot (^tA)$$mostriamo che tutte le entrate del membro destro sono uguali a tutte le entrati del membro sinistro; siano dunque $i \in \{1, \ldots, n\}$ e $j \in \{1, \ldots, m\}$. Allora: $$\begin{align}&\text{dx. } (^t(A\cdot B))_{ij} = (A\cdot B)_{ji} = A_{(j)} \cdot B^{(i)}\\ &\text{sx. } ((^tB)\cdot(^tA))_{ij} =\  ^tB_{(i)} \cdot \ ^tA^{(j)} =\text{le quantità sono uguali} =   A_{(j)} \cdot B^{(i)}\end{align}$$e questo mostra che le due sono uguali.
 
 **PROP 2.4.3.** Sia $A \in M_{m,n}(\mathbb{R})$, allora $$\mathbb{1}_m \cdot A = A; \  A \cdot \mathbb{1}_n = A$$Per $\mathbb{1}_m$ si intende la *matrice identità* ([[Matrice]], **DEF 2.5.**).
+
 **OSS 2.4.3.a** Nel caso delle matrici quadrate $M_{n}(\mathbb{R})$, la matrice unità $\mathbb{1}_{n}$ funge dunque da *elemento neutro* per il *prodotto righe per colonne*. Ovvero $$\mathbb{1} _{n} \cdot A = A \cdot \mathbb{1}_{n} = A$$e possiamo denominarlo come *elemento neutro* in quanto tutti gli elementi in questa uguaglianza sono appartenenti a $M_{n}(\mathbb{R})$.
 
 **PROP 2.4.4.** Sia $\lambda \in K$, $A, B \in M_{m,n}(K)$ allora vale che

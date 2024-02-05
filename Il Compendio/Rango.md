@@ -8,7 +8,9 @@ stato: "1"
 *Definizione di rango, osservazioni, esempi.*
 - - -
 # 1. Definizione di rango
-**OSS 1.1.** Sia $A \in M_{m,n}(K)$, allora le *colonne* di $A$ sono *tutti* elementi di $K^m$. Dunque $$A^{(1)}, \ldots, A^{(n)} \in K^m $$
+#Osservazione 
+> [!oss] Osservazione 1.1. (le colonne di una matrice vivono in $K^m$)
+Sia $A \in M_{m,n}(K)$, allora le *colonne* di $A$ sono *tutti* elementi di $K^m$. Dunque $$A^{(1)}, \ldots, A^{(n)} \in K^n $$
 
 #Definizione 
 > [!def] Definizione 1.1. (rango)
@@ -17,13 +19,19 @@ $$\operatorname{rg}(A):= \dim(\operatorname{span}(A^{(1)}, \ldots, A^{(n)})) $$
 ^d641ff
 
 # 2. Osservazioni sul rango
-**OSS 2.1.** Se $A_{m,n}(K)$ allora 
-- $\operatorname{rg}(A) \leq m$; infatti $$A^{(1)}, \ldots, A^{(n)} \in K^m  \implies \operatorname{span}(A^{(1)}, \ldots, A^{(n)}) \subseteq K^m$$
-  dunque per la *proposizione 3.1.* sulla dimensione ([[Dimensione#^265196]]) $$\dim(A^{(1)}, \ldots, A^{(n)}) \leq \dim(K^m)$$
-- $\operatorname{rg}(A) \leq n$; infatti abbiamo $n$ colonne, dunque $\operatorname{span}(A^{(1)}, \ldots, A^{(n)})$ ha $n$ generatori; pertanto una *base* di $\operatorname{span}(A^{(1)}, \ldots, A^{(n)})$ ha al più $n$ generatori (che viene verificato quando *tutti* i vettori colonna solo linearmente indipendenti); pertanto
-  $$ \operatorname{span}(A^{(1)}, \ldots, A^{(n)}) \leq n$$
+#Osservazione 
+>[!oss] Osservazione 2.1. (il rango è limitato da due numeri)
+Se $A \in M_{m,n}(K)$ allora 
+>- $\operatorname{rg}(A) \leq m$; infatti $$A^{(1)}, \ldots, A^{(n)} \in K^m  \implies \operatorname{span}(A^{(1)}, \ldots, A^{(n)}) \subseteq K^m$$
+  dunque per la *proposizione 3.1.* sulla dimensione ([[Dimensione#^265196]]) $$\dim(A^{(1)}, \ldots, A^{(n)}) \leq \dim(K^m)=m$$
+>- $\operatorname{rg}(A) \leq n$; infatti abbiamo $n$ colonne, dunque $\operatorname{span}(A^{(1)}, \ldots, A^{(n)})$ ha $n$ generatori; pertanto una *base* di $\operatorname{span}(A^{(1)}, \ldots, A^{(n)})$ ha al più $n$ generatori (che viene verificato quando *tutti* i vettori colonna solo linearmente indipendenti); pertanto
+  $$ \operatorname{span}(A^{(1)}, \ldots, A^{(n)}) \leq K^n = n$$
+  Per concludere, traiamo che
+  $$A \in M_{m,n}(K) \implies \operatorname{rg}A \leq \min \{m, n\}$$
 
-**OSS 2.3.** Noteremo che questa definizione *non* cambierà se invece di considerare le *colonne* consideriamo le *righe*.
+#Osservazione 
+> [!oss] Osservazione 2.2.
+Noteremo che questa definizione *non* cambierebbe, se invece di considerare le *colonne* considerassimo le *righe*.
 
 # 3. Esempio
 #Esempio 

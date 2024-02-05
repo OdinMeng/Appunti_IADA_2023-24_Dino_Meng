@@ -26,6 +26,9 @@ stato: "1"
 > Pertanto possiamo considerare la matrice
 > $$M^{\mathcal{B}}_\mathcal{C}(\operatorname{id}_V)$$
 > come la *matrice del cambiamento di base*.
+
+^546dd2
+
 # 2. Detour: l'utilità di questa idea
 **DETOUR.** Ora è naturale chiedersi a cosa serva quest'osservazione: naturalmente, come ci suggerisce la denominazione, una *matrice del cambiamento di base* serve per *cambiare* la *base* di un spazio vettoriale e trovare le *coordinate* dell'immagine della *"base cambiata"* in funzione della *"base cambiata"* stessa.
 Infatti, codifichiamo certi problemi con *applicazioni lineari*: dunque scegliendo una base qualsiasi per lo *spazio vettoriale* abbiamo *coordinate diverse*. Vogliamo svolgere certi calcoli con queste coordinate, però avvolte questi calcoli possono diventare complicati: dunque, avendo coordinate diverse (ovvero cambiando basi) possiamo *"semplificare"* il problema. 

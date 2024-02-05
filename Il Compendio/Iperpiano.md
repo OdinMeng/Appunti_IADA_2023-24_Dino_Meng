@@ -22,6 +22,8 @@ capitolo: Geometria Affine
 > $$\boxed{\dim \mathbb{A} = n \implies \dim \mathbb{S} = n-1}$$
 > allora $\mathbb{S}$ si dice *iperpiano*.
 
+^477d80
+
 #Osservazione 
 > [!oss] Osservazione 1.1. (iperpiani di spazi affini su K)
 > Possiamo *"ridefinire"* i punti, le rette e i piani ([[Dimensione di uno Spazio Affine#^d772db]]) in termini di *iperpiani*:

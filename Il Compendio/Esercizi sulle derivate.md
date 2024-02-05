@@ -3,7 +3,7 @@ data: 2023-11-29
 corso: "[[Analisi Matematica I]]"
 argomento: Esercizi sulle derivate
 tipologia: appunti
-stato: "0"
+stato: "1"
 ---
 *Tutti gli esercizi sulle derivate proposte da D. D. S. in lezione.*
 - - -

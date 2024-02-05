@@ -10,17 +10,18 @@ stato: "1"
 # 1. Enunciato
 #Teorema 
 > [!thm] Teorema 1.1. (di Rouché-Capelli)
-> Sia $A \in M_{m,n}(K)$ una *matrice*, sia $b \in K^m$ un vettore colonna.
+> Sia $A \in M_{m,n}(K)$ una *matrice*, sia $b \in K^m$ un *"vettore-colonna"*.
 > Allora il *sistema lineare* composto da
 > $$A \cdot x = b $$
 > è *compatibile* se e solo se vale che il rango di $A$ è uguale a quella della matrice completa  $(A|b)$ ([[Algoritmo di Gauß#^8357bd]]);
 > $$\operatorname{rg}(A) = \operatorname{rg}(A|b)$$
 > In tal caso la *generica soluzione* della soluzione dipende da $n - \operatorname{rg}(A)$ parametri liberi.
+^95c688
+
 # 2. Dimostrazione
 #Dimostrazione 
 **DIMOSTRAZIONE** (*Teorema 1.1.*)
 La dimostrazione si articolerà in due parti principali: nella prima dimostriamo l'equivalenza *"se e solo se"*, nella seconda dimostriamo che la *generica soluzione* dipende da $n - \operatorname{rg}(A)$.
-**Parte 1: se e solo se**
 Dunque dimostriamo l'equivalenza
 $$\boxed{Ax = b \text{ compatibile} \iff \operatorname{rg}(A) = \operatorname{rg}(A|b)}  $$
 "$\implies$": Suppongo che $Ax = b$ sia *compatibile*; allora esiste una soluzione $s \in K^n$ tale che $As = b$. Notiamo che possiamo *"esplicitare la scrittura"* applicando la definizione della *moltiplicazione righe per colonne* ([[Operazioni particolari con matrici#^eecbc9]]); allora questo equivale a dire
@@ -31,6 +32,8 @@ $$\operatorname{span}(A^{(1)}, \ldots, A^{(n)}) = \operatorname{span}(A^{(1)}, \
 (la dimostrazione è lasciata da svolgere per esercizio)
 Allora 
 $$ \dim(\operatorname{span}(A^{(1)}, \ldots, A^{(n)})) = \dim(\operatorname{span}(A^{(1)}, \ldots, A^{(n)}, b))$$
+che per definizione è proprio
+$$\boxed{\operatorname{rg}(A) = \operatorname{rg}(A|b)}$$
 Ora dimostriamo il viceversa.
 "$\impliedby$": Supponiamo che valga $\operatorname{rg}(A)=\operatorname{rg}(A|b)$.
 Allora per definizione del rango ([[Rango#^d641ff]]) ricaviamo che
@@ -42,7 +45,14 @@ $$ b \in \operatorname{span}(A^{(1)}, \ldots, A^{(n)}, b) \implies  b \in \opera
 Ma precedentemente abbiamo osservato che quest'ultima equivale a dire che il sistema
 $$ Ax = b$$
 è *compatibile*.
-**Parte 2: struttura della soluzione**
+- - -
+
+> [!warning] Passaggio non banale
+> Il passaggio meno scontato di questa dimostrazione è quella di esplicitare la scrittura, applicando la nozione di prodotto righe per colonne. 
+> Inoltre un altro passaggio non banale è quello di applicare la proposizione per cui se due vettori sono linearmente dipendenti, allora il span di entrambi è uguale a span di una dei vettori.
+> $$a \in \operatorname{span} b \implies \operatorname{span} b = \operatorname{span} (a, b)$$
+
+- - -
 Ora mostriamo la *seconda parte* del teorema: ovvero che se $Ax = b$ è compatibile, allora la sua generica soluzione dipende da $n - \operatorname{rg}(A)$ *parametri liberi*.
 Per farlo useremo il *teorema di struttura delle soluzioni di sistemi lineari* ([[Teoremi sui Sistemi Lineari#^49a263]]) e il *teorema di dimensione per le soluzioni di un sistema lineare omogeneo* ([[Teorema di dimensione delle soluzioni di sistemi lineari#^b69f0c]]).
 Il primo ci dice che la generica soluzione $s$ è della forma

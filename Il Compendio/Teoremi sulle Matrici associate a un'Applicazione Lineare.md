@@ -23,6 +23,10 @@ stato: "1"
 **DIMOSTRAZIONE** del *teorema 1.1.*
 La dimostrazione è omessa in quanto è *"semplice"* visto che basta scrivere le definizioni e compiere dei calcoli. Quindi la dimostrazione è lasciata da svolgere al lettore.
 Consiglio: definire $f(v_i)$ in un certo modo e usare un *"trick"* in cui si sfrutta il fatto che $f$ soddisfa le proprietà delle applicazioni lineari.
+
+#Osservazione 
+> [!oss] Osservazione 1.1. (interpretazione grafica)
+> Come *"interpretazione grafica"* di questo teorema possiamo avvalerci dell'*esempio 2.2.* sui *diagrammi commutativi* ([[Diagramma Commutativo#^d97de6]]).
 # 2. Secondo risultato relativo alla composizione
 #Teorema 
 > [!thm] Teorema 2.1. (matrice associata della composizione delle applicazioni lineari)

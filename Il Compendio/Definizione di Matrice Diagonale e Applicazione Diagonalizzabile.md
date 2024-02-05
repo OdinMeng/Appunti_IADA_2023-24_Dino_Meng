@@ -3,7 +3,7 @@ data: 2023-12-02
 corso: "[[Algebra Lineare ed Elementi di Geometria]]"
 argomento: Definizione di Matrice Diagonale e Applicazione Diagonalizzabile
 tipologia: appunti
-stato: "0"
+stato: "1"
 ---
 *Definizione di una matrice quadrata diagonale e di un'applicazione lineare diagonalizzabile.*
 - - -

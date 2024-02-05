@@ -3,7 +3,7 @@ data: 2023-12-05
 corso: "[[Analisi Matematica I]]"
 argomento: Esempi di Funzioni Integrabili
 tipologia: appunti
-stato: "0"
+stato: "1"
 ---
 *Esempi di funzioni integrabili e non integrabili, corredato da calcoli.*
 - - -

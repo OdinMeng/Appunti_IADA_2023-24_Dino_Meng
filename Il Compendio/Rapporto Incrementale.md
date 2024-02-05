@@ -21,7 +21,10 @@ stato: "1"
 > Allora si può pensare al *rapporto incrementale* $R_{x_0}^{f}(x)$ come una funzione che lega ad un qualsiasi punto $x$ in $I$, escluso $x_0$ in quanto si avrebbe la forma indeterminata $\frac{0}{0}$, un altro punto della retta reale.
 > $$R_{x_0}^{f}: I \diagdown{x_0} \longrightarrow \mathbb{R} $$
 
-**OSS 1.1.** Osserviamo che questa definizione ha anche un *significato geometrico*: infatti $R_{x_0}^{f}$ è anche la *pendenza* (coefficiente angolare) della *retta secante* dei punti $(x_0, f(x_0)$ e $(x, f(x))$. ^c7cbf0
+#Osservazione 
+> [!oss] Osservazione 1.1. (interpretazione geometrica della derivata)
+Osserviamo che questa definizione ha anche un *significato geometrico*: infatti $R_{x_0}^{f}$ è anche la *pendenza* (coefficiente angolare) della *retta secante* dei punti $(x_0, f(x_0)$ e $(x, f(x))$. 
+^c7cbf0
 
 **FIGURA 1.1.** (*Significato geometrico*)
 ![[Pasted image 20231122155846.png]]

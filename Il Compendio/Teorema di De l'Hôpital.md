@@ -1,6 +1,6 @@
 ---
 data: 2023-11-27
-corso: 
+corso: "[[Analisi Matematica I]]"
 argomento: Teorema di De l'Hôpital
 tipologia: appunti
 stato: "1"
@@ -43,7 +43,9 @@ Nel 1704, a seguito del decesso di de l'Hôpital, Bernoulli raccontò dell'accor
 > $$\boxed{\exists L \in \mathbb{\tilde{R}}: \lim_{x \to b^-}\frac{f'(x)}{g'(x)} = L \implies \lim_{x \to b^-}\frac{f(x)}{g(x)} = L}$$
 ^67a7cd
 # 2. Dimostrazione del teorema
-**OSS 2.1.** (*Osservazione preliminare*) Supponendo $g(b) = 0$ e $g'(x) \neq 0$ per $]a, b[$, potrà esserci mai un $x_0 \in ]a, b$ tale che $g(x_0)$ si annulla? No, in quanto sennò avremmo $g(x_0) = g(b) = 0$ e per il *teorema di Rolle* ([[Teorema di Rolle#^2d8bff]]) avremmo un $\xi$ in $]a, b[$ tale che la derivata $g'$ si annullerebbe; il che è *assurdo*, in quanto contraddice con le supposizioni iniziali. ^ce8190
+> [!oss] Osservazione 2.1. (osservazione preliminare; $g$ non si annulla mai)
+**OSS 2.1.** (*Osservazione preliminare*) Supponendo $g(b) = 0$ e $g'(x) \neq 0$ per $]a, b[$, potrà esserci mai un $x_0 \in ]a, b$ tale che $g(x_0)$ si annulla? No, in quanto sennò avremmo $g(x_0) = g(b) = 0$ e per il *teorema di Rolle* ([[Teorema di Rolle#^2d8bff]]) avremmo un $\xi$ in $]a, b[$ tale che la derivata $g'$ si annullerebbe; il che è *assurdo*, in quanto contraddice con le supposizioni iniziali. 
+^ce8190
 
 #Dimostrazione 
 **DIMOSTRAZIONE** del *teorema di De l'Hôpital* ([[#^67a7cd]])
@@ -58,17 +60,24 @@ Ora considero un punto nell'intervallo $x \in ]b-\delta, b[$ e applico il *teore
 Ovvero
 $$\exists \xi \in ]x, b[: \frac{f'(\xi)}{g'(\xi)}=\frac{f(b)-f(x)}{g(b)-f(x)} = \frac{f(x)}{g(x)} $$
 e sappiamo che $x < \xi < b$.
-Pertanto considerando che $x$ non è altro che un punto tra $b-\delta$ e $b$, si potrebbe *"maggiorare"* $\xi$ come $b-d < \xi < b$. 
+Pertanto considerando che $x$ non è altro che un punto tra $b-\delta$ e $b$, si potrebbe *"maggiorare"* $\xi$ come $b-\delta < \xi < b$. 
 Allora questa uguaglianza vale per l'intorno considerato per $x$: mettendo tutto assieme e riconsiderando la definizione *"alla Cauchy"* del limite precedentemente scritto, abbiamo
 $$\begin{gather}\forall \varepsilon >0, \exists \delta >0: \forall x \in ]a, b[\\ b-\delta < x < b \implies \left|\frac{f(x)}{g(x)}-L\right|<\varepsilon\end{gather}  $$
 che è proprio la *definizione* del limite
 $$\lim_{x \to b^-}\frac{f(x)}{g(x)}=L \ \blacksquare $$
 
-**OSS 2.2.** (*Il teorema vale anche per il limite verso l'infinito*) Se al posto di $b$ un numero *finito* pongo $b = +\infty$; allora il teorema varrebbe lo stesso. Basta ragionare con la definizione $\varepsilon$-$N$ al posto di $\varepsilon$-$\delta$.
+#Osservazione 
+> [!oss] Osservazione 2.2. (De l'Hôpital vale anche per limiti all'infinito)
+ Se al posto di $b$ un numero *finito* pongo $b = +\infty$; allora il teorema varrebbe lo stesso. Basta ragionare con la definizione $\varepsilon$-$N$ al posto di $\varepsilon$-$\delta$.
 
-**OSS 2.3.** (*Il teorema vale anche per il caso $\frac{\infty}{\infty}$*) Questo teorema vale anche se si verificano entrambi i limiti:
+#Osservazione 
+> [!oss] Osservazione 2.3. (De l'Hôpital vale anche per la forma indeterminata $\infty/\infty$)
+ Questo teorema vale anche se si verificano entrambi i limiti:
 $$\lim_{x \to b^-}f(x) = +\infty = \lim_{x \to b^-}g(x) $$
-**OSS 2.4.** (*Il teorema vale anche per $L = +\infty$*) Questo teorema vale anche se il limite $L$ vale $+\infty$.
+
+#Osservazione 
+> [!oss] Osservazione 2.4. (De l'Hôpital vale anche quando il limite diverge a $+\infty$)
+Questo teorema vale anche se il limite $L$ vale $+\infty$.
 # 3. Utilità pratica
 > [!prop] Proposizione 3.1. (utilità pratica del teorema di De l'Hôpital)
 > Se in un limite ho un *caso indeterminato* del tipo
@@ -80,5 +89,8 @@ $$\lim_{x \to b^-}f(x) = +\infty = \lim_{x \to b^-}g(x) $$
 > il quale risultato sarà lo stesso del limite
 > $$\lim_{x \to x_0}\frac{f(x)}{g(x)} $$
 > A parole, se ho un *caso indeterminato* e ho la funzione sul denominatore che non si annulla mai, allora posso derivare entrambe le frazioni per avere un limite *"equivalente"*.
+> 
 > **ATTENZIONE!** Questo non è un teorema del tipo *"se e solo se"*; l'implicazione qui è univoca, pertanto non deve *necessariamente* valere il viceversa.
+> Infatti quando si usa il *teorema di De l'Hôpital*, lo si rende noto usando il simbolo
+> $$\lim_{\ldots}\ldots \stackrel{H}\impliedby \lim_{\ldots}\ldots$$
 

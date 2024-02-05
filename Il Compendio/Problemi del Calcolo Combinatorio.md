@@ -3,7 +3,7 @@ data: 2023-10-03
 corso: "[[Analisi Matematica I]]"
 argomento: Problemi del Calcolo Combinatorio
 tipologia: appunti
-stato: "0"
+stato: "1"
 ---
 *Significato del calcolo combinatorio; quali problemi esso mira di risolvere. Alcuni problemi: disposizioni con ripetizioni, disposizione di oggetti a m a m, permutazioni di n oggetti e combinazioni. Alcuni problemi misti del calcolo combinatorio*
 - - -

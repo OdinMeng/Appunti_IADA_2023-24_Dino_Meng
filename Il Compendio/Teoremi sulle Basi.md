@@ -63,13 +63,15 @@ Dato che $V$ è *finitamente generato*, esiste un insieme di vettori di $V$ $\{w
 Allora se considero $\{v_1, \ldots, v_p, w_1, \ldots, w_r\}$, vedo che anche questo è un *sistema di generatori per* $V$. Infatti aggiungendo qualsiasi vettore $v \in V$ ad un sistema di generatori, questo rimane comunque un sistema di generatori.
 A quest'ultimo applico *l'algoritmo dello scarto*, ottenendo una base $\mathcal{B}$ di $V$, in quanto per come è fatto l'algoritmo *"scarto"* i vettori *linearmente dipendenti*.
 ## Connessione tra base e indipendenza lineare
-**OSS 2.1.** Da questi due teoremi osserviamo una relazione tra il concetto di *base* ([[Definizione di Base]]), *indipendenza lineare* ([[Dipendenza e Indipendenza Lineare]]) e *sistema di generatori* ([[Combinazione Lineare]]). 
+#Osservazione 
+> [!oss] Osservazione 2.1. (enti minimali e massimali)
+Da questi due teoremi osserviamo una relazione tra il concetto di *base* ([[Definizione di Base]]), *indipendenza lineare* ([[Dipendenza e Indipendenza Lineare]]) e *sistema di generatori* ([[Combinazione Lineare]]). 
 Da un lato abbiamo una *base* come un *sistema di generatori* *"minimale"*, ovvero che contiene un numero *minimo* di vettori; oppure possiamo equivalentemente caratterizzare una *base* come un *insieme di vettori linearmente dipendenti* *"massimale"*, ovvero che può essere *estesa*.
 # 3. Teorema sulla cardinalità delle basi
 Ora enunciamo un teorema importante che ci permetterà di definire la *dimensione* ([[Dimensione#^3a9321]]) di un spazio vettoriale.
 ## Lemma di Steinitz
 #Lemma 
-> [!lem] Lemma 3.1. (Lemma di Steinitz).
+> [!lem] Lemma 3.1. (di Steinitz).
 > Sia $V$ un *K-spazio vettoriale*, *finitamente generato*, sia $\mathcal{B} = \{v_1, \ldots, v_n\}$ una *base* di $V$.
 > Allora $\forall k>n$ e per ogni scelta di vettori $\{w_1, \ldots, w_k\} \subseteq V$ vale che $\{w_1, \ldots, w_k\}$ sono *linearmente dipendenti*.
 ^f23180
@@ -92,9 +94,11 @@ Ora consideriamo il *sistema lineare omogeneo* del tipo
 $$
 \begin{pmatrix}c_{11} & \ldots & c_{1k}\\ \vdots & & \vdots \\ c_{n1} & \ldots & c_{nk} \end{pmatrix}\begin{pmatrix} a_1 \\ \vdots \\ a_k\end{pmatrix} = \begin{pmatrix}0 \\ \vdots \\ 0 \end{pmatrix}
 $$
-di cui possiamo dimostrare che è *compatibile* con una *una soluzione* non (tutta) nulla.
+di cui possiamo dimostrare che è *compatibile* con una *una soluzione* non (tutta) nulla. $\blacksquare$
 
-**OSS 3.1.** Osserviamo che la matrice dei *coefficienti*
+#Osservazione 
+> [!oss] Osservazione 3.1. (giustificazione dell'ultimo passaggio)
+Osserviamo che la matrice dei *coefficienti*
 $$ \begin{pmatrix}c_{11} & \ldots & c_{1k}\\ \vdots & & \vdots \\ c_{n1} & \ldots & c_{nk} \end{pmatrix} $$
 per ipotesi ha $k > n$, ovvero è più *"lunga"* orizzontalmente. Quindi per *"accuratezza"* la scriviamo come
 $$ \begin{pmatrix}c_{11} &\ldots &  \ldots & c_{1k}\\ \vdots & && \vdots \\ c_{n1} & \ldots&\ldots & c_{nk} \end{pmatrix} $$

@@ -31,8 +31,8 @@ Dimostriamo il caso in cui $f$ è *monotona crescente*; la dimostrazione è anal
 Osserviamo che $f$ è anche *limitata* in $[f(a), f(b)]$ in quanto *monotona crescente*.
 Allora considero la seguente *suddivisione* ([[Suddivisione di un Intervallo#^318045]]).
 $$\Delta= \{a, a+\frac{b-a}{n}, a+2(\frac{b-a}{n}), \ldots, a+(n-1)\frac{b-a}{n}, b\}$$
-Adesso calcolo la *differenza* tra la *somma superiore* e la *somma inferiore* relativa a questa suddivisione:
-$$\begin{align}S(f, \Delta)-s(f, \Delta) &= \sum_{i=1}^{n}\frac{b-a}{n}(f(a+i(b-a))-f(a+(i-1)(b-a))) \\ &= \frac{b-a}{n}\sum_{i=1}^{n}f(x_i)-f(x_{i-1}) \\ &= \frac{b-a}{n}(f(x_1)-f(x_0))+(f(x_2)-f(x_1))+\ldots+(f(x_n)-f(x_{n-1})) \\ &= \frac{b-a}{n}(f(x_n)-f(x_0)) \\ &= (b-a)(f(b)-f(a)) \cdot \frac{1}{n}\end{align}$$
+Adesso calcolo la *differenza* tra la *somma superiore* e la *somma inferiore* relativa a questa suddivisione, poi per minorarla con una certa quantità;
+$$\begin{align}S(f, \Delta)-s(f, \Delta) &= \sum_{i=1}^{n}(x_i-x_{i-1})(f(a+i(b-a))-f(a+(i-1)(b-a))) \\ &\leq \frac{b-a}{n}\sum_{i=1}^{n}f(x_i)-f(x_{i-1}) \\ &= \frac{b-a}{n}(f(x_1)-f(x_0))+(f(x_2)-f(x_1))+\ldots+(f(x_n)-f(x_{n-1})) \\ &= \frac{b-a}{n}(f(x_n)-f(x_0)) \\ &= (b-a)(f(b)-f(a)) \cdot \frac{1}{n}\end{align}$$
 Ma per *Archimede* ([[Conseguenze dell'esistenza dell'estremo superiore#^d95d40]]) questa quantità diventa piccola a piacere; pertanto per il *teorema di caratterizzazione delle funzioni integrabili* ([[Integrabilità secondo Riemann#^92bcfb]]), la funzione $f$ è *integrabile secondo Riemann*. $\blacksquare$
 
 # 2. Integrabilità delle funzioni continue
@@ -67,7 +67,7 @@ Graficamente quest'idea viene raffigurata nella *figura 2.2.*.
 Pertanto, per l'ipotesi della continuità uniforme vale che
 $$|x_{\text{max},i}-x_{\text{min},i}| < \delta \implies|f(x_{\text{min}, i})-f(x_{\text{max},i})| < \frac{\varepsilon}{b-a}$$
 In definitiva, tutto assieme possiamo concludere la dimostrazione.
-$$\begin{align}S(f, \Delta)-s(f, \Delta) &= \sum_{i=1}^{n}(x_i,x_{i-1})(\sup_{[x_i, x_{i-1}]}f(x)-\inf_{[x_i, x_{i-1}]}f(x)) \\ &< \sum_{i=1}^{n}(x_i-x_{i-1})\frac{\varepsilon}{b-a} \\ &< \cancel{(b-a)}\frac{\varepsilon}{\cancel{b-a}} = \varepsilon \\ &\boxed{S(f, \Delta)- s(f, \Delta) < \varepsilon}\end{align}$$
+$$\begin{align}S(f, \Delta)-s(f, \Delta) &= \sum_{i=1}^{n}(x_i,x_{i-1})(\sup_{[x_i, x_{i-1}]}f(x)-\inf_{[x_i, x_{i-1}]}f(x)) \\ &< \sum_{i=1}^{n}(x_i-x_{i-1})\frac{\varepsilon}{b-a} \\ &\leq \cancel{(b-a)}\frac{\varepsilon}{\cancel{b-a}} = \varepsilon \\ &\boxed{S(f, \Delta)- s(f, \Delta) < \varepsilon}\end{align}$$
 Che corrisponde alla *condizione necessaria e sufficiente dell'integrabilità* ([[Integrabilità secondo Riemann#^92bcfb]]), pertanto $f$ è *integrabile secondo Riemann*. $\blacksquare$
 
 **FIGURA 2.1.** (*La suddivisione 'delta'*)

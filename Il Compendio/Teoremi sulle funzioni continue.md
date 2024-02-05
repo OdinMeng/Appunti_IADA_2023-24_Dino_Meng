@@ -3,7 +3,7 @@ data: 2023-11-11
 corso: "[[Analisi Matematica I]]"
 argomento: Teoremi sulle funzioni continue
 tipologia: appunti
-stato: "0"
+stato: "1"
 ---
 *Teoremi sulle funzioni continue: prime proprietà delle funzioni continue; permanenza del segno adattato, operazioni con le funzioni continue, composta di funzioni continue. Teoremi fondamentali delle funzioni continue: teorema degli zeri, dei valori intermedi, di compattezza e di Weierstraß*
 - - -
@@ -11,37 +11,36 @@ stato: "0"
 Consideriamo delle *proprietà* delle funzioni continue, di cui alcuni discendono direttamente dai teoremi sui limiti ([[Teoremi sui Limiti di Funzione]]).
 ## Permanenza del segno adattato
 #Teorema 
-> [!math|{"type":"theorem","number":"1.1.","setAsNoteMathLink":false,"title":"Permanenza del segno","label":"permanenza-del-segno"}] Teorema 1.1. (Permanenza del segno).
+> [!thm] Teorema 1.1. (Permanenza del segno versione continua).
 > Sia $f: E \longrightarrow \mathbb{R}$, sia $x_0 \in \mathbb{R}$ e $f$ continua in $x_0$.
 > Se $f(x_0) > 0$ ($<0$) allora esiste intorno di $x_0$ in cui $f$ ha segno *positivo* (*negativo*)
 ^3a557a
 ## Operazioni con funzioni continue
 #Teorema 
-> [!math|{"type":"theorem","number":"1.2.","setAsNoteMathLink":false,"title":"Operazioni con funzioni continue","label":"operazioni-con-funzioni-continue"}] Teorema 1.2. (Operazioni con funzioni continue).
+> [!thm] Teorema 1.2. (Operazioni con funzioni continue).
 > Siano $f, g$ funzioni *continue* in $x_0 \in \mathbb{R}$.
 > Allora 
 > $$f \pm g, f\cdot g, \frac{f}{g}$$
 > sono *continue* (a patto che nel terzo caso sia $g(x_0) \neq 0$) 
 ^41a8ec
 
-**OSS 1.2.** Da questo teorema si può dedurre che tutti i *polinomi* e *funzioni razionali* sono funzioni *continue*: infatti
-$$
-p = a_0 + a_1x + a_2x^2+\ldots + a_nx^n 
-$$
+#Osservazione 
+> [!oss] Osservazione 1.2. (la funzione razionale è continua)
+Da questo teorema si può dedurre che tutti i *polinomi* e *funzioni razionali* sono funzioni *continue*: infatti $$ p = a_0 + a_1x + a_2x^2+\ldots + a_nx^n  $$
 non è altro che una somma tra funzioni potenza, che sono *continue* ([[Definizione di continuità#^dfa8a1]]).
 
 ## Composta di funzioni continue
 #Teorema 
-> [!math|{"type":"theorem","number":"1.3.","setAsNoteMathLink":false,"title":"Composta di funzioni continue","label":"composta-di-funzioni-continue"}] Teorema 1.3. (Composta di funzioni continue).
+> [!thm] Teorema 1.3. (Composta di funzioni continue).
 > Siano
 > $$\begin{align}&f: E \longrightarrow \mathbb{R}, x_0 \in E \\&g : F \longrightarrow \mathbb{R}, f(x_0) \in F, f(E) \subseteq F \end{align} $$
 > Supponendo che $f$ sia *continua* in $x_0$ e $g$ sia *continua* in $f(x_0) = y_0$, allora $g \circ f$ è *continua* in $x_0$.
 ^c0ce66
 
 **FIGURA 1.3.** (*Idea del teorema*)
-[Da fare]
+![[Pasted image 20231220192803.png]]
 
-`\begin{proof}`@[[#^c0ce66]]
+**DIMOSTRAZIONE** del *teorema 1.3.* ([[#^c0ce66]])
 Per ipotesi $g$ è continua in $f(x_0)$, ovvero
 $$
 \lim_{y \to f(x_0)}g(y) = g(f(x_0)) \iff \begin{gather}\forall \varepsilon > 0, \exists \delta>0: \forall y \in F, \\|y-f(x_0)|<\delta \implies |g(y)-g(f(x_0))| < \varepsilon \end{gather}
@@ -59,8 +58,6 @@ che è esattamente la definizione di
 $$
 \lim_{y \to f(x_0)}g(y)=g(f(x_0))
 $$
-`\end{proof}`
-
 ## Caratterizzazione della continuità tramite le successioni
 #Teorema 
 > [!thm] Teorema 1.4. (di caratterizzazione della continuità tramite le funzioni)
@@ -95,7 +92,7 @@ che è proprio la definizione di
 $$
 \lim_n f(x_n) = f(\bar{x})
 $$
-"$\Downarrow$": Suppongo di negare la proprietà iniziale, ovvero che $f$ non è continua in $\bar{x}$. Allora segue che
+"$\Uparrow$": Sia $f(x_n)$ convergente a $f(\bar{x})$. Per assurdo suppongo di negare la proprietà iniziale, ovvero che $f$ non è continua in $\bar{x}$. Allora segue che
 $$
 \neg\left(\begin{gather}\forall \varepsilon >0, \exists \delta >0: \forall x \in E, \\|x-\bar{x}| < \delta \implies |f(x)-f(\bar{x})|<\varepsilon \end{gather}\right)
 $$
@@ -103,11 +100,10 @@ diventa
 $$
 \begin{gather}\exists \varepsilon_0 >0: \forall \delta >0, \exists x_\delta \in E: \\|x_\delta-\bar{x}|<\delta \land |f(x_\delta)-f(\bar{x})|\geq \varepsilon_0 \end{gather}
 $$
-Ora devo cercare una successione $(x_n)_n$ tale che
+Ora per trovare l'assurdo devo cercare una successione $(x_n)_n$ tale che
 $$
-\lim_nf(x_n)\neq \bar{x}
+\lim_n x_n = \bar{x} \land \lim_nf(x_n)\neq f(\bar{x})
 $$
-Infatti $p \impliedby q \iff \neg p \implies \neg q$.
 Prendo dunque $\delta = \frac{1}{n}$, allora
 $$
 \ldots, \exists x_n: |x_n-\bar{x}| < \frac{1}{n} \land |f(x)-f(\bar{x})| \geq \varepsilon >0 
@@ -123,12 +119,10 @@ $$
 Ricapitolando ho
 $$
 \lim_n x_n = \bar{x}, \exists (f(x_n))_n: |f(x_n)-f(\bar{x})|\geq \varepsilon_0 > 0$$
-e graficamente ho
-[ GRAFICO DA FARE]
-che è assurdo (quindi falso). $\blacksquare$
+che è assurdo (quindi falso), dato che contraddice la supposizione iniziale. $\blacksquare$
 
-**OSS 1.4.** (*Da recuperare*) ?? qualcosa sul fatto che questo è utile per *"provare"* la discontuità di certe funzioni; trova successioni, ??
-
+**FIGURA 1.4.** (*l'idea del passaggio* $\Uparrow$)
+![[Pasted image 20231220190049.png]]
 # 2. Proprietà fondamentali delle funzioni continue
 ## Teorema degli zeri
 #Teorema 
@@ -147,9 +141,7 @@ Sì, sapendo che $\lim_{x \to -\infty}f(x) = -\infty$ e $\lim_{x \to +\infty}f(x
 #Dimostrazione 
 **DIMOSTRAZIONE.** (*Teorema 2.1.*)
 Supponiamo $f(a) < 0$, $f(b) > 0$. 
-Se graficamente ho
-[ DA FARE ]
-allora posso intuitivamente disegnare una linea che *"taglia"* l'asse delle ascisse: tuttavia ciò non costituisce una dimostrazione rigorosa.
+Se graficamente ho la situazione nella *figura 2.1.*, allora posso intuitivamente disegnare una linea *continua* che *"taglia"* l'asse delle ascisse: tuttavia ciò non costituisce una dimostrazione rigorosa.
 Allora chiamo $a = a_0, b=b_0$.
 Ora considero il punto medio tra $a, b$ e la chiamo $c_0 = \frac{a_0+b_0}{2}$. 
 Adesso ho tre possibilità:
@@ -160,11 +152,16 @@ Se mi capitano i casi $2, 3$ ripeto: facendo questa procedura ho due possibilit�
 1. Eventualmente riuscirò a trovare $\xi$ tale che $f(\xi) = 0$.
 2. Altrimenti costruisco una *successione di intervalli chiusi, dimezzati e inscatolati* del tipo $$ (I_n)_n = ([a_n, b_n])_n $$dove $f(a_n) < 0$ e $f(b_n) > 0$. Allora per la *forma forte del teorema di Cantor* ([[Conseguenze dell'esistenza dell'estremo superiore]], **TEOREMA 4.2.**) ho $$\bigcap_n I_n = \{\xi\}, \xi \in [a, b] \implies a \leq \xi \leq b$$Per concludere basta mostrare che $$f(\xi) = 0$$Prima osservo che $$0 \leq |a_n - \xi| \leq |b_n - a_n| = \frac{b_0-a_0}{2^n}$$e poi $$\lim_n 0 = 0;\lim_n\frac{b_0-a_0}{2^n} = 0$$dunque per due carabinieri $$\lim_n a_n = \xi $$
    Analogamente vale lo stesso per $b_n$.
-   Adesso uso la nozione di *continuità* ([[Definizione di continuità]]), usando in particolare il **TEOREMA 1.4.** ([[#^acbf64]]). Allora $$f \text{ continua} \implies \begin{cases}\lim_n f(a_n) = f(\xi) \\ \lim_n f(b_n) = f(\xi)\end{cases}$$Però ricordandoci della *permanenza del segno* (**TEOREMA 1.1.**, [[#^3a557a]]), abbiamo che
+   Adesso uso la nozione di *continuità* ([[Definizione di continuità]]), usando in particolare il *teorema 1.4.* ([[#^acbf64]]). Allora $$f \text{ continua} \implies \begin{cases}\lim_n f(a_n) = f(\xi) \\ \lim_n f(b_n) = f(\xi)\end{cases}$$Però ricordandoci della *permanenza del segno* (**TEOREMA 1.1.**, [[#^3a557a]]), abbiamo che
    $$ \begin{align}&f(a_n)<0, \forall n \implies \lim_n f(a_n) \leq 0 \implies f(\xi ) \leq 0 \\ & f(b_n) > 0, \forall n \implies \lim_n f(b_n) \geq 0 \implies f(\xi ) \geq 0 \end{align}$$Ma per la proprietà *antiriflessiva* di $\leq, \geq$ ho 
-   $$ f(\xi) = 0$$
-   $\blacksquare$
-**OSS 2.1.** Questo teorema è *costruttivo*: infatti la dimostrazione di questo ci fornisce un *modo* di trovare il valore $\xi$. Quindi si potrebbe implementare un algoritmo per poter calcolare un zero di una funzione.
+   $$ f(\xi) = 0 \ \blacksquare$$
+**FIGURA 2.1.** (*Idea intuitiva iniziale e della dimostrazione*)
+![[Pasted image 20231220191525.png]]
+
+#Osservazione 
+> [!oss] Osservazione 2.1. (algoritmizzazione della dimostrazione del teorema)
+   Questo teorema è *costruttivo*: la dimostrazione del teorema dei zeri ci fornisce un *modo* di trovare il valore $\xi$. Infatti, mediante gli strumenti dell'*informatica*, si può implementare un algoritmo per poter calcolare e approssimare un zero di una funzione.
+
 **ALGORITMO.** (*Quasi-Python*)
 ```python
 def f(x):
@@ -190,6 +187,43 @@ while (d(f(c), 0)>= epsilon):
 		c = (a+b)/2
 ```
 
+**ALGORITMO ALTERNATIVO** (*Python, ausilio degli iteratori*)
+```python
+class Intervallo:
+	def __init__(self, a, b, f, epsilon):
+		self.a=a
+		self.b=b
+		self.f=f
+		self.epsilon=epsilon
+
+	def __iter__(self):
+		return TrovaZeri(self.a, self.b, self.f, self.epsilon)
+
+class TrovaZeri:
+	def __init__(self, a, b, f, e):
+		self.a = a
+		self.b = b
+		self.f = f
+		self.c = (a+b)/2
+		self.e = e
+
+	def __next__(self):
+		if self.f(self.c) == 0 or (self.f(self.c)<self.e and self.f(self.c) > -1*self.e):
+			raise StopIteration
+
+		if self.f(self.c) > 0:
+			self.a = self.a
+			self.b = self.c
+			self.c = (self.a+self.b)/2
+			return self.b
+
+		if self.f(self.c) < 0:
+			self.a = self.c
+			self.b = self.b
+			self.c = (self.a+self.b)/2
+			return self.a
+```
+
 #Esempio 
 > [!ex] Trovare una soluzione di $x^3-2$
 > Supponiamo di voler trovare la soluzione per 
@@ -203,14 +237,16 @@ while (d(f(c), 0)>= epsilon):
 ## Teorema dei valori intermedi
 #Corollario 
 > [!cor] Corollario 2.2. (teorema degli valori intermedi)
-Sia $g: [a, b] \longrightarrow \mathbb{R}$. Supponiamo $g(a) = \alpha$, $g(b) = \beta$, con $\alpha < \beta$. Sia $\gamma \in ]\alpha, \beta[$. 
-Allora 
-$$\exists \xi \in \ ]a, b[\ : g(\xi)=\gamma  $$
-in parole una *funzione continua su un certo intervallo* se assume due valori negli *estremi* allora questa assume *tutti* i valori *intermedi* in questo intervallo.
+   Sia $g: [a, b] \longrightarrow \mathbb{R}$. Supponiamo $g(a) = \alpha$, $g(b) = \beta$, con $\alpha < \beta$. Sia $\gamma \in ]\alpha, \beta[$. 
+   Allora 
+   $$\exists \xi \in \ ]a, b[\ : g(\xi)=\gamma$$
+   in parole una *funzione continua su un certo intervallo* se assume due valori negli *estremi* allora questa assume *tutti* i valori *intermedi* in questo intervallo.
+   Alternativamente si può riformulare questo teorema come
+   $$[g(a), g(b)] = [\alpha, \beta] \subseteq f([a,b])$$
 ^1c6f7c
 
-**FIGURA 2.2.** 
-[ DA fare]
+**FIGURA 2.2.** (*Idea grafica del teorema*)
+![[Pasted image 20231220192029.png]]
 
 #Dimostrazione 
 **DIMOSTRAZIONE** (*Corollario 2.2.*)
@@ -240,14 +276,15 @@ p_{-1}: \mathbb{R}\diagdown\{0\} \longrightarrow \mathbb{R}, x \mapsto p_{-1}(x)
 $$
 Infatti il *"buco"* qui è proprio il numero $0$.
 
-**OSS 2.3.**  Sia $E \subseteq \mathbb{R}$, con la seguente proprietà: $x_1, x_2 \in E \implies [x_1, x_2] \subseteq E$, chi è $E$?
+#Osservazione 
+> [!oss] Osservazione 2.2. (una funzione continua su un intervallo manda sempre in un intervallo)
+Sia $E \subseteq \mathbb{R}$, con la seguente proprietà: $x_1, x_2 \in E \implies [x_1, x_2] \subseteq E$, chi è $E$?
 $E$ è *sempre* un intervallo: per dimostrarlo uso il teorema dell'esistenza di $\sup E, \inf E$ ([[Insiemi limitati, maggioranti, massimo e teorema dell'estremo superiore]]), le sue proprietà e di seguito il *teorema dei zeri*. Da questo discende il seguente corollario:
 
 #Corollario 
 > [!cor] Corollario 2.3.
 > Sia $I$ intervallo, $f: I \longrightarrow \mathbb{R}$, $f$ *continua*.
 > Allora $f(I)$ è intervallo.
-
 ## Teorema di compattezza
 Ora vediamo di collegare la nozione delle *funzioni continue* con gli *insiemi compatti* ([[Insiemi compatti in R#^0eb138]]). 
 
@@ -259,7 +296,7 @@ Allora $f(K)$ è *compatto*.
 #Dimostrazione 
 **DIMOSTRAZIONE** (*Teorema 2.4.*)
 Provo che dalle supposizioni iniziali ho $f(K)$ compatto.
-Allora prendo $(y_n)_n$ una *successione* a valori in $f(K)$ ([[Successione e Sottosuccessione#^e6d66f]]). Allora devo dimostrare di essere di *estrarre* una *sotto successione* $(y_{n_k})_k$ tale che
+Allora prendo $(y_n)_n$ una *successione* a valori in $f(K)$ ([[Successione e Sottosuccessione#^e6d66f]]). Allora devo dimostrare di essere in grado di di *estrarre* una *sotto successione* $(y_{n_k})_k$ tale che
 $$
 \lim_k y_{n_k}= \bar{y} \in f(K)
 $$
@@ -284,7 +321,10 @@ $$
 > Allora  $f(E)$ ha $\max$ e $\inf$; ovvero riprendendo le definizioni di *massimo e minimo  assoluto di una funzione* ([[Funzioni]], **DEF 11.1**; **DEF 11.2.**) esistono il massimo e minimo assoluto della funzione.
 ^918fc1
 
-**OSS 2.4.** Un insieme *chiuso* e *limitato* ha sempre $\min$, $\max$? Sì, in quanto per definizione un insieme limitato deve avere per forza $\inf, \sup \in \mathbb{R}$ e in quanto chiuso questi appartengono anche all'insieme stesso. ^3a916a
+#Osservazione 
+> [!oss] Osservazione 2.4. (insiemi compatti hanno sempre minimo e massimo)
+> Un insieme *chiuso* e *limitato* ha sempre $\min$, $\max$? Sì, in quanto per definizione un insieme limitato deve avere per forza $\inf, \sup \in \mathbb{R}$ e in quanto chiuso questi appartengono anche all'insieme stesso. 
+^3a916a
 
 #Dimostrazione 
 **DIMOSTRAZIONE** (*Teorema 2.6.*)

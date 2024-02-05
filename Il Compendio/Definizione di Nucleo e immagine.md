@@ -20,7 +20,9 @@ stato: "1"
 > [!def] Definizione 2.1. (immagine di un'applicazione lineare)
 > Sia $f: V \longrightarrow V'$ un'*applicazione lineare*.
 > Si definisce invece l'*immagine* di $f$ come il sottoinsieme
-> $$\operatorname{im} f = \{v' \in V' | \exists v \in V: f(v) v'\} $$
+> $$
+> \operatorname{im} f = \{v' \in V' | \exists v \in V: f(v) =v'\} 
+> $$
 > Ovvero *"gli elementi del codominio che sono associati ad almeno un elemento del dominio"*.
 > Allora è immediato verificare che $\operatorname{im} f \subseteq V'$.
 

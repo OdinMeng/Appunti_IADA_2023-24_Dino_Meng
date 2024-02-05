@@ -19,8 +19,5 @@ stato: "1"
 # 2. Dimostrazione
 #Dimostrazione 
 **DIMOSTRAZIONE** (*Teorema 1.1.*)
-Questa dimostrazione seguirà dalla teoria delle applicazioni lineari, quindi per ora la si dà buona.
-> [!check] Aggiornamento (25.11.2023)
-> Questo teorema è una conseguenza del *teorema di dimensione per le applicazionie lineari* ([[Teorema di dimensione per le Applicazioni Lineari]]). Consultare la pagina [[Conseguenze del teorema di dimensione delle Applicazioni Lineari]] (??)
-
+Questo teorema segue *direttamente* dal *teorema di struttura della dimensione delle applicazioni lineari* ([[Teorema di dimensione per le Applicazioni Lineari#^ccde56]])
 ![[Conseguenze del teorema di dimensione delle Applicazioni Lineari#^5a0d52]]

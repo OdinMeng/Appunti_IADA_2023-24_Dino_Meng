@@ -71,7 +71,7 @@ Graficamente,
 Se prendiamo il piano di *Argand-Gauss* ([[Rappresentazione dei Numeri Complessi]]) possiamo vedere dei *punti nel piano*, allora si potrebbe *"misurare"* la distanza di questo punto dall'origine $(0,0)$. 
 
 **DEF 4.** Allora definiamo la il **modulo di $\bar{z}$** come la *distanza dall'origine*; ovvero se $z=a+ib$, allora usando il *teorema di Pitagora* il modulo diventa $\sqrt{a^2+b^2}$.
-**DEF 4.1.** Allora definisco la funzione $| \cdot |$; $$\begin{align}| \cdot| : \ &\mathbb{C} \longrightarrow [0, +\infty) \\ &z \mapsto |z|:= \sqrt{\text{Re(z)}^2+\text{Im(z)}^2}\end{align}$$
+**DEF 4.1.** Allora definisco la funzione $| \cdot |$; $$\begin{align}| \cdot| : \ &\mathbb{C} \longrightarrow [0, +\infty) \\ &z \mapsto |z|:= \sqrt{\text{Re(z)}^2+\text{Im(z)}^2}\end{align}$$ ^53f86b
 
 **OSS 4.1.** Notiamo che se $z \in \mathbb{R}$, ovvero se $\text{Im}(z) = 0$, allora $$|z| = \sqrt{\text{Re}(z)^2} = |\text{Re}(z)|$$Da nota che a sinistra si ha il *modulo* di $z$, invece a destra si ha il *valore assoluto* ([[Funzioni di potenza, radice e valore assoluto]], **DEF 3.1.**) della parte reale di $z$.
 

@@ -15,7 +15,7 @@ Abbiamo appena visto che per calcolare $A^{-1}$ dobbiamo risolvere *tutti* i sis
 $$A \cdot B^{(i)} = e_i $$
 Quindi cerchiamo di risolverli *tutti* in un singolo colpo considerando la matrice $(A|\mathbb{1}_n)$.
 Notiamo che
-$$A \text{ invertibile} \implies \operatorname{rg}(A)=n \implies \tilde{A}=n$$
+$$A \text{ invertibile} \implies \operatorname{rg}(A)=n \implies \operatorname{rg}(\tilde{A})=n$$
 dove $\tilde{A}$ rappresenta la matrice $A$ gradinizzata mediante l'algoritmo di Gauß.
 Quindi abbiamo una matrice del tipo
 $$\tilde{A} = \begin{pmatrix}1 & \ast & \ast & \ldots & \ast \\0 & 1 & \ast & \ldots &\ast \\\vdots & & \ddots & \ldots & \ast \\0 & \ldots &\ldots & \ldots & 1 \end{pmatrix} $$

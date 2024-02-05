@@ -63,4 +63,4 @@ Si può definire la *sommatoria* $$\sum^{n}_{j=0}a_i = a_0 + \ldots + a_n$$in un
 
 ### DEF 4.2.3. Produttoria
 Similmente si definisce la *produttoria* $$\prod_{i=0}^na_i = a_0\cdot\ldots\cdot a_n$$ come $$\begin{align}&\prod_{i=0}^na_i = p_n \\ &p_0 = a_o \\ &\forall n, p_{n+1} = p_n \cdot a_{n+1}\end{align}$$
-**ESEMPIO 4.2.3.1. Fattoriale.** Un caso particolare della *produttoria* è il cosiddetto **fattoriale**; la si definisce come $$\Pi_{i=0}^{n}i = n!$$Quindi $$\begin{align}&0! = 1 \\ &\forall n;(n+1)! = n!(n+1)\end{align}$$
+**ESEMPIO 4.2.3.1. Fattoriale.** Un caso particolare della *produttoria* è il cosiddetto **fattoriale**; la si definisce come $$\prod_{i=0}^{n}i = n!$$Quindi $$\begin{align}&0! = 1 \\ &\forall n;(n+1)! = n!(n+1)\end{align}$$

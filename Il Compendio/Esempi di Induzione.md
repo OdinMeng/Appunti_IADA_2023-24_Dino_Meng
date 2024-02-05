@@ -3,7 +3,7 @@ data: 2023-10-04
 corso: "[[Analisi Matematica I]]"
 argomento: Esempi di Induzione
 tipologia: appunti
-stato: "0"
+stato: "1"
 ---
 *Esempi sulle prove per induzione. Articolo creato ad-hoc per la quantità presente degli esempi, rendendo il file originario troppo pesante.*
 - - -
@@ -25,11 +25,11 @@ Provare che per ogni $n \in \mathbb{N}$ vale $$P(n): 0+1+4+\ldots+n^2 = \frac{(n
 2. Ipotesi induttiva: $$\begin{align}&P(n): 0+1+4+\ldots+n^2 = \frac{n(n+1)(2n+1)}{6} \\ &P(n+1): 0+1+4+\ldots+n^2+(n+1)^2 = \frac{(n+1)(n+2)(2(n+1)+1)}{6}\end{align}$$
 3. Sviluppando $P(n+1)$, $$\begin{align}P(n+1): 0+1+4+\ldots+n^2+(n+1)^2 &= \frac{(n+1)(n+2)(2(n+1)+1)}{6} \\ P(n) + (n+1)^2 &= \ldots \\ \frac{n(n+1)(2n+1)}{6}+(n+1)^2 &= \ldots\\ (n+1)(\frac{n(2n+1)}{6}+(n+1))&= \ldots \\ \frac{(n+1)(n)(2n+1)+6(n+1)^2}{6}&= \frac{(n+1)(n+2)(2n+3)}{6} \\ \frac{(n+1)((n)(2n+1)+6n+6)}{6}&= \frac{(n+1)(n^2+7n+6)}{6} \\ (n+1)(2n^2+n+6n+6)&=(n+1)(n^2+n+6n+6) \\&\text{OK } \blacksquare\end{align}$$
 ## ESEMPIO 1.3. Disuguaglianza di Bernoulli.
-Sia $a > -1$, $a \in \mathbb{R}$. Allora $\forall n \in \mathbb{N}$ vale la seguente: $$(1+a)^n \geq 1+na$$**DIM.** Sia $P(n): (1+a)^n \geq 1+na$.
+Sia $a > -1$, $a \in \mathbb{R}$. Allora $\forall n \in \mathbb{N}$ vale la seguente: $$(1+a)^n \geq 1+na$$**DIM.** Sia $P(n): (1+a)^n \geq 1+na$. ^66c5ee
 1. Verificare $P(0)$; $$P(0): (1+a)^1 \geq 1 \iff1 \geq 1 \text{ OK }\blacksquare$$
 2. Supponendo che $P(n)$ sia vera, verificare $P(n) \implies P(n+1)$. $$\begin{align}P(n): & \ (1+a)^n \geq 1+na \\ &\ (1+a)^n(1+a) \geq (1+na)(1+a) \\ &\ (1+a)^{n+1} \geq 1+(n+1)a+na^2\end{align}$$Sapendo che $1+(n+1)a$ è sicuramente maggiore o uguale a $P(n+1)$ ovvero $1+(n+1)a$, in quanto $na^2$ è necessariamente positivo, allora consegue che $$P(n+1):(1+a)^{n+1} \geq 1+(n+1)a $$è vera, verificando $P(n) \implies P(n+1)$. $\blacksquare$
 ## ESEMPIO-ESERCIZIO 1.4. Disuguaglianza di Bernoulli incrementata.
-**PROVARE CHE VALE LA PROPRIETA' $P(n): (1+a)^n \geq 1 + na + \frac{n(n-1)}{2}a^2$**, **OVE $a>0$ e $\forall n \geq 1$.
+**PROVARE CHE VALE LA PROPRIETA' $P(n): (1+a)^n \geq 1 + na + \frac{n(n-1)}{2}a^2$**, **OVE $a>0$ e $\forall n \geq 1$. ^815bb7
 1. Provare $P(1)$; $$P(0) : 1+a \geq 1+a+0 \text{ OK}$$
 2. Supponendo che $P(n)$ sia vera, provare che $P(n) \implies P(n+1)$ $$P(n) : (1+a)^n \geq 1+na
 +\frac{n(n-1)}{2}a^2$$ed è utile "prevedere" $P(n+1)$, quindi $$P(n+1): (1+a)^{n+1} \geq 1 + (n+1)a + \frac{(n+1)(n)}{2}a^2$$
@@ -40,7 +40,7 @@ Sia $a > -1$, $a \in \mathbb{R}$. Allora $\forall n \in \mathbb{N}$ vale la segu
    5. Verificando così $P(n) \implies P(n+1)$, dato che da $P(n)$ si verifica $P(n+1)$. 
 ## ESEMPIO 1.5. Ridotta della serie geometrica.
 Sia $a \neq 1$; allora con $\forall n \in \mathbb{N}$ si ha $$P(n): a^0+a^1+\ldots+a^n = \frac{a^{n+1}-1}{a-1}$$
-**DIM.**
+**DIM.** ^7a9cd3
 1. Dato che $n \in \mathbb{N}$, si può usare l'induzione; allora partiamo verificando $P(0)$;$$\begin{align}P(0): &\ a^0 = \frac{a^1-1}{a-1} \iff 1 = 1 \text{ OK} \end{align}$$
 2. Ora supponendo $P(n)$, verifichiamo $P(n) \implies P(n+1)$. $$\begin{align}P(n):&\ a^0+a^1+\ldots+a^n = \frac{a^{n+1}-1}{a-1} \\&\ a^0+a^1+\ldots+a^n+a^{n+1} = \frac{a^{n+1}-1}{a-1}+a^{n+1}\\ P(n+1): &\ a^0+a^1+\ldots+a^{n+1} = \frac{a^{n+1}-1+a^{n+1}(a-1)}{a-1} \\ &\ \ldots = \frac{a^{n+1}-1+a^{(n+1)+1}-a^{n+1}}{a-1} \\ P(n+1):&\  \ldots= \frac{a^{(n+1)+1}-1}{a-1}\end{align}$$Da qui si vede che $P(n) \implies P(n+1)$ è vera.
 

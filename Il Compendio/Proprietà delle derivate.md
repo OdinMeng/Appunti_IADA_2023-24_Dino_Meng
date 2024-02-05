@@ -3,7 +3,7 @@ data: 2023-11-20
 corso: "[[Analisi Matematica I]]"
 argomento: Proprietà delle derivate
 tipologia: appunti
-stato: "0"
+stato: "1"
 ---
 *Proprietà fondamentali delle derivate: Continuità delle funzioni derivabili, derivata di operazione tra funzioni, derivata di funzione composta, derivata della funzione inversa.*
 - - -
@@ -68,7 +68,7 @@ $$\begin{align} R^{\frac{f}{g}}_{x_0}(x) &=  \frac{\frac{f(x)}{g(x)}-\frac{f(x_0
 L'idea della dimostrazione consiste nella seguente:
 $$\begin{align} R^{g \circ f}_{x_0} (x) &= \frac{g(f(x))-g(f(x_0))}{x-x_0} \\ &= \frac{g(f(x))-g(f(x_0))}{f(x)-f(x_0)}\cdot \frac{f(x)-f(x_0)}{x-x_0} \\ &= g'(f(x))\cdot f'(x_0) \\ &\implies g'(f(x)) \cdot f'(x) \end{align}$$
 Tuttavia c'è un problema: in uno dei passaggi moltiplico la frazione per $\frac{f(x)-f(x_0)}{f(x)-f(x_0)}$, che è equivalente a 1. Tuttavia se ci troviamo nel caso in cui $f(x)=f(x_0)$, avremmo un problema in quanto la frazione precedentemente definita non sarebbe più definita.
-Allora per evitare questo problema creiamo, in una maniera artificiale, una funzione continua che ci permette di evitare questo problema.
+Allora per evitare questo problema creiamo, in una maniera *"artificiale"*, una funzione continua che ci permette di evitare questo problema.
 Sia
 $$H(y) = \begin{cases}\frac{g(y)-g(f(x_0))}{y-f(x_0)} \text{ se }y \neq f(x_0) \\ g'(f(x_0))  \text{ se }y = f(x_0) \end{cases} $$
 Trovo che $H$ è continua in $f(x_0)$, in quanto per ipotesi $g$ è *derivabile* in $f(x_0)$. 
@@ -84,10 +84,11 @@ $$(g \circ f)' = \lim_{x \to x_0}H(f(x)) \cdot R^f_{x_0}(x) = g'(f(x_0)) \cdot f
 > Sia $f: I \longrightarrow J$ una funzione *biiettiva* ([[Funzioni#^d193b2]]), dunque *invertibile* ([[Funzioni#^7b369f]]); sia $f$ *derivabile* in $x_0$ con $f'(x) \neq 0$.
 > Allora $f^{-1}(x)$ è *derivabile* in $x_0$ e si ha
 > $$(f^{-1})'(f(x)) = \frac{1}{f'(x)} $$
-
 ^97198c
 
-**OSS 2.2.** (*Interpretazione geometrica*) Anche questo teorema ha un suo significato geometrico: infatti se prendo la funzione originale, la inverto prendendo la sua simmetrica e scambiando le assi, allora prendendo lo stesso punto mi accorgo che la sua *tangente* esiste ed è proprio la *inversa* di quella originale.
+#Osservazione 
+> [!oss] Osservazione 2.2. (interpretazione geometrica del teorema 2.2.)
+Anche questo teorema ha un suo significato geometrico: infatti se prendo la funzione originale, la inverto prendendo la sua simmetrica e scambiando le assi, allora prendendo lo stesso punto mi accorgo che la sua *tangente* esiste ed è proprio la *inversa* di quella originale.
 
 **FIGURA 2.2.** (*Interpretazione geometrica della derivata della funzione inversa*)
 ![[Pasted image 20231122203757.png]]

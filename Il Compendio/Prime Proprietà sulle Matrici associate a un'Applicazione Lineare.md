@@ -19,4 +19,4 @@ stato: "1"
 
 #Dimostrazione 
 **DIMOSTRAZIONE** delle *prime proprietà sulle matrici associate* ([[#^0af01d]])
-Dimostrazioni omesse in quanto per verificarle basta usare *definizioni* delle *applicazioni lineari*, *matrici associate* ed eventualmente usare delle loro proprietà.
+Dimostrazioni omesse in quanto per verificarle basta usare *definizioni* delle *applicazioni lineari*, *matrici associate* ed eventualmente usare delle loro proprietà. Alternativamente, si può avvalere dei diagrammi commutativi.

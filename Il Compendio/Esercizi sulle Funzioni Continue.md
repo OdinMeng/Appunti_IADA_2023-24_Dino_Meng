@@ -3,7 +3,7 @@ data: 2023-11-16
 corso: "[[Analisi Matematica I]]"
 argomento: Esercizi sulle Funzioni Continue
 tipologia: appunti
-stato: "0"
+stato: "1"
 ---
 *Esercizi sulle funzioni continue del tipo esame. Spesso constano in dimostrazioni da svolgere.*
 - - -
@@ -39,8 +39,3 @@ stato: "0"
 > [!es] Esercizio 1.6.
 > Sia $f: \mathbb{R} \longrightarrow \mathbb{R}$, *continua*.
 > Provare che $f^{\leftarrow}(\{0\})$ è un *chiuso* ([[Insiemi aperti e chiusi#^36f40d]]).
-# 2. Esercizi dei temi d'esame
-
-# 3. Esercizi dei papers (?)
-
-# 4. Svolgimento degli esercizi
