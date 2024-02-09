@@ -9,7 +9,7 @@ stato: "1"
 - - -
 # 1. Sottospazio Vettoriale
 #Definizione 
-> [!def] Definizione 1.1. (sottospazio vettoriale)
+> [!def] sottospazio vettoriale
 Sia $V$ un $\mathbb{K}$-*spazio vettoriale*; un sottoinsieme $W \subseteq V$ si dice un *sottospazio vettoriale* se valgono le seguenti:
 >1. Il vettore *nullo* di $V$ appartiene a $W$
 >2. $\forall v,w \in W$; vale che $v+w \in W$ (*chiusura rispetto alla somma*)
@@ -18,27 +18,27 @@ Sia $V$ un $\mathbb{K}$-*spazio vettoriale*; un sottoinsieme $W \subseteq V$ si 
 ^9bcbf2
 
 #Esempio 
-> [!ex] Esempio 1.1. ($V_2$)
+> [!exm] $V_2$
 Consideriamo ora l'$\mathbb{R}$-[spazio vettoriale](Spazi%20Vettoriali)  $V_2$, ovvero $$V_2: (\mathbb{R}^2, +, \cdot)$$introdotto in precedenza (**ESEMPIO 2.1.**).
 Ora consideriamo il seguente sottoinsieme $W \subseteq V_2$; $$W := \{(x,y) \in V_2: x-3y=0\}$$
 Facciamo le seguenti *osservazioni*. 
 
 #Osservazione 
-> [!oss] Osservazione 1.1. (l'elemento nullo di $V_2$)
+> [!rmk] l'elemento nullo di $V_2$
 In $V_2$ esiste il vettore nullo $(0,0)$; in questo caso il vettore nullo $(0,0)$ vale anche in $W$.
 
 #Osservazione 
-> [!oss] Osservazione 1.2. (somma in $V_2$)
+> [!rmk] somma in $V_2$
 In $V_2$ è definita una *somma $+$*. Se $v$, $w$ sono due elementi di $W$, allora sono in particolare elementi di $V_2$; dunque $v +w \in V_2$. In aggiunta vale che $v+w \in W$. Infatti: se $v = (v_1, v_2)$ $w=(w_1, w_2)$ allora $$\begin{align}&v \in W \implies v_1-3v_2 = 0 \\ &w \in W \implies w_1 - 3w_2 = 0 \end{align}$$quindi $$(v_1-3v_2) + (w_1-3w_2) = 0 = 0+0 = 0$$ovvero $$(v_1+w_1)-3(v_2+w_2) = 0$$ovvero $(v+w) \in W$
 
 #Osservazione 
-> [!oss] Osservazione 1.3. (scalamento in $V_2$)
+> [!rmk] scalamento in $V_2$
 Infine consideriamo $v \in W$ e $\lambda \in \mathbb{R}$. Se $$\lambda \cdot v \in V_2$$allora vale anche $$\lambda \cdot v \in W$$
 Infatti se $v = (v_1, v_2)$, allora $\lambda \cdot v = (\lambda \cdot v_1, \lambda \cdot v_2)$; $$\begin{align}&v \in W \implies v_1-3v_2= 0\\ \text{allora }&\lambda\cdot(v_1-3v_2) = \lambda\cdot 0 = 0 \\ \text{quindi }& (\lambda \cdot v_1)- 3(\lambda \cdot v_2) = 0 \\ \text{ovvero } &\lambda \cdot v \in W\end{align}$$
 
 # 2. Interpretazione geometrica
 #Esempio 
-> [!ex] Esempio 2.1. (la retta sul piano)
+> [!exm] la retta sul piano
 Consideriamo $\mathbb{R}^2$ come l'insieme dei *punti nel piano*, ovvero il classico *piano cartesiano $\pi$*
 Definiamo il sottoinsieme $$W := \{(x,y) \in \mathbb{R}^2: x-3y = 0\}$$
 Ovviamente $W$ è uno *sottospazio vettoriale* di $\mathbb{R}^2$; notiamo che se rappresentiamo $\mathbb{R}^2$ come l'insieme dei punti nel piano, allora si può rappresentare $W$ come l'insieme dei *punti nella retta $r$*, ove $r: x - 3y = 0 \iff y = \frac{1}{3}x$
@@ -47,7 +47,7 @@ Ovviamente $W$ è uno *sottospazio vettoriale* di $\mathbb{R}^2$; notiamo che se
 ![[Pasted image 20231006182940.png]]
 
 #Esempio 
-> [!ex] Esempio 2.2. (la circonferenza sul piano)
+> [!exm] la circonferenza sul piano
 In $\mathbb{R}^2$ consideriamo il seguente: $$C := \{(x,y) \in \mathbb{R}^2 : x^2+y^2 = 1\}$$
 Osserviamo subito che la *proprietà caratterizzante di $C$* non è un'*equazione lineare*; infatti si tratta di un'equazione di secondo grado.
 Precisamente nel contesto della *geometria analitica*, $C$ rappresenterebbe la circonferenza $$(x-\alpha)^2+(y-\beta)^2 = \gamma^2$$ove $(\alpha, \beta)$, quindi $(0,0)$, rappresentano le coordinate dell'origine del cerchio e $\gamma$, quindi $1$, il raggio.
@@ -58,7 +58,7 @@ Vediamo subito che $C$ *non* è un sottospazio vettoriale di $\mathbb{R}^2$, in 
 
 # 3. Formare sottospazi a partire da due sottospazi
 #Lemma 
-> [!lem] Lemma 3.1. (l'intersezione di due sottospazi forma un sottospazio)
+> [!lem] l'intersezione di due sottospazi forma un sottospazio
 Sia $V$ un *K-spazio vettoriale*, siano $U, W \subseteq V$ dei *sottospazi vettoriali* di $V$.
 Se voglio avere un *nuovo* sottospazio vettoriale a partire da $U, W$ allora posso prendere la loro *intersezione* ([[Operazioni con gli Insiemi]]). Infatti $$U\cap W$$è *sottospazio vettoriale* di $V$.
 
@@ -70,7 +70,7 @@ Verifichiamo che $U \cap W$ sia *sottospazio vettoriale di* $V$, quindi che sodd
 3. Ora verifichiamo la *chiusura dello scalamento* con lo stesso procedimento: $$\begin{gather}\forall \lambda \in K, \forall v \in (U \cap W) \implies v \in U; v \in W \\\text{per ipotesi} \implies \lambda v \in U; \lambda v \in W \\ \implies \lambda v \in (U \cap W)\end{gather}  \ \blacksquare$$
 ## Il vuoto
 #Osservazione 
-> [!oss] Osservazione 3.1. (l'unione di due sottospazi NON forma un sottospazio)
+> [!rmk] l'unione di due sottospazi NON forma un sottospazio
 Purtroppo questa *non* vale per l'unione di due sottospazi vettoriali.
 Infatti, avendo $V$ uno spazio vettoriale e $U, W$ i suoi sottospazi vettoriali, *non* è sempre garantito che $$U \cup W$$sia anch'esso uno sottospazio vettoriale. Qui la simmetria si spezza.
 
@@ -90,12 +90,12 @@ Volendo si può vedere la situazione graficamente, osservando che $U$ e $W$ *cor
 Allora vogliamo trovare un *"surrogato"* per questo vuoto formato dal fatto che $U \cup W$ non sia uno sottospazio.
 
 #Definizione 
-> [!def] Definizione 3.1. (sottospazio somma)
+> [!def] sottospazio somma
 Sia $V$ un K-spazio vettoriale, siano $U, W$ due sottospazi vettoriali di $V$.
 Definiamo dunque il *sottospazio vettoriale somma di $U, V$* come $$U +W := \{u+w: u \in U, w \in W\}$$
 
 #Lemma 
-> [!lem] Lemma 3.2. (la somma di due sottospazio forma un sottospazio)
+> [!lem] la somma di due sottospazio forma un sottospazio
 $U+W$ è sottospazio vettoriale di $V$.
 
 #Dimostrazione 
@@ -106,7 +106,7 @@ $U+W$ è sottospazio vettoriale di $V$.
 3. *Chiusura dello scalamento* $$\begin{align}&\lambda \in K; v \in (U+W) \\ &v \in (U+W) \implies v=u+w; u \in U, w \in W \\ &\lambda \cdot v = \lambda u + \lambda w \\ &\text{per ipotesi }\lambda u \in U, \lambda w \in W \\ &\implies \lambda\cdot v \in (U+W)\end{align} \ \blacksquare$$
 
 #Lemma 
-> [!lem] Lemma 3.3. (due sottospazi appartengono alla loro somma)
+> [!lem] due sottospazi appartengono alla loro somma
 Con la notazione precisa valgono che $$U \subseteq (U+W) \land W \subseteq (U+W)$$
 
 #Dimostrazione 
@@ -114,7 +114,7 @@ Con la notazione precisa valgono che $$U \subseteq (U+W) \land W \subseteq (U+W)
 Mostrare la prima significa mostrare che per ogni elemento $u$ di $U$ vale che $u$ appartiene anche a $U+W$. Analogamente lo stesso discorso vale per $w$ elemento di $W$. $$u \in (U+W)  \implies u = u+w \stackrel{w=0}\implies u= u \implies u \in U$$
 
 #Corollario 
-> [!cor] Corollario 3.1. (l'intersezione di due sottospazi appartiene alla loro somma)
+> [!cor] l'intersezione di due sottospazi appartiene alla loro somma
 Vale che $$(U \cup W) \subseteq (U+W)$$inoltre si può dimostrare che $U+W$ è il *più piccolo* sottospazio vettoriale di $V$ che contiene $U \cup W$. 
 
 #Dimostrazione 

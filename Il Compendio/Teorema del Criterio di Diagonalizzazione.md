@@ -9,7 +9,7 @@ stato: "1"
 - - -
 # 0. Osservazione preliminare
 #Osservazione 
-> [!oss] Osservazione 0.a. (osservazione preliminare)
+> [!rmk] osservazione preliminare
 > Supponiamo che $f: V \longrightarrow V$ sia un'*applicazione lineare* con $\dim V = n$ ([[Definizione di Applicazione Lineare#^9b39f9]]), tale per cui il *polinomio caratteristico* ([[Polinomio Caratteristico di una Applicazione Lineare#^3daf01]]) $P_f(\lambda)$ si scompone nel prodotto di *$n$ fattori lineari* che sono tutti *distinti*; ovvero un polinomio del tipo
 > $$P_f(\lambda = (\lambda-\alpha_1)\cdot \ldots \cdot (\lambda - \alpha_n); \alpha_1 \neq \ldots \neq \alpha_n$$
 > 
@@ -29,7 +29,7 @@ stato: "1"
 > Questa è *una* situazione della diagonalizzabilità: però ce ne sono altre, e li presentiamo col seguente teorema.
 # 1. Enunciato
 #Teorema 
-> [!thm] Teorema 1.1. (del criterio della diagonalizzabilità di un'applicazione lineare)
+> [!thm] del criterio della diagonalizzabilità di un'applicazione lineare
 > Sia $f: V \longrightarrow V$ un'*applicazione lineare* di *dimensione finita*. 
 > Allora $f$ è *diagonalizzabile* se e solo se valgono le seguenti proprietà:
 > 1. Il *polinomio caratteristico* $P_f(\lambda)$ si scompone *completamente* in fattori di *primo grado* (non necessariamente distinti).
@@ -45,7 +45,7 @@ stato: "1"
 Omessa.
 # 3. Esempio (prototipo di un'esercizio dell'esame)
 #Esempio 
-> [!ex] Esempio 3.1.
+> [!exm] Esempio 3.1.
 > Consideriamo il seguente esempio, che sarà un possibile *modello-base* dell'esercizio dell'esame.
 > Consideriamo la *seguente applicazione lineare* $\mathbb{R}^3 \longrightarrow \mathbb{R}^3$ con la sua *base canonica* $\mathcal{E}_3$.
 > $$f\begin{pmatrix}x \\ y \\ z\end{pmatrix} = \begin{pmatrix}2x + 0y - 3z \\ 0x - y + 0z \\ -3x+0y+2z \end{pmatrix}$$

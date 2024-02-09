@@ -8,7 +8,7 @@ stato: "1"
 *Esempi di problemi con le derivate.*
 - - -
 # 1. Problema delle tangenti di un punto
-> [!mod] Modello 1.1. (trovare la tangente di un punto di una funzione)
+> [!mod] trovare la tangente di un punto di una funzione
 > Sia $f$ una *funzione derivabile* ([[Derivata e derivabilità#^6e7606]]) in un punto $x_0$.
 > Dato che è *derivabile* nel punto $x_0$, allora dev'esserci una tangente su quel punto.
 > Quindi, supponiamo che il nostro problema è di quello *trovare* la retta $r$ che definisce la *tangente* sul punto $x_0$.
@@ -23,8 +23,8 @@ stato: "1"
 *Omessa.*
 
 # 3. Problemi di massimo e/o minimo
-> [!mod] Modello 3.1. (problema di massimo e/o minimo)
-> Suppongo di avere $f: [a, b] \longrightarrow \mathbb{R}$, che sia *continua* ([[Definizione di continuità#^ddf65d]]), che sia derivabile (*almeno*) su $]a, b[$. 
+> [!mod] problema di massimo e/o minimo
+> Suppongo di avere $f: [a, b] \longrightarrow \mathbb{R}$, che sia *continua* ([[Definizione di Continuità#^ddf65d]]), che sia derivabile (*almeno*) su $]a, b[$. 
 > 1. $f$ ha minimo e/o assoluto? Sì, per il *teorema di Weierstraß* ([[Teoremi sulle funzioni continue#^918fc1]])
 > 2. Dove si trovano questi punti di massimo e/o minimo assoluto? Usiamo il *teorema di Fermat* ([[Teorema di Fermat#^8ab68b]]) per costruire *l'insieme dei punti stazionari* unito agli *"estremi"* $P$ dove
 >    $$P = \{x \in \ ]a, b[ \ | \ f'(x) = 0\} \cup \{a,b \} $$
@@ -32,7 +32,7 @@ stato: "1"
 > $$$$
 
 # 4. Approssimazione delle funzioni in certi valori
-> [!mod] Modello 4.1. (approssimazione delle funzioni)
+> [!mod] approssimazione delle funzioni
 > Suppongo di avere una funzione $f$ derivabile (*almeno*) $n+1$ volte, e di voler trovare il valore di una sua immagine. Ad esempio $f(k)$: ora non voglio trovare il suo valore *esatto*, ma solo una sua *approssimazione* con un errore inferiore a $10^n$.
 > 1. Considerare il *polinomio di Taylor* ([[Formula di Taylor#^556164]]) $T_n(f, x_0, x)$ per un $n$ *generico* (ovvero incognita) e $x_0$ opportuno.
 > 2. Considerare la *"distanza"* tra la funzione $f$ stessa (inserita col valore voluto $k$) e il polinomio di Taylor calcolato in $k$ $T_n(f, x_0, k)$.

@@ -39,6 +39,9 @@ Sia $a > -1$, $a \in \mathbb{R}$. Allora $\forall n \in \mathbb{N}$ vale la segu
    Dato che $\ldots a^3$ (parte omessa in quanto non è rilevante, dato che $n$ è sempre un numero positivo) è anch'essa sempre positiva in quanto $a > 0$, ora basta dimostrare che $$\begin{align}n(n-1)+2n &\geq (n+1)(n)\\n(n-1+2) &\geq(n+1)(n)\\n(n+1)&\geq n(n+1) \text{ OK } \blacksquare\end{align}$$
    5. Verificando così $P(n) \implies P(n+1)$, dato che da $P(n)$ si verifica $P(n+1)$. 
 ## ESEMPIO 1.5. Ridotta della serie geometrica.
+
+^98ba76
+
 Sia $a \neq 1$; allora con $\forall n \in \mathbb{N}$ si ha $$P(n): a^0+a^1+\ldots+a^n = \frac{a^{n+1}-1}{a-1}$$
 **DIM.** ^7a9cd3
 1. Dato che $n \in \mathbb{N}$, si può usare l'induzione; allora partiamo verificando $P(0)$;$$\begin{align}P(0): &\ a^0 = \frac{a^1-1}{a-1} \iff 1 = 1 \text{ OK} \end{align}$$

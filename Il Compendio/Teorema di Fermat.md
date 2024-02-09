@@ -21,7 +21,7 @@ $^{(1)}$ *«È impossibile separare un cubo in due cubi, o una potenza quarta in
 - - -
 # 1. Enunciato del teorema di Fermat
 #Teorema 
-> [!thm] Teorema 1.1. (di Fermat)
+> [!thm] di Fermat
 Sia $f: I \longrightarrow \mathbb{R}$, $x_0 \in I$.
 Se valgono che:
 i. $x_0$ è punto di *massimo* (minimo) *relativo* ([[Funzioni#^f3e49c]]).
@@ -37,7 +37,7 @@ A parole, questo teorema di dice che *"se $f$ è derivabile in un punto di massi
 ![[Pasted image 20231122213526.png]]
 ## Punto stazionario
 #Definizione 
-> [!def] Definizione 1.1. (punto stazionario, cenno)
+> [!def] punto stazionario, cenno
 > Se vale che $f'(x_0) = 0$, allora $x_0$ si dice *punto stazionario*
 # 2. Dimostrazione del teorema di Fermat
 #Dimostrazione 

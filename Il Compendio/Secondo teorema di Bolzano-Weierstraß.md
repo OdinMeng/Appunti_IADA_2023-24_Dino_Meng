@@ -11,7 +11,7 @@ stato: "1"
 Richiamiamo il *primo teorema di Bolzano-Weierstraß* in [[Punti di aderenza e di accumulazione]].
 
 #Richiamo
-> [!thm] Richiamo (Primo teorema di BW (richiamo)).
+> [!thm] richiamo).
 >  
 Sia $E \subseteq \mathbb{R}$, $E$ un insieme *infinito* e *limitato*. ([[Insiemi limitati, maggioranti, massimo e teorema dell'estremo superiore]], **DEF 1.3.**)
 Allora si verifica il seguente: $$
@@ -22,7 +22,7 @@ $$ovvero che esista un numero $\xi$ che sia *punto di accumulazione* per $E$.
 *Idea.* Abbiamo appena letto l'enunciato del *primo* teorema di Bolzano-Weierstraß, che viene anche detta come la *"forma insiemistica"* di tale teorema: ora la vogliamo interpretare con le nozioni di *successione*, *successione convergente*, e di *sotto successione*. ([[Successione e Sottosuccessione]])
 
 #Teorema 
-> [!thm] Teorema 1.1. (Secondo teorema di Bolzano-Weierstraß).
+> [!thm] Secondo teorema di Bolzano-Weierstraß.
 Sia $(a_n)_n$ una *successione reale* e *limitata*  ([[Successione e Sottosuccessione]], **DEF 1.2.**, **DEF 1.3.**)
 Allora deve esistere una *sotto successione convergente* $(a_{n_k})_k$ ([[Successione e Sottosuccessione]], **DEF 2.1.**), ovvero deve esistere $$\lim_k a_{n_k} = L \in \mathbb{R}$$
 ^69cfa9

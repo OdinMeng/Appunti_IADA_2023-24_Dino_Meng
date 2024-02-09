@@ -17,7 +17,7 @@ capitolo:
 Enunciamo uno dei teoremi più noti dell'*analisi matematica*, che ci garantisce l'esistenza di un punto di accumulazione in $\mathbb{R}$ per una categoria di insiemi.
 
 #Teorema 
-> [!thm] Teorema 1.1. (Primo teorema di Bolzano-Weierstraß).
+> [!thm] Primo teorema di Bolzano-Weierstraß.
 > Sia $E \subseteq \mathbb{R}$, $E$ un insieme *infinito* e *limitato*. ([[Insiemi limitati, maggioranti, massimo e teorema dell'estremo superiore#^c0a632]]) 
 > Allora si verifica il seguente: 
 > $$\exists \xi \in \mathbb{R}: \xi \in \mathcal{D} E$$

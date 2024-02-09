@@ -9,7 +9,7 @@ stato: "1"
 - - -
 # 0. L'idea della formula di Taylor
 #Osservazione 
-> [!oss] Osservazione 0.a. (idea del concetto) 
+> [!rmk|0.a] idea del concetto 
 > Se $f$ è *derivabile* ([[Derivata e derivabilità#^6e7606]]) in $x_0$, allora esiste la *tangente* al grafico nel punto $x_0$; infatti questa viene descritta come
 > $$r: y = f'(x_0)(x-x_0)+f(x_0) $$
 > Se ora *"ingrandisco"* questo grafico della funzione vicino al punto $(x_0, f(x_0))$, si troverebbe che stiamo *"linearizzando"* la funzione $f$ come la *tangente* $r$: una curva qualsiasi si *"trasforma"* in una linea, una retta lineare; l'idea viene raffigurata nella *figura 0.a.*
@@ -32,7 +32,7 @@ stato: "1"
 # 1. Lemmi di Peano e di Lagrange
 ## Lemma di Peano
 #Lemma 
-> [!lem] Lemma 1.1. (di Peano)
+> [!lem|1.1] di Peano
 > Sia $f: I \longrightarrow \mathbb{R}$ e $x_0 \in I$.
 > Sia inoltre $f$ *derivabile* ([[Derivata e derivabilità#^12c1df]]) fino all'ordine $n$ nell'intervallo $I$.
 > Supponiamo che la *derivata di ogni ordine in* $x_0$ sia nullo;
@@ -57,7 +57,7 @@ $$\frac{1}{n!}f^{(n)}(x_0) = \boxed{0} \ \blacksquare$$
 
 ## Lemma di Lagrange
 #Lemma 
-> [!lem] Lemma 1.2. (di Lagrange)
+> [!lem|1.2] di Lagrange
 > Sia $f: I \longrightarrow \mathbb{R}$, *derivabile* fino all'ordine $n+1$ (ovvero $f \in \mathcal{C}^{n+1}$).
 > Sia $x_0 \in I$ e la sua immagine nulla per tutte le sue derivate; ovvero
 > $$f(x_0) = f'(x_0) = f''(x_0) = \ldots = f^{(n)}(x_0) = 0$$
@@ -86,7 +86,7 @@ $$\exists \xi_1, \xi_2, \ldots, \xi_{n+1}: \frac{f(x)}{(x-x_0)^{n+1}} = \frac{f^
 Che è la tesi del teorema. $\blacksquare$
 # 2. Formula di Taylor col resto di Peano/Lagrange
 #Definizione 
-> [!def] Definizione 2.1. 
+> [!def|2.1.] polinomio di Taylor 
 > Per *compattare* la nostra scrittura nei seguenti enunciati, chiamiamo il *polinomio di Taylor* come il *"polinomio principale"* che compariranno nelle tesi dei teoremi. Ovvero
 > $$T_n(f, x_0, x) = f(x_0)+f'(x_0)(x-x_0)^1+ \ldots + \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n$$
 
@@ -94,7 +94,7 @@ Che è la tesi del teorema. $\blacksquare$
 
 ## Formula di Taylor col resto di Peano
 #Teorema 
-> [!thm] Teorema 2.1. (di Taylor col resto di Peano)
+> [!thm|2.1.] di Taylor col resto di Peano
 > Sia $g: I \longrightarrow \mathbb{R}$, $I$ *intervallo*, $x_0 \in I$.
 > Supponiamo $g$ *derivabile* fino all'ordine $n$; ovvero $g \in \mathcal{C}^n$
 > Allora, per ogni punto dell'intervallo *escluso* il punto $x_0$, vale il seguente:
@@ -125,7 +125,7 @@ $$\lim_{x \to x_0}\frac{f(x)}{(x-x_0)^n} = \boxed{\lim_{x \to x_0}\frac{r_n(x, x
 
 ## Formula di Taylor col resto di Lagrange
 #Teorema 
-> [!thm] Teorema 2.2. (di Taylor col resto di Lagrange)
+> [!thm|2.2.] di Taylor col resto di Lagrange
 > Sia $f: I \longrightarrow \mathbb{R}$, $I$ intervallo e $x_0 \in I$.
 > Sia $f$ *derivabile fino all'ordine* $n+1$.
 > Allora vale che
@@ -160,7 +160,7 @@ che è la tesi. $\blacksquare$
 Consideriamo un esempio celebre della *formula di Taylor col resto di Peano* di una funzione.
 
 #Esempio 
-> [!ex] Esempio 3.1. (funzione esponenziale in termini di Taylor)
+> [!exm|3.1.] La funzione esponenziale 
 > Sia $\exp x = e^x$. Pongo $x_0 = 0$. Voglio trovare la *formula di Taylor* per $\exp$ e $x_0=0$.
 > Prima di tutto considero che
 > $$(e^x)^{(n)} = e^x, \forall n \in \mathbb{N}$$
@@ -172,7 +172,7 @@ Consideriamo un esempio celebre della *formula di Taylor col resto di Peano* di 
 > $$e^{x_0} = 1+x_0 + \frac{1}{2}x_0^2 + \ldots + \frac{1}{n!}(x_0)^n + 0$$
 
 #Osservazione 
-> [!oss] Osservazione 3.1. (dimostrare l'identità di Eulero)
+> [!rmk|3.1.] una dimostrazione dell'identità di Eulero
 > Sia nota la *cosiddetta identità di Eulero*, oppure come è nota per certi matematici, *"la formula matematica più bella"*:
 > $$\boxed{e^{i\pi} = -1}$$
 > In realtà questa è una generalizzazione di
@@ -187,7 +187,7 @@ Consideriamo un esempio celebre della *formula di Taylor col resto di Peano* di 
 # 4. Esempio di applicazione della formula di Taylor col resto di Lagrange
 
 #Esempio 
-> [!ex] Esempio 4.1. (calcolare la costante di Eulero)
+> [!exm|4.1.] calcolare la costante di Eulero
 > Supponiamo di voler calcolare il numero $e$ con un errore *inferiore* a $10^{-3}$.
 > Prima di tutto ricapitoliamo *ricordando* cos'è la costante di Eulero: per definizione questa costante è il limite fondamentale
 > $$\lim_n (1+\frac{1}{n})^n$$

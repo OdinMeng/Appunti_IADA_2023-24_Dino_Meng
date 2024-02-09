@@ -12,13 +12,13 @@ Osservando [[Insiemi limitati, maggioranti, massimo e teorema dell'estremo super
 Richiamiamo dunque il seguente teorema:
 
 #Richiamo 
-> [!thm] Richiamo 0.a. (Esistenza di $\sup$).
+> [!thm] Esistenza di $\sup$.
 > Sia $A \subseteq \mathbb{R}$, $A \neq \emptyset$, e $A$ *superiormente limitato*.
 > Allora 
 > $$\exists \xi \in \mathbb{R}: \xi \text{ è estremo superiore di }A; \xi = \sup A$$
 # 1. $\mathbb{N}$ è superiormente illimitato
 #Teorema 
-> [!thm] Teorema 1.1. ($\mathbb{N}$ è superiormente illimitato).
+> [!thm] $\mathbb{N}$ è superiormente illimitato.
 > $\mathbb{N}$ è superiormente illimitato. Ovvero *non è superiormente limitato*.
 Infatti nei numeri reali $\mathbb{R}$ possiamo trovare i numeri naturali $\mathbb{N}$. 
 ^8eb65a
@@ -30,7 +30,7 @@ Quindi $\mathbb{N}$ è sia non vuoto che superiormente limitato. Da ciò (second
 Ma allora $$\bar{n} + 1 > \xi = \sup(\mathbb{N})$$il che è assurdo in quanto si troverebbe un numero che supera l'*estremo superiore*. $\blacksquare$
 # 2. Proprietà di Archimede; Archimedeità di $\mathbb{R}$
 #Teorema 
-> [!thm] Teorema 2.1. (Archimedeità di $\mathbb{R}$).
+> [!thm] Archimedeità di $\mathbb{R}$.
 > Siano $\varepsilon, M \in\mathbb{R}$ ove $\varepsilon > 0$, $M > 0$ (l'idea sarebbe che $\varepsilon$ è un numero *arbitrariamente piccolo*, $M$ invece un numero *arbitrariamente grande*), allora vale la seguente: 
 > $$\exists \bar{n} \in \mathbb{N}: \bar{n} \cdot \varepsilon > M$$
 > Ovvero prendendo un piccolo arbitrariamente piccolo $\varepsilon$ e possibile farlo sommare $\bar{n}$ volte e superare il numero arbitrariamente grande $M$. 
@@ -47,7 +47,7 @@ Sia allora $$\xi = \sup E$$Applico la seconda proprietà dell'*estremo superiore
 
 ## $\frac{1}{n}$ diventa piccolo quanto si vuole
 #Corollario
-> [!cor] Corollario 2.1. ($\frac{1}{n}$ diventa piccolo).
+> [!cor] $\frac{1}{n}$ diventa piccolo.
 > Sia $\varepsilon > 0$ (un numero piccolo). 
 > Allora 
 > $$\exists \bar{n} \in \mathbb{N}: 0 < \frac{1}{\bar{n}} < \varepsilon$$
@@ -60,7 +60,7 @@ Considero *la proprietà di Archimede* ([[#^d95d40]]) ove fisso $\varepsilon > 0
 Pertanto, $$\exists \bar{n}\in \mathbb{N}: \varepsilon \cdot \bar{n} > 1 ( > 0)$$Ora, dividendo per $\bar{n}$ da ambo le parti $$\varepsilon > \frac{1}{\bar{n}}>0 \ \blacksquare$$
 # 3. Densità di $\mathbb{Q}$ in $\mathbb{R}$
 #Teorema 
-> [!thm] Teorema 3.1. (Densità dei razionali nei reali).
+> [!thm] Densità dei razionali nei reali.
 > Si dice che $\mathbb{Q}$ è *denso* in $\mathbb{R}$, ovvero siano $a, b \in \mathbb{R}$ con $a < b$, allora esiste $q \in \mathbb{Q}$ tale che 
 > $$a < q < b$$
 > quindi tra due numeri reali $a, b$ possiamo sempre trovarci un numero razionale.
@@ -87,24 +87,24 @@ Graficamente, la situazione è descritta nella *figura 3.2.*. $\blacksquare$
 Considerando gli [intervalli chiusi, limitati, inscatolati e dimezzati](Intervalli), abbiamo il seguente teorema.
 ## Forma debole
 #Teorema 
-> [!thm] Teorema 4.1. (Teorema di Cantor, forma debole).
+> [!thm] Teorema di Cantor, forma debole.
 > Sia $(I_n)_n$ una successione di intervalli *chiusi, limitati e inscatolati*; allora l'intersezione di tutti gli intervalli è non-vuota.
 > $$\bigcap_n I_n \neq \emptyset$$
 ^a981ea
 
 #Osservazione 
-> [!oss] Osservazione 4.1. (la rappresentazione degli intervalli di Cantor)
+> [!rmk] la rappresentazione degli intervalli di Cantor
 Tutti gli intervalli si rappresentano graficamente come si fa nella *figura 4.1.*.
 
 **FIGURA 4.1.** (*Osservazione 4.1.*)
 ![[Pasted image 20231011161612.png]]
 
 #Osservazione 
-> [!oss] Osservazione 4.2. (il tipo degli intervalli scelti è una condizione necessaria)
+> [!rmk] il tipo degli intervalli scelti è una condizione necessaria
 Notiamo che il fatto che gli intervalli *debbono essere chiusi* è una condizione necessaria al *teorema 4.1.* ([[#^a981ea]]); infatti troviamo un *controesempio* per cui non vale il *teorema debole di Cantor* quando consideriamo insiemi *aperti* o *illimitati*.
 
 #Esempio 
-> [!ex] Esempio 4.1.
+> [!exm] Esempio 4.1.
 Consideriamo gli intervalli $$I_0 = \ ]0, 1] \ ;\  I_1 = \ ]0, \frac{1}{2}\ ;\  \ldots \ ;\  I_n =\  ]0, \frac{1}{n+1}]$$
 Che graficamente viene rappresentato nella *figura 4.2.*.
 Notiamo che l'intersezione di tutti gli intervalli in questo caso viene $\emptyset$; $$\bigcap _n I_n = \emptyset$$
@@ -121,7 +121,7 @@ Consideriamo i seguenti due casi:
 Pertanto non ci sono elementi comuni, rendendo l'intersezione di tutti gli intervalli l'insieme vuoto $\emptyset$.
 
 #Esempio 
-> [!ex] Esempio 4.2.
+> [!exm] Esempio 4.2.
 Consideriamo ora degli intervalli *illimitati* (ovvero *non limitati*); di nuovo il teorema non vale.
 Ho $$I_n = [n, +\infty[$$
 Che graficamente viene rappresentato mediante la *figura 4.3.*
@@ -164,7 +164,7 @@ Pertanto si può sicuramente affermare che $$\bigcap_n I_n = [\alpha, \beta] \ \
 ![[Pasted image 20231011161734.png]]
 ## Forma forte
 #Teorema 
-> [!thm] Teorema 4.2. (Teorema di Cantor, forma forte).
+> [!thm] Teorema di Cantor, forma forte.
 > Sia $(I_n)_n$ una successione di intervalli *chiusi, limitati, inscatolati e dimezzati*; allora l'intersezione di tutti gli intervalli deve contenere un unico punto $\xi$; 
 > $$\exists \xi \in \mathbb{R}: \bigcap_n I_n = \{\xi\}$$
 ^78d038

@@ -9,7 +9,7 @@ stato: "1"
 - - -
 # 1. Derivata di ordine k-esimo
 #Definizione 
-> [!def] Definizione 1.1. (derivata di ordine k-esimo)
+> [!def] derivata di ordine k-esimo
 > Sia $f: I \longrightarrow \mathbb{R}$, $I$ un *intervallo* ([[Intervalli]]).
 > Sia $f$ *derivabile* ([[Derivata e derivabilità#^12c1df]]).
 > Allora ha senso considerare la *funzione derivata*
@@ -21,8 +21,8 @@ stato: "1"
 
 # 2. La classe C di una funzione
 #Definizione 
-> [!def] Definizione 2.1. (classe C di una funzione reale)
-> Sia $f$ *derivabile* e sia la sua *funzione derivata* $f'$ anch'essa *derivabile* ([[Definizione di continuità#^d2f56f]]), allora dico che $f$ è di *classe* $\mathcal{C}^1$;
+> [!def] classe C di una funzione reale
+> Sia $f$ *derivabile* e sia la sua *funzione derivata* $f'$ anch'essa *derivabile* ([[Definizione di Continuità#^d2f56f]]), allora dico che $f$ è di *classe* $\mathcal{C}^1$;
 > $$f \in \mathcal{C}^1 $$
 > Generalizzando, se $f$ è *derivabile* fino all'ordine $f^{(k)}$; ovvero
 > $$f', f'', \ldots, f^{(k)}$$
@@ -34,24 +34,24 @@ stato: "1"
 
 # 3. Esempi
 #Esempio 
-> [!ex] Esempio 3.1. (funzione esponenziale)
+> [!exm] funzione esponenziale
 > Consideriamo la classica funzione *esponenziale* $e^x$ ([[Funzione esponenziale e Logaritmica]]); se consideriamo la sua *derivata* $(e^x)'$, notiamo che è la stessa.
 > Allora per *qualunque* ordine viene derivata, questa rimane la stessa; pertanto $e^x$ è *sempre* derivabile.
 > $$e^x \in \mathcal{C}^\infty $$
 
 #Esempio 
-> [!ex] Esempio 3.2. (funzione potenza)
+> [!exm] funzione potenza
 > Consideriamo la *funzione potenza* $x^n$ ([[Funzioni di potenza, radice e valore assoluto]]); se consideriamo la sua derivata $(x^n)' = nx^{n-1}$, vediamo che fino ad un certo punto (precisamente all'ordine $n+1$-esimo) questa si annulla; però la funzione *costante* è sempre derivabile.
 > Allora anche $x^n \in \mathcal{C}^\infty$.
 
 #Esempio 
-> [!ex] Esempio 3.3. (funzione seno)
+> [!exm] funzione seno
 > Consideriamo adesso la *funzione seno* $\sin x$ ([[Funzioni trigonometriche]]); derivando $\sin x$ fino al quarto ordine vediamo che risulta la stessa funzione. Infatti
 > $$\begin{align}&(\sin x)' = \cos x \\\implies &(\cos x)' = -\sin x \\\implies &(-\sin x)' = -\cos x \\\implies &(-\cos x)' = \sin x \\\implies &\ldots \end{align}$$
 > Allora $\sin x \in \mathcal{C}^{\infty}$.
 
 #Esempio 
-> [!es] Esempio-Esercizio 3.4. (funzione valore assoluto per identità)
+> [!exr] funzione valore assoluto per identità
 > Consideriamo la funzione $f(x) = x \cdot |x|$.
 > Si può dimostrare che questa è derivabile fino al *primo ordine* $f'(x)$; però $f'$ non è derivabile. La dimostrazione è stata lasciata al lettore per esercizio.
 > Allora $x \cdot |x| \in \mathcal{C}^1$.

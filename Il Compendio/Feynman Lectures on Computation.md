@@ -11,7 +11,7 @@ capitolo:
 # INFO
 **Stato lettura**: Da leggere
 **Valutazione**: Da valutare 
-![[718crAGSxfL._AC_UF1000,1000_QL80_.jpg|500]]
+![[718crAGSxfL._AC_UF1000,1000_QL80_ 1.jpg|500]]
 
 - - -
 # Prefazione

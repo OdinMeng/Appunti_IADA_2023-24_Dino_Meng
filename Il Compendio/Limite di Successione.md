@@ -15,7 +15,7 @@ Questo argomento richiede la conoscenza degli argomenti seguenti.
 Inoltre facciamo alcune osservazioni preliminari che ci possono aiutare a comprendere il 
 contenuto di questa pagina.
 
-> [!oss] Osservazione 0.A. (rappresentazione delle successioni sul piano cartesiano $\pi$) 
+> [!rmk] rappresentazione delle successioni sul piano cartesiano $\pi$ 
 > Posso rappresentare una *successione* sul piano cartesiano mediante la maniera rappresentata nella *figura 0.A.*; alternativamente si può rappresentare una successione anche come dei punti sulla *retta reale*. 
 
 **FIGURA 0.A.** (*Osservazione 0.A.*)
@@ -23,7 +23,7 @@ contenuto di questa pagina.
 
 # 1. Limite di Successione
 #Osservazione 
-> [!oss] Osservazione 1.1. (origine del concetto)
+> [!rmk] origine del concetto
 > Voglio introdurre il concetto di *limite* ([[Definizione di Limite di funzione#^c5e4ec]]) per una *successione* ([[Successione e Sottosuccessione#^e6d66f]]). 
 > 
    Innanzitutto mi chiedo quale sia il *dominio* di una qualsiasi *successione*: la risposta è l'insieme dei numeri naturali $\mathbb{N}$. 
@@ -36,7 +36,7 @@ contenuto di questa pagina.
    Allora *l'unico valore* di cui ha senso calcolare il limite di una successione è $+\infty$; di conseguenza possiamo scrivere $$\lim_{n \to +\infty} a_n = \lim_{n}a_n$$in una e sola maniera univoca.
 
 #Definizione 
-> [!def] Definizione 1.1. (limite di successione) 
+> [!def] limite di successione 
 Allora definiamo $$\boxed{\lim_{n}a_n = L}$$come $$\boxed{\begin{gather}\forall V \text{ di }L, \exists U \text{ di }+\infty: \forall n, \\ n \in U \implies a_n \in V \end{gather}}$$ovvero, supponendo $L \in \mathbb{R}$, $$\begin{gather}\forall \varepsilon >0, \exists N>0: \forall n, \\n > N \implies |a_n-L|<\varepsilon \end{gather}$$oppure se $L \in \mathbb{\tilde{R}}$, $$\begin{gather} \forall M > 0, \exists N >0: \forall n, \\ n > N \implies a_n > M \text{ (}a_n < -M\text{ per }-\infty\text{)}\end{gather}$$
 Graficamente ho la *figura 1.1.*.
 ^ef60f6
@@ -45,12 +45,12 @@ Graficamente ho la *figura 1.1.*.
 ![[Pasted image 20231103224524.png]]
 
 #Definizione 
-> [!def] Definizione 1.2. (convergenza e divergenza di una successione)
+> [!def] convergenza e divergenza di una successione
 Se $$\lim_n a_n = L$$esiste e il limite è un *numero* $L \in \mathbb{N}$, allora si dice che $a_n$ è *convergente*.
 Altrimenti se esiste ma ho $$\lim_n a_n = \pm \infty$$allora si dice che $a_n$ è *divergente a* $\pm \infty$.
 # 2. Proprietà di limiti di successione
 #Osservazione 
-> [!oss] Osservazione 2.1. (i teoremi per i limiti di funzioni valgono anche per i limiti di successioni)
+> [!rmk] i teoremi per i limiti di funzioni valgono anche per i limiti di successioni
 Osserviamo che per il *limite di successione* valgono *tutte* le *proprietà dei limiti di funzione* ([[Teoremi sui Limiti di Funzione]]), in quanto stiamo considerando un *caso particolare* di un *caso generale*. 
 Quindi valgono le seguenti:
 >- L'unicità del limite
@@ -65,7 +65,7 @@ Quindi valgono le seguenti:
 Inoltre abbiamo altri *due altri teoremi*, specifici per le successioni.
 
 #Teorema 
-> [!thm] Teorema 2.1. (le sottosuccessioni convergono allo stesso valore delle loro successioni padre)
+> [!thm] le sottosuccessioni convergono allo stesso valore delle loro successioni padre
 Sia $(a_n)_n$ una successione a valori in $A$, e $(a_{n_k})_k$ una *successione estratta* di $a_n$ ([[Successione e Sottosuccessione]]).
 *Tesi.* Supponendo che $$\lim_n a_n = l$$allora vale la seguente implicazione $$\boxed{\lim_n a_n = l \implies \lim_k a_{n_k} = l}$$
 ^f55fde
@@ -78,17 +78,19 @@ Ovvero mi chiedo se vale che $$\begin{gather}\forall \varepsilon >0, \stackrel{?
 Scopriamo che basta scegliere $\bar{k} \geq \bar{n}$ in quanto se i valori $k$ di $n_k$ è *strettamente crescente*, allora sicuramente ho $$n_k \geq k \geq \bar{n}$$
 In parole, l'idea consiste nel pensare che il *"peggior" caso* di *successione estratta* di una *successione* può essere la *successione stessa* (infatti estraggo dalla successione la stessa successione); quindi se considero la stessa successione posso avere $\bar{k} = \bar{n}$. In altri casi devo scegliere $\bar{k}$ in un punto più *"lontano"*, in particolare se $${a_\bar{n}} \not \in (a_{n_k})_k$$
 #Teorema 
-> [!thm] Teorema 2.2. (esistenza dei limiti delle successioni monotone)
+> [!thm] esistenza dei limiti delle successioni monotone
 Se la successione $(a_n)_n$ è *monotona*, allora esiste *sempre* il limite$$\lim_{n}a_n$$
 
 ^b438ed
 
 #Corollario 
-> [!cor] Corollario 2.2.a. (convergenza delle successioni monotone e limitate)
+> [!cor] convergenza delle successioni monotone e limitate
 Se $(a_n)_n$ è *monotona* e *limitata* ([[Successione e Sottosuccessione#^73b5cc]]), allora sicuramente il limite $$\lim_{n}a_n$$è *convergente*.
 
+^f03a7e
+
 #Osservazione 
-> [!oss] Osservazione 2.2. (nesso tra limiti di funzione e di successione)
+> [!rmk] nesso tra limiti di funzione e di successione
 Se consideriamo la successione $(a_n)_n$ come la *restrizione* del dominio da $A \subseteq \mathbb{R}$ a $\mathbb{N} \subseteq \mathbb{R}$ di una qualsiasi *funzione di variabile reale*, ovvero se considero $$f: A\subseteq[0, +\infty) \longrightarrow B$$e $$({a_n})_n: A\cap \mathbb{N} \longrightarrow \mathbb{R}$$allora posso fare la seguente osservazione.
 >
 Se conosco il *limite della funzione* $$\lim_{x \to +\infty}f(x) = l$$allora in automatico conosco pure il *limite della successione* $$\lim_{n}a_n = l$$
@@ -97,7 +99,7 @@ Notiamo che vale anche il *viceversa* (inversa); se conosco il *limite di una su
 **ATTENZIONE!** Da qui non bisogna dedurre vale anche la *contraria* (tesi negata); se il limite della funzione per $x \to +\infty$ *non* è definita, allora ciò *non* significa che $\lim_n a_n$ *non* è neanche definita. Infatti $\lim_n a_n$ può esistere quando non esiste $\lim_{x \to +\infty}f(x)$.
 
 #Esempio 
-> [!ex] Esempio 2.1. (osservazione 2.2.)
+> [!exm] osservazione 2.2.
 Vediamo alcuni esempi di quest'ultima osservazione.
 >1. $$\lim_{x \to +\infty}\frac{1}{x}=0 \implies \lim_{n}\frac{1}{n}=0$$
 >2. $$\lim_{x \to +\infty}\sqrt{x} = +\infty \implies \lim_n \sqrt{n} = +\infty$$

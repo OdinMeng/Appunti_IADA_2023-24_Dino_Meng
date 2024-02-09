@@ -12,7 +12,7 @@ In questo capitolo si vuole creare una serie di *strategie* per poter verificare
 Una di queste strategie consiste proprio enunciare e dimostrare una serie di *teoremi.*
 # 1. Unicità del limite
 #Teorema 
-> [!thm] Teorema 1.1. (dell'unicità del limite)
+> [!thm] dell'unicità del limite
 Sia $$f: E \longrightarrow \mathbb{R}$$poi $x_0 \in \mathbb{\tilde{R}}$ un punto di accumulazione per $E$.
 *Tesi.* Poi siano i valori limiti $L_1, L_2 \in \mathbb{\tilde{R}}$ tali che $$\lim_{x \to x_0} f(x) = L_1; \lim_{x \to x_0} f(x)= L_2$$allora $$L_1 = L_2$$
 *"Se esiste il limite di una funzione allora essa è unica"*
@@ -26,11 +26,11 @@ Allora concludiamo che possono esistere $V_1$ e $V_2$ tali da essere disgiunti t
 Ora li scegliamo: applicando le definizioni di limite, ovvero $$\begin{align} \lim_{x \to x_0} f(x) = L_1 \iff &\text{per } V_1, \exists U_1 \text{ di }x_0 : \forall x \in E\\ &x \in U_1\diagdown\{x_0\} \implies f(x) \in V_1 \\ \lim_{x \to x_0} f(x)= L_2 \iff & \text{per }V_2,\exists U_2 \text{ di }x_0: \forall x \in E, \\ &x \in U_2 \diagdown\{x_0\} \implies f(x) \in V_2\end{align}$$Dato che $U_1, U_2$ sono *intorni* di $x_0$ che è di accumulazione per $E$ ([[Punti di aderenza e di accumulazione]]) si ha che $$(U_1 \cap U_2)\cap E \neq \emptyset \text{ escludendo }x_0$$Posso scegliere allora un $x$ che sta all'interno nell'intersezione di $U_1$ e $U_2$; ovvero $$x \in ((U_1 \cap U_2) \diagdown \{x_0\})$$e per ipotesi (ovvero che esistono tali limiti) deve valere che esiste un elemento $f(x)$ tale che $$f(x) \in (V_1 \cap V_2)$$il che è assurdo, in quanto $V_1 \cap V_2$ dovrebbe essere un *insieme vuoto*.
 
 #Osservazione 
-> [!oss] Osservazione 1.1. (l'utilità dell'unicità del limite alla rovescia)
+> [!rmk] l'utilità dell'unicità del limite alla rovescia
    Questo teorema è anche utile per dimostrare la *non-esistenza* di un limite: prendendo la *contronominale* di questo teorema. Ovvero se due *restrizioni della stessa funzione* $f$ ([[Definizione di Limite di funzione]], **DEF 3.1.**) hanno limiti diversi $L_1 \neq L_2$, allora il limite *non* esiste.
 # 2. Permanenza del segno
 #Teorema
-> [!thm] Teorema 2.1. (della permanenza del segno)
+> [!thm] della permanenza del segno
    Sia $$f: E \longrightarrow \mathbb{R}, E \subseteq \mathbb{R}$$Siano $x_0, L \in \mathbb{\tilde{R}}$, $x_0$ punto di accumulazione per $E$.
    Sia definito il *limite* $$\lim_{x \to x_0}f(x) = L$$
    *Tesi.* Allora supponendo che $L \in (0, +\infty)$ oppure $L = +\infty$, allora è vera che $$\exists \bar{U} \text{ intorno di }x_0: \forall x \in (\bar{U} \cap E)\diagdown \{x_0\}, f(x) > 0$$
@@ -42,11 +42,11 @@ Ora li scegliamo: applicando le definizioni di limite, ovvero $$\begin{align} \l
 Parto dalle definizione del limite, ovvero $$\begin{align}\lim_{x \to x_0}f(x) = L \iff &\ \forall V \text{ di }L, \exists U\text{ di }x_0: \forall x \in E, \\ & \ x \in U\diagdown\{x_0\} \implies f(x) \in V\end{align}$$Per interpretarla nel nostro contesto (ovvero che $L$ è positiva), abbiamo che l'intorno di $L$ può essere $V = (0, +\infty)$, in quanto se è *positiva* allora sarà sicuramente contenuta in quell'intervallo.
 Dunque viene verificato che esiste un intorno $U$ tale che $$\forall x \in E, x \in U \diagdown\{x_0\} \implies f(x) > 0$$
 #Osservazione 
-> [!oss] Osservazione 2.1. (utilità della permanenza del segno "alla rovescia")
+> [!rmk] utilità della permanenza del segno "alla rovescia"
    Posso usare questo teorema *"alla rovescia"*, prendendo la *contronominale* dell'enunciato; ovvero se $f(x)$ è sempre *negativo o uguale a zero* ed *il limite esiste*, allora sicuramente $L$ è sempre *negativo o uguale a zero*. $$f(x)\leq 0 \land \exists \lim_{x\to x_0}f(x) \implies L\leq 0$$
 # 3. Teorema del confronto
 #Teorema 
-> [!thm] Teorema 3.1. (del confronto)
+> [!thm] del confronto
 Siano $f, g$ funzioni di variabile reale del tipo $$f, g : E \longrightarrow \mathbb{R}, E \subseteq \mathbb{R}$$e $x_0$ un punto di accumulazione per $E$, e $x_0 \in \mathbb{\tilde{R}}$.
 *Tesi.* Supponendo che siano vere le seguenti condizioni:
 i. Che esista il limite $$\lim_{x \to x_0}f(x) = +\infty$$ii. Che la funzione $g$ dev'essere *sempre* (nel dominio) maggiore o uguale di $f$. $$\forall x \in E\diagdown\{x_0\}, g(x) \geq f(x)$$Allora vale che $$\lim_{x \to x_0}g(x) = +\infty$$
@@ -57,7 +57,7 @@ i. Che esista il limite $$\lim_{x \to x_0}f(x) = +\infty$$ii. Che la funzione $g
 Sia ad esempio $x_0 \in \mathbb{R}$, allora abbiamo la seguente definizione di limite: $$\begin{gather}\forall M > 0, \exists \delta > 0: \forall x \in E, \\ 0<|x- x_0 | < \delta \implies f(x)>M \end{gather}$$e considerando che $g(x) \geq f(x)$, abbiamo a maggior ragione che $$\forall x \in E, \\ 0<|x- x_0 | < \delta \implies g(x)\geq f(x)>M $$e considerando la *transitività* della relazione d'ordine $>$ ([[Relazioni]], **DEF 4.**), abbiamo $$\begin{gather}\forall M > 0, \exists \delta > 0: \forall x \in E, \\ 0<|x- x_0 | < \delta \implies g(x)>M \end{gather}$$che è esattamente la definizione di $$\lim_{x \to x_0}g(x) = +\infty \ \blacksquare$$ 
 # 4. Teorema dei due carabinieri
 #Teorema 
-> [!thm] Teorema 4.1. (dei due carabinieri)
+> [!thm] dei due carabinieri
 Siano $f, g, h$ funzioni del tipo $$f,g,h: E \longrightarrow \mathbb{R}, E \subseteq \mathbb{R}$$e $x_0$ un punto di accumulazione per $E$, $x_0, L \in \mathbb{\tilde{R}}$.
 *Tesi.* Supponendo che $$\lim_{x\to x_0}f(x) = \lim_{x \to x_0}h(x) = L$$e che $$\forall x \in E \diagdown\{x_0\}, f(x) \leq g(x) \leq h(x)$$poi volendo possiamo chiamare $f, g$ le *"funzioni carabinieri"*; abbiamo che $$\lim_{x \to x_0}g(x) = L$$
 ^04916c
@@ -80,7 +80,7 @@ Riassumendo, abbiamo il seguente: $$\begin{gather}\forall \varepsilon > 0, \exis
 Ora presentiamo una serie di proposizioni, raccolte in un unico teorema, e queste ci permettono di fare delle operazioni *tra limiti*.
 
 #Teorema 
-> [!thm] Teorema 5.1. (operazioni tra limiti)
+> [!thm] operazioni tra limiti
 Siano $f, g$ funzioni di variabile reale del tipo $$f, g : E \longrightarrow \mathbb{R}, E \subseteq \mathbb{R}, x_0 \in \mathbb{\tilde{R}}$$e $x_0$ un punto di accumulazione per $E$.
 *Tesi.* Supponendo che $$\begin{gather}\lim_{x \to x_0}f(x) = l \in \mathbb{R} \\ \lim_{x \to x_0}g(x) = m \in \mathbb{R} \end{gather}$$allora abbiamo le seguenti: $$\begin{align}&\lim_{x\to x_0}(f(x) \pm g(x)) = l+m \\ &\lim_{x \to x_0}(f(x)g(x)) = lm \end{align}$$inoltre se $m \neq 0$, allora $$ \lim_{x \to x_0}(\frac{f(x)}{g(x)}) = \frac{l}{m} $$
 ^48b492
@@ -102,7 +102,7 @@ $$\lim_{x\to x_0}(f(x) \pm g(x)) = l+m$$
 Notiamo che in **TEOREMA 5.1.** per il quoziente tra limiti abbiamo imposto che $m \neq 0$; infatti se la funzione che sta al denominatore $g(x)$ si avvicina a $0$, il limite si comporterà in un altra maniera. Enunciare quindi i seguenti teoremi per illustrare questi comportamenti.
 
 #Teorema 
-> [!thm] Teorema 6.1. (limiti finiti e infinitesimi)
+> [!thm] limiti finiti e infinitesimi
 Sia $f: E \longrightarrow \mathbb{R}$, $E \subseteq \mathbb{R}$, $x_0 \in \mathbb{\tilde{R}}$ punto di accumulazione per $E$.
 *Tesi.* Allora valgono le seguenti: 
 Limite infinitesimo $$\lim_{x \to x_0}f(x) = +\infty \implies\lim_{x \to x_0}\frac{1}{f(x)} = 0$$
@@ -117,7 +117,7 @@ Partiamo dalla definizione del limite di $f(x) \to +\infty$; ovvero $$\begin{gat
 Ora definiamo delle *forme indeterminate* di alcuni limiti.
 
 #Teorema 
-> [!thm] Teorema 7.1. (forme indeterminate)
+> [!thm] forme indeterminate
 *Tesi 1.* Sia $$\lim_{x \to x_0}f(x) = +\infty \text{ e } \lim_{x \to x_0}g(x) \neq -\infty$$(la seconda vuol dire che $g$ è inferiormente limitata; ovvero $\exists M>0: \forall x \in E \diagdown \{x_0\}, g(x)>-M$), allora abbiamo che $$\lim_{x \to x_0}f(x)+g(x) = +\infty$$
 Analogo il discorso per $$\lim_{x \to x_0}f(x) = -\infty \text{ e }\lim_{x \to x_0}\neq +\infty$$
 Escludiamo infatti il caso $-\infty + \infty$ in quanto essa è una *forma indeterminata*. 
@@ -130,7 +130,7 @@ Escludiamo infatti il caso $-\infty + \infty$ in quanto essa è una *forma indet
 Partiamo dalla definizione del limite di $f$: ovvero $$\begin{gather}\forall K > 0, \exists \delta > 0: \forall x \in E \diagdown\{x_0\} \\ 0<|x-x_0|<\delta \implies f(x) > K\end{gather}$$ma allo stesso tempo abbiamo che $g$ è inferiormente limitata, ovvero $$\exists M>0:\forall x\neq x_0 , g(x) > -M $$allora se scegliamo $K = K + M$ e sommiamo entrambe le espressioni, abbiamo $$0<|x-x_0| < \delta \implies f(x)+g(x) > K$$che è la definizione di $$\lim_{x \to x_0}f(x)+g(x) = +\infty$$
 # 8. Limite della funzione composta
 #Osservazione 
-> [!oss] Osservazione 8.1. (l'idea del concetto)
+> [!rmk] l'idea del concetto
    Ho una funzione $$f: E \longrightarrow \mathbb{R}$$con $E \subseteq \mathbb{R}$, $x_0, y_0 \in \mathbb{\tilde{R}}$ e $x_0$ di accumulazione per $E$.
    Suppongo che esiste il limite di $f(x) \to y_0$ per $x \to x_0$: $$\lim_{x \to x_0}f(x) = y_0$$
    Ora sia $$g: F \longrightarrow \mathbb{R}$$con $F \subseteq \mathbb{R}$, $y_0$ punto di accumulazione per $F$ e $L \in \mathbb{\tilde{R}}$. Suppongo che esiste il limite di $g(y) \to L$ per $y \to y_0$. Ovvero $$\lim_{y \to y_0}g(y)=L$$Supponendo che l'immagine funzione del dominio sia sottoinsieme del dominio dell'altra funzione, ovvero $f(E) \subseteq F$, e $f(x)=y$ un punto di accumulazione per $f(E)$, ho la situazione nella *figura 8.1.*.
@@ -141,7 +141,7 @@ Partiamo dalla definizione del limite di $f$: ovvero $$\begin{gather}\forall K >
 ![[Pasted image 20231103222509.png]]
 
 #Teorema 
-> [!thm] Teorema 8.1. (del limite della funzione composta)
+> [!thm] del limite della funzione composta
 Siano $$f: E \longrightarrow \mathbb{R}; g: F \longrightarrow \mathbb{R}$$con $y_0, x_0$ punti di accumulazione per (rispettivamente) $E, F$. Poi supponendo che esistono i limiti
 $$\lim_{x \to x_0}f(x) = y_0 \ \text{  e }\  \lim_{y \to y_0 }g(y)=L$$e *se* vale una delle due *ipotesi supplementari*; $$\begin{gather}1)\ \forall x \in E\diagdown\{x_0\}, f(x) \neq y_0 \\ 2) \  y_0 \in F, g(y_0)=L\end{gather}$$
 allora vale che $$\lim_{x \to x_0}f(g(x)) = L$$
@@ -155,22 +155,22 @@ Allora posso scrivere $$g(f(x)) = g(y) \in W$$
 Se invece ci capita che $\exists x': f(x') = y_0$, allora possiamo comunque avvalerci dell'altra ipotesi supplementare ponendo $g(y_0) = L$ e abbiamo dunque $g(f(x')) = g(y_0) = L$, che ovviamente appartiene a $W$. 
 
 #Osservazione 
-> [!oss] Osservazione 8.1. (le condizioni supplementari sono solitamente vere)
+> [!rmk] le condizioni supplementari sono solitamente vere
    Per fortuna nostra le *condizioni supplementari* appena descritte di norma valgono quasi sempre.
 
 #Osservazione 
-> [!oss] Osservazione 8.2. (cambio della variabile del limite)
+> [!rmk] cambio della variabile del limite
    Possiamo sfruttare questo *teorema* per poter svolgere ciò che chiameremo il meccanismo del *"cambio della variabile del limite"*; questo è un meccanismo non importante, ma importantissimo. Vediamo un esempio in cui entra in gioco questo meccanismo.
 ## Cambio della variabile del limite
 #Esempio 
-> [!ex] Esempio 8.a. (di un cambio della variabile del limite)
+> [!exm] di un cambio della variabile del limite
    Voglio calcolare il limite $$\lim_{x \to 0^+}\frac{\sin{\sqrt{x}}}{\sqrt{x}}$$
 *Idea.* L'idea fondamentale consiste nel pensare alla funzione del limite $$x \mapsto \frac{\sin\sqrt{x}}{\sqrt{x}}$$come la *funzione composta*. Ponendo infatti $$x \mapsto \sqrt{x} = y \mapsto \frac{\sin y}{y}$$Di conseguenza dobbiamo trovare il valore per cui tende $y_0$. Dunque $$x \to 0^+ \implies \sqrt{x} = y \to 0^+$$in quanto se $x$ tende a $0$ da destra, allora anche la sua radice tende a $0$ da destra.
 Ora verifichiamo se vale *l'ipotesi aggiuntiva*, ovvero se è vera che $$\forall x, x \neq x_0 \implies f(x) \neq 0$$il che è vera, in quanto non c'è nessun numero di cui la radice è $0$, se non $0$ stesso.
 Dunque possiamo scrivere il limite iniziale come la *composizione* tra due funzioni, di cui una è la originaria. Allora $$\lim_{x \to 0^+}\frac{\sin\sqrt{x}}{\sqrt{x}} = \lim_{y \to 0^+}\frac{\sin y}{y}$$Ora questo limite è semplicissimo da risolvere, in quanto questo ci riconduce al limite fondamentale $\frac{\sin x}{x}=1, x \to 0$ ([[Esempi di Limiti di Funzione]], **ESEMPIO 6.1.**). Quindi $L =1$.
 # 9. Limite della funzione monotona
 #Osservazione 
-> [!oss] Osservazione 9.1. (carattere "speciale" di questo teorema)
+> [!rmk] carattere "speciale" di questo teorema
    Osserviamo che fino ad adesso *tutti* i nostri *teoremi* sui limiti di funzione enunciati in questa pagina avevano *l'esistenza di qualche limite* per ipotesi.
    Il teorema che enunceremo sarà *speciale* da questo punto di vista: infatti *non* avrà l'esistenza di un qualche limite per ipotesi, ma ha comunque nella *tesi* l'esistenza del limite.
 
@@ -178,7 +178,7 @@ Dunque possiamo scrivere il limite iniziale come la *composizione* tra due funzi
 >[!warning] (Per esercizio verificare che se $\sup E \not \in E$ allora $\sup E$ è di accumulazione per $E$.)
 
 #Teorema 
-> [!thm] Teorema 9.1. (della funzione monotona)
+> [!thm] della funzione monotona
 Sia $$f: E \longrightarrow \mathbb{R}, E \subseteq \mathbb{R}$$e supponiamo che $E$ sia *superiormente limitata* con $\sup E = x_0$ e $x_0 \not \in E$. Oppure analogamente, se $E$ è *inferiormente limitata* allora abbiamo $\inf E = x_0 \not \in E$.
 Inoltre è possibile supporre che $x_0 \in \mathbb{\tilde{R}}$, ovvero abbiamo $x_0 = \pm\infty$.
 Inoltre sia $f$ una funzione *monotona* crescente o decrescente ([[Funzioni]], **DEF 8.**)
@@ -201,6 +201,6 @@ Abbiamo di fatto una situazione situazione del raffigurata nella *figura 9.1.*.
 ![[Pasted image 20231103222520.png]]
 
 #Osservazione  
-> [!oss] Osservazione 9.2. (la definizione di discontinuità di prima specie)
+> [!rmk] la definizione di discontinuità di prima specie
 Quindi secondo il **COROLLARIO 9.1.** possiamo avere le due seguenti situazioni; o il *limite destro* ed il *limite sinistro* si coincidono o abbiamo una specie di *"salto"*.
 Questo sarà utile quando parleremo della *continuità* e della *discontinuità*, riferendoci in particolare ad un teorema che enuncia, data una funzione monotona crescente, in un punto discontinuo possiamo avere *solo* la discontinuità del tipo *"salto"* ([[Classificazioni di Discontinuità#^006fee]]).

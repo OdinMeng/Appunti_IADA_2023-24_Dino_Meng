@@ -29,7 +29,7 @@ Nel 1704, a seguito del decesso di de l'Hôpital, Bernoulli raccontò dell'accor
 - - -
 # 1. Enunciato del teorema
 #Teorema 
-> [!thm] Teorema 1.1. (di De l'Hôpital)
+> [!thm] di De l'Hôpital
 > Siano $f, g: [a, b[ \longrightarrow \mathbb{R}$.
 > Supponiamo che $f, g$ siano *derivabili* ([[Derivata e derivabilità#^12c1df]]).
 > Supponiamo inoltre che per ogni punto ($a$ *escluso*) nel dominio la derivata $g'$ *non* si annulla mai;
@@ -43,7 +43,7 @@ Nel 1704, a seguito del decesso di de l'Hôpital, Bernoulli raccontò dell'accor
 > $$\boxed{\exists L \in \mathbb{\tilde{R}}: \lim_{x \to b^-}\frac{f'(x)}{g'(x)} = L \implies \lim_{x \to b^-}\frac{f(x)}{g(x)} = L}$$
 ^67a7cd
 # 2. Dimostrazione del teorema
-> [!oss] Osservazione 2.1. (osservazione preliminare; $g$ non si annulla mai)
+> [!rmk] osservazione preliminare; $g$ non si annulla mai
 **OSS 2.1.** (*Osservazione preliminare*) Supponendo $g(b) = 0$ e $g'(x) \neq 0$ per $]a, b[$, potrà esserci mai un $x_0 \in ]a, b$ tale che $g(x_0)$ si annulla? No, in quanto sennò avremmo $g(x_0) = g(b) = 0$ e per il *teorema di Rolle* ([[Teorema di Rolle#^2d8bff]]) avremmo un $\xi$ in $]a, b[$ tale che la derivata $g'$ si annullerebbe; il che è *assurdo*, in quanto contraddice con le supposizioni iniziali. 
 ^ce8190
 
@@ -67,19 +67,19 @@ che è proprio la *definizione* del limite
 $$\lim_{x \to b^-}\frac{f(x)}{g(x)}=L \ \blacksquare $$
 
 #Osservazione 
-> [!oss] Osservazione 2.2. (De l'Hôpital vale anche per limiti all'infinito)
+> [!rmk] De l'Hôpital vale anche per limiti all'infinito
  Se al posto di $b$ un numero *finito* pongo $b = +\infty$; allora il teorema varrebbe lo stesso. Basta ragionare con la definizione $\varepsilon$-$N$ al posto di $\varepsilon$-$\delta$.
 
 #Osservazione 
-> [!oss] Osservazione 2.3. (De l'Hôpital vale anche per la forma indeterminata $\infty/\infty$)
+> [!rmk] De l'Hôpital vale anche per la forma indeterminata $\infty/\infty$
  Questo teorema vale anche se si verificano entrambi i limiti:
 $$\lim_{x \to b^-}f(x) = +\infty = \lim_{x \to b^-}g(x) $$
 
 #Osservazione 
-> [!oss] Osservazione 2.4. (De l'Hôpital vale anche quando il limite diverge a $+\infty$)
+> [!rmk] De l'Hôpital vale anche quando il limite diverge a $+\infty$
 Questo teorema vale anche se il limite $L$ vale $+\infty$.
 # 3. Utilità pratica
-> [!prop] Proposizione 3.1. (utilità pratica del teorema di De l'Hôpital)
+> [!prp] utilità pratica del teorema di De l'Hôpital
 > Se in un limite ho un *caso indeterminato* del tipo
 > $$\frac{0}{0} \text{ oppure } \frac{\infty}{\infty}$$
 > e se ho 

@@ -14,7 +14,7 @@ capitolo: Geometria Affine
 - [[Definizione di Spazio Affine]]
 # 1. Definizione particolare di spazio affine su $K^n$
 #Esempio 
-> [!def] Definizione 1.1. (Esempio particolare $\mathbb{A}^n_{K}$)
+> [!def] Esempio particolare $\mathbb{A}^n_{K}$
 > Si può prendere lo *spazio affine* $\mathbb{A} = K^n$ e scegliere il suo *spazio vettoriale "d'appoggio"* il medesimo (ovvero $V = K^n$): dal discorso introduttorio ([[Introduzione alla Geometria Affine]]) ricordiamoci che comunque $K^n$ svolge due ruoli *diversi*! Da un lato abbiamo $K^n$ in quanto *spazio affine*, dall'altro lato abbiamo $K^n$ in quanto *spazio vettoriale*.
 > 
 > Allora quando pensiamo $K^n$ in quanto *spazio affine*, denotiamo i suoi elementi come dei *vettori-riga*; invece quando la pensiamo in quanto *spazio vettoriale*, denotiamo i suoi elementi come dei *vettori-colonna*.
@@ -28,7 +28,7 @@ capitolo: Geometria Affine
 
 # 2. Esempio
 #Esempio 
-> [!ex] Esempio 1.1. (dello spazio affine $\mathbb{A}^2_\mathbb{R}$)
+> [!exm] dello spazio affine $\mathbb{A}^2_\mathbb{R}$
 > Consideriamo lo spazio affine $\mathbb{A}^2_\mathbb{R}$.
 > Prendiamo i punti $P, Q = (1,1), (2,0)$.
 > Allora in questo caso 

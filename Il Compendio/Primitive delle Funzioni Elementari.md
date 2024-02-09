@@ -28,7 +28,7 @@ Prendiamo la *tabella delle derivate delle funzioni* e la *"leggiamo al contrari
 | $$\frac{1}{\sqrt{1+x^2}}$$ |           $$\arctan x$$            |
 
 #Osservazione 
-> [!oss] Osservazione 1.1. (l'arcoseno e l'arcocoseno sono la stessa cosa in questo contesto)
+> [!rmk] l'arcoseno e l'arcocoseno sono la stessa cosa in questo contesto
 > Notiamo che per la frazione $\frac{1}{\sqrt{1-x^2}}$ abbiamo *due primitive* ammissibili: questo al primo impatto può sembrare strano, ma in una seconda analisi (matematica) vedremo che questa situazione ha perfettamente senso!
 > 
 > Consideriamo infatti la funzione
@@ -43,5 +43,5 @@ Prendiamo la *tabella delle derivate delle funzioni* e la *"leggiamo al contrari
 > Quindi vediamo che queste funzioni *sono* effettivamente le stesse, solo che una è traslata dell'altra. Poi, come osserveremo nel contesto del *calcolo integrale*, questo li rende effettivamente uguali.
 
 #Osservazione 
-> [!oss] Osservazione 1.2.
+> [!rmk] Osservazione 1.2.
 > Per comodità chiamo l'*insieme delle primitive* di $f$ come $\int f(x) dx$, ovvero *"l'integrale indefinito"* di $f(x)$; inoltre indico un *qualsiasi* elemento di $\int f(x) dx$ come $F(x)+c$.

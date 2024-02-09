@@ -9,7 +9,7 @@ stato: "1"
 - - -
 # 1. Enunciato del teorema di Rolle
 #Teorema 
-> [!thm] Teorema 1.1. (di Rolle)
+> [!thm] di Rolle
 > Sia $f: [a, b] \longrightarrow \mathbb{R}$, sia $f$ *continua* su $[a,b]$ e *derivabile* su $]a, b[$. 
 > Sia inoltre $f(a) = f(b)$. Riassumendo ho la situazione in *figura 1.1.*.
 > Allora si verifica che
@@ -25,7 +25,7 @@ Prima di dimostrare il teorema a tutti gli effetti, svolgo la seguente osservazi
 - - -
 
 #Osservazione 
-> [!oss] Osservazione 2.1. (osservazione preliminare alla dimostrazione del teorema di Rolle)
+> [!rmk] osservazione preliminare alla dimostrazione del teorema di Rolle
 Notiamo che $f$ è *continua* per tutto il suo dominio, quindi per il *teorema di Weierstraß* ([[Teoremi sulle funzioni continue#^918fc1]]) sappiamo che *esistono* almeno un *massimo* e *minimo* di $f$ ([[Funzioni#^e1ab12]]).
 
 - - -
@@ -40,7 +40,7 @@ Ora distinguo due casi, dove *"posiziono"* questi punti di $\max$ e $\min$ prece
 
 # 3. Interpretazione geometrica (dimostrazione grafica)
 #Osservazione 
-> [!oss] Osservazione 3.1. (interpretazione grafica della dimostrazione del teorema di Rolle)
+> [!rmk] interpretazione grafica della dimostrazione del teorema di Rolle
  Si nota che è possibile dare una buona interpretazione grafica a questo teorema; anzi è addirittura possibile dare una dimostrazione *grafica* considerando i casi disegnati nella dimostrazione.
 
 **FIGURA 3.1.** (*Disegno*)

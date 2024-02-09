@@ -9,14 +9,14 @@ stato: "1"
 - - -
 # 1. Primo teorema di caratterizzazione mediante le rette
 #Teorema 
-> [!thm] Teorema 1.1. (di caratterizzazione mediante le rette)
+> [!thm] di caratterizzazione mediante le rette
 > Sia $f: I \longrightarrow \mathbb{R}$, $I$ *intervallo*.
 > Allora sono equivalenti i seguenti:
 > $$\begin{gather}1). \ f \text{ convessa} \\ \Updownarrow \\ 2). \ \forall x_1, x_2, x_3 \in I, x_1<x_2<x_3 \\ \frac{f(x_2)-f(x_1)}{x_2-x_1} \leq \frac{f(x_3)-f(x_1)}{x_3-x_1} \leq \frac{f(x_3)-f(x_2)}{x_3-x_2} \\ \Updownarrow \\ 3). \ \forall x_1, x_2, x_3 \in I, x_1<x_2<x_3 \\ \frac{f(x_2)-f(x_1)}{x_2-x_1} \leq \frac{f(x_3)-f(x_2)}{x_3-x_2}\end{gather} $$
 ^742cae
 
 #Osservazione 
-> [!oss] Osservazione 1.1. (interpretazione grafica)
+> [!rmk] interpretazione grafica
 > Il significato geometrico di questo teorema vuol semplicemente dire che, quando prendiamo tre punti di una funzione concava e prendiamo le loro *rette secanti passanti tra di loro*, abbiamo sempre una retta con la *"pendenza più grande"*, con la *"pendenza intermedia"* e con la *"pendenza più piccola"*. 
 > Nel caso della *2)* prendiamo *tre* pendenze, invece nel caso della tre *"dimentichiamo"* una di queste pendenze per prendere in considerazione solo due.
 
@@ -24,7 +24,7 @@ stato: "1"
 ![[Pasted image 20231128214919.png]]
 
 #Osservazione 
-> [!oss] Osservazione 1.2. (sulle implicazioni)
+> [!rmk] sulle implicazioni
 > Al fine della dimostrazione osserviamo che
 > $$1 \iff 2 \iff 3$$
 > è equivalente a dire che
@@ -56,14 +56,14 @@ Allora scrivo la *combinazione lineare* $x_1 < \lambda x_1 + (1-\lambda)x_2 < x_
 # 2. Secondo teorema di caratterizzazione mediante la derivata seconda
 
 #Teorema 
-> [!thm] Teorema 2.1. (di caratterizzazione mediante la derivata seconda)
+> [!thm] di caratterizzazione mediante la derivata seconda
 > Sia $f: I \longrightarrow \mathbb{R}$, $f$ *derivabile* ([[Derivata e derivabilità#^12c1df]]).
 > Allora
 > $$\boxed{f \text{ convessa}\iff f' \text{ crescente} \iff \forall x_0 \in I, f(x_0)+f'(x_0)(x-x_0) \leq f(x)}$$
 ^318646
 
 #Corollario 
-> [!cor] Corollario 2.1. (di caratterizzazione mediante il segno della derivata seconda) 
+> [!cor] di caratterizzazione mediante il segno della derivata seconda 
 > Sia $f: I \longrightarrow \mathbb{R}$, $f \in C^2$ ([[Derivata Successiva e Classe C#^dbae48]]); ovvero $f$ derivabile fino al *secondo ordine* $f''$.
 > Allora
 > $$\boxed{f \text{ convessa}\iff f' \text{ crescente}\iff f''(x) > 0, \forall x \in I} $$
@@ -93,7 +93,7 @@ Invece la terza implicazione, ovvero che per ogni *tangente* del punto $x_0$ sta
 ![[Pasted image 20231128230803.png]]
 
 #Osservazione 
-> [!oss] Osservazione 2.1. (interpretazione grafica alternativa, approfondimento personale)
+> [!rmk] interpretazione grafica alternativa, approfondimento personale
 > *Approfondimento personale tratto da: Le Matematiche di A. D. Aleksandrov, A. N. Kolmogorov, M. A. Lavrent'ev (1974)*
 > - - -
 > Volendo si può dare una interpretazione grafica al fatto che la *il segno della derivata prima* attribuisce la *concavità* o la *convessità* di una funzione; però prima consideriamo il fatto che *il segno della derivata prima* determina la *crescenza* o la *decrescenza* della funzione.
@@ -116,12 +116,12 @@ Invece la terza implicazione, ovvero che per ogni *tangente* del punto $x_0$ sta
 
 ## Punto di flesso
 #Definizione 
-> [!def] Definizione 2.1. (punto di flesso)
+> [!def] punto di flesso
 > Sia $f: I \longrightarrow \mathbb{R}$.
 > Sia $x_0 \in I$; supponiamo che $f$ sia *continua* in $x_0$.
 > Allora $x_0$ si dice *punto di flesso* se si verificano entrambe le condizioni:
 > $$\begin{cases}x_0 \in I \cap (-\infty, x_0), f\text{ è convessa (concava)} \\ x_0 \in I \cap (x_0, +\infty), f \text{ è concava (convessa)}\end{cases}$$
 
 #Osservazione 
-> [!oss] Osservazione 2.1.
+> [!rmk] Osservazione 2.1.
 > Se $f: I \longrightarrow \mathbb{R}$, $f$ derivabile fino al *secondo ordine*, e supponendo che *prima di* $x_0$ si ha $f''(x_0) \leq 0$ e *dopo di* $x_0$ si ha $f''(x_0) \geq 0$, allora $x_0$ è di *flesso*. Vale lo stesso se si ha il viceversa.

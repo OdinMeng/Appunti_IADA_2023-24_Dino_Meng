@@ -9,7 +9,7 @@ stato: "1"
 - - -
 # 1. Definizione del polinomio caratteristico di $f$
 #Definizione 
-> [!def] Definizione 1.1. (polinomio caratteristico di un'applicazione lineare)
+> [!def] polinomio caratteristico di un'applicazione lineare
 > Sia $f: V \longrightarrow V$ un'*applicazione lineare* con $\dim V=n$ ([[Definizione di Applicazione Lineare#^9b39f9]]).
 > Consideriamo ora l'autovalore $\lambda$ come un *parametro/incognita/variabile*; formiamo quindi il determinante
 > $$\det(M^\mathcal{B}_\mathcal{B}(f) - \lambda \cdot \operatorname{id}_V)$$
@@ -19,7 +19,7 @@ stato: "1"
 ^b7816e
 
 #Osservazione 
-> [!oss] Osservazione 1.1. (utilità del polinomio caratteristico)
+> [!rmk] utilità del polinomio caratteristico
 > Tenendo in conto le considerazioni fatte sulle *applicazioni lineari diagonalizzabili*, in particolare sui suoi *autovalori* ([[Proposizioni sulle Applicazioni Lineari Diagonalizzabili#^b8112c]]), questa definizione del *polinomio caratteristico* $P_f(\lambda)$ serve per *trovare* gli autovalori di $f$: basta porre infatti
 > $$\boxed{P_f(\lambda) = 0}$$ 
 > e risolvere tale equazione.
@@ -28,7 +28,7 @@ stato: "1"
 
 # 2. Esempio
 #Esempio 
-> [!ex] Esempio 2.1. (esempio)
+> [!exm] esempio
 > Considerare $f: \mathbb{R}^2 \longrightarrow \mathbb{R}^2$, ove
 > $$f\begin{pmatrix}x \\ y\end{pmatrix} = \begin{pmatrix}x+y \\ 2x+2y\end{pmatrix}$$
 > Con la sua *base canonica*

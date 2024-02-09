@@ -19,8 +19,8 @@ capitolo:
 - [[Teorema della Media Integrale]]
 # 1. Enunciato del teorema di Torricelli-Barrow
 #Teorema 
-> [!thm] Teorema 1.1. (di Torricelli-Barrow)
-> Sia $f: [a,b] \longrightarrow \mathbb{R}$ *continua* nel dominio ([[Definizione di continuità#^ddf65d]]).
+> [!thm] di Torricelli-Barrow
+> Sia $f: [a,b] \longrightarrow \mathbb{R}$ *continua* nel dominio ([[Definizione di Continuità#^ddf65d]]).
 > Allora $f$ è *integrabile* ([[Tipologie di Funzioni Integrabili#^dd4f09]]).
 > Ha senso dunque considerare la sua *funzione integrale* ([[Funzione Integrale#^e5e02b]]), 
 > $$F(x) = \int_a^x f(t) dt$$
@@ -47,7 +47,7 @@ $$\lim_{x \to \bar x}R^F_\bar{x}(x) = \lim_{x \to \bar x}f(\xi) \underbrace{\imp
 ![[Pasted image 20231212161929.png]]
 # 2. Conseguenze del teorema di Torricelli-Barrow
 #Corollario 
-> [!cor] Corollario 2.1. (l'integrale è la differenza tra le primitive calcolate negli estremi)
+> [!cor] l'integrale è la differenza tra le primitive calcolate negli estremi
 > Sia $G$ una *primitiva* di $f$, che è *continua* in $[a,b]$, allora si ha
 > $$\boxed{\int_a^b f(t) dt = G(b)-G(a)}$$
 ^981032
@@ -65,5 +65,5 @@ Infine scrivo
 $$\int_a^b f(t) dt = F(b) = G(b)+c =G(b)-G(a) \ \blacksquare$$
 
 #Osservazione 
-> [!oss] Osservazione 2.1. (lo spostamento del problema del calcolo integrale)
+> [!rmk] lo spostamento del problema del calcolo integrale
 > Questo corollario è importante, dato che da questo momento il problema del *calcolo integrale* diventa quello di *trovare le primitive* di una funzione.

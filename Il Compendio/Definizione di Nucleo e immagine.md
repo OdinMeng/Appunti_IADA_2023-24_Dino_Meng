@@ -9,7 +9,7 @@ stato: "1"
 - - -
 # 1. Nucleo
 #Definizione 
-> [!def] Definizione 1.1. (nucleo di un'applicazione lineare)
+> [!def] nucleo di un'applicazione lineare
 > Sia $f: V \longrightarrow V'$ un'*applicazione lineare* ([[Definizione di Applicazione Lineare#^9b39f9]]).
 > Definiamo il *nucleo* di $f$ come il *sottoinsieme* definito da
 > $$\ker f = \{v \in V | f(v) = 0\} $$
@@ -17,7 +17,7 @@ stato: "1"
 > Quindi è immediato verificare che $\ker f \subseteq V$.
 # 2. Immagine
 #Definizione 
-> [!def] Definizione 2.1. (immagine di un'applicazione lineare)
+> [!def] immagine di un'applicazione lineare
 > Sia $f: V \longrightarrow V'$ un'*applicazione lineare*.
 > Si definisce invece l'*immagine* di $f$ come il sottoinsieme
 > $$

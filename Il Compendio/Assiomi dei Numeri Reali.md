@@ -9,11 +9,11 @@ stato: "1"
 - - -
 # 1. Preambolo
 #Osservazione 
-> [!oss] Osservazione 1.1. (la necessità di costruire un nuovo insieme di numeri)
+> [!rmk] la necessità di costruire un nuovo insieme di numeri
 Dopo aver dedotto che i numeri [razionali](Richiami%20sui%20Numeri%20Razionali) non sono abbastanza *"estesi"* per poter rappresentare alcuni numeri (come la misura di $\sqrt{2}$), costruiamo i *numeri reali $\mathbb{R}$* con degli *assiomi* e *definendo* delle *operazioni* di *addizione* e *moltiplicazione*. Nominiamo questi assiomi come *A)*, *M)*, *O)* e *S)*.
 
 #Definizione 
-> [!def] Definizione 1.1. (il campo dei reali)
+> [!def] il campo dei reali
 Definiamo quindi il *campo* $$ (\mathbb{R}, +, \cdot)$$ovvero un insieme dotato di due operazioni che hanno le proprietà elencate qua sotto.
 # 2. Assiomi A)
 #Assioma
@@ -42,7 +42,7 @@ Definiamo quindi il *campo* $$ (\mathbb{R}, +, \cdot)$$ovvero un insieme dotato 
 **O2)** Compatibilità di $\leq$ dell'ordinamento con il prodotto: $\forall x, y, z,$ $$x \leq y \land 0 \leq z \implies x\cdot z \leq y \cdot z$$
 # 6. Assioma S) (di Dedekind o di separazione)
 #Osservazione 
-> [!oss] Osservazione 6.1. (la necessità di trovare un "assioma speciale" per i reali)
+> [!rmk] la necessità di trovare un "assioma speciale" per i reali
 Notiamo che avendo definito $$(\mathbb{R}, +, \cdot, \geq)$$con gli assiomi *A)*, *M)*, *D)* e *O)* questi non possono bastare, in quanto i numeri razionali $\mathbb{Q}$ godono delle stesse proprietà; infatti bisogna definire delle regole speciale, in particolare *l'assioma di Dedekind*, oppure nota come *l'assioma di separazione*.
 
 #Assioma 
@@ -55,5 +55,5 @@ Ovvero, graficamente, la *figura S.1.*.
 ![[Pasted image 20231009204435.png]]
 
 #Osservazione 
-> [!oss] Osservazione 6.2. (Dedekind non vale per $\mathbb{Q}$)
+> [!rmk] Dedekind non vale per $\mathbb{Q}$
 Questa proprietà non vale per $\mathbb{Q}$, infatti se definiamo gli insiemi $$\begin{align}& A = \{\forall a \in \mathbb{Q}: a^2 < 2\}\\ &B = \{ \forall b \in \mathbb{Q}: a^2 > 2\}\end{align}$$notiamo che tra $A$ e $B$ c'è un *buco* che non potrà mai essere colmato, in quanto $\sqrt{2} \not \in \mathbb{Q}$. (dimostrazione più rigorosa sul file di Del Santo)

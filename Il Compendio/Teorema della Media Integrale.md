@@ -17,8 +17,8 @@ capitolo:
 - [[Teorema di Torricelli-Barrow]] (ai fini della dimostrazione)
 # 1. Enunciato del teorema
 #Teorema 
-> [!thm] Teorema 1.1. (della media integrale)
-> Sia $f:[a,b] \longrightarrow \mathbb{R}$ *continua* ([[Definizione di continuità#^d2f56f]]), pertanto *integrabile secondo Riemann* ([[Integrabilità secondo Riemann#^5455b8]]).
+> [!thm] della media integrale
+> Sia $f:[a,b] \longrightarrow \mathbb{R}$ *continua* ([[Definizione di Continuità#^d2f56f]]), pertanto *integrabile secondo Riemann* ([[Integrabilità secondo Riemann#^5455b8]]).
 > Allora per *esiste un valore nell'intervallo per cui l'immagine del valore sia uguale all'integrale della funzione diviso per la base*
 > $$\exists \xi \in [a,b]: f(\xi) = \frac{1}{b-a}\int_a^b f(t) dt$$
 ^c2f053

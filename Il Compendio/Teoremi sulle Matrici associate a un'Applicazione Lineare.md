@@ -9,7 +9,7 @@ stato: "1"
 - - -
 # 1. Primo risultato relativo alle coordinate
 #Teorema 
-> [!thm] Teorema 1.1. (relazione tra le coordinate rispetto alle basi)
+> [!thm] relazione tra le coordinate rispetto alle basi
 > Sia $f: V \longrightarrow V'$ un'*applicazione lineare* tra *spazi vettoriali* di *dimensione finita* ([[Definizione di Applicazione Lineare#^9b39f9]], [[Spazi Vettoriali#^74efce]], [[Dimensione#^3a9321]]).
 > Siano $\mathcal{B}, \mathcal{C}$ rispettivamente *basi* di $V, V'$ ([[Definizione di Base#^def430]]). In particolare sia $\mathcal{B} = \{v_1, \ldots, v_n\}$
 > Fissiamo $v$ un vettore di $V$; $v \in V$
@@ -25,11 +25,11 @@ La dimostrazione è omessa in quanto è *"semplice"* visto che basta scrivere le
 Consiglio: definire $f(v_i)$ in un certo modo e usare un *"trick"* in cui si sfrutta il fatto che $f$ soddisfa le proprietà delle applicazioni lineari.
 
 #Osservazione 
-> [!oss] Osservazione 1.1. (interpretazione grafica)
+> [!rmk] interpretazione grafica
 > Come *"interpretazione grafica"* di questo teorema possiamo avvalerci dell'*esempio 2.2.* sui *diagrammi commutativi* ([[Diagramma Commutativo#^d97de6]]).
 # 2. Secondo risultato relativo alla composizione
 #Teorema 
-> [!thm] Teorema 2.1. (matrice associata della composizione delle applicazioni lineari)
+> [!thm] matrice associata della composizione delle applicazioni lineari
 > Siano $f: V \longrightarrow V'$, $g: V' \longrightarrow V''$ due *applicazioni lineari* tra *spazi vettoriali* di *dimensione finita*.
 > Siano $\mathcal{B}, \mathcal{C}, \mathcal{D}$ rispettivamente le *basi* di $V, V', V''$.
 > Allora possiamo considerare la *composizione* $g \circ f: V \longrightarrow V''$ e vale che

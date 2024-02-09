@@ -9,8 +9,8 @@ stato: "1"
 - - -
 # 1. Enunciato del teorema di Cauchy
 #Teorema 
-> [!thm] Teorema 1.1. (di Cauchy)
-> Siano $f, g: [a,b] \longrightarrow \mathbb{R}$ *continue* in $[a, b]$ ([[Definizione di continuità#^ddf65d]]), *derivabili* in $]a, b[$ ([[Derivata e derivabilità#^6e7606]]).
+> [!thm] di Cauchy
+> Siano $f, g: [a,b] \longrightarrow \mathbb{R}$ *continue* in $[a, b]$ ([[Definizione di Continuità#^ddf65d]]), *derivabili* in $]a, b[$ ([[Derivata e derivabilità#^6e7606]]).
 > Sia inoltre $\forall x \in \ ]a, b[\ , g'(x) \neq 0$. (*ipotesi supplementare*)
 > Allora vale che
 > $$\boxed{\exists \xi \in \ ]a, b[\ : \frac{f'(\xi)}{g'(\xi)}=\frac{f(b)-f(a)}{g(b)-g(a)}} $$ 
@@ -41,14 +41,14 @@ Ora considero la sua derivata $\Phi'$ e la *"calcoliamo"* in $\xi$. Svolgendo i 
 $$\begin{align} \Phi'(x) &= \left(f(x)(g(b)-g(a))\right)'-\left(g(x)(f(b)-f(a)\right)' \\ &= f'(x)(g(b)-g(a))-g'(x)(f(b)-f(a)) \\ \implies \Phi'(\xi) &= f'(\xi)(g(b)-g(a))-g'(\xi)(f(b)-f(a)) = 0 \\ &=\boxed{\frac{f'(\xi)}{g'(\xi)} = \frac{f(b)-f(a)}{g(b)-g(a)}} \ \blacksquare\end{align}$$
 
 #Osservazione 
-> [!oss] Osservazione 2.1. (anche se non vale l'ipotesi aggiuntiva il teorema di Cauchy vale fino ad un certo punto)
+> [!rmk] anche se non vale l'ipotesi aggiuntiva il teorema di Cauchy vale fino ad un certo punto
 Se nel *teorema di Cauchy* ([[#^0c9255]]) supponessimo di *non* far valere l'ipotesi aggiuntiva $g'(x)\neq 0$, allora si potrebbe comunque dire che
 $$\boxed{\exists \xi \in \ ]a, b[ \ : f'(\xi)(g(b)-g(a)) = g'(\xi)(f(b)-f(a))} $$
 # 3. Interpretazione grafica
 *Nota: qui si consiglia fortemente prima di leggere l'interpretazione grafica del teorema di Lagrange ([[Teorema di Lagrange]]) per poter capire bene questa osservazione.*
 
 #Osservazione 
-> [!oss] Osservazione 3.1. (interpretazione grafica del teorema di Cauchy)
+> [!rmk] interpretazione grafica del teorema di Cauchy
 **OSS 3.1.** (*Interpretazione grafica*) Con il *teorema di Lagrange* abbiamo visto che la sua interpretazione grafica consiste nell'intravedere che esiste un punto per il quale la sua tangente è parallela alla retta secante di $a,b$ ([[Teorema di Lagrange#^a12a1e]]).
 Ora ci chiediamo come sarebbe possibile interpretare il *teorema di Cauchy* da un punto di vista grafico.
 >
@@ -74,5 +74,5 @@ Di conseguenza abbiamo la *condizione di parallelismo* ([[Geometria del Piano Af
 ![[Pasted image 20231123183001.png]]
 
 #Osservazione 
-> [!oss] Osservazione 3.2. (Cauchy vale in $\mathbb{R}^3$?)
+> [!rmk] Cauchy vale in $\mathbb{R}^3$?
 Vedere [[Conseguenze del teorema di Cauchy e di Lagrange]] in quanto la ritengo una pagina più appropriata per contenere tale informazione. Vedere l'*osservazione 1.2.*.

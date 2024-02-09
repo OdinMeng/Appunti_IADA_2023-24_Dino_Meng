@@ -11,16 +11,16 @@ capitolo:
 - - -
 # 0. Prerequisiti e/o voci correlate
 - [[Funzioni]]
-- [[Definizione di continuità]]
+- [[Definizione di Continuità]]
 - [[Integrabilità secondo Riemann]]
 - [[Funzione Integrale]]
 - [[Derivata e derivabilità]]
 - [[Rapporto Incrementale]]
 # 1. Enunciato del Teorema F.C.I.
 #Teorema 
-> [!thm] Teorema 1.1. (fondamentale del calcolo integrale)
+> [!thm] fondamentale del calcolo integrale
 > Sia $f: [a,b] \longrightarrow \mathbb{R}$ una funzione *integrabile secondo Riemann* ([[Integrabilità secondo Riemann#^5455b8]]), ovvero $f \in \mathcal{R}([a,b])$.
-> Sia $\bar{x} \in [a,b]$. Sia $f$ *continua* in $\bar{x}$ ([[Definizione di continuità#^ddf65d]]).
+> Sia $\bar{x} \in [a,b]$. Sia $f$ *continua* in $\bar{x}$ ([[Definizione di Continuità#^ddf65d]]).
 > Sia $F(x)$ l'*Integralfunktion* di $f$ ([[Funzione Integrale#^e5e02b]]), ovvero
 > $$F(x)=\int_a^x f(x) \ dx$$
 > Allora $F$ è *derivabile* in $\bar{x}$ e vale che
@@ -56,7 +56,7 @@ che è proprio la *definizione* del *limite*
 $$\lim_{x \to \bar x}R^F_\bar x (x) = f(\bar x) \implies \boxed{F'(\bar{x}) = f(\bar x)} \ \blacksquare$$
 # 2. Conseguenze del teorema
 #Corollario 
-> [!cor] Corollario 2.1. (primitivabilità delle funzioni continue)
+> [!cor] primitivabilità delle funzioni continue
 > Se $f$ è *continua*, allora $f$ è *primitivabile* ([[Primitiva di una Funzione#^5b45ed]]) e la sua funzione integrale è *una* sua primitiva.
 ^796d23
 
@@ -65,5 +65,5 @@ Questo corollario segue *direttamente* dal *teorema fondamentale del calcolo int
 Inoltre nella dispensa si trova una *dimostrazione alternativa*.
 
 #Corollario 
-> [!cor] Corollario 2.2. (teorema di Torricelli-Barrow)
+> [!cor] teorema di Torricelli-Barrow
 > Vedere la pagina [[Teorema di Torricelli-Barrow]] dato che è possibile dimostrarla senza l'ausilio del *"teorema padre"*, ovvero il *teorema fondamentale del calcolo integrale*.

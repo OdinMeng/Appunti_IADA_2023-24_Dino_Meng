@@ -12,14 +12,14 @@ capitolo: Cinese
 # Numeri da 1 a 10
 *Uno, due, tre, quattro, cinque, sei, sette, otto, nove, dieci*
 **yī, èr, sān, sì, wǔ, liù, qī, bā, jiǔ, shí** (一二三四五六七八九十)
-![[Pasted image 20240130211158.png]]
+![[Pasted image 20240130211158 1.png]]
 # Cento, mille, diecimila
 - *Cento*: bǎi 百
-![[Pasted image 20240130212312.png]]
+![[Pasted image 20240130212312 1.png]]
 - *Mille*: qiān 千
-![[Pasted image 20240130212452.png]]
+![[Pasted image 20240130212452 1.png]]
 - *Diecimila*: wàn 万
-![[Pasted image 20240130212603.png]]
+![[Pasted image 20240130212603 1.png]]
 # Esercizio sui numeri cinesi
 > [!exr] Esercizio cinese divertente
 > Scrivere tutti i numeri da 1 a 99.999 in cinese.

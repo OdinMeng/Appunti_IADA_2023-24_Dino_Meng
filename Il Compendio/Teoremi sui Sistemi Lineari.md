@@ -11,13 +11,13 @@ stato: "1"
 Presentiamo dei teoremi importanti sui [[Sistemi Lineari]].
 ## Teorema di Cramer
 #Teorema 
-> [!thm] Teorema 1.1. (di Cramer)
+> [!thm] di Cramer
 Considero un sistema lineare con $n$ equazioni ed $n$ incognite, di forma $$A\cdot X = b$$Ovvero $A \in M_{n}(K)$.
 Ora supponiamo che $A$ sia anche *invertibile* ([[Matrice]], **DEF 2.6.**); allora da qui discende che esiste un'*unica soluzione* $S$ del sistema lineare ed essa è data da $$S = A^{-1}\cdot b$$ 
 ^97243e
 
 #Osservazione 
-> [!oss] Osservazione 1.1. (l'importanza del teorema di Cramer)
+> [!rmk] l'importanza del teorema di Cramer
 Questo teorema è molto importante in quanto ci dà due dati importanti:
 Da un lato ci dice quando un *sistema lineare* è *compatibile*, quindi c'è questa componente *"esistenziale"* di questo teorema; dall'altro lato ci fornisce una formula per *calcolare* la soluzione.
 
@@ -31,12 +31,12 @@ La dimostrazione si struttura in due parti:
 2. Ora supponiamo per assurdo che esiste un'altra soluzione $S'$ sia un'altra soluzione; allora per definizione questa verifica $$\begin{align} &A \cdot S' = b \\ &A^{-1}\cdot(A\cdot S') = A^{-1}\cdot b \text{ (!)}\\ &(A^{-1}\cdot A)\cdot S' = A^{-1} \cdot b \\ &S' = A^{-1} \cdot b\end{align}$$che è esattamente uguale alla soluzione proposta dal teorema di *Cramer*; quindi esiste solo la soluzione $S = A^{-1} \cdot b$.
 
 #Osservazione 
-> [!oss] Osservazione 1.2. (attenzione su $(!)$)
+> [!rmk] attenzione su $(!)$
 Focalizziamoci sulla parte contrassegnata con *(!)*; notiamo che abbiamo moltiplicato da ambo le parti per $A^{-1}$ a *SINISTRA*, e non a *DESTRA*; infatti nel contesto delle *matrici* la moltiplicazione a *sinistra* può comportarsi diversamente da quella a *destra*; infatti se avessimo moltiplicato a *destra*, tutta l'espressione avrebbe perso senso in quanto avremmo ottenuto $b \cdot A^{-1}$ in quanto moltiplichiamo una matrice $n \times 1$ per $n \times n$, che non è definita.
 
 ## Teorema di struttura per i sistemi lineari omogenei
 #Teorema 
-> [!thm] Teorema 1.2. (di strutture per le soluzione dei sistemi lineari omogenei)
+> [!thm] di strutture per le soluzione dei sistemi lineari omogenei
 Considero un *sistema lineare omogeneo* di $m$ equazioni in $n$ incognite. Ovvero $$A \cdot X = 0$$dove $A = M_{m,n}(K)$ e $X = K^{n}$, $0$ è la *matrice nulla* ([[Matrice#^c2c598]]). 
 Poi siano $s, s' \in K^n$ due soluzioni distinte e sia $\lambda \in K$, allora:
 >1. $s + s'$ è soluzione
@@ -46,11 +46,11 @@ Pertanto ricordandoci che il vettore (o la matrice) nullo/a è *sempre* soluzion
 ^598cf8
 
 #Osservazione 
-> [!oss] Osservazione 1.3.
+> [!rmk] Osservazione 1.3.
 Notiamo che in questo teorema ci interessa *il sistema lineare* sé stesso, invece nel *TEOREMA 1.1.* (di Cramer) ci interessava solo la *matrice* dei coefficienti $A$
 
 #Osservazione 
-> [!oss] Osservazione 1.4. (osservazione preliminare)
+> [!rmk] osservazione preliminare
 Dati un $A \in M_{m,n}(K)$ e un $s = K^n$ e un $\lambda \in K$ allora abbiamo $$A \cdot (\lambda \cdot s) = \lambda \cdot( A \cdot s)$$
 
 #Dimostrazione 
@@ -66,19 +66,19 @@ Ora siamo pronti per concludere la dimostrazione.
    il che è vera. $\blacksquare$
 ## Osservazione sui teoremi precedenti
 #Osservazione 
-> [!oss] Osservazione 1.5. (possiamo combinare i due teoremi appena visti)
+> [!rmk] possiamo combinare i due teoremi appena visti
 Osserviamo che possiamo *"combinare"* questi due teoremi e verificare un fenomeno: 
 Sia $A \in M_n(K)$ e supponiamo che questa matrice sia anche *invertibile*; ora consideriamo il sistema lineare *omogeneo* $$A \cdot X = 0$$
 Allora da qui discende che $0$ è *l'unica* soluzione di questo sistema. 
 Infatti $\lambda \cdot 0 = 0$ e $0 + 0 = 0$ sono anche *soluzioni* in quanto sono uguali all'*unica soluzione* $0$.
 ## Teorema di struttura per i sistemi lineari arbitrari
 #Teorema 
-> [!thm] Teorema 1.3. (di struttura per i sistemi lineari arbitrari)
+> [!thm] di struttura per i sistemi lineari arbitrari
 Considero un *sistema lineare* $$A \cdot X = b$$con $A \in M_{m,n}(K)$ e $b \in K^n$. Sia $\tilde{s}$ una soluzione; allora un elemento $s \in K^n$ è soluzione di questo sistema lineare *se e solo* se possiamo scrivere $$s = \tilde{s} + s_0$$dove $s_0$ è una soluzione del *sistema lineare omogeneo* $$A \cdot X = 0$$
 In altre parole l'insieme delle soluzione di $A \cdot X = b$ è $$S = \{s \in K^n: s=\tilde{s} + s_0\ \text{ per un qualche }s_0 \text{ sia soluzione di }Ax =0\}$$
 
 #Definizione 
-> [!def] Definizione 1.1. (sistema lineare omogeneo associato)
+> [!def] sistema lineare omogeneo associato
 Il *sistema lineare omogeneo* $A \cdot X = 0$ si dice il *sistema lineare omogeneo associato* al sistema $A \cdot X = b$. 
 ^49a263
 
@@ -93,7 +93,7 @@ Questo teorema, da un punto di vista logico, vuole dire che $$\text{s è soluzio
 Abbiamo finalmente concluso la dimostrazione.
 
 #Osservazione 
-> [!oss] Osservazione 1.6. (l'insieme delle soluzioni costituisce un sottospazio vettoriale)
+> [!rmk] l'insieme delle soluzioni costituisce un sottospazio vettoriale
 Notiamo che l'insieme $S$ delle soluzioni di un sistema $AX = b$ forma un *sottospazio vettoriale* ([[Sottospazi Vettoriali]]) di $K^n$ *se e solo se* $b=0$. Infatti:
 >Supponendo che $S$ sia uno sottospazio vettoriale, allora abbiamo che le proprietà caratterizzanti di uno sottospazio vengano rispettate; ad esempio il *vettore nullo* $0$ è soluzione. Infatti se $b=0$, allora sicuramente anche $s=0$ è soluzione.
 >
@@ -102,7 +102,7 @@ Notiamo che l'insieme $S$ delle soluzioni di un sistema $AX = b$ forma un *sotto
 Avendo sviluppato questi teoremi come dei *strumenti* per risolvere dei *sistemi lineari*, vediamo degli esempi.
 
 #Esempio 
-> [!ex] Esempio 2.1.
+> [!exm] Esempio 2.1.
 Consideriamo il seguente sistema lineare a coefficienti in $\mathbb{Q}$. $$\begin{cases}x+2y-3z=-1 \end{cases}$$ovvero in forma compatta $$\begin{pmatrix}1 & 2 & -3 \end{pmatrix}\begin{pmatrix} x\\y\\z\end{pmatrix} = \begin{pmatrix}-1 \end{pmatrix}$$e possiamo, ad esempio, considerare una soluzione semplice del tipo $$\tilde{s} = \begin{pmatrix}-1 \\ 0 \\ 0 \end{pmatrix}$$Ora per *calcolare* tutte le soluzioni usiamo il *teorema di struttura per i sistemi lineari arbitrari* (**TEOREMA 1.4.**); determiniamo dunque *tutte* le soluzioni del sistema omogeneo associato, ovvero $$Ax = 0 \implies \begin{pmatrix} 1 & 2 & -3\end{pmatrix}\begin{pmatrix}x \\ y \\ z \end{pmatrix} = \begin{pmatrix} 0\end{pmatrix}$$Vediamo che il sistema è equivalente a  $$x+2y-3z = 0 $$Quindi possiamo ad assegnare un qualsiasi valore appartenente al campo $\mathbb{Q}$ $u$ a $y$ e $v$ a $z$. (in altre parole poniamo $y = u, z=v, u,v \in \mathbb{Q}$)
 >
 Possiamo allora determinare il corrispondente di $x$ come $$x = 3v-2u$$

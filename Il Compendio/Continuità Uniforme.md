@@ -8,10 +8,10 @@ stato: "1"
 *Osservazioni preliminari, definizione di continuità uniforme, esempi. Teorema di Heine.*
 - - -
 # 0. Osservazione preliminare
-La seguente osservazione si baserà sul concetto della *continuità* ([[Definizione di continuità]]).
+La seguente osservazione si baserà sul concetto della *continuità* ([[Definizione di Continuità]]).
 
 #Osservazione 
-> [!oss] Osservazione 0.a. (osservazione preliminare)
+> [!rmk] osservazione preliminare
 Supponiamo di avere una funzione continua $f: E \longrightarrow \mathbb{R}$, $x_0 \in E$. 
 Per definizione sappiamo *"tradurre"* il concetto della *continuità* di una funzione per un punto $x_0$ *"alla Cauchy"*, ovvero:
 $$f \text{ continua in } x_0 \iff \begin{gather}\forall \varepsilon >0, \exists\delta >0: \forall x \in E, \\|x-x_0| < \delta \implies |f(x)-f(x_0)|< \varepsilon \end{gather}$$
@@ -23,14 +23,14 @@ Infatti se trovo un $\delta$ che va bene per *tutti* i punti del dominio, allora
 
 # 1. Definizione di continuità uniforme
 #Definizione 
-> [!def] Definizione 1.1. (funzione uniformemente continua)
+> [!def] funzione uniformemente continua
 > Data una funzione $f : E \longrightarrow \mathbb{R}$, diciamo che $f$ è *uniformemente continua* se vale la seguente proprietà.
 > $$\begin{gather} \forall \varepsilon >0, \exists \delta>0: \forall x_1,x_2 \in E, \\ |x_1-x_2| < \delta \implies |f(x_1)-f(x_2)|<\varepsilon \end{gather}$$
 
 **OSS 1.1.** Notiamo quindi che se una funzione è *uniformemente continua* è anche (ovviamente) *continua*. Attenzione però che non vale necessariamente il *viceversa*.
 
 #Esempio 
-> [!ex] Esempio 1.1.
+> [!exm] Esempio 1.1.
 > Sia $f(x) = 1$ con $E = [0,1]$;
 > sia $g(x) = x$ con $E = [0,1]$;
 > sia $h(x) = \frac{1}{x}$ con $E = \ ]0, +\infty[$.
@@ -48,13 +48,13 @@ Infatti se trovo un $\delta$ che va bene per *tutti* i punti del dominio, allora
 
 # 2. Teorema di Heine (dell'uniforme continuità)
 #Teorema 
-> [!thm] Teorema 2.1. (di Heine)
+> [!thm] di Heine
 > Sia $f: [a, b] \longrightarrow \mathbb{R}$ *continua* e sia $[a,b]$ *compatta* ([[Insiemi compatti in R#^0eb138]]).
 > Allora $f$ è *uniformemente continua*.
 ^d030d1
 
 #Osservazione 
-> [!oss] Osservazione 2.1. 
+> [!rmk] Osservazione 2.1. 
 > Quindi in generale si può dire che una funzione $f$ è uniformemente continua *se e solo* se continua, se vale la ipotesi iniziale del teorema: ovvero se $[a,b]$ *chiusa e limitata*, ovvero *compatta*.
 
 #Dimostrazione 

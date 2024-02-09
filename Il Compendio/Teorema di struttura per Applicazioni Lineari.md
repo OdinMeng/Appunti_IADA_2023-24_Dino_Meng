@@ -11,7 +11,7 @@ stato: "1"
 Ora vediamo come un'*applicazione lineare* è completamente determinata da dove *"finiscono"* le basi.
 
 #Teorema 
-> [!thm] Teorema 1.1. (di struttura per le applicazioni lineari)
+> [!thm] di struttura per le applicazioni lineari
 > Siano $V, V'$ due *spazi vettoriali* di $K$, finitamente generati ([[Dimensione#^3a9321]]).
 > **ATTENZIONE!** Ciò non deve necessariamente significare che le loro dimensioni devono coincidere.
 > Allora prendendo $\mathcal{B}$ una base del dominio del tipo
@@ -73,7 +73,7 @@ Inoltre notiamo che abbiamo *solo* usato il fatto che $\mathcal{B}$ è un *siste
 
 # 4. Esempio
 #Esempio 
-> [!ex] Esempio 4.1. (esempio su $\mathbb{R}^2$ su base canonica $\mathcal{E}$)
+> [!exm] esempio su $\mathbb{R}^2$ su base canonica $\mathcal{E}$
 > Considero in $\mathbb{R}^2$ la sua base standard $\mathcal{E} = (e_1, e_2)$, dove
 > $$e_1 = \begin{pmatrix}1 \\ 0 \end{pmatrix}; e_2 = \begin{pmatrix} 0 \\ 1\end{pmatrix}$$
 > Ora considero due elementi qualsiasi in $\mathbb{R}^2$
@@ -87,7 +87,7 @@ Inoltre notiamo che abbiamo *solo* usato il fatto che $\mathcal{B}$ è un *siste
 > $$ f\begin{pmatrix}x \\ y \end{pmatrix} = x \cdot \begin{pmatrix} 2 \\ 3\end{pmatrix} +  y \cdot \begin{pmatrix}-1 \\ 4 \end{pmatrix} = \begin{pmatrix}2x-y \\ 3x+4y \end{pmatrix}$$
 
 #Esempio 
-> [!ex] Controesempio 4.1. (quando non può esistere la funzione)
+> [!exm] quando non può esistere la funzione
 > Osserviamo che invece non può esistere un'applicazione lineare tale che
 > $$ \begin{gather}f\begin{pmatrix}1 \\ 0 \end{pmatrix} = \begin{pmatrix}1 \\ 2 \end{pmatrix}\\ f \begin{pmatrix}0 \\ 1 \end{pmatrix} = \begin{pmatrix}-1 \\ 1 \end{pmatrix}\\ f\begin{pmatrix}1 \\ 1 \end{pmatrix} = \begin{pmatrix}11 \\ 17 \end{pmatrix} \end{gather}$$
 > In quanto questi tre elementi non sono *linearmente indipendenti*, quindi non formano una *base* per $\mathbb{R}^2$.

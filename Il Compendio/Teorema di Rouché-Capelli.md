@@ -9,7 +9,7 @@ stato: "1"
 - - -
 # 1. Enunciato
 #Teorema 
-> [!thm] Teorema 1.1. (di Rouché-Capelli)
+> [!thm] di Rouché-Capelli
 > Sia $A \in M_{m,n}(K)$ una *matrice*, sia $b \in K^m$ un *"vettore-colonna"*.
 > Allora il *sistema lineare* composto da
 > $$A \cdot x = b $$
@@ -69,7 +69,7 @@ $$ s = \tilde{s} + t_1w_1 + \ldots +t_kw_k \ \blacksquare$$ ^fe5f64
 Dalla dimostrazione di questo teorema segue il seguente corollario.
 
 #Corollario 
-> [!cor] Corollario 3.1. (del teorema di Rouché-Capelli)
+> [!cor] del teorema di Rouché-Capelli
 Sia $A \in M_{m,n}(K)$.
 Allora $\operatorname{rg}(A)=n$ (ovvero il rango è il *massimo* possibile) se e solo se per ogni $b \in K^n$ il sistema lineare $Ax = b$ è *compatibile*.
 $$\boxed{\operatorname{rg}(A) = n \iff \forall b \in K^n, \exists s \in K^m: As = b} $$
@@ -84,7 +84,7 @@ $$ \begin{align}\operatorname{rg}(A) \ &\iff \dim(\operatorname{span}(A^{(1)}, \
 $\blacksquare$
 # 4. Esempio
 Vediamo un esempio che fa uso di questo teorema.
-> [!ex] Esempio 4.1.
+> [!exm] Esempio 4.1.
 Considero il sistema lineare
 $$\begin{cases}x_1-2x_2+3x_3-x_4 = 1 \\ x_2-x_4 = 2 \end{cases}$$
 Lo *"traduciamo"* in termini di matrici e vettori colonna:

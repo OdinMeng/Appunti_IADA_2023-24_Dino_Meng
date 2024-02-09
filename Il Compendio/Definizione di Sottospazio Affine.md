@@ -16,7 +16,7 @@ capitolo: Geometria Affine
 - [[Spazio Affine su K]]
 # 1. Definizione di Sottospazio Affine
 #Definizione 
-> [!def] Definizione 1.1. (sottospazio affine passante per Q e parallelo a W)
+> [!def] sottospazio affine passante per Q e parallelo a W
 > Sia $\mathbb{A}$ uno *spazio affine* su $V$ ([[Definizione di Spazio Affine#^100c32]]) e consideriamo un *punto* $Q \in \mathbb{A}$ e un *sottospazio vettoriale* $W \subseteq V$ ([[Sottospazi Vettoriali#^9bcbf2]]).
 > Definiamo allora il *sottospazio affine passante per $Q$ e parallelo a $W$* il seguente insieme:
 > $$\mathbb{S} := \{ P \in \mathbb{A} \ | \ \overrightarrow{QP} \in W \} \subseteq \mathbb{A} $$
@@ -26,7 +26,7 @@ capitolo: Geometria Affine
 
 # 2. Esempio su R2
 #Esempio 
-> [!ex] Esempio 2.1. (esempio di sottospazio affine su $\mathbb{A}^2_\mathbb{R}$)
+> [!exm] esempio di sottospazio affine su $\mathbb{A}^2_\mathbb{R}$
 > Consideriamo lo *spazio affine* $\mathbb{A}^2_\mathbb{R}$ con $V = \mathbb{R}^2$ ([[Spazio Affine su K#^30176a]]).
 > Prendiamo il punto $Q = (2,1)$ e $W = \operatorname{span}(\begin{pmatrix} 1 \\ 1\end{pmatrix})$.
 > Allora vogliamo sapere *"chi è lo sottospazio affine $\mathbb{S}$"*.
@@ -35,7 +35,7 @@ capitolo: Geometria Affine
 > Vedremo in seguito che questa è la *forma parametrica* della descrizione di un *sottospazio vettoriale* e questa ci permette di *"generare"* tutti i possibili punti di $\mathbb{S}$ che vogliamo, ponendo $t$ per un qualsiasi numero.
 # 3. Dimensione di Sottospazio Affine
 #Definizione 
-> [!def] Definizione 3.1. (dimensione di sottospazio affine)
+> [!def] dimensione di sottospazio affine
 > Sia $\mathbb{A}$ uno *sottospazio affine* su $V$ e sia $\mathbb{S} \subseteq \mathbb{A}$ un *sottospazio affine* di *giacitura* $W$.
 > Diciamo che la *dimensione* ([[Dimensione#^3a9321]]) di $\mathbb{S}$ è la medesima della sua *giacitura* $W$.
 > $$\boxed{\dim \mathbb{S} := \dim W}$$

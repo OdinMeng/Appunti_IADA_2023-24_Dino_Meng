@@ -10,7 +10,7 @@ stato: "1"
 # 1. Derivate delle funzioni elementari
 ## Funzione costante
 #Esempio 
-> [!ex] Esempio 1.1. (funzione costante)
+> [!exm] funzione costante
 > Sia $f: I \longrightarrow \mathbb{R}$ la *funzione costante*, ovvero del tipo
 > $$f(x) = c \in \mathbb{R}$$
 > Allora calcolando il *rapporto incrementale* ([[Rapporto Incrementale#^ccc58b]]) $R^f_{x_0}(x)$, otteniamo
@@ -20,7 +20,7 @@ stato: "1"
 
 ## Funzione identità
 #Esempio 
-> [!ex] Esempio 1.2. (funzione identità)
+> [!exm] funzione identità
 > Sia $f: I \longrightarrow \mathbb{R}$ la *funzione identità*, ovvero del tipo
 > $$f(x) =x$$
 > Allora calcolando il suo *rapporto incrementale* si otterrebbe
@@ -30,7 +30,7 @@ stato: "1"
 
 ## Funzione potenza (in N)
 #Esempio 
-> [!ex] Esempio 1.3. (funzione potenza naturale)
+> [!exm] funzione potenza naturale
 > Sia $f: I \longrightarrow \mathbb{R}$ la *funzione potenza* ([[Funzioni di potenza, radice e valore assoluto#^2b25ba]]), ovvero del tipo
 > $$x^n, n \in \mathbb{N}$$
 > Allora calcolando il *rapporto incrementale* si ottiene
@@ -47,7 +47,7 @@ stato: "1"
 
 ## Funzione esponenziale
 #Esempio 
-> [!ex] Esempio 1.4. (funzione exp)
+> [!exm] funzione exp
 > Sia $f: \mathbb{R} \longrightarrow (0, +\infty)$ la *funzione esponenziale* a base $e$ ([[Funzione esponenziale e Logaritmica#^8c9812]]), ovvero del tipo
 > $$f(x) = e^x$$
 > Allora calcolando il suo rapporto incrementale si avrebbe
@@ -58,7 +58,7 @@ stato: "1"
 > $$\boxed{(e^x)' = e^x}$$
 
 #Osservazione 
-> [!oss] Osservazione 1.4. (la peculiarità di exp)
+> [!rmk] la peculiarità di exp
 > Da qui notiamo che se $f(x) = e^x$ allora vale che
 > $$f'(x) = f(x)$$
 > ed è l'*unica* funzione per cui vale questa.
@@ -66,7 +66,7 @@ stato: "1"
 > $$f = f' $$
 ## Funzione logaritmica
 #Esempio 
-> [!ex] Esempio 1.5. (funzione log)
+> [!exm] funzione log
 > Sia $f: (0, +\infty) \longrightarrow \mathbb{R}$ la *funzione logaritmica* a base $e$ ([[Funzione esponenziale e Logaritmica#^16fe54]]), ovvero del tipo
 > $$f(x) = \ln x$$
 > Allora prendendo il suo rapporto incrementale si ottiene
@@ -79,7 +79,7 @@ stato: "1"
 > $$\boxed{(\ln x)' = \frac{1}{x}}$$
 
 #Osservazione 
-> [!oss] Osservazione 1.5. (dimostrazione alternativa di exp'(x), approfondimento personale)
+> [!rmk] dimostrazione alternativa di exp'(x), approfondimento personale
 > *Approfondimento personale tratto da: Le Matematiche di A. D. Aleksandrov, A. N. Kolmogorov, M. A. Lavrent'ev (1974)*
 > - - -
 > Notiamo che è possibile *"dimostrare"* la derivata $(e^x)' = e^x$, usando il *teorema sulla derivata della funzione inversa* ([[Proprietà delle derivate#^97198c]]) e conoscendo la derivata del logaritmo naturale.
@@ -90,7 +90,7 @@ stato: "1"
 > riferimento bibliografico: pagina 123
 
 #Osservazione 
-> [!oss] Osservazione 1.5.b. (dimostrazione della derivata della funzione potenza in R)
+> [!rmk] dimostrazione della derivata della funzione potenza in R
 > Finalmente abbiamo abbastanza strumenti per poter calcolare la derivata di
 > $$x^\gamma, \gamma \in \mathbb{R}$$
 > Prima di tutto consideriamo questa *potenza* in termini di *esponenziali* e *logaritmi*;
@@ -101,7 +101,7 @@ stato: "1"
 > $$(e^{\gamma \ln x})' = \boxed{(x^\gamma)' = \gamma x^{\gamma-1}}$$
 ## Funzioni trigonometriche seno, coseno e tangente
 #Esempio 
-> [!ex] Esempio 1.6. (funzione seno)
+> [!exm] funzione seno
 > Sia $f(x) = \sin(x)$ la *funzione seno* ([[Funzioni trigonometriche#^dd4b35]]) e vogliamo calcolare la sua *derivata*. Ricordandoci le *formule di prostaferesi* ([[Funzioni trigonometriche#^5d221c]]), svolgiamo i calcoli.
 > $$\begin{align}R^f_{x_0}(x) &= \frac{\sin x - \sin x_0}{x-x_0} \\ &= \frac{2\sin(\frac{x-x_0}{2})\cos(\frac{x-x_0}{2})}{x-x_0} \\ &= \frac{\sin(\frac{x-x_0}{2})}{\frac{x-x_0}{2}} \cdot \cos(\frac{x+x_0}{2})\end{align}$$
 > Passando al *limite* di $x \to x_0$, ricordiamoci dei *limiti notevoli* (in particolare quella di $\frac{\sin(f(x))}{f(x)}$, abbiamo
@@ -110,17 +110,17 @@ stato: "1"
 > $$\boxed{(\sin x)' = \cos x}$$ 
 
 #Esempio 
-> [!ex] Esempio 1.7. (funzione coseno)
+> [!exm] funzione coseno
 > Analogamente al ragionamento svolto sopra, avendo $f(x) = \cos x$ si avrebbe
 > $$\boxed{(\cos x)' = -\sin x}$$
 
 #Esempio 
-> [!ex] Esempio 1.8. (funzione tangente)
+> [!exm] funzione tangente
 > Applicando la *proprietà sulla derivata di quozienti* si potrebbe derivare $\tan x$ (ove derivabile) e ottenere
 > $$\boxed{(\tan x)'} = \frac{(\cos x)^2 + (\sin x)^2}{(\cos x)^2} = \boxed{\frac{1}{(\cos x)^2} = 1+(\tan x)^2}$$
 ## Funzioni trigonometriche arcoseno, arcocoseno, arcotangente
 #Esempio 
-> [!ex] Esempio 1.9. (funzione arcoseno)
+> [!exm] funzione arcoseno
 > Voglio calcolare la derivata di $\arcsin x$.
 > Allora, usando la *proprietà sulla derivata delle inverse* ho
 > $$(\arcsin)'(\sin x) = \frac{1}{\cos x}$$
@@ -134,12 +134,12 @@ stato: "1"
 > $$\boxed{(\arcsin x)' = \frac{1}{\sqrt{1-x^2}}}$$
 
 #Esempio 
-> [!ex] Esempio 1.10. (funzione arcocoseno)
+> [!exm] funzione arcocoseno
 > Analogamente si dimostra che la derivata della funzione *arcocoseno* è
 > $$- (\arcsin x)'=\boxed{(\arccos x)' = -\frac{1}{\sqrt{1-x^2}}}$$
 
 #Esempio 
-> [!ex] Esempio 1.11. (funzione arcotangente)
+> [!exm] funzione arcotangente
 > Ora vogliamo calcolare la derivata di $\arctan x$ (funzione *arcotangente*).
 > $$(\arctan(x))'(\tan x) = \frac{1}{(\tan x)'} = \frac{1}{1+(\tan x)^2}$$
 > Pertanto
@@ -147,7 +147,7 @@ stato: "1"
 # 2. Funzioni non derivabili
 ## Valore assoluto
 #Esempio 
-> [!ex] Esempio 2.1. (funzione valore assoluto)
+> [!exm] funzione valore assoluto
 > Vediamo un esempio basilare del fatto che *non è vera* l'implicazione
 > $$f \text{ continua} \implies f \text{ derivabile}$$
 > Infatti consideriamo $f(x) = |x|$.
@@ -159,13 +159,13 @@ stato: "1"
 > Pertanto $f'(0)$ *non è definita*.
 
 #Osservazione 
-> [!oss] Osservazione 2.1. (però la funzione è derivabile altrove)
+> [!rmk] però la funzione è derivabile altrove
 > Però usando al *definizione locale* di derivabilità notiamo che $f(x)$ è comunque *derivabile* per $\mathbb{R} \diagdown \{0\}$.
 > Infatti $f'(x) = 1$ se $x >0$, $f'(x) = -1$ se invece $x <0$.
 > 
 ## Funzione di Weierstraß
 #Esempio 
-> [!ex] Esempio 2.2. (funzione di Weierstraß)
+> [!exm] funzione di Weierstraß
 > Abbiamo trovato una funzione continua ma *non derivabile* per un punto. Ma allora esistono comunque funzioni *continue* ma *non derivabili* dappertutto? Ovvero *derivabili* da nessuna parte.
 > Questo problema è stato risolto dal celebre matematico K. Weierstraß nel 1872 riuscendo a definire una funzione *continua* ma *derivabile da nessuna parte*.
 > 
@@ -179,7 +179,7 @@ stato: "1"
 ![[Pasted image 20231129171300.png]]
 
 ## Frattali
-> [!oss] Osservazione 2.2. (frattale)
+> [!rmk] frattale
 > Notiamo che con la generazione della funzione di Weierstraß, come risultato otteniamo un *frattale*, che è una forma geometrica speciale: infatti il frattale acquisisce rilevanza particolare nell'arte contemporanea, come ad esempio con la "body art" di J. Pollock
 > 
 > La proprietà *"speciale"* dei frattali è quella dell'*"auto similarità"*, ovvero che *"zoomando"* all'interno di questi frattali vediamo certi schemi geometrici ripetere. 

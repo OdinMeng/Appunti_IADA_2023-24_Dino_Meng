@@ -13,7 +13,7 @@ Inoltre è opportuno tenere a mente alcuni risultati di [[Assiomi di Peano, il p
 # 1. Limiti notevoli (per successioni)
 ## Esponenziale a alla n
 #Esempio 
-> [!ex] Esempio 1.1. (limite dell'esponenziale)
+> [!exm] limite dell'esponenziale
 Sia $a > 1$; considero il limite della successione $$\lim_n a^n; \text{ovvero }a_n = a^n$$
 Procediamo prima per *casistica*:
 Se $a=2$, il limite *diverge* per $+\infty$: $$\lim_n 2^n = +\infty$$Infatti se ci ricordiamo che $2^n \geq n, \forall n \in \mathbb{N}$, allora ho $$\lim_n 2^n \geq \lim_n n = +\infty$$Allora per il *teorema del confronto* ([[Teoremi sui Limiti di Funzione#^7c97c5]]), ho $$\lim_n 2^n = +\infty$$
@@ -23,13 +23,13 @@ Usando la *disuguaglianza di Bernoulli* ([[Esempi di Induzione#^66c5ee]]) che en
 Pertanto, per il *teorema del confronto* $$\boxed{\lim_{n} a^n = +\infty}$$
 ## Esponenziale a alla n diviso per n
 #Esempio 
-> [!ex] Esempio 1.2. (limite dell'esponenziale contro potenza)
+> [!exm] limite dell'esponenziale contro potenza
 Considero un caso analogo a quello precedente. 
 $$\lim_n\frac{a^n}{n}$$
 Qui basta usare la *disuguaglianza di Bernoulli incrementata* ([[Esempi di Induzione#^815bb7]]): ovvero $$(1+\rho)^n \geq 1+ \rho n+ \frac{n(n-1)}{2}\rho^2$$e dividendo da ambo le parti per $n$, ottengo $$\frac{(1+\rho)^n}{n}\geq \frac{1}{n}+\rho+\frac{n-1}{2}\rho^2$$e considerando che la seconda espressione tende a $+\infty$, visto che $$\frac{1}{n} \to 0; \rho \to n; \frac{n-1}{2}\rho^2 \to +\infty$$allora ho $$\boxed{\lim_n \frac{a^n}{n} = +\infty}$$ 
 ^3d1aba
 ## Radice n di a
-> [!ex] Esempio 1.3. (limite della radice n-esima di un numero)
+> [!exm] limite della radice n-esima di un numero
 Ora considero una nuova funzione: $$\lim_n \sqrt[n]{a}, \forall a >1$$
 Qui basta osservare il grafico della funzione *radice* ([[Funzioni di potenza, radice e valore assoluto]]), che è la *funzione potenza* *"capovolta"* (*figura 1.3.*). 
 >
@@ -43,12 +43,12 @@ Supponendo $\varepsilon >0$ e considerando $(1+\varepsilon)^n$, sappiamo che $$\
 ![[Pasted image 20231103165110.png]]
 
 #Esercizio 
-> [!es] Esercizio 1.1. (radice n-esima di n)
+> [!exr] radice n-esima di n
 Con un conto analogo posso dimostrare che $$\lim_n \sqrt[n]{n} = 1$$(*Per esercizio*)
 
 ## Limite fondamentale $(1+\frac{1}{n})^n$
  #Teorema 
-> [!thm] Teorema 1.1. (limite fondamentale (1+1/n)^n)
+> [!thm] 1+1/n)^n
 Consideriamo uno dei *limiti* più importanti dell'*analisi matematica*; $$\lim_n(1+\frac{1}{n})^n$$Non è immediato capire se questo limite *converge* o *diverge*, in quanto da un lato sappiamo che $\forall \varepsilon >0, (1+\varepsilon)^n \to +\infty$; ma dall'altro sappiamo che $(1)^n \to 1$.
 Enunciamo che questo limite *esiste* e *converge* ad un numero reale che chiameremo $e$, e si trova tra $2$ e $3$; $$2 < e < 3$$
 $$\boxed{\lim_n (1+\frac{1}{n})^n = e}$$
@@ -62,5 +62,5 @@ Uso il teorema sulle *successioni monotone e limitate* per dimostrare che innanz
    Uso lo stesso sviluppo binomiale di *1.*; $$\text{i. }(1+\frac{1}{n})^n = 2+\frac{1}{2!}(1-\frac{1}{n})+\ldots+\frac{1}{n!}(1-\frac{1}{n})\ldots(1-\frac{n-1}{n})$$e $$\text{ii. }(1+\frac{1}{n+1})^{n+1} = 2+\frac{1}{2!}(1-\frac{1}{n+1})+\ldots+\frac{1}{n!}(1-\frac{1}{n+1})\ldots(1-\frac{n}{n+1})$$e confrontando *ogni* termine della secondo sviluppo, scopriamo che ogni termine della *ii.* è maggiore o uguale ad ogni termine della *i.*. Pertanto è vera la tesi, ovvero che $(1+\frac{1}{n})^n$ è monotona crescente. $\blacksquare$
 
 #Definizione 
-> [!def] Definizione 1.1. (costante di Eulero / Nepero)
+> [!def] costante di Eulero / Nepero
 Indico il valore per cui il limite converge con $$\lim_n(1+\frac{1}{n})^n = e$$e si chiama *costante di Eulero*, oppure *costante di Nepero*. 

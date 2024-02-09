@@ -31,7 +31,7 @@ L'ultima matrice codifica i *sistemi lineari* del tipo $\mathbb{1}_n x = B^{(i)}
 $$B = A^{-1} $$
 ## Esempio
 #Esempio 
->[!ex] Esempio 1.1. Calcolo dell'inversa di una matrice
+>[!exm] Esempio 1.1. Calcolo dell'inversa di una matrice
 > Allora vediamo di calcolare l'inversa di una matrice; sia dunque
 > $$A = \begin{pmatrix}2 & 1 \\ 5 & 3 \end{pmatrix}$$
 > e vogliamo calcolare l'inversa $A^{-1}$. 

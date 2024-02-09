@@ -9,7 +9,7 @@ stato: "1"
 - - -
 # 1. Definizione di Matrici Simili
 #Definizione 
-> [!def] Definizione 1.1. (matrici simili)
+> [!def] matrici simili
 > Siano $A, B \in M_n(K)$ due *matrici quadrate* ([[Matrice#^a95650]]).
 > $A, B$ si dicono *simili* se *esiste* una matrice *invertibile* $P \in M_n(K)$ tale che valga
 > $$B = P^{-1} \cdot A \cdot P$$

@@ -15,7 +15,7 @@ capitolo: Geometria Affine
 - [[Geometria dello Spazio Affine]]
 # 1. Sottospazi affini incidenti, coincidenti, paralleli e sghembi
 #Definizione 
-> [!def] Definizione 1.1. (sottospazi affini incidenti, coincidenti, paralleli e sghembi)
+> [!def] sottospazi affini incidenti, coincidenti, paralleli e sghembi
 > Siano $\mathbb{S}$, $\mathbb{S}'$ dei *sottospazi affini* ([[Definizione di Sottospazio Affine#^a1f242]]) di *giacitura* rispettivamente $W, W'$.
 > Allora $\mathbb{S}, \mathbb{S}'$ si dicono:
 > - *incidenti* se $\mathbb{S} \cap \mathbb{S}' \neq \emptyset$

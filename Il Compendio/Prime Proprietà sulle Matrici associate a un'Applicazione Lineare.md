@@ -9,7 +9,7 @@ stato: "1"
 - - -
 # 1. Prime proprietà sulle matrici associate
 #Proposizione 
-> [!prop] Proposizione 1.1. (prime proprietà sulle matrici associate)
+> [!prp] prime proprietà sulle matrici associate
 > Siano $f, h: V \longrightarrow V'$ due *applicazioni lineari* ([[Definizione di Applicazione Lineare#^9b39f9]]) con $\mathcal{B}$, $\mathcal{C}$ rispettivamente le basi di $V, V'$.
 > Supponiamo inoltre che ci sia anche $g: V' \longrightarrow V''$, con $\mathcal{C}$ base di $V''$. Sia poi $\lambda \in K$ uno *scalare*.
 > Sia $M^{\mathcal{B}}_{\mathcal{C}}(f) \in M_{m,n}(K)$ una *matrice associata all'applicazione lineare* $f$ ([[Definizione della Matrice associata a un'Applicazione Lineare#^ea78d6]]).

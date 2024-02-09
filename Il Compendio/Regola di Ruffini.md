@@ -9,7 +9,7 @@ stato: "1"
 - - -
 # 1. Teorema di Ruffini
 #Teorema 
-> [!thm] Teorema 1.1. (di Ruffini)
+> [!thm] di Ruffini
 > (*nota: enunciato preso da Wikipedia*)
 > Un polinomio $P(x)$ è divisibile per $(x-a)$ *se e solo* se il resto è nullo e quindi $P(a) = 0$.
 
@@ -17,7 +17,7 @@ stato: "1"
 
 # 2. Proposizioni preliminari
 #Teorema 
-> [!prop] Proposizione 2.1. (divisibilità di un polinomio)
+> [!prp] divisibilità di un polinomio
 > (*nota: enunciati presi dal foglio ottavo di M. Gallet*)
 > Sia $p$ un polinomio a coefficienti interi di grado $n$, ovvero del tipo
 > $$p = a_n x^n + a_{n-1} x^{n-1} + \ldots + a_1 x + a_0; a_i \in \mathbb{Z}, \forall i \in \{0, \ldots, n\}$$
@@ -31,7 +31,7 @@ stato: "1"
 >   dove $q$ è *un altro polinomio*.
 # 3. Regola di Ruffini
 #Osservazione 
-> [!oss] Osservazione 3.1. (regola di Ruffini)
+> [!rmk] regola di Ruffini
 > Considerando le proposizioni preliminari appena enunciate, vogliamo trovare $q$ mediante la *regola di Ruffini* (oppure nota come l'*algoritmo della divisione sintetica*).
 > Creiamo quindi una *tabella* con $3$ righe e $n$ colonne: poniamo la *"prima riga"* con i coefficienti $a_n$ del polinomio $p$.
 > Dopodiché nella *"seconda riga"* a sinistra inseriamo $r$ (ovvero la radice).
@@ -45,7 +45,7 @@ stato: "1"
 **FIGURA 3.1.** (*Idea grafica*)
 ![[Pasted image 20231203123907.png]]
 ## Canzone rap sulla regola di Ruffini
-> [!oss] Osservazione 3.2.
+> [!rmk] Osservazione 3.2.
 > Si condivide (per pura goliardia) la canzone rap sulla regola di Ruffini realizzata da Lorenzo Baglioni.
 > https://www.youtube.com/watch?v=kePx7biRTR4
 # 4. Utilità

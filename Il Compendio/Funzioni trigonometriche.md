@@ -9,7 +9,7 @@ stato: "1"
 - - -
 # 0. Preambolo
 #Osservazione 
-> [!oss] Osservazione 0.0. (discorso introduttorio)
+> [!rmk] discorso introduttorio
 Per ora non abbiamo ancora gli strumenti per poter *rigorosamente* definire le funzioni di *seno* e *coseno*, tuttavia possiamo definirle per ora in questo modo.
 Però prima di tutto bisogna fare delle considerazioni.
 >
@@ -24,17 +24,17 @@ Graficamente questo processo rappresenta il seguente (*figura 0.A.*)
 ![[Pasted image 20231017172409.png]]
 
 #Osservazione 
-> [!oss] Osservazione 0.1. (questa definizione è poco rigorosa)
+> [!rmk] questa definizione è poco rigorosa
 Si osserva che in questo processo di *"avvolgimento"* si suppone che la lunghezza del segmento non si cambia mai, in quanto viene solo *"piegato"*; quindi se il segmento $r_1$ è lungo $\alpha$, allora *l'arco* è lungo $\alpha$, che non è banale da misurare. Infatti si deve fare un *procedimento di approssimazione* con segmenti. Questo è il problema di questa definizione *non-rigorosa*.
 # 1. Definizione di seno e coseno
 #Osservazione 
-> [!oss] Osservazione 1.1. (prima considerazione)
+> [!rmk] prima considerazione
 Considerando tutto detto sopra, consideriamo la funzione $$\begin{align}f: &\ \mathbb{R} \longrightarrow \Gamma \\&\ \alpha \mapsto(c(\alpha), s(\alpha)) \end{align}$$Dove $\Gamma$ varia nell'intervallo $[0, 1]$.
 
 Così otteniamo le seguenti funzioni.
 
 #Definizione 
-> [!def] Definizione 1.1. (seno e coseno)
+> [!def] seno e coseno
 $$\begin{align}\cos: \ &\mathbb{R} \longrightarrow [-1, 1] \\ &\alpha \mapsto \cos(\alpha) \in \Gamma \\ \sin: \ &\mathbb{R} \longrightarrow [-1, 1] \\ &\alpha \mapsto \sin(\alpha) \in \Gamma\end{align}$$
 Dove $(\cos\alpha, \sin\alpha)$ rappresenta la posizione del punto dell'*arco piegato* e $\alpha$ rappresenta la *lunghezza dell'arco*. Se $\alpha$ è negativa, allora si orienta l'asso in basso. Graficamente si ha la *figura 1.1.*.
 ^dd4b35
@@ -43,29 +43,29 @@ Dove $(\cos\alpha, \sin\alpha)$ rappresenta la posizione del punto dell'*arco pi
 ![[Pasted image 20231017172419.png]]
 # 2. Proprietà
 #Proposizione 
-> [!prop] Proposizione 2.1. ($\pi$)
+> [!prp] $\pi$
 Diamo un nome alla *lunghezza della semi-circonferenza unitaria*,  $$(\pi \in \mathbb{R}, \pi \sim 3.14\ldots) $$quindi la *circonferenza* è lunga $2\pi$.
 
 #Proposizione 
-> [!prop] Proposizione 2.2. (l'identità fondamentale della trigonometria
+> [!prp] Proposizione 2.2. (l'identità fondamentale della trigonometria
 > Dato un $\alpha \in \mathbb{R}$, si verifica che $$(\cos\alpha)^2 + (\sin\alpha)^2 = 1$$in quanto entrambi i punti $(\cos\alpha, \sin\alpha)$ appartengono alla circonferenza $\Gamma$; infatti $x^2+y^2 = 1$ è la proprietà caratterizzante di $\Gamma$.
 
 #Proposizione 
-> [!prop] Proposizione 2.3. (seno e coseno sono funzioni periodiche)
+> [!prp] seno e coseno sono funzioni periodiche
 Le funzioni $\cos$, $\sin$ sono *periodiche*, ovvero che prendendo un $k \in \mathbb{Z}$,  $$\begin{align}&\text{ i. }\cos(\alpha+2k\pi) = \cos\alpha \\ &\text{ii. } \sin(\alpha + 2k\pi) = \sin\alpha \end{align}$$Questo si verifica in quanto $2\pi$ rappresenta un *giro intero*; quindi prendendo un punto $\alpha$ e facendoci un giro intero, arrivo allo stesso punto. 
 ^189c92
 
 #Proposizione 
-> [!prop] Proposizione 2.4. (seno e coseno sono funzioni pari e dispari)
+> [!prp] seno e coseno sono funzioni pari e dispari
 Le funzioni $\cos$, $\sin$ sono rispettivamente delle funzioni *pari* e *dispari*, ovvero che si verificano le seguenti. $$\begin{align}&\cos(-\alpha) = \cos(\alpha) \\ &\sin(-\alpha) = -\sin(\alpha) \end{align}$$Questo discende dal fatto che la *"lunghezza negativa"* rappresenterebbe la stessa lunghezza orientato verso il basso. 
 Quindi graficamente lo si può vedere chiaramente.
 
 #Proposizione 
-> [!prop] Proposizione 2.5. (seno e coseno sono "shiftati" tra di loro)
+> [!prp] seno e coseno sono "shiftati" tra di loro
 Se al posto di aggiungere un *giro intero* aggiungo un *mezzo giro*, ovvero $\pi$, ottengo il suo opposto: $$\begin{align}&\cos(\alpha+\pi) = -\cos(\alpha) \\ &\sin(\alpha+\pi) = - \sin(\alpha)\end{align}$$
 
 #Proposizione 
-> [!prop] Proposizione 2.6. (il coseno è il complemento del seno)
+> [!prp] il coseno è il complemento del seno
 Ricorrendoci alla definizione etimologica del *coseno*, ovvero *"complementi sinus"*, notiamo che sottraendo *l'angolo complementare $\frac{\pi}{2}$* da $\alpha$ ottengo $\sin$. Ovvero $$\forall \alpha, \cos(\frac{\pi}{2}-\alpha) = \sin(\alpha)$$
 ## Riassunto grafico
 **FIGURA 2.1.** Graficamente si può riassumere (quasi) tutte le proprietà nel seguente grafico (con i grafici di $\cos$, $\sin$ stessi).
@@ -85,7 +85,7 @@ che verranno dati per noti.
 
 ## Forme di somma e di sottrazione
 #Osservazione 
-> [!oss] Osservazione 2.1. (forme di somma e di sottrazione)
+> [!rmk] forme di somma e di sottrazione
 Consideriamo due angoli: $\alpha, \beta \in \mathbb{R}$. 
 Quindi disegniamo il seguente grafico:
 ![[Pasted image 20231017172608.png]]
@@ -99,23 +99,23 @@ Queste formule saranno molto importanti per le formule di *prostaferesi* e di *W
 ## Formule di prostaferesi
 *Recuperato dalla lezione del 26.10.2023*
 #Osservazione 
-> [!oss] Osservazione 2.2. (formule di prostaferesi)
+> [!rmk] formule di prostaferesi
 Voglio calcolare $\sin a + \sin b$. Allora riscrivo le *forme di sottrazione e di addizione*; $$\begin{gather}\sin(\alpha+\beta)=\sin\alpha\cos\beta+\sin\beta\cos\alpha \\ \sin(\alpha-\beta) = \sin\alpha\cos\beta-\sin\beta\cos\alpha \end{gather}$$e li sommo: $$\begin{align}\sin(\alpha+\beta)+\sin(\alpha-\beta) &= \sin\alpha\cos\beta+\sin\beta\cos\alpha-\sin\alpha\cos\beta+\sin\beta\cos\alpha \\ &= 2\sin\beta\cos\alpha\end{align}$$e ponendo $\alpha+\beta = a$, $\alpha-\beta = b$, (dunque $a+b = 2\alpha$ e $a-b=2\beta$) ottengo $$\boxed{\begin{align} \sin a + \sin b = 2\sin\frac{a-b}{2}\cos\frac{a+b}{2}\end{align}}$$ 
 Analogo il procedimento per $\cos\alpha + \cos\beta$. 
 ^5d221c
 # 3. Definizione di arcocoseno e arcoseno
 #Osservazione 
-> [!oss] Osservazione 3.1. ($\cos$ può diventare biiettiva)
+> [!rmk] $\cos$ può diventare biiettiva
 Considero la funzione $\cos$, però con una restrizione al suo *dominio* e *codominio*. $$\begin{align}\cos_{[0, \pi]}: &\ [0, \pi] \longrightarrow [-1, 1] \\ & \ x \mapsto \cos(x) \end{align}$$Questa funzione allora è *biiettiva*; ovvero che sia *suriettiva* che *iniettiva* e *strettamente decrescente*.
 >1. Questa è *iniettiva* in quanto considerando tutti gli $x \in [0, \pi]$ si tocca un *solo* punto ad ogni $x$ considerato. Inoltre è *strettamente decrescente* in quanto il valore parte da $\cos0 = 1$ e finisce con $\cos\pi = -1$. 
 >2. Per lo stesso motivo di prima $\cos$ è *suriettiva*.
 
 #Definizione 
-> [!def] Definizione 3.1. (arcocoseno)
+> [!def] arcocoseno
 Pertanto secondo il *teorema dell'esistenza della funzione inversa* la funzione $\cos_{[0, \pi]}$ ha una sua inversa che chiameremo *l'arcocoseno*; $$\arccos := \cos_{[0, \pi]} $$
 
 #Definizione 
-> [!def] Definizione 3.2. (arcoseno)
+> [!def] arcoseno
 Analogamente si definisce $\arcsin$ considerando però la restrizione di $\sin_{[-\frac{\pi}{2}, \frac{\pi}{2}]}$.
 Quindi $$\arcsin := \sin_{[-\frac{\pi}{2}, \frac{\pi}{2}]}$$
  
@@ -125,7 +125,7 @@ Quindi $$\arcsin := \sin_{[-\frac{\pi}{2}, \frac{\pi}{2}]}$$
 ![[Pasted image 20240101142540.png]]
 # 4. Funzione tangente e arcotangente
 #Definizione 
-> [!def] Definizione 4.1. (tangente)
+> [!def] tangente
 Definiamo la funzione **tangente** $\tan \alpha$ periodica in come $$\tan: \mathbb{R}\diagdown[\frac{\pi}{2}]_{\equiv \pi} \longrightarrow \mathbb{R}$$come il *rapporto* tra la funzione *seno* e *coseno*, ovvero $$\tan\alpha = \frac{\sin\alpha}{\cos\alpha}$$Notiamo che le funzioni $\sin, \cos$ sono periodiche di $2\pi$; quindi prendendo il rapporto abbiamo che $\tan$ è periodica di $\pi$. 
 Osservando i *limiti* ([[Esempi di Limiti di Funzione#^570db1]]) di questa funzione possiamo disegnare il seguente grafico (*figura 4.1.*).
 
@@ -133,7 +133,7 @@ Osservando i *limiti* ([[Esempi di Limiti di Funzione#^570db1]]) di questa funzi
 ![[Pasted image 20231103214312.png]]
 
 #Definizione 
-> [!def] Definizione 4.2. (arcotangente)
+> [!def] arcotangente
 Se applico una restrizione della *tangente* in $]-\frac{\pi}{2}, \frac{\pi}{2}[$ allora ho: $$\tan_{|(-\frac{\pi}{2}, \frac{\pi}{2})}: (-\frac{\pi}{2}, \frac{\pi}{2}) \longrightarrow \mathbb{R}; x \mapsto \tan{x}$$e questa diventa *biiettiva*, quindi invertibile, posso definire l'*arcotangente* la sua funzione inversa: $$\arctan := (\tan_{|(-\frac{\pi}{2}, \frac{\pi}{2})})^{-1}$$
 
 **FIGURA 4.2.** ($\arctan$)

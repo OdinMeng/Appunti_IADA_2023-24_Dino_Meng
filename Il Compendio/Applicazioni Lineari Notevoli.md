@@ -9,7 +9,7 @@ stato: "1"
 - - -
 # 1. Trasformazione lineare associata ad una matrice
 #Definizione 
-> [!def] Definizione 1.1. (trasformazione lineare associata alla matrice)
+> [!def] trasformazione lineare associata alla matrice
 > Sia $A \in M_{m,n}(K)$ una *matrice* ([[Matrice#^18867e]]).
 > Allora la matrice $A$ definisce una *funzione* del tipo
 > $$L_A: K^n \longrightarrow K^m; v \mapsto A\cdot v $$
@@ -19,7 +19,7 @@ stato: "1"
 ^fd2d05
 
 #Proposizione 
-> [!prop] Proposizione 1.1. ($L_A$ è un'applicazione lineare)
+> [!prp] $L_A$ è un'applicazione lineare
 > Per ogni *matrice* $A \in M_{m,n}(K)$ la funzione precedentemente definita $L_A$ è una *applicazione lineare* ([[Definizione di Applicazione Lineare#^9b39f9]]).
 
 #Dimostrazione 
@@ -30,7 +30,7 @@ Similmente, supponendo $\lambda \in K$, dimostriamo che
 $$ L_A(\lambda v) = A\cdot(\lambda v) = \lambda (A \cdot v) = \lambda L_A(v) \ \blacksquare$$
 ## Esempio particolare
 #Esempio 
-> [!ex] Esempio 1.1. (rotazione nel piano di un angolo $\alpha$ in senso antiorario)
+> [!exm] rotazione nel piano di un angolo $\alpha$ in senso antiorario
 > Sia $\alpha \in \mathbb{R}$ un *angolo* e consideriamo la matrice *"rotazione"*
 > $$R_\alpha = \begin{pmatrix} \cos \alpha & - \sin \alpha \\ \sin \alpha & \cos \alpha\end{pmatrix} $$
 > Allora l'applicazione lineare rappresentato da
@@ -48,7 +48,7 @@ $$ L_A(\lambda v) = A\cdot(\lambda v) = \lambda (A \cdot v) = \lambda L_A(v) \ \
 
 # 2. Applicazione lineare coordinante
 #Definizione 
-> [!def] Definizione 2.1. (funzione coordinante)
+> [!def] funzione coordinante
 > Sia $V$ un *K-spazio vettoriale* di dimensione finita ([[Dimensione#^3a9321]]), suppongo $\dim V = n \in \mathbb{N}$.
 > Sia $\mathcal{B}$ una *base* ([[Definizione di Base#^def430]]).
 > Allora definiamo la funzione che *prende le coordinate di un vettore rispetto a* $\mathcal{B}$ in questo modo:
@@ -61,13 +61,13 @@ $$ L_A(\lambda v) = A\cdot(\lambda v) = \lambda (A \cdot v) = \lambda L_A(v) \ \
 ^de557a
 
 #Proposizione 
-> [!prop] Proposizione 2.1. (invertibilità della funzione coordinante)
+> [!prp] invertibilità della funzione coordinante
 > La funzione $F_\mathcal{B}$ è *iniettiva* in quanto abbiamo che ogni vettore è *espressione* unica dello $\text{span}$ della base; si può verificare che è anche suriettiva. Quindi questa applicazione lineare è biiettiva, quindi invertibile ([[Funzioni#^7b369f]]).
 > Allora si dice che $F_\mathcal{B}$ è un *isomorfismo* di *spazi vettoriali*.
 
 # 3. Applicazioni lineari inverse di isomorfismi
 #Esercizio
-> [!es] Esercizio 3.1. (inverse degli isomorfismi come spazi vettoriali)
+> [!exr] inverse degli isomorfismi come spazi vettoriali
 > Provare che se $f: V \longrightarrow V'$ è *biiettiva*, allora $f^{-1}: V' \longrightarrow V$ è anch'essa un'*applicazione lineare*. Quindi dimostrare che se una applicazione lineare è isomorfa, allora considerando la sua inversa si conserveranno le stesse proprietà.
 
 #Dimostrazione 

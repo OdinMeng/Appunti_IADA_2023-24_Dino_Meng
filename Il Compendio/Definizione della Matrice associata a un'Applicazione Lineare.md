@@ -9,7 +9,7 @@ stato: "1"
 - - -
 # 1. Definizione
 #Definizione 
-> [!def] Definizione 1.1. (matrice associata a f rispetto alle basi B, C)
+> [!def] matrice associata a f rispetto alle basi B, C
 > Sia $f: V \longrightarrow V'$ un'*applicazione lineare* ([[Definizione di Applicazione Lineare#^9b39f9]]) tra *spazi vettoriali* ([[Spazi Vettoriali#^7e2c4e]]) di *dimensione finita* ([[Dimensione#^3a9321]]).
 > Siano $\mathcal{B}, \mathcal{C}$ rispettivamente le *basi* ([[Definizione di Base#^def430]]) di $V, V'$ 
 > $$\mathcal{B} = \{v_1, \ldots, v_n\} ; \mathcal{C} = \{w_1, \ldots, w_m\}$$
@@ -24,7 +24,7 @@ stato: "1"
 
 # 2. Esempi
 #Esempio 
-> [!ex] Esempio 2.1. (su $\mathbb{R}^2$)
+> [!exm] su $\mathbb{R}^2$
 > Considero la trasformazione lineare
 > $$f(\begin{pmatrix}x \\ y \end{pmatrix}) = \begin{pmatrix}2x-y\\x+2y \end{pmatrix} $$
 > Considero la *base standard* $\mathcal{E}$ formata dagli elementi $\begin{pmatrix} 1 \\ 0\end{pmatrix}$ e $\begin{pmatrix}0 \\ 1 \end{pmatrix}$ come le basi del *dominio* e del *codominio*.
@@ -34,13 +34,13 @@ stato: "1"
 > Si lascia di svolgere il procedimento meccanico al lettore per esercizio.
 
 #Esempio 
-> [!ex] Esempio 2.2. (applicazione nulla)
+> [!exm] applicazione nulla
 > Considero $f$ l'applicazione nulla, ovvero del tipo
 > $$f(v) = 0_V$$
 > Allora per *qualsiasi* scelta delle basi del dominio $\mathcal{B}$ e del codominio $\mathcal{C}$, la *matrice associata* ad $f$ sarà *sempre nulla*, in quanto i vettori di $\mathcal{C}$ sono *linearmente indipendenti* ([[Dipendenza e Indipendenza Lineare#^3782e8]]) in quanto *basi*.
 
 #Esempio 
-> [!ex] Esempio 2.3. (applicazione identità)
+> [!exm] applicazione identità
 > Consideriamo $f$ l'applicazione *identità*, ovvero del tipo
 > $$f(V) = V $$
 > Sia quindi $\mathcal{B} = \{v_1, \ldots, v_n\}$ basi sia del *dominio* che del *codominio*; pertanto $(f(v_i))_i = (v_i)_i$.

@@ -31,7 +31,7 @@ Ora si può comporre frasi come la seguente.
 $$\forall x, \mathcal{Q}(x,y) = \mathcal{R}(y)$$che si legge come *"Tutti sono amici di $y$"*; dopodiché si può anche comporre un'altra fase, come$$\exists y: (\forall x, \mathcal{Q}(x,y)) = \exists y: \mathcal{R}(y)$$che si legge come *"Esiste una studentessa $y$ di cui tutti sono amici"*
 
 **ES 1.2.** Per comporre la frase *"In ogni ospedale c'è un medico che ha sbagliato tutte le diagnosi"* si usa la seguente: $$\forall x (\exists y:\forall z,\mathcal{S}(x,y,z)) $$
-> [!warning] **OSSERVAZIONE 2.** Però si deve fare subito un'osservazione importante: in questo caso l'ordine conta, in quanto $$\forall x, \exists y: \mathcal{Q}(x,y)$$si legge come *"Ogni studente $x$ ha un'amica studentessa $y$"*; pertanto $$\exists y: (\forall x, \mathcal{Q}(x,y)) \neq \forall x, \exists y: \mathcal{Q}(x,y)$$
+> [!warning] \forall x, \mathcal{Q}(x,y)) \neq \forall x, \exists y: \mathcal{Q}(x,y$$
 
 # Negazione dei predicati con i quantificatori
 **OSSERVAZIONE 1.** Si prende in esame il seguente. $$\forall x, \mathcal{P}(x):\text{ogni studente }x\text{ è più alto di 1,7m}$$che si legge come *"Tutti i studenti sono più alti di 1,7m"*

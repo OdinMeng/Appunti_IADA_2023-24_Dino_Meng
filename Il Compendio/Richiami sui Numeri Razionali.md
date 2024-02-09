@@ -9,19 +9,19 @@ stato: "1"
 - - -
 # 1. La costruzione dei numeri interi
 #Osservazione 
-> [!oss] Osservazione 1.1. (la costruzione di $\mathbb{Z}$ a partire da $\mathbb{N}$)
+> [!rmk] la costruzione di $\mathbb{Z}$ a partire da $\mathbb{N}$
 Osserviamo che a partire dai [numeri naturali](Struttura%20dell'insieme%20dei%20numeri%20naturali) $\mathbb{R}$ è possibile costruire un altro insieme numerico più *completo* che ci permette di fare altre operazioni (oltre alla somma e moltiplicazione), ovvero i numeri *interi relativi* $\mathbb{Z}$ (*Zahl*), che viene definita come $$\mathbb{Z}:= \{\ldots,-2,-1,0,1,2,\ldots\}$$in cui ad ogni numero positivo $z$ corrisponde ad un numero *negativo* per cui ci permette di fare una nuova operazione: ovvero la *sottrazione $-$*.
 Tuttavia questa non è sufficiente in quanto questa *costruzione* non ci permette di fare un'altra operazione molto importante, ovvero la *divisione* $\div$. 
 # 2. La costruzione dei numeri razionali
 #Osservazione 
-> [!oss] Osservazione 2.1. (la costruzione di $\mathbb{Q}$ a partire da $\mathbb{N}$, $\mathbb{Z}$)
+> [!rmk] la costruzione di $\mathbb{Q}$ a partire da $\mathbb{N}$, $\mathbb{Z}$
 Quindi a partire da $\mathbb{Z}$ è possibile costruire i numeri razionali $\mathbb{Q}$ (*Quoziente*), dove un numero $q \in \mathbb{Q}$ è un quoziente di un numero intero $\mathbb{Z}$ e di un numero razionale $\mathbb{N}$; $$\mathbb{Z} := \{\frac{p}{q} \text{ con }p\in\mathbb{Z}, q \in \mathbb{N}\diagdown\{0\}
 \} $$I numeri razionali quindi ci permettono *non solo* di *contare*, ma anche di *misurare*, dato che possiamo precisamente misurare delle grandezze tramite questi numeri.
 Tuttavia non posso misurare *tutto*; infatti se voglio descrivere un oggetto geometrico con i numeri, ovvero un quadrato con il lato $l=1$, non posso misurare la lunghezza della diagonale del quadrato.
 Infatti questo segmento si dice una *grandezza incommensurabile*.
 
 #Teorema 
-> [!thm] Teorema 2.1. (l'incommensurabilità di $\sqrt{2}$)
+> [!thm] l'incommensurabilità di $\sqrt{2}$
 > Non esistono $n,k \in \mathbb{N}$ tali che $$(\frac{n}{k})^2=2$$ 
 ^4b9050
 

@@ -9,7 +9,7 @@ stato: "1"
 - - -
 # 1. Funzione monotona e suriettiva
 #Teorema 
-> [!thm] Teorema 1.1. (continuità della funzione strettamente monotona e suriettiva)
+> [!thm] continuità della funzione strettamente monotona e suriettiva
 > Sia $f: I \longrightarrow J$, $I, J$ degli intervalli, $f$ *strettamente monotona* e *suriettiva* ([[Funzioni#^6068af]], [[Funzioni#^3fb408]]).
 > Allora $f$ è *continua*.
 
@@ -26,7 +26,7 @@ $$ \lim_{x \to x_0^-}f(x) = f(x_0)= \lim_{x \to x_0^+}f(x) \implies f \text{ con
 ![[Pasted image 20231220200231.png]]
 ## Funzione strettamente crescente e suriettiva
 #Corollario 
-> [!cor] Corollario 1.2. (continuità della funzione strettamente crescente e suriettiva)
+> [!cor] continuità della funzione strettamente crescente e suriettiva
 > Sia $f: I \longrightarrow J$, $I,J$ *intervalli*, $f$ *strettamente crescente* e *suriettiva*.
 > Allora $f, f^{-1}$ sono *continue*.
 
@@ -35,7 +35,7 @@ $$ \lim_{x \to x_0^-}f(x) = f(x_0)= \lim_{x \to x_0^+}f(x) \implies f \text{ con
 > Questo teorema è utile per poter dimostrare la continuità di certe funzioni: infatti ad esempio sappiamo che $\exp$ è *continua*, *strettamente crescente* e *suriettiva* per $]0, +\infty[$: di conseguenza $\exp^{-1} = \log$ è anch'essa *continua*.
 # 2. Funzione iniettiva e continua
 #Teorema 
-> [!thm] Teorema 2.1. (monotonia della funzione iniettiva e continua)
+> [!thm] monotonia della funzione iniettiva e continua
 > Sia $f: I \longrightarrow J$ una funzione *continua* e *iniettiva*.
 > Allora $f$ è *strettamente crescente*.
 
@@ -52,7 +52,7 @@ Se esistono allora due numeri che, per una funzione, ci danno lo stesso numero, 
 ![[Pasted image 20231220200947.png]]
 # Funzione continua e invertibile
 #Corollario 
-> [!cor] Corollario 3.1. (continuità dell'inversa della funzione continua e invertibile)
+> [!cor] continuità dell'inversa della funzione continua e invertibile
 > Sia $f: I \longrightarrow J$ *continua* e *invertibile*.
 > Allora $f^{-1}$ è *continua*.
 

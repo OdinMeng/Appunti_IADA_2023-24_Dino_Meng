@@ -10,7 +10,7 @@ stato: "1"
 # 1. Considerazioni Pratiche e Quotidiane
 ## Lagrange e il sistema "Tutor"
 #Osservazione 
-> [!oss] Osservazione 1.1. (Lagrange e il sistema "Tutor")
+> [!rmk] Lagrange e il sistema "Tutor"
 Dal 2004 è stato introdotto il cosiddetto sistema *"Tutor"* sulle autostrade italiane, al fine di determinare se stiamo rispettando le limitazioni di velocità o meno. 
 >
 Il sistema *Tutor* consiste nel seguente: lungo l'autostrada si fissano piazzano due telecamere, tra le quali c'è una distanza $s$. Allora queste fotocamere fotografano le nostre automobili e registrano i seguenti dati: la targa del veicolo e l'istante del tempo in cui siamo stati ripresi. L'idea di questo sistema viene raffigurato nella *figura 1.1.*.
@@ -31,7 +31,7 @@ Quindi, alla fine niente ricorso per noi.
 ![[Pasted image 20231126005623.png]]
 ## Cauchy nel nostro spazio tridimensionale
 #Osservazione 
-> [!oss] Osservazione 1.2. (Cauchy in 3D)
+> [!rmk] Cauchy in 3D
 Dall'interpretazione geometrica di Cauchy in $\mathbb{R}^2$ ([[Teorema di Cauchy#^30644e]]) vediamo due *punti* nello spazio, la retta secante di questi due punti e per *Cauchy* vediamo che almeno c'è almeno un punto per cui il suo *"vettore velocità"* è parallela a questa retta secante.
 >
 Ora ci chiediamo il seguente: *"come funzionerebbe in $\mathbb{R}^3$?"*
@@ -54,7 +54,7 @@ I gradini di queste scale servono ad *"appiattire"* la pendenza; l'idea di quest
 # 2. Considerazioni "Astratte"
 ## Derivate nulle e funzioni costanti
 #Teorema 
-> [!thm] Teorema 2.1. (derivata nulla è sempre una costante)
+> [!thm] derivata nulla è sempre una costante
 > Suppongo $f: I \longrightarrow \mathbb{R}$, $f$ *derivabile* in $I$ ([[Derivata e derivabilità#^478a87]]).
 > Supponendo che $\forall x \in I, f'(x) = 0$ allora si ha che $f(x) = c \in \mathbb{R}$.
 > $$\boxed{f'(x) = 0 \implies f(x) = c \in \mathbb{R}}$$ 
@@ -72,11 +72,11 @@ $$\exists \xi \in \ ]x_1, x_2[\ : f'(\xi) = \frac{f(x_2)-f(x_1)}{x_2-x_1}$$
 Tuttavia notiamo che il numeratore non può essere mai $0$ in quanto per ipotesi $f(x_1), f(x_2)$ sono diverse e analogamente neanche il denominatore può essere mai $0$.
 Allora si avrebbe $f'(\xi) \neq 0$; però questo è impossibile in quanto questo contraddirebbe con la tesi $f'(\xi) = 0$. $\blacksquare$
 
-> [!oss] Osservazione 2.1. (questo teorema non vale se abbiamo dei buchi)
+> [!rmk] questo teorema non vale se abbiamo dei buchi
 Notiamo che per essere vero questo teorema, $I$ deve essere definita su un *intervallo*, perché senno avrei dei *"buchi"* su cui la funzione può compiere dei *"salti"*.
 ## Crescenza e derivate
 #Teorema 
-> [!thm] Teorema 2.2. (la derivata positiva significa funzione crescente)
+> [!thm] la derivata positiva significa funzione crescente
 > Sia $f: I \longrightarrow \mathbb{R}$ *derivabile*.
 > Allora $f$ è *crescente* su $I$ se e solo se la sua derivata è positiva;
 > $$\boxed{f \text{ crescente su } I \iff \forall x \in I, f'(x) \geq 0}$$

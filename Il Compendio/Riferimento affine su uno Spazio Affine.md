@@ -15,7 +15,7 @@ stato: "1"
 - [[Spazio Affine su K]]
 # 1. Definizione di riferimento affine
 #Definizione 
-> [!def] Definizione 1.1. (riferimento affine su uno spazio affine relativo ad una base)
+> [!def] riferimento affine su uno spazio affine relativo ad una base
 > Sia $\mathbb{A}$ uno *spazio affine* su $V$ ([[Definizione di Spazio Affine#^100c32]]), sia $V$ di *dimensione finita* con $\dim V = n$ ([[Dimensione#^3a9321]]).
 > Definiamo un *riferimento affine su* $\mathbb{A}$ come la *coppia* $(O, \mathcal{B})$, dove
 > - $O \in \mathbb{A}$ è un punto che definiamo essere *"l'origine del riferimento affine"*.
@@ -25,7 +25,7 @@ stato: "1"
 
 # 2. Esempio con spazio affine su K
 #Definizione 
-> [!def] Definizione 2.1. (riferimento standard / canonico)
+> [!def] riferimento standard / canonico
 > Se consideriamo lo spazio affine $\mathbb{A}^n_\mathbb{R}$ ([[Spazio Affine su K]]) e il riferimento affine $(O, \mathcal{E})$ dove:
 > - $O = (0,0)$
 > - $\mathcal{E} = \{e_1, e_2\}$ è la *base canonica* dove 
@@ -34,7 +34,7 @@ stato: "1"
 > Allora il riferimento $(O, \mathcal{E})$ viene definito come il *"riferimento standard/canonico"* di $A^n_\mathbb{R}$ e le *coordinate* di un qualsiasi punto rispetto a $(O, \mathcal{E})$ sono dette le *"coordinate standard"*.
 
 #Esempio 
-> [!ex] Esempio 2.1. (esempio con riferimento canonico)
+> [!exm] esempio con riferimento canonico
 > Considero lo spazio affine $\mathbb{A}^3_\mathbb{R}$ e il *riferimento standard* $(O, \mathcal{E})$.
 > Allora fissando il punto $P = (3,1,2)$ voglio ottenere le sue *coordinate standard* rispetto al *riferimento standard*.
 > Considero dunque il vettore $\sigma(O, P)$:
@@ -44,7 +44,7 @@ stato: "1"
 > Pertanto le *coordinate* di $\sigma(O,P)$, ovvero le coordinate del punto $P$ rispetto al riferimento standard, sono $3, 1, 2$.
 
 #Esempio 
-> [!ex] Esempio 2.2. (esempio con riferimento non canonico)
+> [!exm] esempio con riferimento non canonico
 > Se avessimo considerato sempre lo stesso punto $P = (3,1,2) \in \mathbb{A}^3_\mathbb{R}$ ma avessimo preso un altro *riferimento affine* $(O', \mathcal{B})$, dove:
 > - $O' = (1,0,0)$
 > - La base non standard è $$\mathcal{B} = \left\{\begin{pmatrix}2 \\ 0 \\ 0 \end{pmatrix}, \begin{pmatrix}0 \\ 1 \\ 0 \end{pmatrix}, \begin{pmatrix} 0 \\ 0 \\ -1\end{pmatrix}\right\}$$

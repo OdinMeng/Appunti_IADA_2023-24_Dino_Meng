@@ -19,7 +19,7 @@ capitolo: Geometria Affine
 - [[Teoremi su Rango]]
 # 1. Da cartesiana a parametrica
 #Proposizione 
-> [!prop] Proposizione 1.1. (algoritmo di passaggio da equazione cartesiane a parametriche)
+> [!prp] algoritmo di passaggio da equazione cartesiane a parametriche
 > Sia $Ax = b$ un *sistema lineare* ([[Sistemi Lineari#^6f6520]]) che *esprime* le *equazioni cartesiane* ([[Definizione di Equazioni Cartesiane e Parametriche di uno Sottospazio Affine#^bc4fe3]]) di un *sottospazio affine* ([[Definizione di Sottospazio Affine#^a1f242]]).
 > 
 > Allora per trovare le *equazioni parametriche* di questo *sottospazio affine* è sufficiente considerare il *teorema di struttura delle soluzioni per i sistemi lineari* ([[Teoremi sui Sistemi Lineari#^49a263]]): ovvero si tratta prima di determinare una *soluzione particolare* $\tilde{s}$ risolvendo $Ax=b$, e poi determinando l'insieme delle soluzioni $W$ di $Ax=0$; essendo $W$ lo *span* ([[Combinazione Lineare]]) di alcuni vettori, allora avremo dei parametri liberi che chiameremo $t_1, \ldots, t_n$.
@@ -27,7 +27,7 @@ capitolo: Geometria Affine
 > Infine un *qualunque elemento* della soluzione di $Ax=b$ è un *elemento* dello *sottospazio affine* ([[Definizione di Equazioni Cartesiane e Parametriche di uno Sottospazio Affine#^0461d1]]): pertanto si avrà un *sistema di equazioni* con delle variabili libere arbitrarie, che è esattamente la nozione di *equazioni parametriche*.
 
 #Esempio 
-> [!ex] Esempio 1.1. 
+> [!exm] Esempio 1.1. 
 > Si consideri il seguente esempio.
 > $$S: \begin{cases} 3x_1-2x_2 = 1 \\ 6x_1-4x_2 = 2 \end{cases}$$
 > Per il *teorema di Rouché-Capelli* ([[Teorema di Rouché-Capelli]]), questo *sistema lineare* è compatibile. Calcoliamo dunque la sua generica soluzione $s$.
@@ -45,7 +45,7 @@ capitolo: Geometria Affine
 > $$S: \begin{cases}x_1 = 2t \\ x_2 = 3t-\frac{1}{2} \end{cases}$$
 # 2. Da parametrica a cartesiana
 #Proposizione 
-> [!prop] Proposizione 2.1. (algoritmo di passaggio da equazioni parametriche a cartesiane)
+> [!prp] algoritmo di passaggio da equazioni parametriche a cartesiane
 > Supponiamo di avere le seguenti *equazioni parametriche* ([[Definizione di Equazioni Cartesiane e Parametriche di uno Sottospazio Affine#^3babd4]]) per un *sottospazio affine* $S \subseteq \mathbb{A}^n_K$, ovvero un sistema del tipo
 > $$\begin{cases}x_1-q_1 = t_1w_{11} + \ldots + t_k w_{1k} \\ \vdots \\ x_n-q_n = t_1 w_{n1} + \ldots + t_k w_{nk}  \end{cases}$$
 > Queste valgono *se e solo se* i vettori $x_i-q_i$ sono *combinazioni lineari* della *base* di $W$, ovvero $w_1, \ldots, w_k$; allora questo vale se e solo se i vettori
@@ -60,7 +60,7 @@ capitolo: Geometria Affine
 > Infatti imponiamo le equazioni che troviamo nella parte segnata uguale a $0$. Così troviamo le *equazioni cartesiane* per $S$.
 
 #Esempio 
-> [!ex] Esempio 2.1.
+> [!exm] Esempio 2.1.
 > Si consideri il seguente esempio.
 > Abbiamo in $\mathbb{A}^2_\mathbb{R}$ il *sottospazio affine* $S$ dei punti $P:(x,y)$ con le *equazioni parametriche*
 > $$\begin{cases}x = t \\ y = 2+t \end{cases} \equiv \begin{pmatrix}x \\ y-2 \end{pmatrix} = t\begin{pmatrix}1 \\ 1 \end{pmatrix}$$

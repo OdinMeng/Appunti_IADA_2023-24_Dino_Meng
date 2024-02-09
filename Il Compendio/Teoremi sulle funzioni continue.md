@@ -11,13 +11,13 @@ stato: "1"
 Consideriamo delle *proprietà* delle funzioni continue, di cui alcuni discendono direttamente dai teoremi sui limiti ([[Teoremi sui Limiti di Funzione]]).
 ## Permanenza del segno adattato
 #Teorema 
-> [!thm] Teorema 1.1. (Permanenza del segno versione continua).
+> [!thm] Permanenza del segno versione continua.
 > Sia $f: E \longrightarrow \mathbb{R}$, sia $x_0 \in \mathbb{R}$ e $f$ continua in $x_0$.
 > Se $f(x_0) > 0$ ($<0$) allora esiste intorno di $x_0$ in cui $f$ ha segno *positivo* (*negativo*)
 ^3a557a
 ## Operazioni con funzioni continue
 #Teorema 
-> [!thm] Teorema 1.2. (Operazioni con funzioni continue).
+> [!thm] Operazioni con funzioni continue.
 > Siano $f, g$ funzioni *continue* in $x_0 \in \mathbb{R}$.
 > Allora 
 > $$f \pm g, f\cdot g, \frac{f}{g}$$
@@ -25,13 +25,13 @@ Consideriamo delle *proprietà* delle funzioni continue, di cui alcuni discendon
 ^41a8ec
 
 #Osservazione 
-> [!oss] Osservazione 1.2. (la funzione razionale è continua)
+> [!rmk] la funzione razionale è continua
 Da questo teorema si può dedurre che tutti i *polinomi* e *funzioni razionali* sono funzioni *continue*: infatti $$ p = a_0 + a_1x + a_2x^2+\ldots + a_nx^n  $$
-non è altro che una somma tra funzioni potenza, che sono *continue* ([[Definizione di continuità#^dfa8a1]]).
+non è altro che una somma tra funzioni potenza, che sono *continue* ([[Definizione di Continuità#^dfa8a1]]).
 
 ## Composta di funzioni continue
 #Teorema 
-> [!thm] Teorema 1.3. (Composta di funzioni continue).
+> [!thm] Composta di funzioni continue.
 > Siano
 > $$\begin{align}&f: E \longrightarrow \mathbb{R}, x_0 \in E \\&g : F \longrightarrow \mathbb{R}, f(x_0) \in F, f(E) \subseteq F \end{align} $$
 > Supponendo che $f$ sia *continua* in $x_0$ e $g$ sia *continua* in $f(x_0) = y_0$, allora $g \circ f$ è *continua* in $x_0$.
@@ -60,7 +60,7 @@ $$
 $$
 ## Caratterizzazione della continuità tramite le successioni
 #Teorema 
-> [!thm] Teorema 1.4. (di caratterizzazione della continuità tramite le funzioni)
+> [!thm] di caratterizzazione della continuità tramite le funzioni
 > Sia $f: E \longrightarrow \mathbb{R}$, $\bar{x} \in E$,
 > allora $f$ è continua in $\bar{x}$ se e solo se vale la proprietà $(\ast)$.
 > $(\ast)$: per ogni *successione a valori in* $E$, $(x_n)_n$, tale che 
@@ -126,7 +126,7 @@ che è assurdo (quindi falso), dato che contraddice la supposizione iniziale. $\
 # 2. Proprietà fondamentali delle funzioni continue
 ## Teorema degli zeri
 #Teorema 
-> [!thm] Teorema 2.1. (degli zeri)
+> [!thm] degli zeri
 Sia $f: [a, b] \longrightarrow \mathbb{R}$, $f$ *continua* nel suo dominio. Sia $f(a) < 0$, $f(b) > 0$ oppure $f(a)>0 \land f(b)<0$, cioè sono di segni *discordi* (ovvero $f(a)f(b) < 0$).
 Allora
 $$ \exists \xi \in ]a, b[: f(\xi) =0 $$
@@ -134,7 +134,7 @@ In parole deve esiste un valore $\xi$ che *"taglia"* attraverso la linea orizzon
 ^8b33e1
 
 #Esempio 
-> [!ex] Esempio 2.1.
+> [!exm] Esempio 2.1.
 Sia $f(x)=x^5+7x+1$. $f(x)$ ha soluzioni? (ovvero se esistono zeri)
 Sì, sapendo che $\lim_{x \to -\infty}f(x) = -\infty$ e $\lim_{x \to +\infty}f(x) = +\infty$.
 
@@ -152,14 +152,14 @@ Se mi capitano i casi $2, 3$ ripeto: facendo questa procedura ho due possibilit�
 1. Eventualmente riuscirò a trovare $\xi$ tale che $f(\xi) = 0$.
 2. Altrimenti costruisco una *successione di intervalli chiusi, dimezzati e inscatolati* del tipo $$ (I_n)_n = ([a_n, b_n])_n $$dove $f(a_n) < 0$ e $f(b_n) > 0$. Allora per la *forma forte del teorema di Cantor* ([[Conseguenze dell'esistenza dell'estremo superiore]], **TEOREMA 4.2.**) ho $$\bigcap_n I_n = \{\xi\}, \xi \in [a, b] \implies a \leq \xi \leq b$$Per concludere basta mostrare che $$f(\xi) = 0$$Prima osservo che $$0 \leq |a_n - \xi| \leq |b_n - a_n| = \frac{b_0-a_0}{2^n}$$e poi $$\lim_n 0 = 0;\lim_n\frac{b_0-a_0}{2^n} = 0$$dunque per due carabinieri $$\lim_n a_n = \xi $$
    Analogamente vale lo stesso per $b_n$.
-   Adesso uso la nozione di *continuità* ([[Definizione di continuità]]), usando in particolare il *teorema 1.4.* ([[#^acbf64]]). Allora $$f \text{ continua} \implies \begin{cases}\lim_n f(a_n) = f(\xi) \\ \lim_n f(b_n) = f(\xi)\end{cases}$$Però ricordandoci della *permanenza del segno* (**TEOREMA 1.1.**, [[#^3a557a]]), abbiamo che
+   Adesso uso la nozione di *continuità* ([[Definizione di Continuità]]), usando in particolare il *teorema 1.4.* ([[#^acbf64]]). Allora $$f \text{ continua} \implies \begin{cases}\lim_n f(a_n) = f(\xi) \\ \lim_n f(b_n) = f(\xi)\end{cases}$$Però ricordandoci della *permanenza del segno* (**TEOREMA 1.1.**, [[#^3a557a]]), abbiamo che
    $$ \begin{align}&f(a_n)<0, \forall n \implies \lim_n f(a_n) \leq 0 \implies f(\xi ) \leq 0 \\ & f(b_n) > 0, \forall n \implies \lim_n f(b_n) \geq 0 \implies f(\xi ) \geq 0 \end{align}$$Ma per la proprietà *antiriflessiva* di $\leq, \geq$ ho 
    $$ f(\xi) = 0 \ \blacksquare$$
 **FIGURA 2.1.** (*Idea intuitiva iniziale e della dimostrazione*)
 ![[Pasted image 20231220191525.png]]
 
 #Osservazione 
-> [!oss] Osservazione 2.1. (algoritmizzazione della dimostrazione del teorema)
+> [!rmk] algoritmizzazione della dimostrazione del teorema
    Questo teorema è *costruttivo*: la dimostrazione del teorema dei zeri ci fornisce un *modo* di trovare il valore $\xi$. Infatti, mediante gli strumenti dell'*informatica*, si può implementare un algoritmo per poter calcolare e approssimare un zero di una funzione.
 
 **ALGORITMO.** (*Quasi-Python*)
@@ -225,7 +225,7 @@ class TrovaZeri:
 ```
 
 #Esempio 
-> [!ex] Trovare una soluzione di $x^3-2$
+> [!exm] Trovare una soluzione di $x^3-2$
 > Supponiamo di voler trovare la soluzione per 
 > $$f(x)=x^3-2 $$
 > in $[0, 3]$.
@@ -236,7 +236,7 @@ class TrovaZeri:
 > e operativamente mi fermo quando il valore desiderato è abbastanza "vicino" a quello cercato.
 ## Teorema dei valori intermedi
 #Corollario 
-> [!cor] Corollario 2.2. (teorema degli valori intermedi)
+> [!cor] teorema degli valori intermedi
    Sia $g: [a, b] \longrightarrow \mathbb{R}$. Supponiamo $g(a) = \alpha$, $g(b) = \beta$, con $\alpha < \beta$. Sia $\gamma \in ]\alpha, \beta[$. 
    Allora 
    $$\exists \xi \in \ ]a, b[\ : g(\xi)=\gamma$$
@@ -277,7 +277,7 @@ $$
 Infatti il *"buco"* qui è proprio il numero $0$.
 
 #Osservazione 
-> [!oss] Osservazione 2.2. (una funzione continua su un intervallo manda sempre in un intervallo)
+> [!rmk] una funzione continua su un intervallo manda sempre in un intervallo
 Sia $E \subseteq \mathbb{R}$, con la seguente proprietà: $x_1, x_2 \in E \implies [x_1, x_2] \subseteq E$, chi è $E$?
 $E$ è *sempre* un intervallo: per dimostrarlo uso il teorema dell'esistenza di $\sup E, \inf E$ ([[Insiemi limitati, maggioranti, massimo e teorema dell'estremo superiore]]), le sue proprietà e di seguito il *teorema dei zeri*. Da questo discende il seguente corollario:
 
@@ -289,7 +289,7 @@ $E$ è *sempre* un intervallo: per dimostrarlo uso il teorema dell'esistenza di 
 Ora vediamo di collegare la nozione delle *funzioni continue* con gli *insiemi compatti* ([[Insiemi compatti in R#^0eb138]]). 
 
 #Teorema 
-> [!thm] Teorema 2.4. (di compattezza)
+> [!thm] di compattezza
 Sia $K \subseteq \mathbb{R}$, $K$ *compatto*; sia $f: K \longrightarrow \mathbb{R}$, $f$ *continua*.
 Allora $f(K)$ è *compatto*.
 
@@ -307,22 +307,24 @@ $$
 però mi ricordo che $f$ è continua, quindi per la *caratterizzazione della continuità tramite le successioni* ([[#^acbf64]]) ho che anche la sua *immagine* converge. Allora
 $$
 \lim_k f(x_{n_k}) = f(\bar{x}) \in f(K)
-$$Ricordandoci che $y_{n_k} = f(x_{n_k}), \forall k \in \mathbb{N}$, abbiamo proprio
 $$
-\lim_k y_{n_k} = \bar{y} \in f(K) \ \blacksquare$$
+Ricordandoci che $y_{n_k} = f(x_{n_k}), \forall k \in \mathbb{N}$, abbiamo proprio
+$$
+\lim_k y_{n_k} = \bar{y} \in f(K) \ \blacksquare
+$$
 
 #Corollario 
 > [!cor] Corollario 2.5.
 > Una funzione $f$ *continua* che ha per dominio *insiemi chiusi e limitati*, ovvero per la *caratterizzazione dei compatti* ([[Insiemi compatti in R#^759c9b]]) insiemi *compatti*, allora il suo *insieme immagine* è un *insieme chiuso e limitato*.
 ## Teorema di Weierstraß
 #Teorema
-> [!thm] Teorema 2.6. (di Weierstraß)
+> [!thm] di Weierstraß
 > Sia $K$ un insieme *compatto non vuoto* (pertanto *chiuso e limitato*), sia $f: K \longrightarrow \mathbb{R}$ *continua*.
 > Allora  $f(E)$ ha $\max$ e $\inf$; ovvero riprendendo le definizioni di *massimo e minimo  assoluto di una funzione* ([[Funzioni]], **DEF 11.1**; **DEF 11.2.**) esistono il massimo e minimo assoluto della funzione.
 ^918fc1
 
 #Osservazione 
-> [!oss] Osservazione 2.4. (insiemi compatti hanno sempre minimo e massimo)
+> [!rmk] insiemi compatti hanno sempre minimo e massimo
 > Un insieme *chiuso* e *limitato* ha sempre $\min$, $\max$? Sì, in quanto per definizione un insieme limitato deve avere per forza $\inf, \sup \in \mathbb{R}$ e in quanto chiuso questi appartengono anche all'insieme stesso. 
 ^3a916a
 

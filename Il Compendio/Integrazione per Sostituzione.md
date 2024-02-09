@@ -16,10 +16,10 @@ capitolo:
 - [[Funzioni]]
 # 1. Enunciato del teorema
 #Teorema 
-> [!thm] Teorema 1.1. (integrazione per sostituzione)
+> [!thm] integrazione per sostituzione
 > Sia $g \in \mathcal{C}^1$ (ovvero *derivabile fino ad almeno* $f'$ con $f'$ continua),
 > $$g: [\alpha, \beta] \longrightarrow [a,b]$$
-> Sia $f:[a,b] \longrightarrow \mathbb R$ *continua* ([[Definizione di continuità#^ddf65d]]).
+> Sia $f:[a,b] \longrightarrow \mathbb R$ *continua* ([[Definizione di Continuità#^ddf65d]]).
 > Sia $F$ l'*Integralfunktion* di $f$ ([[Funzione Integrale#^e5e02b]]).
 > Allora vale che
 > $$(F(g(x))' = F'(g(x)) \cdot g'(x) = f(g(x))g'(x)$$
@@ -35,7 +35,7 @@ La dimostrazione è immediata: questa segue dalle *regole di derivazione* ([[Pro
 $$F(g(\beta)) -F(g(\alpha)) = \int_{g(\alpha)}^{g(\beta)}f(x) \ dx$$
 # 3. Regola pratica
 #Osservazione 
-> [!oss] Osservazione 3.1. (regoletta pratica)
+> [!rmk] regoletta pratica
 > Anche se l'enunciato del teorema in sé potrebbe sembrar complicato, in realtà è più facile di quello che si pensa. Infatti possiamo usare la seguente regoletta pratica:
 > - Poniamo una nuova *"variabile"* e la chiamiamo $u$ in funzione di $x$; ovvero abbiamo qualcosa del tipo $u = f(x)$.
 > - Prendendo la derivata di $u$ ottengo $du = f'(x) dx$.
@@ -44,7 +44,7 @@ $$F(g(\beta)) -F(g(\alpha)) = \int_{g(\alpha)}^{g(\beta)}f(x) \ dx$$
 > Si illustra questa regoletta nel seguente esempio.
 
 #Esempio 
-> [!ex] Esempio 3.1. (sostituzione per $u$)
+> [!exm] sostituzione per $u$
 > Voglio calcolare
 > $$\int_1^2 2x \cdot x^2 \ dx$$
 > Anche se questo integrale sarebbe troppo banalmente facile da calcolare con le altre *tecniche* di integrazione (come ad esempio mediante la tabella delle primitive), supponiamo però di esser pagati una modica cifra di denaro per ogni volta che usiamo l'*integrazione per sostituzione*.

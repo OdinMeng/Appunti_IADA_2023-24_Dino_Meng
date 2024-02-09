@@ -9,18 +9,18 @@ stato: "1"
 - - -
 # 1. Definizione di rango
 #Osservazione 
-> [!oss] Osservazione 1.1. (le colonne di una matrice vivono in $K^m$)
+> [!rmk] le colonne di una matrice vivono in $K^m$
 Sia $A \in M_{m,n}(K)$, allora le *colonne* di $A$ sono *tutti* elementi di $K^m$. Dunque $$A^{(1)}, \ldots, A^{(n)} \in K^n $$
 
 #Definizione 
-> [!def] Definizione 1.1. (rango)
+> [!def] rango
 Sia $A \in M_{m,n}(K)$; definiamo il *rango* della *matrice* ([[Matrice#^18867e]]) $A$ e lo denotiamo con $\operatorname{rg}(A)$ oppure $\operatorname{rk}(A)$ (*la seconda è la dicitura internazionale*) come la *dimensione* ([[Dimensione#^3a9321]]) dello *span* ([[Combinazione Lineare#^126061]]) dello *sottospazio* generato dalle *colonne* di $A$:
 $$\operatorname{rg}(A):= \dim(\operatorname{span}(A^{(1)}, \ldots, A^{(n)})) $$
 ^d641ff
 
 # 2. Osservazioni sul rango
 #Osservazione 
->[!oss] Osservazione 2.1. (il rango è limitato da due numeri)
+>[!rmk] Osservazione 2.1. (il rango è limitato da due numeri)
 Se $A \in M_{m,n}(K)$ allora 
 >- $\operatorname{rg}(A) \leq m$; infatti $$A^{(1)}, \ldots, A^{(n)} \in K^m  \implies \operatorname{span}(A^{(1)}, \ldots, A^{(n)}) \subseteq K^m$$
   dunque per la *proposizione 3.1.* sulla dimensione ([[Dimensione#^265196]]) $$\dim(A^{(1)}, \ldots, A^{(n)}) \leq \dim(K^m)=m$$
@@ -30,12 +30,12 @@ Se $A \in M_{m,n}(K)$ allora
   $$A \in M_{m,n}(K) \implies \operatorname{rg}A \leq \min \{m, n\}$$
 
 #Osservazione 
-> [!oss] Osservazione 2.2.
+> [!rmk] Osservazione 2.2.
 Noteremo che questa definizione *non* cambierebbe, se invece di considerare le *colonne* considerassimo le *righe*.
 
 # 3. Esempio
 #Esempio 
-> [!ex] Esempio 3.1. (matrice 2x3)
+> [!exm] matrice 2x3
 > Consideriamo la matrice
 > $$A \in M_{2,3}(K) = \begin{pmatrix}2 & 1 & 3 \\ 1 & 0 & -1 \end{pmatrix} $$
 > Dalla definizione di *rango* e dall'*osservazione 1.2.* sappiamo che
@@ -45,7 +45,7 @@ Noteremo che questa definizione *non* cambierebbe, se invece di considerare le *
 > $$\operatorname{rg}(A)=1$$
 
 #Esempio 
-> [!ex] Esempio 3.2. (matrice identità $\mathbb{1}_n$)
+> [!exm] matrice identità $\mathbb{1}_n$
 > Sia $\mathbb{1}_n$ la *matrice identità* $n$ x $n$ ([[Matrice#^d1d34b]]), abbiamo
 > $$\operatorname{rg}(\mathbb{1}_n) = \dim(\operatorname{span}(\begin{pmatrix} 1 \\ \vdots \\ 0\end{pmatrix}), \ldots, \begin{pmatrix} 0\\ \vdots\\ 1\end{pmatrix}) = \dim(K^n) = n$$
 

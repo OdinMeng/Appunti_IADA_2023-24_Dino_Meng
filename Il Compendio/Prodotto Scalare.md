@@ -14,7 +14,7 @@ capitolo: Geometria Euclidea (cenni)
 - [[Ortogonalità e ortonormalità]]
 # 1. Definizione di Prodotto Scalare
 #Definizione 
-> [!def] Definizione 1.1. (prodotto scalare di due vettori)
+> [!def] prodotto scalare di due vettori
 > Sia $V$ un *spazio vettoriale su $\mathbb{R}$* ([[Spazi Vettoriali#^7e2c4e]]) di *dimensione finita*.
 > In particolare si sceglie $V = \mathbb{R}^n$.
 > Dati due vettori $v, w \in V$, definiamo il *prodotto scalare* tra $v, w$ come la quantità
@@ -23,7 +23,7 @@ capitolo: Geometria Euclidea (cenni)
 ^228d4c
 
 #Definizione 
-> [!def] Definizione 1.2. (funzione prodotto scalare)
+> [!def] funzione prodotto scalare
 > Definiamo in tal modo la *funzione* prodotto scalare, ovvero una del tipo
 > $$\boldsymbol{\cdot} : V \times V \longrightarrow \mathbb{R}$$
 > dove $$v \cdot w = \sum_{n \leq i \leq 0}v_iw_i$$
@@ -32,7 +32,7 @@ capitolo: Geometria Euclidea (cenni)
 
 # 2. Proprietà del prodotto scalare
 #Proposizione 
-> [!prop] Proposizione 2.1. (la bilinearità del prodotto scalare)
+> [!prp] la bilinearità del prodotto scalare
 > Il prodotto scalare è *bilineare*, ovvero che valgono le seguenti proprietà:
 > - $\forall v_1, v_2 \in V, \forall w \in V$, 
 >   $$(v_1+v_2)\cdot w = v_1 \cdot w + v_2 \cdot w$$
@@ -42,7 +42,7 @@ capitolo: Geometria Euclidea (cenni)
 >  Valgono anche delle analoghe proprietà scambiando $v, w$.
 
 #Osservazione 
-> [!oss] Osservazione 2.1. (il prodotto scalare tra due vettori uguali)
+> [!rmk] il prodotto scalare tra due vettori uguali
 > Sia un $v \in \mathbb{R^2}, v=(v_1, v_2)$ un vettore.
 > Allora il prodotto scalare $v \cdot v$ è $v_1^2+v_2^2$.
 > Osserviamo che per il *teorema di Pitagora*, questa quantità è proprio la *lunghezza* del vettore $v$ dall'origine $(0,0)$ (*figura 2.1.*)

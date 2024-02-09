@@ -9,21 +9,21 @@ stato: "1"
 - - -
 # 0. Preambolo - Spazi metrici e topologici
 #Osservazione 
-> [!oss] Osservazione 0.a. (spazi metrici e topologici)
+> [!rmk] spazi metrici e topologici
 Osserviamo che dal titolo leggiamo che stiamo *in specifica* prendendo l'insieme $\mathbb{R}$, in quanto questo è un insieme su cui possiamo definire una *distanza* ([[Intorni#^f7536a]]). Infatti si dice che $\mathbb{R}$ è uno *spazio metrico*, come lo è pure $\mathbb{R}^2, \ldots, \mathbb{R}^{n}$. Altrimenti un insieme su cui non può essere definita una *distanza* si dice *spazio topologico*.
 Per approfondire questo tema rivolgersi alla dispensa di *D.D.S.*, capitolo *10.2*, p. 33.
 # 1. Definizione di insieme compatto in R
 #Definizione 
-> [!def] Definizione 1.1. (Insieme compatto in R per successioni).
+> [!def] Insieme compatto in R per successioni.
 Sia $E \subseteq \mathbb{R}$. $E$ si dice *compatto per successione* (*d'ora in poi diremo compatto e basta*) se vale la seguente proprietà: se da *ogni successione* a valori in $E$ posso estrarre *una sottosuccessione convergente ad un punto* $x \in E$.
 ^0eb138
 
 #Osservazione 
-> [!oss] Osservazione 1.1. (la necessità di un teorema di caratterizzazione dei compatti)
+> [!rmk] la necessità di un teorema di caratterizzazione dei compatti
 Con questa definizione, un insieme compatto sembra un ente di cui è quasi impossibile da verificare: infatti diventa interessante trovare una *caratterizzazione alternativa* con un teorema.
 # 2. Teorema di caratterizzazione dei compatti
 #Teorema 
-> [!thm] Teorema 2.1. (Teorema di caratterizzazione dei compatti in R).
+> [!thm] Teorema di caratterizzazione dei compatti in R.
 > Sia $E \subseteq \mathbb{R}$. 
 > *Tesi.* Allora $E$ è compatto *se e solo se* $E$ è chiuso e limitato.
 ^759c9b
@@ -31,7 +31,7 @@ Con questa definizione, un insieme compatto sembra un ente di cui è quasi impos
 Prima di poter procedere alla dimostrazione, ci serve il seguente lemma.
 
 #Lemma
-> [!lem] Lemma 2.1. (Caratterizzazione della chiusura tramite le successioni).
+> [!lem] Caratterizzazione della chiusura tramite le successioni.
 >  Sia $E \subseteq \mathbb{R}$.
 > Allora $E$ è *chiuso* ([[Insiemi aperti e chiusi#^36f40d]]) se e solo se vale la seguente proprietà:
 > $(\ast)$ Se una qualsiasi successione a valori in $E$ è convergente, allora il limite appartiene all'insieme $E$.

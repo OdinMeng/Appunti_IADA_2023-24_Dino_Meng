@@ -11,7 +11,7 @@ capitolo:
 - - -
 # 1. Prodotto scalare
 #Definizione 
-> [!def] Definizione 1.1. (prodotto scalare)
+> [!def] prodotto scalare
 > Sia $V$ un *$\mathbb K$-spazio vettoriale*. Un'operazione $<\cdot, \cdot>$ (o denotata anche come $\cdot$) si dice *prodotto scalare* se una funzione del tipo
 > $$<\cdot, \cdot>: V \times V \longrightarrow K$$
 > e se soddisfa la seguenti tre proprietà:
@@ -27,13 +27,13 @@ capitolo:
 > allora il prodotto scalare si dice *non degenere*.
 
 #Esempio 
-> [!ex] Esempio 1.1.
+> [!exm] Esempio 1.1.
 > Il prodotto vettoriale su $\mathbb{R}^2$ soddisfa le condizioni del prodotto scalare.
 > $$\forall u, v \in \mathbb{R}^2; u = (x, y) \land v = (x', y'); u \cdot v = x' x + y' y$$
 > ([[Prodotto Scalare#^8840d2]])
 
 #Esempio 
-> [!ex] Esempio 1.2.
+> [!exm] Esempio 1.2.
 > Il prodotto scalare sulle funzioni continue (dunque integrabili, ([[Tipologie di Funzioni Integrabili#^dd4f09]])) sull'intervallo $[0, 1]$, ovvero appartenenti all'$\mathbb{R}$-spazio vettoriale $\mathcal{F}$, è definito come il seguente:
 > $$\cdot: \mathcal{F} \times \mathcal{F} \longrightarrow \mathbb{R}$$
 > del tipo

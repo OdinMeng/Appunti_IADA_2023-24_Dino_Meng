@@ -9,7 +9,7 @@ stato: "1"
 - - -
 # 1. Prima Osservazione: sulle prime proprietà delle matrici associate
 #Osservazione 
-> [!oss] Osservazione 1.1. (sulle prime proprietà delle matrici associate)
+> [!rmk] sulle prime proprietà delle matrici associate
 > Facciamo delle considerazioni sulle [[Prime Proprietà sulle Matrici associate a un'Applicazione Lineare]] e sui [[Teoremi sulle Matrici associate a un'Applicazione Lineare]].
 > Consideriamo $f: V \longrightarrow V$ con $\dim V = n$. Per il *corollario 2.2. sulle applicazioni lineari* si ha che $f$ è un *isomorfismo* (ovvero biettiva, pertanto invertibile) ([[Conseguenze del teorema di dimensione delle Applicazioni Lineari#^a78df6]]).
 > Allora $f^{-1}: V \longrightarrow V$ è *anch'essa applicazione lineare* e supponendo che $\mathcal{B}$ sia una *base* di $V$, abbiamo il seguente:
@@ -37,7 +37,7 @@ Questo sarà infatti il problema della *diagonalizzazione* ([[Considerazioni Pre
 Allora da tutti questi risultati appena derivati, possiamo enunciare la seguente proposizione.
 
 #Proposizione 
-> [!prop] Proposizione 3.1. (calcolo di una nuova matrice associata con basi cambiate)
+> [!prp] calcolo di una nuova matrice associata con basi cambiate
 > Sia $f: V \longrightarrow V'$ un'*applicazione lineare* tra *spazi vettoriali* di *dimensione finita*.
 > Siano $\mathcal{B}, \mathcal{C}$ le basi *"originarie"* di $V, V'$.
 > Siano poi $\tilde{\mathcal{B}}, \tilde{\mathcal C}$ le *"nuove basi"* di $V, V'$.
@@ -46,13 +46,13 @@ Allora da tutti questi risultati appena derivati, possiamo enunciare la seguente
 > Pertanto, se conosciamo la matrice $M^\mathcal{B}_\mathcal{C}(f)$ allora possiamo ottenere la *"nuova matrice"* $M^\tilde{\mathcal B}_\tilde{\mathcal C}(f)$ moltiplicando a destra e a sinistra la *"matrice conosciuta"* per le *due matrici di cambiamento di base*.
 
 #Osservazione 
-> [!oss] Osservazione 3.1. (idea grafica)
+> [!rmk] idea grafica
 > Graficamente abbiamo una specie di *"semplificazione"* delle basi:
 > $$M^\cancel{\mathcal{C}}_\mathcal{\tilde C}(\operatorname{id}_V) \cdot M^\cancel{\mathcal B}_\cancel{\mathcal C}(f) \cdot M^\mathcal{\tilde B}_\cancel{\mathcal{B}} = M^\mathcal{\tilde B}_\mathcal{\tilde C}(f)$$
 > Ovviamente questo serve *solamente* come un trucco mnemonico, non una dimostrazione rigorosa.
 
 #Corollario 
-> [!cor] Corollario 3.1. (caso particolare del calcolo della nuova matrice associata)
+> [!cor] caso particolare del calcolo della nuova matrice associata
 > In particolare se prendiamo $f: V \longrightarrow V$, con $\mathcal{B}$ la *"base originaria"* e $\mathcal{C}$ la *"nuova base"* con cui facciamo il cambiamento di base, allora vale che
 > $$\boxed{M^\mathcal{C}_\mathcal{C}(f) = M^\mathcal{B}_\mathcal{C}(\operatorname{id}_V) \cdot M^\mathcal{B}_\mathcal{B}(f) \cdot M^\mathcal{B}_\mathcal{C}(\operatorname{id}_V)}$$
 
@@ -61,7 +61,7 @@ Allora da tutti questi risultati appena derivati, possiamo enunciare la seguente
 Omessa in quanto basta considerare che $f = \operatorname{id}_{V'} \circ f \circ \operatorname{id}_V$ e il *teorema 2.1.* sulle *matrici associate* ([[Teoremi sulle Matrici associate a un'Applicazione Lineare#^65e5e6]]).
 
 #Osservazione 
-> [!oss] Osservazione 3.2. (origine della nozione di matrice simile)
+> [!rmk] origine della nozione di matrice simile
 > Notiamo che la nozione di *matrice* simile discende proprio da queste considerazioni: infatti considerando $P$ come la *matrice del cambiamento di base* 
 > $$P = M^\mathcal{C}_\mathcal{B}(\operatorname{id}_V)$$
 > Pertanto la sua *inversa* è 

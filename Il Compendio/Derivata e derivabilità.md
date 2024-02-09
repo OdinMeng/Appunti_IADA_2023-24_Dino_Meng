@@ -9,7 +9,7 @@ stato: "1"
 - - -
 # 1. Derivata
 #Definizione 
-> [!def] Definizione 1.1. (derivata di una funzione relativa ad un punto)
+> [!def] derivata di una funzione relativa ad un punto
 > Sia $f: I \longrightarrow \mathbb{R}$, $x_0 \in I$.
 > Sia $R_{x_0}^{f}(x)$ il *rapporto incrementale* ([[Rapporto Incrementale#^ccc58b]]).
 > Allora definisco la *derivata* di $f$ in $x_0$ il *limite* ([[Definizione di Limite di funzione#^0f845a]]) del rapporto incrementale con $x$ che tende a $x_0$.
@@ -18,14 +18,14 @@ stato: "1"
 ^478a87
 
 #Osservazione 
-> [!oss] Osservazione 1.1. (interpretazione geometrica della derivata)
+> [!rmk] interpretazione geometrica della derivata
 Come precedentemente osservato in [[Rapporto Incrementale#^c7cbf0]], la *derivata in un punto* ha la sua interpretazione geometrica. Ovvero questa è semplicemente la *pendenza* della *retta tangente* in un punto: infatti se prendendo due punti sulla funzione, di cui una *"mobile"* e l'altra *"fissa"*, poi facendo avvicinare il punto mobile a quello fisso, noteremo che la retta secante dei due punti si *"convergerà"* ad una retta sola (ovviamente supponendo che esista).
 
 **FIGURA 1.1.** (*Interpretazione geometrica di derivata*)
 ![[Pasted image 20231122161016.png]]
 # 2. Derivabilità
 #Definizione 
-> [!def] Definizione 2.1. (derivabilità in un punto)
+> [!def] derivabilità in un punto
 > Sia $f: I \longrightarrow \mathbb{R}, x_0 \in I$.
 > Se *esiste finito* la *derivata* ([[#^478a87]]) 
 > $$f'(x) = \lim_{x \to x_0} R_{x_0}^{f}(x) \in \mathbb{R}$$
@@ -33,16 +33,16 @@ Come precedentemente osservato in [[Rapporto Incrementale#^c7cbf0]], la *derivat
 ^6e7606
 
 #Definizione 
-> [!def] Definizione 2.2. (derivabilità di una funzione)
+> [!def] derivabilità di una funzione
 > Sia $f: I \longrightarrow \mathbb{R}$ *derivabile* ([[#^6e7606]]) in *ogni* punto del suo dominio $I$, allora $f$ si dice *derivabile* (e basta).
 ^12c1df
 
 #Osservazione 
-> [!oss] Osservazione 2.1. (collegamento derivata-derivabilità e continuità)
-Notiamo che queste due definizioni *"seguono"* lo schema delle definizioni di *continuità* ([[Definizione di continuità#^ddf65d]], [[Definizione di continuità#^d2f56f]])
+> [!rmk] collegamento derivata-derivabilità e continuità
+Notiamo che queste due definizioni *"seguono"* lo schema delle definizioni di *continuità* ([[Definizione di Continuità#^ddf65d]], [[Definizione di Continuità#^d2f56f]])
 # 3. Funzione derivata
 #Definizione 
-> [!def] Definizione 3.1. (funzione derivata)
+> [!def] funzione derivata
 > Sia $f: I \longrightarrow \mathbb{R}$ *derivabile*.
 > Chiamo la *funzione derivata* la funzione 
 > $$f: I \longrightarrow \mathbb{R}; x \mapsto f'(x) $$

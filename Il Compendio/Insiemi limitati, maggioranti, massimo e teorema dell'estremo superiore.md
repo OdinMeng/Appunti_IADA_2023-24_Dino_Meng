@@ -9,7 +9,7 @@ stato: "1"
 - - -
 # 1. Insiemi limitati
 #Definizione 
-> [!def] Definizione 1.1. (insieme limitato superiormente)
+> [!def] insieme limitato superiormente
 Sia $A \subseteq \mathbb{R}$, $A$ si dice un insieme *limitato superiormente* se $$\exists M \in \mathbb{R}: \forall a, \in A; a \leq M$$
 Graficamente, un insieme *limitato superiormente* si rappresenta con la *figura 1.1.*.
 
@@ -17,12 +17,12 @@ Graficamente, un insieme *limitato superiormente* si rappresenta con la *figura 
 ![[Pasted image 20231011161237.png]]
 
 #Esempio 
-> [!ex] Esempio 1.1.
+> [!exm] Esempio 1.1.
 Considero $A = \{x \in \mathbb{R}: x^2+3x+1=0\}$.
 $A$ è *limitato superiormente*, in quanto risolvendo $A$ otteniamo l'insieme $A = \{\frac{-3-\sqrt{5}}{2}, \frac{-3+\sqrt{5}}{2}\}$, e scegliendo $M = 0$ si ha che entrambi elementi di $A$ sono minori di $0$.
 
 #Definizione 
-> [!def] Definizione 1.2. (insieme limitato inferiormente)
+> [!def] insieme limitato inferiormente
 $A \subseteq \mathbb{R}$ si dice un insieme *limitato inferiormente* se $$\exists m \in \mathbb{R}: \forall a \in A; a \geq m$$
 Graficamente la si rappresenta come nella *figura 1.2.*.
 
@@ -30,17 +30,17 @@ Graficamente la si rappresenta come nella *figura 1.2.*.
 ![[Pasted image 20231011161248.png]]
 
 #Definizione 
-> [!def] Definizione 1.3. (insieme limitato)
+> [!def] insieme limitato
 $A \subseteq \mathbb{R}$ si dice *limitato* se è sia limitato *superiormente* che *inferiormente*.
 
 #Esempio 
-> [!ex] Esempio 1.2.
+> [!exm] Esempio 1.2.
 $[a, b]$ è limitato.
 Infatti se si scelgono $M = b, n = a$ per definizione risulta vero che questo [intervallo](Intervalli) è *limitato*. 
 ^c0a632
 
 #Proposizione 
-> [!prop] Proposizione 1.1. (condizione necessaria e sufficiente dell'insieme limitato)
+> [!prp] condizione necessaria e sufficiente dell'insieme limitato
 $A$ è *limitato* se e solo se $\exists R > 0$ tale che $A \subseteq [-R, R]$
 ^54b805
 
@@ -58,7 +58,7 @@ Da quanto visto in [[Connettivi]], basta dimostrare che entrambe le implicazioni
 ![[Pasted image 20231011161334.png]]
 
 #Osservazione 
-> [!oss] Osservazione 1.1. (insiemi limitati in $\mathbb{R}^2$)
+> [!rmk] insiemi limitati in $\mathbb{R}^2$
 Vorrei trovare un modo per definire gli *insiemi limitati* su un piano $\pi$.
 E' possibile definirlo tramite il seguente: *"Se riesco a mettere l'insieme $A$ all'interno di una sfera di raggio $R$, allora esso è limitato."*
 Graficamente si ha la *figura 1.5.*.
@@ -67,7 +67,7 @@ Graficamente si ha la *figura 1.5.*.
 ![[Pasted image 20231011161349.png]]
 
 #Definizione 
-> [!def] Definizione 1.4. (insieme superiormente illimitato)
+> [!def] insieme superiormente illimitato
 Un insieme $A$ si dice *superiormente illimitato* quando neghiamo che $A$ è superiormente limitato; ovvero $$\neg(\exists M \in \mathbb{R}, \forall a \in A, a \leq M)$$
 ovvero $$\forall M \in \mathbb{R}, \exists a \in A: a > M$$
 che graficamente vuol dire che ad ogni $M_n$ che fissiamo, esiste *sempre* un valore $a_n$ che è più grande di $M$ (*figura 1.6.*).
@@ -79,13 +79,13 @@ che graficamente vuol dire che ad ogni $M_n$ che fissiamo, esiste *sempre* un va
 Il discorso è analogo per *insiemi inferiormente illimitati* e *insiemi illimitati*.
 # 2. Maggioranti, massimi; minoranti e minimi
 #Definizione 
-> [!def] Definizione 2.1. (maggioranti e minoranti)
+> [!def] maggioranti e minoranti
 Sia $A \subseteq \mathbb{R}$, $M \in \mathbb{R}$.
 Se $\forall a \in A, a \leq M$, (ovvero $A$ è *limitato inferiormente*) il valore $M$ si dice un *maggiorante di $A$*. 
 Analogamente, se $A \subseteq \mathbb{R}$, $m \in \mathbb{R}$, m è *minorante di $A$* quando $\forall a \in A, m \leq a$.
 
 #Definizione 
-> [!def] Definizione 2.2. (massimi e minimi)
+> [!def] massimi e minimi
 Siano $A \subseteq \mathbb{R}$, $\mu \in \mathbb{R}$, se:
 >- $\mu$ è maggiorante di $A$ e
 >- $\mu \in A$
@@ -96,7 +96,7 @@ Analogamente, se $A \subseteq \mathbb{R}$ e $\nu \in \mathbb{R}$, allora definis
 $$\nu := \text{minimo di A} = \begin{cases}\nu \in A\\\forall a \in A, a \geq \nu\end{cases} $$
 
 #Proposizione 
-> [!prop] Proposizione 2.1. (l'unicità del massimo e/o del minimo)
+> [!prp] l'unicità del massimo e/o del minimo
 Sia $A$ un insieme *limitato inferiormente*.
 Suppongo che esistano due massimi di $A$, $\mu_1, \mu_2$; si avrebbe allora $\mu_1 = \mu_2$, in quanto può esistere *solo* il *massimo* di $A$.
 ^85bb5a
@@ -108,7 +108,7 @@ Quindi combinando le *(1)* e *(2)*, abbiamo $$(\mu_2 \leq \mu_1) \land (\mu_1 \l
 Il discorso è analogo per il *minimo* di $A$.
 
 #Esempio 
-> [!ex] Esempio 2.1.
+> [!exm] Esempio 2.1.
  Consideriamo [l'intervallo](Intervalli) $$A = \ ]1, 2[$$ci chiediamo se questo intervallo ha *maggioranti e/o minorante* e se ha *massimo e/o minimo*.
 >1. $A$ ha sia *maggioranti* che *minoranti*, infatti possiamo porre $M = 2$ e $m = 1$; ma possiamo anche porre $M = 3$ e $m = 0$. 
    Allora *definiamo* l'insieme dei maggioranti di $A$, $$A^{*} := \{\text{maggioranti di }A\} = [2, +\infty[$$
@@ -122,7 +122,7 @@ Dall'*esempio 2.1.* abbiamo un problema interessante; ovvero *"gli insiemi limit
 La risposta è *no*, da quanto visto prima; però è interessante osservare che esiste sempre il *"miglior"* maggiorante e il *"miglior"* minorante. Ora li vediamo.
 
 #Definizione 
-> [!def] Definizione 3.1. (estremo superiore e inferiore)
+> [!def] estremo superiore e inferiore
 >Sia $A$ superiormente limitato.
 Chiamo *l'estremo superiore di $A$* il *minimo* dell'insieme dei *maggioranti di $A$* ($A^{*}$).
 >
@@ -130,7 +130,7 @@ Sia $B$ inferiormente limitato.
 Chiamo *l'estremo inferiore di $B$* il *massimo* dell'insieme dei *minoranti di $B$* ($B_{*}$).
 # 4. Teoremi sugli estremi superiori (e inferiori)
 #Teorema 
-> [!thm] Teorema 4.1. (dell'esistenza dell'estremo superiore)
+> [!thm] dell'esistenza dell'estremo superiore
 Sia $A \subseteq \mathbb{R}$, $A \neq \emptyset$, e $A$ *superiormente limitato*, allora $$\exists \xi \in \mathbb{R}: \xi \text{ è estremo superiore di }A$$
 ^1e6dec
 
@@ -144,12 +144,12 @@ Quindi, per definizione $\xi$ è l'*estremo superiore di $A$*. $\blacksquare$
 ^55bb5a
 
 #Esercizio 
-> [!es] Esercizio 4.1.
+> [!exr] Esercizio 4.1.
 Dimostrare che se $A \neq \emptyset$ e $A$ è inferiormente limitato, allora $$\exists \eta \in \mathbb{R}: \eta \text{ è l'estremo inferiore di }A$$
 Dato che per ipotesi $A$ è non vuota ed è inferiormente limitata, allora sicuramente $$\forall a \in A, \forall b\in A_{*}, b \leq a$$per la definizione di minorante. Osserviamo che si può applicare l'assioma *S)*; quindi sicuramente $$\exists \eta \in \mathbb{R}: b \leq \eta \leq a$$Ovvero $\eta$ è il massimo di $A_{*}$ ed è un minorante di $A$. Ovvero *l'estremo inferiore di $A$*.
 
 #Teorema 
-> [!thm] Teorema 4.2. (le proprietà dell'estremo superiore)
+> [!thm] le proprietà dell'estremo superiore
 Sia $A \subseteq \mathbb{R}$, $A \neq \emptyset$, $\alpha \in \mathbb{R}$.
 $$\alpha = \sup(A) \iff \begin{cases}\forall a \in A, a \leq \alpha \text{ (1)}\\ \forall \varepsilon > 0, \exists \bar{a}\in A: \bar{a} > \alpha -\varepsilon \text{ (2)} \end{cases}$$
 In parole semplici, la *(1)* vuol dire che $\alpha$ è un maggiorante di $A$; la *(2)* invece vuol dire che per qualsiasi valore $\varepsilon$ positivo, allora $a - \varepsilon$ non è maggiorante di $A$.
@@ -162,12 +162,12 @@ Ma quindi $\alpha$ è il *minimo dei maggioranti di $A$*; quindi se sottraggo ad
 Volendo si può ragionare anche sulla viceversa, partendo dai presupposti (1) e (2) e verificando che vogliono dire le stesse cose. 
 
 #Teorema 
-> [!thm] Teorema 4.3. (le proprietà dell'estremo inferiore)
+> [!thm] le proprietà dell'estremo inferiore
 Sia $A \subseteq \mathbb{R}$, $A \neq \emptyset$, $\beta \in \mathbb{R}$.
 $$\beta = \inf(A) \iff \begin{cases}\forall a \in A, a \geq \beta \text{ (1)} \\\forall \varepsilon >0, \exists \bar{a} \in A: \bar{a} > a + \varepsilon \text{ (2)} \end{cases}$$
 # 5. Esempio generale
 #Esempio 
-> [!ex] Esempio 5.1.
+> [!exm] Esempio 5.1.
 Considero $$A = \{\forall n \in \mathbb{N} \diagdown\{0\}, 1-\frac{1}{n} \}$$
 Voglio trovare le seguenti: $\sup(A)$, $\inf(A)$, $\max(A)$, $\min(A)$.
 >
@@ -186,5 +186,5 @@ Quindi vediamo che $$ A = \{0, 1, \frac{1}{2}, \frac{2}{3},\ldots,\frac{n-1}{n}\
 ![[Pasted image 20231011161432.png]]
 
 #Osservazione 
-> [!oss] Osservazione 5.1. (l'esistenza del massimo implica l'esistenza dell'estremo superiore)
+> [!rmk] l'esistenza del massimo implica l'esistenza dell'estremo superiore
 Se un insieme ha un *minimo* $\min$ (o *massimo $\max$*), allora tale valore è *l'estremo inferiore* $\inf$ (o *estremo superiore* $\sup$). Però il contrario non deve necessariamente valere, come visto sopra.

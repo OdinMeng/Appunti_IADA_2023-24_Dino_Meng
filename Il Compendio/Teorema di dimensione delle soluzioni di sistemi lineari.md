@@ -9,7 +9,7 @@ stato: "1"
 - - -
 # 1. Enunciato del teorema
 #Teorema 
-> [!thm] Teorema 1.1. (teorema di dimensione delle soluzioni di sistemi lineari)
+> [!thm] teorema di dimensione delle soluzioni di sistemi lineari
 > Sia $A \in M_{m,n}(K)$;
 > sia $W$ l'insieme delle *soluzioni* del *sistema lineare omogeneo associato ad* $A$ ([[Sistemi Lineari#^54ad7d]]) con $A = A$, $s \in K^n$, ovvero
 > $$W = \{s \in K^n : A \cdot s = 0\} $$

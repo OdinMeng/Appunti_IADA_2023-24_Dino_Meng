@@ -17,7 +17,7 @@ stato: "1"
 # 1. Integrabilità di alcune funzioni elementari
 ## Funzione costante
 #Esempio 
-> [!ex] Esempio 1.1. (funzione costante)
+> [!exm] funzione costante
 > Sia $f: [a, b] \longrightarrow \mathbb{R}$ la *funzione costante* $x \mapsto c \in \mathbb{R}$.
 > Allora, intuitivamente si può vedere la sua *area* sotto la *"curva"* (o linea retta) è semplicemente *base per altezza*, ovvero $c \cdot (b-a)$ (*figura 1.1.*).
 > Però usiamo l'*integrazione di Riemann* ([[Integrabilità secondo Riemann#^64ad3b]]) per calcolare il suo *integrale*, ovvero l'*area*.
@@ -34,7 +34,7 @@ stato: "1"
 
 ## Funzione identità
 #Esempio 
-> [!ex] Esempio 1.2. (funzione identità)
+> [!exm] funzione identità
 > Sia $f: [0,1] \longrightarrow \mathbb{R}$ la *funzione identità* $\operatorname{id}(x) = x$.
 > Allora anche qui si può intuire che l'*area sotto la retta* è l'*area di un triangolo*, ovvero *base per altezza diviso due*. Pertanto $A = f(1)(1-0)\cdot\frac{1}{2}=\frac{1}{2}$.
 > Ora verifichiamo quest'affermazione secondo l'*integrazione di Riemann*.
@@ -63,7 +63,7 @@ stato: "1"
 
 ## Funzione potenza quadrata
 #Esempio 
-> [!ex] Esempio 1.3. (funzione quadrato)
+> [!exm] funzione quadrato
 > Sia $f: [0,1] \longrightarrow \mathbb{R}$, $f(x) = x^2$.
 > Vogliamo calcolare l'integrale $\int_0^1 f(x) \ dx$.
 > Analogamente all'*esempio 1.3.*, prendiamo la suddivisione
@@ -81,7 +81,7 @@ stato: "1"
 
 ## La difficoltà dell'integrazione
 #Osservazione 
-> [!oss] Osservazione 1.1. (la necessità di una tecnica alternativa dell'integrazione)
+> [!rmk] la necessità di una tecnica alternativa dell'integrazione
 > Vediamo che calcolare l'*integrale* di una funzione secondo la *tecnica di Riemann* risulta spesso *"faticoso"* e *"difficile"* (anche se discutibile!): perciò sorge la necessità di trovare un altro modo più *"semplice"* per calcolare gli *integrali*, raggirando ad esempio il calcolo delle *somme inferiore e/o superiore*.
 > A proposito di ciò argomenterebbero a favore i noti matematici russi *A. N. Kolmogorov*, *A. D. Aleksandrov* e *M. A. Lavrent'ev*$^{(1)}$: loro affermerebbero che che ci serve un metodo più *"generale"* per calcolare gli integrali, in quanto fino ad ora abbiamo adoperato *"tecniche specialissime"*.
 
@@ -91,13 +91,13 @@ Sorge quindi il problema di trovare un metodo generale peri l calcolo dell'integ
 - - -
 ## Funzione esponenziale
 #Esercizio 
-> [!es] Esercizio 1.1.
+> [!exr] Esercizio 1.1.
 > Per esercizio calcolare l'integrale
 > $$\int_0^1 e^x \ dx$$
 
 # 2. Funzioni non integrabili
 #Osservazione 
-> [!oss] Osservazione 2.1. (esempio di funzione non integrabile)
+> [!rmk] esempio di funzione non integrabile
 > Esistono funzioni che *non* siano *integrabili secondo Riemann*?
 > La risposta è sì, in quanto se consideriamo la *funzione di Dirichlet* scopriamo che questa non sia derivabile.
 > La funzione di Dirichlet è definita nel seguente modo:

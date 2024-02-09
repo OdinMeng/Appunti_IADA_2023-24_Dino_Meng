@@ -9,7 +9,7 @@ stato: "1"
 - - -
 # 1. Nucleo e immagine come sottospazi vettoriali
 #Proposizione 
-> [!prop] Proposizione 1.1. (nucleo e immagine sono sottospazi vettoriali)
+> [!prp] nucleo e immagine sono sottospazi vettoriali
 > Sia $f: V \longrightarrow V'$ un'*applicazione lineare* ([[Definizione di Applicazione Lineare#^9b39f9]]).
 > Allora $\ker f$ è *sottospazio vettoriale* di $V$; $\operatorname{im}f$ è *sottospazio vettoriale* di $V'$.
 ^d0ed96
@@ -42,7 +42,7 @@ Ora consideriamo l'immagine $\operatorname{im}$.
 
 # 2. Relazione tra iniettività-suriettività e nucleo-immagine
 #Proposizione 
-> [!prop] Proposizione 2.1.
+> [!prp] Proposizione 2.1.
 > Sia $f: V \longrightarrow V'$ un'*applicazione lineare*. Siano $\ker f$ e $\operatorname{im} f$ rispettivamente il *nucleo* e l'*immagine* di $f$.
 > Allora valgono che
 > i. $f$ è *iniettiva* ([[Funzioni#^cc92ef]]) se e solo se $\ker f = \{0\}$ (ovvero il *nucleo* di $f$ è il più piccolo possibile. 

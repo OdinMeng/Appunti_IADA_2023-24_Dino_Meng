@@ -9,7 +9,7 @@ stato: "1"
 - - -
 # 1. Osservazione sulle matrici
 #Osservazione 
-> [!oss] Osservazione 1.1. (condizione necessaria e sufficiente per la diagonalizzabilità di un'applicazione lineare)
+> [!rmk] condizione necessaria e sufficiente per la diagonalizzabilità di un'applicazione lineare
 > Ricordiamo che se $f: V \longrightarrow V$ è un'*applicazione lineare* di *dimensione finita* ([[Definizione di Applicazione Lineare#^9b39f9]]), e $N, N'$ sono le *matrici associate di* $f$ alle basi $\mathcal{B}, \mathcal{C}$ di $V$, ovvero
 > $$N= M^\mathcal{B}_\mathcal{B}(f); N'=M^\mathcal{C}_\mathcal{C}(f)$$
 > Supponiamo inoltre che $N'$ sia diagonale.
@@ -21,7 +21,7 @@ stato: "1"
 
 # 2. Proposizione di caratterizzazione delle applicazioni diagonalizzabili
 #Proposizione 
-> [!prop] Proposizione 2.1. (proprietà fondamentale della diagonalizzabilità)
+> [!prp] proprietà fondamentale della diagonalizzabilità
 > Sia $f: V \longrightarrow V$ un'*applicazione lineare* di *dimensione finita*.
 > Allora $f$ è diagonalizzabile *se e solo se* esiste una base $\mathcal{B}$ di $V$ costituita tutta da *autovettori*.
 ^b86a9d
@@ -34,7 +34,7 @@ Ma allora ciò vuol dire che la sua *matrice associata* ([[Definizione della Mat
 $$M^{\mathcal{B}}_\mathcal{B}(f) = \begin{pmatrix}\lambda_1 & 0 & \ldots & 0 \\ 0 & \lambda_2 & \ldots & 0 \\ \vdots & \vdots & \vdots & \vdots \\ 0 & 0 & 0 & \lambda_n\end{pmatrix}$$
 Allora chiaramente questa matrice è *diagonale*, il che significa $f$ è *diagonalizzabile*. $\blacksquare$
 ## Gli autovalori possono essere uguali (osservazione fondamentale)
-> [!oss] Osservazione 2.1. 
+> [!rmk] Osservazione 2.1. 
 > Però notiamo che non abbiamo supposto che tutti gli *autovalori* $\lambda_i$ sono tutti distinti: infatti, alcuni *autovettori* possono avere lo stesso autovalore!
 > Per comprendere che una tale base possa esistere, andiamo a ripensare gli *autospazi* ([[Definizione di Autovalore, Autovettore, Autospazio#^1486dc]]) in una nuova maniera.
 > In particolare, ridimostriamo che gli *autospazi* sono *sottospazi vettoriali* in una maniera alternativa.

@@ -17,7 +17,7 @@ stato: "1"
 - - -
 # 1. Integrali delle operazioni con funzioni
 #Proposizione 
-> [!prop] Proposizione 1.1. (l'integrale di due funzioni sullo stesso intervallo)
+> [!prp] l'integrale di due funzioni sullo stesso intervallo
 > Siano $f, g$ delle *funzioni integrabili secondo Riemann* sull'intervallo $[a, b]$ ([[Integrabilità secondo Riemann#^5455b8]]). Allora
 > $$f+g \in \mathcal{R}([a,b]); \int_a^b (f+g)(t) \ dt = \int_a^b f(t) \ dt + \int_a^b g(t) \ dt$$
 ^b48600
@@ -46,13 +46,13 @@ $$S(f+g, \Phi)-s(f+g, \Phi) < \varepsilon$$
 che è proprio la *condizione necessaria e sufficiente di integrabilità* per la funzione $f+g$ relativo all'intervallo $\Phi$. $\blacksquare$
 
 #Proposizione 
-> [!prop] Proposizione 1.2. (l'integrale dello scalamento di una funzione)
+> [!prp] l'integrale dello scalamento di una funzione
 > Sia $f$ una funzione *integrabile secondo Riemann* su $[a,b]$ e sia $\lambda$ uno *"scalare"* (ovvero numero) in $\mathbb{R}$.
 > Allora vale che $\lambda \cdot f$ è *integrabile* e che il suo *integrale* è il seguente.
 > $$\lambda \cdot f \in \mathcal{R}([a, b]); \int_a^b (\lambda\cdot f)(t)\ dt = \lambda \int_a^b f(t) \ dt$$
 ## L'integrabilità delle funzioni in termini di algebra lineare
 #Osservazione 
-> [!oss] Osservazione 1.1. (le funzioni integrabili costituiscono uno sottospazio vettoriale)
+> [!rmk] le funzioni integrabili costituiscono uno sottospazio vettoriale
 > Notiamo che le proprietà appena enunciate sono molto *simili* a delle medesime proprietà per cui si definiscono enti certi matematici.
 > Parliamo infatti dei *spazi vettoriali* (in particolare dei *sottospazi vettoriali*): infatti, se consideriamo $\mathcal{F}$ come l'*insieme delle funzioni* e la dotiamo delle operazioni di *somma interna* e dello *scalamento esterno su* $\mathbb{R}$, allora $\mathcal{F}$ è un $\mathbb{R}$-*spazio vettoriale*. ([[Spazi Vettoriali#^7e2c4e]])
 > 
@@ -61,12 +61,12 @@ che è proprio la *condizione necessaria e sufficiente di integrabilità* per la
 > Inoltre, la *dimensione* ([[Dimensione#^3a9321]]) dell'insieme $\mathcal{R}$ è *infinita* in quanto l'insieme $\mathcal{F}$ è *infinitamente generata*.
 
 #Osservazione 
-> [!oss] Osservazione 1.2. (l'applicazione lineare integrale)
+> [!rmk] l'applicazione lineare integrale
 > Inoltre, definendo l'*"applicazione integrale"* (*non è il miglior termine che possiamo usare, ma ahimè*) come quella funzione in cui inseriamo una funzione integrabile e otteniamo il suo integrale, vediamo che questa costituisce un'*applicazione lineare*. Vale infatti l'additività e l'omogeneità. ([[Definizione di Applicazione Lineare#^9b39f9]])
 > $$\begin{align}\int_a^b: & \ \mathcal{R}([a,b]) \longrightarrow \mathbb{R} \\ & \ f \mapsto \underset{[a,b]}\int f\end{align}$$
 # 2. Confronto tra gli integrali delle funzioni integrabili
 #Proposizione 
-> [!prop] Proposizione 2.1. (l'integrale di una funzione grande è più grande dell'integrale di una funzione piccola)
+> [!prp] l'integrale di una funzione grande è più grande dell'integrale di una funzione piccola
 > Siano $f,g$ delle *funzioni* definite su $[a,b]$. Siano inoltre $f, g \in \mathcal{R}([a,b])$. Valga che $\forall x \in [a,b], f(x) \geq g(x)$. (ovvero una funzione sta sempre in *"alto"* dell'altro)
 > Allora vale che
 > $$\underset{[a,b]}\int f \geq \underset{[a,b]} \int g$$
@@ -75,7 +75,7 @@ che è proprio la *condizione necessaria e sufficiente di integrabilità* per la
 ![[Pasted image 20231208133614.png]]
 
 #Proposizione 
-> [!prop] Proposizione 2.2. (l'integrale del valore assoluto di una funzione è più grande dell'integrale della funzione)
+> [!prp] l'integrale del valore assoluto di una funzione è più grande dell'integrale della funzione
 > Sia $f$ una funzione definita su $[a, b]$. Sia $f \in \mathcal{R}([a, b])$.
 > Allora $|f| \in \mathcal{R}([a,b])$ e vale che
 > $$\left|\int_b^a f(t) \ dt \ \right| \leq \int_b^a |f(t)| \ dt$$
@@ -87,7 +87,7 @@ che è proprio la *condizione necessaria e sufficiente di integrabilità* per la
 ![[Pasted image 20231208135243.png]]
 # 3. Partizione di un'integrale
 #Proposizione 
-> [!prop] Proposizione 3.1. (la partizione di un'integrale)
+> [!prp] la partizione di un'integrale
 > Sia $f \in \mathcal{R}([a,b])$ e sia $c \in \ ]a,b[$ (punto *interno*).
 > Allora considerando la *restrizione* di $f$ in $[a,c]$ e $[c, b]$ abbiamo che
 > $$\begin{gather} f_{|[a,c]} \in \mathcal{R}([a,c]); f_{|[c,b]} \in \mathcal{R}([c,b]) \\ \underset{[a,c]}\int f + \underset{[c,b]}\int f = \underset{a,b}\int f \end{gather}$$
@@ -98,7 +98,7 @@ che è proprio la *condizione necessaria e sufficiente di integrabilità* per la
 **FIGURA 3.1.** (*Idea grafica della proposizione 3.1.*)
 ![[Pasted image 20231208140432.png]]
 # 4. Convenzione di scrittura degli integrali
-> [!prop] Convenzione di scrittura per gli integrali
+> [!prp] Convenzione di scrittura per gli integrali
 > Si propone la seguente convenzione per scrivere gli integrali, in particolare per quanto riguarda gli *intervalli* di definizione.
 > Siano $a,b,c \in \mathbb{R}$ dei numeri disposti in *qualsiasi modo*; possiamo avere $a<b<c$, $a<c<b$, e così via...
 > Allora se abbiamo l'integrale

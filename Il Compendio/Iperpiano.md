@@ -16,7 +16,7 @@ capitolo: Geometria Affine
 - [[Dimensione di uno Spazio Affine]]
 # 1. Definizione di Iperpiano
 #Definizione 
-> [!def] Definizione 1.1. (iperpiano di uno spazio affine)
+> [!def] iperpiano di uno spazio affine
 > Sia $\mathbb{A}$ un *spazio affine* su $V$ ([[Definizione di Spazio Affine#^100c32]]), sia $\mathbb{S} \subseteq \mathbb{A}$ un *sottospazio affine* ([[Definizione di Sottospazio Affine#^a1f242]]).
 > Se vale che
 > $$\boxed{\dim \mathbb{A} = n \implies \dim \mathbb{S} = n-1}$$
@@ -25,7 +25,7 @@ capitolo: Geometria Affine
 ^477d80
 
 #Osservazione 
-> [!oss] Osservazione 1.1. (iperpiani di spazi affini su K)
+> [!rmk] iperpiani di spazi affini su K
 > Possiamo *"ridefinire"* i punti, le rette e i piani ([[Dimensione di uno Spazio Affine#^d772db]]) in termini di *iperpiani*:
 > - Un punto è un *iperpiano* di $\mathbb{A}^1_K$;
 > - Una retta è un *iperpiano* di $\mathbb{A}^2_K$;

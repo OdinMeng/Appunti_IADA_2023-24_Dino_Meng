@@ -13,7 +13,7 @@ capitolo:
 Partiamo dalla struttura di base.
 
 #Definizione 
-> [!def] Definizione 1.1. (struttura algebrica)
+> [!def] struttura algebrica
 > Sia $A$ un *insieme numerico*, sia $*$ un'operazione interna per $A$, ovvero del tipo
 > $$*: A \times A \longrightarrow A$$
 > Allora la coppia $(A, *)$ si dice *struttura algebrica*.
@@ -21,12 +21,12 @@ Partiamo dalla struttura di base.
 Ora andiamo ad *"arricchire"* la struttura algebrica.
 
 #Definizione 
-> [!def] Definizione 2.1. (semigruppo)
+> [!def] semigruppo
 > Sia $(A, *)$ una *struttura algebrica*. Allora $(A, *)$ si dice *semigruppo* se l'operazione $*$ gode della *proprietà associativa*, ovvero
 > $$\forall a, b, c \in A, (a*b)*c = a*(b*c)$$
 
 #Definizione 
-> [!def] Definizione 2.2. (monoide, gruppo)
+> [!def] monoide, gruppo
 > Sia $(B, +)$ una *struttura algebrica*. 
 > i. Se $+$ è munito di un'*elemento neutro*, ovvero se
 > $$\exists 0^+_B \in B: \forall b \in B, b+0^+_B=b \vee 0^+_B+b=b$$
@@ -36,20 +36,20 @@ Ora andiamo ad *"arricchire"* la struttura algebrica.
 > allora $(B, +)$ si dice *gruppo*. 
 
 #Definizione 
-> [!def] Definizione 2.3. (abeliano)
+> [!def] abeliano
 > Sia $(B, +)$ una *struttura algebrica* o un *semigruppo* o un *monoide* o un *gruppo*.
 > Allora se $+$ gode della *proprietà commutativa*, allora $(B, +)$ si dice *abeliano*.
 # 3. Anello, campo
 Diamo le ultime *"decorazioni"* a queste strutture algebriche, fornendole di un'altra operazione che gode di altre proprietà.
 
 #Definizione 
-> [!def] Definizione 3.1. (anello)
+> [!def] anello
 > Sia $(C, §)$ un *gruppo abeliano*; sia $(C, °)$ un *semigruppo*.
 > Allora si definisce $(C, §, °)$ un *anello*
 > Inoltre se $°$ gode della *proprietà commutativa*, allora l'anello si dice *commutativo/abeliano*; se $°$ ha un'elemento neutro allora l'anello si dice *unitario*.
 
 #Definizione 
-> [!def] Definizione 3.2. (campo)
+> [!def] campo
 > Sia $(D, \$, £)$ un *anello unitario*, con gli elementi di neutri delle operazioni $\$$ e $£$ distinti.
 > Se *ogni elemento dell'insieme $D$* è invertibile, a parte l'elemento neutro per $£$, allora $D$ si dice *campo*.
 > 

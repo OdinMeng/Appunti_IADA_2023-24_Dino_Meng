@@ -13,7 +13,7 @@ Per capire il *concetto* di *asintoto* di una funzione è necessario aver presen
 - Limite di funzione: [[Definizione di Limite di funzione]]
 # 1. Definizione di asintoto
 #Definizione 
-> [!def] Definizione 1.1. (asintoto orizzontale)
+> [!def] asintoto orizzontale
 > Sia $f$ una *funzione a variabile reale*.
 > Se esiste il *limite* 
 > $$\lim_{x \to \pm \infty}f(x) = c \in \mathbb{R} $$
@@ -23,7 +23,7 @@ Per capire il *concetto* di *asintoto* di una funzione è necessario aver presen
 ![[Pasted image 20231127220412.png]]
 
 #Definizione 
-> [!def] Definizione 1.2. (asintoto verticale)
+> [!def] asintoto verticale
 > Se invece esiste il limite
 > $$\lim_{x \to x_0^{\pm}} f(x) = \pm \infty $$
 > allora $x = x_0$ è un *asintoto verticale*.
@@ -32,7 +32,7 @@ Per capire il *concetto* di *asintoto* di una funzione è necessario aver presen
 ![[Pasted image 20231127220530.png]]
 
 #Definizione 
-> [!def] Definizione 1.3. (asintoto obliquo)
+> [!def] asintoto obliquo
 > Se invece $\exists m, q \in \mathbb{R}$ tali che
 > $$\lim_{x \to \pm \infty} f(x) - (mx + q) = 0 $$
 > Allora la retta
@@ -46,7 +46,7 @@ Per capire il *concetto* di *asintoto* di una funzione è necessario aver presen
 ![[Pasted image 20231127220721.png]]
 # 2. Tecnica per "testare" asintoti obliqui
 #Proposizione 
-> [!prop] Proposizione 2.1. (tecnica per "trovare" asintoti obliqui)
+> [!prp] tecnica per "trovare" asintoti obliqui
 > Se abbiamo una funzione che presenta limite della forma
 > $$\lim_{x \to + \infty}f(x) = + \infty$$
 > Allora sarà opportuno provare a vedere se questa presenta un *asintoto obliquo*.

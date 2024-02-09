@@ -9,7 +9,7 @@ stato: "1"
 - - -
 # 0. Osservazione preliminare
 #Osservazione
-> [!oss] Osservazione 0.a (punti del segmento tra due punti)
+> [!rmk] punti del segmento tra due punti
 > Supponiamo di avere il *piano cartesiano* $\pi$ ([[Coppie Ordinate e Prodotto Cartesiano#^61dab9]]) e voglio rappresentare il segmento tra i punti
 > $$(x_1, y_1), (x_2, y_2)$$
 > Ovvero ho una situazione grafica raffigurata in *figura 0.1.*.
@@ -28,7 +28,7 @@ stato: "1"
 
 # 1. Definizione di Funzione Convessa
 #Definizione 
-> [!def] Definizione 1.1. (funzione convessa o concava)
+> [!def] funzione convessa o concava
 > Sia $f: I \longrightarrow \mathbb{R}$ ($I$ *intervallo*) ([[Intervalli]])
 > La funzione $f$ si dice *convessa* se prendendo qualsiasi due punti $x_1, x_2$ nell'intervallo $I$, uno più grande dell'altro, allora succede il seguente:
 > $$\begin{gather}\forall x_1, x_2 \in I, x_1 < x_2, \forall \lambda \in [0,1],\\ \boxed{f(\lambda x_1 + (1-\lambda)x_2) \leq \lambda f(x_1) + (1-\lambda)f(x_2)}\end{gather}$$
@@ -37,7 +37,7 @@ stato: "1"
 ^f4cbdd
 
 #Osservazione 
-> [!oss] Osservazione 1.1. (significato geometrico)
+> [!rmk] significato geometrico
 > Ora vediamo cosa vuol dire la definizione data sopra.
 > Seguendo l'*osservazione preliminare* (*oss. 0.a*) svolta prima ([[#^a47002]]), notiamo che il membro destro della disuguaglianza è sostanzialmente un *punto qualsiasi della retta passante per* $(x_1, f(x_1)), (x_2, f(x_2))$, se si considera $y = f(x)$.
 > Invece a sinistra notiamo che $\lambda x_1 + (1-\lambda)x_2$ non è altro che una *combinazione lineare* di $x_1, x_2$ ([[Combinazione Lineare#^8113de]]). 
@@ -49,7 +49,7 @@ stato: "1"
 ![[Pasted image 20231128212937.png]]
 
 #Osservazione 
-> [!oss] Osservazione 1.2. (concavità e convessità simultanea)
+> [!rmk] concavità e convessità simultanea
 > Notiamo che una funzione $f$ è sia *concava* che *convessa* se vale che
 > $$\begin{gather}\forall x_1, x_2 \in I, x_1 < x_2, \forall \lambda \in [0,1],\\ \begin{cases} f(\lambda x_1 + (1-\lambda)x_2) \leq \lambda f(x_1) + (1-\lambda)f(x_2) \\ f(\lambda x_1 + (1-\lambda)x_2) \geq \lambda f(x_1) + (1-\lambda)f(x_2)\end{cases}\\ \Downarrow \\ f(\lambda x_1 + (1- \lambda)x_2) = \lambda f(x_1) + (1-\lambda)f(x_2)\end{gather}$$
 Notiamo che il *"risultato"* di questa implicazione è il fatto che $f$ sia un'*applicazione lineare* in quanto si vede valgono le proprietà di definizione AL (ovvero l'additività e l'omogeneità) ([[Definizione di Applicazione Lineare#^9b39f9]]). Pertanto $f$ può essere solo una *retta*.

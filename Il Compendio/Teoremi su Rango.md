@@ -11,7 +11,7 @@ stato: "1"
 Ora vedremo una proposizione che ci permetterà di calcolare il rango di una matrice usando l'algoritmo di Gauß ([[Algoritmo di Gauß]])
 
 #Proposizione 
-> [!prop] Proposizione 1.1. (Effetti degli O.E. sul rango)
+> [!prp] Effetti degli O.E. sul rango
 > Sia $A \in M_{m,n}(K)$ e $\tilde{A}$ una matrice ottenuta da $A$ applicando le *operazioni elementari* OE1,2,3,. ([[Algoritmo di Gauß#^8a7c5e]], [[Algoritmo di Gauß#^1f10d6]], [[Algoritmo di Gauß#^175a42]]); allora valgono le seguenti:
 > $$\begin{align}&1. \ \operatorname{rg}(A) = \operatorname{rg}(\tilde{A}) \\ &2. \ \tilde{A} \text{ a scala} \implies \operatorname{rg}(\tilde{A}) = r, \text{ ove }r \text{ è il numero di righe non nulle} \end{align}$$
 ^9290df
@@ -20,17 +20,17 @@ Ora vedremo una proposizione che ci permetterà di calcolare il rango di una mat
 Omessa. $\blacksquare$
 # 2. Connessione colonne-righe
 #Proposizione 
-> [!prop] Proposizione 2.1.
+> [!prp] Proposizione 2.1.
 > Sia $A \in M_{m,n}(K)$; allora vale che
 > $$\operatorname{rg}(A)=\operatorname{rg}(^t A) $$
 > ovvero che il *rango* di una matrice è alla stessa della sua *trasposta* ([[Operazioni particolari con matrici#^bf11d7]]); quindi considerare la *colonna* oppure la *riga* per trovare il rango non cambia.
 # 3. Invertibilità di una matrice
 #Osservazione 
-> [!oss] Osservazione 3.1. (collegamento Rouché-Capelli e Cramer)
+> [!rmk] collegamento Rouché-Capelli e Cramer
 Guardando il *corollario del teorema di Rouché-Capelli* ([[Teorema di Rouché-Capelli#^4ed5f2]]), notiamo che questo ci ricorda il *teorema di Cramer* ([[Teoremi sui Sistemi Lineari#^97243e]]): infatti entrambe prescrivono la *compatibilità* di un sistema lineare, sotto certe condizioni. C'è una connessione più profonda tra questi due teoremi? Ora vediamo con la seguente proposizione.
 
 #Proposizione 
-> [!prop] Proposizione 3.1. (Invertibilità di una matrice)
+> [!prp] Invertibilità di una matrice
 > Sia $A \in M_{n}(K)$ una *matrice quadrata* ([[Matrice#^a95650]]).
 > Allora il rango di questa matrice è *massima* (ovvero $n$) se e solo se questa è *invertibile*:
 > $$\boxed{\operatorname{rg}(A) = n \iff \exists A^{-1}: A \cdot A^{-1} = \mathbb{1}_n} $$

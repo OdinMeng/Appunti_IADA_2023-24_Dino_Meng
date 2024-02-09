@@ -9,7 +9,7 @@ stato: "1"
 - - -
 # 1. Autospazio di un qualsiasi autovalore è sottospazio vettoriale
 #Proposizione 
-> [!prop] Proposizione 1.1. (l'autospazio di un qualsiasi autovalore è sottospazio vettoriale del dominio/codominio)
+> [!prp] l'autospazio di un qualsiasi autovalore è sottospazio vettoriale del dominio/codominio
 > Sia $f: V \longrightarrow V$ un'*applicazione lineare* ([[Definizione di Applicazione Lineare#^9b39f9]]) con $\dim V = n$.
 > Sia $\lambda \in K$ un *autovalore* di $f$ ([[Definizione di Autovalore, Autovettore, Autospazio#^1098ea]]).
 > Allora $\operatorname{Aut}{\lambda}$ è *sottospazio vettoriale di V* ([[Sottospazi Vettoriali#^9bcbf2]]).
@@ -28,7 +28,7 @@ Verifichiamo le *tre proprietà caratterizzanti* di sottospazi vettoriali.
    $$v_1+v_2 \in \operatorname{Aut}{\lambda}$$
 # 2. Due vettori appartenenti a due autospazi distinti sono linearmente indipendenti
 #Proposizione 
-> [!prop] Proposizione 2.1. (due elementi di autospazi distinti sono linearmente indipendenti)
+> [!prp] due elementi di autospazi distinti sono linearmente indipendenti
 > Sia $f: V \longrightarrow V$ un'*applicazione lineare* con $\dim V = n$.
 > Siano $\lambda, \mu$ *autovalori distinti* di $f$.
 > Siano $v_1 \in \operatorname{Aut}{\lambda}$ e $v_2 \in \operatorname{Aut}{\mu}$.

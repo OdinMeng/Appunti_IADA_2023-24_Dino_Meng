@@ -9,8 +9,8 @@ stato: "1"
 - - -
 # 1. Enunciato del teorema di Lagrange
 #Teorema 
-> [!thm] Teorema 1.1. (di Lagrange)
-> Sia $f: [a, b] \longrightarrow \mathbb{R}$, $f$ *continua* in $[a, b]$ e *derivabile* in $]a, b[$ ([[Definizione di continuità#^ddf65d]], [[Derivata e derivabilità#^6e7606]]).
+> [!thm] di Lagrange
+> Sia $f: [a, b] \longrightarrow \mathbb{R}$, $f$ *continua* in $[a, b]$ e *derivabile* in $]a, b[$ ([[Definizione di Continuità#^ddf65d]], [[Derivata e derivabilità#^6e7606]]).
 > Allora si verifica il seguente:
 > $$\boxed{\exists \xi \in \ ]a, b[\ : f'(\xi) = \frac{f(b)-f(a)}{b-a}} $$
 ^ef03c2
@@ -21,7 +21,7 @@ Per dimostrare il *teorema di Lagrange* basta considerare il *teorema di Cauchy*
 Infatti per questo motivo si potrebbe considerare il *teorema di Lagrange* come un *corollario* del *teorema di Cauchy*. $\blacksquare$
 # 3. Interpretazione grafica
 #Osservazione 
-> [!oss] Osservazione 3.1. (interpretazione grafica del teorema di Lagrange)
+> [!rmk] interpretazione grafica del teorema di Lagrange
 Osserviamo che l'espressione
 $$\frac{f(b)-f(a)}{b-a} $$
 è *equivalente* al *rapporto incrementale* $R^{f}_{a}(b)$ ([[Rapporto Incrementale#^ccc58b]]).

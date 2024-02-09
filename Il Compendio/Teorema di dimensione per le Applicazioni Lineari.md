@@ -9,7 +9,7 @@ stato: "1"
 - - -
 # 1. Enunciato
 #Teorema 
-> [!thm] Teorema 1.1. (di dimensione per le applicazioni lineari)
+> [!thm] di dimensione per le applicazioni lineari
 > Sia $f: V \longrightarrow V'$ un'*applicazione lineare* ([[Definizione di Applicazione Lineare#^9b39f9]]) tra due *spazi vettoriali di dimensione finita*.
 > Allora vale che
 > $$ \dim V = \dim \operatorname{ker} f + \dim \operatorname{im} f$$
@@ -52,7 +52,7 @@ $$\mathcal{B}_V = \mathcal{B}_{\ker f} \cup \mathcal{B}_{\operatorname{im} f} \i
 
 # 3. Esempi
 #Esempio 
-> [!ex] Esempio 3.1. (esempio di una trasformazione 3D a 4D)
+> [!exm] esempio di una trasformazione 3D a 4D
 > Supponiamo $f: \mathbb{R}^3 \longrightarrow \mathbb{R}^4$ un'*applicazione lineare*.
 > Allora sicuramente sappiamo che $f$ non potrà essere *suriettiva*: infatti per il teorema appena enunciato e dimostrato, sappiamo che
 > $$\dim \mathbb{R}^3 = \dim \ker f + \dim \operatorname{im} f $$

@@ -20,7 +20,7 @@ stato: "1"
 ^4a5cb4
 
 #Definizione 
-> [!def] Definizione 1.1. (la funzione integrale / die Integralfunktion) 
+> [!def] la funzione integrale / die Integralfunktion 
 > Sia $f: [a,b] \longrightarrow \mathbb{R}$ una funzione *integrabile secondo Riemann sull'intervallo* $[a, b]$ ([[Integrabilità secondo Riemann#^5455b8]]).
 > Allora definisco la *funzione integrale di $f$* su $[a,b]$ (oppure in tedesco *die Integralfunktion*) come il seguente:
 > $$\boxed{F: [a,b] \longrightarrow \mathbb{R}\ ; \  F(x)=\int_a^x f(t) \ dt}$$
@@ -34,13 +34,13 @@ stato: "1"
 # 2. Proprietà dell'Integralfunktion
 ## Integralfunktion Lipschitziana
 #Definizione 
-> [!def] Definizione 2.1. (funzione lipschitziana)
+> [!def] funzione lipschitziana
 > Sia una $g: [a,b] \longrightarrow \mathbb{R}$ una *funzione*, se vale la seguente condizione, ovvero
 > $$\begin{gather}\exists M>0: \forall x_1, x_2 \in [a,b], \\ |g(x_1)-g(x_2)|\leq M|x_1-x_2| \end{gather}$$
 > allora $g$ si dice *lipschitziana* (o in tedesco *lipschitzstetig*).
 
 #Proposizione 
-> [!prop] Proposizione 2.1. (funzione lipschitziana è continua)
+> [!prp] funzione lipschitziana è continua
 > In particolare, una funzione *lipschitziana* è anche *continua*: dalla condizione di *Lipschitz* deve discendere
 > $$\lim_{x_1 \to x_2}g(x_1)=g(x_2)$$
 ^2635f6
@@ -51,7 +51,7 @@ Dimostrazione lasciata al lettore per esercizio ([[Esercizi sulle funzioni#^488a
 *Consiglio: usare la definizione "alla Cauchy" della continuità.*
 
 #Teorema 
-> [!thm] Teorema 2.1. (die Integralfunktion ist lipschitzstetig)
+> [!thm] die Integralfunktion ist lipschitzstetig
 > Sia $f$ una *funzione integrabile secondo Riemann sull'intervallo $[a,b]$* ([[Integrabilità secondo Riemann]]) (ovvero $f \in \mathcal{R}([a,b])$).
 > Sia $F$ l'*Integralfunktion* di $f$, ovvero $F: [a,b] \longrightarrow \mathbb{R}$.
 > $$F(x) = \int_a^x f(x) \ dx$$
@@ -74,7 +74,7 @@ Ovvero, in definitiva,
 $$\boxed{|F(x_1)-F(x_2) | \leq M|x_1-x_2|} \  \blacksquare$$
 ## Integralfunktion Continua
 #Corollario 
-> [!cor] Corollario 2.1. (die Integralfunktion ist kontinuierlich)
+> [!cor] die Integralfunktion ist kontinuierlich
 > Sia $f$ una *funzione integrabile secondo Riemann sull'intervallo $[a,b]$* ([[Integrabilità secondo Riemann]]) (ovvero $f \in \mathcal{R}([a,b])$).
 > Sia $F$ l'*Integralfunktion* di $f$, ovvero $F: [a,b] \longrightarrow \mathbb{R}$.
 > $$F(x) = \int_a^x f(x) \ dx$$

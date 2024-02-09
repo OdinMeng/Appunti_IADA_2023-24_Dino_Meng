@@ -22,3 +22,6 @@ Da oggi in poi rendo disponibile il sito pubblico https://odinmeng.github.io/ pe
 
 ANNUNCIO IMPORTANTE (22.01.2024)
 A seguito del completamento dell'esame di *Analisi Matematica I*, ho deciso di rendere ufficiale e finale la stesura della dispensa personale di Analisi I.
+
+ANNUNCIO (09.02.2024)
+La "dispensetta" di *Analisi Matematica I* è stata completata con la parte sulle serie numeriche, ultimando la sua "pubblicazione" su Github.

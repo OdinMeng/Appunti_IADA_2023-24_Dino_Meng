@@ -9,7 +9,7 @@ stato: "1"
 - - -
 # 1. Definizione di base
 #Definizione 
-> [!math|{"type":"definition","number":"1.1.","setAsNoteMathLink":true,"label":"base","title":"Base"}] Definizione 1.1. (Base).
+> [!math|{"type":"definition","number":"1.1.","setAsNoteMathLink":true,"label":"base","title":"Base"}] Base.
 > Sia $V$ un *K-spazio vettoriale* ([[Spazi Vettoriali#^7e2c4e]]) e sia $U \subseteq V$ un *sottospazio vettoriale di V* ([[Sottospazi Vettoriali#^9bcbf2]]). 
 > Allora una *base di* $U$ è un *insieme* $\{u_1, \ldots, u_n\}$ formato da *vettori* di $U$ tali che:  
 > $\{u_1, \ldots, u_n\}$ è un *sistema di generatori per $U$* ([[Combinazione Lineare#^f2ee60]])
@@ -20,7 +20,7 @@ stato: "1"
 
 ## Teorema di caratterizzazione delle basi
 #Teorema 
-> [!math|{"type":"theorem","number":"1.1.","setAsNoteMathLink":false,"title":"Caratterizzazione delle basi","label":"caratterizzazione-delle-basi"}] Teorema 1.1. (Caratterizzazione delle basi).
+> [!math|{"type":"theorem","number":"1.1.","setAsNoteMathLink":false,"title":"Caratterizzazione delle basi","label":"caratterizzazione-delle-basi"}] Caratterizzazione delle basi.
 > Sia $V$ un *K-spazio vettoriale finitamente generato*, allora un sottoinsieme $B \subseteq V$, $B = \{v_1, \ldots, v_n\}$ è una base di $V$ *se e solo se* ogni vettore $v \in V$ si può scrivere in modo *unico* come *combinazione lineare* di $B$.
 > $$B \text{ è base di }V \iff \forall v \in V, \exists!\lambda_1, \ldots, \lambda_n: \lambda_1v_1+\ldots+\lambda_nv_n $$
 ^128180
@@ -70,7 +70,7 @@ ovvero $v_1, \ldots v_n$ sono *linearmente indipendenti*.
 - - -
 ## Coordinate di vettori rispetto ad una base
 #Definizione 
-> [!math|{"type":"definition","number":"1.2.","setAsNoteMathLink":false,"title":"Coordinate di vettore rispetto alla base","label":"coordinate-di-vettore-rispetto-alla-base"}] Definizione 1.2. (Coordinate di vettore rispetto alla base).
+> [!math|{"type":"definition","number":"1.2.","setAsNoteMathLink":false,"title":"Coordinate di vettore rispetto alla base","label":"coordinate-di-vettore-rispetto-alla-base"}] Coordinate di vettore rispetto alla base.
 > Sia $V$ un *K-spazio vettoriale finitamente generato*, sia $B = (v_1, \ldots, v_n)$ una base di $V$, e sia $v$ un *vettore* $v \in V$. Allora possiamo scrivere
 > $$v = \lambda_1v_1 + \ldots + \lambda_nv_n $$
 > in modo unico con $\lambda_1, \ldots, \lambda_n \in K$. 
@@ -81,7 +81,7 @@ ovvero $v_1, \ldots v_n$ sono *linearmente indipendenti*.
 Ora consideriamo degli *esempi* di *basi di spazi vettoriali*.
 
 #Esempio 
-> [!math|{"type":"example","number":"2.1.","setAsNoteMathLink":false,"title":"Basi di $K^n$","label":"basi-di-kn"}] Esempio 2.1. (Basi di $K^n$).
+> [!math|{"type":"example","number":"2.1.","setAsNoteMathLink":false,"title":"Basi di $K^n$","label":"basi-di-kn"}] Basi di $K^n$.
 > In $K^n$ possiamo considerare l'insieme
 > $$\mathcal{B}= \left\{\begin{pmatrix} 1\\0\\\vdots\\0\end{pmatrix}, \begin{pmatrix}0\\1\\\vdots\\0 \end{pmatrix}, \ldots, \begin{pmatrix}0\\0\\\vdots\\1 \end{pmatrix}\right\}$$
 > Si può dimostrare che $\mathcal{B}$ è una base per $K^n$. 
@@ -89,7 +89,7 @@ Ora consideriamo degli *esempi* di *basi di spazi vettoriali*.
 > Si definisce tale base la *base standard* di $K^n$.
 
 #Esempio 
-> [!math|{"type":"example","number":"2.2.","setAsNoteMathLink":false,"title":"Basi delle matrici $M_{m,n}(K)$","label":"basi-delle-matrici-mmnk"}] Esempio 2.2. (Basi delle matrici $M_{m,n}(K)$).
+> [!math|{"type":"example","number":"2.2.","setAsNoteMathLink":false,"title":"Basi delle matrici $M_{m,n}(K)$","label":"basi-delle-matrici-mmnk"}] Basi delle matrici $M_{m,n}(K)$.
 > Nell'insieme delle *matrici* $M_{m,n}(K)$ ([[Matrice]], **DEF 1.2.**) possiamo considerare le matrici del tipo
 > $$\mathcal{B} = \left\{\begin{pmatrix}1 & 0 & \ldots & 0 \\ 0 & 0 & \ldots & 0 \\ \vdots &  & & \vdots \\ 0 & 0 & \ldots & 0 \end{pmatrix}, \ldots,\begin{pmatrix}0 &0 & \ldots & 0 \\ 0 & 0 & \ldots & 0 \\ \vdots & & & \vdots \\ 0 & 0 & \ldots & 1 \end{pmatrix} \right\} $$
 > dove ogni matrice $v \in \mathcal{B}$ è una matrice dove *tutte* le entrate sono $0$ a parte un elemento del posto $a_{ij}$, che è uguale a $1$. 
@@ -98,5 +98,5 @@ Ora consideriamo degli *esempi* di *basi di spazi vettoriali*.
 > e la *"spacchettiamo"* in matrici con un singolo elemento. Quindi è possibile dimostrare che tutti gli elementi di $\mathcal{B}$ sono sia *sistema di generatori* per una qualsiasi matrice che *linearmente indipendenti*.
 
 #Osservazione 
-> [!oss] Osservazione 2.1.
+> [!rmk] Osservazione 2.1.
 Notiamo che il *numero degli elementi* (ovvero la cardinalità) dell'insieme $\mathcal{B}$ è esattamente $m \cdot n$. 

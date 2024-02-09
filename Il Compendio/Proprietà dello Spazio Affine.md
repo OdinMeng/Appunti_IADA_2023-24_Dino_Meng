@@ -14,7 +14,7 @@ capitolo: Geometria Affine
 - [[Definizione di Spazio Affine]]
 # 1. Proprietà dello Spazio Affine
 #Lemma 
-> [!lem] Lemma 1.1. (di proprietà dello spazio affine)
+> [!lem] di proprietà dello spazio affine
 > Sia $\mathbb{A}$ uno *spazio affine* su $V$ ([[Definizione di Spazio Affine#^100c32]], [[Spazi Vettoriali#^7e2c4e]]).
 > Allora valgono le seguenti proprietà.
 > $$\begin{align}& 1. \ \forall P \in \mathbb{A}, \sigma(P,P) = \overrightarrow{PP} = 0_V \\ & 2. \ \forall P,Q \in \mathbb{A}, \sigma(P,Q) = -\sigma(Q,P) \iff \overrightarrow{PQ} = -\overrightarrow{QP} \end{align}$$

@@ -31,7 +31,7 @@ Visto che $W = \ker L_A$, allora per il *teorema di dimensione* ([[Teorema di di
 
 # 2. Suriettività e iniettività in termini di dimensioni
 #Corollario 
-> [!cor] Corollario 2.1. (di caratterizzazione per applicazioni lineari iniettive e suriettive)
+> [!cor] di caratterizzazione per applicazioni lineari iniettive e suriettive
 > Sia $f: V \longrightarrow V'$ un'applicazione lineare ta *spazi vettoriali* di *dimensione finita*.
 > Supponiamo che essi hanno la stessa dimensione; $\dim V = \dim V'$
 > Allora $f$ è *iniettiva* se e solo se $f$ è *suriettiva*, ovvero, compattando la scrittura, si ha
@@ -49,7 +49,7 @@ $$\begin{align}\dim V &= \dim \ker f + \dim \operatorname{im} f \\ &= \dim \ker 
 Ovvero $f$ è *iniettiva*. $\blacksquare$
 
 #Corollario 
-> [!cor] Corollario 2.2. (invertibilità di un'applicazione lineare iniettiva o suriettiva)
+> [!cor] invertibilità di un'applicazione lineare iniettiva o suriettiva
 > Sia $f: V \longrightarrow V'$, con $\dim V = \dim V'$. Allora
 > $$\boxed{f \text{ iniettiva} \iff f \text{ suriettiva} \iff f \text{ biiettiva} \iff f\text{ invertibile}}$$
 ^a78df6

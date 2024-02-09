@@ -16,12 +16,12 @@ capitolo: Geometria Euclidea (cenni)
 - [[Definizione della Matrice associata a un'Applicazione Lineare]]
 # 1. Enunciato del teorema
 #Teorema 
-> [!thm] Teorema 1.1. (spettrale per le matrici simmetriche)
+> [!thm] spettrale per le matrici simmetriche
 > Sia $A \in M_n(\mathbb{R})$ una matrice *quadrata simmetrica* ([[Matrice#^501fe6]]).
 > Allora *esiste sempre* una *base ortonormale di autovettori* per l'applicazione lineare associata alla matrice ([[Applicazioni Lineari Notevoli#^fd2d05]]), $L_A(v) = A\cdot v$.
 
 #Corollario 
-> [!cor] Corollario 1.1. (ulteriore criterio di diagonalizzabilità)
+> [!cor] ulteriore criterio di diagonalizzabilità
 > Sia $M^\mathcal{E}_\mathcal{E}(f)$ una *matrice associata alla trasformazione lineare* $f$ per il *dominio*.
 > Se questa matrice è *simmetrica*, allora $f$ è *diagonalizzabile* con una base *ortonormale* $\mathcal{B}$; dunque
 > $$
@@ -30,7 +30,7 @@ capitolo: Geometria Euclidea (cenni)
 
 # 2. Esempio
 #Esempio 
-> [!ex] Esempio 2.1.
+> [!exm] Esempio 2.1.
 > Consideriamo la *matrice simmetrica*
 > $$A = \begin{pmatrix}2 & 0 & -3 \\ 0 & -1 & 0 \\ -3 & 0 & 2 \end{pmatrix} $$
 > di cui sappiamo che la sua trasformazione lineare associata $L_A$ è *diagonalizzabile*.

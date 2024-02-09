@@ -9,7 +9,7 @@ stato: "1"
 - - -
 # 1. Prima definizione (per matrici 2x2)
 #Definizione 
-> [!def] Definizione 1.1. (determinante della matrice 2x2)
+> [!def] determinante della matrice 2x2
 > Sia $A \in M_2(K)$.
 > Definisco il *determinante* di $A$ come lo scalare in $K$ determinato dalla formula
 > $$\det A = a_{11}a{22}-a_{12}a_{21} \in K$$
@@ -22,7 +22,7 @@ stato: "1"
 ## Primi enunciati sul determinante
 Quanto abbiamo visto in [[Invertire Matrici#^b56a11]], questo ci permette di esporre il seguente enunciato:
 #Proposizione 
-> [!prop] Proposizione 1.1.1. (invertibilità di una matrice)
+> [!prp] invertibilità di una matrice
 > Sia $M_{2}(K)$, allora
 > $$A \text{ invertibile} \iff \operatorname{rg}(A)=2 \iff \det(A)=2 $$
 > In tal caso
@@ -30,7 +30,7 @@ Quanto abbiamo visto in [[Invertire Matrici#^b56a11]], questo ci permette di esp
 
 #Esempio 
 Riprendiamo l'*esempio 1.1.* da [[Invertire Matrici#^a51ef6]]: 
-> [!ex] Esempio 1.1.1. (esempio 1.1. da "Invertire Matrici")
+> [!exm] esempio 1.1. da "Invertire Matrici"
 > Sia 
 > $$A = \begin{pmatrix}2 & 1 \\ 5 & 3 \end{pmatrix} $$
 > Allora
@@ -42,7 +42,7 @@ Riprendiamo l'*esempio 1.1.* da [[Invertire Matrici#^a51ef6]]:
 ![[Pasted image 20231121154754.png]]
 # 2. Definizione di determinante per ricorsione
 #Definizione 
-> [!def] Definizione 2.1. (determinante per lo sviluppo lungo la prima colonna)
+> [!def] determinante per lo sviluppo lungo la prima colonna
 > Sia $A \in M_n(K)$.
 > Definisco il *determinante di* $A$ per *ricorsione* come il seguente:
 > - Se $n=1$: allora $A = a_{11} \implies \det(A) = A_{11}$ 
@@ -57,12 +57,12 @@ Infatti con lo *sviluppo di Laplace del determinante* ([[Teoremi sul determinant
 Tuttavia dobbiamo aspettare prima di sviluppare dei teoremi sui determinanti per poter definire bene lo *sviluppo di Laplace*.
 
 #Esempio 
-> [!ex] Esempio 2.1. (determinante di matrice 2x2)
+> [!exm] determinante di matrice 2x2
 > Con questa definizione si può *"ricavare"* la definizione del determinante per una matrice che vive in $M_2(K)$; infatti
 $$\begin{align} \det(A \in M_2(K)) = \det(\begin{pmatrix}a_{11} & a_{12} \\ a_{21} & a_{22} \end{pmatrix}) &= (-1)^{1+1}a_{11}\det(A_{11}) + (-1)^{2+1}a_{21}\det(A_{21}) \\ &= a_{11}a_{22}-a_{21}a_{12}\end{align} $$
 
 #Esempio 
-> [!ex] Esempio 2.2. (esempio numerico del determinante)
+> [!exm] esempio numerico del determinante
 > Sia $A \in M_3(K)$, in particolare
 > $$ A = \begin{pmatrix}1 & 0 & 2 \\ 0 & 1 & 1 \\ 2 & 3 & 1 \end{pmatrix} $$
 > Svolgendo i calcoli necessari viene fuori
@@ -70,7 +70,7 @@ $$\begin{align} \det(A \in M_2(K)) = \det(\begin{pmatrix}a_{11} & a_{12} \\ a_{2
 > La *"dimostrazione"* (che in realtà è solo un calcolo) di questo è lasciato da svolgere al lettore.
 ## Calcolo del determinante di una matrice triangolare superiore
 #Proposizione 
-> [!prop] Proposizione 2.1.1. (Determinante di una matrice triangolare superiore)
+> [!prp] Determinante di una matrice triangolare superiore
 > Se $A \in M_{n}(K)$ è una *matrice triangolare superiore* ([[Matrice#^920878]]) (quindi $A \in T_n(K) \subseteq M_n (K)$), ovvero del tipo
 > $$A = \begin{pmatrix}a_{11} & \ast & \ast & \ldots & \ast \\ 0 & a_{22} & \ast & \ldots & \ast \\ \vdots & & & & \vdots \\ 0 & 0 & 0 & \ldots & a_{nn} \end{pmatrix} $$
 > Allora si ha
@@ -92,7 +92,7 @@ Allora
 $$\det A = a_{11} \cdot (a_{22} \cdot \ldots \cdot a_{nn}) = \prod_{1\leq i\leq n}a_{nn} \text{ OK. }\blacksquare$$
 # 3. Regola di Sarrus (per matrici 3x3)
 #Definizione  
-> [!thm] Definizione 3.1. (determinante di una matrice 3x3 secondo la regola di Sarrus)
+> [!thm] determinante di una matrice 3x3 secondo la regola di Sarrus
 > Sia $A \in M_3(K)$,
 > allora vale che
 > $$\det A = a_{11}a_{22}a_{33}+a_{12}a_{23}a_{31}+a_{13}a_{21}a_{32} - (a_{13}a_{22}a_{31}+a_{32}a_{23}a_{11}+a_{33}a_{21}a_{12})$$
@@ -102,7 +102,7 @@ $$\det A = a_{11} \cdot (a_{22} \cdot \ldots \cdot a_{nn}) = \prod_{1\leq i\leq 
 **TRUCCO.** Ovviamente questa regola è utile solo se la visualizziamo *graficamente*; ciò consiste in prendere la matrice $A$, poi piazzare le prime due colonne $A^{(1)}$ e $A^{(2)}$ a destra della matrice, poi di segnare le tre diagonali principali a partire da quella principali, le *anti diagonali* e infine di sommare le diagonali principali poi di sottrarre il risultato con le anti diagonali.
 ![[Pasted image 20231121161448.png]]
 
-> [!es] Esercizio 3.1.
+> [!exr] Esercizio 3.1.
 > Si lascia al lettore di determinare il $\det(A)$ per
 > $$A = \begin{pmatrix}1 & 0 & 2 \\ 0 & 1 & 1 \\ 2 & 3 & 1 \end{pmatrix}$$
 > mediante la *regola di Sarrus* per esercizio.

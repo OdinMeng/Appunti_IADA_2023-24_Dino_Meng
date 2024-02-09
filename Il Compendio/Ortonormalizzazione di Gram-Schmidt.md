@@ -21,9 +21,6 @@ capitolo: Geometria Euclidea (cenni)
 
 # 2. Ortonormalizzazione di Gram-Schmidt
 #Dimostrazione 
-**DIMOSTRAZIONE** del *teorema 2.*.
-Dimostriamo questo teorema in una maniera *costruttiva*, definendo una specie di *algoritmo* per generare i vettori della base ortonormale per il sottospazio $\operatorname{span}(w_1, \ldots, w_k)$.
-In particolare useremo *il principio d'induzione* ([[Assiomi di Peano, il principio di induzione#^76b850]]).
 $k=1$: Semplicemente definiamo
 $$
 v_1 := \frac{w_1}{||w_1||}

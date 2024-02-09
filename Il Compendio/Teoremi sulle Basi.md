@@ -11,7 +11,7 @@ stato: "1"
 Questo primo teorema, come ci suggerisce il titolo, serve per *"estrarre"* una base da uno *spazio vettoriale* ([[Spazi Vettoriali]]), ovvero di determinarla.
 
 #Teorema 
-> [!math|{"type":"theorem","number":"1.1.","setAsNoteMathLink":false,"title":"Teorema di estrazione di una base","label":"teorema-di-estrazione-di-una-base"}] Teorema 1.1. (Teorema di estrazione di una base).
+> [!math|{"type":"theorem","number":"1.1.","setAsNoteMathLink":false,"title":"Teorema di estrazione di una base","label":"teorema-di-estrazione-di-una-base"}] Teorema di estrazione di una base.
 > Sia $V$ un *K-spazio vettoriale*, *finitamente generato*, sia $\{v_1, \ldots, v_k\}$ un *sistemi di generatori* di $V$.
 > Allora esiste $\mathcal{B} \subseteq \{v_1, \ldots, v_k\}$ tale che $\mathcal{B}$ è *base* di $V$.
 ^938ed7
@@ -49,7 +49,7 @@ def TrovaBase(vettore_nullo, sistema_di_generatori):
 Ora consideriamo un teorema *"speculare"* a parte, ovvero a partire da un insieme di *vettori linearmente indipendenti* possiamo avere una *base* aggiungendo degli elementi (o anche nessuno).
 
 #Teorema 
-> [!math|{"type":"theorem","number":"2.1.","setAsNoteMathLink":false,"title":"Teorema del completamento/estensione","label":"teorema-del-completamentoestensione"}] Teorema 2.1. (Teorema del completamento/estensione).
+> [!math|{"type":"theorem","number":"2.1.","setAsNoteMathLink":false,"title":"Teorema del completamento/estensione","label":"teorema-del-completamentoestensione"}] Teorema del completamento/estensione.
 > Sia $V$ un *K-spazio vettoriale*, *finitamente generato*, siano $\{v_1, \ldots, v_p\}$ elementi di $V$ *linearmente indipendenti*.
 > Allora esiste una base $\mathcal{B}$ di $V$ tale che
 > $$ \{v_1, \ldots, v_p\}\subseteq \mathcal{B}$$
@@ -64,14 +64,14 @@ Allora se considero $\{v_1, \ldots, v_p, w_1, \ldots, w_r\}$, vedo che anche que
 A quest'ultimo applico *l'algoritmo dello scarto*, ottenendo una base $\mathcal{B}$ di $V$, in quanto per come è fatto l'algoritmo *"scarto"* i vettori *linearmente dipendenti*.
 ## Connessione tra base e indipendenza lineare
 #Osservazione 
-> [!oss] Osservazione 2.1. (enti minimali e massimali)
+> [!rmk] enti minimali e massimali
 Da questi due teoremi osserviamo una relazione tra il concetto di *base* ([[Definizione di Base]]), *indipendenza lineare* ([[Dipendenza e Indipendenza Lineare]]) e *sistema di generatori* ([[Combinazione Lineare]]). 
 Da un lato abbiamo una *base* come un *sistema di generatori* *"minimale"*, ovvero che contiene un numero *minimo* di vettori; oppure possiamo equivalentemente caratterizzare una *base* come un *insieme di vettori linearmente dipendenti* *"massimale"*, ovvero che può essere *estesa*.
 # 3. Teorema sulla cardinalità delle basi
 Ora enunciamo un teorema importante che ci permetterà di definire la *dimensione* ([[Dimensione#^3a9321]]) di un spazio vettoriale.
 ## Lemma di Steinitz
 #Lemma 
-> [!lem] Lemma 3.1. (di Steinitz).
+> [!lem] di Steinitz.
 > Sia $V$ un *K-spazio vettoriale*, *finitamente generato*, sia $\mathcal{B} = \{v_1, \ldots, v_n\}$ una *base* di $V$.
 > Allora $\forall k>n$ e per ogni scelta di vettori $\{w_1, \ldots, w_k\} \subseteq V$ vale che $\{w_1, \ldots, w_k\}$ sono *linearmente dipendenti*.
 ^f23180
@@ -97,7 +97,7 @@ $$
 di cui possiamo dimostrare che è *compatibile* con una *una soluzione* non (tutta) nulla. $\blacksquare$
 
 #Osservazione 
-> [!oss] Osservazione 3.1. (giustificazione dell'ultimo passaggio)
+> [!rmk] giustificazione dell'ultimo passaggio
 Osserviamo che la matrice dei *coefficienti*
 $$ \begin{pmatrix}c_{11} & \ldots & c_{1k}\\ \vdots & & \vdots \\ c_{n1} & \ldots & c_{nk} \end{pmatrix} $$
 per ipotesi ha $k > n$, ovvero è più *"lunga"* orizzontalmente. Quindi per *"accuratezza"* la scriviamo come
@@ -105,7 +105,7 @@ $$ \begin{pmatrix}c_{11} &\ldots &  \ldots & c_{1k}\\ \vdots & && \vdots \\ c_{n
 quindi gradinizzandola con Gauß ([[Algoritmo di Gauß]]) abbiamo dei *"gradini"* più lunghi di un elemento. Allora ho più *"parametri liberi"* non-nulli, determinando così *soluzioni non nulle*.
 ## Teorema principale
 #Teorema 
-> [!thm] Teorema 3.1. (sulla cardinalità delle basi)
+> [!thm] sulla cardinalità delle basi
 > Sia $V$ un *K-spazio vettoriale*, *finitamente generato*, siano $\{v_1, \ldots, v_n\}$ e $\{w_1, \ldots, w_m\}$ due *basi* di $V$.
 > Allora $n = m$; ovvero le due basi hanno lo stesso *numero di elementi* (alt. *"cardinalità"*).
 ^c61910

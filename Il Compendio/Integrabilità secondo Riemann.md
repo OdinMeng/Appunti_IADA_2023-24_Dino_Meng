@@ -13,14 +13,14 @@ stato: "1"
 - [[Tipologie di Funzioni Integrabili]]
 # 1. Definizione di Integrabilità secondo Riemann
 #Definizione 
-> [!def] Definizione 1.1. (integrabilità di una funzione secondo Riemann)
+> [!def] integrabilità di una funzione secondo Riemann
 > Sia $f: [a,b] \longrightarrow \mathbb{R}$ *limitata*.
 > Si dice che $f$ è *"integrabile secondo Riemann"* se vale che
 > $$\boxed{\sup_{\Delta \in \mathcal{D}}s(f, \Delta) = \inf_{\Gamma \in \mathcal{D}}S(f, \Gamma)}$$
 ^5455b8
 
 #Definizione 
-> [!def] Definizione 1.2. (integrale di Riemann di una funzione su un intervallo)
+> [!def] integrale di Riemann di una funzione su un intervallo
 > ISia $f: [a, b] \longrightarrow \mathbb{R}$ *integrabile secondo Riemann*.
 > Allora il valore per cui vale la relazione di definizione
 > $$\sup_{\Delta \in \mathcal{D}}s(f, \Delta) = \inf_{\Gamma \in \mathcal{D}}S(f, \Gamma)$$
@@ -29,17 +29,17 @@ stato: "1"
 ^64ad3b
 
 #Definizione 
-> [!def] Definizione 1.3. (l'insieme delle funzioni integrabili secondo Riemann)
+> [!def] l'insieme delle funzioni integrabili secondo Riemann
 > Indico l'*insieme delle funzioni integrabili secondo Riemann sull'intervallo $[a, b]$* con la seguente notazione
 > $$\mathcal{R}([a, b])$$
 # 2. Teorema di caratterizzazione delle funzioni integrabili
 #Osservazione 
-> [!oss] Osservazione 2.1. (la necessità di una strategia per verificare l'integrabilità)
+> [!rmk] la necessità di una strategia per verificare l'integrabilità
 > Notiamo che secondo la nostra *definizione* dell'integrabilità di una funzione, diventa molto difficile verificare se delle funzioni $f$ siano effettivamente *integrabili* o meno; infatti bisogna fare delle *verifiche infinite* per vedere se l'estremo superiore delle somme inferiori coincida effettivamente con l'estremo inferiore delle somme superiori.
 > Allora si propone il seguente teorema per *"semplificarci"* la vita trovando un modo per raggirare questi *"calcoli infiniti"*.
 
 #Teorema 
-> [!thm] Teorema 2.1. (condizione necessaria e sufficiente per l'integrabilità secondo Riemann)
+> [!thm] condizione necessaria e sufficiente per l'integrabilità secondo Riemann
 > Sia $f:[a,b] \longrightarrow \mathbb{R}$ *limitata*.
 > Allora $f$ è *integrabile secondo Riemann* se e solo se vale che
 > $$\boxed{\begin{gather}\forall \varepsilon >0, \exists \Delta \in \mathcal{D}: \\ S(f, \Delta)-s(f, \Delta) < \varepsilon \end{gather}}$$

@@ -15,17 +15,17 @@ stato: "1"
 >$$(-1)^{i+j}\det(A_{ij})$$
 # 2. Definizione della matrice dei cofattori
 #Definizione 
-> [!def] Definizione 2.1. (matrice dei cofattori di una matrice)
+> [!def] matrice dei cofattori di una matrice
 > Sia $A \in M_n(K)$, allora la *matrice dei cofattori di* $A$ è la matrice che indichiamo come
 > $$\operatorname{cof}(A) \in M_n(K); (\operatorname{cof}(A))_{ij} = (-1)^{i+j}\cdot \det A_{ij} $$
 
 #Esempio 
-> [!es] Esercizio-esempio 2.1.
+> [!exr] Esercizio-esempio 2.1.
 > Per esercizio si calcoli i cofattori della matrice
 > $$\begin{pmatrix}3 & 1 \\ -2 & 0 \end{pmatrix} $$
 # 3. Calcolo dell'inversa con il cofattore
 #Proposizione 
-> [!prop] Proposizione 3.1.
+> [!prp] Proposizione 3.1.
 > Sia $A \in M_n (K)$, allora
 > $$A \cdot {}^t(\operatorname{cof} A) = \det A \cdot \mathbb{1}_n $$
 > (questa vale *sempre*!)
@@ -47,7 +47,7 @@ $$A \cdot {}^t \operatorname{cof}(A)_{ij} = \det A \cdot \mathbb{1}_n $$
 **RICHIAMO** (*al teorema di Cramer*)
 ![[Teoremi sui Sistemi Lineari#^97243e]]
 
-> [!cor] Corollario 3.1. (determinare soluzioni di sistemi lineari con Cramer)
+> [!cor] determinare soluzioni di sistemi lineari con Cramer
 Osservando il *teorema di Cramer*, notiamo che se prima non avevamo gli strumenti per calcolare l'inversa $A^{-1}$, ora li abbiamo.
 Quindi dalla formula determinata nella *proposizione 3.1.* ([[#^70361d]]), segue che che l'$i$-esima entrata della soluzione $S$, che chiameremo $s_i$ sarà determinata da
 $$i \in \{1, \ldots, n\}, s_i = \frac{\det(A^{(1)}, \ldots, b, A^{(i+1)}, \ldots, A^{(n)})}{\det A} $$

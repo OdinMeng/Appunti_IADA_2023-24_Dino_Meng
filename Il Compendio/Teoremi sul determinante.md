@@ -9,7 +9,7 @@ stato: "1"
 - - -
 # 1. Le tre proprietà D1, D2, D3
 #Proposizione 
-> [!prp] Proposizione 1.1. (Le proprietà del determinante D)
+> [!prp] Le proprietà del determinante D
 > Il *determinante* ([[Determinante#^be5bde]]) gode delle seguenti proprietà:
 > - D1. (*multilinearità*)
 > Sia $A \in M_n(K)$, supponendo che $A_{(i)} = R_1 + R_2$ (ove $R_1, R_2 \in K^n$)
@@ -31,14 +31,14 @@ stato: "1"
 
 Possiamo usare queste proprietà come dei *"trucchetti"* per calcolare certi determinanti.
 #Esempio 
-> [!ex] Esempio 1.1. (esempio di applicazione "concreta")
+> [!exm] esempio di applicazione "concreta"
 > Sia $A \in M_n(K)$, ove in particolare
 > $$A = \begin{pmatrix}1 & 2 & 1 \\ 0 & 4 & 2 \\ 3 & 6 & 1 \end{pmatrix} $$
 > allora
 > $$\begin{align}\det A &= 2 \det\left(\begin{matrix}1&1&1 \\ 0 &2 & 2 \\ 3&3&1 \end{matrix}\right)\\ &= 4 \det\left(\begin{matrix}1&1&1 \\ 0 &2 & 1 \\ 3&3&1 \end{matrix}\right) \\ &= 4 (\ldots) \\ &= -8\end{align}$$ 
 # 2. Teorema di caratterizzazione del determinante
 #Teorema  
-> [!thm] Teorema 2.1. (di caratterizzazione del determinante)
+> [!thm] di caratterizzazione del determinante
 > Considerando il *determinante* come funzione, $\det$ è l'unica funzione (*applicazione lineare*)
 > $$\det : M_{n}(K) \longrightarrow K $$
 > che soddisfa le proprietà *D1, D2, D3* appena elencate. ([[#^17de20]])
@@ -46,7 +46,7 @@ Possiamo usare queste proprietà come dei *"trucchetti"* per calcolare certi det
 La dimostrazione è stata omessa.
 # 3. Corollari dei paragrafi 1,2
 #Corollario 
-> [!cor] Corollario 3.1. (condizioni di determinante nullo)
+> [!cor] condizioni di determinante nullo
 > Sia $A \in M_{n}(K)$.
 > Per avere il determinante $\det A$ *nullo* (uguale a 0) si deve verificare una delle due proprietà (o entrambe):
 > i. *Se la matrice ha due righe uguali*
@@ -58,7 +58,7 @@ La dimostrazione è stata omessa.
 ^2d0019
 
 #Corollario 
-> [!cor] Corollario 3.2. (effetti sul determinante degli OE)
+> [!cor] effetti sul determinante degli OE
 > Sia $A \in M_n(K)$, siano *O.E.* le cosiddette *operazioni elementari* ([[Algoritmo di Gauß#^8a7c5e]], [[Algoritmo di Gauß#^1f10d6]], [[Algoritmo di Gauß#^175a42]]), allora se $\tilde{A}$ è una matrice ottenuta mediante le *O.E.*, allora valgono le seguenti:
 > i. Se $\tilde{A}$ è ottenuta mediante una *OE1*, allora
 > $$\det\tilde{A} = \det A $$
@@ -77,7 +77,7 @@ Allora
 $$\begin{align} \det \tilde{A} = \det \begin{pmatrix}A_{(1)} \\\vdots \\A_{(i)}+cA_{(j)} \\ \vdots \\ A_{(n)} \end{pmatrix} &= \det\begin{pmatrix}A_{(1)} \\\vdots\\ A_{(i)} \\ \vdots \\ A_{(n)} \end{pmatrix} + \det\begin{pmatrix}A_{(1)}\\\vdots \\ cA_{(j)} \\ \vdots \\ A_{(n)} \end{pmatrix} \\ &= \det A + c \det\begin{pmatrix}A_{(1)} \\ \vdots \\ A_{(j)}\\\vdots \\ A_{(j)} \\ \vdots \\ A_{(n)} \end{pmatrix} \\ &= \det A + 0 = \det A  \end{align} $$
 
 #Corollario 
-> [!cor] Corollario 3.3. (effetti dell'algoritmo di Gauß sul determinante)
+> [!cor] effetti dell'algoritmo di Gauß sul determinante
 > Sia $A \in M_n(K)$, sia $\tilde{A}$ la matrice *gradinizzata* a scala mediante Gauß ([[Algoritmo di Gauß]]), allora
 > $$\det \tilde{A} = \lambda \det A $$
 > per un certo $\lambda \in K\diagdown\{0\}$.
@@ -108,7 +108,7 @@ $$\operatorname{rg}(\tilde{A}) = \boxed{\operatorname{rg}(A) < n }$$
 
 #Corollario 
 Ora arriviamo al punto cruciale in cui colleghiamo *l'invertibilità di una matrice* con la sua *determinante*:
-> [!cor] Corollario 4.1. (di caratterizzazione delle matrici invertibili)
+> [!cor] di caratterizzazione delle matrici invertibili
 > Sia $A \in M_n(K)$, allora
 > $$\boxed{A \text{ invertibile} \iff \det A \neq 0 }$$
 ^7f9bc6
@@ -119,7 +119,7 @@ La dimostrazione è banalissima, basta tener conto della *proposizione 3.1.* sul
 $$ A \text{ invertibile} \iff \operatorname{rg}(A) = n \iff \det A \neq 0 \ \blacksquare$$
 # 5. Sviluppo di Laplace del determinante
 #Teorema 
-> [!thm] Teorema 5.1. (sviluppo di Laplace del determinante)
+> [!thm] sviluppo di Laplace del determinante
 > Sia $A \in M_n(K)$, e vogliamo calcolare $\det A$: possiamo farlo in due modi
 > - Sviluppo lungo la colonna k-esima
 > Sia $1 \leq k \leq n$ l'indice di colonna, allora
@@ -134,12 +134,12 @@ $$\pm_n = \begin{pmatrix}+ & - & + & - & \ldots\\- &+ &- & + \ & \ldots \\ + & -
 Infatti è possibile pensare questa matrice in $K = \{0, 1\} = \{-, +\}$, dove i caselli neri (bianchi) rappresentano il segno positivo e i caselli bianchi (neri) rappresentano il segno negativo.
 
 #Esempio 
-> [!es] Esempio-esercizio 5.1.
+> [!exr] Esempio-esercizio 5.1.
 > Per esercizio si chiede di calcolare $\det A$ usando lo *sviluppo di Laplace* lungo la *seconda colonna* e lungo la *terza riga*, ove
 > $$A = \begin{pmatrix}1 & 0 & 2 \\ 0 & 1 & 1 \\ 2 &1 & 1 \end{pmatrix} $$
 ## Determinante delle matrici trasposte
 #Corollario 
-> [!cor] Corollario 5.1. (determinante della trasposta)
+> [!cor] determinante della trasposta
 > Sia $A \in M_n(K)$ allora
 > $$\det A = \det {}^t A $$
 ^5e800f
@@ -149,7 +149,7 @@ Infatti è possibile pensare questa matrice in $K = \{0, 1\} = \{-, +\}$, dove i
 Per definizione $\det {}^t A$ è lo *sviluppo di Laplace* lungo la *prima colonna di* $^t A$, che è equivalente a dire "lo *sviluppo di Laplace* lungo la *prima riga* di $A$", che è uguale a $\det A$.
 # 6. Teorema di Binet
 #Teorema 
-> [!thm] Teorema 6.1. (di Binet)
+> [!thm] di Binet
 > Sia $A, B \in M_n(K)$, allora
 > $$\det(A \cdot B) = \det A \cdot \det B $$
 ^beec6a
@@ -157,7 +157,7 @@ Per definizione $\det {}^t A$ è lo *sviluppo di Laplace* lungo la *prima colonn
 La dimostrazione è stata omessa.
 ## Determinante della matrice inversa
 #Corollario 
-> [!cor] Corollario 6.1. (determinante dell'inversa)
+> [!cor] determinante dell'inversa
 > Sia $A \in M_n(K)$, invertibile.
 > Allora
 > $$\det (A^{-1}) = \frac{1}{\det A} = (\det A)^{-1} $$

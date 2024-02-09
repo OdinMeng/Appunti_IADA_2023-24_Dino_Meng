@@ -8,12 +8,12 @@ stato: "1"
 *Definizione di un campo; le proprietà caratterizzanti dei campi; esempi di campi e non-campi.*
 - - -
 # 0. Preambolo
-> [!oss] Preambolo.
+> [!rmk] Preambolo.
 Questo capitolo ci serve per riflettere sui *fondamenti* che abbiamo usato finora, in particolare quando abbiamo parlato di [equazioni](Equazioni%20e%20soluzione), [sistemi lineari](Equazioni%20e%20Proprietà%20Lineari), [matrici](Matrice), [spazi vettoriali](Spazi%20Vettoriali), come quando parliamo delle matrici a *coefficienti reali*; oppure dei $\mathbb{R}$-*spazi vettoriali*. Tutte le proprietà di cui abbiamo visto valgono in quanto $\mathbb{R}$ è un *campo* con le sue operazioni $+, \cdot$.
 Infatti avevamo implicitamente fatto una *meta-operazione* in cui usavamo le proprietà di questo campo. Ora definiamo rigorosamente un *campo*.
 # 1. Definizione
 #Definizione 
-> [!def] Definizione 1.1 (campo)
+> [!def] campo
 Sia $K$ un *insieme* ([[Teoria degli Insiemi]]) si cui sono definite delle operazioni (o funzioni) ([[Funzioni]]) di *somma* e *moltiplicazione*, ovvero: $$\begin{align}+ : \ &K \times K \longrightarrow K \\ &(a,b) \mapsto a+b \\ \cdot: \ &K \times K \longrightarrow K \\ &(a,b) \mapsto a\cdot b \end{align} $$tali per cui vengono soddisfatte le seguenti proprietà $K$: $$\begin{align}&\text{K}_1: \forall a, b \in K; a+b=b+a \ | \ a\cdot b = b \cdot a \\&\text{K}_2: \forall a,b,c \in K; a+(b+c)= (a+b)+c \ | \ a\cdot (b \cdot c) = (a \cdot b) \cdot c\\ &\text{K}_3: \exists 0 \in K: \forall a \in K, a+0=0+a=a \\&\text{K}_{3.1}: \exists 1 \in K: \forall a \in K, a\cdot 1 = 1 \cdot a = a \\ &\text{K}_4: \forall a \in K, \exists (-a)\in K: a + (-a) = -a + a = 0 \\&\text{K}_{4.1}: \forall a \in K\diagdown, \{0\} \exists a^{-1}: a\cdot a^{-1} = a^{-1}\cdot a = 1 \\&\text{K}_5: \forall a, b, c \in K, (a+b)\cdot c =a\cdot c + b \cdot c\end{align}$$
 Queste regole si chiamo rispettivamente nei seguenti modi:
 *K1*: Commutatività rispetto alla somma e prodotto
@@ -26,19 +26,19 @@ Allora un tale insieme si dice *campo*.
 
 # 2. A mo' di esempi
 #Esempio 
-> [!ex] Esempio 2.1. ($\mathbb{Q, R, C}$)
+> [!exm] $\mathbb{Q, R, C}$
 Gli insiemi $\mathbb{Q, R, C}$ sono dei *campi infiniti*, invece $\mathbb{N,Z}$ *non* sono *campi*.
 
 #Osservazione 
-> [!oss] Osservazione 2.1. (campi finiti e infiniti)
+> [!rmk] campi finiti e infiniti
 Osserviamo che possono esistere anche dei *campi finiti*, che hanno una rilevanza fondamentale nella *crittografia*. L'esempio **1.1.c.** sarà l'esempio di un *campo finito*.
 
 #Esempio 
-> [!ex] Esempio 2.2. (l'insieme delle funzioni razionali)
+> [!exm] l'insieme delle funzioni razionali
 L'insieme delle *funzioni razionali* ovvero $$\{\frac{p}{q}: p,q\text{ sono polinomi in una variabile}\}$$può essere dotata di *somma* e *prodotto* in modo tale da rendere questa un *campo*.
 
 #Esempio 
-> [!ex] Esempio 2.3. (un campo finito)
+> [!exm] un campo finito
 Sia $$\mathbb{Z}_2 := \{0, 1\}$$su cui definiamo una operazione di *somma* e *prodotto* ($+, \cdot$).
 Definiamo queste mediante delle *tabelle di somma* e di *moltiplicazione* (*figura 2.1.*)
 Allora concludo che $$(\mathbb{Z}_2,+, \cdot)$$è un *campo finito*.
@@ -58,5 +58,5 @@ Allora concludo che $$(\mathbb{Z}_2,+, \cdot)$$è un *campo finito*.
 
 
 # 3. Conclusione
-> [!oss] Conclusione.
+> [!rmk] Conclusione.
 Pertanto la precedente nozione di $\mathbb{R}$-*spazio vettoriale* sarà da ora in poi sostituita da quella di $K$-spazio vettoriale, con $K$ un campo. Analogo il discorso per le *matrici a coefficienti in $K$*, ovvero $M_{m,n}(K)$.

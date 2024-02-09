@@ -15,13 +15,13 @@ capitolo: Geometria Affine
 - [[Definizione di Spazio Affine]]
 # 1. Definizione di Dimensione per uno Spazio Affine
 #Definizione 
-> [!def] Definizione 1.1. (dimensione di uno spazio affine)
+> [!def] dimensione di uno spazio affine
 > Sia $\mathbb{A}$ uno *spazio affine* su $V$ ([[Definizione di Spazio Affine#^100c32]]), sia $V$ un *$K$-spazio vettoriale* di *dimensione finita* ([[Spazi Vettoriali#^7e2c4e]], [[Dimensione#^3a9321]]).
 > Allora definisco la *dimensione dello spazio affine* $\mathbb{A}$ come la *dimensione del suo spazio vettoriale* *"di appoggio"* $V$;
 > $$\boxed{\dim \mathbb{A} = \dim V}$$
 # 2. Casi particolari
 #Definizione 
-> [!def] Definizione 2.1. (punto, retta, piano e spazio affine)
+> [!def] punto, retta, piano e spazio affine
 > Voglio dividere *"casistiche"* in cui ho il numero $\dim \mathbb{A}$ diverse.
 > 1. Se $\dim \mathbb{A} = 0$, parliamo di *punto affine*.
 > 2. Se $\dim \mathbb{A} = 1$, parliamo di *retta affine*.

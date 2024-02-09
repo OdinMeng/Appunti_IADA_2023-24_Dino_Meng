@@ -12,7 +12,7 @@ stato: "1"
 - [[Integrabilità secondo Riemann]]
 # 1. Definizione di somma inferiore e superiore
 #Definizione 
-> [!def] Definizione 1.1. (somma inferiore per una funzione relativa ad una suddivisione)
+> [!def] somma inferiore per una funzione relativa ad una suddivisione
 > Sia $f: [a, b] \longrightarrow \mathbb{R}$ *limitata* (ovvero l'immagine $f([a, b])$ è *limitata*).
 > Prendo una *suddivisione* ([[Suddivisione di un Intervallo#^379a7b]]) qualsiasi $\Delta$.
 > Chiamo la *somma inferiore per $f$ relativa a $\Delta$* come il seguente:
@@ -25,7 +25,7 @@ stato: "1"
 ![[Pasted image 20231205183854.png]]
 
 #Definizione 
-> [!def] Definizione 1.2. (somma superiore per una funzione relativa ad una suddivisione)
+> [!def] somma superiore per una funzione relativa ad una suddivisione
 > Sia $f: [a, b] \longrightarrow \mathbb{R}$ *limitata*, sia $\Delta$ una suddivisione del dominio.
 > Analogamente alla definizione della *somma inferiore per $f$ relativa a $\Delta$* ([[#^1ff0a9]]), definisco la *somma superiore per $f$ relativa a $\Delta$* come la stessa, solo che al posto di *"approssimare"* per difetto prendendo $\inf$, approssimo per *eccesso* prendendo $\sup$;
 > $$\boxed{S(f, \Delta) = \sum_{i=1}^{n}(x_i-x_{i-1})\sup_{x \in [x_{i-1}, x_i]}f(x)}$$
@@ -36,11 +36,11 @@ stato: "1"
 Queste osservazioni vengono effettuate al fine di comprendere meglio il concetto di *integrabilità secondo Riemann* ([[Integrabilità secondo Riemann]]).
 Come *"presupposto"* di queste osservazioni facciamo la seguente:
 #Osservazione 
-> [!oss] Osservazione 2.1. (prima osservazione)
+> [!rmk] prima osservazione
 > Ogni volta che prendo una suddivisione $\Delta \in \mathcal{D}$, posso calcolare sia la *somma superiore* $S(f, \Delta)$ ed *inferiore* $s(f, \Delta)$ relativa ad essa; ci poniamo le seguenti domande. (*osservazioni 2.2., 2.3., 2.4.*)
 
 #Osservazione 
-> [!oss] Osservazione 2.2. (la somma inferiore è sempre più piccolo della somma superiore)
+> [!rmk] la somma inferiore è sempre più piccolo della somma superiore
 > Qual è la relazione tra $s(f, \Delta)$ e $S(f, \Delta)$?
 > Dato che sia la *somma inferiore* e *superiore* sono definiti dalla stessa *"base"* $x_i - x_{i-1}$, allora l'unica parte per cui differiscono è *"l'altezza"*; da un lato abbiamo $\inf f$ e dall'altro abbiamo $\sup f$. 
 > Ma allora, per definizione un *estremo inferiore* di $f$ è sempre più piccolo di qualsiasi valore di $f$, incluso l'*estremo superiore* di $f$ che a sua volta è più grande di qualsiasi valore di $f$.
@@ -51,7 +51,7 @@ Come *"presupposto"* di queste osservazioni facciamo la seguente:
 ^fd1845
 
 #Osservazione 
-> [!oss] Osservazione 2.3. (la somma inferiore e superiore di suddivisioni più fini)
+> [!rmk] la somma inferiore e superiore di suddivisioni più fini
 > Osserviamo che aggiungendo ad una qualsiasi suddivisione $\Delta$ un elemento questa diventa più *fine* ([[Suddivisione di un Intervallo#^6c1bae]]), in quanto stiamo sostanzialmente facendo una unione di un elemento con un insieme.
 > Allora supponendo $\Delta_1 \supseteq \Delta_2$, ci chiediamo quale sia la relazione tra le loro *somme inferiori*.
 > Possiamo ragionare *graficamente* (figura 2.3.): aggiungendo un *"pezzo di suddivisione"* in più, abbiamo una specie di nuovo *"contributo"* da parte di questo elemento aggiunto.
@@ -66,7 +66,7 @@ Come *"presupposto"* di queste osservazioni facciamo la seguente:
 ![[Pasted image 20231205185842.png]]
 
 #Osservazione 
-> [!oss] Osservazione 2.4. (la relazione tra somma inferiore e superiore di suddivisioni qualsiasi)
+> [!rmk] la relazione tra somma inferiore e superiore di suddivisioni qualsiasi
 > Siano $\Delta_1$, $\Delta_2$ delle *suddivisioni* qualsiasi.
 > Quale sarà mai la relazione tra la *somma inferiore* per $\Delta_1$ e la *somma superiore* per $\Delta_2$;
 > $$s(f, \Delta_1) \ ? \ S(f, \Delta_2)$$
@@ -81,7 +81,7 @@ Come *"presupposto"* di queste osservazioni facciamo la seguente:
 > Quindi, alla fine possiamo affermare che la *somma inferiore* di una qualsiasi suddivisione è *sempre minore o uguale* di una *somma superiore* di un'altra qualsiasi suddivisione. Ovvero la seguente proposizione.
 
 #Proposizione 
-> [!prop] Proposizione 2.1. (relazione tra somma inferiore e superiore)
+> [!prp] relazione tra somma inferiore e superiore
 > Se $f$ è *limitata*, allora le *somme inferiore* sono sempre *minori o uguali* alla somma *superiore*.
 > $$\boxed{\sup_{\Delta \in \mathcal{D}}s(f, \Delta) \leq \inf_{\Gamma \in \mathcal{D}}S(f, \Gamma)}$$
 

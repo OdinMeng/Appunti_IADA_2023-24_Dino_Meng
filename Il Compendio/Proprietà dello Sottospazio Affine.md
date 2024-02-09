@@ -13,7 +13,7 @@ capitolo: Geometria Affine
 - [[Definizione di Sottospazio Affine]]
 # 1. Le proprietà dello Sottospazio Affine
 #Proposizione 
-> [!prop] Proposizione 1.1. (le tre proprietà dello sottospazio affine)
+> [!prp] le tre proprietà dello sottospazio affine
 > Sia $\mathbb{A}$ uno *spazio affine* su $V$ ([[Definizione di Spazio Affine#^100c32]]) e sia $\mathbb{S} \subseteq A$ uno *sottospazio affine* di giacitura $W$ passante per $Q$ ([[Definizione di Sottospazio Affine#^a1f242]]).
 > Allora valgono le seguenti proprietà:
 > 1. Il punto $Q$ per cui passa $\mathbb{S}$ appartiene a $\mathbb{S}$ stesso.
@@ -44,5 +44,5 @@ $$\overrightarrow{QP} = \overrightarrow{QR}+\overrightarrow{RP} \in W$$
 ed entrambi appartengono a $W$, di conseguenza $\sigma(Q,P) \in W$, ovvero $P \in \mathbb{S}$. $\blacksquare$
 
 #Osservazione 
-> [!oss] Osservazione 1.1. (lo sottospazio affine con giacitura W è spazio affine su W)
+> [!rmk] lo sottospazio affine con giacitura W è spazio affine su W
 > Notiamo che se $\mathbb{S} \subseteq \mathbb{A}$ è *sottospazio affine* con *giacitura* $W$, allora si può mostrare che $\mathbb{S}$ è *spazio affine* su $W$.

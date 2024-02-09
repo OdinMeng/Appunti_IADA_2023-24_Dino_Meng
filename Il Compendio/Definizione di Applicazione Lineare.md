@@ -12,7 +12,7 @@ stato: "1"
 Dall'altro lato, la matematica si occupa anche di collegare questi oggetti studiati mediante le *funzioni* ([[Funzioni]]); tra poco studieremo delle funzioni che in oggetto prendono dei *spazi vettoriali* ([[Spazi Vettoriali]]), evidenziando la loro complessità e ricchezza, dovute al fatto che i *spazi vettoriali* sono sostanzialmente degli insiemi con più restrizioni.
 # 1. Definizione di Applicazione Lineare
 #Definizione 
-> [!def] Definizione 1.1. (applicazione lineare da V a V primo)
+> [!def] applicazione lineare da V a V primo
 > Siano $V, V'$ due *K-spazi vettoriali* ([[Spazi Vettoriali#^7e2c4e]]).
 > Chiamo una *funzione* ([[Funzioni#^e8c03b]]) del tipo
 > $$(V, V', f) \sim f: V \longrightarrow V' $$
@@ -32,7 +32,7 @@ $$ f(\lambda\cdot v) = \lambda \odot f(v)$$
 dove $+, \cdot$ sono definite in $V$ e invece $\oplus, \odot$ in $V'$.
 # 2. Esempi di Applicazione Lineari
 #Esempio 
-> [!ex] Esempio 1.1. (Esempio di applicazione lineare da 2D a 1D)
+> [!exm] Esempio di applicazione lineare da 2D a 1D
 > Sia $f: \mathbb{R}^2 \longrightarrow \mathbb{R}$ una funzione dove
 > $$f\left(\begin{pmatrix}x \\ y \end{pmatrix}\right) = x+2y$$
 > Allora per verificare che $f$ sia a tutti gli effetti un'*applicazione lineare*, proviamo l'additività e l'omogeneità di $f$.

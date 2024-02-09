@@ -23,7 +23,7 @@ $$\boxed{\dim \operatorname{im} L_A=  \dim \operatorname{span} (A^{(1)}, \ldots,
 
 # 1. Definizione di Rango per un'applicazione lineare
 #Definizione 
-> [!def] Definizione 1.1. (rango di un'applicazione lineare)
+> [!def] rango di un'applicazione lineare
 > Sia $f: V \longrightarrow V'$ un'*applicazione lineare* ([[Definizione di Applicazione Lineare#^9b39f9]]) tra *spazi vettoriali* di *dimensione finita*.
 > Allora definiamo il *rango di* $f$ come
 > $$\operatorname{rg} f = \dim(\operatorname{im} f)$$

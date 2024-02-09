@@ -10,7 +10,7 @@ stato: "1"
 # 0. Prerequisiti e/o voci correlate
 - [[Funzioni]] (monotonia)
 - [[Teoremi sulle funzioni continue]] (thm. di Weierstraß)
-- [[Definizione di continuità]]
+- [[Definizione di Continuità]]
 - [[Continuità Uniforme]]
 - [[Conseguenze dell'esistenza dell'estremo superiore]]
 - [[Suddivisione di un Intervallo]]
@@ -19,7 +19,7 @@ stato: "1"
 - [[Esempi di Funzioni Integrabili]]
 # 1. L'integrabilità delle funzioni monotone
 #Teorema 
-> [!thm] Teorema 1.1. (di integrabilità della funzioni monotone)
+> [!thm] di integrabilità della funzioni monotone
 > Sia $f: [a,b] \longrightarrow \mathbb{R}$; sia $f$ *monotona* ([[Funzioni#^3fb408]]).
 > Allora $f$ è *integrabile secondo Riemann* ([[Integrabilità secondo Riemann#^5455b8]]).
 > $$\boxed{f \text{ monotona} \implies f \in \mathcal{R}([a,b])}$$
@@ -37,8 +37,8 @@ Ma per *Archimede* ([[Conseguenze dell'esistenza dell'estremo superiore#^d95d40]
 
 # 2. Integrabilità delle funzioni continue
 #Teorema 
-> [!thm] Teorema 2.1. (di integrabilità delle funzioni continue)
-> Sia $f: [a,b] \longrightarrow \mathbb{R}$ una funzione *continua* ([[Definizione di continuità#^d2f56f]]) sul suo dominio.
+> [!thm] di integrabilità delle funzioni continue
+> Sia $f: [a,b] \longrightarrow \mathbb{R}$ una funzione *continua* ([[Definizione di Continuità#^d2f56f]]) sul suo dominio.
 > Allora $f$ è *integrabile secondo Riemann*.
 > $$\boxed{f \text{ continua} \implies f \in \mathcal{R}([a, b])}$$
 ^dd4f09

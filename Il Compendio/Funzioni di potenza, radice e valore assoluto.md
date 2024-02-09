@@ -9,7 +9,7 @@ stato: "1"
 - - -
 # 1. Funzione potenza
 #Definizione 
-> [!def] Definizione 1.1. (funzione potenza n-esima)
+> [!def] funzione potenza n-esima
 Sia $n \in \mathbb{N} \diagdown \{0\}$; definiamo quindi la *funzione potenza $n$-esima* come $$p_n : [0, +\infty) \longrightarrow[0, +\infty); x \mapsto p_n(x) = x^n$$
 Si riporta un grafico di alcune funzioni potenza $p_n$ (*figura 1.1.*).
 
@@ -19,11 +19,11 @@ Si riporta un grafico di alcune funzioni potenza $p_n$ (*figura 1.1.*).
 ![[Pasted image 20231017172817.png]]
 
 #Osservazione 
-> [!oss] Osservazione 1.1. (l'ordinamento delle potenze n-esime)
+> [!rmk] l'ordinamento delle potenze n-esime
 Si nota che $$\begin{align} &\forall x \in [0, 1): p_1(x)>p_2(x) > \ldots > p_n(x) \\ &\forall x \in (1, +\infty): p_1(x) < p_2(x) < \ldots < p_{n}(x)  \end{align}$$
 
 #Proposizione 
-> [!prop] Proposizione 1.1. (la potenza è strettamente crescente)
+> [!prp] la potenza è strettamente crescente
 Si vede dal grafico che la funzione è *strettamente crescente*, ovvero se prendiamo $x_1, x_2 \in E$ (dominio) ove $x_2 > x_1$, allora sicuramente abbiamo $$p_n(x_2) > p_n(x_1)$$
 ^0aedc2
 
@@ -31,7 +31,7 @@ Si vede dal grafico che la funzione è *strettamente crescente*, ovvero se prend
 Prendiamo ad esempio $p_2$; abbiamo innanzitutto$$0 \leq x_1 < x_2$$allora li moltiplichiamo per $x_1$ e $x_2$, ottenendo $$\begin{cases} x_1 < x_2x_1 \\ x_1x_2 < x_2^2 \end{cases}$$quindi $$0 \leq x_1^2 < x_2^2 \iff p_2(x_1) < p_2(x_2), \forall x_1, x_2$$
 
 #Proposizione 
-> [!prop] Proposizione 1.2. (la potenza è biiettiva)
+> [!prp] la potenza è biiettiva
 Notiamo che la *funzione potenza* $p_n$ (o $x^n$) è *biiettiva* ([[Funzioni#^d193b2]]), ovvero è sia *suriettiva* che *iniettiva*.
 
 ^f020e9
@@ -42,11 +42,11 @@ Dopodiché la funzione è anche suriettiva in quanto una conseguenza del[l'assio
 
 # 2. Funzione radice
 #Osservazione 
-> [!oss] Osservazione 2.1. (la funzione potenza è biettiva, pertanto invertibile)
+> [!rmk] la funzione potenza è biettiva, pertanto invertibile
 Dalla *proposizione 1.2.* abbiamo notato che la *funzione potenza* $p_n(x)$ è *biiettiva*; pertanto per il *teorema dell'esistenza della funzione inversa* ([[Funzioni#^7b369f]]) esiste una funzione inversa, la *"radice"*, che definiremo.
 
 #Definizione 
-> [!def] Definizione 2.1. (funzione radice n-esima)
+> [!def] funzione radice n-esima
 Definiamo la **funzione radice $n$-esima** $p_n^{-1}$ $$p_n^{-1}: [0, +\infty) \longrightarrow [0, +\infty); x^n \mapsto x$$
 Graficamente questo equivale a *"scambiare le assi"* del grafico della funzione, oppure di *"cambiare la prospettiva da cui si guarda il grafico"*, ovvero la *figura 2.1.*.
 
@@ -54,7 +54,7 @@ Graficamente questo equivale a *"scambiare le assi"* del grafico della funzione,
 ![[Pasted image 20231017172834.png]]
 # 3. Valore assoluto
 #Definizione 
-> [!def] Definizione 3.1. (il valore assoluto)
+> [!def] il valore assoluto
 Sia il *valore assoluto* una *funzione* $$| \cdot | : \mathbb{R} \longrightarrow \mathbb{R}; x \mapsto|x|=\begin{cases}x: x\geq0 \\-x: x < 0\end{cases}$$Ad esempio, il grafico di $| x |$  si rappresenta nella *figura 3.1.*. 
 ^169d3f
 
@@ -62,11 +62,11 @@ Sia il *valore assoluto* una *funzione* $$| \cdot | : \mathbb{R} \longrightarrow
 ![[Pasted image 20231017172853.png]] 
 
 #Osservazione 
-> [!oss] Osservazione 3.1. (nesso tra potenza, radice e valore assoluto)
+> [!rmk] nesso tra potenza, radice e valore assoluto
 > Notare che $$\sqrt{x^2} = |x|$$
 ## Proprietà del valore assoluto, disuguaglianza triangolare
 #Teorema 
-> [!thm] Teorema 3.1. (prima condizione necessaria e sufficiente del valore assoluto)
+> [!thm] prima condizione necessaria e sufficiente del valore assoluto
 Sia $a \geq 0$, $x \in \mathbb{R}$, allora $$|x| \leq a \iff -a \leq x \leq a$$
 ^e39752
 
@@ -76,11 +76,11 @@ $x \geq 0$: abbiamo quindi $|x| = x$, pertanto $$\begin{cases}|x| \leq a \implie
 $x \leq 0$: abbiamo quindi $|x| = -x$ e il discorso è analogo: $$\begin{cases} |x| \leq a \implies -x \leq a \iff x \geq -a \\x \leq 0 \implies x \leq a\end{cases} \longrightarrow -a \leq x \leq a$$$\blacksquare$
 
 #Teorema 
-> [!thm] Teorema 3.2. (seconda condizione necessaria e sufficiente)
+> [!thm] seconda condizione necessaria e sufficiente
 Prendendo le stesse premesse di prima, abbiamo $$|x| \geq a \iff x \leq -a \land x \geq a$$
 
 #Teorema 
-> [!thm] Teorema 3.3. (la disuguaglianza triangolare)
+> [!thm] la disuguaglianza triangolare
 Siano $x, y \in \mathbb{R}$, allora abbiamo $$|x + y | \leq |x| + |y|$$
 ^5bd8b3
 

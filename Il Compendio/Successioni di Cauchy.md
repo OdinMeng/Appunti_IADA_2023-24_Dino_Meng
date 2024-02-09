@@ -9,16 +9,16 @@ stato: "1"
 - - -
 # 1. Definizione di Successione di Cauchy
 #Definizione 
-> [!def] Definizione 1.1. (Successione di Cauchy).
+> [!def] Successione di Cauchy.
 > Sia $(a_n)_n$ una *successione reale* ([[Successione e Sottosuccessione]], **DEF 1.2.**), allora definiamo $(a_n)_n$ come *successione di Cauchy* se vale la seguente: $$\forall \varepsilon >0, \exists \bar{n}: n,m>\bar{n} \implies |a_n-a_m| < \varepsilon $$
 
 #Osservazione 
->[!oss] Osservazione 1.1. (convergenza e Cauchy)
+>[!rmk] Osservazione 1.1. (convergenza e Cauchy)
 > Osserviamo che questa definizione è ben *diversa* dalla nozione di *convergenza*: con la *convergenza* abbiamo *un punto* che si avvicina ad un certo valore, invece qui abbiamo *due punti* $a_n$ e $a_m$ che si *"avvicinano"* tra di loro.
 Tuttavia in $\mathbb{R}$ è possibile dire che questi sono *equivalenti* in quanto ci troviamo in uno *spazio metrico*. Dimostreremo questa affermazione con due teoremi.
 
 #Teorema
-> [!thm] Teorema 1.2. (di caratterizzazione delle successioni convergenti) 
+> [!thm] di caratterizzazione delle successioni convergenti 
 > Se una successione in $\mathbb{R}$ è convergente, allora è di *Cauchy*.
 ^6e84e5
 
@@ -27,7 +27,7 @@ Tuttavia in $\mathbb{R}$ è possibile dire che questi sono *equivalenti* in quan
 Sia $(a_n)_n$ convergente, allora $$\lim_n a_n = \bar{a} \in \mathbb{N}$$Cioè $$\begin{gather}\forall \varepsilon >0, \exists \bar{n}: \forall n \\ n > \bar{n} \implies |a_n-\bar{n}| < \frac{\varepsilon}{2}< \varepsilon \end{gather}$$Allora se $m,n > \bar{n}$ abbiamo i seguenti: $$\begin{gather}\forall \varepsilon >0, \exists \bar{n}: \forall n,m \\ n > \bar{n} \implies |a_n-\bar{a}| < \frac{\varepsilon}{2} \\ m > \bar{n}  \implies |a_m - \bar{a} | < \frac{\varepsilon}{2}\end{gather}$$Allora sommandoli abbiamo $$|a_n-a_m|\leq|a_n-\bar{a} + a_m - \bar{a}| \leq |a_n-\bar{a}|+|a_m-\bar{a}| < 2\frac{\varepsilon}{2} = \varepsilon$$Dunque abbiamo verificato $$\forall \varepsilon >0, \exists \bar{n}: n,m>\bar{n} \implies  |a_n-a_m| < \varepsilon$$che è la definizione della *successione di Cauchy*.
 ## Completezza di R
 #Teorema 
-> [!thm] Teorema 1.3. (Completezza di R).
+> [!thm] Completezza di R.
 > In $\mathbb{R}$ le *successioni di Cauchy* sono *convergenti*.
 ^bc7fc3
 
@@ -38,7 +38,7 @@ La dimostrazione si articola in tre parti, ad ognuna con un suo esito.
 	1. Fino a $\bar{n}$ si comporta come vuole;
 	2. Da $\bar{n}+1$ in poi tutti i suoi valori immagine $a_{n}, n>\bar{n}$ sono *tutti* dentro un intervallo fissato. Ovvero è questa successione è limitata.
 
-2. Per il [[Secondo teorema di Bolzano-Weierstraß]], se $(a_n)_n$ è di *Cauchy* ed è *limitata* allora esiste una successione estratta convergente.
+2. Per il [[Secondo teorema di Bolzano-Weierstraß]], se $(a_n)_n$ è di *Cauchy* ed è *limitata* (ed è reale per ipotesi) allora esiste una successione estratta convergente.
 
 3. "Se una *successione di Cauchy* ha una sottosuccessione convergente, allora la successione originaria è convergente.": infatti teniamo in conto i seguenti:
    - $(\ast)$ $(a_n)_n$ è di Cauchy vuol dire $$\begin{gather}\forall \varepsilon >0, \exists \bar{n}: \forall n,m\\ n,m>\bar{n} \implies |a_m-a_n|<\frac{\varepsilon}{2}\end{gather}$$

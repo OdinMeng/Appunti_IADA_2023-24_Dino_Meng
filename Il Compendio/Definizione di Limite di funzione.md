@@ -16,7 +16,7 @@ Voci correlate:
 - [[Derivata e derivabilità]]
 # 1. Idea fondamentale
 #Osservazione 
-> [!oss] Osservazione 1.1. (idea fondamentale del limite)
+> [!rmk] idea fondamentale del limite
    Prendiamo la una [funzione](Funzioni) di variabile reale (**DEF 1.1.**) del tipo $$f: E \longrightarrow \mathbb{R}, E \subseteq \mathbb{R}$$e consideriamo un punto $x_0 \in \tilde{\mathbb{R}}$ che è un *punto di accumulazione* per $E$ ([[Punti di aderenza e di accumulazione]], **DEF 2.1.**).
    Ora voglio capire come posso *rigorosamente* formulare la seguente frase:
    *"Se $x \in E$ si avvicina a $x_0 \in \mathbb{\tilde{R}}$, allora $f(x)$ si avvicina a un valore $L \in \mathbb{\tilde{R}}$."*
@@ -32,7 +32,7 @@ Voci correlate:
 Ora diamo una *formalizzazione rigorosa* del concetto appena formulato sopra.
 
 #Definizione 
-> [!def] Definizione 2.1. (formulazione generale e rigorosa del limite di una funzione che tende ad un punto di accumulazione)
+> [!def] formulazione generale e rigorosa del limite di una funzione che tende ad un punto di accumulazione
    Sia $f$ una *funzione di variabile reale* di forma $$f: E \longrightarrow \mathbb{R}, E \subseteq \mathbb{R}$$Siano $x_0, L \in \mathbb{\tilde{R}}$, $x_0$ un *punto di accumulazione* per $E$. 
    Allora denotiamo il *limite di funzione* per un *punto di accumulazione* come
    $$\lim_{x \to x_0}f(x) = L$$
@@ -42,11 +42,11 @@ Ora diamo una *formalizzazione rigorosa* del concetto appena formulato sopra.
 ^c5e4ec
 
 #Osservazione 
-> [!oss] Osservazione 2.1. (la formulazione generale del limite comprende tutti i casi)
+> [!rmk] la formulazione generale del limite comprende tutti i casi
    Questa *definizione* del limite può essere può essere interpretata in più casi.	
 
 #Definizione 
-> [!def] Definizione 2.2. (formulazione di Cauchy del limite di una funzione)
+> [!def] formulazione di Cauchy del limite di una funzione
    Siano $x_0, L \in \mathbb{R}$. Quindi dei valori *fissi* sulla *retta reale*. 
    Ora *"interpretiamo"* la definizione del *limite* di $f(x)$, $\lim_{x\to x_0}f(x) = L$ in questo caso: $$\begin{gather}&\forall V \text{ intorno di }L, \exists E \text{ intorno di }x_0 \text{ tale che:}\\& \forall x \in E, x \in U \diagdown \{x_0\} \implies f(x) \in V\end{gather}$$
    significa
@@ -59,15 +59,15 @@ Ora diamo una *formalizzazione rigorosa* del concetto appena formulato sopra.
 ![[Pasted image 20231103221329.png]]
 
 #Osservazione 
-> [!oss] Osservazione 2.1. (analogia "ludica" del limite)
+> [!rmk] analogia "ludica" del limite
    Grazie a questa interpretazione è possibile creare un'analogia per il limite; infatti se immaginiamo l'intorno di $L$ con raggio $\varepsilon$ come un *"bersaglio"* e vale la condizione del *limite*, allora deve essere sempre possibile trovare un intorno attorno $x_0$ con raggio $\delta$ tale per cui facendo l'immagine di tutti i punti in questo intorno, *"colpisco"* il *"bersaglio"* (ovvero l'intorno di $L$).
 
 #Osservazione 
-> [!oss] Osservazione 2.2. (analogia "meccanica" del limite)
+> [!rmk] analogia "meccanica" del limite
    Alternativamente è possibile pensare all'esistenza del *limite* come una *"macchina"* che dato un valore $\varepsilon$ ti trova un valore $\delta$; dato un $\varepsilon$ qualsiasi, questa macchina ti darà sempre un $\delta$.
 
 #Definizione 
-> [!def] Definizione 2.3. (limite infinito di una funzione)
+> [!def] limite infinito di una funzione
    Ora interpretiamo $$\lim_{x\to x_0}f(x) = +\infty$$ovvero dove $L \in \mathbb{\tilde{R}}$. Allora interpretando il significato del limite abbiamo: $$\begin{gather}\forall M > 0, (M, +\infty), \exists \delta > 0: (x_0- \delta, x_0+\delta)\subseteq U: \\ \text{tale che }\forall x \in E, \\ 0<|x-x_0|<\delta \implies f(x) > M \end{gather}$$ovvero abbiamo graficamente che per una qualsiasi retta orizzontale $x = M$, troveremo *sempre* un intervallo tale per cui l'immagine dei suoi punti superano sempre questa retta orizzontale.
    Analogamente vale lo stesso per
    $$\lim_{x \to x_0} = -\infty$$
@@ -76,7 +76,7 @@ Ora diamo una *formalizzazione rigorosa* del concetto appena formulato sopra.
 ![[Pasted image 20231103221345.png]]
 
 #Definizione 
-> [!def] Definizione 2.4. (limite di una funzione all'infinito)
+> [!def] limite di una funzione all'infinito
    Ora abbiamo 
    $$\lim_{x \to +\infty} f(x) = L$$
    ovvero dove $x_0 \in \mathbb{\tilde{R}}$. Interpretando la definizione si ha: $$\begin{gather} \forall \varepsilon >0, (L-\varepsilon, L+\varepsilon), \exists N >0 :(N, +\infty):\\\text{tale che }\forall x \in E, \\x > N \implies |f(x)-L| < \varepsilon\end{gather}$$
@@ -86,7 +86,7 @@ Ora diamo una *formalizzazione rigorosa* del concetto appena formulato sopra.
 ![[Pasted image 20231103221400.png]]
 
 #Definizione 
-> [!def] Definizione 2.5. (limite infinito di una funzione all'infinito)
+> [!def] limite infinito di una funzione all'infinito
    Finalmente consideriamo il caso 
    $$\lim_{x \to+\infty}f(x) = +\infty$$
    *Per definizione* ho 
@@ -100,11 +100,11 @@ Ora diamo una *formalizzazione rigorosa* del concetto appena formulato sopra.
 **APPROFONDIMENTO PERSONALE a.** Usando la formulazione rigorosa del limite ([[#^c5e4ec]]) e ponendo $L = 0, x = +\infty$, otteniamo un risultato che è consistente con la definizione di *infinitesimo*$^{(1)}$ secondo dei noti matematici russi, tra cui uno è Kolmogorov.
 
 #Definizione 
-> [!def] Definizione 2.a. (l'infinitesimo)
+> [!def] l'infinitesimo
 **DEF 2.a.** Si definisce un infinitesimo come una *grandezza variabile* $\alpha_n$, denotata come $$\lim_{x \to +\infty}\alpha_n = 0 \text{ oppure }\alpha_n \to 0$$che possiede la seguente proprietà: $$\forall \varepsilon >0, \exists N>0: \forall x \in E, x>N \implies |\alpha_x|<\varepsilon$$
 
 #Osservazione 
-> [!oss] Osservazione 2.a. (infinitesimo e integrale)
+> [!rmk] infinitesimo e integrale
 **OSS 2.a.** Notiamo che la definizione dell'*infinitesimo* diventerà importante per il calcolo degli *integrali*, in particolare per la *somma di Riemann* ([[Integrabilità secondo Riemann#^64ad3b]]).
 
 - - -
@@ -116,7 +116,7 @@ Estratto tratto da *Le matematiche: analisi, algebra e geometria analitica* di *
 **PREMESSA.** Sia una funzione $f$ di variabile reale del tipo $$f: E \longrightarrow \mathbb{R}, E \subseteq \mathbb{R}$$$x_0 \in \mathbb{R}$ un punto di accumulazione per $E$, $L \in \mathbb{\tilde{R}}$.
 
 #Definizione 
-> [!def] Definizione 3.1. (limite destro di una funzione)
+> [!def] limite destro di una funzione
    Si denota Il *limite della funzione $f$ che tende a $x_0$ da destra* come 
    $$\lim_{x \to x_0^+} f(x) = L$$
    In termini rigorosi lo si definisce come
@@ -125,7 +125,7 @@ Estratto tratto da *Le matematiche: analisi, algebra e geometria analitica* di *
 ^406c13
 
 #Definizione 
-> [!def] Definizione 3.2. (limite sinistro di una funzione)
+> [!def] limite sinistro di una funzione
    Analogamente *il limite della funzione $f$ che tende a $x_0$ da sinistra* è 
    $$\lim_{x \to x_0^-} f(x) = L$$ovvero $$\begin{gather}\forall V \text{ intorno di }L, \exists U \text{ intorno di }x_0: \forall x \in E, \\x \in U \cap(-\infty, x_0) \implies f(x) \in V \end{gather}$$
 
@@ -133,11 +133,11 @@ Estratto tratto da *Le matematiche: analisi, algebra e geometria analitica* di *
 ![[Pasted image 20231103221500.png]]
 
 #Osservazione 
-> [!oss] Osservazione 3.1. (condizione necessaria e sufficiente dell'esistenza di limite)
+> [!rmk] condizione necessaria e sufficiente dell'esistenza di limite
    Si può immediatamente verificare che $$\lim_{x \to x_0} f(x) = L \iff \lim_{x \to x_0^+}f(x)=\lim_{x \to x_0^-}f(x) = L$$Infatti l'insieme dei $x$ del limite *destro* e/o *sinistro* su cui verifichiamo che $f(x) \in V$ è un *sottoinsieme* dell'insieme di cui si verifica col limite generale. Pertanto facendo l'unione tra questi due sottoinsiemi abbiamo$$[U \cap (-\infty, x_0)] \cup [U \cap(x_0, +\infty)] = U\diagdown\{x_0\}$$
 
 #Definizione 
-> [!def] Definizione 3.3. (restrizione del limite)
+> [!def] restrizione del limite
 > *Nota: definizione ricavata direttamente dalla dispensa di D. D. S.*
    Avevamo appena osservato che coi limiti *destri* e/o *sinistri* abbiamo semplicemente fatto una *restrizione* all'insieme $U\diagdown\{x_0\}$ di cui si cerca di verificare che $f(U\diagdown\{x_0\}) \subseteq V$. 
    Dunque definiamo il *limite della funzione ristretta a $B$*, un qualunque sottoinsieme di $E$ per cui $x_0$ è di accumulazione: $$\lim_{x\to x_0}f_{|B}(x) = L$$
@@ -148,7 +148,7 @@ La nostra definizione presuppone che dobbiamo *eseguire* una serie *infinita* di
 Vogliamo invece sviluppare una serie di *strategie* per verificare l'esistenza dei limiti, come i *teoremi* e le *proprietà* sui limiti come vedremo in [[Teoremi sui Limiti di Funzione]], oppure *interpretando* la definizione del limite per poter trovare una *"formula"* che associa ad ogni epsilon un delta.
 
 #Esempio 
-> [!ex] Esempio 4.1. (dimostrazione "analitica" di un limite)
+> [!exm] dimostrazione "analitica" di un limite
 Voglio verificare che $$\lim_{x \to 1} x^2+1=2$$ovvero, interpretando la definizione otteniamo il seguente da verificare: $$\forall \varepsilon > 0, \exists \delta > 0: \forall x \in E, 0<|x-1|<\delta \implies |x^2+1-2| < \varepsilon$$
 Allora *"faccio finta*" di conoscere un $\varepsilon$ fissato, sviluppiamo dunque la disuguaglianza a destra: $$\begin{align} |x^2+1-2| &< \varepsilon \\ |x^2-1| &< \varepsilon \\ |(x+1)(x-1)| &< \varepsilon \\ |x+1||x-1| &< \varepsilon \end{align}$$Osservo che se poniamo $x \in [0, 2)$ e quindi $\delta < 1$, allora abbiamo $|x+1| < 3$. Allora da ciò discende sicuramente la disuguaglianza
 $$|x+1||x-1| < 3 |x-1| < 3\delta, x\in [0, 2)$$abbiamo quindi 
