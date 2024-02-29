@@ -18,7 +18,7 @@ capitolo: Geometria Affine
 > Allora valgono le seguenti proprietà:
 > 1. Il punto $Q$ per cui passa $\mathbb{S}$ appartiene a $\mathbb{S}$ stesso.
 >    $$Q \in \mathbb{S}$$
-> 2. Chiusura (?) di $\sigma$ in $W$.
+> 2. "Chiusura" di $\sigma$ su $\mathbb S$ in $W$.
 >    $$\forall P_1, P_2 \in \mathbb{S}, \sigma(P_1, P_2) = \overrightarrow{P_1P_2} \in W$$
 > 3. Lo sottospazio affine passante per un altro punto di $\mathbb{S}$ è lo stesso.
 >    $$\forall R \in \mathbb{S}, \mathbb{S} = \{P \in \mathbb{A}: \sigma(R, P) \in W \}$$

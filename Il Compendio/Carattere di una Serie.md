@@ -3,7 +3,7 @@ data: 2024-02-05
 corso: "[[Analisi Matematica I]]"
 argomento: Carattere di una Serie
 tipologia: appunti
-stato: "0"
+stato: "1"
 capitolo: Serie (cenni)
 ---
 - - -
