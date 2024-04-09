@@ -25,3 +25,6 @@ A seguito del completamento dell'esame di *Analisi Matematica I*, ho deciso di r
 
 ANNUNCIO (09.02.2024)
 La "dispensetta" di *Analisi Matematica I* è stata completata con la parte sulle serie numeriche, ultimando la sua "pubblicazione" su Github.
+
+ANNUNCIO (09.04.2024)
+*Il Compendio* è stato rinominato in *Il Vault*. Adesso contiene più roba, tra cui foto, diari, eccetera...
