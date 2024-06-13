@@ -100,4 +100,5 @@ che è la tesi. $\blacksquare$
 > (25^{-5000})^{n_0}\leq \frac{1}{10^4} \implies n_0 \geq 4 \cdot 25^{5000}
 > $$
 > che è un numero decisamente molto grande.
+^1606e3
 

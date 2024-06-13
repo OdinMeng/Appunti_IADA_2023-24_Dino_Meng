@@ -26,6 +26,10 @@ capitolo: Successioni e Serie di Funzioni
 ## A3. Teoremi di passaggio del limite
 ![[Teoremi di Passaggio del Limite per le Successioni di Funzioni]]
 
+## A4. Lemma di Dini (opzionale)
+![[Lemma di Dini]]
+
+
 # SEZIONE B. LE SERIE DI FUNZIONI
 ## B1. Definizioni Relative alle Serie di Funzioni
 ![[Definizioni Relative alle Serie di Funzioni]]

@@ -55,3 +55,6 @@ capitolo: Nozioni preliminari per la Probabilità
 > Sia $(\Omega, \mathcal{A}, p)$ uno *spazio di probabilità*, formato da $n$ prove *ripetute ed indipendenti*, che possono avere *solo due esiti possibili* (etichettati con $1, 0$ e detti tradizionalmente come *"successo"* e *"insuccesso"*). 
 > 
 > Questo spazio di probabilità si dice *"schema delle prove indipendenti* (o *ripetute* o *di Bernoulli*).
+
+^d5d5b8
+

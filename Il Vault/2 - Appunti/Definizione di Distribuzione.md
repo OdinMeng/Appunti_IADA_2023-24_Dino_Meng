@@ -4,8 +4,8 @@ corso:
   - "[[Calcolo delle Probabilità]]"
 argomento: Definizione di Distribuzione
 tipologia: appunti
-stato: "0"
-capitolo:
+stato: "1"
+capitolo: Variabili Aleatorie Discrete
 ---
 - - -
 *Definizione di distribuzione di una v.a.. ... (?)*
@@ -22,7 +22,7 @@ capitolo:
 > Cosa manca? Esatto, un modo per associare $\mathcal{B}\to[0,1]$. A seguito vedremo un modo per definire tale funzione.
 
 **FIGURA 1.1.** (*La situazione con le v.a.*)
-![[Pasted image 20240330152111.png]]
+![[Pasted image 20240330152111.png|250]]
 
 #Definizione 
 > [!def] distribuzione su una v.a.

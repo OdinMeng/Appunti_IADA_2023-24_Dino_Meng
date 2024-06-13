@@ -43,6 +43,8 @@ capitolo: Nozioni preliminari per la Probabilità
 > \forall J\subset N, p\left(\bigcap_{j \in J}B_j\right)=\prod_{j \in J}p(B_j)
 > $$
 
+^264eb5
+
 #Osservazione 
 > [!rmk] la necessità di dover aggiungere un'altra condizione
 > Notiamo che, quando abbiamo effettuato il passaggio da $n=2$ a $n=3$, abbiamo dovuto aggiungere un'ulteriore condizione, ovvero che la *produttoria degli eventi devono valere la probabilità dell'intersezione degli eventi*. Giustifichiamo questa necessità col seguente *esempio*.

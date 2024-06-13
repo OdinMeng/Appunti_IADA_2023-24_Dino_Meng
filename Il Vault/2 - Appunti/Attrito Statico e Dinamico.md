@@ -7,7 +7,7 @@ tipologia: appunti
 stato: "1"
 capitolo: Dinamica
 ---
-![[Pasted image 20240404211557.png]]- - -
+- - -
 *Attrito statico e dinamico. Definizioni, giustificazione microscopica e formule.*
 - - -
 # 0. Voci correlate

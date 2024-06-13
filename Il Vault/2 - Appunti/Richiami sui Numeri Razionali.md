@@ -34,3 +34,4 @@ Qui ragioniamo *per assurdo*; ipotizziamo che la tesi sia vera invece che falsa,
 5. Quindi sia $n$ che $k$ che sono pari, ciò vuol dire che hanno un fattore in comune (ovvero $2$); ciò contraddice quello che abbiamo detto all'inizio, ovvero che $n$ e $k$ sono ridotti ai minimi termini. Di conseguenza non è possibile che esistano $n$ e $k$. $\blacksquare$
 
 **CONCLUSIONE.** Quindi i numeri razionali $\mathbb{Q}$ non sono sufficienti per misurare la diagonale di un quadrato; infatti è impossibile definire un $x \in \mathbb{Q}$ tale che $x^2 = 2$.
+

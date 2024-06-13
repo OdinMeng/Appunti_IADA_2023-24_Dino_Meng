@@ -21,6 +21,8 @@ capitolo: Struttura di R^N
 > f: \mathbb{R} \longrightarrow \mathbb{R}^2
 > $$
 
+^834537
+
 #Osservazione 
 > [!rmk] convenzione di rappresentazione delle curve parametriche
 > Per rappresentare una *curva parametrica*, si potrebbe usare lo *spazio in tre dimensioni*. Tuttavia, per convenzione usiamo un *piano in due dimensioni*, dove le coordinate $x_1,x_2$ rappresentano le *"posizioni"* della funzione $f(x)$.

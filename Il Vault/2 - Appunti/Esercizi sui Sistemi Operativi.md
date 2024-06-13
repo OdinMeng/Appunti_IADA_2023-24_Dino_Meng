@@ -26,5 +26,3 @@ Le Funzioni di Libreria vengono eseguite:
 Il File System é organizzato come:
 `a) • Un Grafo contentente cicli`
 `b) • Un Grafo NON contentente cicli`
-
-# 2. Generate da ChatGPT

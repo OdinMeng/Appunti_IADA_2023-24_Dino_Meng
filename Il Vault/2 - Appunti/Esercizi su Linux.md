@@ -18,7 +18,7 @@ capitolo: Linux
 - `• Closed-Source` `• Open-Source`
 3. Linux é:
 - `• Closed-Source` `• Open-Source`
-## Soluzioni 2
+## Soluzioni 1
 1. POSIX é uno standard.
 2. UNIX é closed-source
 3. Linux é open-source

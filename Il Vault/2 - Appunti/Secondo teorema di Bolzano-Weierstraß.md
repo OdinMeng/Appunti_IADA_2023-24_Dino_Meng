@@ -44,3 +44,5 @@ Ora ci sono due possibilità: che $E$ sia o *finito* o *infinito*.
    2. Vado avanti così fino all'infinito; ho allora $$a_{n_k} \in (\xi-\frac{1}{2^k}, \xi+\frac{1}{2^k})$$Allora $$|a_{n_k}-\xi| < \frac{1}{2^k} \implies 0<|a_{n_k}-\xi| < \frac{1}{2^k}$$Considerando che $$\lim_n 0 = 0, \lim_n \frac{1}{2^k}=0$$Allora per il *teorema dei due carabinieri* ([[Limite di Successione#^72d83a]]) ho $$\lim_{k}a_{n_k}-\xi = 0 \implies \boxed{\lim_k a_{n_k}= \xi} \ \blacksquare$$
 **FIGURA 2.1.** (*L'idea dell'ultimo passaggio*)
 ![[Pasted image 20231220182755.png]]
+
+

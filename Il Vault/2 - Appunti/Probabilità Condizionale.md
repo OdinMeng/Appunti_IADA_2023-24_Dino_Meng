@@ -33,6 +33,8 @@ capitolo: Nozioni preliminari per la Probabilità
 > $$
 > Notare che $A|B$ *non ha nessun significato* ed è solo un modo per esprimere *"evento $A$ dato $B$"*.
 
+^d4ba5d
+
 #Osservazione 
 > [!rmk] i casi estremi
 > Notiamo che se $P(B)=0$, la definizione perde senso. Infatti, se $B$ non *ha nessuna probabilità di accadere*, allora non ha senso chiedere *se un certo evento $A$ accadrebbe o meno a seconda dell'evento $B$*, dato che tanto l'evento $B$ è impossibile.
@@ -57,6 +59,8 @@ capitolo: Nozioni preliminari per la Probabilità
 > $$
 > p\left(\bigcap^{n}_{k=1}A_k\right) = p(A_1) \cdot p(A_2 | A_1)\cdot p(A_3|A_2 \cap A_1)\cdot \ldots \cdot p\left(A_n | \bigcap^{n-1}_{k=1}A_k\right)
 >  $$
+
+^f0b2e8
 
 # 3. Esempi di Problemi con la Probabilità Condizionale
 #Esempio 
@@ -87,6 +91,8 @@ capitolo: Nozioni preliminari per la Probabilità
 > P(A|B) = \frac{43\binom{45}{2}}{\binom{90}{5}}\cdot \frac{\binom{90}{5}}{\binom{45}{2}\binom{45}{3}} = \ldots \approx 0.003
 > $$
 > In questo caso la probabilità di $A$ è *aumentata*.
+
+^953e13
 
 #Osservazione 
 > [!rmk] avvolte si parte dalle probabilità condizionali

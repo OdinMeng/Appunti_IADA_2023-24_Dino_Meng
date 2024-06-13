@@ -4,7 +4,7 @@ corso:
   - "[[Analisi Matematica II]]"
 argomento: Definizioni Relative alle Serie di Funzioni
 tipologia: appunti
-stato: "0"
+stato: "1"
 capitolo: Successioni e Serie di Funzioni
 ---
 - - -

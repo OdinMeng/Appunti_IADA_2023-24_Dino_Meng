@@ -187,7 +187,7 @@ capitolo: Dinamica
 > 
 > Per calcolare il periodo dell'orbita basta considerare che $\omega = \frac{r_T}{v}$ e quindi
 > $$
-> T=\frac{2\pi}{\omega}=2\pi \sqrt{\frac{r_T}{g} } \simeq 84 \cdot 60 \ \text{s}
+> T=\frac{2\pi}{\omega}=2\pi \frac{v}{r_T}=2\pi \sqrt{\frac{r_T}{g} } \simeq 84 \cdot 60 \ \text{s}
 > $$
 
 **FIGURA 7.1.** (*Problema*)

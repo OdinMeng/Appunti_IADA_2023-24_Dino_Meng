@@ -121,7 +121,7 @@ $$
 |s-s_{2n+2}|\leq|s-s_{2n}|\leq |s-s_{2n-2}|\leq\ldots \leq |s-s_2 | =|a_1|\leq a_{n+1}
 $$
 Invece se ho $n$ dispari, basta maggiorarlo con un $s_{2n}$ pari e da lì segue la stessa catena.
-Continuando verso la fine della dimostrazione del teorema, posso essere sicuro di dire che la successione $(s_{2n+1})_n$ è *crescente*, invece la successione $(s_{2n})_n$ è decrescente ma vale che $\forall n, s_{2n+1} \leq s_{2n}$. Ora posso finalmente applicare il *teorema di Cantor* in una maniera rigorosa.
+Continuando verso la fine della dimostrazione del teorema, posso essere sicuro di dire che la successione $(s_{2n+1})_n$ è *crescente*, invece la successione $(s_{2n})_n$ è decrescente ma vale che $\forall n, s_{2n+1} \leq s_{2n}$. Ora posso finalmente applicare il *teorema di Cantor* ([[Conseguenze dell'esistenza dell'estremo superiore#^78d038]]) in una maniera rigorosa.
 Ora definisco il limite di queste due successioni come
 $$
 \lim_n s_{2n+1}=\sigma, \lim_n s_{2n}=\eta
@@ -145,7 +145,24 @@ Allora per il *teorema dei due Carabinieri* ([[Limite di Successione#^72d83a]]) 
 $$
 \lim_n |\eta-\sigma| = 0 \implies \eta = \sigma
 $$
-Che dimostra $\sigma = \eta$, come volevasi dimostrare. $\blacksquare$
+Che dimostra $\sigma = \eta$, come volevasi dimostrare. Per dimostrare la stima
+$$
+|s-s_n| \leq a_{n+1}
+$$
+si usa il fatto che le *successioni convergenti in $\mathbb{R}$* sono *successioni di Cauchy* ([[Successioni di Cauchy#^6e84e5|1]]), ovvero
+$$
+\begin{gather}
+\forall \varepsilon>0, \exists N>0: \forall n,m>N \\ |s_n-s_m| < \varepsilon
+\end{gather}
+$$
+Sia fissato $m \in \mathbb{N}$, da cui si ha un $\bar{n}$ abbastanza grande tale che $\bar{n}>m$. Allora
+$$
+\begin{align}
+\bar{n}>m>N \implies |s_\bar{n}-s_m| &=|(a_1+\ldots\pm a_\bar{n})-(a_1+\ldots\pm a_m)| \\&
+=|a_{m+1}-(\underbracket{a_{m+2}-\ldots\mp a_{\bar{n} } )}_{\geq 0}| \leq a_{m+1}
+\end{align}
+$$
+da cui si ricava la tesi, ponendo il limite $\bar{n} \to +\infty$: infatti $\lim_n s_n = s$. $\blacksquare$
 
 **FIGURA 1.** (*Situazione iniziale*)
 ![[Pasted image 20240209150438.png]]

@@ -23,6 +23,8 @@ capitolo: Dinamica
 > 
 > Questa forza si dice *forza elastica*.
 
+^890382
+
 **FIGURA 1.1.** (*Situazione iniziale*)
 ![[Pasted image 20240402195846.png]]
 

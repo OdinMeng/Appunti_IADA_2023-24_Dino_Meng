@@ -77,6 +77,8 @@ Infatti $\lambda \cdot 0 = 0$ e $0 + 0 = 0$ sono anche *soluzioni* in quanto son
 Considero un *sistema lineare* $$A \cdot X = b$$con $A \in M_{m,n}(K)$ e $b \in K^n$. Sia $\tilde{s}$ una soluzione; allora un elemento $s \in K^n$ è soluzione di questo sistema lineare *se e solo* se possiamo scrivere $$s = \tilde{s} + s_0$$dove $s_0$ è una soluzione del *sistema lineare omogeneo* $$A \cdot X = 0$$
 In altre parole l'insieme delle soluzione di $A \cdot X = b$ è $$S = \{s \in K^n: s=\tilde{s} + s_0\ \text{ per un qualche }s_0 \text{ sia soluzione di }Ax =0\}$$
 
+^1ce15f
+
 #Definizione 
 > [!def] sistema lineare omogeneo associato
 Il *sistema lineare omogeneo* $A \cdot X = 0$ si dice il *sistema lineare omogeneo associato* al sistema $A \cdot X = b$. 

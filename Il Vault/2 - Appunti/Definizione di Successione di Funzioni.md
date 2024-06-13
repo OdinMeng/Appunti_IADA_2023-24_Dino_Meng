@@ -19,6 +19,8 @@ capitolo: Successioni e Serie di Funzioni
 > $$
 > Questa successione viene indicata come $(f_n)_n$.
 
+^51bdde
+
 # 2. Esempi di successioni di funzioni
 #Esempio 
 > [!exm] esempio primo

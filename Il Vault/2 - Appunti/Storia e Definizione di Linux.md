@@ -46,9 +46,9 @@ Nel *14.03.1991* il *giovane finlandese universitario* Linus Torvalds crea il ke
 
 ---
 # 4. Definizione di Unix, Linux, GNU
-- *Unix*: sistema operativo sviluppato negli anni '80 in AT&T (*closed source!*)
+- *Unix*: sistema operativo sviluppato negli anni '80 in AT&T (*closed source!*) ^3b8c03
 - *Linux*: è un kernel Unix-like sviluppato da Linus Torvald dal 1991 (*open source!*)
-- *GNU*: sistema operativo open source (*kernel escluso!*) Unix-Like. Può funzionare con diversi kernel; la maggior parte funziona col *linux*. GNU è un acronimo ricorsivo, che sta per *GNU's Not Unix!* $^{(1)}$. La GNU è quella parte che fornisce le *applicazioni di default* e roba del genere.
+- *GNU*: sistema operativo open source (*kernel escluso!*) Unix-Like. Può funzionare con diversi kernel; la maggior parte funziona col *linux*. GNU è un acronimo ricorsivo, che sta per *GNU's Not Unix!* $^{(1)}$. La GNU è quella parte che fornisce le *applicazioni di default* e roba del genere. ^e540a7
 
 Ora lo standard è *GNU/Linux*: sistema operativo GNU con kernel Linux
 

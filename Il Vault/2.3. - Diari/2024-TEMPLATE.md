@@ -1,28 +1,26 @@
-## xx.yy.2024 - Lunedì
+## Lunedì
 - [ ] **INTRODUZIONE ALLA FISICA.**
 
 - [ ] **CALCOLO DELLE PROBABILITA'.**
 
-## xx.yy.2024 - Martedì
+## Martedì
 - [ ] **ANALISI MATEMATICA II.**
 
 - [ ] **ARCHITETTURE DEGLI ELABORATORI E SISTEMI OPERATIVI.**
 
-- [ ] **ANALISI MATEMATICA II (TUTORATO).** 
-
-## xx.yy.2024 - Mercoledì
+## Mercoledì
 - [ ] **ANALISI MATEMATICA II.**
 
 - [ ] **ARCHITETTURE DEGLI ELABORATORI E SISTEMI OPERATIVI.** 
 
-## xx.yy.2024 - Giovedì
+## Giovedì
 - [ ] **ANALISI MATEMATICA II.**
 
 - [ ] **INTRODUZIONE ALLA FISICA.**
 
 - [ ] **ARCHITETTURE DEGLI ELABORATORI E SISTEMI OPERATIVI.** 
 
-## xx.yy.2024 - Venerdì
+## Venerdì
 - [ ] **INTRODUZIONE ALLA FISICA.**
 
 - [ ] **CALCOLO DELLE PROBABILITA'.**

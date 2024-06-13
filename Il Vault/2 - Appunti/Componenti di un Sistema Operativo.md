@@ -29,7 +29,7 @@ Principalmente un sistema operativo ha *tre gestori*, per gestire la mediazione 
 - **Gestore dei processi.** Crea e gestisce i *processi* (un processo è un programma in esecuzione) e *trova le risorse* di CPU e memoria *necessarie* all'esecuzione
 - **Gestore della memoria.** La memoria di un elaboratore è un unico vettore (dato che stiamo implicitamente usando le architetture *Von-Neumann*) e il SO gestisce l'*allocazione di memoria ai processi* e la *condivisione della memoria* tra programmi.
 - **Gestore dei dischi.** La memorizzazione su disco (come un HDD) è persistente e il SO organizza la memoria su disco in una struttura ad albero di directory e file
-- **Gestore dei dispositivi di I/O (e di rete).** I dispositivi di I/O *non* sono gestiti *direttamente* dalle applicazioni (sarebbe infatti complicato e creerebbe problemi di funzionamento); i SO utilizza invece i *driver* per pilotare i dispositivi. La connessione di rete rappresenta un caso particolare di I/O: ha un trattamento speciale nei moderni SO.
+- **Gestore dei dispositivi di I/O (e di rete).** I dispositivi di I/O *non* sono gestiti *direttamente* dalle applicazioni (sarebbe infatti complicato e creerebbe problemi di funzionamento); i SO utilizza invece i *driver* per pilotare i dispositivi. La connessione di rete rappresenta un caso particolare di I/O: ha un trattamento speciale nei moderni SO. ^848e78
 - **Gestore dei meccanismi di protezione.** Nei SO ci sono tanti *utenti* con *diversi permessi di accedere alle risorse* (per accedere a file, dispositivi, configurazione, ecc...). I SO implementa le policy di accesso; vedremo in seguito il caso particolare di *Linux*.
 
 Dopodiché ci sono altre componenti che agevola ai processi di fare ulteriori cose.

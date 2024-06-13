@@ -20,6 +20,8 @@ capitolo: Dinamica
 > 
 > Chiamiamo questa forza come *"tensione meccanica"* e la indiamo con $\vec{T}$
 
+^94ea84
+
 #Proposizione 
 > [!prp] le proprietà della tensione
 > Notiamo le seguenti proprietà della tensione.

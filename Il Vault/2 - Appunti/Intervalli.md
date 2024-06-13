@@ -57,6 +57,8 @@ Gli intervalli si dicono *inscatolati* se $$\forall n, I_{n+1}\subseteq I_{n}$$o
 > [!def] intervalli chiusi, inscatolati e dimezzati
 Una *successione di intervalli $(I_n)_n$* si dice di *intervalli chiusi, inscatolati* e *dimezzati* se $$\forall n, I_{n+1} \subseteq I_{n}$$ove il nuovo sottoinsieme ha gli elementi $$I_{n+1} =[a_n, \frac{a_n+b_n}{2}] \text{ oppure } [\frac{a_n+b_n}{2}, b_n]$$
 
+^3a4220
+
 #Osservazione 
 > [!rmk] la lunghezza di un elemento di intervalli chiusi, inscatolati e dimezzati
 Notiamo che se prendiamo un $$I_n =[a_n, b_n] = [a_{n-1}, \frac{a_{n-1}+b_{n-1}}{2}]$$allora la *distanza* tra $a_n$ e $b_n$ è $$a_n-b_n = \frac{2a_{n-1}-a_{n-1}-b_{n-1}}{2}= \frac{a_{n-1}-b_{n-1}}{2}$$ovvero la *"metà della lunghezza del segmento di prima, ovvero $a_{n-1}-b_{n-1}$"*. 

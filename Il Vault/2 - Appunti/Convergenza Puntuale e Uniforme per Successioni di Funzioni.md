@@ -38,6 +38,8 @@ capitolo: Successioni e Serie di Funzioni
 > \begin{gather}\forall \varepsilon>0, \exists \bar{n}=\bar{n}(\varepsilon): \forall x \in E,\\ n \geq \bar{n} \implies |f_n(x)-f(x)| \leq \varepsilon\end{gather}
 > $$
 
+^a140c0
+
 #Osservazione 
 > [!rmk] il legame tra convergenza puntuale e uniforme
 > Si nota che la *convergenza uniforme* impone una *condizione più forte* della *convergenza puntuale*. Infatti, una *successione di funzioni uniformemente convergente* è anche una *successione di funzioni puntualmente convergente*.

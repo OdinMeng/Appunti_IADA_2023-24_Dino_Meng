@@ -122,7 +122,7 @@ il ché dimostra che la serie è sviluppabile su Taylor, dal momento che l'error
 **DIMOSTRAZIONE** del [[#^3a0739]]
 In questo caso basta osservare che
 $$
-x \in [x_0-r, x_0+r] \subset (x_0-h, x_0+h)
+x \in [x_0-r, x_0+r] \supset (x_0-h, x_0+h)
 $$
 quindi qualsiasi punto $x$ prendo, la sua distanza da $r$ sarà sempre più piccola della sua distanza da $h$. Ovvero, $|x-x_0|<h<r$
 Ma allora se prendo l'estremo superiore dello scarto ho

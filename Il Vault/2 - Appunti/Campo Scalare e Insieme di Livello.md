@@ -41,5 +41,7 @@ capitolo: Struttura di R^N
 > $$
 > Graficamente, si tratta di prendere il grafico del campo scalare e prendere la proiezione dell'*intersezione* col piano $z=K$ (*figura 2.1.*)
 
+^0aa8df
+
 **FIGURA 2.1.** (*Grafico qualitativo di un insieme di livello*)
 ![[Pasted image 20240328121608.png]]

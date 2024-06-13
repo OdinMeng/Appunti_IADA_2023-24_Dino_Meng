@@ -26,3 +26,6 @@ stato: "1"
 > Nelle ipotesi della *definizione 1.1.* ([[#^b619fd]]), fissata $\mathcal{B}$ base di $V$ e $\mathcal{C}$ base di $V'$, possiamo definire una funzione del tipo
 > $$\mathcal{L}(V, V') \longrightarrow M_{m,n}(K); f \mapsto M^\mathcal{B}_\mathcal{C}(f)$$
 > Allora questa funzione è un'*applicazione lineare* ed un *isomorfismo*.
+
+^c7a393
+

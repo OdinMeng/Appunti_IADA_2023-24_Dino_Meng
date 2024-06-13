@@ -23,7 +23,7 @@ Un utente può essere assegnato a uno o più *gruppi*.
 - Eventualmente un utente può essere assegnato a più *gruppi secondari*
 Meccanismo utente-gruppi serve per gestire l'accesso a file e risorse.
 
-L'utente *root* esiste sempre ed ha massimi privilegi
+L'utente *root* esiste sempre ed ha massimi privilegi ^a6b955
 
 **ATTENZIONE!** Non bisogna *assolutamente* confondere l'*utente root* con il *kernel-mode*! ([[Definizioni Relative ai Sistemi Operativi#^33592a]]) In ogni caso si avviano le applicazioni *SEMPRE* in *user-mode*!
 
@@ -46,9 +46,9 @@ L'utente *root* esiste sempre ed ha massimi privilegi
 ---
 # 4. Tipologie di Permessi
 I file e le cartelle hanno tre tipi di *permessi*:
-- 1) Permesso di **Lettura**: Per i file, *accedere a contenuto*. Per cartelle, *listare i file*.
-- 2) Permesso di **Scrittura**: Per i file, *modificare il contenuto*. Per le cartelle, *creare file o cartelle in essa* (alterare la lista).
-- 3) Permesso di **Esecuzione/Attraversamento**:
+- 1) Permesso di **Lettura**: Per i file, *accedere a contenuto*. Per cartelle, *listare i file*. ^7687cb
+- 2) Permesso di **Scrittura**: Per i file, *modificare il contenuto*. Per le cartelle, *creare file o cartelle in essa* (alterare la lista). ^f307cc
+- 3) Permesso di **Esecuzione/Attraversamento**: ^7708f7
   - Per i **file**, esiste il permesso di **esecuzione**. Necessario per *eseguire programmi*.
   - Per le **cartelle**, esiste il permesso di **attraversamento**. Necessario per *accedere a sotto cartelle*.
 
@@ -58,7 +58,7 @@ I file e le cartelle hanno tre tipi di *permessi*:
 # 5. Utente e Gruppo proprietario
 **DEFINIZIONE DI UTENTE/GRUPPO PROPRIETARIO.**
 I file e le cartelle hanno *uno ed uno solo utente proprietario* e un *gruppo proprietario*.
-I permessi su file sono gestibili separatamente per:
+I permessi su file sono gestibili separatamente per: ^2080e4
 - Utente proprietario del file
 - Utenti del gruppo proprietario del file
 - Tutti gli altri utenti

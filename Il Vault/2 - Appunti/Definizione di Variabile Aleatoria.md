@@ -5,10 +5,10 @@ corso:
 argomento: Definizione di Variabile Aleatoria
 tipologia: appunti
 stato: "1"
-capitolo:
+capitolo: Variabili Aleatorie Discrete
 ---
 - - -
-*Definizione generale di variabile aleatoria. Lemma di caratterizzazione delle variabili aleatorie. Notazione per gli eventi generati dalle variabile aleatorie.*
+*Definizione generale di variabile aleatoria. Lemma di caratterizzazione delle variabili aleatorie. Notazione per gli eventi generati dalle variabile aleatorie. Osservazione sui spazi probabilistici discreti.*
 - - -
 # 0. Voci correlate
 - [[Spazio di Probabilità Discreto]]
@@ -22,7 +22,7 @@ capitolo:
 > $$
 > In parole, una *variabile aleatoria* ci permette di prendere un *"sottoinsieme decente"* di $E$ e riportarlo su $\Omega$ dentro la famiglia $\mathcal{A}$, potendo così misurare la sua probabilità con $p$.
 > 
-> In particolare, se $E=\mathbb{R}$ allora si dice che $X$ è una *"variabile aleatoria reale"* si sceglie $\mathcal{B}$ come la *sigma-algebra di Borel* in $\mathbb{R}$ ([[Strutture Matematiche della Probabilità#^02b5da|1]]).
+> In particolare, se $E=\mathbb{R}$ allora si dice che $X$ è una *"variabile aleatoria reale"* e si sceglie $\mathcal{B}$ come la *sigma-algebra di Borel* in $\mathbb{R}$ ([[Strutture Matematiche della Probabilità#^02b5da|1]]).
 ^add567
 
 #Osservazione 
@@ -34,7 +34,10 @@ capitolo:
 > [!lem] di caratterizzazione delle v.a. reali
 > Una funzione $X: \Omega \longrightarrow \mathbb{R}$ è una *variabile aleatorie reale* se e solo se una delle seguenti condizioni è soddisfatta:
 > $$
-> \left\{\begin{align}&X^{-1}((a,b)) =\{\omega \in \Omega: X (\omega) \in (a,b)\}, \forall a,b \in \mathbb{R}\\ &X^{-1}([a,b])=\{\omega \in \Omega: X(\omega) \in [a,b]\}, \forall a,b \in \mathbb{R} \\ &X^{-1}((-\infty, a))=\{\omega \in \Omega: X(\omega) \in (-\infty, a)\}, \forall a \in \mathbb{R} \\ & X^{-1}((-\infty, a]) = \{\omega \in \Omega: X(\omega) \in (-\infty, a]\}, \forall a \in \mathbb{R}\end{align}\right.
+> \left\{\begin{align}&X^{-1}((a,b)) \in \mathcal{A}=\{\omega \in \Omega: X (\omega) \in (a,b)\}, \forall a,b \in \mathbb{R}\\ &
+> X^{-1}([a,b]) \in \mathcal A=\{\omega \in \Omega: X(\omega) \in [a,b]\}, \forall a,b \in \mathbb{R} \\ &
+> X^{-1}((-\infty, a)) \in \mathcal A=\{\omega \in \Omega: X(\omega) \in (-\infty, a)\}, \forall a \in \mathbb{R} \\ & 
+> X^{-1}((-\infty, a]) \in \mathcal A= \{\omega \in \Omega: X(\omega) \in (-\infty, a]\}, \forall a \in \mathbb{R}\end{align}\right.
 > $$
 ^034fe2
 
@@ -60,3 +63,12 @@ che prova il primo punto implica il terzo punto. $\blacksquare$
 > \end{gather}
 > $$
 > gli eventi $X \in B$ o $a<X<b$, eccetera... si dicono *"eventi generati da $X$"*.
+
+# 4. Osservazione sui Spazi Probabilistici Discreti
+#Osservazione 
+> [!rmk] le applicazioni dei spazi probabilistici discreti sono sempre v.a. discrete
+> Osserviamo che se uno *spazio probabilistico* $(\Omega, \mathcal A, p)$ è *discreto* ([[Spazio di Probabilità Discreto#^58b1f7|1]]), allora una qualsiasi applicazione del tipo $X: \Omega \to \mathbb{R}$ è una *variabile aleatoria*, dato che per la sigma-algebra $\mathcal{A}$ possiamo scegliere la *famiglia di tutti i sottoinsiemi per* $\Omega$. Infatti, abbiamo 
+> $$
+> \{X \in B\} \in \mathcal{A}, \forall B \in \mathcal{B}
+> $$
+^87f981

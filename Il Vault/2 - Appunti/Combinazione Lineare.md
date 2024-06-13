@@ -26,6 +26,8 @@ Ora voglio considerare l'*insieme* delle combinazioni lineari.
 Sia $V$ un K-spazio vettoriale e sia $S = (\text{v}_1, \ldots, \text{v}_n)$. 
 Allora chiamo lo *span* di $S$ o di $\text{v}_1, \ldots, \text{v}_n$ come l'*insieme di tutte le combinazioni lineari di tale sottoinsieme* $S$: $$\operatorname{span}(\text{v}_1, \ldots, \text{v}_n) := \{\lambda_1\text{v}_1 + \ldots + \lambda_n \text{v}_n : \lambda_1, \ldots, \lambda_n \in K\}$$oppure in forma compatta $$\operatorname{span}(S) := \{\sum_{i=1}^n \lambda_i \text{v}_i: i \in \{1, \ldots, n\}, \lambda_i \in K\}$$
 
+^1fd7fd
+
 #Lemma 
 > [!lem] lo span è sempre un sottospazio vettoriale
 Lo span di un qualunque $S = \{v_1, \ldots, v_n\}$ è *sottospazio vettoriale* di $V$ ([[Sottospazi Vettoriali]]).

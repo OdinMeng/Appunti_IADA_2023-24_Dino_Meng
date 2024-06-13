@@ -24,9 +24,9 @@ Quindi, in questo caso *separiamo* la *memoria di lavoro* dai *dispositivi I/O*.
 **LA SECONDA DOMANDA.** Ora, per risolvere la seconda domanda, ovvero *come gestire la comunicazione effettiva* tra il calcolatore e l'I/O, abbiamo due approcci per gestire casi in cui *i dispositivi* lavorano con *tempi diversi*, ovvero quando un dispositivo è più veloce dell'altro. 
 I due metodi principali sono il *polling* e l'*interrupt.* 
 
-**POLLING.** L'idea del *polling* è quella di controllare ad *intervalli regolari* se il dispositivo *I/O* sia pronto o meno. Il svantaggio di questo approccio è il *dispendio del tempo*, dedicato per fare il *polling*; oppure in certi casi, è stato effettuato in un tempo troppo tardivo.
+**POLLING.** L'idea del *polling* è quella di controllare ad *intervalli regolari* se il dispositivo *I/O* sia pronto o meno. Il svantaggio di questo approccio è il *dispendio del tempo*, dedicato per fare il *polling*; oppure in certi casi, è stato effettuato in un tempo troppo tardivo. ^53a200
 
-**INTERRUPT.** Una seconda idea è quello di *"avvisare"* il *CPU* quando un dispositivo è pronto. Questo avviene tramite *supporto hardware*, che *"interrompe"* il processore forzandolo ad un pezzo di codice per gestire il dispositivo I/O.
+**INTERRUPT.** Una seconda idea è quello di *"avvisare"* il *CPU* quando un dispositivo è pronto. Questo avviene tramite *supporto hardware*, che *"interrompe"* il processore forzandolo ad un pezzo di codice per gestire il dispositivo I/O. ^84b9a9
 
 # 4. Gestione di Grande Quantità di Dati
 **L'ULTIMA DOMANDA.** Per gestire invece un *trasferimento di grandi quantità di dati*, gli approcci di *polling* e di *interrupt* sono inefficaci, dal momento che da un lato spostiamo sempre dati e dall'altro il processore viene continuamente interrotto. Allora l'idea è quello di *istituire un specifico* fatto apposta per questo caso, ovvero la *direct memory access* (DMA). Questo permette di copiare i dati dal dispositivo I/O alla memoria di lavoro, senza dover interrompere la *CPU*.

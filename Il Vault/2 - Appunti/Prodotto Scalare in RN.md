@@ -31,8 +31,8 @@ capitolo: Struttura di R^N
 #Proposizione 
 > [!prp] le proprietà del prodotto scalare
 > Come visto ([[Prodotto Scalare#^e88eae|1]]), il prodotto scalare soddisfa le seguenti proprietà. Come ipotesi iniziali prendiamo
-> $$\
-> forall \underline{x},\underline{y} ,\underline{z} \in \mathbb{R}^N, \forall \lambda, \mu \in \mathbb{R}
+> $$
+> \forall \underline{x},\underline{y} ,\underline{z} \in \mathbb{R}^N, \forall \lambda, \mu \in \mathbb{R}
 > $$
 > i. *bilinearità*
 > $$

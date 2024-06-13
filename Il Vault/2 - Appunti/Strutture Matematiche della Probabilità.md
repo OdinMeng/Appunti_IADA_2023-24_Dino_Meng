@@ -107,6 +107,8 @@ capitolo: Nozioni preliminari per la Probabilità
 > 
 > Vogliamo quindi approssimare questa figura con una *famiglia di rettangoli*, che faremo con la seguente struttura matematica, e allo stesso tempo di *trovare una struttura matematica* che ci permetta di modellizzare questo *problema di natura probabilistica*.
 
+^8ae512
+
 #Definizione 
 > [!def] σ-algebra di Borel in 2D
 > Definiamo la *σ-algebra di Borel in $\mathbb{R}^2$* come la *più piccola σ-algebra* che *contiene tutti i rettangoli*, cioè

@@ -29,7 +29,7 @@ capitolo: Architetture degli elaboratori
 
 **MEMORIA PRIMARIA.** La memoria primaria è organizzata in *modo lineare*, come uno *stack* di *locazioni di memoria* associati a degli *indirizzi di memoria*. Ogni *locazione di memoria* contiene un singolo *valore* numerico.
 
-**DISPOSITIVI I/O.** I dispositivi *I/O* permettono di consentire la *comunicazione* del *calcolatore* col *mondo esterno*. Si può trattare ad esempio di *dati in arrivo*, che possono venire dalla *tastiera* o dal *mouse*; similmente si può parlare anche di *dati in uscita*, che sono visualizzabili col *monitor* o periferiche simili. Oppure si può trattare anche di un'*archiviazione larga di dati*, ovvero di *"mass storage"*, che può essere fatto con componenti come l'*HDD*, l'*SSD*, ...
+**DISPOSITIVI I/O.** I dispositivi *I/O* permettono di consentire la *comunicazione* del *calcolatore* col *mondo esterno*. Si può trattare ad esempio di *dati in arrivo*, che possono venire dalla *tastiera* o dal *mouse*; similmente si può parlare anche di *dati in uscita*, che sono visualizzabili col *monitor* o periferiche simili. Oppure si può trattare anche di un'*archiviazione larga di dati*, ovvero di *"mass storage"*, che può essere fatto con componenti come l'*HDD*, l'*SSD*, ... ^c81c7e
 
 **FIGURA 2.1.** (*Struttura particolare della CPU*)
 ![[Pasted image 20240311173452.png]]

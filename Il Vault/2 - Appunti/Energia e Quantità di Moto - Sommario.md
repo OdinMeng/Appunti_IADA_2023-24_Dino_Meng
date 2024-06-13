@@ -1,0 +1,15 @@
+![[Vis Viva]]
+
+![[Sistema e Ambiente]]
+![[Energia Cinetica]]
+![[Definizione di Lavoro]]
+![[Teorema Lavoro-Energia Cinetica]]
+![[Lavoro di Forze Notevoli]]
+![[Forza Conservative e Dissipative]]
+!
+![[Energia Potenziale]]
+![[Definizione di Potenza]]
+![[Conservazione dell'Energia]]
+![[Quantità di Moto]]
+![[Urti]]
+![[Centro di Massa]]

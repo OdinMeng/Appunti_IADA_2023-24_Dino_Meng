@@ -5,7 +5,7 @@ corso:
 argomento: Considerazione Preliminare per le Variabili Aleatorie
 tipologia: appunti
 stato: "1"
-capitolo:
+capitolo: Variabili Aleatorie Discrete
 ---
 - - -
 *Considerazioni Preliminari per le Variabili Aleatorie*

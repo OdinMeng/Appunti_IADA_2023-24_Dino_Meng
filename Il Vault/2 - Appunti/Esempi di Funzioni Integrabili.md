@@ -106,3 +106,6 @@ Sorge quindi il problema di trovare un metodo generale peri l calcolo dell'integ
 > Analogamente la *somma inferiore* è sempre $0$.
 > Pertanto, vedo che
 > $$s(f, \Delta) \neq S(f, \Delta) \implies f \not \in \mathcal{R}$$
+
+^fa5879
+

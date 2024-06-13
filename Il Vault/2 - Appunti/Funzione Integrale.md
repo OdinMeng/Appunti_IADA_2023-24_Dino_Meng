@@ -24,7 +24,7 @@ stato: "1"
 > Sia $f: [a,b] \longrightarrow \mathbb{R}$ una funzione *integrabile secondo Riemann sull'intervallo* $[a, b]$ ([[Integrabilità secondo Riemann#^5455b8]]).
 > Allora definisco la *funzione integrale di $f$* su $[a,b]$ (oppure in tedesco *die Integralfunktion*) come il seguente:
 > $$\boxed{F: [a,b] \longrightarrow \mathbb{R}\ ; \  F(x)=\int_a^x f(t) \ dt}$$
-> Geometricamente questo corrisponde a *prendere la singola area partizionata tra il punto $a,x$* ([[Proprietà delle Funzioni Integrabili#^157e15]]) (*figura 1.1.*).
+> Geometricamente questo corrisponde a *prendere la singola area partizionata tra il punto $a,x$* ([[Proprietà delle Funzioni Integrabili Secondo Riemann#^157e15]]) (*figura 1.1.*).
 
 ^e5e02b
 
@@ -38,6 +38,8 @@ stato: "1"
 > Sia una $g: [a,b] \longrightarrow \mathbb{R}$ una *funzione*, se vale la seguente condizione, ovvero
 > $$\begin{gather}\exists M>0: \forall x_1, x_2 \in [a,b], \\ |g(x_1)-g(x_2)|\leq M|x_1-x_2| \end{gather}$$
 > allora $g$ si dice *lipschitziana* (o in tedesco *lipschitzstetig*).
+
+^404ea5
 
 #Proposizione 
 > [!prp] funzione lipschitziana è continua
@@ -67,7 +69,7 @@ dove, per due qualsiasi punti $x_1, x_2$ nell'intervallo di definizione abbiamo
 $$\begin{align}F(x_1)-F(x_2) &= \int_a^{x_1}f(t) \ dt \ - \int_a^{x_2}f(t) \ dt \\ &= \int_{a}^{x_1} f(t) \ dt  \ + \int_{x_2}^a f(t) \ dt \\ &= \int_{x_2}^a f(t) \ dt \ + \int_{a}^{x_1}f(t) \ dt \\ &= \int _{x_2}^{x_1}f(t) \ dt \end{align}$$
 Allora
 $$|F(x_1)-F(x_2)| = \left|\int_{x_2}^{x_1} f(t) \ dt \ \right| \leq \int_{x_2}^{x_1} \left | f(t) \right | \ dt$$
-Posso piazzare il *valore assoluto* dell'integrale in quanto non è *garantito* che $x_1 < x_2$; infatti potremmo avere delle *"aree negative"* ([[Proprietà delle Funzioni Integrabili#^cd03da]]).
+Posso piazzare il *valore assoluto* dell'integrale in quanto non è *garantito* che $x_1 < x_2$; infatti potremmo avere delle *"aree negative"* ([[Proprietà delle Funzioni Integrabili Secondo Riemann#^cd03da]]).
 Ma allora posso *"rimpiazzare"* $|f(t)|$ col valore per cui è limitato, ovvero $M$.
 $$|f(t)| \leq M \implies |F(x_1)-F(x_2) | \leq \left|\int_{x_2}^{x_1}M \ dt \right| = M|x_1-x_2|$$
 Ovvero, in definitiva,

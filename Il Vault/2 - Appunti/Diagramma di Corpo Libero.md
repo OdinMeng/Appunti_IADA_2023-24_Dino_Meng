@@ -1,10 +1,11 @@
 ---
 data: 2024-03-24
-corso: 
+corso:
+  - "[[Introduzione alla Fisica]]"
 argomento: Diagramma di Corpo Libero
 tipologia: appunti
-stato: "0"
-capitolo:
+stato: "1"
+capitolo: Dinamica
 ---
 - - -
 *Metodo convenzionale per la rappresentazione delle forze: diagramma di corpo libero. Regole per disegnare un diagramma di corpo libero.*

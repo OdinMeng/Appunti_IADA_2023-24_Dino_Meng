@@ -23,7 +23,7 @@ stato: "1"
 **FIGURA 1.1.** (*Concetto grafico di suddivisione*)
 ![[Pasted image 20231205175851.png]]
 
-#Definizione 
+#Definizione  ^0db26b
 > [!def] l'insieme di tutte le suddivisione
 > Indico l'insieme di *tutte le suddivisioni* di $[a, b]$ con
 > $$\mathcal{D}$$

@@ -63,3 +63,10 @@ capitolo: Linguaggio Bash
 - `(( espressione ))` - condizione numerica
 - `[[ espressione ]]` - condizione tra stringhe
 - `[[ -a -f/-c -r -w -x path ]]` - condizione su path
+
+# 8. Variabili Speciali
+- `$n`, con $n \in \mathbb{N}$ ($\max n = 9$): argomento $n$-esimo (parte dallo $0$, col nome dello script!) dello script Bash eseguito
+- `$#`: numero $n$ di argomenti passati
+- `$?`: valore di ritorno dell'ultimo comando eseguito
+- `$!`: il PID dell'ultimo comando eseguito
+- `$$`: il PID del comando attuale 

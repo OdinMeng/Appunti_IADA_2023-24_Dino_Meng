@@ -40,6 +40,8 @@ capitolo: Calcolo Differenziale Multivariata
 > L_{x_0}=\text{d}f_{x_0}
 > $$
 
+^aabe21
+
 # 2. Esempi di differenziali
 #Osservazione 
 > [!rmk] caso $N=1$
@@ -103,3 +105,17 @@ $$
 \end{align}
 $$
 che è la tesi. $\blacksquare$
+
+#Osservazione 
+> [!rmk] possiamo usare il teorema di Riesz
+> Notiamo che se chiamo il differenziale $L=d f_{\underline{x_0} }$ allora posso usare il *teorema di rappresentazione di Riesz* ([[Teorema di Riesz#^47405d|1]]). Infatti se definisco un vettore $\mathbb{A} = (a_1,\ldots, a_N) \in \mathbb{R}^N$, allora posso dire che questa *rappresenta* il differenziale $L$. Allora, scegliendo un qualsiasi vettore $v$ ho
+> $$
+> \langle \mathbb A, v \rangle = a_1v_1+\ldots+a_N v_N = L(\underline{v})
+> $$
+> Adesso, usando la proprietà *ii.* ([[#^afff32|2]]) del differenziale ho l'uguaglianza importante
+> $$
+> \frac{\partial f}{\partial \underline{v} }=L(\underline{v})
+> $$
+> ovvero il *"differenziale di $f$ applicato su $\underline{v}$ è la derivata direzionale lungo $\underline{v}$"*.
+^725483
+

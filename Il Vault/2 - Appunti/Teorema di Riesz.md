@@ -26,6 +26,7 @@ capitolo: Struttura di R^N
 > Sia $\mathcal{L}(\mathbb{R}^N, \mathbb{R}^M)$ lo *spazio delle applicazioni lineari* $L: \mathbb{R}^N \longrightarrow \mathbb{R}^M$. Sia $M_{m,n}(\mathbb{R})$ lo *spazio delle matrici* $m \times n$ a coefficienti in $\mathbb{R}$.
 > 
 > Fissata una base $\mathcal{B}$ per il dominio $\mathbb{R}^N$ e un'altra base $\mathcal{C}$ per il codominio $\mathbb{R}^M$, deve *esistere una biiezione* tra $\mathcal{L}(\mathbb{R}^N, \mathbb{R}^M)$ e $M_{m,n}(\mathbb{R})$. 
+^47405d
 
 # 2. Teorema di Riesz, finito dimensionale
 #Teorema 

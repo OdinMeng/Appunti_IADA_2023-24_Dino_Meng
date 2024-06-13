@@ -39,7 +39,7 @@ Riprendiamo l'*esempio 1.1.* da [[Invertire Matrici#^a51ef6]]:
 > $$A^{-1} = \begin{pmatrix}3 & -1 \\ -5 & 2 \end{pmatrix} $$
 
 **OSS 1.1.1.** (*Collegamento geometrico*) Se consideriamo le colonne di $A \in M_2(K)$ come *due vettori colonna* che vivono in $K^2$, poi se supponiamo $a_{ij} > 0$, allora possiamo rappresentare i vettori sul piano cartesiano $\pi$. Si può verificare che se $\mathcal{P}$ è il parallelogrammo determinato da questi due vettori colonna, allora il *determinante* della matrice $A$ è proprio l'*area* di questo parallelogrammo.
-![[Pasted image 20231121154754.png]]
+![[Pasted image 20231121154754.png]] ^52f4e0
 # 2. Definizione di determinante per ricorsione
 #Definizione 
 > [!def] determinante per lo sviluppo lungo la prima colonna

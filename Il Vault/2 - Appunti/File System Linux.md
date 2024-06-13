@@ -12,7 +12,7 @@ capitolo:
 # 1. Organizzazione del File System
 Il file system su Linux è *gerarchico*, ovvero *ad albero*.
 - Organizzato in directory annidate l'una dentro l'altra
-- La directory radice è `/` (detta *"root"*)
+- La directory radice è `/` (detta *"root"*) ^38ab81
 - Tutte le cartelle del sistema sono contenute nella directory radice.
 Esempio: la home degli utenti si trova in `/home/nomeutente`
 
@@ -133,9 +133,9 @@ sudo rm -rf /*
 ---
 ## 5.4. Collegamenti su Linux
 **Comando `ln [-s] <sorgente> <destinazione>`**: crea un *link*. In Linux esistono due tipi di link:
-- **HARD LINK**: associa un *secondo path* al contenuto del file. Se il primo file viene spostato, il link rimane valido e funzionante. E' l'*opzione di default* (*!!!*)
+- **HARD LINK**: associa un *secondo path* al contenuto del file. Se il primo file viene spostato, il link rimane valido e funzionante. E' l'*opzione di default* (*!!!*) ^4db40f
 	- *Robusto*: non può può mai essere invalido. Non si può usare tra dischi diversi, né per linkare cartelle
-- **SOFT LINK**: è un *semplice rimando* a un altro path. Se il path destinazione non esiste o viene spostato, il link semplicemente non funziona. Si usa l'opzione `-s`. Quindi si ha una specie di *file speciale*.
+- **SOFT LINK**: è un *semplice rimando* a un altro path. Se il path destinazione non esiste o viene spostato, il link semplicemente non funziona. Si usa l'opzione `-s`. Quindi si ha una specie di *file speciale*. ^f7fd3b
 	-  *Flessibile*: può linkare a un altro file system o a una cartella
 
 ---

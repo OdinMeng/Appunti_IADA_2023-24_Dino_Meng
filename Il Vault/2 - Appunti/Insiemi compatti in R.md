@@ -16,6 +16,10 @@ Per approfondire questo tema rivolgersi alla dispensa di *D.D.S.*, capitolo *10.
 #Definizione 
 > [!def] Insieme compatto in R per successioni.
 Sia $E \subseteq \mathbb{R}$. $E$ si dice *compatto per successione* (*d'ora in poi diremo compatto e basta*) se vale la seguente proprietà: se da *ogni successione* a valori in $E$ posso estrarre *una sottosuccessione convergente ad un punto* $x \in E$.
+>
+> Si generalizza tale nozione su un qualsiasi insieme $X$, con la nozione
+> $$E \Subset X$$
+> che vuol dire *"$E$ è un compatto su $X$"*
 ^0eb138
 
 #Osservazione 

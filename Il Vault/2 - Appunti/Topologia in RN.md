@@ -44,6 +44,8 @@ capitolo: Struttura di R^N
 > \mathcal{U}(\underline{x_0}) \supseteq B(\underline{x_0}, r)
 > $$
 
+^10f5d2
+
 **FIGURA 2.1.** (*Illustrazione grafica di un intorno*)
 ![[Pasted image 20240325202241.png]]
 
@@ -72,6 +74,8 @@ capitolo: Struttura di R^N
 #Definizione 
 > [!def] punto interno per un insieme
 > Sia $E \subseteq \mathbb{R}^N$. Un punto $\underline{x_0} \in \mathbb{R}^N$ si dice *"interno a $E$"* se vale che $E$ è *intorno* di $\underline{x_0}$. Ovvero, prendendo un intorno qualsiasi $\mathcal{U}=\mathcal{U}(\underline{x_0})$ si ha che $\mathcal{U} \cap E \neq \emptyset$.
+
+^b4d155
 
 #Definizione 
 > [!def] interno di un insieme e insieme aperto

@@ -48,7 +48,7 @@ Ovvero, *"alla Cauchy"* ciò equivale al seguente:
 $$\begin{gather}\forall \varepsilon >0, \exists \delta>0: \forall x, \\|x-\bar x| < \delta \implies|f(x)- f(\bar x)| < \varepsilon \end{gather}$$
 Allora, considerando un qualsiasi $t \in [\bar x, x]$ (ovvero tra gli *"estremi"* dell'integrale), ho 
 $$|t-\bar x| <\delta \implies |f(t)-f(\bar x)| < \varepsilon$$
-Allora con tutte le considerazioni appena effettuate e ricordandoci un'altra *proprietà* dell'*integrale* ([[Proprietà delle Funzioni Integrabili#^cd03da]]) ho
+Allora con tutte le considerazioni appena effettuate e ricordandoci un'altra *proprietà* dell'*integrale* ([[Proprietà delle Funzioni Integrabili Secondo Riemann#^cd03da]]) ho
 $$|R^F_{\bar x}(x) - f(\bar x)| =\frac{1}{x-\bar x}\left| \int_\bar x^x f(t)-f(\bar x) dt\right| \leq \frac{1}{x - \bar{x}}\int_\bar x^x |f(t) - f(\bar x)| dt < \frac{\int_\bar x^x \varepsilon \ dt}{x-\bar x} = \varepsilon$$
 In definitiva, rimettendo tutto apposto ho il seguente:
 $$\begin{gather}\forall \varepsilon >0, \exists \delta >0: \forall x, \\|x-\bar x| < \delta \implies |R^F_{\bar x}(x)-f(\bar x)|< \varepsilon \end{gather}$$
