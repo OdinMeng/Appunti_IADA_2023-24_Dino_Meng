@@ -7,24 +7,10 @@ Materie attualmente disponibili:
 - Algebra Lineare ed Elementi di Geometria (ALEG)
 - Introduzione alla Programmazione (Programmazione)
 - Laboratorio di Programmazione (Laboratorio di Programmazione)
+- Analisi Matematica II
+- Sistemi Operativi
+- Calcolo delle Probabilità
+- Introduzione alla Fisica
 
-Dal 06.10.2023:
-- Aggiunto il "grande compendio", che comprende TUTTI gli appunti scritti (senza dover appartenere a nessun sommario) in formato .md
-
-Dal 12.10.2023:
-- Aggiunto la sezione "Programmazione - Esercitazioni" per eventuali soluzioni proposte da me degli esercizi delle dispense
-
-ANNUNCIO IMPORTANTE (23.10.2023)
-- Gli appunti di programmazione *non* verranno mai più aggiornati in quanto si ritiene la dispensa sufficiente come materiale di studio.
-
-ANNUNCIO IMPORTANTE (14.11.2023)
-Da oggi in poi rendo disponibile il sito pubblico https://odinmeng.github.io/ per caricare gli appunti. Comunque i sommari in file pdf verranno comunque mantenuti, anche se di più rado.
-
-ANNUNCIO IMPORTANTE (22.01.2024)
-A seguito del completamento dell'esame di *Analisi Matematica I*, ho deciso di rendere ufficiale e finale la stesura della dispensa personale di Analisi I.
-
-ANNUNCIO (09.02.2024)
-La "dispensetta" di *Analisi Matematica I* è stata completata con la parte sulle serie numeriche, ultimando la sua "pubblicazione" su Github.
-
-ANNUNCIO (09.04.2024)
-*Il Compendio* è stato rinominato in *Il Vault*. Adesso contiene più roba, tra cui foto, diari, eccetera...
+## NOTA!
+Per l'anno accademico *2024-2025*, gli appunti verranno rilasciati solo ed esclusivamente a pagamento. Per ulteriori informazioni, si deve fare richiesta personalmente.
