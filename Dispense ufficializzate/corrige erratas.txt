@@ -1,0 +1,5 @@
+====================
+CORRIGE ERRATAS
+====================
+22.08.2024 - Analisi Matematica II
+	Errore sulla parte relativa alle funzioni coercitive e anticoercitive, in particolare la proprietà fondamentale di esse (forma debole di Weierstrass).
