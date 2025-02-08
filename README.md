@@ -12,5 +12,3 @@ Materie attualmente disponibili:
 - Calcolo delle Probabilità
 - Introduzione alla Fisica
 
-## NOTA!
-Per l'anno accademico *2024-2025*, gli appunti verranno rilasciati solo ed esclusivamente a pagamento. Per ulteriori informazioni, si deve fare richiesta personalmente.
